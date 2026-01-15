@@ -13,10 +13,14 @@ Usage:
 
 import argparse
 import json
+import logging
 import sqlite3
 from collections import defaultdict
 from pathlib import Path
 from datetime import datetime
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 
 # Database path (relative to script location)
@@ -122,6 +126,31 @@ def get_yearly_national_averages(conn) -> dict:
     """)
     _yearly_national_averages = {row["model_year"]: row["metric_value"] for row in cur.fetchall()}
     return _yearly_national_averages
+
+
+# Default fallback for missing year averages
+FALLBACK_NATIONAL_AVG = 71.51
+_fallback_warnings_logged = set()  # Track warnings to avoid spam
+
+
+def get_year_avg_safe(yearly_avgs: dict, year: int) -> tuple:
+    """Get year average with fallback warning.
+
+    Returns (average, used_fallback) tuple. Logs warning on first use of fallback
+    for each year to alert about missing data.
+    """
+    if year in yearly_avgs:
+        return yearly_avgs[year], False
+
+    # Log warning only once per year per session
+    if year not in _fallback_warnings_logged:
+        logging.warning(
+            f"No national average for model year {year}, using fallback {FALLBACK_NATIONAL_AVG}%. "
+            f"Results for this year may be inaccurate."
+        )
+        _fallback_warnings_logged.add(year)
+
+    return FALLBACK_NATIONAL_AVG, True
 
 
 # Cache for weighted age-band averages
@@ -365,7 +394,7 @@ def get_model_family_year_breakdown(conn, make: str, core_model: str) -> list:
     results = []
     for row in cur.fetchall():
         data = dict_from_row(row)
-        year_avg = yearly_avgs.get(data["model_year"], 71.51)
+        year_avg = get_year_avg_safe(yearly_avgs, data["model_year"])[0]
         data["pass_rate_vs_national"] = round(data["pass_rate"] - year_avg, 2)
         data["national_avg_for_year"] = round(year_avg, 2)
         results.append(data)
@@ -425,7 +454,7 @@ def get_best_models(conn, make: str, limit: int = 15) -> list:
     results = []
     for row in cur.fetchall():
         data = dict_from_row(row)
-        year_avg = yearly_avgs.get(data["model_year"], 71.51)
+        year_avg = get_year_avg_safe(yearly_avgs, data["model_year"])[0]
         data["pass_rate_vs_national"] = round(data["pass_rate"] - year_avg, 2)
         data["national_avg_for_year"] = round(year_avg, 2)
         results.append(data)
@@ -455,7 +484,7 @@ def get_worst_models(conn, make: str, limit: int = 10) -> list:
     results = []
     for row in cur.fetchall():
         data = dict_from_row(row)
-        year_avg = yearly_avgs.get(data["model_year"], 71.51)
+        year_avg = get_year_avg_safe(yearly_avgs, data["model_year"])[0]
         data["pass_rate_vs_national"] = round(data["pass_rate"] - year_avg, 2)
         data["national_avg_for_year"] = round(year_avg, 2)
         results.append(data)
@@ -722,6 +751,15 @@ def get_durability_champions(conn, make: str, limit: int = 15) -> list:
                 "evidence_quality": "high"
             })
 
+    # Deduplicate: keep only the oldest age band (highest band_order) for each model/year/fuel
+    # This shows the most proven durability evidence for each vehicle
+    seen = {}
+    for r in results:
+        key = (r["model"], r["model_year"], r["fuel_type"])
+        if key not in seen or r["age_band_order"] > seen[key]["age_band_order"]:
+            seen[key] = r
+    results = list(seen.values())
+
     # Sort by vs_national_at_age descending (best performers first)
     results.sort(key=lambda x: x["vs_national_at_age"], reverse=True)
     return results[:limit]
@@ -773,6 +811,14 @@ def get_models_to_avoid_proven(conn, make: str, limit: int = 10) -> list:
                 "evidence_quality": "high",
                 "concern": "Below average durability at " + row["age_band"]
             })
+
+    # Deduplicate: keep only the oldest age band (highest band_order) for each model/year/fuel
+    seen = {}
+    for r in results:
+        key = (r["model"], r["model_year"], r["fuel_type"])
+        if key not in seen or r["age_band_order"] > seen[key]["age_band_order"]:
+            seen[key] = r
+    results = list(seen.values())
 
     # Sort by vs_national_at_age ascending (worst performers first)
     results.sort(key=lambda x: x["vs_national_at_age"])

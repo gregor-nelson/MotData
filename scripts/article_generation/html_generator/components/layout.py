@@ -207,8 +207,16 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
   </script>
 
 
-  <!-- Reading Progress Bar Style -->
+  <!-- Reading Progress Bar Style & Mobile Gradient -->
   <style>
+    /* Mobile gradient background - matches tools pages */
+    @media (max-width: 767px) {{
+      body {{
+        background: linear-gradient(180deg, #EFF6FF 0%, #EFF6FF 60%, #FFFFFF 100%);
+        min-height: 100vh;
+      }}
+    }}
+
     #reading-progress {{
       position: fixed;
       top: 0;
@@ -244,10 +252,22 @@ def generate_toc_html(insights: ArticleInsights) -> str:
     - Mobile: Collapsible toggle button
     - Desktop: Sticky sidebar navigation
     - Active section tracking (via JavaScript)
+
+    Only includes sections that have content (via get_available_sections).
     """
-    # Build TOC links
+    # Get sections that have content for this make
+    available_sections = insights.get_available_sections()
+
+    # Build TOC links only for available sections
     toc_links = []
-    for idx, section in enumerate(ARTICLE_SECTIONS, start=1):
+    toc_index = 0
+    for section in ARTICLE_SECTIONS:
+        # Skip sections without content
+        if section.id not in available_sections:
+            continue
+
+        toc_index += 1
+
         # Use make-prefixed ID for competition section
         section_id = section.id
         if section_id == "competition":
@@ -262,13 +282,13 @@ def generate_toc_html(insights: ArticleInsights) -> str:
 
         toc_links.append(f'''          <li class="article-toc-item">
             <a href="#{section_id}" class="toc-link">
-              <span class="toc-link-number">{idx}.</span>
+              <span class="toc-link-number">{toc_index}.</span>
               <span class="toc-link-text">{safe_html(title)}</span>
             </a>
           </li>''')
 
     links_html = "\n".join(toc_links)
-    section_count = len(ARTICLE_SECTIONS)
+    section_count = len(toc_links)
 
     return f'''    <!-- Table of Contents Sidebar -->
     <aside class="article-sidebar">
@@ -388,14 +408,14 @@ def generate_html_body(insights: ArticleInsights, today_display: str) -> str:
     # -------------------------------------------------------------------------
     toc_html = generate_toc_html(insights)
 
-    return f'''<body class="bg-white min-h-screen">
+    return f'''<body class="bg-white md:bg-neutral-50 min-h-screen">
   <!-- Reading Progress Bar -->
   <div id="reading-progress" style="width: 0%"></div>
 
   <!-- Shared Header (injected by articles-loader.js) -->
   <div id="mw-header"></div>
 
-  <main id="main-content" class="max-w-6xl mx-auto px-4 py-8 sm:py-12">
+  <main id="main-content" class="max-w-6xl mx-auto px-4 py-6 sm:py-8 lg:py-12">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-neutral-500 mb-6">
       <a href="/" class="hover:text-blue-600 transition-colors">Home</a>

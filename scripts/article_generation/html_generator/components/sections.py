@@ -255,6 +255,7 @@ def generate_best_models_section(insights: ArticleInsights) -> str:
 {rows_html}
             </tbody>
           </table>
+          <p class="text-xs text-neutral-500 mt-2">* Compared to overall {insights.national_pass_rate:.1f}% national average across all years. For year-adjusted comparisons that account for newer cars passing more often, see individual model breakdowns below.</p>
         </div>{note}
       </section>'''
 
@@ -912,10 +913,11 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
 
     # === Best Nearly New (2019-2023) - using raw pass rates ===
     # Note: These are early performers, caveat included in text
+    # Threshold aligned with PASS_RATE_THRESHOLDS['excellent'] (85%)
     nearly_new_items = []
     seen_models = set()
     for m in insights.get_best_nearly_new(max_age=5, limit=10):
-        if m.model not in seen_models and m.pass_rate >= 88:
+        if m.model not in seen_models and m.pass_rate >= 85:
             seen_models.add(m.model)
             nearly_new_items.append(f'''            <li class="flex items-start gap-2">
               <i class="ph ph-check-circle text-emerald-600 mt-1"></i>

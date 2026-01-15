@@ -753,6 +753,31 @@ class ArticleInsights:
         """Check if we have any proven durability data (11+ years)."""
         return len(self.proven_durability_champions) > 0 or len(self.proven_models_to_avoid) > 0
 
+    def get_available_sections(self) -> set:
+        """Return section IDs that have content to display.
+
+        Used by TOC generation to hide links to empty sections.
+        """
+        # Sections that always have content
+        available = {"competition", "best-models", "fuel-types", "failures", "faqs", "methodology"}
+
+        # Durability section requires proven data (11+ years)
+        if self.has_proven_durability_data():
+            available.add("durability")
+
+        # Early performers section
+        if self.early_performers:
+            available.add("early-performers")
+
+        # Avoid section needs either proven bad durability or worst models
+        if self.proven_models_to_avoid or self.worst_models:
+            available.add("avoid")
+
+        # Recommendations section - always show but content varies
+        available.add("recommendations")
+
+        return available
+
     # =========================================================================
     # Query Methods
     # =========================================================================

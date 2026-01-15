@@ -300,14 +300,13 @@ def get_make_top_defects(conn: Connection, make: str) -> dict:
            FROM top_defects
            WHERE make = ?
            GROUP BY defect_description, category_name, defect_type
-           ORDER BY occurrence_count DESC
-           LIMIT 20""",
+           ORDER BY defect_type, occurrence_count DESC""",
         (make.upper(),)
     )
     rows = cursor.fetchall()
     return {
-        "failures": [r for r in rows if r["defect_type"] == "failure"][:10],
-        "advisories": [r for r in rows if r["defect_type"] == "advisory"][:10]
+        "failures": [r for r in rows if r["defect_type"] == "failure"][:50],
+        "advisories": [r for r in rows if r["defect_type"] == "advisory"][:50]
     }
 
 
@@ -321,7 +320,7 @@ def get_make_dangerous_defects(conn: Connection, make: str) -> list[dict]:
            WHERE make = ?
            GROUP BY defect_description, category_name
            ORDER BY occurrence_count DESC
-           LIMIT 10""",
+           LIMIT 50""",
         (make.upper(),)
     )
     return cursor.fetchall()

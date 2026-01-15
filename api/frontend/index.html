@@ -413,6 +413,19 @@
             margin-bottom: 24px;
         }
 
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .card {
             background: var(--color-card);
             border-radius: var(--radius);
@@ -2441,13 +2454,15 @@
             const ranking = data.ranking;
 
             container.innerHTML = `
-                <div class="report-header" style="margin-bottom: 24px;">
-                    <h2 style="margin-bottom: 8px;">${data.make}</h2>
-                    ${ranking ? `<p style="color: var(--color-text-muted);">Ranked #${ranking.rank} nationally</p>` : ''}
+                <div class="report-header">
+                    <div>
+                        <div class="vehicle-title">${data.make}</div>
+                        ${ranking ? `<div class="vehicle-subtitle">Ranked #${ranking.rank} nationally</div>` : ''}
+                    </div>
                 </div>
 
                 <!-- Summary Stats -->
-                <div class="stats-grid" style="margin-bottom: 32px;">
+                <div class="stats-grid" style="margin-bottom: 24px;">
                     <div class="stat-card">
                         <div class="value" style="color: ${getPassRateColor(summary.pass_rate)}">${summary.pass_rate?.toFixed(1) || 'N/A'}%</div>
                         <div class="label">Overall Pass Rate</div>
@@ -2475,7 +2490,7 @@
                 </div>
 
                 <!-- Best & Worst Models -->
-                <div class="grid-2" style="margin-bottom: 32px;">
+                <div class="grid-2">
                     <div class="card">
                         <div class="card-header"><h4>Best Performing Models</h4></div>
                         <div class="card-body">
@@ -2521,7 +2536,7 @@
                 </div>
 
                 <!-- Failure Categories Chart -->
-                <div class="card" style="margin-bottom: 32px;">
+                <div class="card" style="margin-bottom: 24px;">
                     <div class="card-header"><h4>Top Failure Categories</h4></div>
                     <div class="card-body">
                         <div class="chart-container"><canvas id="makeFailureChart"></canvas></div>
@@ -2529,16 +2544,16 @@
                 </div>
 
                 <!-- Top Failures & Advisories -->
-                <div class="grid-2" style="margin-bottom: 32px;">
+                <div class="grid-2">
                     <div class="card">
-                        <div class="card-header"><h4>Top Failures</h4></div>
-                        <div class="card-body">
+                        <div class="card-header"><h4>Top Failures (${data.top_failures.length})</h4></div>
+                        <div class="card-body" style="max-height: 600px; overflow-y: auto;">
                             ${data.top_failures.length ? `
-                                <ul class="defect-list">
-                                    ${data.top_failures.slice(0, 8).map(d => `
+                                <ul class="data-list">
+                                    ${data.top_failures.slice(0, 50).map(d => `
                                         <li>
-                                            <span class="defect-name">${d.defect_description}</span>
-                                            <span class="defect-count">${d.occurrence_count?.toLocaleString()}</span>
+                                            <span class="name">${d.defect_description}</span>
+                                            <span class="value">${d.occurrence_count?.toLocaleString()}</span>
                                         </li>
                                     `).join('')}
                                 </ul>
@@ -2546,14 +2561,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header"><h4>Top Advisories</h4></div>
-                        <div class="card-body">
+                        <div class="card-header"><h4>Top Advisories (${data.top_advisories.length})</h4></div>
+                        <div class="card-body" style="max-height: 600px; overflow-y: auto;">
                             ${data.top_advisories.length ? `
-                                <ul class="defect-list">
-                                    ${data.top_advisories.slice(0, 8).map(d => `
+                                <ul class="data-list">
+                                    ${data.top_advisories.slice(0, 50).map(d => `
                                         <li>
-                                            <span class="defect-name">${d.defect_description}</span>
-                                            <span class="defect-count">${d.occurrence_count?.toLocaleString()}</span>
+                                            <span class="name">${d.defect_description}</span>
+                                            <span class="value">${d.occurrence_count?.toLocaleString()}</span>
                                         </li>
                                     `).join('')}
                                 </ul>
@@ -2564,14 +2579,14 @@
 
                 <!-- Dangerous Defects -->
                 ${data.dangerous_defects.length ? `
-                    <div class="card" style="margin-bottom: 32px;">
-                        <div class="card-header"><h4 style="color: var(--color-poor);">Dangerous Defects</h4></div>
-                        <div class="card-body">
-                            <ul class="defect-list">
-                                ${data.dangerous_defects.slice(0, 8).map(d => `
+                    <div class="card" style="margin-bottom: 24px;">
+                        <div class="card-header"><h4 style="color: var(--color-poor);">Dangerous Defects (${data.dangerous_defects.length})</h4></div>
+                        <div class="card-body" style="max-height: 600px; overflow-y: auto;">
+                            <ul class="data-list">
+                                ${data.dangerous_defects.slice(0, 50).map(d => `
                                     <li>
-                                        <span class="defect-name">${d.defect_description}</span>
-                                        <span class="defect-count" style="color: var(--color-poor);">${d.occurrence_count?.toLocaleString()}</span>
+                                        <span class="name">${d.defect_description}</span>
+                                        <span class="value" style="color: var(--color-poor);">${d.occurrence_count?.toLocaleString()}</span>
                                     </li>
                                 `).join('')}
                             </ul>

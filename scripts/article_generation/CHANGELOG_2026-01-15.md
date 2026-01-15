@@ -183,3 +183,96 @@ If issues arise, revert these two files:
 2. `main.py` - Restore from git
 
 Delete `logs/` directory if needed.
+
+---
+
+## Audit Fixes (2026-01-15 - Session 2)
+
+Following an independent audit ([AUDIT_REPORT_2026-01-15.md](AUDIT_REPORT_2026-01-15.md)), the following data accuracy issues were addressed:
+
+### 8. Added Fallback Warning for Missing Year Averages (CRITICAL)
+**File:** `json_parser/parser.py`
+
+**Problem:** When a model year was missing from the `national_averages` table, the code silently used 71.51% as fallback, potentially producing incorrect "vs national" comparisons.
+
+**Fix:**
+- Added `logging` import and configured basic logging
+- Added `FALLBACK_NATIONAL_AVG` constant (71.51) to centralize the fallback value
+- Added `get_year_avg_safe()` helper function that:
+  - Returns the year average if available
+  - Logs a warning on first use of fallback for each year
+  - Returns `(average, used_fallback)` tuple for transparency
+- Replaced all 3 instances of `yearly_avgs.get(data["model_year"], 71.51)` with the new helper
+
+**Lines changed:** 16-23 (imports), 131-153 (new function), 397, 457, 487 (usage)
+
+---
+
+### 9. Deduplicated Durability Champion Entries (HIGH)
+**File:** `json_parser/parser.py`
+
+**Problem:** A model/year/fuel combination could appear multiple times in durability tables if it had data at both "11-12 years" AND "13+ years" age bands (e.g., Jazz 2010 Petrol appeared twice).
+
+**Fix:** Added deduplication logic to keep only the oldest age band (highest `band_order`) for each model/year/fuel combination. This shows the most proven durability evidence.
+
+**Functions updated:**
+- `get_durability_champions()` - lines 754-761
+- `get_models_to_avoid_proven()` - lines 815-821
+
+---
+
+### 10. Aligned Recommendation Thresholds (HIGH)
+**File:** `html_generator/components/sections.py`
+
+**Problem:** The "Best Nearly New" recommendations required ≥88% pass rate, while the CSS "excellent" class threshold was 85%. A model with 87% would get green highlighting in tables but not appear in recommendations.
+
+**Fix:** Changed recommendation threshold from `>= 88` to `>= 85` to align with `PASS_RATE_THRESHOLDS['excellent']`.
+
+**Line changed:** 919
+
+---
+
+### 11. Added Baseline Comparison Footnote (HIGH)
+**File:** `html_generator/components/sections.py`
+
+**Problem:** The "Best Models" section compares against overall national average (71.5%), while year breakdown sections use year-adjusted averages. Both are valid but could confuse readers.
+
+**Fix:** Added explanatory footnote below the Best Models table:
+> "* Compared to overall {national}% national average across all years. For year-adjusted comparisons that account for newer cars passing more often, see individual model breakdowns below."
+
+**Line changed:** 258
+
+---
+
+### 12. Made TOC Dynamic Based on Available Content (HIGH)
+**Files:** `html_generator/components/data_classes.py`, `html_generator/components/layout.py`
+
+**Problem:** The Table of Contents was static - it always showed "Proven Durability Champions" even for makes like Tesla, Polestar, and Dacia that have no 11+ year vehicles. This resulted in broken anchor links.
+
+**Fix:**
+1. Added `get_available_sections()` method to `ArticleInsights` class that returns section IDs with content
+2. Updated `generate_toc_html()` to:
+   - Skip sections without content
+   - Renumber TOC entries correctly
+   - Update section count to reflect actual displayed sections
+
+**Lines changed:**
+- `data_classes.py`: 756-779 (new method)
+- `layout.py`: 248-283 (updated TOC generation)
+
+---
+
+## Files Modified (Session 2)
+
+| File | Changes |
+|------|---------|
+| `json_parser/parser.py` | Added logging, fallback warning helper, deduplication logic |
+| `html_generator/components/sections.py` | Aligned threshold (85%), added footnote |
+| `html_generator/components/data_classes.py` | Added `get_available_sections()` method |
+| `html_generator/components/layout.py` | Dynamic TOC generation |
+
+---
+
+## Verification
+
+The critical issue (silent fallback) was verified as **not currently active** - the database has complete national averages for all years 2000-2023, matching the vehicle data range. The warning will catch any future data mismatches when new years are added.
