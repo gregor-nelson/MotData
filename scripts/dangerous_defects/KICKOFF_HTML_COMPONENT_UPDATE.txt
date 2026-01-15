@@ -1,0 +1,42 @@
+KICKOFF: HTML Generator Component Update Review
+
+CONTEXT:
+The dangerous defects insights generator (generate_dangerous_defects_insights.py) was updated to fix survivorship bias in SQL queries. The JSON output structure may have subtle changes that could affect the HTML generator components.
+
+TASK:
+Review the changes documented in CHANGELOG_2026-01-03.md and verify that all HTML generator components in the components/ folder correctly handle the updated JSON data.
+
+FILES TO REVIEW:
+
+1. Reference documentation:
+   scripts/dangerous_defects/CHANGELOG_2026-01-03.md
+
+2. Data parser (handles JSON parsing):
+   scripts/dangerous_defects/components/data_parser.py
+
+3. Updated JSON output:
+   scripts/dangerous_defects/dangerous_defects_insights.json
+
+4. Original JSON (for comparison):
+   scripts/dangerous_defects/dangerous_defects_insights_BEFORE.json
+
+SPECIFIC CONCERNS:
+
+1. The by_model_year data in vehicle deep dives now aggregates across fuel types (was split before causing duplicates). Check if data_parser.py or section_deep_dives.py needs adjustment.
+
+2. Vehicle variant counts now include fuel_type in the count. Verify any display logic handles this.
+
+3. Some test counts slightly increased (e.g., diesel: 136,598,392 -> 136,598,497). Ensure no hardcoded values exist.
+
+4. Vehicles with zero dangerous defects could now appear in safest lists (currently none meet thresholds, but future-proof the display logic).
+
+COMMANDS TO RUN:
+
+# Regenerate insights
+python scripts/dangerous_defects/generate_dangerous_defects_insights.py
+
+# Regenerate HTML
+python scripts/dangerous_defects/generate_dangerous_defects_html.py
+
+# Compare JSON structure
+python -c "import json; b=json.load(open('scripts/dangerous_defects/dangerous_defects_insights_BEFORE.json')); a=json.load(open('scripts/dangerous_defects/dangerous_defects_insights.json')); print('Keys match:', b.keys() == a.keys())"

@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Data files (large source CSVs)
+data/source/
+data/generated/
+
+# Database files (too large for remote)
+data/database/*.db
+
+# Logs
+logs/
+*.log
+
+# Backups
+backups/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude configuration
+.claude/
+
+# Environment variables / secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js (if frontend uses it)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated articles (optional - uncomment if you want to ignore)
+# articles/

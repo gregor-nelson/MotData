@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOT Insights</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color-good: #10b981;
+            --color-average: #f59e0b;
+            --color-poor: #ef4444;
+            --color-primary: #1e3a5f;
+            --color-primary-light: #2d5a8a;
+            --color-bg: #f8fafc;
+            --color-card: #ffffff;
+            --color-text: #1e293b;
+            --color-text-muted: #64748b;
+            --color-border: #e2e8f0;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --radius: 12px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            padding: 24px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .header-left p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .stat-pill {
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .stat-pill strong {
+            font-weight: 600;
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-badge.connected {
+            background: rgba(16, 185, 129, 0.2);
+            color: #6ee7b7;
+        }
+
+        .status-badge.disconnected {
+            background: rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-tab {
+            padding: 12px 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            position: relative;
+            transition: color 0.2s;
+        }
+
+        .nav-tab:hover {
+            color: var(--color-text);
+        }
+
+        .nav-tab.active {
+            color: var(--color-primary);
+        }
+
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--color-primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Section Headers */
+        .section-header {
+            margin-bottom: 20px;
+        }
+
+        .section-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 4px;
+        }
+
+        .section-header p {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Quick Select */
+        .quick-select {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .quick-btn {
+            padding: 8px 16px;
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--color-text);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-btn:hover {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+
+        /* Form Elements */
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            margin-bottom: 6px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: var(--color-card);
+            color: var(--color-text);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+        }
+
+        select:disabled {
+            background: var(--color-bg);
+            color: var(--color-text-muted);
+            cursor: not-allowed;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--color-primary-light);
+        }
+
+        .btn:disabled {
+            background: var(--color-border);
+            color: var(--color-text-muted);
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: var(--color-card);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-bg);
+        }
+
+        .btn-sm {
+            padding: 6px 12px;
+            font-size: 0.85rem;
+        }
+
+        /* Vehicle Report */
+        .vehicle-report {
+            display: none;
+        }
+
+        .vehicle-report.active {
+            display: block;
+        }
+
+        .report-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .vehicle-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .vehicle-subtitle {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        /* Pass Rate Hero */
+        .pass-rate-hero {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            background: var(--color-card);
+            padding: 24px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 24px;
+        }
+
+        .pass-rate-circle {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            flex-shrink: 0;
+        }
+
+        .pass-rate-circle svg {
+            transform: rotate(-90deg);
+        }
+
+        .pass-rate-circle .bg {
+            stroke: var(--color-bg);
+        }
+
+        .pass-rate-circle .progress {
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.5s ease;
+        }
+
+        .pass-rate-value {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .pass-rate-value .number {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .pass-rate-value .label {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pass-rate-details {
+            flex: 1;
+        }
+
+        .pass-rate-details h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .detail-item .label {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .detail-item .value {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .vs-national {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .vs-national.positive {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--color-good);
+        }
+
+        .vs-national.negative {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--color-poor);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: var(--color-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body.compact {
+            padding: 16px;
+        }
+
+        /* Rankings */
+        .ranking-badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .ranking-badge {
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+            padding: 16px;
+            background: var(--color-bg);
+            border-radius: 8px;
+        }
+
+        .ranking-badge .rank {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .ranking-badge .context {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            margin-top: 4px;
+        }
+
+        .ranking-badge .percentile {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 2px 8px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        /* Chart Container */
+        .chart-container {
+            position: relative;
+            height: 200px;
+        }
+
+        .chart-container.tall {
+            height: 300px;
+        }
+
+        /* Data List */
+        .data-list {
+            list-style: none;
+        }
+
+        .data-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .data-list li:last-child {
+            border-bottom: none;
+        }
+
+        .data-list .name {
+            font-size: 0.9rem;
+            flex: 1;
+            padding-right: 12px;
+        }
+
+        .data-list .value {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Stat Row */
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-row .label {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+
+        .stat-row .value {
+            font-weight: 600;
+        }
+
+        /* Mini Stats Grid */
+        .mini-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .mini-stat {
+            text-align: center;
+            padding: 16px;
+            background: var(--color-bg);
+            border-radius: 8px;
+        }
+
+        .mini-stat .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .mini-stat .label {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            margin-top: 4px;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            margin: 32px 0 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .section-divider h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .section-divider p {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-top: 4px;
+        }
+
+        /* Manufacturer Grid */
+        .manufacturer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .manufacturer-card {
+            background: var(--color-card);
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.2s;
+        }
+
+        .manufacturer-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .manufacturer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .manufacturer-rank {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .manufacturer-rank strong {
+            font-size: 1.25rem;
+            color: var(--color-primary);
+        }
+
+        .manufacturer-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .manufacturer-pass-rate {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .manufacturer-pass-rate.good { color: var(--color-good); }
+        .manufacturer-pass-rate.average { color: var(--color-average); }
+        .manufacturer-pass-rate.poor { color: var(--color-poor); }
+
+        .manufacturer-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .manufacturer-stat {
+            font-size: 0.8rem;
+        }
+
+        .manufacturer-stat .label {
+            color: var(--color-text-muted);
+        }
+
+        .manufacturer-stat .value {
+            font-weight: 500;
+        }
+
+        /* National Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .stat-card {
+            background: var(--color-card);
+            border-radius: var(--radius);
+            padding: 24px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-card .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-top: 4px;
+        }
+
+        /* Table Explorer */
+        .table-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .table-btn {
+            padding: 12px 16px;
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+        }
+
+        .table-btn:hover {
+            border-color: var(--color-primary);
+            background: rgba(30, 58, 95, 0.05);
+        }
+
+        .table-btn.active {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+
+        .table-btn .name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .table-btn .desc {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 2px;
+        }
+
+        /* Loading & Error States */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--color-text-muted);
+        }
+
+        .loading::before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 16px;
+            border: 3px solid var(--color-border);
+            border-top-color: var(--color-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            background: #fef2f2;
+            color: #dc2626;
+            padding: 16px 20px;
+            border-radius: 8px;
+            border: 1px solid #fecaca;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--color-text-muted);
+        }
+
+        .empty-state h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--color-text);
+        }
+
+        /* Collapsible JSON */
+        .json-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            background: var(--color-bg);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            width: 100%;
+            text-align: left;
+            margin-top: 24px;
+        }
+
+        .json-toggle:hover {
+            background: var(--color-border);
+        }
+
+        .json-toggle .arrow {
+            transition: transform 0.2s;
+        }
+
+        .json-toggle.open .arrow {
+            transform: rotate(90deg);
+        }
+
+        .json-content {
+            display: none;
+            margin-top: 12px;
+        }
+
+        .json-content.open {
+            display: block;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .json-key { color: #7dd3fc; }
+        .json-string { color: #86efac; }
+        .json-number { color: #fcd34d; }
+        .json-boolean { color: #f472b6; }
+        .json-null { color: #9ca3af; }
+
+        /* Geographic Table */
+        .geo-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        .geo-table th, .geo-table td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .geo-table th {
+            font-weight: 600;
+            color: var(--color-text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .geo-table tr:hover {
+            background: var(--color-bg);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--color-card);
+            border-radius: var(--radius);
+            max-width: 700px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            background: var(--color-card);
+            z-index: 1;
+        }
+
+        .modal-header h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--color-text-muted);
+            padding: 4px 8px;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--color-text);
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .modal-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .modal-stat {
+            text-align: center;
+            padding: 16px;
+            background: var(--color-bg);
+            border-radius: 8px;
+        }
+
+        .modal-stat .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .modal-stat .label {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            margin-top: 4px;
+        }
+
+        .model-list {
+            list-style: none;
+        }
+
+        .model-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: var(--color-bg);
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .model-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .model-list .model-name {
+            font-weight: 500;
+        }
+
+        .model-list .model-stats {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .model-list .pass-rate {
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .header-right {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .pass-rate-hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>MOT Insights</h1>
+            <p>UK Vehicle Test Analytics</p>
+        </div>
+        <div class="header-right">
+            <div id="statVehicles" class="stat-pill"><strong>--</strong> vehicles</div>
+            <div id="statBrands" class="stat-pill"><strong>--</strong> brands</div>
+            <div id="statNational" class="stat-pill"><strong>--</strong> national avg</div>
+            <div id="apiStatus" class="status-badge">
+                <span class="status-dot"></span>
+                <span>Checking...</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="vehicle">Vehicle Lookup</button>
+            <button class="nav-tab" data-tab="tables">Data Explorer</button>
+            <button class="nav-tab" data-tab="manufacturers">Brand Rankings</button>
+            <button class="nav-tab" data-tab="national">National Stats</button>
+        </div>
+
+        <!-- Vehicle Lookup Tab -->
+        <div id="vehicle" class="tab-content active">
+            <div class="section-header">
+                <h2>Find a Vehicle</h2>
+                <p>Select a make, model, and variant to view detailed MOT insights</p>
+            </div>
+
+            <div class="quick-select">
+                <span style="color: var(--color-text-muted); font-size: 0.85rem; margin-right: 8px;">Popular:</span>
+                <button class="quick-btn" onclick="loadQuickVehicle('FORD', 'FOCUS', 2018, 'PE')">Ford Focus 2018</button>
+                <button class="quick-btn" onclick="loadQuickVehicle('VAUXHALL', 'CORSA', 2015, 'PE')">Vauxhall Corsa 2015</button>
+                <button class="quick-btn" onclick="loadQuickVehicle('VOLKSWAGEN', 'GOLF', 2017, 'DI')">VW Golf Diesel</button>
+                <button class="quick-btn" onclick="loadQuickVehicle('BMW', '3 SERIES', 2018, 'DI')">BMW 3 Series</button>
+                <button class="quick-btn" onclick="loadQuickVehicle('TESLA', 'MODEL 3', 2020, 'EL')">Tesla Model 3</button>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="make">Make</label>
+                    <select id="make" onchange="loadModels()">
+                        <option value="">Loading...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="model">Model</label>
+                    <select id="model" onchange="loadVariants()" disabled>
+                        <option value="">Select make first</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="variant">Year / Fuel</label>
+                    <select id="variant" disabled>
+                        <option value="">Select model first</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <button id="loadVehicle" class="btn" onclick="loadVehicleReport()" disabled>View Report</button>
+                </div>
+            </div>
+
+            <div id="vehicleResults">
+                <div class="empty-state">
+                    <h3>Select a vehicle to get started</h3>
+                    <p>Choose from the dropdowns above or click a popular vehicle</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Explorer Tab -->
+        <div id="tables" class="tab-content">
+            <div class="section-header">
+                <h2>Data Explorer</h2>
+                <p>Browse individual data tables for the selected vehicle</p>
+            </div>
+
+            <div id="tableVehicleInfo" style="margin-bottom: 20px; padding: 16px; background: var(--color-card); border-radius: 8px; display: none;">
+                <strong id="tableVehicleName">No vehicle selected</strong>
+                <span style="color: var(--color-text-muted); margin-left: 8px;">Select a vehicle in the Vehicle Lookup tab first</span>
+            </div>
+
+            <div class="table-grid">
+                <button class="table-btn" onclick="loadTableData('insights')" id="btn-insights">
+                    <div class="name">Vehicle Insights</div>
+                    <div class="desc">Core statistics</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('failures')" id="btn-failures">
+                    <div class="name">Failure Categories</div>
+                    <div class="desc">Top 10 categories</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('defects')" id="btn-defects">
+                    <div class="name">Top Defects</div>
+                    <div class="desc">Failures & advisories</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('dangerous')" id="btn-dangerous">
+                    <div class="name">Dangerous Defects</div>
+                    <div class="desc">Safety-critical issues</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('mileage')" id="btn-mileage">
+                    <div class="name">Mileage Bands</div>
+                    <div class="desc">Pass rate by miles</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('rankings')" id="btn-rankings">
+                    <div class="name">Rankings</div>
+                    <div class="desc">Comparative position</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('geographic')" id="btn-geographic">
+                    <div class="name">Geographic</div>
+                    <div class="desc">By postcode area</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('seasonal')" id="btn-seasonal">
+                    <div class="name">Seasonal</div>
+                    <div class="desc">Monthly patterns</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('age')" id="btn-age">
+                    <div class="name">Age Bands</div>
+                    <div class="desc">Pass rate by age</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('severity')" id="btn-severity">
+                    <div class="name">Severity</div>
+                    <div class="desc">Major vs dangerous</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('first-mot')" id="btn-first-mot">
+                    <div class="name">First MOT</div>
+                    <div class="desc">First vs subsequent</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('retest')" id="btn-retest">
+                    <div class="name">Retest</div>
+                    <div class="desc">Retest success rates</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('advisory-progression')" id="btn-advisory-progression">
+                    <div class="name">Advisory Progression</div>
+                    <div class="desc">Advisory to failure</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('component-thresholds')" id="btn-component-thresholds">
+                    <div class="name">Component Thresholds</div>
+                    <div class="desc">Failure by mileage</div>
+                </button>
+                <button class="table-btn" onclick="loadTableData('defect-locations')" id="btn-defect-locations">
+                    <div class="name">Defect Locations</div>
+                    <div class="desc">Physical position</div>
+                </button>
+            </div>
+
+            <div id="tableResults">
+                <div class="empty-state">
+                    <h3>Select a data table above</h3>
+                    <p>Choose a vehicle first, then explore individual data endpoints</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manufacturers Tab -->
+        <div id="manufacturers" class="tab-content">
+            <div class="section-header">
+                <h2>Brand Rankings</h2>
+                <p>All 86 manufacturers ranked by weighted pass rate</p>
+            </div>
+
+            <div style="margin-bottom: 24px;">
+                <button class="btn" onclick="loadManufacturers()">Load All Brands</button>
+            </div>
+
+            <div id="manufacturerResults">
+                <div class="empty-state">
+                    <h3>Click above to load brand rankings</h3>
+                    <p>See how different manufacturers compare on MOT reliability</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- National Stats Tab -->
+        <div id="national" class="tab-content">
+            <div class="section-header">
+                <h2>National Statistics</h2>
+                <p>Benchmark data across all UK MOT tests</p>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                <button class="btn" onclick="loadNationalAverages()">Load Averages</button>
+                <button class="btn btn-secondary" onclick="loadNationalSeasonal()">Monthly Trends</button>
+            </div>
+
+            <div id="nationalResults">
+                <div class="empty-state">
+                    <h3>Load national statistics</h3>
+                    <p>View benchmark data and seasonal patterns</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manufacturer Detail Modal -->
+    <div id="manufacturerModal" class="modal-overlay" onclick="closeManufacturerModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modalManufacturerName">Manufacturer</h3>
+                <button class="modal-close" onclick="closeManufacturerModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalManufacturerContent">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8010/api';
+
+        // State
+        let currentMake = '';
+        let currentModel = '';
+        let currentYear = null;
+        let currentFuel = '';
+        let charts = {};
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            checkApiHealth();
+            loadStats();
+            loadMakes();
+            setupTabs();
+        });
+
+        // Tab navigation
+        function setupTabs() {
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+        }
+
+        // API Health Check
+        async function checkApiHealth() {
+            const statusBadge = document.getElementById('apiStatus');
+            try {
+                const res = await fetch(`${API_BASE}/health`);
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    statusBadge.className = 'status-badge connected';
+                    statusBadge.innerHTML = '<span class="status-dot"></span><span>Connected</span>';
+                } else {
+                    throw new Error(data.database);
+                }
+            } catch (e) {
+                statusBadge.className = 'status-badge disconnected';
+                statusBadge.innerHTML = '<span class="status-dot"></span><span>Disconnected</span>';
+            }
+        }
+
+        // Load stats for header
+        async function loadStats() {
+            try {
+                const res = await fetch(`${API_BASE}/stats`);
+                const stats = await res.json();
+
+                // Update vehicles count
+                const vehicleCount = stats.vehicle_insights || 0;
+                document.getElementById('statVehicles').innerHTML =
+                    `<strong>${vehicleCount.toLocaleString()}</strong> vehicles`;
+
+                // Update brands count
+                const brandCount = stats.manufacturer_rankings || 0;
+                document.getElementById('statBrands').innerHTML =
+                    `<strong>${brandCount}</strong> brands`;
+
+                // Load national average for the third pill
+                const natRes = await fetch(`${API_BASE}/national/averages`);
+                const natData = await natRes.json();
+                const avgPassRate = natData.find(d => d.metric_name === 'pass_rate' && !d.model_year && !d.fuel_type);
+                if (avgPassRate) {
+                    document.getElementById('statNational').innerHTML =
+                        `<strong>${avgPassRate.metric_value.toFixed(1)}%</strong> national avg`;
+                }
+            } catch (e) {
+                console.error('Failed to load stats:', e);
+            }
+        }
+
+        // Load makes dropdown
+        async function loadMakes() {
+            const select = document.getElementById('make');
+            try {
+                const res = await fetch(`${API_BASE}/makes`);
+                const makes = await res.json();
+                select.innerHTML = '<option value="">Select make...</option>' +
+                    makes.map(m => `<option value="${m}">${m}</option>`).join('');
+            } catch (e) {
+                select.innerHTML = '<option value="">Error loading</option>';
+            }
+        }
+
+        // Load models for selected make
+        async function loadModels() {
+            const make = document.getElementById('make').value;
+            const modelSelect = document.getElementById('model');
+            const variantSelect = document.getElementById('variant');
+            const loadBtn = document.getElementById('loadVehicle');
+
+            currentMake = make;
+            currentModel = '';
+            currentYear = null;
+            currentFuel = '';
+            updateTableVehicleInfo();
+
+            if (!make) {
+                modelSelect.innerHTML = '<option value="">Select make first</option>';
+                modelSelect.disabled = true;
+                variantSelect.innerHTML = '<option value="">Select model first</option>';
+                variantSelect.disabled = true;
+                loadBtn.disabled = true;
+                return;
+            }
+
+            modelSelect.innerHTML = '<option value="">Loading...</option>';
+            modelSelect.disabled = true;
+
+            try {
+                const res = await fetch(`${API_BASE}/makes/${encodeURIComponent(make)}/models`);
+                const models = await res.json();
+                modelSelect.innerHTML = '<option value="">Select model...</option>' +
+                    models.map(m => `<option value="${m}">${m}</option>`).join('');
+                modelSelect.disabled = false;
+            } catch (e) {
+                modelSelect.innerHTML = '<option value="">Error loading</option>';
+            }
+
+            variantSelect.innerHTML = '<option value="">Select model first</option>';
+            variantSelect.disabled = true;
+            loadBtn.disabled = true;
+        }
+
+        // Load variants for selected model
+        async function loadVariants() {
+            const make = document.getElementById('make').value;
+            const model = document.getElementById('model').value;
+            const variantSelect = document.getElementById('variant');
+            const loadBtn = document.getElementById('loadVehicle');
+
+            currentModel = model;
+            currentYear = null;
+            currentFuel = '';
+            updateTableVehicleInfo();
+
+            if (!model) {
+                variantSelect.innerHTML = '<option value="">Select model first</option>';
+                variantSelect.disabled = true;
+                loadBtn.disabled = true;
+                return;
+            }
+
+            variantSelect.innerHTML = '<option value="">Loading...</option>';
+            variantSelect.disabled = true;
+
+            try {
+                const res = await fetch(`${API_BASE}/makes/${encodeURIComponent(make)}/models/${encodeURIComponent(model)}/variants`);
+                const variants = await res.json();
+                variantSelect.innerHTML = '<option value="">Select year/fuel...</option>' +
+                    variants.map(v =>
+                        `<option value="${v.model_year}|${v.fuel_type}">${v.model_year} ${v.fuel_type_name} (${v.total_tests.toLocaleString()} tests)</option>`
+                    ).join('');
+                variantSelect.disabled = false;
+                variantSelect.onchange = () => {
+                    const val = variantSelect.value;
+                    if (val) {
+                        const [year, fuel] = val.split('|');
+                        currentYear = parseInt(year);
+                        currentFuel = fuel;
+                        loadBtn.disabled = false;
+                        updateTableVehicleInfo();
+                    } else {
+                        loadBtn.disabled = true;
+                    }
+                };
+            } catch (e) {
+                variantSelect.innerHTML = '<option value="">Error loading</option>';
+            }
+
+            loadBtn.disabled = true;
+        }
+
+        // Update table explorer vehicle info
+        function updateTableVehicleInfo() {
+            const info = document.getElementById('tableVehicleInfo');
+            const name = document.getElementById('tableVehicleName');
+            if (currentMake && currentModel && currentYear && currentFuel) {
+                info.style.display = 'block';
+                name.textContent = `${currentMake} ${currentModel} ${currentYear} (${getFuelName(currentFuel)})`;
+                info.querySelector('span').textContent = '';
+            } else {
+                info.style.display = 'block';
+                name.textContent = 'No vehicle selected';
+                info.querySelector('span').textContent = 'Select a vehicle in the Vehicle Lookup tab first';
+            }
+        }
+
+        function getFuelName(code) {
+            const names = { PE: 'Petrol', DI: 'Diesel', HY: 'Hybrid', EL: 'Electric', ED: 'Plug-in Hybrid', GB: 'Gas', OT: 'Other' };
+            return names[code] || code;
+        }
+
+        // Quick vehicle loader
+        async function loadQuickVehicle(make, model, year, fuel) {
+            document.getElementById('make').value = make;
+            await loadModels();
+            document.getElementById('model').value = model;
+            await loadVariants();
+            document.getElementById('variant').value = `${year}|${fuel}`;
+            document.getElementById('loadVehicle').disabled = false;
+
+            currentMake = make;
+            currentModel = model;
+            currentYear = year;
+            currentFuel = fuel;
+            updateTableVehicleInfo();
+
+            loadVehicleReport();
+        }
+
+        // Load full vehicle report
+        async function loadVehicleReport() {
+            const resultsDiv = document.getElementById('vehicleResults');
+            resultsDiv.innerHTML = '<div class="loading">Loading vehicle report...</div>';
+
+            try {
+                // Load main vehicle data
+                const res = await fetch(`${API_BASE}/vehicle/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`);
+                if (!res.ok) throw new Error(`Vehicle not found`);
+                const data = await res.json();
+
+                // Load additional data in parallel
+                const [geoRes, seasonalRes, ageRes, severityRes, firstMotRes, retestRes, advisoryProgRes, componentThreshRes, defectLocRes] = await Promise.all([
+                    fetch(`${API_BASE}/geographic/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/seasonal/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/age/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/severity/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/first-mot/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/retest/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/advisory-progression/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/component-thresholds/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null),
+                    fetch(`${API_BASE}/defect-locations/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`).catch(() => null)
+                ]);
+
+                const additionalData = {
+                    geographic: geoRes?.ok ? await geoRes.json() : null,
+                    seasonal: seasonalRes?.ok ? await seasonalRes.json() : null,
+                    age: ageRes?.ok ? await ageRes.json() : null,
+                    severity: severityRes?.ok ? await severityRes.json() : null,
+                    firstMot: firstMotRes?.ok ? await firstMotRes.json() : null,
+                    retest: retestRes?.ok ? await retestRes.json() : null,
+                    advisoryProgression: advisoryProgRes?.ok ? await advisoryProgRes.json() : null,
+                    componentThresholds: componentThreshRes?.ok ? await componentThreshRes.json() : null,
+                    defectLocations: defectLocRes?.ok ? await defectLocRes.json() : null
+                };
+
+                renderVehicleReport(data, additionalData, resultsDiv);
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error-message">Error: ${e.message}</div>`;
+            }
+        }
+
+        // Get pass rate color
+        function getPassRateColor(rate) {
+            if (rate >= 80) return 'var(--color-good)';
+            if (rate >= 65) return 'var(--color-average)';
+            return 'var(--color-poor)';
+        }
+
+        function getPassRateClass(rate) {
+            if (rate >= 80) return 'good';
+            if (rate >= 65) return 'average';
+            return 'poor';
+        }
+
+        // Render vehicle report
+        function renderVehicleReport(data, additionalData, container) {
+            const passRate = data.insights?.pass_rate || 0;
+            const vsNational = data.insights?.pass_rate_vs_national || 0;
+            const circumference = 2 * Math.PI * 54;
+            const progress = circumference - (passRate / 100) * circumference;
+
+            container.innerHTML = `
+                <div class="vehicle-report active">
+                    <div class="report-header">
+                        <div>
+                            <div class="vehicle-title">${data.vehicle.make} ${data.vehicle.model}</div>
+                            <div class="vehicle-subtitle">${data.vehicle.model_year} &bull; ${data.vehicle.fuel_type_name} &bull; ${(data.insights?.total_tests || 0).toLocaleString()} tests analysed</div>
+                        </div>
+                    </div>
+
+                    <div class="pass-rate-hero">
+                        <div class="pass-rate-circle">
+                            <svg width="140" height="140">
+                                <circle class="bg" cx="70" cy="70" r="54" fill="none" stroke-width="12"/>
+                                <circle class="progress" cx="70" cy="70" r="54" fill="none" stroke-width="12"
+                                    stroke="${getPassRateColor(passRate)}"
+                                    stroke-dasharray="${circumference}"
+                                    stroke-dashoffset="${progress}"/>
+                            </svg>
+                            <div class="pass-rate-value">
+                                <div class="number" style="color: ${getPassRateColor(passRate)}">${passRate.toFixed(1)}%</div>
+                                <div class="label">Pass Rate</div>
+                            </div>
+                        </div>
+                        <div class="pass-rate-details">
+                            <h3>Test Statistics</h3>
+                            <div class="detail-grid">
+                                <div class="detail-item">
+                                    <span class="label">vs National Average</span>
+                                    <span class="vs-national ${vsNational >= 0 ? 'positive' : 'negative'}">
+                                        ${vsNational >= 0 ? '+' : ''}${vsNational.toFixed(1)}%
+                                    </span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Average Mileage</span>
+                                    <span class="value">${Math.round(data.insights?.avg_mileage || 0).toLocaleString()} mi</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Total Passes</span>
+                                    <span class="value">${(data.insights?.total_passes || 0).toLocaleString()}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Total Failures</span>
+                                    <span class="value">${(data.insights?.total_fails || 0).toLocaleString()}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="card-header"><h4>Rankings</h4></div>
+                            <div class="card-body">
+                                <div class="ranking-badges">
+                                    ${Object.entries(data.rankings || {}).map(([type, r]) => `
+                                        <div class="ranking-badge">
+                                            <div class="rank">#${r.rank}</div>
+                                            <div class="context">of ${r.total_in_category} ${formatRankingType(type)}</div>
+                                            <div class="percentile">Top ${r.percentile}%</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header"><h4>Mileage Impact</h4></div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="mileageChart"></canvas></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header"><h4>Top Failure Categories</h4></div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="failureChart"></canvas></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header"><h4>Common Defects</h4></div>
+                            <div class="card-body compact">
+                                <ul class="data-list">
+                                    ${(data.top_failures || []).slice(0, 5).map(d => `
+                                        <li>
+                                            <span class="name">${truncate(d.defect_description, 40)}</span>
+                                            <span class="value">${d.occurrence_percentage.toFixed(1)}%</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        </div>
+
+                        ${(data.dangerous_defects || []).length > 0 ? `
+                        <div class="card">
+                            <div class="card-header"><h4 style="color: var(--color-poor);">Dangerous Defects</h4></div>
+                            <div class="card-body compact">
+                                <ul class="data-list">
+                                    ${(data.dangerous_defects || []).slice(0, 5).map(d => `
+                                        <li>
+                                            <span class="name">${truncate(d.defect_description, 40)}</span>
+                                            <span class="value" style="color: var(--color-poor);">${d.occurrence_percentage.toFixed(2)}%</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        ${additionalData.severity ? `
+                        <div class="card">
+                            <div class="card-header"><h4>Failure Severity</h4></div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="severityChart"></canvas></div>
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        ${additionalData.firstMot && additionalData.firstMot.length > 0 ? `
+                        <div class="card">
+                            <div class="card-header"><h4>First MOT vs Subsequent</h4></div>
+                            <div class="card-body">
+                                <div class="mini-stats">
+                                    ${additionalData.firstMot.map(m => `
+                                        <div class="mini-stat">
+                                            <div class="value" style="color: ${getPassRateColor(m.pass_rate)}">${m.pass_rate.toFixed(1)}%</div>
+                                            <div class="label">${m.mot_type === 'first' ? 'First MOT' : 'Subsequent'}</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        ${additionalData.retest ? `
+                        <div class="card">
+                            <div class="card-header"><h4>Retest Statistics</h4></div>
+                            <div class="card-body compact">
+                                <div class="stat-row"><span class="label">Failed Tests</span><span class="value">${additionalData.retest.failed_tests?.toLocaleString() || 'N/A'}</span></div>
+                                <div class="stat-row"><span class="label">Retested Within 30 Days</span><span class="value">${additionalData.retest.retest_rate?.toFixed(1) || 'N/A'}%</span></div>
+                                <div class="stat-row"><span class="label">Passed on Retest</span><span class="value">${additionalData.retest.retest_success_rate?.toFixed(1) || 'N/A'}%</span></div>
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        ${additionalData.advisoryProgression && additionalData.advisoryProgression.length > 0 ? `
+                        <div class="card">
+                            <div class="card-header"><h4>Advisory to Failure Risk</h4></div>
+                            <div class="card-body compact">
+                                <ul class="data-list">
+                                    ${additionalData.advisoryProgression.slice(0, 5).map(a => `
+                                        <li>
+                                            <span class="name">${truncate(a.advisory_text || a.defect_description || 'Unknown', 35)}</span>
+                                            <span class="value" style="color: ${a.progression_rate > 20 ? 'var(--color-poor)' : a.progression_rate > 10 ? 'var(--color-average)' : 'var(--color-good)'}">
+                                                ${a.progression_rate?.toFixed(1) || '0'}%
+                                            </span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                                <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 12px;">
+                                    Shows how often advisories become failures on subsequent tests
+                                </p>
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        ${additionalData.componentThresholds && additionalData.componentThresholds.length > 0 ? `
+                        <div class="card">
+                            <div class="card-header"><h4>Component Failure Mileage</h4></div>
+                            <div class="card-body compact">
+                                <ul class="data-list">
+                                    ${additionalData.componentThresholds.slice(0, 5).map(c => `
+                                        <li>
+                                            <span class="name">${truncate(c.component || c.category_name || 'Unknown', 25)}</span>
+                                            <span class="value">${c.avg_failure_mileage ? Math.round(c.avg_failure_mileage).toLocaleString() + ' mi' : c.threshold_mileage ? Math.round(c.threshold_mileage).toLocaleString() + ' mi' : 'N/A'}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                                <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 12px;">
+                                    Average mileage when components typically fail
+                                </p>
+                            </div>
+                        </div>
+                        ` : ''}
+
+                        ${additionalData.defectLocations && additionalData.defectLocations.length > 0 ? `
+                        <div class="card">
+                            <div class="card-header"><h4>Defect Locations</h4></div>
+                            <div class="card-body">
+                                <div class="chart-container"><canvas id="defectLocationChart"></canvas></div>
+                            </div>
+                        </div>
+                        ` : ''}
+                    </div>
+
+                    ${additionalData.seasonal && additionalData.seasonal.length > 0 ? `
+                    <div class="section-divider">
+                        <h3>Seasonal Patterns</h3>
+                        <p>Monthly pass rate variation for this vehicle</p>
+                    </div>
+                    <div class="card" style="margin-bottom: 24px;">
+                        <div class="card-body">
+                            <div class="chart-container tall"><canvas id="seasonalChart"></canvas></div>
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    ${additionalData.age && additionalData.age.length > 0 ? `
+                    <div class="section-divider">
+                        <h3>Age Impact</h3>
+                        <p>How pass rate changes as the vehicle ages</p>
+                    </div>
+                    <div class="card" style="margin-bottom: 24px;">
+                        <div class="card-body">
+                            <div class="chart-container tall"><canvas id="ageChart"></canvas></div>
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    ${additionalData.geographic && additionalData.geographic.length > 0 ? `
+                    <div class="section-divider">
+                        <h3>Geographic Variation</h3>
+                        <p>Pass rates by UK postcode area (top 10 shown)</p>
+                    </div>
+                    <div class="card" style="margin-bottom: 24px;">
+                        <div class="card-body compact">
+                            <table class="geo-table">
+                                <thead>
+                                    <tr><th>Postcode</th><th>Pass Rate</th><th>Tests</th></tr>
+                                </thead>
+                                <tbody>
+                                    ${additionalData.geographic.slice(0, 10).map(g => `
+                                        <tr>
+                                            <td><strong>${g.postcode_area}</strong></td>
+                                            <td style="color: ${getPassRateColor(g.pass_rate)}">${g.pass_rate.toFixed(1)}%</td>
+                                            <td>${g.total_tests.toLocaleString()}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    <button class="json-toggle" onclick="toggleJson(this)">
+                        <span class="arrow">&#9654;</span>
+                        <span>View raw JSON data</span>
+                    </button>
+                    <div class="json-content">
+                        <pre>${syntaxHighlight(JSON.stringify({...data, ...additionalData}, null, 2))}</pre>
+                    </div>
+                </div>
+            `;
+
+            // Render charts after DOM update
+            setTimeout(() => {
+                renderMileageChart(data.mileage_bands || []);
+                renderFailureChart(data.failure_categories || []);
+                if (additionalData.severity) renderSeverityChart(additionalData.severity);
+                if (additionalData.seasonal) renderSeasonalChart(additionalData.seasonal);
+                if (additionalData.age) renderAgeChart(additionalData.age);
+                if (additionalData.defectLocations) renderDefectLocationChart(additionalData.defectLocations);
+            }, 0);
+        }
+
+        function formatRankingType(type) {
+            const labels = { 'overall': 'overall', 'within_make': 'in brand', 'within_year': 'in year' };
+            return labels[type] || type;
+        }
+
+        function truncate(str, len) {
+            return str && str.length > len ? str.substring(0, len) + '...' : str || '';
+        }
+
+        // Chart rendering functions
+        function destroyChart(id) {
+            if (charts[id]) {
+                charts[id].destroy();
+                delete charts[id];
+            }
+        }
+
+        function renderMileageChart(bands) {
+            const ctx = document.getElementById('mileageChart');
+            if (!ctx || !bands.length) return;
+            destroyChart('mileage');
+
+            charts.mileage = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: bands.map(b => b.mileage_band),
+                    datasets: [{
+                        label: 'Pass Rate',
+                        data: bands.map(b => b.pass_rate),
+                        borderColor: '#1e3a5f',
+                        backgroundColor: 'rgba(30, 58, 95, 0.1)',
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#1e3a5f'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: Math.max(0, Math.min(...bands.map(b => b.pass_rate)) - 10),
+                            max: 100,
+                            ticks: { callback: v => v + '%' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderFailureChart(categories) {
+            const ctx = document.getElementById('failureChart');
+            if (!ctx || !categories.length) return;
+            destroyChart('failure');
+
+            const top5 = categories.slice(0, 5);
+            charts.failure = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: top5.map(c => truncate(c.category_name, 20)),
+                    datasets: [{ data: top5.map(c => c.failure_percentage), backgroundColor: '#1e3a5f', borderRadius: 4 }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: { legend: { display: false } },
+                    scales: { x: { ticks: { callback: v => v + '%' } } }
+                }
+            });
+        }
+
+        function renderSeverityChart(severity) {
+            const ctx = document.getElementById('severityChart');
+            if (!ctx || !severity.length) return;
+            destroyChart('severity');
+
+            const colors = { minor: '#10b981', major: '#f59e0b', dangerous: '#ef4444' };
+            charts.severity = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: severity.map(s => s.severity.charAt(0).toUpperCase() + s.severity.slice(1)),
+                    datasets: [{
+                        data: severity.map(s => s.failure_percentage),
+                        backgroundColor: severity.map(s => colors[s.severity] || '#64748b')
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom' } }
+                }
+            });
+        }
+
+        function renderSeasonalChart(seasonal) {
+            const ctx = document.getElementById('seasonalChart');
+            if (!ctx || !seasonal.length) return;
+            destroyChart('seasonal');
+
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            charts.seasonal = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: seasonal.map(s => months[s.month - 1]),
+                    datasets: [{
+                        label: 'Pass Rate',
+                        data: seasonal.map(s => s.pass_rate),
+                        backgroundColor: seasonal.map(s => getPassRateColor(s.pass_rate)),
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: Math.min(...seasonal.map(s => s.pass_rate)) - 5,
+                            max: Math.max(...seasonal.map(s => s.pass_rate)) + 5,
+                            ticks: { callback: v => v + '%' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderAgeChart(age) {
+            const ctx = document.getElementById('ageChart');
+            if (!ctx || !age.length) return;
+            destroyChart('age');
+
+            charts.age = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: age.map(a => a.age_band),
+                    datasets: [{
+                        label: 'Pass Rate',
+                        data: age.map(a => a.pass_rate),
+                        borderColor: '#1e3a5f',
+                        backgroundColor: 'rgba(30, 58, 95, 0.1)',
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#1e3a5f'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: Math.max(0, Math.min(...age.map(a => a.pass_rate)) - 10),
+                            max: 100,
+                            ticks: { callback: v => v + '%' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderDefectLocationChart(locations) {
+            const ctx = document.getElementById('defectLocationChart');
+            if (!ctx || !locations.length) return;
+            destroyChart('defectLocation');
+
+            const colors = ['#1e3a5f', '#2d5a8a', '#3d7ab5', '#5d9ad5', '#7dbaf5', '#9dd0ff'];
+            charts.defectLocation = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: locations.map(l => l.location || l.defect_location || 'Unknown'),
+                    datasets: [{
+                        data: locations.map(l => l.percentage || l.occurrence_count || l.count || 0),
+                        backgroundColor: colors.slice(0, locations.length)
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right', labels: { boxWidth: 12, font: { size: 11 } } }
+                    }
+                }
+            });
+        }
+
+        // Toggle JSON visibility
+        function toggleJson(btn) {
+            btn.classList.toggle('open');
+            btn.nextElementSibling.classList.toggle('open');
+        }
+
+        // Table Explorer
+        async function loadTableData(tableId) {
+            if (!currentMake || !currentModel || !currentYear || !currentFuel) {
+                document.getElementById('tableResults').innerHTML =
+                    '<div class="error-message">Please select a vehicle in the Vehicle Lookup tab first</div>';
+                return;
+            }
+
+            // Highlight active button
+            document.querySelectorAll('.table-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(`btn-${tableId}`).classList.add('active');
+
+            const endpoint = `/${tableId}/${encodeURIComponent(currentMake)}/${encodeURIComponent(currentModel)}/${currentYear}/${currentFuel}`;
+            const resultsDiv = document.getElementById('tableResults');
+
+            resultsDiv.innerHTML = '<div class="loading">Loading...</div>';
+
+            try {
+                const res = await fetch(`${API_BASE}${endpoint}`);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const data = await res.json();
+                resultsDiv.innerHTML = `
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>${tableId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</h4>
+                            <code style="font-size: 0.75rem; color: var(--color-text-muted);">GET ${endpoint}</code>
+                        </div>
+                        <div class="card-body">
+                            <pre>${syntaxHighlight(JSON.stringify(data, null, 2))}</pre>
+                        </div>
+                    </div>
+                `;
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error-message">Error: ${e.message}</div>`;
+            }
+        }
+
+        // Load manufacturers
+        async function loadManufacturers() {
+            const resultsDiv = document.getElementById('manufacturerResults');
+            resultsDiv.innerHTML = '<div class="loading">Loading manufacturers...</div>';
+
+            try {
+                const res = await fetch(`${API_BASE}/manufacturers`);
+                const data = await res.json();
+                renderManufacturers(data, resultsDiv);
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error-message">Error: ${e.message}</div>`;
+            }
+        }
+
+        function renderManufacturers(data, container) {
+            container.innerHTML = `
+                <div class="manufacturer-grid">
+                    ${data.map(m => `
+                        <div class="manufacturer-card" style="cursor: pointer;" onclick="loadManufacturerDetail('${m.make.replace(/'/g, "\\'")}')">
+                            <div class="manufacturer-header">
+                                <div>
+                                    <div class="manufacturer-rank"><strong>#${m.rank}</strong></div>
+                                    <div class="manufacturer-name">${m.make}</div>
+                                </div>
+                                <div class="manufacturer-pass-rate ${getPassRateClass(m.weighted_pass_rate)}">
+                                    ${m.weighted_pass_rate.toFixed(1)}%
+                                </div>
+                            </div>
+                            <div class="manufacturer-stats">
+                                <div class="manufacturer-stat"><span class="label">Tests</span><span class="value">${m.total_tests.toLocaleString()}</span></div>
+                                <div class="manufacturer-stat"><span class="label">Models</span><span class="value">${m.total_models}</span></div>
+                                <div class="manufacturer-stat"><span class="label">Best</span><span class="value">${m.best_model || 'N/A'}</span></div>
+                                <div class="manufacturer-stat"><span class="label">Worst</span><span class="value">${m.worst_model || 'N/A'}</span></div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Load national averages
+        async function loadNationalAverages() {
+            const resultsDiv = document.getElementById('nationalResults');
+            resultsDiv.innerHTML = '<div class="loading">Loading statistics...</div>';
+
+            try {
+                const res = await fetch(`${API_BASE}/national/averages`);
+                const data = await res.json();
+                renderNationalAverages(data, resultsDiv);
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error-message">Error: ${e.message}</div>`;
+            }
+        }
+
+        function renderNationalAverages(data, container) {
+            const keyMetrics = data.filter(d => !d.model_year && !d.fuel_type).slice(0, 6);
+
+            container.innerHTML = `
+                <div class="stats-grid">
+                    ${keyMetrics.map(m => `
+                        <div class="stat-card">
+                            <div class="value">${formatMetricValue(m.metric_value, m.metric_name)}</div>
+                            <div class="label">${formatMetricName(m.metric_name)}</div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <button class="json-toggle" onclick="toggleJson(this)" style="margin-top: 24px;">
+                    <span class="arrow">&#9654;</span>
+                    <span>View all metrics</span>
+                </button>
+                <div class="json-content">
+                    <pre>${syntaxHighlight(JSON.stringify(data, null, 2))}</pre>
+                </div>
+            `;
+        }
+
+        function formatMetricValue(value, name) {
+            if (name.includes('rate') || name.includes('percentage')) return value.toFixed(1) + '%';
+            if (value > 1000000) return (value / 1000000).toFixed(1) + 'M';
+            if (value > 1000) return (value / 1000).toFixed(1) + 'K';
+            return value.toFixed(1);
+        }
+
+        function formatMetricName(name) {
+            return name.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        }
+
+        // Load national seasonal
+        async function loadNationalSeasonal() {
+            const resultsDiv = document.getElementById('nationalResults');
+            resultsDiv.innerHTML = '<div class="loading">Loading seasonal data...</div>';
+
+            try {
+                const res = await fetch(`${API_BASE}/national/seasonal`);
+                const data = await res.json();
+                renderNationalSeasonal(data, resultsDiv);
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error-message">Error: ${e.message}</div>`;
+            }
+        }
+
+        function renderNationalSeasonal(data, container) {
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+            container.innerHTML = `
+                <div class="card" style="max-width: 800px;">
+                    <div class="card-header"><h4>Monthly Pass Rates</h4></div>
+                    <div class="card-body">
+                        <div class="chart-container tall"><canvas id="nationalSeasonalChart"></canvas></div>
+                    </div>
+                </div>
+            `;
+
+            setTimeout(() => {
+                const ctx = document.getElementById('nationalSeasonalChart');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.map(d => months[d.month - 1]),
+                        datasets: [{
+                            label: 'Pass Rate',
+                            data: data.map(d => d.pass_rate),
+                            backgroundColor: data.map(d => getPassRateColor(d.pass_rate)),
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                min: Math.min(...data.map(d => d.pass_rate)) - 2,
+                                max: Math.max(...data.map(d => d.pass_rate)) + 2,
+                                ticks: { callback: v => v + '%' }
+                            }
+                        }
+                    }
+                });
+            }, 0);
+        }
+
+        // JSON syntax highlighting
+        function syntaxHighlight(json) {
+            return json
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?)/g, match => {
+                    let cls = 'json-string';
+                    if (/:$/.test(match)) cls = 'json-key';
+                    return `<span class="${cls}">${match}</span>`;
+                })
+                .replace(/\b(true|false)\b/g, '<span class="json-boolean">$1</span>')
+                .replace(/\bnull\b/g, '<span class="json-null">null</span>')
+                .replace(/\b(-?\d+\.?\d*)\b/g, '<span class="json-number">$1</span>');
+        }
+    </script>
+</body>
+</html>
