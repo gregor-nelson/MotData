@@ -1,0 +1,5007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAUXHALL MOT Reliability Report | MOT Insights</title>
+    <meta name="description" content="Comprehensive MOT reliability analysis for VAUXHALL vehicles based on 3,025,537 real test results.">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color-good: #10b981;
+            --color-average: #f59e0b;
+            --color-poor: #ef4444;
+            --color-primary: #1e3a5f;
+            --color-primary-light: #2d5a8a;
+            --color-bg: #f8fafc;
+            --color-card: #ffffff;
+            --color-text: #1e293b;
+            --color-text-muted: #64748b;
+            --color-border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            padding: 32px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        header .subtitle {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        header .meta {
+            margin-top: 16px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: var(--color-card);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .stat-card .value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: var(--color-card);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+
+        .card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .card-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        th {
+            background: var(--color-bg);
+            font-weight: 600;
+            color: var(--color-text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge.good {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge.average {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge.poor {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .bar-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .bar-label {
+            width: 200px;
+            font-size: 0.85rem;
+            color: var(--color-text);
+            flex-shrink: 0;
+        }
+
+        .bar-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .bar {
+            height: 24px;
+            background: var(--color-primary);
+            border-radius: 4px;
+            min-width: 4px;
+        }
+
+        .bar-value {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            min-width: 60px;
+        }
+
+        .defect-list {
+            list-style: none;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .defect-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        .defect-list li:last-child {
+            border-bottom: none;
+        }
+
+        .defect-name {
+            flex: 1;
+            padding-right: 16px;
+        }
+
+        .defect-count {
+            font-weight: 600;
+            color: var(--color-text-muted);
+        }
+
+        .defect-count.dangerous {
+            color: var(--color-poor);
+        }
+
+        .dangerous-title {
+            color: var(--color-poor);
+        }
+
+        .all-models-table {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px;
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .bar-label {
+                width: 120px;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VAUXHALL MOT Reliability Report</h1>
+        <div class="subtitle">Comprehensive analysis based on 3,025,537 real MOT tests</div>
+        <div class="meta">Ranked #59 nationally</div>
+        <div class="meta">Updated 15 Jan 2026</div>
+    </header>
+
+    <div class="container">
+        <!-- Summary Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="value" style="color: #f59e0b">65.4%</div>
+                <div class="label">Overall Pass Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">3,025,537</div>
+                <div class="label">Total Tests</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">134</div>
+                <div class="label">Models</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">521</div>
+                <div class="label">Variants</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">71,765</div>
+                <div class="label">Avg Mileage</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">9.3</div>
+                <div class="label">Avg Age (Years)</div>
+            </div>
+        </div>
+
+        <!-- Best & Worst Models -->
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header"><h3>Best Performing Models</h3></div>
+                <div class="card-body">
+                    <table>
+                        <thead><tr><th>Model</th><th>Year</th><th>Fuel</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                        <tbody>
+                <tr>
+                    <td>ASTRA ELITE NAV PREMIUM T</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">96.2%</span></td>
+                    <td>106</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND SRI NAV TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">95.3%</span></td>
+                    <td>106</td>
+                </tr>
+                <tr>
+                    <td>MOKKA X GRIFFIN TURBO AUTO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">94.6%</span></td>
+                    <td>129</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV T D A</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">94.5%</span></td>
+                    <td>127</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X SPORT</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">93.5%</span></td>
+                    <td>108</td>
+                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h3>Worst Performing Models</h3></div>
+                <div class="card-body">
+                    <table>
+                        <thead><tr><th>Model</th><th>Year</th><th>Fuel</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                        <tbody>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">42.6%</span></td>
+                    <td>183</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">44.6%</span></td>
+                    <td>574</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">45.0%</span></td>
+                    <td>2,820</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.0%</span></td>
+                    <td>371</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.4%</span></td>
+                    <td>11,218</td>
+                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Failure Categories -->
+        <div class="card">
+            <div class="card-header"><h3>Top Failure Categories</h3></div>
+            <div class="card-body">
+            <div class="bar-row">
+                <div class="bar-label">Lamps, reflectors and electric</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100.0%"></div>
+                    <span class="bar-value">402,541</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Suspension</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 95.77384663922433%"></div>
+                    <span class="bar-value">385,529</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Brakes</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 62.43115608099548%"></div>
+                    <span class="bar-value">251,311</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Tyres</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 52.74170829803673%"></div>
+                    <span class="bar-value">212,307</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Visibility</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 48.37668709522757%"></div>
+                    <span class="bar-value">194,736</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Noise, emissions and leaks</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 34.960165548354084%"></div>
+                    <span class="bar-value">140,729</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Body, chassis, structure</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 29.61735574761329%"></div>
+                    <span class="bar-value">119,222</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Steering</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 19.5791236172216%"></div>
+                    <span class="bar-value">78,814</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Seat belts and supplementary r</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 5.910702263868774%"></div>
+                    <span class="bar-value">23,793</span>
+                </div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">Identification of the vehicle</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 2.5368844415848324%"></div>
+                    <span class="bar-value">10,212</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Top Failures & Advisories -->
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header"><h3>Top Failures (50)</h3></div>
+                <div class="card-body">
+                    <ul class="defect-list">
+            <li>
+                <span class="defect-name">fractured or broken</span>
+                <span class="defect-count">185,176</span>
+            </li>
+            <li>
+                <span class="defect-name">not working</span>
+                <span class="defect-count">145,160</span>
+            </li>
+            <li>
+                <span class="defect-name">tread depth below requirements of 1.6mm</span>
+                <span class="defect-count">75,365</span>
+            </li>
+            <li>
+                <span class="defect-name">less than 1.5 mm thick</span>
+                <span class="defect-count">57,643</span>
+            </li>
+            <li>
+                <span class="defect-name">inoperative or indicates a malfunction</span>
+                <span class="defect-count">55,892</span>
+            </li>
+            <li>
+                <span class="defect-name">does not clear the windscreen effectively </span>
+                <span class="defect-count">55,686</span>
+            </li>
+            <li>
+                <span class="defect-name">provides insufficient washer liquid</span>
+                <span class="defect-count">50,611</span>
+            </li>
+            <li>
+                <span class="defect-name">not working on dipped beam</span>
+                <span class="defect-count">46,525</span>
+            </li>
+            <li>
+                <span class="defect-name">has a major leak of exhaust gases</span>
+                <span class="defect-count">30,666</span>
+            </li>
+            <li>
+                <span class="defect-name">efficiency below requirements</span>
+                <span class="defect-count">26,400</span>
+            </li>
+            <li>
+                <span class="defect-name">projected beam image is obviously incorrect</span>
+                <span class="defect-count">26,365</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint has excessive play </span>
+                <span class="defect-count">25,205</span>
+            </li>
+            <li>
+                <span class="defect-name">inoperative in the case of a single lamp or all lamps</span>
+                <span class="defect-count">24,836</span>
+            </li>
+            <li>
+                <span class="defect-name">has a serious fluid leak </span>
+                <span class="defect-count">24,489</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint excessively worn</span>
+                <span class="defect-count">19,120</span>
+            </li>
+            <li>
+                <span class="defect-name">excessively corroded</span>
+                <span class="defect-count">18,001</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint dust cover excessively damaged or deteriorated so that it no longer prevents the ingress of dirt</span>
+                <span class="defect-count">17,623</span>
+            </li>
+            <li>
+                <span class="defect-name">constant velocity boot split or insecure, no longer prevents the ingress of dirt</span>
+                <span class="defect-count">17,525</span>
+            </li>
+            <li>
+                <span class="defect-name">has ply or cords exposed</span>
+                <span class="defect-count">16,444</span>
+            </li>
+            <li>
+                <span class="defect-name">has a cut in excess of the requirements deep enough to reach the ply or cords</span>
+                <span class="defect-count">13,625</span>
+            </li>
+            <li>
+                <span class="defect-name">not working</span>
+                <span class="defect-count">13,517</span>
+            </li>
+            <li>
+                <span class="defect-name">pin or bush excessively worn</span>
+                <span class="defect-count">13,317</span>
+            </li>
+            <li>
+                <span class="defect-name">malfunctioning or obviously inoperative</span>
+                <span class="defect-count">11,726</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint dust cover no longer prevents the ingress of dirt</span>
+                <span class="defect-count">10,671</span>
+            </li>
+            <li>
+                <span class="defect-name">too low</span>
+                <span class="defect-count">5,290</span>
+            </li>
+            <li>
+                <span class="defect-name">inoperative on one side</span>
+                <span class="defect-count">5,178</span>
+            </li>
+            <li>
+                <span class="defect-name">incorrect colour</span>
+                <span class="defect-count">5,008</span>
+            </li>
+            <li>
+                <span class="defect-name">Lambda reading after 2nd fast idle outside specified limits</span>
+                <span class="defect-count">3,835</span>
+            </li>
+            <li>
+                <span class="defect-name">too high</span>
+                <span class="defect-count">3,414</span>
+            </li>
+            <li>
+                <span class="defect-name">across an axle by more than 50%</span>
+                <span class="defect-count">2,689</span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h3>Top Advisories (50)</h3></div>
+                <div class="card-body">
+                    <ul class="defect-list">
+            <li>
+                <span class="defect-name">worn close to legal limit/worn on edge</span>
+                <span class="defect-count">526,752</span>
+            </li>
+            <li>
+                <span class="defect-name">slightly damaged/cracking or perishing</span>
+                <span class="defect-count">329,393</span>
+            </li>
+            <li>
+                <span class="defect-name">worn, pitted or scored, but not seriously weakened</span>
+                <span class="defect-count">292,395</span>
+            </li>
+            <li>
+                <span class="defect-name">leak, but not excessive</span>
+                <span class="defect-count">280,396</span>
+            </li>
+            <li>
+                <span class="defect-name">wearing thin</span>
+                <span class="defect-count">239,621</span>
+            </li>
+            <li>
+                <span class="defect-name">corroded, covered in grease or other material</span>
+                <span class="defect-count">116,860</span>
+            </li>
+            <li>
+                <span class="defect-name">has a minor leak of exhaust gases</span>
+                <span class="defect-count">116,668</span>
+            </li>
+            <li>
+                <span class="defect-name">corroded </span>
+                <span class="defect-count">112,698</span>
+            </li>
+            <li>
+                <span class="defect-name">has light misting of oil</span>
+                <span class="defect-count">101,623</span>
+            </li>
+            <li>
+                <span class="defect-name">pin or bush worn but not resulting in excessive movement</span>
+                <span class="defect-count">72,535</span>
+            </li>
+            <li>
+                <span class="defect-name">deteriorated but not likely to be misread</span>
+                <span class="defect-count">51,190</span>
+            </li>
+            <li>
+                <span class="defect-name">corroded but not seriously weakened</span>
+                <span class="defect-count">44,283</span>
+            </li>
+            <li>
+                <span class="defect-name">Play in steering rack inner joint(s)</span>
+                <span class="defect-count">41,235</span>
+            </li>
+            <li>
+                <span class="defect-name">worn, but not excessively</span>
+                <span class="defect-count">40,441</span>
+            </li>
+            <li>
+                <span class="defect-name">Child Seat fitted not allowing full inspection of adult belt</span>
+                <span class="defect-count">30,166</span>
+            </li>
+            <li>
+                <span class="defect-name">Nail in tyre</span>
+                <span class="defect-count">29,281</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint has slight play</span>
+                <span class="defect-count">10,748</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint has slight play</span>
+                <span class="defect-count">10,091</span>
+            </li>
+            <li>
+                <span class="defect-name">slightly discoloured</span>
+                <span class="defect-count">9,729</span>
+            </li>
+            <li>
+                <span class="defect-name">has a cut but not deep enough to reach the ply or cords</span>
+                <span class="defect-count">7,548</span>
+            </li>
+            <li>
+                <span class="defect-name">has slight corrosion to ferrule</span>
+                <span class="defect-count">5,365</span>
+            </li>
+            <li>
+                <span class="defect-name">mounting defective</span>
+                <span class="defect-count">5,070</span>
+            </li>
+            <li>
+                <span class="defect-name">swivel pin and/or bush slightly worn</span>
+                <span class="defect-count">4,666</span>
+            </li>
+            <li>
+                <span class="defect-name">has a product on the lens but not seriously reducing light output</span>
+                <span class="defect-count">2,241</span>
+            </li>
+            <li>
+                <span class="defect-name">binding but not excessively</span>
+                <span class="defect-count">1,483</span>
+            </li>
+            <li>
+                <span class="defect-name">Items removed from driver's view prior to test</span>
+                <span class="defect-count">1,319</span>
+            </li>
+            <li>
+                <span class="defect-name">slightly damaged</span>
+                <span class="defect-count">1,028</span>
+            </li>
+            <li>
+                <span class="defect-name">slightly distorted</span>
+                <span class="defect-count">485</span>
+            </li>
+            <li>
+                <span class="defect-name">prescribed area is corroded but not considered excessive</span>
+                <span class="defect-count">467</span>
+            </li>
+            <li>
+                <span class="defect-name">webbing slightly damaged or frayed</span>
+                <span class="defect-count">220</span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dangerous Defects -->
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="dangerous-title">Dangerous Defects (50)</h3>
+            </div>
+            <div class="card-body">
+                <ul class="defect-list">
+            <li>
+                <span class="defect-name">tread depth below requirements of 1.6mm</span>
+                <span class="defect-count dangerous">551,199</span>
+            </li>
+            <li>
+                <span class="defect-name">has a tear, caused by separation or partial failure of its structure</span>
+                <span class="defect-count dangerous">346,527</span>
+            </li>
+            <li>
+                <span class="defect-name">less than 1.5 mm thick</span>
+                <span class="defect-count dangerous">317,281</span>
+            </li>
+            <li>
+                <span class="defect-name">in such a condition that it is seriously weakened</span>
+                <span class="defect-count dangerous">301,206</span>
+            </li>
+            <li>
+                <span class="defect-name">tread pattern not visible over the whole tread area when minimum depth required is 1.0mm </span>
+                <span class="defect-count dangerous">79,876</span>
+            </li>
+            <li>
+                <span class="defect-name">has ply or cords exposed</span>
+                <span class="defect-count dangerous">41,795</span>
+            </li>
+            <li>
+                <span class="defect-name">has a bulge, caused by separation or partial failure of its structure</span>
+                <span class="defect-count dangerous">27,450</span>
+            </li>
+            <li>
+                <span class="defect-name">efficiency less than 50% of the required value</span>
+                <span class="defect-count dangerous">10,133</span>
+            </li>
+            <li>
+                <span class="defect-name">webbing significantly weakened</span>
+                <span class="defect-count dangerous">9,924</span>
+            </li>
+            <li>
+                <span class="defect-name">across an axle by more than 50%</span>
+                <span class="defect-count dangerous">8,541</span>
+            </li>
+            <li>
+                <span class="defect-name">has no recorded effort at a wheel</span>
+                <span class="defect-count dangerous">3,900</span>
+            </li>
+            <li>
+                <span class="defect-name">has a lump, caused by separation or partial failure of its structure</span>
+                <span class="defect-count dangerous">2,804</span>
+            </li>
+            <li>
+                <span class="defect-name">leaking on a hydraulic braking system </span>
+                <span class="defect-count dangerous">1,910</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint worn to the extent there is a serious risk of detachment </span>
+                <span class="defect-count dangerous">1,731</span>
+            </li>
+            <li>
+                <span class="defect-name">emits excessive smoke or vapour likely to obscure the vision of other road users</span>
+                <span class="defect-count dangerous">1,158</span>
+            </li>
+            <li>
+                <span class="defect-name">all not working</span>
+                <span class="defect-count dangerous">629</span>
+            </li>
+            <li>
+                <span class="defect-name">fractured</span>
+                <span class="defect-count dangerous">497</span>
+            </li>
+            <li>
+                <span class="defect-name">ball joint likely to become detached</span>
+                <span class="defect-count dangerous">474</span>
+            </li>
+            <li>
+                <span class="defect-name">less than 1.5 mm thick </span>
+                <span class="defect-count dangerous">449</span>
+            </li>
+            <li>
+                <span class="defect-name">seized and ABS not fitted or inoperative</span>
+                <span class="defect-count dangerous">246</span>
+            </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- All Models Table -->
+        <div class="card">
+            <div class="card-header"><h3>All Models (521)</h3></div>
+            <div class="card-body all-models-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Year</th>
+                            <th>Fuel</th>
+                            <th>Pass Rate</th>
+                            <th>Tests</th>
+                            <th>Avg Mileage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>ASTRA ELITE NAV PREMIUM T</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">96.2%</span></td>
+                    <td>106</td>
+                    <td>20,998</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND SRI NAV TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">95.3%</span></td>
+                    <td>106</td>
+                    <td>22,618</td>
+                </tr>
+                <tr>
+                    <td>MOKKA X GRIFFIN TURBO AUTO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">94.6%</span></td>
+                    <td>129</td>
+                    <td>20,807</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV T D A</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">94.5%</span></td>
+                    <td>127</td>
+                    <td>29,108</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X SPORT</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">93.5%</span></td>
+                    <td>108</td>
+                    <td>23,185</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">93.3%</span></td>
+                    <td>239</td>
+                    <td>17,834</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE TURBO AUTO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">93.3%</span></td>
+                    <td>164</td>
+                    <td>25,101</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE PREMIUM TURBO A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">93.2%</span></td>
+                    <td>191</td>
+                    <td>20,759</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">93.2%</span></td>
+                    <td>410</td>
+                    <td>19,546</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI PREMIUM TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">93.1%</span></td>
+                    <td>216</td>
+                    <td>17,644</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND ELITE NAV TURBO AUTO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">92.8%</span></td>
+                    <td>125</td>
+                    <td>15,107</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">91.5%</span></td>
+                    <td>304</td>
+                    <td>23,259</td>
+                </tr>
+                <tr>
+                    <td>VIVARO LIFE EDITION TURBO D SS</td>
+                    <td>2021</td>
+                    <td>DI</td>
+                    <td><span class="badge good">91.3%</span></td>
+                    <td>104</td>
+                    <td>29,567</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">91.1%</span></td>
+                    <td>1,565</td>
+                    <td>19,807</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X BUSINESS ED NAV T</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">91.1%</span></td>
+                    <td>448</td>
+                    <td>24,759</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X GRIFFIN TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">90.8%</span></td>
+                    <td>163</td>
+                    <td>28,868</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.8%</span></td>
+                    <td>238</td>
+                    <td>28,397</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.3%</span></td>
+                    <td>2,457</td>
+                    <td>20,310</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X BUSINSS ED NAV T A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.2%</span></td>
+                    <td>297</td>
+                    <td>17,475</td>
+                </tr>
+                <tr>
+                    <td>ASTRA SRI TURBO CVT</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.2%</span></td>
+                    <td>174</td>
+                    <td>17,336</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV PREMIUM TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.2%</span></td>
+                    <td>337</td>
+                    <td>16,945</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND ELITE NAV TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.2%</span></td>
+                    <td>102</td>
+                    <td>22,899</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO A</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.0%</span></td>
+                    <td>251</td>
+                    <td>23,648</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X BUSINSS ED NAV T A</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.0%</span></td>
+                    <td>110</td>
+                    <td>22,687</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X ELITE NAV TURBO A</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">90.0%</span></td>
+                    <td>378</td>
+                    <td>16,733</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE PREMIUM</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">89.7%</span></td>
+                    <td>428</td>
+                    <td>17,488</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV PREMIUM TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">89.7%</span></td>
+                    <td>116</td>
+                    <td>28,306</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">89.5%</span></td>
+                    <td>4,445</td>
+                    <td>21,957</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X GRIFFIN TURBO AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">89.4%</span></td>
+                    <td>473</td>
+                    <td>18,076</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X GRIFFIN TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">89.4%</span></td>
+                    <td>653</td>
+                    <td>27,700</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO D</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">89.4%</span></td>
+                    <td>113</td>
+                    <td>33,969</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE TURBO AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">89.2%</span></td>
+                    <td>195</td>
+                    <td>19,875</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X BUSINSS ED NAV T D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">89.1%</span></td>
+                    <td>613</td>
+                    <td>27,829</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X SPORT TURBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">89.0%</span></td>
+                    <td>146</td>
+                    <td>25,947</td>
+                </tr>
+                <tr>
+                    <td>ASTRA ELITE NAV TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">88.8%</span></td>
+                    <td>125</td>
+                    <td>29,136</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X BUSINESS ED NAV T</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.8%</span></td>
+                    <td>945</td>
+                    <td>21,686</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X ELITE TURBO AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.7%</span></td>
+                    <td>923</td>
+                    <td>17,058</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV TURBO A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.7%</span></td>
+                    <td>1,553</td>
+                    <td>19,615</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE TURBO D</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">88.7%</span></td>
+                    <td>142</td>
+                    <td>32,583</td>
+                </tr>
+                <tr>
+                    <td>VXR8</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.7%</span></td>
+                    <td>204</td>
+                    <td>68,053</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X SPORT TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.7%</span></td>
+                    <td>159</td>
+                    <td>25,661</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE PREMIUM TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.7%</span></td>
+                    <td>1,304</td>
+                    <td>18,529</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE PREMIUM TURBO AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.6%</span></td>
+                    <td>940</td>
+                    <td>17,813</td>
+                </tr>
+                <tr>
+                    <td>VIVA</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.6%</span></td>
+                    <td>4,134</td>
+                    <td>19,480</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV PREMIUM TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.3%</span></td>
+                    <td>163</td>
+                    <td>20,142</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.3%</span></td>
+                    <td>13,598</td>
+                    <td>25,681</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE PREMIUM</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.3%</span></td>
+                    <td>5,011</td>
+                    <td>20,813</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.3%</span></td>
+                    <td>1,598</td>
+                    <td>22,209</td>
+                </tr>
+                <tr>
+                    <td>ASTRA SRI NAV TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">88.3%</span></td>
+                    <td>111</td>
+                    <td>28,111</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.3%</span></td>
+                    <td>14,926</td>
+                    <td>28,443</td>
+                </tr>
+                <tr>
+                    <td>COMBO LIFE ELITE S/S AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.3%</span></td>
+                    <td>179</td>
+                    <td>15,132</td>
+                </tr>
+                <tr>
+                    <td>VIVA</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.2%</span></td>
+                    <td>5,485</td>
+                    <td>24,600</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X ELITE NAV TURBO A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.2%</span></td>
+                    <td>3,129</td>
+                    <td>16,014</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X BUSINESS ED NAV T</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.2%</span></td>
+                    <td>414</td>
+                    <td>25,988</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV PREMIUM</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">88.1%</span></td>
+                    <td>632</td>
+                    <td>19,044</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">88.1%</span></td>
+                    <td>369</td>
+                    <td>29,607</td>
+                </tr>
+                <tr>
+                    <td>CORSA E SE NAV</td>
+                    <td>2020</td>
+                    <td>EL</td>
+                    <td><span class="badge good">88.0%</span></td>
+                    <td>716</td>
+                    <td>17,929</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.9%</span></td>
+                    <td>1,401</td>
+                    <td>21,096</td>
+                </tr>
+                <tr>
+                    <td>ASTRA SRI VX LINE NAV TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">87.9%</span></td>
+                    <td>273</td>
+                    <td>25,033</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV PREM T A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.6%</span></td>
+                    <td>210</td>
+                    <td>17,497</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">87.5%</span></td>
+                    <td>688</td>
+                    <td>30,287</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO D A</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">87.5%</span></td>
+                    <td>176</td>
+                    <td>30,503</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI TURBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.4%</span></td>
+                    <td>207</td>
+                    <td>30,560</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X GRIFFIN TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.4%</span></td>
+                    <td>2,179</td>
+                    <td>23,572</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV TURBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.3%</span></td>
+                    <td>670</td>
+                    <td>31,541</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.3%</span></td>
+                    <td>740</td>
+                    <td>28,340</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI NAV PREMIUM TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.2%</span></td>
+                    <td>1,681</td>
+                    <td>22,564</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X BUSINESS ED NAV T</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.1%</span></td>
+                    <td>412</td>
+                    <td>26,587</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">87.1%</span></td>
+                    <td>1,814</td>
+                    <td>25,147</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">87.0%</span></td>
+                    <td>146</td>
+                    <td>27,080</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.8%</span></td>
+                    <td>152</td>
+                    <td>29,308</td>
+                </tr>
+                <tr>
+                    <td>CORSA E ELITE NAV</td>
+                    <td>2020</td>
+                    <td>EL</td>
+                    <td><span class="badge good">86.8%</span></td>
+                    <td>2,035</td>
+                    <td>19,198</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SRI NAV TURBO</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.8%</span></td>
+                    <td>227</td>
+                    <td>29,194</td>
+                </tr>
+                <tr>
+                    <td>CORSA ULTIMATE NAV TURBO AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.7%</span></td>
+                    <td>805</td>
+                    <td>13,582</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE TURBO AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.7%</span></td>
+                    <td>397</td>
+                    <td>16,440</td>
+                </tr>
+                <tr>
+                    <td>ASTRA SRI VX LINE NAV TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.6%</span></td>
+                    <td>1,138</td>
+                    <td>19,286</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X SRI NAV TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.5%</span></td>
+                    <td>517</td>
+                    <td>22,777</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X ELITE TURBO AUTO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.4%</span></td>
+                    <td>118</td>
+                    <td>18,579</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.4%</span></td>
+                    <td>7,859</td>
+                    <td>21,240</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X BUSINESS ED NAV</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.4%</span></td>
+                    <td>103</td>
+                    <td>21,188</td>
+                </tr>
+                <tr>
+                    <td>G-LAND X BSNS ED NV PRM HYB4 A</td>
+                    <td>2020</td>
+                    <td>HY</td>
+                    <td><span class="badge good">86.2%</span></td>
+                    <td>429</td>
+                    <td>35,230</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV PREMIUM TURBO A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.1%</span></td>
+                    <td>562</td>
+                    <td>16,747</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.0%</span></td>
+                    <td>18,420</td>
+                    <td>30,874</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">86.0%</span></td>
+                    <td>186</td>
+                    <td>19,200</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X ELITE TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">85.9%</span></td>
+                    <td>149</td>
+                    <td>26,581</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X BNESS ED NAV HYB A</td>
+                    <td>2020</td>
+                    <td>HY</td>
+                    <td><span class="badge good">85.8%</span></td>
+                    <td>233</td>
+                    <td>29,802</td>
+                </tr>
+                <tr>
+                    <td>VIVA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.8%</span></td>
+                    <td>9,761</td>
+                    <td>30,930</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI NAV TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.8%</span></td>
+                    <td>1,361</td>
+                    <td>24,375</td>
+                </tr>
+                <tr>
+                    <td>MONARO</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.8%</span></td>
+                    <td>134</td>
+                    <td>69,546</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.8%</span></td>
+                    <td>5,277</td>
+                    <td>23,471</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI PREMIUM TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.6%</span></td>
+                    <td>4,752</td>
+                    <td>24,810</td>
+                </tr>
+                <tr>
+                    <td>ASTRA BUSINESS EDITION NAV T</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.5%</span></td>
+                    <td>470</td>
+                    <td>22,717</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE TURBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.5%</span></td>
+                    <td>606</td>
+                    <td>31,584</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.5%</span></td>
+                    <td>1,789</td>
+                    <td>23,988</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV TURBO A</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.4%</span></td>
+                    <td>123</td>
+                    <td>27,191</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV TURBO A</td>
+                    <td>2021</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.4%</span></td>
+                    <td>123</td>
+                    <td>25,977</td>
+                </tr>
+                <tr>
+                    <td>ASTRA BUSINESS EDITION NAV T D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">85.4%</span></td>
+                    <td>936</td>
+                    <td>37,191</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV HYB4 A</td>
+                    <td>2020</td>
+                    <td>HY</td>
+                    <td><span class="badge good">85.3%</span></td>
+                    <td>232</td>
+                    <td>33,628</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV PREMIUM TRBO A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.3%</span></td>
+                    <td>2,157</td>
+                    <td>22,398</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.2%</span></td>
+                    <td>3,270</td>
+                    <td>22,050</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.2%</span></td>
+                    <td>479</td>
+                    <td>25,851</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X BUSINSS ED NAV T D</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">85.2%</span></td>
+                    <td>182</td>
+                    <td>31,546</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.1%</span></td>
+                    <td>4,708</td>
+                    <td>40,145</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">85.1%</span></td>
+                    <td>845</td>
+                    <td>20,925</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">85.0%</span></td>
+                    <td>4,531</td>
+                    <td>40,098</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ULTIMTE NAV HYB4 A</td>
+                    <td>2020</td>
+                    <td>HY</td>
+                    <td><span class="badge good">85.0%</span></td>
+                    <td>433</td>
+                    <td>24,871</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X BUSINESS ED NAV TD</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">85.0%</span></td>
+                    <td>113</td>
+                    <td>24,494</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X GRIFFIN</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.9%</span></td>
+                    <td>3,399</td>
+                    <td>24,679</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X GRIFFIN TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">84.9%</span></td>
+                    <td>252</td>
+                    <td>27,028</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV PREMIUM TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.9%</span></td>
+                    <td>5,673</td>
+                    <td>23,730</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.9%</span></td>
+                    <td>383</td>
+                    <td>22,794</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE PREMIUM TURBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.8%</span></td>
+                    <td>659</td>
+                    <td>24,169</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">84.8%</span></td>
+                    <td>725</td>
+                    <td>40,757</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.8%</span></td>
+                    <td>21,585</td>
+                    <td>26,886</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X B-NESS ED NAV T A</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.8%</span></td>
+                    <td>105</td>
+                    <td>20,456</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X SE TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">84.8%</span></td>
+                    <td>459</td>
+                    <td>29,098</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.7%</span></td>
+                    <td>516</td>
+                    <td>26,270</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X SPORT</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.4%</span></td>
+                    <td>468</td>
+                    <td>31,556</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI NAV PREMIUM TURBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.4%</span></td>
+                    <td>205</td>
+                    <td>30,187</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV TURBO AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.0%</span></td>
+                    <td>1,341</td>
+                    <td>24,599</td>
+                </tr>
+                <tr>
+                    <td>VIVA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge good">84.0%</span></td>
+                    <td>13,853</td>
+                    <td>36,635</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.9%</span></td>
+                    <td>23,655</td>
+                    <td>37,575</td>
+                </tr>
+                <tr>
+                    <td>ASTRA SE TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">83.8%</span></td>
+                    <td>198</td>
+                    <td>34,603</td>
+                </tr>
+                <tr>
+                    <td>COMBO LIFE ENERGY S/S AUTO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.8%</span></td>
+                    <td>488</td>
+                    <td>16,714</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND X ELITE NAV TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">83.8%</span></td>
+                    <td>444</td>
+                    <td>33,106</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.7%</span></td>
+                    <td>10,870</td>
+                    <td>36,897</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV PREMIUM TURBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.6%</span></td>
+                    <td>128</td>
+                    <td>23,133</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.5%</span></td>
+                    <td>316</td>
+                    <td>37,964</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.5%</span></td>
+                    <td>212</td>
+                    <td>40,100</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.3%</span></td>
+                    <td>10,088</td>
+                    <td>32,752</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE NAV S/S</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.3%</span></td>
+                    <td>269</td>
+                    <td>22,255</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.2%</span></td>
+                    <td>178</td>
+                    <td>35,938</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.2%</span></td>
+                    <td>4,783</td>
+                    <td>46,462</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2900 DYNAMIC S/S</td>
+                    <td>2021</td>
+                    <td>DI</td>
+                    <td><span class="badge good">83.0%</span></td>
+                    <td>118</td>
+                    <td>45,140</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X SRI NAV</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">83.0%</span></td>
+                    <td>941</td>
+                    <td>30,593</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X BUSINESS ED NAV</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge good">82.8%</span></td>
+                    <td>116</td>
+                    <td>29,718</td>
+                </tr>
+                <tr>
+                    <td>VX220</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge good">82.6%</span></td>
+                    <td>276</td>
+                    <td>56,381</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge good">82.5%</span></td>
+                    <td>31,714</td>
+                    <td>44,286</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">82.3%</span></td>
+                    <td>30,407</td>
+                    <td>33,844</td>
+                </tr>
+                <tr>
+                    <td>MONARO</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge good">82.3%</span></td>
+                    <td>141</td>
+                    <td>72,497</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge good">82.0%</span></td>
+                    <td>3,402</td>
+                    <td>49,329</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">81.8%</span></td>
+                    <td>852</td>
+                    <td>37,242</td>
+                </tr>
+                <tr>
+                    <td>CORSA ENERGY S/S</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">81.8%</span></td>
+                    <td>1,966</td>
+                    <td>22,246</td>
+                </tr>
+                <tr>
+                    <td>COMBO LIFE ENERGY TURBO D S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">81.8%</span></td>
+                    <td>236</td>
+                    <td>32,374</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 3100 ELITE S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">81.6%</span></td>
+                    <td>114</td>
+                    <td>41,961</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV PREMIUM TRBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">81.6%</span></td>
+                    <td>255</td>
+                    <td>28,716</td>
+                </tr>
+                <tr>
+                    <td>VIVA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge good">81.6%</span></td>
+                    <td>5,172</td>
+                    <td>39,668</td>
+                </tr>
+                <tr>
+                    <td>VXR8</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge good">81.3%</span></td>
+                    <td>107</td>
+                    <td>83,770</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">81.2%</span></td>
+                    <td>4,641</td>
+                    <td>38,460</td>
+                </tr>
+                <tr>
+                    <td>CORSA ELITE NAV PREMIUM TRBO A</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">81.2%</span></td>
+                    <td>244</td>
+                    <td>27,283</td>
+                </tr>
+                <tr>
+                    <td>CORSA GRIFFIN AUTO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">81.1%</span></td>
+                    <td>778</td>
+                    <td>18,884</td>
+                </tr>
+                <tr>
+                    <td>GRANDLAND</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge good">81.0%</span></td>
+                    <td>5,367</td>
+                    <td>47,584</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND X ELITE NAV TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge good">81.0%</span></td>
+                    <td>100</td>
+                    <td>24,883</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 3100 SPORTIVE S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">81.0%</span></td>
+                    <td>342</td>
+                    <td>59,250</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge good">80.8%</span></td>
+                    <td>261</td>
+                    <td>44,049</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge good">80.8%</span></td>
+                    <td>2,636</td>
+                    <td>44,336</td>
+                </tr>
+                <tr>
+                    <td>ADAM</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge good">80.7%</span></td>
+                    <td>5,452</td>
+                    <td>28,827</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">80.6%</span></td>
+                    <td>2,924</td>
+                    <td>49,114</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge good">80.5%</span></td>
+                    <td>1,009</td>
+                    <td>36,391</td>
+                </tr>
+                <tr>
+                    <td>VX220</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge good">80.5%</span></td>
+                    <td>128</td>
+                    <td>45,421</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge good">80.4%</span></td>
+                    <td>148</td>
+                    <td>34,101</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge good">80.4%</span></td>
+                    <td>36,882</td>
+                    <td>51,258</td>
+                </tr>
+                <tr>
+                    <td>CORSA GRIFFIN S/S</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge good">80.4%</span></td>
+                    <td>2,401</td>
+                    <td>23,452</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge good">80.2%</span></td>
+                    <td>2,101</td>
+                    <td>37,456</td>
+                </tr>
+                <tr>
+                    <td>ADAM</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge average">80.0%</span></td>
+                    <td>4,822</td>
+                    <td>21,325</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">79.9%</span></td>
+                    <td>3,438</td>
+                    <td>52,935</td>
+                </tr>
+                <tr>
+                    <td>COMBO LIFE ELITE TURBO D S/S A</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">79.8%</span></td>
+                    <td>188</td>
+                    <td>20,725</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge average">79.8%</span></td>
+                    <td>1,743</td>
+                    <td>25,168</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge average">79.7%</span></td>
+                    <td>4,425</td>
+                    <td>35,199</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">79.5%</span></td>
+                    <td>8,264</td>
+                    <td>63,246</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge average">79.5%</span></td>
+                    <td>50,888</td>
+                    <td>32,345</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">79.3%</span></td>
+                    <td>1,404</td>
+                    <td>45,961</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">79.0%</span></td>
+                    <td>6,574</td>
+                    <td>63,229</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI NAV S/S</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge average">78.5%</span></td>
+                    <td>865</td>
+                    <td>23,174</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">78.4%</span></td>
+                    <td>14,890</td>
+                    <td>69,305</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge average">78.3%</span></td>
+                    <td>42,626</td>
+                    <td>25,722</td>
+                </tr>
+                <tr>
+                    <td>CORSA SE TURBO D</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">78.1%</span></td>
+                    <td>105</td>
+                    <td>43,821</td>
+                </tr>
+                <tr>
+                    <td>ASTRA SRI NAV TURBO CVT</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge average">78.0%</span></td>
+                    <td>150</td>
+                    <td>31,268</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.9%</span></td>
+                    <td>2,043</td>
+                    <td>63,033</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">77.7%</span></td>
+                    <td>301</td>
+                    <td>54,432</td>
+                </tr>
+                <tr>
+                    <td>COMBO LIFE ENERGY TURBO D S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">77.7%</span></td>
+                    <td>1,188</td>
+                    <td>25,025</td>
+                </tr>
+                <tr>
+                    <td>CORSA DESIGN S/S</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.7%</span></td>
+                    <td>197</td>
+                    <td>30,247</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2020</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.6%</span></td>
+                    <td>945</td>
+                    <td>21,158</td>
+                </tr>
+                <tr>
+                    <td>ADAM</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.6%</span></td>
+                    <td>7,512</td>
+                    <td>37,141</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.5%</span></td>
+                    <td>3,543</td>
+                    <td>42,736</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.5%</span></td>
+                    <td>50,165</td>
+                    <td>40,060</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.2%</span></td>
+                    <td>30,828</td>
+                    <td>39,847</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.1%</span></td>
+                    <td>6,262</td>
+                    <td>42,172</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2017</td>
+                    <td>PE</td>
+                    <td><span class="badge average">77.0%</span></td>
+                    <td>10,255</td>
+                    <td>45,721</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">77.0%</span></td>
+                    <td>2,273</td>
+                    <td>59,970</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">76.8%</span></td>
+                    <td>1,888</td>
+                    <td>64,033</td>
+                </tr>
+                <tr>
+                    <td>CORSA SRI VX-LINE NAV BLACK</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge average">76.6%</span></td>
+                    <td>2,312</td>
+                    <td>28,082</td>
+                </tr>
+                <tr>
+                    <td>CROSSLAND</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">76.5%</span></td>
+                    <td>439</td>
+                    <td>51,212</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2700 SPORTIVE S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">76.4%</span></td>
+                    <td>1,238</td>
+                    <td>45,971</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2900 DYNAMIC S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">76.4%</span></td>
+                    <td>2,966</td>
+                    <td>48,245</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">76.4%</span></td>
+                    <td>326</td>
+                    <td>57,740</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge average">76.3%</span></td>
+                    <td>20,045</td>
+                    <td>74,047</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge average">76.3%</span></td>
+                    <td>2,060</td>
+                    <td>56,561</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">76.1%</span></td>
+                    <td>247</td>
+                    <td>41,545</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge average">76.0%</span></td>
+                    <td>7,357</td>
+                    <td>53,065</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 3100 EDITION S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">76.0%</span></td>
+                    <td>312</td>
+                    <td>42,110</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">75.8%</span></td>
+                    <td>12,394</td>
+                    <td>69,782</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2700 DYNAMIC S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">75.7%</span></td>
+                    <td>103</td>
+                    <td>52,349</td>
+                </tr>
+                <tr>
+                    <td>VX220</td>
+                    <td>2002</td>
+                    <td>PE</td>
+                    <td><span class="badge average">75.7%</span></td>
+                    <td>173</td>
+                    <td>61,606</td>
+                </tr>
+                <tr>
+                    <td>VIVARO LIFE EDITION S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">75.6%</span></td>
+                    <td>131</td>
+                    <td>50,424</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2018</td>
+                    <td>PE</td>
+                    <td><span class="badge average">75.5%</span></td>
+                    <td>200</td>
+                    <td>37,697</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">75.1%</span></td>
+                    <td>2,311</td>
+                    <td>73,609</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge average">74.9%</span></td>
+                    <td>4,948</td>
+                    <td>75,695</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 3100 SPORTIVE S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">74.9%</span></td>
+                    <td>777</td>
+                    <td>47,585</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2700 DYNAMIC S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">74.8%</span></td>
+                    <td>499</td>
+                    <td>46,483</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge average">74.5%</span></td>
+                    <td>7,649</td>
+                    <td>48,741</td>
+                </tr>
+                <tr>
+                    <td>CORSA SPORT S/S</td>
+                    <td>2019</td>
+                    <td>PE</td>
+                    <td><span class="badge average">74.5%</span></td>
+                    <td>337</td>
+                    <td>29,214</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">74.4%</span></td>
+                    <td>6,644</td>
+                    <td>52,883</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge average">74.3%</span></td>
+                    <td>71,567</td>
+                    <td>47,552</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2900 SPORTIVE S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">74.2%</span></td>
+                    <td>1,342</td>
+                    <td>59,064</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">74.1%</span></td>
+                    <td>5,985</td>
+                    <td>61,325</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 3100 DYNAMIC S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">73.9%</span></td>
+                    <td>307</td>
+                    <td>47,986</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge average">73.9%</span></td>
+                    <td>295</td>
+                    <td>52,089</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge average">73.8%</span></td>
+                    <td>6,820</td>
+                    <td>59,753</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge average">73.8%</span></td>
+                    <td>187</td>
+                    <td>47,870</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">73.7%</span></td>
+                    <td>293</td>
+                    <td>80,812</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge average">73.7%</span></td>
+                    <td>26,684</td>
+                    <td>45,597</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">73.6%</span></td>
+                    <td>6,040</td>
+                    <td>56,617</td>
+                </tr>
+                <tr>
+                    <td>ADAM</td>
+                    <td>2016</td>
+                    <td>PE</td>
+                    <td><span class="badge average">73.0%</span></td>
+                    <td>9,510</td>
+                    <td>42,606</td>
+                </tr>
+                <tr>
+                    <td>AMPERA</td>
+                    <td>2014</td>
+                    <td>HY</td>
+                    <td><span class="badge average">72.8%</span></td>
+                    <td>475</td>
+                    <td>79,302</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge average">72.7%</span></td>
+                    <td>205</td>
+                    <td>115,809</td>
+                </tr>
+                <tr>
+                    <td>AMPERA</td>
+                    <td>2013</td>
+                    <td>HY</td>
+                    <td><span class="badge average">72.5%</span></td>
+                    <td>222</td>
+                    <td>95,022</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">72.5%</span></td>
+                    <td>11,675</td>
+                    <td>67,944</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2900 EDITION S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">72.3%</span></td>
+                    <td>811</td>
+                    <td>47,307</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2900 SPORTIVE S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">72.1%</span></td>
+                    <td>1,979</td>
+                    <td>46,377</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.9%</span></td>
+                    <td>31,750</td>
+                    <td>58,609</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.8%</span></td>
+                    <td>28,806</td>
+                    <td>52,932</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2700 EDITION S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">71.8%</span></td>
+                    <td>823</td>
+                    <td>47,647</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge average">71.7%</span></td>
+                    <td>4,730</td>
+                    <td>72,881</td>
+                </tr>
+                <tr>
+                    <td>OMEGA</td>
+                    <td>2000</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.7%</span></td>
+                    <td>120</td>
+                    <td>104,258</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">71.3%</span></td>
+                    <td>192</td>
+                    <td>67,909</td>
+                </tr>
+                <tr>
+                    <td>ADAM</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.3%</span></td>
+                    <td>10,858</td>
+                    <td>48,488</td>
+                </tr>
+                <tr>
+                    <td>OMEGA</td>
+                    <td>2002</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.2%</span></td>
+                    <td>320</td>
+                    <td>100,140</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.2%</span></td>
+                    <td>326</td>
+                    <td>49,864</td>
+                </tr>
+                <tr>
+                    <td>VX220</td>
+                    <td>2001</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.1%</span></td>
+                    <td>149</td>
+                    <td>63,689</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">71.1%</span></td>
+                    <td>3,523</td>
+                    <td>48,407</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">70.9%</span></td>
+                    <td>7,996</td>
+                    <td>80,144</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge average">70.8%</span></td>
+                    <td>394</td>
+                    <td>68,389</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2700 EDITION S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">70.6%</span></td>
+                    <td>596</td>
+                    <td>51,844</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge average">70.4%</span></td>
+                    <td>13,402</td>
+                    <td>59,424</td>
+                </tr>
+                <tr>
+                    <td>AMPERA</td>
+                    <td>2012</td>
+                    <td>EL</td>
+                    <td><span class="badge average">70.3%</span></td>
+                    <td>212</td>
+                    <td>101,297</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">70.2%</span></td>
+                    <td>16,421</td>
+                    <td>85,636</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">70.1%</span></td>
+                    <td>692</td>
+                    <td>60,122</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">70.0%</span></td>
+                    <td>18,220</td>
+                    <td>59,963</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">69.9%</span></td>
+                    <td>319</td>
+                    <td>57,654</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2900 EDITION S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">69.9%</span></td>
+                    <td>568</td>
+                    <td>45,774</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2700 SPORTIVE S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">69.8%</span></td>
+                    <td>354</td>
+                    <td>57,788</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">69.6%</span></td>
+                    <td>2,572</td>
+                    <td>70,310</td>
+                </tr>
+                <tr>
+                    <td>CASCADA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge average">69.5%</span></td>
+                    <td>469</td>
+                    <td>75,944</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge average">69.4%</span></td>
+                    <td>20,895</td>
+                    <td>80,300</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">69.3%</span></td>
+                    <td>3,031</td>
+                    <td>80,954</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2015</td>
+                    <td>PE</td>
+                    <td><span class="badge average">69.1%</span></td>
+                    <td>83,417</td>
+                    <td>54,151</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">69.1%</span></td>
+                    <td>14,684</td>
+                    <td>70,126</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge average">69.0%</span></td>
+                    <td>14,295</td>
+                    <td>47,996</td>
+                </tr>
+                <tr>
+                    <td>OMEGA</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge average">68.5%</span></td>
+                    <td>378</td>
+                    <td>96,341</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge average">68.4%</span></td>
+                    <td>4,068</td>
+                    <td>54,117</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">68.2%</span></td>
+                    <td>32,573</td>
+                    <td>72,292</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge average">68.1%</span></td>
+                    <td>379</td>
+                    <td>73,017</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge average">68.0%</span></td>
+                    <td>6,502</td>
+                    <td>69,257</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">67.9%</span></td>
+                    <td>27,519</td>
+                    <td>93,657</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">67.8%</span></td>
+                    <td>7,176</td>
+                    <td>41,761</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">67.7%</span></td>
+                    <td>32,086</td>
+                    <td>65,780</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">67.7%</span></td>
+                    <td>6,752</td>
+                    <td>60,393</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge average">67.6%</span></td>
+                    <td>1,125</td>
+                    <td>68,419</td>
+                </tr>
+                <tr>
+                    <td>OMEGA</td>
+                    <td>2001</td>
+                    <td>PE</td>
+                    <td><span class="badge average">67.6%</span></td>
+                    <td>284</td>
+                    <td>98,858</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge average">67.6%</span></td>
+                    <td>441</td>
+                    <td>92,575</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">67.5%</span></td>
+                    <td>231</td>
+                    <td>91,010</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge average">67.2%</span></td>
+                    <td>13,848</td>
+                    <td>88,429</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge average">67.2%</span></td>
+                    <td>12,535</td>
+                    <td>82,738</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">66.9%</span></td>
+                    <td>5,344</td>
+                    <td>67,690</td>
+                </tr>
+                <tr>
+                    <td>ADAM</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge average">66.8%</span></td>
+                    <td>13,383</td>
+                    <td>55,921</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">66.7%</span></td>
+                    <td>14,576</td>
+                    <td>67,521</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge average">66.5%</span></td>
+                    <td>21,648</td>
+                    <td>91,875</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge average">66.4%</span></td>
+                    <td>5,544</td>
+                    <td>85,740</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge average">66.3%</span></td>
+                    <td>13,734</td>
+                    <td>79,383</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge average">66.1%</span></td>
+                    <td>277</td>
+                    <td>116,969</td>
+                </tr>
+                <tr>
+                    <td>COMBO 2300 SPORTIVE TD S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge average">66.0%</span></td>
+                    <td>2,786</td>
+                    <td>46,386</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge average">66.0%</span></td>
+                    <td>2,689</td>
+                    <td>82,585</td>
+                </tr>
+                <tr>
+                    <td>ADAM</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">65.9%</span></td>
+                    <td>7,735</td>
+                    <td>62,235</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge average">65.7%</span></td>
+                    <td>18,764</td>
+                    <td>77,627</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge average">65.6%</span></td>
+                    <td>2,955</td>
+                    <td>78,125</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge average">65.4%</span></td>
+                    <td>23,774</td>
+                    <td>105,509</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2011</td>
+                    <td>PE</td>
+                    <td><span class="badge average">65.3%</span></td>
+                    <td>9,009</td>
+                    <td>78,973</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge average">65.3%</span></td>
+                    <td>27,343</td>
+                    <td>100,975</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge average">65.3%</span></td>
+                    <td>29,225</td>
+                    <td>78,816</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2018</td>
+                    <td>DI</td>
+                    <td><span class="badge average">65.2%</span></td>
+                    <td>2,884</td>
+                    <td>59,146</td>
+                </tr>
+                <tr>
+                    <td>FRONTERA</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge average">65.1%</span></td>
+                    <td>129</td>
+                    <td>113,055</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">64.9%</span></td>
+                    <td>19,228</td>
+                    <td>111,115</td>
+                </tr>
+                <tr>
+                    <td>COMBO 2300 SPORTIVE TD</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">64.7%</span></td>
+                    <td>493</td>
+                    <td>39,893</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">64.4%</span></td>
+                    <td>24,896</td>
+                    <td>109,448</td>
+                </tr>
+                <tr>
+                    <td>VIVARO 2900 DYNAMIC S/S</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">64.3%</span></td>
+                    <td>608</td>
+                    <td>52,963</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2019</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">64.2%</span></td>
+                    <td>254</td>
+                    <td>53,999</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">64.1%</span></td>
+                    <td>21,196</td>
+                    <td>116,911</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2011</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">64.0%</span></td>
+                    <td>5,057</td>
+                    <td>90,530</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">63.8%</span></td>
+                    <td>19,708</td>
+                    <td>116,818</td>
+                </tr>
+                <tr>
+                    <td>MOKKA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">63.7%</span></td>
+                    <td>7,460</td>
+                    <td>86,923</td>
+                </tr>
+                <tr>
+                    <td>AMPERA</td>
+                    <td>2012</td>
+                    <td>HY</td>
+                    <td><span class="badge poor">63.6%</span></td>
+                    <td>162</td>
+                    <td>98,432</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">63.5%</span></td>
+                    <td>126</td>
+                    <td>136,477</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">63.5%</span></td>
+                    <td>19,632</td>
+                    <td>88,383</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">63.4%</span></td>
+                    <td>834</td>
+                    <td>59,874</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">63.3%</span></td>
+                    <td>6,918</td>
+                    <td>86,320</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">63.0%</span></td>
+                    <td>1,337</td>
+                    <td>76,587</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2017</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">62.9%</span></td>
+                    <td>3,743</td>
+                    <td>74,485</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">62.6%</span></td>
+                    <td>12,855</td>
+                    <td>120,558</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">62.5%</span></td>
+                    <td>331</td>
+                    <td>135,995</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">62.4%</span></td>
+                    <td>583</td>
+                    <td>105,662</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">62.4%</span></td>
+                    <td>22,090</td>
+                    <td>114,346</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">62.4%</span></td>
+                    <td>846</td>
+                    <td>145,874</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2011</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">62.3%</span></td>
+                    <td>26,797</td>
+                    <td>83,596</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">62.2%</span></td>
+                    <td>10,606</td>
+                    <td>97,409</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">62.0%</span></td>
+                    <td>1,160</td>
+                    <td>68,935</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2010</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">61.9%</span></td>
+                    <td>3,809</td>
+                    <td>91,931</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">61.8%</span></td>
+                    <td>2,133</td>
+                    <td>66,237</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">61.8%</span></td>
+                    <td>10,905</td>
+                    <td>82,315</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2011</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">61.8%</span></td>
+                    <td>4,370</td>
+                    <td>59,331</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">61.8%</span></td>
+                    <td>1,569</td>
+                    <td>86,330</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2016</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">61.5%</span></td>
+                    <td>5,385</td>
+                    <td>86,846</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2001</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">61.5%</span></td>
+                    <td>696</td>
+                    <td>100,300</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">61.0%</span></td>
+                    <td>8,243</td>
+                    <td>103,214</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">60.9%</span></td>
+                    <td>6,988</td>
+                    <td>126,238</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">60.5%</span></td>
+                    <td>1,325</td>
+                    <td>70,734</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">60.3%</span></td>
+                    <td>6,692</td>
+                    <td>104,024</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">60.2%</span></td>
+                    <td>22,399</td>
+                    <td>102,965</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2010</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">60.1%</span></td>
+                    <td>44,166</td>
+                    <td>90,162</td>
+                </tr>
+                <tr>
+                    <td>SIGNUM</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">60.0%</span></td>
+                    <td>205</td>
+                    <td>104,383</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2000</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">59.9%</span></td>
+                    <td>474</td>
+                    <td>101,330</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">59.5%</span></td>
+                    <td>173</td>
+                    <td>115,999</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2014</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">59.5%</span></td>
+                    <td>68,732</td>
+                    <td>59,744</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2011</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">59.4%</span></td>
+                    <td>7,117</td>
+                    <td>93,139</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2010</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">59.4%</span></td>
+                    <td>3,902</td>
+                    <td>60,200</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2000</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">59.3%</span></td>
+                    <td>172</td>
+                    <td>136,048</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2002</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">59.3%</span></td>
+                    <td>683</td>
+                    <td>101,973</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">59.2%</span></td>
+                    <td>2,702</td>
+                    <td>73,643</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2013</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">59.2%</span></td>
+                    <td>66,992</td>
+                    <td>65,331</td>
+                </tr>
+                <tr>
+                    <td>COMBO 2300 EDITION TD S/S</td>
+                    <td>2020</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">59.1%</span></td>
+                    <td>618</td>
+                    <td>39,918</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">58.9%</span></td>
+                    <td>316</td>
+                    <td>115,478</td>
+                </tr>
+                <tr>
+                    <td>INSIGNIA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">58.9%</span></td>
+                    <td>5,194</td>
+                    <td>98,271</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2015</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">58.8%</span></td>
+                    <td>5,631</td>
+                    <td>96,432</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">58.7%</span></td>
+                    <td>7,582</td>
+                    <td>105,040</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">58.6%</span></td>
+                    <td>67,985</td>
+                    <td>70,507</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">58.6%</span></td>
+                    <td>12,100</td>
+                    <td>121,076</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">58.5%</span></td>
+                    <td>1,427</td>
+                    <td>72,457</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">58.4%</span></td>
+                    <td>5,300</td>
+                    <td>99,798</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2011</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">58.2%</span></td>
+                    <td>55,434</td>
+                    <td>74,452</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">58.2%</span></td>
+                    <td>8,679</td>
+                    <td>93,229</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2000</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">58.1%</span></td>
+                    <td>368</td>
+                    <td>81,583</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">58.0%</span></td>
+                    <td>812</td>
+                    <td>147,363</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">57.9%</span></td>
+                    <td>7,743</td>
+                    <td>88,305</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">57.8%</span></td>
+                    <td>258</td>
+                    <td>152,842</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">57.7%</span></td>
+                    <td>1,429</td>
+                    <td>72,859</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2012</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">57.6%</span></td>
+                    <td>144</td>
+                    <td>78,456</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2010</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">57.6%</span></td>
+                    <td>9,506</td>
+                    <td>80,226</td>
+                </tr>
+                <tr>
+                    <td>SIGNUM</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">57.6%</span></td>
+                    <td>125</td>
+                    <td>101,786</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">57.4%</span></td>
+                    <td>7,078</td>
+                    <td>80,310</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2002</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">57.0%</span></td>
+                    <td>853</td>
+                    <td>78,777</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">57.0%</span></td>
+                    <td>179</td>
+                    <td>122,145</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">56.9%</span></td>
+                    <td>7,941</td>
+                    <td>101,499</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">56.8%</span></td>
+                    <td>5,451</td>
+                    <td>64,134</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2001</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">56.6%</span></td>
+                    <td>728</td>
+                    <td>78,492</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2002</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">56.6%</span></td>
+                    <td>244</td>
+                    <td>141,737</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">56.5%</span></td>
+                    <td>115</td>
+                    <td>140,627</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">56.4%</span></td>
+                    <td>7,257</td>
+                    <td>93,577</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">56.4%</span></td>
+                    <td>713</td>
+                    <td>96,768</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">56.3%</span></td>
+                    <td>6,185</td>
+                    <td>84,204</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2000</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">56.3%</span></td>
+                    <td>119</td>
+                    <td>127,761</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">56.3%</span></td>
+                    <td>542</td>
+                    <td>147,048</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">56.1%</span></td>
+                    <td>8,910</td>
+                    <td>97,016</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">55.9%</span></td>
+                    <td>1,576</td>
+                    <td>76,733</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2001</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.9%</span></td>
+                    <td>136</td>
+                    <td>126,099</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.8%</span></td>
+                    <td>448</td>
+                    <td>78,808</td>
+                </tr>
+                <tr>
+                    <td>SIGNUM</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.8%</span></td>
+                    <td>147</td>
+                    <td>139,785</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.7%</span></td>
+                    <td>1,089</td>
+                    <td>143,809</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.7%</span></td>
+                    <td>3,995</td>
+                    <td>137,769</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.4%</span></td>
+                    <td>1,016</td>
+                    <td>152,898</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.4%</span></td>
+                    <td>8,467</td>
+                    <td>107,478</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.3%</span></td>
+                    <td>282</td>
+                    <td>98,291</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">55.1%</span></td>
+                    <td>35,451</td>
+                    <td>92,983</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2000</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">55.1%</span></td>
+                    <td>1,709</td>
+                    <td>65,568</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">55.0%</span></td>
+                    <td>7,460</td>
+                    <td>107,824</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2010</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">55.0%</span></td>
+                    <td>50,711</td>
+                    <td>77,292</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2002</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">54.9%</span></td>
+                    <td>5,784</td>
+                    <td>95,812</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.9%</span></td>
+                    <td>4,541</td>
+                    <td>133,727</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2010</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">54.8%</span></td>
+                    <td>10,846</td>
+                    <td>99,747</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.8%</span></td>
+                    <td>208</td>
+                    <td>138,457</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.8%</span></td>
+                    <td>104</td>
+                    <td>166,422</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2001</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">54.8%</span></td>
+                    <td>3,611</td>
+                    <td>95,276</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2008</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">54.7%</span></td>
+                    <td>32,855</td>
+                    <td>98,272</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.6%</span></td>
+                    <td>657</td>
+                    <td>106,544</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2000</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">54.6%</span></td>
+                    <td>2,083</td>
+                    <td>96,631</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.5%</span></td>
+                    <td>143</td>
+                    <td>179,054</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.5%</span></td>
+                    <td>1,357</td>
+                    <td>123,873</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.4%</span></td>
+                    <td>520</td>
+                    <td>136,838</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.4%</span></td>
+                    <td>1,797</td>
+                    <td>150,411</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">54.2%</span></td>
+                    <td>46,645</td>
+                    <td>81,369</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.1%</span></td>
+                    <td>3,654</td>
+                    <td>107,184</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">54.1%</span></td>
+                    <td>2,915</td>
+                    <td>112,671</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.9%</span></td>
+                    <td>5,183</td>
+                    <td>121,094</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.7%</span></td>
+                    <td>603</td>
+                    <td>116,868</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2008</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">53.7%</span></td>
+                    <td>7,320</td>
+                    <td>103,957</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.6%</span></td>
+                    <td>1,005</td>
+                    <td>151,080</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.6%</span></td>
+                    <td>662</td>
+                    <td>123,154</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">53.6%</span></td>
+                    <td>3,927</td>
+                    <td>109,093</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.6%</span></td>
+                    <td>7,117</td>
+                    <td>105,684</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.5%</span></td>
+                    <td>2,094</td>
+                    <td>140,222</td>
+                </tr>
+                <tr>
+                    <td>SIGNUM</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.4%</span></td>
+                    <td>395</td>
+                    <td>131,888</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2008</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">53.4%</span></td>
+                    <td>3,108</td>
+                    <td>67,517</td>
+                </tr>
+                <tr>
+                    <td>SIGNUM</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">53.4%</span></td>
+                    <td>178</td>
+                    <td>107,906</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.4%</span></td>
+                    <td>847</td>
+                    <td>99,628</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">53.2%</span></td>
+                    <td>1,861</td>
+                    <td>109,539</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.2%</span></td>
+                    <td>6,736</td>
+                    <td>131,597</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">53.2%</span></td>
+                    <td>8,430</td>
+                    <td>96,290</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.1%</span></td>
+                    <td>4,377</td>
+                    <td>113,302</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2014</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.0%</span></td>
+                    <td>13,023</td>
+                    <td>111,988</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">53.0%</span></td>
+                    <td>7,493</td>
+                    <td>107,312</td>
+                </tr>
+                <tr>
+                    <td>TIGRA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">52.9%</span></td>
+                    <td>1,047</td>
+                    <td>81,532</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">52.9%</span></td>
+                    <td>35,188</td>
+                    <td>101,630</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.8%</span></td>
+                    <td>214</td>
+                    <td>149,728</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2008</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">52.8%</span></td>
+                    <td>43,158</td>
+                    <td>83,764</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">52.6%</span></td>
+                    <td>1,208</td>
+                    <td>108,051</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.6%</span></td>
+                    <td>1,133</td>
+                    <td>142,890</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.5%</span></td>
+                    <td>11,610</td>
+                    <td>131,532</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">52.4%</span></td>
+                    <td>6,473</td>
+                    <td>107,739</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.3%</span></td>
+                    <td>583</td>
+                    <td>124,583</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.3%</span></td>
+                    <td>220</td>
+                    <td>129,911</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.2%</span></td>
+                    <td>9,908</td>
+                    <td>136,119</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2002</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.2%</span></td>
+                    <td>207</td>
+                    <td>116,446</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.2%</span></td>
+                    <td>2,088</td>
+                    <td>146,934</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">52.0%</span></td>
+                    <td>3,364</td>
+                    <td>135,850</td>
+                </tr>
+                <tr>
+                    <td>TIGRA</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.9%</span></td>
+                    <td>289</td>
+                    <td>85,121</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.8%</span></td>
+                    <td>36,033</td>
+                    <td>86,490</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2001</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.8%</span></td>
+                    <td>535</td>
+                    <td>141,494</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2002</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.8%</span></td>
+                    <td>1,719</td>
+                    <td>115,094</td>
+                </tr>
+                <tr>
+                    <td>TIGRA</td>
+                    <td>2008</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.7%</span></td>
+                    <td>1,358</td>
+                    <td>72,461</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.7%</span></td>
+                    <td>1,722</td>
+                    <td>149,058</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.6%</span></td>
+                    <td>895</td>
+                    <td>94,568</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.6%</span></td>
+                    <td>8,190</td>
+                    <td>110,044</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.6%</span></td>
+                    <td>347</td>
+                    <td>146,491</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.6%</span></td>
+                    <td>8,602</td>
+                    <td>99,710</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.5%</span></td>
+                    <td>4,566</td>
+                    <td>119,817</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.5%</span></td>
+                    <td>2,023</td>
+                    <td>135,783</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.4%</span></td>
+                    <td>208</td>
+                    <td>154,354</td>
+                </tr>
+                <tr>
+                    <td>SIGNUM</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.4%</span></td>
+                    <td>315</td>
+                    <td>130,303</td>
+                </tr>
+                <tr>
+                    <td>TIGRA</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.4%</span></td>
+                    <td>1,818</td>
+                    <td>80,093</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.2%</span></td>
+                    <td>771</td>
+                    <td>106,472</td>
+                </tr>
+                <tr>
+                    <td>TIGRA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">51.2%</span></td>
+                    <td>1,724</td>
+                    <td>68,313</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.1%</span></td>
+                    <td>3,295</td>
+                    <td>112,201</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">51.0%</span></td>
+                    <td>4,390</td>
+                    <td>135,453</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.9%</span></td>
+                    <td>106</td>
+                    <td>125,004</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2009</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.9%</span></td>
+                    <td>5,758</td>
+                    <td>78,412</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.9%</span></td>
+                    <td>23,976</td>
+                    <td>102,973</td>
+                </tr>
+                <tr>
+                    <td>TIGRA</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.9%</span></td>
+                    <td>1,679</td>
+                    <td>75,287</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2002</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.7%</span></td>
+                    <td>1,380</td>
+                    <td>148,280</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.7%</span></td>
+                    <td>2,968</td>
+                    <td>113,394</td>
+                </tr>
+                <tr>
+                    <td>ASTRA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.6%</span></td>
+                    <td>16,200</td>
+                    <td>101,314</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2008</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.5%</span></td>
+                    <td>5,743</td>
+                    <td>83,612</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.5%</span></td>
+                    <td>5,888</td>
+                    <td>111,129</td>
+                </tr>
+                <tr>
+                    <td>AGILA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.4%</span></td>
+                    <td>123</td>
+                    <td>87,500</td>
+                </tr>
+                <tr>
+                    <td>ASTRAVAN</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.3%</span></td>
+                    <td>167</td>
+                    <td>149,268</td>
+                </tr>
+                <tr>
+                    <td>VECTRA</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.3%</span></td>
+                    <td>175</td>
+                    <td>133,704</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.3%</span></td>
+                    <td>8,802</td>
+                    <td>111,197</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.2%</span></td>
+                    <td>835</td>
+                    <td>133,339</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.2%</span></td>
+                    <td>305</td>
+                    <td>128,159</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.1%</span></td>
+                    <td>12,091</td>
+                    <td>107,590</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.1%</span></td>
+                    <td>4,840</td>
+                    <td>111,560</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2008</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">50.0%</span></td>
+                    <td>12,408</td>
+                    <td>104,466</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">50.0%</span></td>
+                    <td>1,669</td>
+                    <td>128,843</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">49.7%</span></td>
+                    <td>20,211</td>
+                    <td>82,153</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2002</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">49.6%</span></td>
+                    <td>6,105</td>
+                    <td>80,406</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2001</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">49.4%</span></td>
+                    <td>846</td>
+                    <td>117,837</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">49.3%</span></td>
+                    <td>546</td>
+                    <td>127,158</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">49.3%</span></td>
+                    <td>1,094</td>
+                    <td>131,379</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">49.2%</span></td>
+                    <td>855</td>
+                    <td>107,141</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">49.1%</span></td>
+                    <td>2,974</td>
+                    <td>125,513</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2001</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">49.0%</span></td>
+                    <td>4,148</td>
+                    <td>78,210</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2013</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">48.9%</span></td>
+                    <td>10,414</td>
+                    <td>128,033</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">48.8%</span></td>
+                    <td>10,514</td>
+                    <td>80,057</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">48.8%</span></td>
+                    <td>510</td>
+                    <td>92,424</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">48.7%</span></td>
+                    <td>14,329</td>
+                    <td>80,749</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">48.5%</span></td>
+                    <td>6,389</td>
+                    <td>127,352</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2003</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">48.5%</span></td>
+                    <td>9,188</td>
+                    <td>80,777</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">48.5%</span></td>
+                    <td>796</td>
+                    <td>123,535</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">48.3%</span></td>
+                    <td>489</td>
+                    <td>99,475</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2001</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">48.2%</span></td>
+                    <td>110</td>
+                    <td>116,878</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">48.0%</span></td>
+                    <td>6,717</td>
+                    <td>153,022</td>
+                </tr>
+                <tr>
+                    <td>CORSAVAN</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">48.0%</span></td>
+                    <td>390</td>
+                    <td>122,229</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">47.4%</span></td>
+                    <td>9,302</td>
+                    <td>151,415</td>
+                </tr>
+                <tr>
+                    <td>MOVANO</td>
+                    <td>2002</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">47.3%</span></td>
+                    <td>150</td>
+                    <td>122,876</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">47.1%</span></td>
+                    <td>1,297</td>
+                    <td>108,689</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2006</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">47.1%</span></td>
+                    <td>4,416</td>
+                    <td>87,146</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">47.0%</span></td>
+                    <td>746</td>
+                    <td>106,368</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2002</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">47.0%</span></td>
+                    <td>964</td>
+                    <td>157,247</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.9%</span></td>
+                    <td>3,050</td>
+                    <td>127,487</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.9%</span></td>
+                    <td>2,448</td>
+                    <td>160,117</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.9%</span></td>
+                    <td>4,731</td>
+                    <td>157,787</td>
+                </tr>
+                <tr>
+                    <td>ZAFIRA</td>
+                    <td>2000</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">46.9%</span></td>
+                    <td>335</td>
+                    <td>120,300</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2012</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.8%</span></td>
+                    <td>9,093</td>
+                    <td>134,575</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.7%</span></td>
+                    <td>505</td>
+                    <td>102,529</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.7%</span></td>
+                    <td>5,435</td>
+                    <td>130,026</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2007</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">46.6%</span></td>
+                    <td>5,315</td>
+                    <td>85,294</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.5%</span></td>
+                    <td>4,410</td>
+                    <td>128,165</td>
+                </tr>
+                <tr>
+                    <td>CORSA</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.5%</span></td>
+                    <td>374</td>
+                    <td>113,296</td>
+                </tr>
+                <tr>
+                    <td>ANTARA</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.4%</span></td>
+                    <td>435</td>
+                    <td>108,657</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.3%</span></td>
+                    <td>402</td>
+                    <td>96,896</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2006</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.0%</span></td>
+                    <td>8,323</td>
+                    <td>150,382</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2009</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">46.0%</span></td>
+                    <td>4,489</td>
+                    <td>144,711</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2007</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.9%</span></td>
+                    <td>9,468</td>
+                    <td>150,133</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.9%</span></td>
+                    <td>2,728</td>
+                    <td>140,158</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2003</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.8%</span></td>
+                    <td>1,958</td>
+                    <td>138,112</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2004</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">45.7%</span></td>
+                    <td>2,204</td>
+                    <td>90,010</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2010</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.7%</span></td>
+                    <td>6,905</td>
+                    <td>143,690</td>
+                </tr>
+                <tr>
+                    <td>COMBO</td>
+                    <td>2002</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.5%</span></td>
+                    <td>705</td>
+                    <td>143,123</td>
+                </tr>
+                <tr>
+                    <td>VIVARO</td>
+                    <td>2011</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.4%</span></td>
+                    <td>11,218</td>
+                    <td>140,288</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2005</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">45.0%</span></td>
+                    <td>371</td>
+                    <td>102,694</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2005</td>
+                    <td>PE</td>
+                    <td><span class="badge poor">45.0%</span></td>
+                    <td>2,820</td>
+                    <td>89,353</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2008</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">44.6%</span></td>
+                    <td>574</td>
+                    <td>100,406</td>
+                </tr>
+                <tr>
+                    <td>MERIVA</td>
+                    <td>2004</td>
+                    <td>DI</td>
+                    <td><span class="badge poor">42.6%</span></td>
+                    <td>183</td>
+                    <td>106,175</td>
+                </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Data source: UK DVSA MOT test records | Generated 15 Jan 2026</p>
+        <p>MOT Insights - Real reliability data for UK vehicles</p>
+    </footer>
+</body>
+</html>

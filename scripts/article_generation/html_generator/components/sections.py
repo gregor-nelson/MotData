@@ -23,7 +23,7 @@ def generate_header_section(insights: ArticleInsights, today_display: str) -> st
     return f'''      <!-- Header -->
       <header class="mb-8">
         <div class="flex flex-wrap items-center gap-3 mb-4">
-          <span class="article-category-badge">
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full border bg-gradient-to-br from-blue-50 to-blue-100/50 text-blue-600 border-blue-200/50">
             <i class="ph ph-chart-bar"></i>
             Reliability Data
           </span>
@@ -35,19 +35,19 @@ def generate_header_section(insights: ArticleInsights, today_display: str) -> st
           Most Reliable {insights.title_make} Models: Real MOT Data Analysis
         </h1>
 
-        <p class="text-lg text-neutral-600">
+        <p class="text-lg text-neutral-600 leading-relaxed">
           We analysed {format_number(insights.total_tests)} real UK MOT tests to reveal which {insights.title_make} models pass most often, which years to buy, and which to avoid entirely.
         </p>
       </header>
 
-      <!-- Data Source Callout -->
-      <div class="savings-callout">
-        <div class="savings-icon">
-          <i class="ph ph-database"></i>
+      <!-- Data Source Callout - Enhanced with gradient icon -->
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-br from-emerald-50 to-emerald-100/50 border border-emerald-200/50 rounded-xl mb-8 transition-all hover:-translate-y-0.5 hover:shadow-md">
+        <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 shadow-sm">
+          <i class="ph ph-database text-emerald-600 text-xl"></i>
         </div>
         <div>
-          <p class="savings-amount">{format_number(insights.total_tests)} MOT tests analysed</p>
-          <p class="savings-text">Real DVSA data covering every {insights.title_make} model from 2000-2023</p>
+          <p class="text-base font-semibold text-emerald-700">{format_number(insights.total_tests)} MOT tests analysed</p>
+          <p class="text-sm text-emerald-600">Real DVSA data covering every {insights.title_make} model from 2000-2023</p>
         </div>
       </div>'''
 
@@ -91,32 +91,34 @@ def generate_key_findings_section(insights: ArticleInsights) -> str:
     best_year_name = f"{best_year.model} {best_year.model_year} {best_year.fuel_name}" if best_year else "Insufficient data"
     best_year_rate = f"{best_year.pass_rate:.1f}% pass rate" if best_year else "N/A"
 
-    return f'''      <!-- Key Findings Summary -->
-      <div class="bg-neutral-50 rounded-xl p-6 mb-10">
-        <h2 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-          <i class="ph ph-lightning text-blue-600"></i>
+    return f'''      <!-- Key Findings Summary - Featured Card Pattern -->
+      <div class="relative bg-white rounded-2xl shadow-xl border border-neutral-100/80 p-6 mb-10">
+        <h2 class="text-lg font-semibold text-neutral-900 mb-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-lightning text-blue-600 text-xl"></i>
+          </div>
           Key Findings
         </h2>
         <div class="grid sm:grid-cols-2 gap-4">
-          <div class="bg-white rounded-lg p-4 border border-neutral-200">
-            <p class="text-sm text-neutral-500 mb-1">Most Reliable Model</p>
+          <div class="bg-slate-50 rounded-xl p-4 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-1">Most Reliable Model</p>
             <p class="text-lg font-semibold text-neutral-900">{top_model_name}</p>
-            <p class="text-sm text-emerald-600">{top_model_rate}</p>
+            <p class="text-sm text-emerald-600 font-medium">{top_model_rate}</p>
           </div>
-          <div class="bg-white rounded-lg p-4 border border-neutral-200">
-            <p class="text-sm text-neutral-500 mb-1">Best Single Year</p>
+          <div class="bg-slate-50 rounded-xl p-4 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-1">Best Single Year</p>
             <p class="text-lg font-semibold text-neutral-900">{best_year_name}</p>
-            <p class="text-sm text-emerald-600">{best_year_rate}</p>
+            <p class="text-sm text-emerald-600 font-medium">{best_year_rate}</p>
           </div>
-          <div class="bg-white rounded-lg p-4 border border-neutral-200">
-            <p class="text-sm text-neutral-500 mb-1">{insights.title_make} vs National Average</p>
+          <div class="bg-slate-50 rounded-xl p-4 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-1">{insights.title_make} vs National Average</p>
             <p class="text-lg font-semibold text-neutral-900">{insights.avg_pass_rate:.1f}% vs {insights.national_pass_rate:.1f}%</p>
-            <p class="text-sm {vs_national_class}">{vs_national_text} {vs_national_label}</p>
+            <p class="text-sm {vs_national_class} font-medium">{vs_national_text} {vs_national_label}</p>
           </div>
-          <div class="bg-white rounded-lg p-4 border border-neutral-200 border-l-4 border-l-amber-400">
-            <p class="text-sm text-neutral-500 mb-1">{durability_label}</p>
+          <div class="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-xl p-4 border border-amber-200/50 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-1">{durability_label}</p>
             <p class="text-lg font-semibold text-neutral-900">{durability_name}</p>
-            <p class="text-sm text-amber-600">{durability_score}{durability_context}</p>
+            <p class="text-sm text-amber-600 font-medium">{durability_score}{durability_context}</p>
           </div>
         </div>
       </div>'''
@@ -895,10 +897,12 @@ def generate_faqs_section(insights: ArticleInsights) -> str:
 
     faq_html = "\n\n".join(faq_items)
 
-    return f'''      <!-- FAQs Section -->
+    return f'''      <!-- FAQs Section - Enhanced header -->
       <section id="faqs" class="mt-10">
-        <h3 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-          <i class="ph ph-question text-blue-600"></i>
+        <h3 class="text-lg font-semibold text-neutral-900 mb-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-question text-blue-600 text-xl"></i>
+          </div>
           Frequently Asked Questions
         </h3>
 
@@ -967,24 +971,26 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
     used_html = "\n".join(used_items[:4]) if used_items else '''            <li class="text-neutral-500">Limited proven durability data available</li>'''
     worst_html = "\n".join(worst_items[:4]) if worst_items else '''            <li class="text-neutral-500">No major proven reliability concerns</li>'''
 
-    return f'''      <!-- Buying Recommendations -->
+    return f'''      <!-- Buying Recommendations - Enhanced with mw-info-card pattern -->
       <section id="recommendations" class="mt-10">
-        <h3 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-          <i class="ph ph-thumbs-up text-blue-600"></i>
+        <h3 class="text-lg font-semibold text-neutral-900 mb-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-thumbs-up text-blue-600 text-xl"></i>
+          </div>
           Our Buying Recommendations
         </h3>
 
         <div class="grid md:grid-cols-2 gap-4 mb-4">
-          <div class="bg-emerald-50 rounded-xl p-6">
+          <div class="bg-gradient-to-br from-emerald-50 to-emerald-100/30 rounded-xl p-5 border border-emerald-100/80 transition-all hover:-translate-y-0.5 hover:shadow-lg">
             <h4 class="font-semibold text-emerald-900 mb-1">Best If Buying Nearly New</h4>
             <p class="text-sm text-emerald-700 mb-3">2019-2023 models with highest early pass rates</p>
             <ul class="space-y-2 text-emerald-800">
 {nearly_new_html}
             </ul>
-            <p class="text-xs text-emerald-600 mt-2 italic">Note: Long-term durability not yet proven for these newer models</p>
+            <p class="text-xs text-emerald-600 mt-3 italic">Note: Long-term durability not yet proven for these newer models</p>
           </div>
 
-          <div class="bg-amber-50 rounded-xl p-6">
+          <div class="bg-gradient-to-br from-amber-50 to-amber-100/30 rounded-xl p-5 border border-amber-100/80 transition-all hover:-translate-y-0.5 hover:shadow-lg">
             <h4 class="font-semibold text-amber-900 mb-1">Best If Buying Used (Proven)</h4>
             <p class="text-sm text-amber-700 mb-3">11+ years of proven durability data</p>
             <ul class="space-y-2 text-amber-800">
@@ -993,7 +999,7 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
           </div>
         </div>
 
-        <div class="bg-red-50 rounded-xl p-6">
+        <div class="bg-gradient-to-br from-red-50 to-red-100/30 rounded-xl p-5 border border-red-100/80 transition-all hover:-translate-y-0.5 hover:shadow-lg">
           <h4 class="font-semibold text-red-900 mb-3">{insights.title_make} Models to Avoid (Proven Poor)</h4>
           <p class="text-sm text-red-700 mb-3">Proven below average at 11+ years - not just old, genuinely problematic</p>
           <ul class="space-y-2 text-red-800">
@@ -1005,16 +1011,18 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
 
 def generate_methodology_section(insights: ArticleInsights) -> str:
     """Generate the methodology section (v2.1: year-adjusted scoring)."""
-    return f'''      <!-- Methodology -->
-      <section id="methodology" class="mt-10 bg-neutral-50 rounded-xl p-6">
-        <h3 class="text-lg font-semibold text-neutral-900 mb-3 flex items-center gap-2">
-          <i class="ph ph-info text-blue-600"></i>
+    return f'''      <!-- Methodology - Enhanced styling -->
+      <section id="methodology" class="mt-10 bg-white rounded-2xl shadow-lg border border-neutral-100/80 p-6">
+        <h3 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-info text-slate-600 text-xl"></i>
+          </div>
           About This Data
         </h3>
-        <div class="text-sm text-neutral-600 space-y-2">
+        <div class="text-sm text-neutral-600 space-y-3 leading-relaxed">
           <p>This analysis uses real MOT test results from the DVSA database, covering {format_number(insights.total_tests)} tests on {insights.title_make} vehicles between 2000 and 2023.</p>
-          <p><strong>Year-Adjusted Scoring (v2.1):</strong> In year-by-year breakdowns, each vehicle is compared against the national average for vehicles of the <em>same model year</em>. This removes the natural bias where newer cars pass more often, allowing fair comparisons across eras.</p>
-          <p><strong>Evidence-Tiered Durability:</strong> We separate "proven durability" (vehicles tested at 11+ years old) from "early performers" (3-6 years old). Only vehicles with proven long-term data are used for durability claims. Age-band comparisons use weighted national averages.</p>
+          <p><strong class="text-neutral-800">Year-Adjusted Scoring (v2.1):</strong> In year-by-year breakdowns, each vehicle is compared against the national average for vehicles of the <em>same model year</em>. This removes the natural bias where newer cars pass more often, allowing fair comparisons across eras.</p>
+          <p><strong class="text-neutral-800">Evidence-Tiered Durability:</strong> We separate "proven durability" (vehicles tested at 11+ years old) from "early performers" (3-6 years old). Only vehicles with proven long-term data are used for durability claims. Age-band comparisons use weighted national averages.</p>
           <p>Minimum thresholds: {format_number(MIN_TESTS_PROVEN_DURABILITY)} tests for proven durability rankings, {format_number(MIN_TESTS_EARLY_PERFORMER)} tests for early performer rankings. Pass rates are calculated as first-time passes, excluding retests.</p>
           <p>The overall national average MOT pass rate is {insights.national_pass_rate:.2f}% based on 32.3 million tests across all manufacturers. Year-specific averages range from ~59% (2009 vehicles) to ~88% (2020 vehicles).</p>
         </div>
@@ -1023,7 +1031,7 @@ def generate_methodology_section(insights: ArticleInsights) -> str:
 
 def generate_cta_section(insights: ArticleInsights) -> str:
     """Generate the bottom CTA section."""
-    return f'''      <!-- Bottom CTA -->
+    return f'''      <!-- Bottom CTA - Enhanced styling -->
       <div class="article-cta">
         <div class="article-cta-icon">
           <i class="ph ph-magnifying-glass"></i>
@@ -1032,8 +1040,8 @@ def generate_cta_section(insights: ArticleInsights) -> str:
         <p class="article-cta-text">
           Get the full MOT history, mileage records, and reliability insights for any UK vehicle. Make an informed decision before you buy.
         </p>
-        <a href="/" class="article-cta-btn">
+        <a href="/" class="article-cta-btn group">
           Run a Free Check
-          <i class="ph ph-arrow-right"></i>
+          <i class="ph ph-arrow-right transition-transform group-hover:translate-x-1"></i>
         </a>
       </div>'''

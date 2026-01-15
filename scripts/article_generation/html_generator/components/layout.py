@@ -58,12 +58,12 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
   <meta name="description" content="{description}">
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://www.motorwise.io/articles/{make_slug}-most-reliable-models.html">
+  <link rel="canonical" href="https://www.motorwise.io/articles/content/reliability/{make_slug}-most-reliable-models.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Most Reliable {insights.title_make} Models: Real MOT Data Analysis | Motorwise">
   <meta property="og:description" content="{format_number(insights.total_tests)} MOT tests analysed. See which {insights.title_make} models pass most often and which years to avoid.">
-  <meta property="og:url" content="https://www.motorwise.io/articles/{make_slug}-most-reliable-models.html">
+  <meta property="og:url" content="https://www.motorwise.io/articles/content/reliability/{make_slug}-most-reliable-models.html">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Motorwise">
 
@@ -115,7 +115,7 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
     "@type": "Article",
     "headline": "Most Reliable {insights.title_make} Models: Real MOT Data Analysis (2000-2023)",
     "description": "{description}",
-    "url": "https://www.motorwise.io/articles/{make_slug}-most-reliable-models.html",
+    "url": "https://www.motorwise.io/articles/content/reliability/{make_slug}-most-reliable-models.html",
     "datePublished": "{today}",
     "dateModified": "{today}",
     "author": {{
@@ -153,7 +153,7 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
         "@type": "ListItem",
         "position": 3,
         "name": "Most Reliable {insights.title_make} Models",
-        "item": "https://www.motorwise.io/articles/{make_slug}-most-reliable-models.html"
+        "item": "https://www.motorwise.io/articles/content/reliability/{make_slug}-most-reliable-models.html"
       }}
     ]
   }}

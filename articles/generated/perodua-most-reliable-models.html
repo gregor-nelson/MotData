@@ -7,12 +7,12 @@
   <meta name="description" content="Which Perodua models are most reliable? We analysed 2,866 real UK MOT tests to reveal pass rates for every MYVI by year. Data-driven buying guide.">
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://www.motorwise.io/articles/perodua-most-reliable-models.html">
+  <link rel="canonical" href="https://www.motorwise.io/articles/content/reliability/perodua-most-reliable-models.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Most Reliable Perodua Models: Real MOT Data Analysis | Motorwise">
   <meta property="og:description" content="2,866 MOT tests analysed. See which Perodua models pass most often and which years to avoid.">
-  <meta property="og:url" content="https://www.motorwise.io/articles/perodua-most-reliable-models.html">
+  <meta property="og:url" content="https://www.motorwise.io/articles/content/reliability/perodua-most-reliable-models.html">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Motorwise">
 
@@ -64,7 +64,7 @@
     "@type": "Article",
     "headline": "Most Reliable Perodua Models: Real MOT Data Analysis (2000-2023)",
     "description": "Which Perodua models are most reliable? We analysed 2,866 real UK MOT tests to reveal pass rates for every MYVI by year. Data-driven buying guide.",
-    "url": "https://www.motorwise.io/articles/perodua-most-reliable-models.html",
+    "url": "https://www.motorwise.io/articles/content/reliability/perodua-most-reliable-models.html",
     "datePublished": "2026-01-15",
     "dateModified": "2026-01-15",
     "author": {
@@ -102,7 +102,7 @@
         "@type": "ListItem",
         "position": 3,
         "name": "Most Reliable Perodua Models",
-        "item": "https://www.motorwise.io/articles/perodua-most-reliable-models.html"
+        "item": "https://www.motorwise.io/articles/content/reliability/perodua-most-reliable-models.html"
       }
     ]
   }
@@ -172,8 +172,16 @@
   </script>
 
 
-  <!-- Reading Progress Bar Style -->
+  <!-- Reading Progress Bar Style & Mobile Gradient -->
   <style>
+    /* Mobile gradient background - matches tools pages */
+    @media (max-width: 767px) {
+      body {
+        background: linear-gradient(180deg, #EFF6FF 0%, #EFF6FF 60%, #FFFFFF 100%);
+        min-height: 100vh;
+      }
+    }
+
     #reading-progress {
       position: fixed;
       top: 0;
@@ -198,14 +206,14 @@
     }
   </style>
 </head>
-<body class="bg-white min-h-screen">
+<body class="bg-white md:bg-neutral-50 min-h-screen">
   <!-- Reading Progress Bar -->
   <div id="reading-progress" style="width: 0%"></div>
 
   <!-- Shared Header (injected by articles-loader.js) -->
   <div id="mw-header"></div>
 
-  <main id="main-content" class="max-w-6xl mx-auto px-4 py-8 sm:py-12">
+  <main id="main-content" class="max-w-6xl mx-auto px-4 py-6 sm:py-8 lg:py-12">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-neutral-500 mb-6">
       <a href="/" class="hover:text-blue-600 transition-colors">Home</a>
@@ -220,7 +228,7 @@
       <!-- Header -->
       <header class="mb-8">
         <div class="flex flex-wrap items-center gap-3 mb-4">
-          <span class="article-category-badge">
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-full border bg-gradient-to-br from-blue-50 to-blue-100/50 text-blue-600 border-blue-200/50">
             <i class="ph ph-chart-bar"></i>
             Reliability Data
           </span>
@@ -232,47 +240,49 @@
           Most Reliable Perodua Models: Real MOT Data Analysis
         </h1>
 
-        <p class="text-lg text-neutral-600">
+        <p class="text-lg text-neutral-600 leading-relaxed">
           We analysed 2,866 real UK MOT tests to reveal which Perodua models pass most often, which years to buy, and which to avoid entirely.
         </p>
       </header>
 
-      <!-- Data Source Callout -->
-      <div class="savings-callout">
-        <div class="savings-icon">
-          <i class="ph ph-database"></i>
+      <!-- Data Source Callout - Enhanced with gradient icon -->
+      <div class="flex items-center gap-4 p-4 bg-gradient-to-br from-emerald-50 to-emerald-100/50 border border-emerald-200/50 rounded-xl mb-8 transition-all hover:-translate-y-0.5 hover:shadow-md">
+        <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 shadow-sm">
+          <i class="ph ph-database text-emerald-600 text-xl"></i>
         </div>
         <div>
-          <p class="savings-amount">2,866 MOT tests analysed</p>
-          <p class="savings-text">Real DVSA data covering every Perodua model from 2000-2023</p>
+          <p class="text-base font-semibold text-emerald-700">2,866 MOT tests analysed</p>
+          <p class="text-sm text-emerald-600">Real DVSA data covering every Perodua model from 2000-2023</p>
         </div>
       </div>
-      <!-- Key Findings Summary -->
-      <div class="bg-neutral-50 rounded-xl p-6 mb-10">
-        <h2 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-          <i class="ph ph-lightning text-blue-600"></i>
+      <!-- Key Findings Summary - Featured Card Pattern -->
+      <div class="relative bg-white rounded-2xl shadow-xl border border-neutral-100/80 p-6 mb-10">
+        <h2 class="text-lg font-semibold text-neutral-900 mb-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-lightning text-blue-600 text-xl"></i>
+          </div>
           Key Findings
         </h2>
         <div class="grid sm:grid-cols-2 gap-4">
-          <div class="bg-white rounded-lg p-4 border border-neutral-200">
-            <p class="text-sm text-neutral-500 mb-1">Most Reliable Model</p>
+          <div class="bg-slate-50 rounded-xl p-4 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-1">Most Reliable Model</p>
             <p class="text-lg font-semibold text-neutral-900">Perodua MYVI</p>
-            <p class="text-sm text-emerald-600">69.0% pass rate</p>
+            <p class="text-sm text-emerald-600 font-medium">69.0% pass rate</p>
           </div>
-          <div class="bg-white rounded-lg p-4 border border-neutral-200">
-            <p class="text-sm text-neutral-500 mb-1">Best Single Year</p>
+          <div class="bg-slate-50 rounded-xl p-4 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-1">Best Single Year</p>
             <p class="text-lg font-semibold text-neutral-900">Insufficient data</p>
-            <p class="text-sm text-emerald-600">N/A</p>
+            <p class="text-sm text-emerald-600 font-medium">N/A</p>
           </div>
-          <div class="bg-white rounded-lg p-4 border border-neutral-200">
-            <p class="text-sm text-neutral-500 mb-1">Perodua vs National Average</p>
+          <div class="bg-slate-50 rounded-xl p-4 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-neutral-500 uppercase tracking-wide mb-1">Perodua vs National Average</p>
             <p class="text-lg font-semibold text-neutral-900">66.8% vs 71.5%</p>
-            <p class="text-sm text-red-600">-4.7% below average</p>
+            <p class="text-sm text-red-600 font-medium">-4.7% below average</p>
           </div>
-          <div class="bg-white rounded-lg p-4 border border-neutral-200 border-l-4 border-l-amber-400">
-            <p class="text-sm text-neutral-500 mb-1">Durability Champion</p>
+          <div class="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-xl p-4 border border-amber-200/50 transition-all hover:-translate-y-0.5 hover:shadow-md">
+            <p class="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-1">Durability Champion</p>
             <p class="text-lg font-semibold text-neutral-900">N/A</p>
-            <p class="text-sm text-amber-600">N/A</p>
+            <p class="text-sm text-amber-600 font-medium">N/A</p>
           </div>
         </div>
       </div>
@@ -586,10 +596,12 @@
       </section>
       </div>
       <div class="scroll-reveal" data-reveal-index="8">
-      <!-- FAQs Section -->
+      <!-- FAQs Section - Enhanced header -->
       <section id="faqs" class="mt-10">
-        <h3 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-          <i class="ph ph-question text-blue-600"></i>
+        <h3 class="text-lg font-semibold text-neutral-900 mb-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-question text-blue-600 text-xl"></i>
+          </div>
           Frequently Asked Questions
         </h3>
 
@@ -617,24 +629,26 @@
       </section>
       </div>
       <div class="scroll-reveal" data-reveal-index="9">
-      <!-- Buying Recommendations -->
+      <!-- Buying Recommendations - Enhanced with mw-info-card pattern -->
       <section id="recommendations" class="mt-10">
-        <h3 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-          <i class="ph ph-thumbs-up text-blue-600"></i>
+        <h3 class="text-lg font-semibold text-neutral-900 mb-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-thumbs-up text-blue-600 text-xl"></i>
+          </div>
           Our Buying Recommendations
         </h3>
 
         <div class="grid md:grid-cols-2 gap-4 mb-4">
-          <div class="bg-emerald-50 rounded-xl p-6">
+          <div class="bg-gradient-to-br from-emerald-50 to-emerald-100/30 rounded-xl p-5 border border-emerald-100/80 transition-all hover:-translate-y-0.5 hover:shadow-lg">
             <h4 class="font-semibold text-emerald-900 mb-1">Best If Buying Nearly New</h4>
             <p class="text-sm text-emerald-700 mb-3">2019-2023 models with highest early pass rates</p>
             <ul class="space-y-2 text-emerald-800">
             <li class="text-neutral-500">Limited data for recent models</li>
             </ul>
-            <p class="text-xs text-emerald-600 mt-2 italic">Note: Long-term durability not yet proven for these newer models</p>
+            <p class="text-xs text-emerald-600 mt-3 italic">Note: Long-term durability not yet proven for these newer models</p>
           </div>
 
-          <div class="bg-amber-50 rounded-xl p-6">
+          <div class="bg-gradient-to-br from-amber-50 to-amber-100/30 rounded-xl p-5 border border-amber-100/80 transition-all hover:-translate-y-0.5 hover:shadow-lg">
             <h4 class="font-semibold text-amber-900 mb-1">Best If Buying Used (Proven)</h4>
             <p class="text-sm text-amber-700 mb-3">11+ years of proven durability data</p>
             <ul class="space-y-2 text-amber-800">
@@ -643,7 +657,7 @@
           </div>
         </div>
 
-        <div class="bg-red-50 rounded-xl p-6">
+        <div class="bg-gradient-to-br from-red-50 to-red-100/30 rounded-xl p-5 border border-red-100/80 transition-all hover:-translate-y-0.5 hover:shadow-lg">
           <h4 class="font-semibold text-red-900 mb-3">Perodua Models to Avoid (Proven Poor)</h4>
           <p class="text-sm text-red-700 mb-3">Proven below average at 11+ years - not just old, genuinely problematic</p>
           <ul class="space-y-2 text-red-800">
@@ -653,22 +667,24 @@
       </section>
       </div>
       <div class="scroll-reveal" data-reveal-index="10">
-      <!-- Methodology -->
-      <section id="methodology" class="mt-10 bg-neutral-50 rounded-xl p-6">
-        <h3 class="text-lg font-semibold text-neutral-900 mb-3 flex items-center gap-2">
-          <i class="ph ph-info text-blue-600"></i>
+      <!-- Methodology - Enhanced styling -->
+      <section id="methodology" class="mt-10 bg-white rounded-2xl shadow-lg border border-neutral-100/80 p-6">
+        <h3 class="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200/50 flex items-center justify-center shadow-sm">
+            <i class="ph ph-info text-slate-600 text-xl"></i>
+          </div>
           About This Data
         </h3>
-        <div class="text-sm text-neutral-600 space-y-2">
+        <div class="text-sm text-neutral-600 space-y-3 leading-relaxed">
           <p>This analysis uses real MOT test results from the DVSA database, covering 2,866 tests on Perodua vehicles between 2000 and 2023.</p>
-          <p><strong>Year-Adjusted Scoring (v2.1):</strong> In year-by-year breakdowns, each vehicle is compared against the national average for vehicles of the <em>same model year</em>. This removes the natural bias where newer cars pass more often, allowing fair comparisons across eras.</p>
-          <p><strong>Evidence-Tiered Durability:</strong> We separate "proven durability" (vehicles tested at 11+ years old) from "early performers" (3-6 years old). Only vehicles with proven long-term data are used for durability claims. Age-band comparisons use weighted national averages.</p>
+          <p><strong class="text-neutral-800">Year-Adjusted Scoring (v2.1):</strong> In year-by-year breakdowns, each vehicle is compared against the national average for vehicles of the <em>same model year</em>. This removes the natural bias where newer cars pass more often, allowing fair comparisons across eras.</p>
+          <p><strong class="text-neutral-800">Evidence-Tiered Durability:</strong> We separate "proven durability" (vehicles tested at 11+ years old) from "early performers" (3-6 years old). Only vehicles with proven long-term data are used for durability claims. Age-band comparisons use weighted national averages.</p>
           <p>Minimum thresholds: 500 tests for proven durability rankings, 1,000 tests for early performer rankings. Pass rates are calculated as first-time passes, excluding retests.</p>
           <p>The overall national average MOT pass rate is 71.51% based on 32.3 million tests across all manufacturers. Year-specific averages range from ~59% (2009 vehicles) to ~88% (2020 vehicles).</p>
         </div>
       </section>
       </div>
-      <!-- Bottom CTA -->
+      <!-- Bottom CTA - Enhanced styling -->
       <div class="article-cta">
         <div class="article-cta-icon">
           <i class="ph ph-magnifying-glass"></i>
@@ -677,9 +693,9 @@
         <p class="article-cta-text">
           Get the full MOT history, mileage records, and reliability insights for any UK vehicle. Make an informed decision before you buy.
         </p>
-        <a href="/" class="article-cta-btn">
+        <a href="/" class="article-cta-btn group">
           Run a Free Check
-          <i class="ph ph-arrow-right"></i>
+          <i class="ph ph-arrow-right transition-transform group-hover:translate-x-1"></i>
         </a>
       </div>
         </div>
