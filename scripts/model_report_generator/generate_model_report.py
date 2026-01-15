@@ -38,7 +38,7 @@ except ImportError:
 # Configuration
 API_BASE = "http://localhost:8010/api"
 SCRIPT_DIR = Path(__file__).parent
-OUTPUT_DIR = SCRIPT_DIR.parent.parent / "articles" / "model-reports"
+OUTPUT_DIR = Path(r"C:\Users\gregor\Downloads\Dev\motorwise.io\frontend\public\articles\content\model-reports")
 
 
 def fetch_json(url: str, silent: bool = False) -> dict | list | None:
@@ -402,7 +402,7 @@ def aggregate_model_data(make: str, model: str) -> dict:
 # =============================================================================
 
 def generate_html(data: dict) -> str:
-    """Generate complete HTML page from model report data using Tailwind CSS."""
+    """Generate complete HTML page from model report data using articles pattern."""
     make = data["make"]
     model = data["model"]
     summary = data["summary"]
@@ -410,74 +410,283 @@ def generate_html(data: dict) -> str:
     today = date.today().strftime("%d %b %Y")
     today_iso = date.today().isoformat()
     pass_rate = summary.get("pass_rate", 0) or 0
-    pass_rate_color = get_pass_rate_color(pass_rate)
 
     # Create safe URL slugs
     safe_make = make.lower().replace(' ', '-').replace('(', '').replace(')', '')
     safe_model = model.lower().replace(' ', '-').replace('(', '').replace(')', '')
 
-    # Build all the HTML sections
-    rankings_html = generate_rankings_section(data.get("rankings", {}))
-    severity_html = generate_severity_section(data.get("severity", []))
-    first_mot_html = generate_first_mot_section(data.get("first_mot", []))
-    retest_html = generate_retest_section(data.get("retest"))
-    age_bands_html = generate_age_bands_section(data.get("age_bands", []))
-    geographic_html = generate_geographic_section(data.get("geographic", []))
-    seasonal_html = generate_seasonal_section(data.get("seasonal", []))
-    advisory_prog_html = generate_advisory_progression_section(data.get("advisory_progression", []))
-    component_thresh_html = generate_component_thresholds_section(data.get("component_thresholds", []))
+    # Generate the HTML head section
+    head_html = templates.generate_head(
+        make=make,
+        model=model,
+        safe_make=safe_make,
+        safe_model=safe_model,
+        total_tests=format_number(summary.get('total_tests')),
+        today_iso=today_iso
+    )
 
-    # Best year to buy section
-    best = data.get("best_variant")
-    best_html = ""
-    if best:
-        best_html = f"""
-        <div class="{tw.CARD_GOOD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Best Year to Buy</h3>
-                <i class="{tw.ICON_THUMBS_UP} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.HIGHLIGHT_STAT}">
-                    <span class="{tw.HIGHLIGHT_VALUE}">{best['year']} {best['fuel_type_name']}</span>
-                    {templates.get_badge_html(best['pass_rate'], f"{best['pass_rate']:.1f}% pass rate")}
+    # Generate article header components
+    breadcrumb_html = templates.generate_breadcrumb(make, model)
+    article_header_html = templates.generate_article_header(
+        make=make,
+        model=model,
+        variant_count=summary.get('total_variants', 0),
+        total_tests=format_number(summary.get('total_tests')),
+        today=today
+    )
+    data_source_html = templates.generate_data_source_callout(
+        total_tests=format_number(summary.get('total_tests')),
+        year_range=summary.get('year_range', 'N/A')
+    )
+    key_findings_html = templates.generate_key_findings_card(
+        best_variant=data.get("best_variant"),
+        worst_variant=data.get("worst_variant"),
+        pass_rate=pass_rate
+    )
+
+    # Define sections for TOC
+    sections = build_toc_sections(data)
+
+    # Generate TOC sidebar
+    toc_html = templates.generate_toc_sidebar(sections)
+
+    # Generate all main content sections
+    main_content = generate_main_sections(data)
+
+    html = f"""<!DOCTYPE html>
+<html lang="en-GB">
+{head_html}
+<body class="bg-white md:bg-neutral-50 min-h-screen">
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress" style="width: 0%"></div>
+
+    <!-- Shared Header -->
+    <div id="mw-header"></div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="{tw.CONTAINER}">
+        {breadcrumb_html}
+
+        <article>
+            {article_header_html}
+            {data_source_html}
+            {key_findings_html}
+
+            <!-- Two-Column Layout -->
+            <div class="article-layout">
+                {toc_html}
+
+                <!-- Main Content -->
+                <div class="article-main">
+                    {main_content}
+
+                    <!-- CTA Section -->
+                    <div class="article-cta">
+                        <div class="article-cta-icon">
+                            <i class="ph ph-magnifying-glass"></i>
+                        </div>
+                        <h3 class="article-cta-title">Check Any Vehicle's MOT History</h3>
+                        <p class="article-cta-text">
+                            Get the full MOT history, mileage records, and reliability insights for any UK vehicle. Make an informed decision before you buy.
+                        </p>
+                        <a href="/" class="article-cta-btn group">
+                            Run a Free Check
+                            <i class="ph ph-arrow-right transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
                 </div>
-                <p class="{tw.HIGHLIGHT_DETAIL}">Based on {format_number(best['total_tests'])} MOT tests</p>
             </div>
-        </div>"""
+        </article>
+    </main>
 
-    # Worst year to avoid section
-    worst = data.get("worst_variant")
-    worst_html = ""
-    if worst and worst != best:
-        worst_html = f"""
-        <div class="{tw.CARD_POOR}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Year to Avoid</h3>
-                <i class="{tw.ICON_THUMBS_DOWN} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.HIGHLIGHT_STAT}">
-                    <span class="{tw.HIGHLIGHT_VALUE}">{worst['year']} {worst['fuel_type_name']}</span>
-                    {templates.get_badge_html(worst['pass_rate'], f"{worst['pass_rate']:.1f}% pass rate")}
-                </div>
-                <p class="{tw.HIGHLIGHT_DETAIL}">Based on {format_number(worst['total_tests'])} MOT tests</p>
-            </div>
-        </div>"""
+    <!-- Shared Footer (injected by articles-loader.js) -->
+    <div id="mw-footer"></div>
 
-    # Fuel type comparison
-    fuel_rows = ""
-    for f in data.get("fuel_comparison", []):
-        rate = f.get("pass_rate", 0)
-        fuel_rows += f"""
-                <tr class="{tw.TR_HOVER}">
-                    <td class="{tw.TD}">{f.get('fuel_type', 'N/A')}</td>
-                    <td class="{tw.TD}">{templates.get_badge_html(rate)}</td>
-                    <td class="{tw.TD}">{format_number(f.get('total_tests'))}</td>
-                    <td class="{tw.TD}">{f.get('variants', 0)}</td>
-                </tr>"""
+    <!-- Articles Loader (shared components) -->
+    <script src="/articles/js/articles-loader.js"></script>
 
-    # Year trend chart (CSS bars)
+    <!-- Common Article JS -->
+    <script src="/articles/js/article-common.js"></script>
+</body>
+</html>
+"""
+    return html
+
+
+def build_toc_sections(data: dict) -> list:
+    """Build list of sections for table of contents based on available data."""
+    sections = []
+
+    # Always include overview
+    sections.append({'id': 'overview', 'title': 'Pass Rate Overview', 'icon': 'chart-pie'})
+
+    if data.get("rankings"):
+        sections.append({'id': 'rankings', 'title': 'Rankings', 'icon': 'trophy'})
+
+    if data.get("best_variant") or data.get("worst_variant"):
+        sections.append({'id': 'best-worst', 'title': 'Best & Worst Years', 'icon': 'thumbs-up'})
+
+    if data.get("age_bands"):
+        sections.append({'id': 'age-impact', 'title': 'Age Impact', 'icon': 'clock'})
+
+    if data.get("fuel_comparison") or data.get("mileage_bands"):
+        sections.append({'id': 'fuel-mileage', 'title': 'Fuel & Mileage', 'icon': 'gas-pump'})
+
+    if data.get("seasonal"):
+        sections.append({'id': 'seasonal', 'title': 'Seasonal Patterns', 'icon': 'calendar'})
+
+    if data.get("geographic"):
+        sections.append({'id': 'geographic', 'title': 'Geographic Variation', 'icon': 'map-pin'})
+
+    if data.get("failure_categories") or data.get("top_failures"):
+        sections.append({'id': 'failures', 'title': 'Common Failures', 'icon': 'wrench'})
+
+    if data.get("all_variants"):
+        sections.append({'id': 'all-variants', 'title': 'All Variants', 'icon': 'list'})
+
+    # Always include methodology
+    sections.append({'id': 'methodology', 'title': 'About This Data', 'icon': 'info'})
+
+    return sections
+
+
+def generate_main_sections(data: dict) -> str:
+    """Generate all main content sections with article-section pattern."""
+    sections_html = []
+    reveal_index = 1
+
+    # Section 1: Pass Rate Overview
+    overview_content = generate_overview_section_content(data)
+    sections_html.append(templates.generate_article_section(
+        section_id='overview',
+        title='Pass Rate Overview',
+        icon='chart-pie',
+        content=overview_content,
+        reveal_index=reveal_index
+    ))
+    reveal_index += 1
+
+    # Section 2: Rankings (if available)
+    if data.get("rankings"):
+        rankings_content = generate_rankings_content(data.get("rankings", {}))
+        sections_html.append(templates.generate_article_section(
+            section_id='rankings',
+            title='Rankings',
+            icon='trophy',
+            content=rankings_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 3: Best & Worst Years (if available)
+    if data.get("best_variant") or data.get("worst_variant"):
+        best_worst_content = generate_best_worst_content(data)
+        sections_html.append(templates.generate_article_section(
+            section_id='best-worst',
+            title='Best & Worst Years',
+            icon='thumbs-up',
+            content=best_worst_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 4: Age Impact (if available)
+    if data.get("age_bands"):
+        age_content = generate_age_section_content(data.get("age_bands", []))
+        sections_html.append(templates.generate_article_section(
+            section_id='age-impact',
+            title='Age Impact on Reliability',
+            icon='clock',
+            content=age_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 5: Fuel & Mileage (if available)
+    if data.get("fuel_comparison") or data.get("mileage_bands"):
+        fuel_mileage_content = generate_fuel_mileage_content(data)
+        sections_html.append(templates.generate_article_section(
+            section_id='fuel-mileage',
+            title='Fuel Type & Mileage Analysis',
+            icon='gas-pump',
+            content=fuel_mileage_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 6: Seasonal Patterns (if available)
+    if data.get("seasonal"):
+        seasonal_content = generate_seasonal_content(data.get("seasonal", []))
+        sections_html.append(templates.generate_article_section(
+            section_id='seasonal',
+            title='Seasonal Patterns',
+            icon='calendar',
+            content=seasonal_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 7: Geographic (if available)
+    if data.get("geographic"):
+        geo_content = generate_geographic_content(data.get("geographic", []))
+        sections_html.append(templates.generate_article_section(
+            section_id='geographic',
+            title='Geographic Variation',
+            icon='map-pin',
+            content=geo_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 8: Common Failures (if available)
+    if data.get("failure_categories") or data.get("top_failures"):
+        failures_content = generate_failures_content(data)
+        sections_html.append(templates.generate_article_section(
+            section_id='failures',
+            title='Common MOT Failures',
+            icon='wrench',
+            content=failures_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 9: All Variants (if available)
+    if data.get("all_variants"):
+        variants_content = generate_variants_content(data.get("all_variants", []))
+        sections_html.append(templates.generate_article_section(
+            section_id='all-variants',
+            title='All Variants',
+            icon='list',
+            content=variants_content,
+            reveal_index=reveal_index
+        ))
+        reveal_index += 1
+
+    # Section 10: Methodology (always include)
+    methodology_content = generate_methodology_content(data)
+    sections_html.append(templates.generate_article_section(
+        section_id='methodology',
+        title='About This Data',
+        icon='info',
+        content=methodology_content,
+        reveal_index=reveal_index
+    ))
+
+    return "\n".join(sections_html)
+
+
+def generate_overview_section_content(data: dict) -> str:
+    """Generate pass rate overview section content."""
+    summary = data["summary"]
+    pass_rate = summary.get("pass_rate", 0) or 0
+    pass_rate_color = get_pass_rate_color(pass_rate)
+    circumference = 2 * 3.14159 * 54
+    progress = circumference - (pass_rate / 100) * circumference
+
+    total_passes = summary.get("total_passes", 0) or 0
+    total_fails = summary.get("total_fails", 0) or 0
+
+    # Year trend chart
     year_data = data.get("year_comparison", [])
     max_tests = max((y.get("total_tests", 0) for y in year_data), default=1)
 
@@ -495,281 +704,9 @@ def generate_html(data: dict) -> str:
                 <div class="{tw.YEAR_RATE}" style="color: {get_pass_rate_color(rate)}">{rate:.0f}%</div>
             </div>"""
 
-    # Mileage impact section
-    mileage_rows = ""
-    for mb in data.get("mileage_bands", []):
-        rate = mb.get("pass_rate", 0)
-        mileage_rows += f"""
-                <tr class="{tw.TR_HOVER}">
-                    <td class="{tw.TD}">{mb.get('mileage_band', 'N/A')}</td>
-                    <td class="{tw.TD}">{templates.get_badge_html(rate)}</td>
-                    <td class="{tw.TD}">{format_number(mb.get('total_tests'))}</td>
-                </tr>"""
-
-    # Build failure categories bars
-    categories = data.get("failure_categories", [])[:10]
-    max_failures = max((c.get("failure_count", 0) for c in categories), default=1)
-
-    failure_bars = ""
-    for cat in categories:
-        count = cat.get("failure_count", 0)
-        pct = (count / max_failures * 100) if max_failures > 0 else 0
-        failure_bars += f"""
-            <div class="{tw.BAR_ROW}">
-                <div class="{tw.BAR_LABEL}">{truncate(cat.get('category_name', 'Unknown'), 30)}</div>
-                <div class="{tw.BAR_CONTAINER}">
-                    <div class="{tw.BAR}" style="width: {pct}%"></div>
-                    <span class="{tw.BAR_VALUE}">{format_number(count)}</span>
-                </div>
-            </div>"""
-
-    # Top failures list
-    failures_list = ""
-    for d in data.get("top_failures", [])[:15]:
-        failures_list += f"""
-            <li class="{tw.LIST_ITEM}">
-                <span class="{tw.DEFECT_NAME}">{d.get('defect_description', 'Unknown')}</span>
-                <span class="{tw.DEFECT_COUNT}">{format_number(d.get('occurrence_count'))}</span>
-            </li>"""
-
-    # Top advisories list
-    advisories_list = ""
-    for d in data.get("top_advisories", [])[:15]:
-        advisories_list += f"""
-            <li class="{tw.LIST_ITEM}">
-                <span class="{tw.DEFECT_NAME}">{d.get('defect_description', 'Unknown')}</span>
-                <span class="{tw.DEFECT_COUNT}">{format_number(d.get('occurrence_count'))}</span>
-            </li>"""
-
-    # Dangerous defects
-    dangerous_list = ""
-    for d in data.get("dangerous_defects", [])[:10]:
-        dangerous_list += f"""
-            <li class="{tw.LIST_ITEM}">
-                <span class="{tw.DEFECT_NAME}">{d.get('defect_description', 'Unknown')}</span>
-                <span class="{tw.DEFECT_COUNT_DANGEROUS}">{format_number(d.get('occurrence_count'))}</span>
-            </li>"""
-
-    dangerous_section = ""
-    if data.get("dangerous_defects"):
-        dangerous_section = f"""
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE} text-poor">Dangerous Defects ({len(data['dangerous_defects'])})</h3>
-                <i class="{tw.ICON_WARNING_OCTAGON} {tw.ICON_HEADER} text-poor"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <ul class="{tw.DEFECT_LIST}">{dangerous_list}
-                </ul>
-            </div>
-        </div>
-        """
-
-    # All variants table
-    all_variants_rows = ""
-    for v in data.get("all_variants", []):
-        rate = v.get("pass_rate", 0)
-        all_variants_rows += f"""
-                <tr class="{tw.TR_HOVER}">
-                    <td class="{tw.TD}">{v.get('year', 'N/A')}</td>
-                    <td class="{tw.TD}">{v.get('fuel_type_name', 'N/A')}</td>
-                    <td class="{tw.TD}">{templates.get_badge_html(rate)}</td>
-                    <td class="{tw.TD}">{format_number(v.get('total_tests'))}</td>
-                    <td class="{tw.TD}">{format_number(v.get('avg_mileage'))}</td>
-                </tr>"""
-
-    # Generate the HTML head section
-    head_html = templates.generate_head(
-        make=make,
-        model=model,
-        safe_make=safe_make,
-        safe_model=safe_model,
-        total_tests=format_number(summary.get('total_tests')),
-        today_iso=today_iso
-    )
-
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-{head_html}
-<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
-    <header class="{tw.HEADER}">
-        <h1 class="{tw.HEADER_H1}">{make} {model} MOT Reliability Report</h1>
-        <div class="{tw.HEADER_SUBTITLE}">Comprehensive analysis based on {format_number(summary.get('total_tests'))} real MOT tests</div>
-        <div class="{tw.HEADER_META}">Years: {summary.get('year_range', 'N/A')} | {summary.get('total_variants', 0)} variants analysed</div>
-        <div class="{tw.HEADER_META}">Updated {today}</div>
-    </header>
-
-    <div class="{tw.CONTAINER}">
-        <!-- Pass Rate Hero Section -->
-        {generate_pass_rate_hero(summary, pass_rate, pass_rate_color)}
-
-        <!-- Rankings Section -->
-        {rankings_html}
-
-        <!-- Best & Worst Year Highlights -->
-        <div class="{tw.GRID_2}">
-            {best_html}
-            {worst_html}
-        </div>
-
-        <!-- Key Insights Grid -->
-        <div class="{tw.GRID_3}">
-            {severity_html}
-            {first_mot_html}
-            {retest_html}
-        </div>
-
-        <!-- Year Trend Chart -->
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Pass Rate by Year</h3>
-                <i class="{tw.ICON_CHART_LINE} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.YEAR_CHART}">{year_bars if year_bars else '<p class="text-slate-500">No year data available</p>'}
-                </div>
-            </div>
-        </div>
-
-        <!-- Age Bands Section -->
-        {age_bands_html}
-
-        <!-- Fuel Type & Mileage Comparison -->
-        <div class="{tw.GRID_2}">
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Fuel Type Comparison</h3>
-                    <i class="{tw.ICON_GAS_PUMP} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY}">
-                    <table class="{tw.TABLE}">
-                        <thead><tr>
-                            <th class="{tw.TH}">Fuel Type</th>
-                            <th class="{tw.TH}">Pass Rate</th>
-                            <th class="{tw.TH}">Tests</th>
-                            <th class="{tw.TH}">Variants</th>
-                        </tr></thead>
-                        <tbody>{fuel_rows if fuel_rows else f'<tr><td class="{tw.TD}" colspan="4">No data available</td></tr>'}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Mileage Impact on Pass Rate</h3>
-                    <i class="{tw.ICON_PATH} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY}">
-                    <table class="{tw.TABLE}">
-                        <thead><tr>
-                            <th class="{tw.TH}">Mileage Band</th>
-                            <th class="{tw.TH}">Pass Rate</th>
-                            <th class="{tw.TH}">Tests</th>
-                        </tr></thead>
-                        <tbody>{mileage_rows if mileage_rows else f'<tr><td class="{tw.TD}" colspan="3">No data available</td></tr>'}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Seasonal Patterns -->
-        {seasonal_html}
-
-        <!-- Geographic Insights -->
-        {geographic_html}
-
-        <!-- Failure Categories -->
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Common Failure Categories</h3>
-                <i class="{tw.ICON_WRENCH} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">{failure_bars if failure_bars else '<p class="text-slate-500">No data available</p>'}
-            </div>
-        </div>
-
-        <!-- Advisory Progression & Component Thresholds -->
-        <div class="{tw.GRID_2}">
-            {advisory_prog_html}
-            {component_thresh_html}
-        </div>
-
-        <!-- Top Failures & Advisories -->
-        <div class="{tw.GRID_2}">
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Top Failures ({len(data.get('top_failures', []))})</h3>
-                    <i class="{tw.ICON_WARNING} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY}">
-                    <ul class="{tw.DEFECT_LIST}">{failures_list if failures_list else '<li class="text-slate-500">No failures recorded</li>'}
-                    </ul>
-                </div>
-            </div>
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Top Advisories ({len(data.get('top_advisories', []))})</h3>
-                    <i class="{tw.ICON_INFO} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY}">
-                    <ul class="{tw.DEFECT_LIST}">{advisories_list if advisories_list else '<li class="text-slate-500">No advisories recorded</li>'}
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Dangerous Defects -->
-        {dangerous_section}
-
-        <!-- All Variants Table -->
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">All Variants ({len(data.get('all_variants', []))})</h3>
-                <i class="{tw.ICON_LIST} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.ALL_VARIANTS_TABLE}">
-                    <table class="{tw.TABLE}">
-                        <thead>
-                            <tr>
-                                <th class="{tw.TH}">Year</th>
-                                <th class="{tw.TH}">Fuel</th>
-                                <th class="{tw.TH}">Pass Rate</th>
-                                <th class="{tw.TH}">Tests</th>
-                                <th class="{tw.TH}">Avg Mileage</th>
-                            </tr>
-                        </thead>
-                        <tbody>{all_variants_rows if all_variants_rows else f'<tr><td class="{tw.TD}" colspan="5">No data available</td></tr>'}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="{tw.FOOTER}">
-        <p>Data source: UK DVSA MOT test records | Generated {today}</p>
-        <p>Motorwise - Real reliability data for UK vehicles</p>
-    </footer>
-</body>
-</html>
-"""
-    return html
-
-
-def generate_pass_rate_hero(summary: dict, pass_rate: float, pass_rate_color: str) -> str:
-    """Generate the pass rate hero section with circular gauge."""
-    circumference = 2 * 3.14159 * 54
-    progress = circumference - (pass_rate / 100) * circumference
-
-    total_passes = summary.get("total_passes", 0) or 0
-    total_fails = summary.get("total_fails", 0) or 0
-
     return f"""
-        <div class="{tw.HERO}">
-            <div class="{tw.HERO_CIRCLE} pass-rate-circle">
+        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-6">
+            <div class="relative w-36 h-36 flex-shrink-0 pass-rate-circle">
                 <svg width="144" height="144">
                     <circle class="bg" cx="72" cy="72" r="54" fill="none" stroke="#f1f5f9" stroke-width="12"/>
                     <circle class="progress" cx="72" cy="72" r="54"
@@ -779,39 +716,46 @@ def generate_pass_rate_hero(summary: dict, pass_rate: float, pass_rate_color: st
                         stroke-dasharray="{circumference}"
                         stroke-dashoffset="{progress}"/>
                 </svg>
-                <div class="{tw.HERO_VALUE}">
-                    <div class="{tw.HERO_NUMBER}" style="color: {pass_rate_color}">{pass_rate:.1f}%</div>
-                    <div class="{tw.HERO_LABEL}">Pass Rate</div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                    <div class="text-3xl font-bold" style="color: {pass_rate_color}">{pass_rate:.1f}%</div>
+                    <div class="text-xs text-neutral-500 uppercase tracking-wide">Pass Rate</div>
                 </div>
             </div>
-            <div class="{tw.HERO_DETAILS}">
-                <h3 class="{tw.HERO_DETAILS_H3}">Test Statistics</h3>
-                <div class="{tw.DETAIL_GRID}">
-                    <div class="{tw.DETAIL_ITEM}">
-                        <span class="{tw.DETAIL_ITEM_LABEL}">Total Tests</span>
-                        <span class="{tw.DETAIL_ITEM_VALUE}">{format_number(summary.get('total_tests'))}</span>
+            <div class="flex-1 min-w-0 sm:min-w-[200px]">
+                <h3 class="text-base font-semibold text-neutral-900 mb-3">Test Statistics</h3>
+                <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
+                        <span class="text-xs text-neutral-500">Total Tests</span>
+                        <span class="text-lg font-semibold text-neutral-900">{format_number(summary.get('total_tests'))}</span>
                     </div>
-                    <div class="{tw.DETAIL_ITEM}">
-                        <span class="{tw.DETAIL_ITEM_LABEL}">Average Mileage</span>
-                        <span class="{tw.DETAIL_ITEM_VALUE}">{format_number(summary.get('avg_mileage'))} mi</span>
+                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
+                        <span class="text-xs text-neutral-500">Average Mileage</span>
+                        <span class="text-lg font-semibold text-neutral-900">{format_number(summary.get('avg_mileage'))} mi</span>
                     </div>
-                    <div class="{tw.DETAIL_ITEM}">
-                        <span class="{tw.DETAIL_ITEM_LABEL}">Total Passes</span>
-                        <span class="{tw.DETAIL_ITEM_VALUE}">{format_number(total_passes)}</span>
+                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
+                        <span class="text-xs text-neutral-500">Total Passes</span>
+                        <span class="text-lg font-semibold text-neutral-900">{format_number(total_passes)}</span>
                     </div>
-                    <div class="{tw.DETAIL_ITEM}">
-                        <span class="{tw.DETAIL_ITEM_LABEL}">Total Failures</span>
-                        <span class="{tw.DETAIL_ITEM_VALUE}">{format_number(total_fails)}</span>
+                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
+                        <span class="text-xs text-neutral-500">Total Failures</span>
+                        <span class="text-lg font-semibold text-neutral-900">{format_number(total_fails)}</span>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="article-prose mb-4">
+            <p>Pass rate trend by model year:</p>
+        </div>
+
+        <div class="{tw.YEAR_CHART}">{year_bars if year_bars else '<p class="text-neutral-500">No year data available</p>'}
         </div>"""
 
 
-def generate_rankings_section(rankings: dict) -> str:
-    """Generate rankings badges section."""
+def generate_rankings_content(rankings: dict) -> str:
+    """Generate rankings section content."""
     if not rankings:
-        return ""
+        return '<p class="text-neutral-500">No ranking data available</p>'
 
     badges = ""
     for rank_type, rank_data in rankings.items():
@@ -822,131 +766,63 @@ def generate_rankings_section(rankings: dict) -> str:
         percentile = rank_data.get("percentile", 0)
 
         badges += f"""
-            <div class="{tw.RANKING_BADGE}">
-                <div class="{tw.RANKING_RANK}">#{rank}</div>
-                <div class="{tw.RANKING_CONTEXT}">of {total} {format_ranking_type(rank_type)}</div>
-                <div class="{tw.RANKING_PERCENTILE}">Top {percentile}%</div>
+            <div class="text-center p-4 bg-neutral-50 rounded-xl">
+                <div class="text-2xl font-bold text-blue-600">#{rank}</div>
+                <div class="text-xs text-neutral-500 mt-1">of {total} {format_ranking_type(rank_type)}</div>
+                <div class="inline-block mt-2 px-2.5 py-1 bg-blue-600 text-white rounded-full text-xs font-semibold">Top {percentile}%</div>
             </div>"""
-
-    if not badges:
-        return ""
 
     return f"""
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Rankings</h3>
-                <i class="{tw.ICON_TROPHY} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.RANKING_BADGES}">{badges}
-                </div>
-            </div>
-        </div>"""
+        <div class="article-prose mb-4">
+            <p>How this vehicle ranks compared to others:</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">{badges}</div>"""
 
 
-def generate_severity_section(severity: list) -> str:
-    """Generate failure severity breakdown section."""
-    if not severity:
-        return ""
+def generate_best_worst_content(data: dict) -> str:
+    """Generate best and worst years section content."""
+    best = data.get("best_variant")
+    worst = data.get("worst_variant")
 
-    total = sum(s.get("failure_count", 0) for s in severity)
-    if total == 0:
-        return ""
+    content = '<div class="grid md:grid-cols-2 gap-4">'
 
-    # Build severity bar
-    bar_segments = ""
-    legend_items = ""
-    for s in severity:
-        sev = s.get("severity", "unknown")
-        count = s.get("failure_count", 0)
-        pct = s.get("failure_percentage", 0)
-        color = get_severity_color(sev)
-
-        if pct > 0:
-            bar_segments += f"""<div class="{tw.SEVERITY_SEGMENT}" style="width: {pct}%; background: {color};">{pct:.0f}%</div>"""
-            legend_items += f"""
-                <div class="{tw.SEVERITY_LEGEND_ITEM}">
-                    <div class="{tw.SEVERITY_DOT}" style="background: {color};"></div>
-                    <span>{sev.title()} ({format_number(count)})</span>
-                </div>"""
-
-    return f"""
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Failure Severity</h3>
-                    <i class="{tw.ICON_GAUGE} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY}">
-                    <div class="{tw.SEVERITY_BAR}">{bar_segments}</div>
-                    <div class="{tw.SEVERITY_LEGEND}">{legend_items}</div>
-                </div>
+    if best:
+        content += f"""
+            <div class="bg-gradient-to-br from-emerald-50 to-emerald-100/30 rounded-xl p-5 border border-emerald-100/80">
+                <h4 class="font-semibold text-emerald-900 mb-1">Best Year to Buy</h4>
+                <p class="text-2xl font-bold text-neutral-900">{best['year']} {best.get('fuel_type_name', '')}</p>
+                <p class="text-sm text-emerald-600 font-medium mt-1">{best['pass_rate']:.1f}% pass rate</p>
+                <p class="text-xs text-neutral-500 mt-2">Based on {format_number(best.get('total_tests'))} tests</p>
             </div>"""
 
-
-def generate_first_mot_section(first_mot: list) -> str:
-    """Generate first MOT vs subsequent section."""
-    if not first_mot:
-        return ""
-
-    stats = ""
-    for fm in first_mot:
-        mot_type = fm.get("mot_type", "")
-        rate = fm.get("pass_rate", 0)
-        label = "First MOT" if mot_type == "first" else "Subsequent"
-
-        stats += f"""
-            <div class="{tw.MINI_STAT}">
-                <div class="{tw.MINI_STAT_VALUE}" style="color: {get_pass_rate_color(rate)}">{rate:.1f}%</div>
-                <div class="{tw.MINI_STAT_LABEL}">{label}</div>
+    if worst and worst != best:
+        content += f"""
+            <div class="bg-gradient-to-br from-red-50 to-red-100/30 rounded-xl p-5 border border-red-100/80">
+                <h4 class="font-semibold text-red-900 mb-1">Year to Avoid</h4>
+                <p class="text-2xl font-bold text-neutral-900">{worst['year']} {worst.get('fuel_type_name', '')}</p>
+                <p class="text-sm text-red-600 font-medium mt-1">{worst['pass_rate']:.1f}% pass rate</p>
+                <p class="text-xs text-neutral-500 mt-2">Based on {format_number(worst.get('total_tests'))} tests</p>
             </div>"""
 
-    if not stats:
-        return ""
+    content += '</div>'
 
-    return f"""
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">First MOT vs Subsequent</h3>
-                    <i class="{tw.ICON_CAR} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY}">
-                    <div class="flex gap-6 justify-center flex-wrap">{stats}</div>
-                </div>
-            </div>"""
+    # Add callout if there's significant variance
+    if best and worst and best != worst:
+        variance = best['pass_rate'] - worst['pass_rate']
+        if variance > 10:
+            content += templates.generate_callout(
+                'warning',
+                'Significant year variation',
+                f"There's a {variance:.1f}% difference between the best and worst years. Choose your model year carefully."
+            )
 
-
-def generate_retest_section(retest: dict) -> str:
-    """Generate retest statistics section."""
-    if not retest:
-        return ""
-
-    return f"""
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Retest Statistics</h3>
-                    <i class="{tw.ICON_ARROW_CLOCKWISE} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY_COMPACT}">
-                    <div class="{tw.STAT_ROW}">
-                        <span class="{tw.STAT_ROW_LABEL}">Failed Tests</span>
-                        <span class="{tw.STAT_ROW_VALUE}">{format_number(retest.get('failed_tests'))}</span>
-                    </div>
-                    <div class="{tw.STAT_ROW}">
-                        <span class="{tw.STAT_ROW_LABEL}">Retested Within 30 Days</span>
-                        <span class="{tw.STAT_ROW_VALUE}">{retest.get('retest_rate', 0):.1f}%</span>
-                    </div>
-                    <div class="{tw.STAT_ROW}">
-                        <span class="{tw.STAT_ROW_LABEL}">Passed on Retest</span>
-                        <span class="{tw.STAT_ROW_VALUE}">{retest.get('retest_success_rate', 0):.1f}%</span>
-                    </div>
-                </div>
-            </div>"""
+    return content
 
 
-def generate_age_bands_section(age_bands: list) -> str:
-    """Generate age bands chart section."""
+def generate_age_section_content(age_bands: list) -> str:
+    """Generate age bands section content."""
     if not age_bands:
-        return ""
+        return '<p class="text-neutral-500">No age data available</p>'
 
     max_rate = max((a.get("pass_rate", 0) for a in age_bands), default=100)
     min_rate = min((a.get("pass_rate", 0) for a in age_bands), default=0)
@@ -956,7 +832,6 @@ def generate_age_bands_section(age_bands: list) -> str:
     for a in age_bands:
         rate = a.get("pass_rate", 0)
         band = a.get("age_band", "")
-        # Scale height relative to the range
         height_pct = ((rate - min_rate + 5) / (range_val + 10)) * 100
 
         bars += f"""
@@ -969,93 +844,72 @@ def generate_age_bands_section(age_bands: list) -> str:
             </div>"""
 
     return f"""
-        <div class="{tw.SECTION_DIVIDER}">
-            <h2 class="{tw.SECTION_DIVIDER_H2}">Age Impact</h2>
-            <p class="{tw.SECTION_DIVIDER_P}">How pass rate changes as the vehicle ages</p>
+        <div class="article-prose mb-4">
+            <p>How pass rate changes as the vehicle ages:</p>
         </div>
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Pass Rate by Age</h3>
-                <i class="{tw.ICON_CLOCK} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.AGE_CHART}">{bars}</div>
-            </div>
-        </div>"""
+        <div class="{tw.AGE_CHART}">{bars}</div>"""
 
 
-def generate_geographic_section(geographic: list) -> str:
-    """Generate geographic insights section."""
-    if not geographic or len(geographic) < 2:
-        return ""
+def generate_fuel_mileage_content(data: dict) -> str:
+    """Generate fuel type and mileage section content."""
+    content = '<div class="grid md:grid-cols-2 gap-6">'
 
-    # Get top 5 and bottom 5
-    best = geographic[:5]
-    worst = geographic[-5:][::-1]  # Reverse to show worst first
-
-    best_rows = ""
-    for g in best:
-        rate = g.get("pass_rate", 0)
-        best_rows += f"""
-            <tr class="{tw.TR_HOVER}">
-                <td class="{tw.TD} font-semibold">{g.get('postcode_area', 'N/A')}</td>
-                <td class="{tw.TD}" style="color: {get_pass_rate_color(rate)}">{rate:.1f}%</td>
-                <td class="{tw.TD}">{format_number(g.get('total_tests'))}</td>
+    # Fuel type comparison
+    fuel_rows = ""
+    for f in data.get("fuel_comparison", []):
+        rate = f.get("pass_rate", 0)
+        badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
+        fuel_rows += f"""
+            <tr>
+                <td>{f.get('fuel_type', 'N/A')}</td>
+                <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
+                <td>{format_number(f.get('total_tests'))}</td>
             </tr>"""
 
-    worst_rows = ""
-    for g in worst:
-        rate = g.get("pass_rate", 0)
-        worst_rows += f"""
-            <tr class="{tw.TR_HOVER}">
-                <td class="{tw.TD} font-semibold">{g.get('postcode_area', 'N/A')}</td>
-                <td class="{tw.TD}" style="color: {get_pass_rate_color(rate)}">{rate:.1f}%</td>
-                <td class="{tw.TD}">{format_number(g.get('total_tests'))}</td>
-            </tr>"""
-
-    return f"""
-        <div class="{tw.SECTION_DIVIDER}">
-            <h2 class="{tw.SECTION_DIVIDER_H2}">Geographic Variation</h2>
-            <p class="{tw.SECTION_DIVIDER_P}">Pass rates by UK postcode area</p>
-        </div>
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Regional Pass Rates</h3>
-                <i class="{tw.ICON_MAP_PIN} {tw.ICON_HEADER}"></i>
-            </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.GEO_SPLIT}">
-                    <div>
-                        <h4 class="{tw.GEO_SECTION_TITLE_BEST}">Best Areas</h4>
-                        <table class="{tw.TABLE}">
-                            <thead><tr>
-                                <th class="{tw.TH}">Postcode</th>
-                                <th class="{tw.TH}">Pass Rate</th>
-                                <th class="{tw.TH}">Tests</th>
-                            </tr></thead>
-                            <tbody>{best_rows}</tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <h4 class="{tw.GEO_SECTION_TITLE_WORST}">Worst Areas</h4>
-                        <table class="{tw.TABLE}">
-                            <thead><tr>
-                                <th class="{tw.TH}">Postcode</th>
-                                <th class="{tw.TH}">Pass Rate</th>
-                                <th class="{tw.TH}">Tests</th>
-                            </tr></thead>
-                            <tbody>{worst_rows}</tbody>
-                        </table>
-                    </div>
+    if fuel_rows:
+        content += f"""
+            <div>
+                <h4 class="text-sm font-semibold text-neutral-900 mb-3">Fuel Type Comparison</h4>
+                <div class="article-table-wrapper">
+                    <table class="article-table">
+                        <thead><tr><th>Fuel Type</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                        <tbody>{fuel_rows}</tbody>
+                    </table>
                 </div>
-            </div>
-        </div>"""
+            </div>"""
+
+    # Mileage impact
+    mileage_rows = ""
+    for mb in data.get("mileage_bands", []):
+        rate = mb.get("pass_rate", 0)
+        badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
+        mileage_rows += f"""
+            <tr>
+                <td>{mb.get('mileage_band', 'N/A')}</td>
+                <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
+                <td>{format_number(mb.get('total_tests'))}</td>
+            </tr>"""
+
+    if mileage_rows:
+        content += f"""
+            <div>
+                <h4 class="text-sm font-semibold text-neutral-900 mb-3">Mileage Impact</h4>
+                <div class="article-table-wrapper">
+                    <table class="article-table">
+                        <thead><tr><th>Mileage Band</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                        <tbody>{mileage_rows}</tbody>
+                    </table>
+                </div>
+            </div>"""
+
+    content += '</div>'
+    return content
 
 
-def generate_seasonal_section(seasonal: list) -> str:
-    """Generate seasonal patterns chart."""
+def generate_seasonal_content(seasonal: list) -> str:
+    """Generate seasonal patterns section content."""
     if not seasonal:
-        return ""
+        return '<p class="text-neutral-500">No seasonal data available</p>'
 
     max_rate = max((s.get("pass_rate", 0) for s in seasonal), default=100)
     min_rate = min((s.get("pass_rate", 0) for s in seasonal), default=0)
@@ -1077,82 +931,182 @@ def generate_seasonal_section(seasonal: list) -> str:
             </div>"""
 
     return f"""
-        <div class="{tw.SECTION_DIVIDER}">
-            <h2 class="{tw.SECTION_DIVIDER_H2}">Seasonal Patterns</h2>
-            <p class="{tw.SECTION_DIVIDER_P}">Monthly pass rate variation for this vehicle</p>
+        <div class="article-prose mb-4">
+            <p>Monthly pass rate variation for this vehicle:</p>
         </div>
-        <div class="{tw.CARD}">
-            <div class="{tw.CARD_HEADER}">
-                <h3 class="{tw.CARD_TITLE}">Pass Rate by Month</h3>
-                <i class="{tw.ICON_CALENDAR} {tw.ICON_HEADER}"></i>
+        <div class="{tw.MONTHLY_CHART}">{bars}</div>"""
+
+
+def generate_geographic_content(geographic: list) -> str:
+    """Generate geographic section content."""
+    if not geographic or len(geographic) < 2:
+        return '<p class="text-neutral-500">Insufficient geographic data</p>'
+
+    best = geographic[:5]
+    worst = geographic[-5:][::-1]
+
+    best_rows = ""
+    for g in best:
+        rate = g.get("pass_rate", 0)
+        badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
+        best_rows += f"""
+            <tr>
+                <td><strong>{g.get('postcode_area', 'N/A')}</strong></td>
+                <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
+                <td>{format_number(g.get('total_tests'))}</td>
+            </tr>"""
+
+    worst_rows = ""
+    for g in worst:
+        rate = g.get("pass_rate", 0)
+        badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
+        worst_rows += f"""
+            <tr>
+                <td><strong>{g.get('postcode_area', 'N/A')}</strong></td>
+                <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
+                <td>{format_number(g.get('total_tests'))}</td>
+            </tr>"""
+
+    return f"""
+        <div class="article-prose mb-4">
+            <p>Pass rates by UK postcode area:</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <h4 class="text-sm font-semibold text-emerald-600 mb-3">Best Areas</h4>
+                <div class="article-table-wrapper">
+                    <table class="article-table">
+                        <thead><tr><th>Postcode</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                        <tbody>{best_rows}</tbody>
+                    </table>
+                </div>
             </div>
-            <div class="{tw.CARD_BODY}">
-                <div class="{tw.MONTHLY_CHART}">{bars}</div>
+            <div>
+                <h4 class="text-sm font-semibold text-red-600 mb-3">Worst Areas</h4>
+                <div class="article-table-wrapper">
+                    <table class="article-table">
+                        <thead><tr><th>Postcode</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                        <tbody>{worst_rows}</tbody>
+                    </table>
+                </div>
             </div>
         </div>"""
 
 
-def generate_advisory_progression_section(progression: list) -> str:
-    """Generate advisory to failure progression section."""
-    if not progression:
-        return ""
+def generate_failures_content(data: dict) -> str:
+    """Generate failures section content."""
+    content = ""
 
-    items = ""
-    for p in progression[:5]:
-        desc = truncate(p.get("advisory_text", "Unknown"), 35)
-        rate = p.get("progression_rate", 0)
-        color = get_pass_rate_color(100 - rate)  # Invert: high progression = bad
+    # Failure categories bars
+    categories = data.get("failure_categories", [])[:10]
+    if categories:
+        max_failures = max((c.get("failure_count", 0) for c in categories), default=1)
 
-        items += f"""
-            <li class="{tw.LIST_ITEM}">
-                <span class="{tw.DATA_LIST_NAME}">{desc}</span>
-                <span class="{tw.DATA_LIST_VALUE}" style="color: {color}">{rate:.1f}%</span>
-            </li>"""
+        failure_bars = ""
+        for cat in categories:
+            count = cat.get("failure_count", 0)
+            pct = (count / max_failures * 100) if max_failures > 0 else 0
+            failure_bars += f"""
+                <div class="{tw.BAR_ROW}">
+                    <div class="{tw.BAR_LABEL}">{truncate(cat.get('category_name', 'Unknown'), 30)}</div>
+                    <div class="{tw.BAR_CONTAINER}">
+                        <div class="{tw.BAR}" style="width: {pct}%"></div>
+                        <span class="{tw.BAR_VALUE}">{format_number(count)}</span>
+                    </div>
+                </div>"""
 
-    return f"""
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Advisory to Failure Risk</h3>
-                    <i class="{tw.ICON_INFO} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY_COMPACT}">
-                    <ul class="{tw.DATA_LIST}">{items}</ul>
-                    <p class="text-xs text-slate-500 mt-3">
-                        Shows how often advisories become failures on subsequent tests
-                    </p>
-                </div>
-            </div>"""
+        content += f"""
+            <div class="article-prose mb-4">
+                <p>Most common failure categories:</p>
+            </div>
+            <div class="mb-6">{failure_bars}</div>"""
 
+    # Top specific failures
+    top_failures = data.get("top_failures", [])[:10]
+    if top_failures:
+        failures_rows = ""
+        for d in top_failures:
+            failures_rows += f"""
+                <tr>
+                    <td>{truncate(d.get('defect_description', 'Unknown'), 50)}</td>
+                    <td>{format_number(d.get('occurrence_count'))}</td>
+                </tr>"""
 
-def generate_component_thresholds_section(thresholds: list) -> str:
-    """Generate component mileage thresholds section."""
-    if not thresholds:
-        return ""
-
-    items = ""
-    for t in thresholds[:5]:
-        component = truncate(t.get("component", "Unknown"), 25)
-        mileage = t.get("avg_failure_mileage", 0)
-
-        items += f"""
-            <li class="{tw.LIST_ITEM}">
-                <span class="{tw.DATA_LIST_NAME}">{component}</span>
-                <span class="{tw.DATA_LIST_VALUE}">{format_number(mileage)} mi</span>
-            </li>"""
-
-    return f"""
-            <div class="{tw.CARD}">
-                <div class="{tw.CARD_HEADER}">
-                    <h3 class="{tw.CARD_TITLE}">Component Failure Mileage</h3>
-                    <i class="{tw.ICON_PATH} {tw.ICON_HEADER}"></i>
-                </div>
-                <div class="{tw.CARD_BODY_COMPACT}">
-                    <ul class="{tw.DATA_LIST}">{items}</ul>
-                    <p class="text-xs text-slate-500 mt-3">
-                        Average mileage when components typically fail
-                    </p>
+        content += f"""
+            <div class="mt-6">
+                <h4 class="text-sm font-semibold text-neutral-900 mb-3">Top Specific Failures</h4>
+                <div class="article-table-wrapper">
+                    <table class="article-table">
+                        <thead><tr><th>Defect</th><th>Count</th></tr></thead>
+                        <tbody>{failures_rows}</tbody>
+                    </table>
                 </div>
             </div>"""
+
+    # Dangerous defects warning
+    dangerous = data.get("dangerous_defects", [])
+    if dangerous:
+        dangerous_list = ", ".join([d.get('defect_description', 'Unknown')[:30] for d in dangerous[:3]])
+        content += templates.generate_callout(
+            'danger',
+            f'{len(dangerous)} dangerous defects recorded',
+            f'Including: {dangerous_list}...'
+        )
+
+    return content if content else '<p class="text-neutral-500">No failure data available</p>'
+
+
+def generate_variants_content(all_variants: list) -> str:
+    """Generate all variants table content."""
+    if not all_variants:
+        return '<p class="text-neutral-500">No variant data available</p>'
+
+    rows = ""
+    for v in all_variants:
+        rate = v.get("pass_rate", 0)
+        badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
+        rows += f"""
+            <tr>
+                <td>{v.get('year', 'N/A')}</td>
+                <td>{v.get('fuel_type_name', 'N/A')}</td>
+                <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
+                <td>{format_number(v.get('total_tests'))}</td>
+                <td>{format_number(v.get('avg_mileage'))} mi</td>
+            </tr>"""
+
+    return f"""
+        <div class="article-prose mb-4">
+            <p>Complete breakdown of all {len(all_variants)} variants:</p>
+        </div>
+        <div class="article-table-wrapper max-h-96 overflow-y-auto">
+            <table class="article-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Fuel</th>
+                        <th>Pass Rate</th>
+                        <th>Tests</th>
+                        <th>Avg Mileage</th>
+                    </tr>
+                </thead>
+                <tbody>{rows}</tbody>
+            </table>
+        </div>"""
+
+
+def generate_methodology_content(data: dict) -> str:
+    """Generate methodology section content."""
+    summary = data["summary"]
+    total_tests = format_number(summary.get('total_tests'))
+    year_range = summary.get('year_range', 'N/A')
+
+    return f"""
+        <div class="text-sm text-neutral-600 space-y-3 leading-relaxed">
+            <p>This analysis uses real MOT test results from the DVSA database, covering <strong>{total_tests}</strong> tests on this vehicle between <strong>{year_range}</strong>.</p>
+            <p><strong class="text-neutral-800">Data source:</strong> All data comes from the UK Driver and Vehicle Standards Agency (DVSA) MOT database, which records every MOT test conducted in the UK.</p>
+            <p><strong class="text-neutral-800">Pass rate calculation:</strong> Pass rates are calculated as first-time passes, excluding retests. A vehicle passes if it has no dangerous or major defects.</p>
+            <p><strong class="text-neutral-800">Limitations:</strong> MOT tests only cover vehicles 3+ years old. Very new vehicles aren't represented. Regional variations may reflect differences in testing standards or vehicle condition.</p>
+        </div>"""
 
 
 # =============================================================================
