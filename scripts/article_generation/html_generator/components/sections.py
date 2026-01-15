@@ -6,6 +6,8 @@ All HTML section generators for the MOT reliability articles.
 
 from .data_classes import (
     ArticleInsights,
+    DurabilityVehicle,
+    EarlyPerformer,
     format_number,
     safe_html,
     slugify,
