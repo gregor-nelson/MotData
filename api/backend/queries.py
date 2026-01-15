@@ -256,6 +256,96 @@ def get_manufacturer(conn: Connection, make: str) -> dict | None:
 
 
 # =============================================================================
+# MAKE-LEVEL AGGREGATION QUERIES
+# =============================================================================
+
+def get_make_models(conn: Connection, make: str) -> list[dict]:
+    """Get all models for a make with their pass rates and test counts."""
+    cursor = conn.execute(
+        """SELECT model, model_year, fuel_type,
+                  SUM(total_tests) as total_tests,
+                  ROUND(SUM(total_passes) * 100.0 / SUM(total_tests), 2) as pass_rate,
+                  ROUND(AVG(avg_mileage), 0) as avg_mileage
+           FROM vehicle_insights
+           WHERE make = ?
+           GROUP BY model, model_year, fuel_type
+           ORDER BY pass_rate DESC""",
+        (make.upper(),)
+    )
+    return cursor.fetchall()
+
+
+def get_make_failure_categories(conn: Connection, make: str) -> list[dict]:
+    """Get aggregated failure categories across all models for a make."""
+    cursor = conn.execute(
+        """SELECT category_name,
+                  SUM(failure_count) as failure_count,
+                  ROUND(AVG(failure_percentage), 2) as failure_percentage
+           FROM failure_categories
+           WHERE make = ?
+           GROUP BY category_name
+           ORDER BY failure_count DESC
+           LIMIT 10""",
+        (make.upper(),)
+    )
+    return cursor.fetchall()
+
+
+def get_make_top_defects(conn: Connection, make: str) -> dict:
+    """Get aggregated top defects across all models for a make."""
+    cursor = conn.execute(
+        """SELECT defect_description, category_name, defect_type,
+                  SUM(occurrence_count) as occurrence_count,
+                  ROUND(AVG(occurrence_percentage), 2) as occurrence_percentage
+           FROM top_defects
+           WHERE make = ?
+           GROUP BY defect_description, category_name, defect_type
+           ORDER BY occurrence_count DESC
+           LIMIT 20""",
+        (make.upper(),)
+    )
+    rows = cursor.fetchall()
+    return {
+        "failures": [r for r in rows if r["defect_type"] == "failure"][:10],
+        "advisories": [r for r in rows if r["defect_type"] == "advisory"][:10]
+    }
+
+
+def get_make_dangerous_defects(conn: Connection, make: str) -> list[dict]:
+    """Get aggregated dangerous defects across all models for a make."""
+    cursor = conn.execute(
+        """SELECT defect_description, category_name,
+                  SUM(occurrence_count) as occurrence_count,
+                  ROUND(AVG(occurrence_percentage), 2) as occurrence_percentage
+           FROM dangerous_defects
+           WHERE make = ?
+           GROUP BY defect_description, category_name
+           ORDER BY occurrence_count DESC
+           LIMIT 10""",
+        (make.upper(),)
+    )
+    return cursor.fetchall()
+
+
+def get_make_summary(conn: Connection, make: str) -> dict | None:
+    """Get summary statistics for a make."""
+    cursor = conn.execute(
+        """SELECT COUNT(DISTINCT model) as total_models,
+                  COUNT(DISTINCT model || model_year || fuel_type) as total_variants,
+                  SUM(total_tests) as total_tests,
+                  SUM(total_passes) as total_passes,
+                  SUM(total_fails) as total_fails,
+                  ROUND(SUM(total_passes) * 100.0 / SUM(total_tests), 2) as pass_rate,
+                  ROUND(AVG(avg_mileage), 0) as avg_mileage,
+                  ROUND(AVG(avg_age_years), 1) as avg_age_years
+           FROM vehicle_insights
+           WHERE make = ?""",
+        (make.upper(),)
+    )
+    return cursor.fetchone()
+
+
+# =============================================================================
 # UTILITY QUERIES
 # =============================================================================
 

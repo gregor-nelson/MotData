@@ -274,3 +274,48 @@ def get_manufacturer(make: str):
         if not data:
             raise HTTPException(status_code=404, detail=f"Manufacturer '{make}' not found")
         return data
+
+
+# =============================================================================
+# MAKE REPORT ENDPOINT
+# =============================================================================
+
+@app.get("/api/make-report/{make}")
+def get_make_report(make: str):
+    """Get comprehensive report for all models of a make."""
+    with get_db() as conn:
+        # Get summary and check make exists
+        summary = queries.get_make_summary(conn, make)
+        if not summary or summary["total_tests"] is None:
+            raise HTTPException(status_code=404, detail=f"Make '{make}' not found")
+
+        # Get manufacturer ranking info if available
+        manufacturer = queries.get_manufacturer(conn, make)
+
+        # Get all models with their stats
+        models = queries.get_make_models(conn, make)
+
+        # Find best and worst models (no overlap)
+        best_models = models[:5] if models else []
+        # Take models after the top 5, reverse so worst is first, limit to 5
+        worst_models = models[5:][::-1][:5] if len(models) > 5 else []
+
+        # Get aggregated defect data
+        defects = queries.get_make_top_defects(conn, make)
+
+        return {
+            "make": make.upper(),
+            "summary": summary,
+            "ranking": {
+                "rank": manufacturer["rank"] if manufacturer else None,
+                "total_manufacturers": None,  # Could query this if needed
+                "weighted_pass_rate": manufacturer["weighted_pass_rate"] if manufacturer else None,
+            } if manufacturer else None,
+            "models": models,
+            "best_models": best_models,
+            "worst_models": worst_models,
+            "failure_categories": queries.get_make_failure_categories(conn, make),
+            "top_failures": defects["failures"],
+            "top_advisories": defects["advisories"],
+            "dangerous_defects": queries.get_make_dangerous_defects(conn, make),
+        }

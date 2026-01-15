@@ -1017,6 +1017,7 @@
             <button class="nav-tab active" data-tab="vehicle">Vehicle Lookup</button>
             <button class="nav-tab" data-tab="tables">Data Explorer</button>
             <button class="nav-tab" data-tab="manufacturers">Brand Rankings</button>
+            <button class="nav-tab" data-tab="makereport">Make Report</button>
             <button class="nav-tab" data-tab="national">National Stats</button>
         </div>
 
@@ -1193,6 +1194,33 @@
             </div>
         </div>
 
+        <!-- Make Report Tab -->
+        <div id="makereport" class="tab-content">
+            <div class="section-header">
+                <h2>Make Report</h2>
+                <p>Comprehensive analysis of all models for a vehicle make</p>
+            </div>
+
+            <div class="form-row" style="margin-bottom: 24px;">
+                <div class="form-group" style="flex: 1; max-width: 300px;">
+                    <label>Select Make</label>
+                    <select id="makeReportSelect" onchange="onMakeReportSelectChange()">
+                        <option value="">Choose a make...</option>
+                    </select>
+                </div>
+                <div class="form-group" style="display: flex; align-items: flex-end;">
+                    <button class="btn" onclick="loadMakeReport()" id="makeReportBtn" disabled>Generate Report</button>
+                </div>
+            </div>
+
+            <div id="makeReportResults">
+                <div class="empty-state">
+                    <h3>Select a make to generate report</h3>
+                    <p>View aggregated statistics across all models for any manufacturer</p>
+                </div>
+            </div>
+        </div>
+
         <!-- National Stats Tab -->
         <div id="national" class="tab-content">
             <div class="section-header">
@@ -1243,6 +1271,7 @@
             loadStats();
             loadMakes();
             loadExplorerMakes();
+            loadMakeReportMakes();
             setupTabs();
         });
 
@@ -2361,6 +2390,263 @@
                 .replace(/\b(true|false)\b/g, '<span class="json-boolean">$1</span>')
                 .replace(/\bnull\b/g, '<span class="json-null">null</span>')
                 .replace(/\b(-?\d+\.?\d*)\b/g, '<span class="json-number">$1</span>');
+        }
+
+        // =============================================================================
+        // MAKE REPORT FUNCTIONS
+        // =============================================================================
+
+        async function loadMakeReportMakes() {
+            const select = document.getElementById('makeReportSelect');
+            try {
+                const res = await fetch(`${API_BASE}/makes`);
+                const makes = await res.json();
+                makes.forEach(make => {
+                    const option = document.createElement('option');
+                    option.value = make;
+                    option.textContent = make;
+                    select.appendChild(option);
+                });
+            } catch (e) {
+                console.error('Failed to load makes for report:', e);
+            }
+        }
+
+        function onMakeReportSelectChange() {
+            const select = document.getElementById('makeReportSelect');
+            const btn = document.getElementById('makeReportBtn');
+            btn.disabled = !select.value;
+        }
+
+        async function loadMakeReport() {
+            const select = document.getElementById('makeReportSelect');
+            const make = select.value;
+            if (!make) return;
+
+            const resultsDiv = document.getElementById('makeReportResults');
+            resultsDiv.innerHTML = '<div class="loading">Loading make report...</div>';
+
+            try {
+                const res = await fetch(`${API_BASE}/make-report/${encodeURIComponent(make)}`);
+                if (!res.ok) throw new Error('Make not found');
+                const data = await res.json();
+                renderMakeReport(data, resultsDiv);
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error-message">Error: ${e.message}</div>`;
+            }
+        }
+
+        function renderMakeReport(data, container) {
+            const summary = data.summary;
+            const ranking = data.ranking;
+
+            container.innerHTML = `
+                <div class="report-header" style="margin-bottom: 24px;">
+                    <h2 style="margin-bottom: 8px;">${data.make}</h2>
+                    ${ranking ? `<p style="color: var(--color-text-muted);">Ranked #${ranking.rank} nationally</p>` : ''}
+                </div>
+
+                <!-- Summary Stats -->
+                <div class="stats-grid" style="margin-bottom: 32px;">
+                    <div class="stat-card">
+                        <div class="value" style="color: ${getPassRateColor(summary.pass_rate)}">${summary.pass_rate?.toFixed(1) || 'N/A'}%</div>
+                        <div class="label">Overall Pass Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">${summary.total_tests?.toLocaleString() || 'N/A'}</div>
+                        <div class="label">Total Tests</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">${summary.total_models || 'N/A'}</div>
+                        <div class="label">Models</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">${summary.total_variants || 'N/A'}</div>
+                        <div class="label">Variants</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">${summary.avg_mileage?.toLocaleString() || 'N/A'}</div>
+                        <div class="label">Avg Mileage</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value">${summary.avg_age_years?.toFixed(1) || 'N/A'}</div>
+                        <div class="label">Avg Age (Years)</div>
+                    </div>
+                </div>
+
+                <!-- Best & Worst Models -->
+                <div class="grid-2" style="margin-bottom: 32px;">
+                    <div class="card">
+                        <div class="card-header"><h4>Best Performing Models</h4></div>
+                        <div class="card-body">
+                            ${data.best_models.length ? `
+                                <table class="data-table">
+                                    <thead><tr><th>Model</th><th>Year</th><th>Fuel</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                                    <tbody>
+                                        ${data.best_models.map(m => `
+                                            <tr>
+                                                <td>${m.model}</td>
+                                                <td>${m.model_year}</td>
+                                                <td>${m.fuel_type}</td>
+                                                <td><span class="badge ${getPassRateClass(m.pass_rate)}">${m.pass_rate?.toFixed(1)}%</span></td>
+                                                <td>${m.total_tests?.toLocaleString()}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            ` : '<p class="text-muted">No data available</p>'}
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"><h4>Worst Performing Models</h4></div>
+                        <div class="card-body">
+                            ${data.worst_models.length ? `
+                                <table class="data-table">
+                                    <thead><tr><th>Model</th><th>Year</th><th>Fuel</th><th>Pass Rate</th><th>Tests</th></tr></thead>
+                                    <tbody>
+                                        ${data.worst_models.map(m => `
+                                            <tr>
+                                                <td>${m.model}</td>
+                                                <td>${m.model_year}</td>
+                                                <td>${m.fuel_type}</td>
+                                                <td><span class="badge ${getPassRateClass(m.pass_rate)}">${m.pass_rate?.toFixed(1)}%</span></td>
+                                                <td>${m.total_tests?.toLocaleString()}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            ` : '<p class="text-muted">No data available</p>'}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Failure Categories Chart -->
+                <div class="card" style="margin-bottom: 32px;">
+                    <div class="card-header"><h4>Top Failure Categories</h4></div>
+                    <div class="card-body">
+                        <div class="chart-container"><canvas id="makeFailureChart"></canvas></div>
+                    </div>
+                </div>
+
+                <!-- Top Failures & Advisories -->
+                <div class="grid-2" style="margin-bottom: 32px;">
+                    <div class="card">
+                        <div class="card-header"><h4>Top Failures</h4></div>
+                        <div class="card-body">
+                            ${data.top_failures.length ? `
+                                <ul class="defect-list">
+                                    ${data.top_failures.slice(0, 8).map(d => `
+                                        <li>
+                                            <span class="defect-name">${d.defect_description}</span>
+                                            <span class="defect-count">${d.occurrence_count?.toLocaleString()}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            ` : '<p class="text-muted">No failures recorded</p>'}
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"><h4>Top Advisories</h4></div>
+                        <div class="card-body">
+                            ${data.top_advisories.length ? `
+                                <ul class="defect-list">
+                                    ${data.top_advisories.slice(0, 8).map(d => `
+                                        <li>
+                                            <span class="defect-name">${d.defect_description}</span>
+                                            <span class="defect-count">${d.occurrence_count?.toLocaleString()}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            ` : '<p class="text-muted">No advisories recorded</p>'}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dangerous Defects -->
+                ${data.dangerous_defects.length ? `
+                    <div class="card" style="margin-bottom: 32px;">
+                        <div class="card-header"><h4 style="color: var(--color-poor);">Dangerous Defects</h4></div>
+                        <div class="card-body">
+                            <ul class="defect-list">
+                                ${data.dangerous_defects.slice(0, 8).map(d => `
+                                    <li>
+                                        <span class="defect-name">${d.defect_description}</span>
+                                        <span class="defect-count" style="color: var(--color-poor);">${d.occurrence_count?.toLocaleString()}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                ` : ''}
+
+                <!-- All Models Table -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>All Models (${data.models.length})</h4>
+                    </div>
+                    <div class="card-body" style="max-height: 500px; overflow-y: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Year</th>
+                                    <th>Fuel</th>
+                                    <th>Pass Rate</th>
+                                    <th>Tests</th>
+                                    <th>Avg Mileage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${data.models.map(m => `
+                                    <tr>
+                                        <td>${m.model}</td>
+                                        <td>${m.model_year}</td>
+                                        <td>${m.fuel_type}</td>
+                                        <td><span class="badge ${getPassRateClass(m.pass_rate)}">${m.pass_rate?.toFixed(1)}%</span></td>
+                                        <td>${m.total_tests?.toLocaleString()}</td>
+                                        <td>${m.avg_mileage?.toLocaleString() || 'N/A'}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+
+            // Render failure chart
+            setTimeout(() => renderMakeFailureChart(data.failure_categories), 0);
+        }
+
+        function renderMakeFailureChart(categories) {
+            const ctx = document.getElementById('makeFailureChart');
+            if (!ctx || !categories.length) return;
+
+            destroyChart('makeFailure');
+            charts.makeFailure = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: categories.map(c => truncate(c.category_name, 25)),
+                    datasets: [{
+                        label: 'Failures',
+                        data: categories.map(c => c.failure_count),
+                        backgroundColor: '#1e3a5f',
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: {
+                            ticks: {
+                                callback: v => v >= 1000 ? (v/1000).toFixed(0) + 'k' : v
+                            }
+                        }
+                    }
+                }
+            });
         }
     </script>
 </body>
