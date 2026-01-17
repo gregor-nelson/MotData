@@ -10,14 +10,15 @@ Usage:
 """
 
 import argparse
+import shutil
 import sqlite3
 from pathlib import Path
 
 from known_issues import generate_known_issues_report, DB_PATH
 from known_issues_html import generate_known_issues_page
 
-# Output directory (relative to project root)
-OUTPUT_DIR = Path(__file__).parent.parent.parent / "articles" / "known-issues"
+# Output directory (upstream web app)
+OUTPUT_DIR = Path(r"C:\Users\gregor\Downloads\Dev\motorwise.io\frontend\public\articles\content\known-issues")
 
 
 def get_top_models(limit: int) -> list[dict]:
@@ -76,13 +77,16 @@ def generate_single_article(make: str, model: str) -> bool:
 
 
 def clear_output_folder() -> int:
-    """Clear all HTML files from output folder. Returns count of files removed."""
+    """Fully empty the output folder. Returns count of items removed."""
     if not OUTPUT_DIR.exists():
         return 0
 
     removed = 0
-    for f in OUTPUT_DIR.glob("*.html"):
-        f.unlink()
+    for item in OUTPUT_DIR.iterdir():
+        if item.is_dir():
+            shutil.rmtree(item)
+        else:
+            item.unlink()
         removed += 1
     return removed
 
