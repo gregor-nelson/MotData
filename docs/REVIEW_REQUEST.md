@@ -40,7 +40,7 @@ But if we aggregate Corsa's brake imbalance defects first:
 ```bash
 cd "c:\Users\gregor\Downloads\Mot Data"
 python -c "
-from scripts.inspection_guide.known_issues import generate_known_issues_report
+from scripts.known_issues.known_issues import generate_known_issues_report
 report = generate_known_issues_report('VAUXHALL', 'CORSA')
 print(f'Major: {len(report.major_issues)}, Known: {len(report.known_issues)}')
 for i in report.major_issues[:3]:

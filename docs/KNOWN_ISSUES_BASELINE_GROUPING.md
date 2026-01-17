@@ -200,7 +200,7 @@ However, this changes the nature of the output from granular defects to componen
 ```bash
 cd "c:\Users\gregor\Downloads\Mot Data"
 python -c "
-from scripts.inspection_guide.known_issues import generate_known_issues_report
+from scripts.known_issues.known_issues import generate_known_issues_report
 
 report = generate_known_issues_report('VAUXHALL', 'CORSA')
 print(f'Major issues: {len(report.major_issues)}')
@@ -213,7 +213,7 @@ for issue in report.major_issues[:5]:
 
 ```bash
 python -c "
-from scripts.inspection_guide.baseline_groups import analyze_groupings
+from scripts.known_issues.baseline_groups import analyze_groupings
 import sqlite3
 from pathlib import Path
 

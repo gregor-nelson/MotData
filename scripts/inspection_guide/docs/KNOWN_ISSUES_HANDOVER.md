@@ -132,8 +132,8 @@ python -m scripts.inspection_guide.known_issues
 
 **Generate HTML for a vehicle:**
 ```python
-from scripts.inspection_guide.known_issues import generate_known_issues_report
-from scripts.inspection_guide.known_issues_html import generate_known_issues_page
+from scripts.known_issues.known_issues import generate_known_issues_report
+from scripts.known_issues.known_issues_html import generate_known_issues_page
 
 report = generate_known_issues_report("FORD", "FOCUS")
 html = generate_known_issues_page(report)
