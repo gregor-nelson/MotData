@@ -1,0 +1,5481 @@
+{
+  "meta": {
+    "make": "LEXUS",
+    "generated_at": "2026-01-15T17:43:19.926840",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 18,
+    "make": "LEXUS",
+    "total_tests": 157583,
+    "total_models": 1221,
+    "avg_pass_rate": 83.27,
+    "weighted_pass_rate": 83.27,
+    "best_model": "ES 2021",
+    "best_model_pass_rate": 98.23,
+    "worst_model": "RX300 2001",
+    "worst_model_pass_rate": 57.56,
+    "rank": 18
+  },
+  "competitors": [
+    {
+      "make": "LEXUS",
+      "avg_pass_rate": 83.27,
+      "total_tests": 157583,
+      "rank": 18,
+      "total_models": 1221
+    },
+    {
+      "make": "INFINITI",
+      "avg_pass_rate": 82.22,
+      "total_tests": 10232,
+      "rank": 20,
+      "total_models": 230
+    },
+    {
+      "make": "BMW",
+      "avg_pass_rate": 78.49,
+      "total_tests": 1808787,
+      "rank": 22,
+      "total_models": 3161
+    },
+    {
+      "make": "JAGUAR",
+      "avg_pass_rate": 78.23,
+      "total_tests": 336140,
+      "rank": 23,
+      "total_models": 872
+    },
+    {
+      "make": "AUDI",
+      "avg_pass_rate": 77.9,
+      "total_tests": 1663207,
+      "rank": 25,
+      "total_models": 2244
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "avg_pass_rate": 76.91,
+      "total_tests": 1662304,
+      "rank": 27,
+      "total_models": 4410
+    },
+    {
+      "make": "VOLVO",
+      "avg_pass_rate": 73.22,
+      "total_tests": 556785,
+      "rank": 35,
+      "total_models": 1271
+    }
+  ],
+  "summary": {
+    "total_tests": 157583,
+    "total_models": 1221,
+    "avg_pass_rate": 83.27,
+    "rank": 18,
+    "rank_total": 75,
+    "best_model": "ES 2021",
+    "best_model_pass_rate": 98.23,
+    "worst_model": "RX300 2001",
+    "worst_model_pass_rate": 57.56,
+    "vs_national": 11.76,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "UX",
+      "total_tests": 7580,
+      "total_passes": 7147,
+      "total_fails": 258,
+      "pass_rate": 94.29,
+      "avg_mileage": 24583.0,
+      "year_from": 2019,
+      "year_to": 2021,
+      "variant_count": 3,
+      "variants": "UX"
+    },
+    {
+      "core_model": "ES",
+      "total_tests": 2159,
+      "total_passes": 2019,
+      "total_fails": 104,
+      "pass_rate": 93.52,
+      "avg_mileage": 33356.0,
+      "year_from": 2019,
+      "year_to": 2021,
+      "variant_count": 3,
+      "variants": "ES"
+    },
+    {
+      "core_model": "RX",
+      "total_tests": 15280,
+      "total_passes": 14051,
+      "total_fails": 860,
+      "pass_rate": 91.96,
+      "avg_mileage": 66813.0,
+      "year_from": 2012,
+      "year_to": 2020,
+      "variant_count": 14,
+      "variants": "RX,RX 450H F SPORT CVT,RX 450H LUXURY CVT,RX 450H PREMIER CVT"
+    },
+    {
+      "core_model": "NX",
+      "total_tests": 24707,
+      "total_passes": 22511,
+      "total_fails": 1382,
+      "pass_rate": 91.11,
+      "avg_mileage": 44454.0,
+      "year_from": 2014,
+      "year_to": 2021,
+      "variant_count": 9,
+      "variants": "NX"
+    },
+    {
+      "core_model": "GS",
+      "total_tests": 3008,
+      "total_passes": 2692,
+      "total_fails": 226,
+      "pass_rate": 89.49,
+      "avg_mileage": 69610.0,
+      "year_from": 2012,
+      "year_to": 2018,
+      "variant_count": 9,
+      "variants": "GS"
+    },
+    {
+      "core_model": "RC",
+      "total_tests": 2211,
+      "total_passes": 1951,
+      "total_fails": 206,
+      "pass_rate": 88.24,
+      "avg_mileage": 38141.0,
+      "year_from": 2015,
+      "year_to": 2020,
+      "variant_count": 7,
+      "variants": "RC"
+    },
+    {
+      "core_model": "IS",
+      "total_tests": 14324,
+      "total_passes": 12575,
+      "total_fails": 1288,
+      "pass_rate": 87.79,
+      "avg_mileage": 70968.0,
+      "year_from": 2012,
+      "year_to": 2020,
+      "variant_count": 15,
+      "variants": "IS,IS 250 ADVANCE AUTO,IS 300H F SPORT CVT,IS 300H LUXURY CVT,IS 300H PREMIER CVT,IS 300H SE CVT"
+    },
+    {
+      "core_model": "LS600H",
+      "total_tests": 155,
+      "total_passes": 136,
+      "total_fails": 18,
+      "pass_rate": 87.74,
+      "avg_mileage": 123009.0,
+      "year_from": 2008,
+      "year_to": 2008,
+      "variant_count": 1,
+      "variants": "LS600H"
+    },
+    {
+      "core_model": "GS250",
+      "total_tests": 101,
+      "total_passes": 88,
+      "total_fails": 9,
+      "pass_rate": 87.13,
+      "avg_mileage": 76770.0,
+      "year_from": 2012,
+      "year_to": 2012,
+      "variant_count": 1,
+      "variants": "GS250"
+    },
+    {
+      "core_model": "CT",
+      "total_tests": 30544,
+      "total_passes": 26016,
+      "total_fails": 2996,
+      "pass_rate": 85.18,
+      "avg_mileage": 78743.0,
+      "year_from": 2011,
+      "year_to": 2020,
+      "variant_count": 18,
+      "variants": "CT,CT 200H SE-L CVT"
+    },
+    {
+      "core_model": "IS250C",
+      "total_tests": 464,
+      "total_passes": 387,
+      "total_fails": 65,
+      "pass_rate": 83.41,
+      "avg_mileage": 69001.0,
+      "year_from": 2009,
+      "year_to": 2011,
+      "variant_count": 3,
+      "variants": "IS250C"
+    },
+    {
+      "core_model": "LS460",
+      "total_tests": 141,
+      "total_passes": 112,
+      "total_fails": 25,
+      "pass_rate": 79.43,
+      "avg_mileage": 97540.0,
+      "year_from": 2007,
+      "year_to": 2007,
+      "variant_count": 1,
+      "variants": "LS460"
+    },
+    {
+      "core_model": "LS",
+      "total_tests": 165,
+      "total_passes": 131,
+      "total_fails": 26,
+      "pass_rate": 79.39,
+      "avg_mileage": 112761.0,
+      "year_from": 2007,
+      "year_to": 2007,
+      "variant_count": 1,
+      "variants": "LS"
+    },
+    {
+      "core_model": "LS430",
+      "total_tests": 1026,
+      "total_passes": 808,
+      "total_fails": 165,
+      "pass_rate": 78.75,
+      "avg_mileage": 126450.0,
+      "year_from": 2001,
+      "year_to": 2005,
+      "variant_count": 5,
+      "variants": "LS430"
+    },
+    {
+      "core_model": "RX450H",
+      "total_tests": 6852,
+      "total_passes": 5254,
+      "total_fails": 1184,
+      "pass_rate": 76.68,
+      "avg_mileage": 118818.0,
+      "year_from": 2006,
+      "year_to": 2012,
+      "variant_count": 7,
+      "variants": "RX450H"
+    },
+    {
+      "core_model": "GS450H",
+      "total_tests": 1249,
+      "total_passes": 954,
+      "total_fails": 228,
+      "pass_rate": 76.38,
+      "avg_mileage": 111990.0,
+      "year_from": 2006,
+      "year_to": 2009,
+      "variant_count": 4,
+      "variants": "GS450H"
+    },
+    {
+      "core_model": "SC430",
+      "total_tests": 1711,
+      "total_passes": 1291,
+      "total_fails": 348,
+      "pass_rate": 75.45,
+      "avg_mileage": 87975.0,
+      "year_from": 2001,
+      "year_to": 2007,
+      "variant_count": 7,
+      "variants": "SC430"
+    },
+    {
+      "core_model": "RX400 H SE CVT",
+      "total_tests": 381,
+      "total_passes": 286,
+      "total_fails": 78,
+      "pass_rate": 75.07,
+      "avg_mileage": 136592.0,
+      "year_from": 2006,
+      "year_to": 2008,
+      "variant_count": 3,
+      "variants": "RX400 H SE CVT"
+    },
+    {
+      "core_model": "GS430",
+      "total_tests": 124,
+      "total_passes": 93,
+      "total_fails": 25,
+      "pass_rate": 75.0,
+      "avg_mileage": 107656.0,
+      "year_from": 2005,
+      "year_to": 2005,
+      "variant_count": 1,
+      "variants": "GS430"
+    },
+    {
+      "core_model": "IS250",
+      "total_tests": 9921,
+      "total_passes": 7380,
+      "total_fails": 1937,
+      "pass_rate": 74.39,
+      "avg_mileage": 93914.0,
+      "year_from": 2005,
+      "year_to": 2012,
+      "variant_count": 8,
+      "variants": "IS250"
+    },
+    {
+      "core_model": "RX400H",
+      "total_tests": 7742,
+      "total_passes": 5579,
+      "total_fails": 1606,
+      "pass_rate": 72.06,
+      "avg_mileage": 130444.0,
+      "year_from": 2005,
+      "year_to": 2009,
+      "variant_count": 5,
+      "variants": "RX400H"
+    },
+    {
+      "core_model": "RX350",
+      "total_tests": 670,
+      "total_passes": 480,
+      "total_fails": 159,
+      "pass_rate": 71.64,
+      "avg_mileage": 111133.0,
+      "year_from": 2006,
+      "year_to": 2007,
+      "variant_count": 2,
+      "variants": "RX350"
+    },
+    {
+      "core_model": "GS300",
+      "total_tests": 2379,
+      "total_passes": 1662,
+      "total_fails": 559,
+      "pass_rate": 69.86,
+      "avg_mileage": 109608.0,
+      "year_from": 2000,
+      "year_to": 2009,
+      "variant_count": 9,
+      "variants": "GS300"
+    },
+    {
+      "core_model": "IS220",
+      "total_tests": 5395,
+      "total_passes": 3733,
+      "total_fails": 1286,
+      "pass_rate": 69.19,
+      "avg_mileage": 123454.0,
+      "year_from": 2006,
+      "year_to": 2010,
+      "variant_count": 5,
+      "variants": "IS220"
+    },
+    {
+      "core_model": "IS300",
+      "total_tests": 557,
+      "total_passes": 378,
+      "total_fails": 135,
+      "pass_rate": 67.86,
+      "avg_mileage": 114102.0,
+      "year_from": 2002,
+      "year_to": 2004,
+      "variant_count": 3,
+      "variants": "IS300"
+    },
+    {
+      "core_model": "RX300",
+      "total_tests": 3996,
+      "total_passes": 2699,
+      "total_fails": 1051,
+      "pass_rate": 67.54,
+      "avg_mileage": 119802.0,
+      "year_from": 2001,
+      "year_to": 2006,
+      "variant_count": 6,
+      "variants": "RX300"
+    },
+    {
+      "core_model": "IS200",
+      "total_tests": 6213,
+      "total_passes": 4036,
+      "total_fails": 1685,
+      "pass_rate": 64.96,
+      "avg_mileage": 112202.0,
+      "year_from": 2000,
+      "year_to": 2011,
+      "variant_count": 7,
+      "variants": "IS200"
+    }
+  ],
+  "model_year_breakdowns": {
+    "UX": [
+      {
+        "model_year": 2021,
+        "fuel_type": "HY",
+        "total_tests": 116,
+        "pass_rate": 94.83,
+        "avg_mileage": 20687.0,
+        "pass_rate_vs_national": 3.98,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 4025,
+        "pass_rate": 94.58,
+        "avg_mileage": 22935.0,
+        "pass_rate_vs_national": 6.91,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 3439,
+        "pass_rate": 93.92,
+        "avg_mileage": 30126.0,
+        "pass_rate_vs_national": 7.71,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "ES": [
+      {
+        "model_year": 2021,
+        "fuel_type": "HY",
+        "total_tests": 113,
+        "pass_rate": 98.23,
+        "avg_mileage": 29289.0,
+        "pass_rate_vs_national": 7.38,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 1080,
+        "pass_rate": 92.87,
+        "avg_mileage": 30417.0,
+        "pass_rate_vs_national": 5.2,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 966,
+        "pass_rate": 93.69,
+        "avg_mileage": 40361.0,
+        "pass_rate_vs_national": 7.48,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "RX": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 1826,
+        "pass_rate": 95.95,
+        "avg_mileage": 23468.0,
+        "pass_rate_vs_national": 8.28,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 2317,
+        "pass_rate": 94.43,
+        "avg_mileage": 31041.0,
+        "pass_rate_vs_national": 8.22,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 1842,
+        "pass_rate": 95.17,
+        "avg_mileage": 38927.0,
+        "pass_rate_vs_national": 10.93,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 1928,
+        "pass_rate": 93.88,
+        "avg_mileage": 47770.0,
+        "pass_rate_vs_national": 12.2,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 2193,
+        "pass_rate": 92.16,
+        "avg_mileage": 56312.0,
+        "pass_rate_vs_national": 13.51,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "HY",
+        "total_tests": 1271,
+        "pass_rate": 88.28,
+        "avg_mileage": 64526.0,
+        "pass_rate_vs_national": 12.79,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "HY",
+        "total_tests": 1597,
+        "pass_rate": 88.04,
+        "avg_mileage": 74052.0,
+        "pass_rate_vs_national": 16.33,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "HY",
+        "total_tests": 1767,
+        "pass_rate": 86.93,
+        "avg_mileage": 82364.0,
+        "pass_rate_vs_national": 18.64,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "HY",
+        "total_tests": 539,
+        "pass_rate": 85.9,
+        "avg_mileage": 89944.0,
+        "pass_rate_vs_national": 20.27,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "NX": [
+      {
+        "model_year": 2021,
+        "fuel_type": "HY",
+        "total_tests": 121,
+        "pass_rate": 95.04,
+        "avg_mileage": 21672.0,
+        "pass_rate_vs_national": 4.19,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 4255,
+        "pass_rate": 94.17,
+        "avg_mileage": 23289.0,
+        "pass_rate_vs_national": 6.5,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 4584,
+        "pass_rate": 93.5,
+        "avg_mileage": 29352.0,
+        "pass_rate_vs_national": 7.29,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 4461,
+        "pass_rate": 91.48,
+        "avg_mileage": 38709.0,
+        "pass_rate_vs_national": 7.24,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 3759,
+        "pass_rate": 89.86,
+        "avg_mileage": 46041.0,
+        "pass_rate_vs_national": 8.18,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 3643,
+        "pass_rate": 88.25,
+        "avg_mileage": 53296.0,
+        "pass_rate_vs_national": 9.6,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "HY",
+        "total_tests": 2967,
+        "pass_rate": 88.54,
+        "avg_mileage": 64050.0,
+        "pass_rate_vs_national": 13.05,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "pass_rate": 88.79,
+        "avg_mileage": 55894.0,
+        "pass_rate_vs_national": 13.3,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "HY",
+        "total_tests": 810,
+        "pass_rate": 87.28,
+        "avg_mileage": 67787.0,
+        "pass_rate_vs_national": 15.57,
+        "national_avg_for_year": 71.71
+      }
+    ],
+    "GS": [
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 251,
+        "pass_rate": 92.83,
+        "avg_mileage": 46800.0,
+        "pass_rate_vs_national": 8.59,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 370,
+        "pass_rate": 92.43,
+        "avg_mileage": 50461.0,
+        "pass_rate_vs_national": 10.75,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 573,
+        "pass_rate": 90.58,
+        "avg_mileage": 67186.0,
+        "pass_rate_vs_national": 11.93,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "HY",
+        "total_tests": 386,
+        "pass_rate": 90.67,
+        "avg_mileage": 67077.0,
+        "pass_rate_vs_national": 15.18,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "HY",
+        "total_tests": 503,
+        "pass_rate": 87.28,
+        "avg_mileage": 79035.0,
+        "pass_rate_vs_national": 15.57,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "HY",
+        "total_tests": 216,
+        "pass_rate": 92.59,
+        "avg_mileage": 81885.0,
+        "pass_rate_vs_national": 24.3,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 357,
+        "pass_rate": 86.55,
+        "avg_mileage": 71600.0,
+        "pass_rate_vs_national": 18.26,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "HY",
+        "total_tests": 200,
+        "pass_rate": 89.0,
+        "avg_mileage": 88115.0,
+        "pass_rate_vs_national": 23.37,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 152,
+        "pass_rate": 80.26,
+        "avg_mileage": 74328.0,
+        "pass_rate_vs_national": 14.63,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "RC": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 250,
+        "pass_rate": 88.0,
+        "avg_mileage": 21401.0,
+        "pass_rate_vs_national": 0.33,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 405,
+        "pass_rate": 88.4,
+        "avg_mileage": 28363.0,
+        "pass_rate_vs_national": 2.19,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 377,
+        "pass_rate": 90.19,
+        "avg_mileage": 36004.0,
+        "pass_rate_vs_national": 5.95,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 412,
+        "pass_rate": 89.08,
+        "avg_mileage": 41213.0,
+        "pass_rate_vs_national": 7.4,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 524,
+        "pass_rate": 86.64,
+        "avg_mileage": 51414.0,
+        "pass_rate_vs_national": 7.99,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "pass_rate": 87.25,
+        "avg_mileage": 40135.0,
+        "pass_rate_vs_national": 8.6,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 141,
+        "pass_rate": 87.23,
+        "avg_mileage": 48458.0,
+        "pass_rate_vs_national": 11.74,
+        "national_avg_for_year": 75.49
+      }
+    ],
+    "IS": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 591,
+        "pass_rate": 88.66,
+        "avg_mileage": 28401.0,
+        "pass_rate_vs_national": 0.99,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 1229,
+        "pass_rate": 89.02,
+        "avg_mileage": 41184.0,
+        "pass_rate_vs_national": 2.81,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 1453,
+        "pass_rate": 90.09,
+        "avg_mileage": 47993.0,
+        "pass_rate_vs_national": 5.85,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 1521,
+        "pass_rate": 89.28,
+        "avg_mileage": 54872.0,
+        "pass_rate_vs_national": 7.6,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 1939,
+        "pass_rate": 88.24,
+        "avg_mileage": 69699.0,
+        "pass_rate_vs_national": 9.59,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "HY",
+        "total_tests": 2697,
+        "pass_rate": 88.06,
+        "avg_mileage": 80201.0,
+        "pass_rate_vs_national": 12.57,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 117,
+        "pass_rate": 87.18,
+        "avg_mileage": 57841.0,
+        "pass_rate_vs_national": 11.69,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "HY",
+        "total_tests": 2879,
+        "pass_rate": 86.77,
+        "avg_mileage": 91323.0,
+        "pass_rate_vs_national": 15.06,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 214,
+        "pass_rate": 85.98,
+        "avg_mileage": 60948.0,
+        "pass_rate_vs_national": 14.27,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "HY",
+        "total_tests": 1446,
+        "pass_rate": 84.99,
+        "avg_mileage": 91757.0,
+        "pass_rate_vs_national": 16.7,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 238,
+        "pass_rate": 80.25,
+        "avg_mileage": 73278.0,
+        "pass_rate_vs_national": 14.62,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "LS600H": [
+      {
+        "model_year": 2008,
+        "fuel_type": "HY",
+        "total_tests": 155,
+        "pass_rate": 87.74,
+        "avg_mileage": 123009.0,
+        "pass_rate_vs_national": 30.35,
+        "national_avg_for_year": 57.39
+      }
+    ],
+    "GS250": [
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 101,
+        "pass_rate": 87.13,
+        "avg_mileage": 76770.0,
+        "pass_rate_vs_national": 21.5,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "CT": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 1286,
+        "pass_rate": 94.17,
+        "avg_mileage": 22262.0,
+        "pass_rate_vs_national": 6.5,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 1938,
+        "pass_rate": 90.87,
+        "avg_mileage": 32787.0,
+        "pass_rate_vs_national": 4.66,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 2732,
+        "pass_rate": 89.75,
+        "avg_mileage": 38606.0,
+        "pass_rate_vs_national": 5.51,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 2979,
+        "pass_rate": 88.72,
+        "avg_mileage": 47136.0,
+        "pass_rate_vs_national": 7.04,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 2979,
+        "pass_rate": 88.89,
+        "avg_mileage": 58913.0,
+        "pass_rate_vs_national": 10.24,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "HY",
+        "total_tests": 3507,
+        "pass_rate": 85.97,
+        "avg_mileage": 69254.0,
+        "pass_rate_vs_national": 10.48,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "HY",
+        "total_tests": 3797,
+        "pass_rate": 85.88,
+        "avg_mileage": 77600.0,
+        "pass_rate_vs_national": 14.17,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "HY",
+        "total_tests": 3637,
+        "pass_rate": 80.26,
+        "avg_mileage": 87097.0,
+        "pass_rate_vs_national": 11.97,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "EL",
+        "total_tests": 322,
+        "pass_rate": 79.81,
+        "avg_mileage": 95319.0,
+        "pass_rate_vs_national": 14.18,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "HY",
+        "total_tests": 2687,
+        "pass_rate": 79.79,
+        "avg_mileage": 97298.0,
+        "pass_rate_vs_national": 14.16,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "OT",
+        "total_tests": 618,
+        "pass_rate": 79.61,
+        "avg_mileage": 97045.0,
+        "pass_rate_vs_national": 13.98,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 413,
+        "pass_rate": 81.11,
+        "avg_mileage": 96318.0,
+        "pass_rate_vs_national": 15.48,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "EL",
+        "total_tests": 551,
+        "pass_rate": 76.95,
+        "avg_mileage": 102877.0,
+        "pass_rate_vs_national": 13.96,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "HY",
+        "total_tests": 1864,
+        "pass_rate": 78.86,
+        "avg_mileage": 99510.0,
+        "pass_rate_vs_national": 15.87,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "OT",
+        "total_tests": 705,
+        "pass_rate": 78.87,
+        "avg_mileage": 97435.0,
+        "pass_rate_vs_national": 15.88,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 529,
+        "pass_rate": 80.91,
+        "avg_mileage": 101115.0,
+        "pass_rate_vs_national": 17.92,
+        "national_avg_for_year": 62.99
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "HY",
+      "model_count": 84,
+      "total_tests": 111626,
+      "pass_rate": 87.31,
+      "fuel_name": "Hybrid Electric"
+    },
+    {
+      "fuel_type": "OT",
+      "model_count": 2,
+      "total_tests": 1323,
+      "pass_rate": 79.21,
+      "fuel_name": "Other"
+    },
+    {
+      "fuel_type": "EL",
+      "model_count": 2,
+      "total_tests": 873,
+      "pass_rate": 78.01,
+      "fuel_name": "Electric"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 63,
+      "total_tests": 29430,
+      "pass_rate": 72.15,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 6,
+      "total_tests": 5803,
+      "pass_rate": 69.33,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "LS600H",
+      "model_year": 2008,
+      "fuel_type": "HY",
+      "total_tests": 155,
+      "pass_rate": 87.74,
+      "pass_rate_vs_national": 30.35,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "SC430",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 196,
+      "pass_rate": 84.18,
+      "pass_rate_vs_national": 28.0,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "GS",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 216,
+      "pass_rate": 92.59,
+      "pass_rate_vs_national": 24.3,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "LS430",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 259,
+      "pass_rate": 80.31,
+      "pass_rate_vs_national": 24.06,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "IS250C",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 189,
+      "pass_rate": 84.13,
+      "pass_rate_vs_national": 23.63,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "RX 450H F SPORT CVT",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 155,
+      "pass_rate": 89.03,
+      "pass_rate_vs_national": 23.4,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "GS",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 200,
+      "pass_rate": 89.0,
+      "pass_rate_vs_national": 23.37,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "SC430",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 161,
+      "pass_rate": 80.12,
+      "pass_rate_vs_national": 23.15,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "LS430",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 252,
+      "pass_rate": 78.97,
+      "pass_rate_vs_national": 22.94,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "SC430",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 304,
+      "pass_rate": 79.28,
+      "pass_rate_vs_national": 22.6,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "LS460",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 141,
+      "pass_rate": 79.43,
+      "pass_rate_vs_national": 22.46,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "LS",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 165,
+      "pass_rate": 79.39,
+      "pass_rate_vs_national": 22.42,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "IS250C",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 135,
+      "pass_rate": 85.19,
+      "pass_rate_vs_national": 22.2,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "GS300",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 105,
+      "pass_rate": 80.95,
+      "pass_rate_vs_national": 21.94,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "IS250C",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 140,
+      "pass_rate": 80.71,
+      "pass_rate_vs_national": 21.7,
+      "national_avg_for_year": 59.01
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "RX300",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 167,
+      "pass_rate": 58.08,
+      "pass_rate_vs_national": -0.6,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "RC",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 250,
+      "pass_rate": 88.0,
+      "pass_rate_vs_national": 0.33,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "IS",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 591,
+      "pass_rate": 88.66,
+      "pass_rate_vs_national": 0.99,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "RC",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 405,
+      "pass_rate": 88.4,
+      "pass_rate_vs_national": 2.19,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "RX300",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 237,
+      "pass_rate": 59.92,
+      "pass_rate_vs_national": 2.38,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "IS",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 1229,
+      "pass_rate": 89.02,
+      "pass_rate_vs_national": 2.81,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "GS300",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "pass_rate": 63.64,
+      "pass_rate_vs_national": 3.02,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "UX",
+      "model_year": 2021,
+      "fuel_type": "HY",
+      "total_tests": 116,
+      "pass_rate": 94.83,
+      "pass_rate_vs_national": 3.98,
+      "national_avg_for_year": 90.85
+    },
+    {
+      "model": "NX",
+      "model_year": 2021,
+      "fuel_type": "HY",
+      "total_tests": 121,
+      "pass_rate": 95.04,
+      "pass_rate_vs_national": 4.19,
+      "national_avg_for_year": 90.85
+    },
+    {
+      "model": "CT",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 1938,
+      "pass_rate": 90.87,
+      "pass_rate_vs_national": 4.66,
+      "national_avg_for_year": 86.21
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 9065,
+        "vehicle_count": 156
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 7333,
+        "vehicle_count": 157
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 5685,
+        "vehicle_count": 155
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 4427,
+        "vehicle_count": 155
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 4139,
+        "vehicle_count": 143
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 1841,
+        "vehicle_count": 113
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 1466,
+        "vehicle_count": 126
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 486,
+        "vehicle_count": 111
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 421,
+        "vehicle_count": 67
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 369,
+        "vehicle_count": 87
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 313,
+        "vehicle_count": 81
+      },
+      {
+        "category_name": "Speedometer and speed limiter",
+        "total_failures": 1,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Seat belt installation check",
+        "total_failures": 1,
+        "vehicle_count": 1
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 2807
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 2598
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 2098
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 1688
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 1507
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 1343
+      },
+      {
+        "defect_description": "not working on dipped beam",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 1234
+      },
+      {
+        "defect_description": "too low",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 945
+      },
+      {
+        "defect_description": "projected beam image is obviously incorrect",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 767
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 703
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 23030
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 10193
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 9199
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 8617
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 7467
+      },
+      {
+        "defect_description": "has light misting of oil",
+        "category_name": "Suspension",
+        "total_occurrences": 2840
+      },
+      {
+        "defect_description": "deteriorated but not likely to be misread",
+        "category_name": "Identification of the vehicle",
+        "total_occurrences": 2626
+      },
+      {
+        "defect_description": "has a cut but not deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 2187
+      },
+      {
+        "defect_description": "worn, but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 2056
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 2028
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 21593
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 10709
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 10190
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 9415
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 4004
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1779
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 1659
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 307
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 253
+      },
+      {
+        "defect_description": "has a lump, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 139
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 28120,
+      "avg_pass_rate": 94.53
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 41066,
+      "avg_pass_rate": 89.29
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 30060,
+      "avg_pass_rate": 83.06
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 23085,
+      "avg_pass_rate": 75.42
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 15035,
+      "avg_pass_rate": 70.92
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 10967,
+      "avg_pass_rate": 68.95
+    }
+  ],
+  "all_models": [
+    {
+      "model": "ES",
+      "model_year": 2021,
+      "fuel_type": "HY",
+      "total_tests": 113,
+      "total_passes": 111,
+      "total_fails": 1,
+      "pass_rate": 98.23,
+      "avg_mileage": 29289.0,
+      "avg_age_years": 1.8,
+      "pass_rate_vs_national": 26.72
+    },
+    {
+      "model": "RX",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 1826,
+      "total_passes": 1752,
+      "total_fails": 50,
+      "pass_rate": 95.95,
+      "avg_mileage": 23468.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 24.44
+    },
+    {
+      "model": "RX",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 1842,
+      "total_passes": 1753,
+      "total_fails": 61,
+      "pass_rate": 95.17,
+      "avg_mileage": 38927.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 23.66
+    },
+    {
+      "model": "NX",
+      "model_year": 2021,
+      "fuel_type": "HY",
+      "total_tests": 121,
+      "total_passes": 115,
+      "total_fails": 1,
+      "pass_rate": 95.04,
+      "avg_mileage": 21672.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 23.53
+    },
+    {
+      "model": "UX",
+      "model_year": 2021,
+      "fuel_type": "HY",
+      "total_tests": 116,
+      "total_passes": 110,
+      "total_fails": 3,
+      "pass_rate": 94.83,
+      "avg_mileage": 20687.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 23.32
+    },
+    {
+      "model": "UX",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 4025,
+      "total_passes": 3807,
+      "total_fails": 130,
+      "pass_rate": 94.58,
+      "avg_mileage": 22935.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 23.07
+    },
+    {
+      "model": "RX",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 2317,
+      "total_passes": 2188,
+      "total_fails": 78,
+      "pass_rate": 94.43,
+      "avg_mileage": 31041.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 22.92
+    },
+    {
+      "model": "CT",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 1286,
+      "total_passes": 1211,
+      "total_fails": 48,
+      "pass_rate": 94.17,
+      "avg_mileage": 22262.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 22.66
+    },
+    {
+      "model": "NX",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 4255,
+      "total_passes": 4007,
+      "total_fails": 157,
+      "pass_rate": 94.17,
+      "avg_mileage": 23289.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 22.66
+    },
+    {
+      "model": "UX",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 3439,
+      "total_passes": 3230,
+      "total_fails": 125,
+      "pass_rate": 93.92,
+      "avg_mileage": 30126.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 22.41
+    },
+    {
+      "model": "RX",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 1928,
+      "total_passes": 1810,
+      "total_fails": 77,
+      "pass_rate": 93.88,
+      "avg_mileage": 47770.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 22.37
+    },
+    {
+      "model": "ES",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 966,
+      "total_passes": 905,
+      "total_fails": 49,
+      "pass_rate": 93.69,
+      "avg_mileage": 40361.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 22.17
+    },
+    {
+      "model": "NX",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 4584,
+      "total_passes": 4286,
+      "total_fails": 197,
+      "pass_rate": 93.5,
+      "avg_mileage": 29352.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 21.99
+    },
+    {
+      "model": "ES",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 1080,
+      "total_passes": 1003,
+      "total_fails": 54,
+      "pass_rate": 92.87,
+      "avg_mileage": 30417.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 21.36
+    },
+    {
+      "model": "GS",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 251,
+      "total_passes": 233,
+      "total_fails": 12,
+      "pass_rate": 92.83,
+      "avg_mileage": 46800.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 21.32
+    },
+    {
+      "model": "GS",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 216,
+      "total_passes": 200,
+      "total_fails": 13,
+      "pass_rate": 92.59,
+      "avg_mileage": 81885.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 21.08
+    },
+    {
+      "model": "GS",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 370,
+      "total_passes": 342,
+      "total_fails": 15,
+      "pass_rate": 92.43,
+      "avg_mileage": 50461.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 20.92
+    },
+    {
+      "model": "RX",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 2193,
+      "total_passes": 2021,
+      "total_fails": 122,
+      "pass_rate": 92.16,
+      "avg_mileage": 56312.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 20.65
+    },
+    {
+      "model": "NX",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 4461,
+      "total_passes": 4081,
+      "total_fails": 231,
+      "pass_rate": 91.48,
+      "avg_mileage": 38709.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 19.97
+    },
+    {
+      "model": "CT",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 1938,
+      "total_passes": 1761,
+      "total_fails": 129,
+      "pass_rate": 90.87,
+      "avg_mileage": 32787.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 19.36
+    },
+    {
+      "model": "GS",
+      "model_year": 2015,
+      "fuel_type": "HY",
+      "total_tests": 386,
+      "total_passes": 350,
+      "total_fails": 24,
+      "pass_rate": 90.67,
+      "avg_mileage": 67077.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 19.16
+    },
+    {
+      "model": "GS",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 573,
+      "total_passes": 519,
+      "total_fails": 38,
+      "pass_rate": 90.58,
+      "avg_mileage": 67186.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 19.07
+    },
+    {
+      "model": "RC",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 377,
+      "total_passes": 340,
+      "total_fails": 26,
+      "pass_rate": 90.19,
+      "avg_mileage": 36004.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 18.67
+    },
+    {
+      "model": "IS",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 1453,
+      "total_passes": 1309,
+      "total_fails": 107,
+      "pass_rate": 90.09,
+      "avg_mileage": 47993.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 18.58
+    },
+    {
+      "model": "NX",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 3759,
+      "total_passes": 3378,
+      "total_fails": 215,
+      "pass_rate": 89.86,
+      "avg_mileage": 46041.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 18.35
+    },
+    {
+      "model": "CT",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 2732,
+      "total_passes": 2452,
+      "total_fails": 166,
+      "pass_rate": 89.75,
+      "avg_mileage": 38606.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 18.24
+    },
+    {
+      "model": "IS",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 1521,
+      "total_passes": 1358,
+      "total_fails": 124,
+      "pass_rate": 89.28,
+      "avg_mileage": 54872.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 17.77
+    },
+    {
+      "model": "RC",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 412,
+      "total_passes": 367,
+      "total_fails": 38,
+      "pass_rate": 89.08,
+      "avg_mileage": 41213.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 17.57
+    },
+    {
+      "model": "RX 450H F SPORT CVT",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 155,
+      "total_passes": 138,
+      "total_fails": 14,
+      "pass_rate": 89.03,
+      "avg_mileage": 92212.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 17.52
+    },
+    {
+      "model": "IS",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 1229,
+      "total_passes": 1094,
+      "total_fails": 98,
+      "pass_rate": 89.02,
+      "avg_mileage": 41184.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 17.5
+    },
+    {
+      "model": "GS",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 200,
+      "total_passes": 178,
+      "total_fails": 16,
+      "pass_rate": 89.0,
+      "avg_mileage": 88115.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 17.49
+    },
+    {
+      "model": "CT",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 2979,
+      "total_passes": 2648,
+      "total_fails": 213,
+      "pass_rate": 88.89,
+      "avg_mileage": 58913.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 17.38
+    },
+    {
+      "model": "NX",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "total_passes": 95,
+      "total_fails": 9,
+      "pass_rate": 88.79,
+      "avg_mileage": 55894.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 17.27
+    },
+    {
+      "model": "CT",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 2979,
+      "total_passes": 2643,
+      "total_fails": 205,
+      "pass_rate": 88.72,
+      "avg_mileage": 47136.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 17.21
+    },
+    {
+      "model": "IS",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 591,
+      "total_passes": 524,
+      "total_fails": 42,
+      "pass_rate": 88.66,
+      "avg_mileage": 28401.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.15
+    },
+    {
+      "model": "NX",
+      "model_year": 2015,
+      "fuel_type": "HY",
+      "total_tests": 2967,
+      "total_passes": 2627,
+      "total_fails": 217,
+      "pass_rate": 88.54,
+      "avg_mileage": 64050.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 17.03
+    },
+    {
+      "model": "RC",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 405,
+      "total_passes": 358,
+      "total_fails": 39,
+      "pass_rate": 88.4,
+      "avg_mileage": 28363.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.88
+    },
+    {
+      "model": "RX",
+      "model_year": 2015,
+      "fuel_type": "HY",
+      "total_tests": 1271,
+      "total_passes": 1122,
+      "total_fails": 106,
+      "pass_rate": 88.28,
+      "avg_mileage": 64526.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 16.77
+    },
+    {
+      "model": "NX",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 3643,
+      "total_passes": 3215,
+      "total_fails": 286,
+      "pass_rate": 88.25,
+      "avg_mileage": 53296.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 16.74
+    },
+    {
+      "model": "IS",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 1939,
+      "total_passes": 1711,
+      "total_fails": 166,
+      "pass_rate": 88.24,
+      "avg_mileage": 69699.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 16.73
+    },
+    {
+      "model": "IS",
+      "model_year": 2015,
+      "fuel_type": "HY",
+      "total_tests": 2697,
+      "total_passes": 2375,
+      "total_fails": 230,
+      "pass_rate": 88.06,
+      "avg_mileage": 80201.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 16.55
+    },
+    {
+      "model": "RX",
+      "model_year": 2014,
+      "fuel_type": "HY",
+      "total_tests": 1597,
+      "total_passes": 1406,
+      "total_fails": 143,
+      "pass_rate": 88.04,
+      "avg_mileage": 74052.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 16.53
+    },
+    {
+      "model": "RC",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 250,
+      "total_passes": 220,
+      "total_fails": 21,
+      "pass_rate": 88.0,
+      "avg_mileage": 21401.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 16.49
+    },
+    {
+      "model": "LS600H",
+      "model_year": 2008,
+      "fuel_type": "HY",
+      "total_tests": 155,
+      "total_passes": 136,
+      "total_fails": 18,
+      "pass_rate": 87.74,
+      "avg_mileage": 123009.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 16.23
+    },
+    {
+      "model": "RX 450H LUXURY CVT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 758,
+      "total_passes": 663,
+      "total_fails": 69,
+      "pass_rate": 87.47,
+      "avg_mileage": 82791.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 15.96
+    },
+    {
+      "model": "IS 300H PREMIER CVT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 190,
+      "total_passes": 166,
+      "total_fails": 19,
+      "pass_rate": 87.37,
+      "avg_mileage": 76766.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 15.86
+    },
+    {
+      "model": "RX 450H PREMIER CVT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 300,
+      "total_passes": 262,
+      "total_fails": 27,
+      "pass_rate": 87.33,
+      "avg_mileage": 77835.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 15.82
+    },
+    {
+      "model": "GS",
+      "model_year": 2014,
+      "fuel_type": "HY",
+      "total_tests": 503,
+      "total_passes": 439,
+      "total_fails": 44,
+      "pass_rate": 87.28,
+      "avg_mileage": 79035.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 15.77
+    },
+    {
+      "model": "NX",
+      "model_year": 2014,
+      "fuel_type": "HY",
+      "total_tests": 810,
+      "total_passes": 707,
+      "total_fails": 69,
+      "pass_rate": 87.28,
+      "avg_mileage": 67787.0,
+      "avg_age_years": 8.1,
+      "pass_rate_vs_national": 15.77
+    },
+    {
+      "model": "RC",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 89,
+      "total_fails": 8,
+      "pass_rate": 87.25,
+      "avg_mileage": 40135.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 15.74
+    },
+    {
+      "model": "RC",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 141,
+      "total_passes": 123,
+      "total_fails": 15,
+      "pass_rate": 87.23,
+      "avg_mileage": 48458.0,
+      "avg_age_years": 7.6,
+      "pass_rate_vs_national": 15.72
+    },
+    {
+      "model": "IS",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 117,
+      "total_passes": 102,
+      "total_fails": 10,
+      "pass_rate": 87.18,
+      "avg_mileage": 57841.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 15.67
+    },
+    {
+      "model": "GS250",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 101,
+      "total_passes": 88,
+      "total_fails": 9,
+      "pass_rate": 87.13,
+      "avg_mileage": 76770.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 15.62
+    },
+    {
+      "model": "IS",
+      "model_year": 2014,
+      "fuel_type": "HY",
+      "total_tests": 2879,
+      "total_passes": 2498,
+      "total_fails": 287,
+      "pass_rate": 86.77,
+      "avg_mileage": 91323.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 15.26
+    },
+    {
+      "model": "RC",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 524,
+      "total_passes": 454,
+      "total_fails": 59,
+      "pass_rate": 86.64,
+      "avg_mileage": 51414.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 15.13
+    },
+    {
+      "model": "RX 450H F SPORT CVT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 470,
+      "total_passes": 407,
+      "total_fails": 46,
+      "pass_rate": 86.6,
+      "avg_mileage": 88233.0,
+      "avg_age_years": 9.6,
+      "pass_rate_vs_national": 15.08
+    },
+    {
+      "model": "GS",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 357,
+      "total_passes": 309,
+      "total_fails": 40,
+      "pass_rate": 86.55,
+      "avg_mileage": 71600.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 15.04
+    },
+    {
+      "model": "IS",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 214,
+      "total_passes": 184,
+      "total_fails": 23,
+      "pass_rate": 85.98,
+      "avg_mileage": 60948.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 14.47
+    },
+    {
+      "model": "CT",
+      "model_year": 2015,
+      "fuel_type": "HY",
+      "total_tests": 3507,
+      "total_passes": 3015,
+      "total_fails": 320,
+      "pass_rate": 85.97,
+      "avg_mileage": 69254.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 14.46
+    },
+    {
+      "model": "CT",
+      "model_year": 2014,
+      "fuel_type": "HY",
+      "total_tests": 3797,
+      "total_passes": 3261,
+      "total_fails": 363,
+      "pass_rate": 85.88,
+      "avg_mileage": 77600.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 14.37
+    },
+    {
+      "model": "IS 300H SE CVT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 170,
+      "total_passes": 146,
+      "total_fails": 18,
+      "pass_rate": 85.88,
+      "avg_mileage": 101264.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 14.37
+    },
+    {
+      "model": "IS 300H LUXURY CVT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 386,
+      "total_passes": 331,
+      "total_fails": 40,
+      "pass_rate": 85.75,
+      "avg_mileage": 94041.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 14.24
+    },
+    {
+      "model": "RX 450H PREMIER CVT",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 130,
+      "total_passes": 111,
+      "total_fails": 13,
+      "pass_rate": 85.38,
+      "avg_mileage": 84589.0,
+      "avg_age_years": 10.2,
+      "pass_rate_vs_national": 13.87
+    },
+    {
+      "model": "RX",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 239,
+      "total_passes": 204,
+      "total_fails": 24,
+      "pass_rate": 85.36,
+      "avg_mileage": 80597.0,
+      "avg_age_years": 9.2,
+      "pass_rate_vs_national": 13.84
+    },
+    {
+      "model": "IS250C",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 135,
+      "total_passes": 115,
+      "total_fails": 19,
+      "pass_rate": 85.19,
+      "avg_mileage": 61045.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 13.67
+    },
+    {
+      "model": "RX 450H LUXURY CVT",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 254,
+      "total_passes": 214,
+      "total_fails": 30,
+      "pass_rate": 84.25,
+      "avg_mileage": 93030.0,
+      "avg_age_years": 10.2,
+      "pass_rate_vs_national": 12.74
+    },
+    {
+      "model": "SC430",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 196,
+      "total_passes": 165,
+      "total_fails": 28,
+      "pass_rate": 84.18,
+      "avg_mileage": 77397.0,
+      "avg_age_years": 16.6,
+      "pass_rate_vs_national": 12.67
+    },
+    {
+      "model": "IS250C",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 189,
+      "total_passes": 159,
+      "total_fails": 23,
+      "pass_rate": 84.13,
+      "avg_mileage": 68520.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 12.62
+    },
+    {
+      "model": "IS",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 364,
+      "total_passes": 305,
+      "total_fails": 43,
+      "pass_rate": 83.79,
+      "avg_mileage": 91311.0,
+      "avg_age_years": 9.1,
+      "pass_rate_vs_national": 12.28
+    },
+    {
+      "model": "IS 300H F SPORT CVT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 336,
+      "total_passes": 281,
+      "total_fails": 48,
+      "pass_rate": 83.63,
+      "avg_mileage": 95403.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 12.12
+    },
+    {
+      "model": "IS250",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 422,
+      "total_passes": 352,
+      "total_fails": 60,
+      "pass_rate": 83.41,
+      "avg_mileage": 71367.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 11.9
+    },
+    {
+      "model": "CT 200H SE-L CVT",
+      "model_year": 2011,
+      "fuel_type": "HY",
+      "total_tests": 114,
+      "total_passes": 94,
+      "total_fails": 14,
+      "pass_rate": 82.46,
+      "avg_mileage": 102061.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 10.95
+    },
+    {
+      "model": "RX450H",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 1074,
+      "total_passes": 883,
+      "total_fails": 125,
+      "pass_rate": 82.22,
+      "avg_mileage": 91023.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 10.71
+    },
+    {
+      "model": "IS250",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 742,
+      "total_passes": 604,
+      "total_fails": 103,
+      "pass_rate": 81.4,
+      "avg_mileage": 78628.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 9.89
+    },
+    {
+      "model": "CT",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 413,
+      "total_passes": 335,
+      "total_fails": 52,
+      "pass_rate": 81.11,
+      "avg_mileage": 96318.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 9.6
+    },
+    {
+      "model": "GS300",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 105,
+      "total_passes": 85,
+      "total_fails": 18,
+      "pass_rate": 80.95,
+      "avg_mileage": 88815.0,
+      "avg_age_years": 13.7,
+      "pass_rate_vs_national": 9.44
+    },
+    {
+      "model": "CT",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 529,
+      "total_passes": 428,
+      "total_fails": 62,
+      "pass_rate": 80.91,
+      "avg_mileage": 101115.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 9.4
+    },
+    {
+      "model": "IS250C",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 140,
+      "total_passes": 113,
+      "total_fails": 23,
+      "pass_rate": 80.71,
+      "avg_mileage": 77437.0,
+      "avg_age_years": 13.3,
+      "pass_rate_vs_national": 9.2
+    },
+    {
+      "model": "LS430",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 259,
+      "total_passes": 208,
+      "total_fails": 43,
+      "pass_rate": 80.31,
+      "avg_mileage": 123659.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 8.8
+    },
+    {
+      "model": "CT",
+      "model_year": 2013,
+      "fuel_type": "HY",
+      "total_tests": 3637,
+      "total_passes": 2919,
+      "total_fails": 475,
+      "pass_rate": 80.26,
+      "avg_mileage": 87097.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 8.75
+    },
+    {
+      "model": "GS",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 152,
+      "total_passes": 122,
+      "total_fails": 24,
+      "pass_rate": 80.26,
+      "avg_mileage": 74328.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 8.75
+    },
+    {
+      "model": "IS 250 ADVANCE AUTO",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 238,
+      "total_passes": 191,
+      "total_fails": 33,
+      "pass_rate": 80.25,
+      "avg_mileage": 73278.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 8.74
+    },
+    {
+      "model": "SC430",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 161,
+      "total_passes": 129,
+      "total_fails": 25,
+      "pass_rate": 80.12,
+      "avg_mileage": 71815.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 8.61
+    },
+    {
+      "model": "CT",
+      "model_year": 2012,
+      "fuel_type": "EL",
+      "total_tests": 322,
+      "total_passes": 257,
+      "total_fails": 53,
+      "pass_rate": 79.81,
+      "avg_mileage": 95319.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 8.3
+    },
+    {
+      "model": "CT",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 2565,
+      "total_passes": 2047,
+      "total_fails": 337,
+      "pass_rate": 79.81,
+      "avg_mileage": 93063.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 8.29
+    },
+    {
+      "model": "LS430",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 187,
+      "total_passes": 149,
+      "total_fails": 26,
+      "pass_rate": 79.68,
+      "avg_mileage": 128496.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": 8.17
+    },
+    {
+      "model": "CT",
+      "model_year": 2012,
+      "fuel_type": "OT",
+      "total_tests": 618,
+      "total_passes": 492,
+      "total_fails": 81,
+      "pass_rate": 79.61,
+      "avg_mileage": 97045.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 8.1
+    },
+    {
+      "model": "CT 200H SE-L CVT",
+      "model_year": 2012,
+      "fuel_type": "HY",
+      "total_tests": 122,
+      "total_passes": 97,
+      "total_fails": 20,
+      "pass_rate": 79.51,
+      "avg_mileage": 101532.0,
+      "avg_age_years": 10.7,
+      "pass_rate_vs_national": 8.0
+    },
+    {
+      "model": "LS460",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 141,
+      "total_passes": 112,
+      "total_fails": 25,
+      "pass_rate": 79.43,
+      "avg_mileage": 97540.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 7.92
+    },
+    {
+      "model": "LS",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 165,
+      "total_passes": 131,
+      "total_fails": 26,
+      "pass_rate": 79.39,
+      "avg_mileage": 112761.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 7.88
+    },
+    {
+      "model": "SC430",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 304,
+      "total_passes": 241,
+      "total_fails": 56,
+      "pass_rate": 79.28,
+      "avg_mileage": 93168.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": 7.77
+    },
+    {
+      "model": "LS430",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 252,
+      "total_passes": 199,
+      "total_fails": 41,
+      "pass_rate": 78.97,
+      "avg_mileage": 127512.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 7.46
+    },
+    {
+      "model": "CT",
+      "model_year": 2011,
+      "fuel_type": "OT",
+      "total_tests": 705,
+      "total_passes": 556,
+      "total_fails": 113,
+      "pass_rate": 78.87,
+      "avg_mileage": 97435.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 7.35
+    },
+    {
+      "model": "CT",
+      "model_year": 2011,
+      "fuel_type": "HY",
+      "total_tests": 1750,
+      "total_passes": 1376,
+      "total_fails": 259,
+      "pass_rate": 78.63,
+      "avg_mileage": 96959.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 7.12
+    },
+    {
+      "model": "GS300",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 179,
+      "total_passes": 140,
+      "total_fails": 32,
+      "pass_rate": 78.21,
+      "avg_mileage": 98962.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 6.7
+    },
+    {
+      "model": "IS250",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 1212,
+      "total_passes": 946,
+      "total_fails": 193,
+      "pass_rate": 78.05,
+      "avg_mileage": 87213.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 6.54
+    },
+    {
+      "model": "GS450H",
+      "model_year": 2008,
+      "fuel_type": "HY",
+      "total_tests": 350,
+      "total_passes": 273,
+      "total_fails": 59,
+      "pass_rate": 78.0,
+      "avg_mileage": 109589.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 6.49
+    },
+    {
+      "model": "LS430",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 159,
+      "total_passes": 124,
+      "total_fails": 24,
+      "pass_rate": 77.99,
+      "avg_mileage": 125840.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": 6.48
+    },
+    {
+      "model": "RX450H",
+      "model_year": 2011,
+      "fuel_type": "HY",
+      "total_tests": 1691,
+      "total_passes": 1316,
+      "total_fails": 273,
+      "pass_rate": 77.82,
+      "avg_mileage": 102301.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 6.31
+    },
+    {
+      "model": "RX400H",
+      "model_year": 2009,
+      "fuel_type": "HY",
+      "total_tests": 1066,
+      "total_passes": 829,
+      "total_fails": 182,
+      "pass_rate": 77.77,
+      "avg_mileage": 114271.0,
+      "avg_age_years": 13.7,
+      "pass_rate_vs_national": 6.26
+    },
+    {
+      "model": "GS450H",
+      "model_year": 2009,
+      "fuel_type": "HY",
+      "total_tests": 211,
+      "total_passes": 164,
+      "total_fails": 35,
+      "pass_rate": 77.73,
+      "avg_mileage": 100932.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 6.21
+    },
+    {
+      "model": "RX400 H SE CVT",
+      "model_year": 2006,
+      "fuel_type": "HY",
+      "total_tests": 116,
+      "total_passes": 90,
+      "total_fails": 23,
+      "pass_rate": 77.59,
+      "avg_mileage": 145081.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 6.08
+    },
+    {
+      "model": "CT",
+      "model_year": 2011,
+      "fuel_type": "EL",
+      "total_tests": 551,
+      "total_passes": 424,
+      "total_fails": 86,
+      "pass_rate": 76.95,
+      "avg_mileage": 102877.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 5.44
+    },
+    {
+      "model": "RX400 H SE CVT",
+      "model_year": 2007,
+      "fuel_type": "HY",
+      "total_tests": 138,
+      "total_passes": 106,
+      "total_fails": 24,
+      "pass_rate": 76.81,
+      "avg_mileage": 131777.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 5.3
+    },
+    {
+      "model": "IS250",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 1187,
+      "total_passes": 907,
+      "total_fails": 229,
+      "pass_rate": 76.41,
+      "avg_mileage": 89653.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 4.9
+    },
+    {
+      "model": "GS450H",
+      "model_year": 2006,
+      "fuel_type": "HY",
+      "total_tests": 296,
+      "total_passes": 226,
+      "total_fails": 56,
+      "pass_rate": 76.35,
+      "avg_mileage": 120726.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": 4.84
+    },
+    {
+      "model": "LS430",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 169,
+      "total_passes": 128,
+      "total_fails": 31,
+      "pass_rate": 75.74,
+      "avg_mileage": 126742.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": 4.23
+    },
+    {
+      "model": "RX450H",
+      "model_year": 2009,
+      "fuel_type": "HY",
+      "total_tests": 1158,
+      "total_passes": 874,
+      "total_fails": 226,
+      "pass_rate": 75.47,
+      "avg_mileage": 117718.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": 3.96
+    },
+    {
+      "model": "RX450H",
+      "model_year": 2010,
+      "fuel_type": "HY",
+      "total_tests": 2426,
+      "total_passes": 1824,
+      "total_fails": 455,
+      "pass_rate": 75.19,
+      "avg_mileage": 110624.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 3.67
+    },
+    {
+      "model": "GS430",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 124,
+      "total_passes": 93,
+      "total_fails": 25,
+      "pass_rate": 75.0,
+      "avg_mileage": 107656.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 3.49
+    },
+    {
+      "model": "RX450H",
+      "model_year": 2006,
+      "fuel_type": "HY",
+      "total_tests": 128,
+      "total_passes": 96,
+      "total_fails": 19,
+      "pass_rate": 75.0,
+      "avg_mileage": 140290.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": 3.49
+    },
+    {
+      "model": "IS250",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1642,
+      "total_passes": 1224,
+      "total_fails": 333,
+      "pass_rate": 74.54,
+      "avg_mileage": 99728.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 3.03
+    },
+    {
+      "model": "GS450H",
+      "model_year": 2007,
+      "fuel_type": "HY",
+      "total_tests": 392,
+      "total_passes": 291,
+      "total_fails": 78,
+      "pass_rate": 74.23,
+      "avg_mileage": 116711.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 2.72
+    },
+    {
+      "model": "RX350",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 343,
+      "total_passes": 254,
+      "total_fails": 77,
+      "pass_rate": 74.05,
+      "avg_mileage": 110324.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 2.54
+    },
+    {
+      "model": "RX450H",
+      "model_year": 2008,
+      "fuel_type": "HY",
+      "total_tests": 200,
+      "total_passes": 147,
+      "total_fails": 44,
+      "pass_rate": 73.5,
+      "avg_mileage": 131262.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 1.99
+    },
+    {
+      "model": "RX400H",
+      "model_year": 2008,
+      "fuel_type": "HY",
+      "total_tests": 2053,
+      "total_passes": 1505,
+      "total_fails": 394,
+      "pass_rate": 73.31,
+      "avg_mileage": 123977.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 1.8
+    },
+    {
+      "model": "SC430",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 381,
+      "total_passes": 278,
+      "total_fails": 86,
+      "pass_rate": 72.97,
+      "avg_mileage": 98928.0,
+      "avg_age_years": 20.6,
+      "pass_rate_vs_national": 1.46
+    },
+    {
+      "model": "IS250",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 2044,
+      "total_passes": 1482,
+      "total_fails": 433,
+      "pass_rate": 72.5,
+      "avg_mileage": 104730.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 0.99
+    },
+    {
+      "model": "SC430",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 228,
+      "total_passes": 165,
+      "total_fails": 52,
+      "pass_rate": 72.37,
+      "avg_mileage": 86440.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 0.86
+    },
+    {
+      "model": "SC430",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 225,
+      "total_passes": 161,
+      "total_fails": 54,
+      "pass_rate": 71.56,
+      "avg_mileage": 90634.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 0.04
+    },
+    {
+      "model": "IS220",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 739,
+      "total_passes": 527,
+      "total_fails": 171,
+      "pass_rate": 71.31,
+      "avg_mileage": 112317.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -0.2
+    },
+    {
+      "model": "RX400H",
+      "model_year": 2006,
+      "fuel_type": "HY",
+      "total_tests": 1570,
+      "total_passes": 1118,
+      "total_fails": 347,
+      "pass_rate": 71.21,
+      "avg_mileage": 137069.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -0.3
+    },
+    {
+      "model": "IS200",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 408,
+      "total_passes": 290,
+      "total_fails": 96,
+      "pass_rate": 71.08,
+      "avg_mileage": 108972.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -0.43
+    },
+    {
+      "model": "RX400 H SE CVT",
+      "model_year": 2008,
+      "fuel_type": "HY",
+      "total_tests": 127,
+      "total_passes": 90,
+      "total_fails": 31,
+      "pass_rate": 70.87,
+      "avg_mileage": 132917.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -0.64
+    },
+    {
+      "model": "IS300",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 150,
+      "total_passes": 106,
+      "total_fails": 34,
+      "pass_rate": 70.67,
+      "avg_mileage": 106462.0,
+      "avg_age_years": 18.6,
+      "pass_rate_vs_national": -0.84
+    },
+    {
+      "model": "IS250",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1918,
+      "total_passes": 1353,
+      "total_fails": 410,
+      "pass_rate": 70.54,
+      "avg_mileage": 108738.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -0.97
+    },
+    {
+      "model": "RX400H",
+      "model_year": 2007,
+      "fuel_type": "HY",
+      "total_tests": 2267,
+      "total_passes": 1598,
+      "total_fails": 488,
+      "pass_rate": 70.49,
+      "avg_mileage": 133315.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -1.02
+    },
+    {
+      "model": "SC430",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 216,
+      "total_passes": 152,
+      "total_fails": 47,
+      "pass_rate": 70.37,
+      "avg_mileage": 97443.0,
+      "avg_age_years": 21.2,
+      "pass_rate_vs_national": -1.14
+    },
+    {
+      "model": "GS300",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 302,
+      "total_passes": 212,
+      "total_fails": 63,
+      "pass_rate": 70.2,
+      "avg_mileage": 105464.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -1.31
+    },
+    {
+      "model": "IS220",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 1090,
+      "total_passes": 764,
+      "total_fails": 239,
+      "pass_rate": 70.09,
+      "avg_mileage": 120251.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -1.42
+    },
+    {
+      "model": "RX300",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1391,
+      "total_passes": 966,
+      "total_fails": 339,
+      "pass_rate": 69.45,
+      "avg_mileage": 118984.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -2.06
+    },
+    {
+      "model": "GS300",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 778,
+      "total_passes": 539,
+      "total_fails": 190,
+      "pass_rate": 69.28,
+      "avg_mileage": 109597.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -2.23
+    },
+    {
+      "model": "RX350",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 327,
+      "total_passes": 226,
+      "total_fails": 82,
+      "pass_rate": 69.11,
+      "avg_mileage": 111942.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -2.4
+    },
+    {
+      "model": "IS220",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 1525,
+      "total_passes": 1052,
+      "total_fails": 371,
+      "pass_rate": 68.98,
+      "avg_mileage": 129320.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": -2.53
+    },
+    {
+      "model": "GS300",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 161,
+      "total_passes": 111,
+      "total_fails": 39,
+      "pass_rate": 68.94,
+      "avg_mileage": 125522.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -2.57
+    },
+    {
+      "model": "RX300",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 629,
+      "total_passes": 432,
+      "total_fails": 163,
+      "pass_rate": 68.68,
+      "avg_mileage": 120766.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -2.83
+    },
+    {
+      "model": "IS300",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 191,
+      "total_passes": 131,
+      "total_fails": 45,
+      "pass_rate": 68.59,
+      "avg_mileage": 110757.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -2.92
+    },
+    {
+      "model": "IS220",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 1077,
+      "total_passes": 738,
+      "total_fails": 255,
+      "pass_rate": 68.52,
+      "avg_mileage": 123897.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -2.99
+    },
+    {
+      "model": "GS300",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 149,
+      "total_passes": 102,
+      "total_fails": 35,
+      "pass_rate": 68.46,
+      "avg_mileage": 110489.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -3.05
+    },
+    {
+      "model": "IS250",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 754,
+      "total_passes": 512,
+      "total_fails": 176,
+      "pass_rate": 67.9,
+      "avg_mileage": 111257.0,
+      "avg_age_years": 17.1,
+      "pass_rate_vs_national": -3.61
+    },
+    {
+      "model": "GS300",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 143,
+      "total_passes": 97,
+      "total_fails": 32,
+      "pass_rate": 67.83,
+      "avg_mileage": 116876.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -3.68
+    },
+    {
+      "model": "GS300",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 452,
+      "total_passes": 306,
+      "total_fails": 117,
+      "pass_rate": 67.7,
+      "avg_mileage": 108264.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -3.81
+    },
+    {
+      "model": "IS220",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 964,
+      "total_passes": 652,
+      "total_fails": 250,
+      "pass_rate": 67.63,
+      "avg_mileage": 131487.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -3.88
+    },
+    {
+      "model": "RX300",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1237,
+      "total_passes": 836,
+      "total_fails": 323,
+      "pass_rate": 67.58,
+      "avg_mileage": 117442.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -3.93
+    },
+    {
+      "model": "RX300",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 335,
+      "total_passes": 226,
+      "total_fails": 90,
+      "pass_rate": 67.46,
+      "avg_mileage": 112574.0,
+      "avg_age_years": 16.7,
+      "pass_rate_vs_national": -4.05
+    },
+    {
+      "model": "RX400H",
+      "model_year": 2005,
+      "fuel_type": "HY",
+      "total_tests": 786,
+      "total_passes": 529,
+      "total_fails": 195,
+      "pass_rate": 67.3,
+      "avg_mileage": 143586.0,
+      "avg_age_years": 17.3,
+      "pass_rate_vs_national": -4.21
+    },
+    {
+      "model": "IS200",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 479,
+      "total_passes": 318,
+      "total_fails": 125,
+      "pass_rate": 66.39,
+      "avg_mileage": 121422.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -5.12
+    },
+    {
+      "model": "IS300",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 216,
+      "total_passes": 141,
+      "total_fails": 56,
+      "pass_rate": 65.28,
+      "avg_mileage": 125088.0,
+      "avg_age_years": 20.6,
+      "pass_rate_vs_national": -6.23
+    },
+    {
+      "model": "RX450H",
+      "model_year": 2007,
+      "fuel_type": "HY",
+      "total_tests": 175,
+      "total_passes": 114,
+      "total_fails": 42,
+      "pass_rate": 65.14,
+      "avg_mileage": 138507.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -6.37
+    },
+    {
+      "model": "IS200",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 796,
+      "total_passes": 518,
+      "total_fails": 220,
+      "pass_rate": 65.08,
+      "avg_mileage": 107685.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": -6.44
+    },
+    {
+      "model": "IS200",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 1255,
+      "total_passes": 816,
+      "total_fails": 347,
+      "pass_rate": 65.02,
+      "avg_mileage": 110949.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -6.49
+    },
+    {
+      "model": "IS200",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1465,
+      "total_passes": 945,
+      "total_fails": 396,
+      "pass_rate": 64.51,
+      "avg_mileage": 105352.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -7.01
+    },
+    {
+      "model": "GS300",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "total_passes": 70,
+      "total_fails": 33,
+      "pass_rate": 63.64,
+      "avg_mileage": 122479.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -7.87
+    },
+    {
+      "model": "IS200",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 1004,
+      "total_passes": 638,
+      "total_fails": 273,
+      "pass_rate": 63.55,
+      "avg_mileage": 113674.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -7.97
+    },
+    {
+      "model": "IS200",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 806,
+      "total_passes": 511,
+      "total_fails": 228,
+      "pass_rate": 63.4,
+      "avg_mileage": 117361.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -8.11
+    },
+    {
+      "model": "RX300",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 237,
+      "total_passes": 142,
+      "total_fails": 78,
+      "pass_rate": 59.92,
+      "avg_mileage": 124205.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -11.6
+    },
+    {
+      "model": "RX300",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 167,
+      "total_passes": 97,
+      "total_fails": 58,
+      "pass_rate": 58.08,
+      "avg_mileage": 124841.0,
+      "avg_age_years": 21.4,
+      "pass_rate_vs_national": -13.43
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "LS600H",
+        "model_year": 2008,
+        "fuel_type": "HY",
+        "total_tests": 155,
+        "avg_vs_national": 27.87,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.74,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.87,
+          "total_tests": 155,
+          "avg_mileage": 123009.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.74,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.87,
+          "total_tests": 155,
+          "avg_mileage": 123009.0
+        }
+      },
+      {
+        "model": "SC430",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 196,
+        "avg_vs_national": 24.31,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 84.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 24.31,
+          "total_tests": 196,
+          "avg_mileage": 77397.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 84.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 24.31,
+          "total_tests": 196,
+          "avg_mileage": 77397.0
+        }
+      },
+      {
+        "model": "GS",
+        "model_year": 2013,
+        "fuel_type": "HY",
+        "total_tests": 216,
+        "avg_vs_national": 21.36,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 92.59,
+          "national_pass_rate": 71.23,
+          "vs_national": 21.36,
+          "total_tests": 216,
+          "avg_mileage": 81885.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 92.59,
+          "national_pass_rate": 71.23,
+          "vs_national": 21.36,
+          "total_tests": 216,
+          "avg_mileage": 81885.0
+        }
+      },
+      {
+        "model": "GS300",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 105,
+        "avg_vs_national": 21.08,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.95,
+          "national_pass_rate": 59.87,
+          "vs_national": 21.08,
+          "total_tests": 105,
+          "avg_mileage": 88815.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.95,
+          "national_pass_rate": 59.87,
+          "vs_national": 21.08,
+          "total_tests": 105,
+          "avg_mileage": 88815.0
+        }
+      },
+      {
+        "model": "IS250C",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 189,
+        "avg_vs_national": 20.98,
+        "durability_trend": 9.29,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 85.42,
+          "national_pass_rate": 59.87,
+          "vs_national": 25.55,
+          "total_tests": 96,
+          "avg_mileage": 70143.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 82.8,
+          "national_pass_rate": 66.54,
+          "vs_national": 16.26,
+          "total_tests": 93,
+          "avg_mileage": 66845.0
+        }
+      },
+      {
+        "model": "IS250C",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 140,
+        "avg_vs_national": 20.84,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.71,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.84,
+          "total_tests": 140,
+          "avg_mileage": 77437.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.71,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.84,
+          "total_tests": 140,
+          "avg_mileage": 77437.0
+        }
+      },
+      {
+        "model": "LS430",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 259,
+        "avg_vs_national": 20.44,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.31,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.44,
+          "total_tests": 259,
+          "avg_mileage": 123659.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.31,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.44,
+          "total_tests": 259,
+          "avg_mileage": 123659.0
+        }
+      },
+      {
+        "model": "SC430",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 161,
+        "avg_vs_national": 20.25,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.12,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.25,
+          "total_tests": 161,
+          "avg_mileage": 71815.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.12,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.25,
+          "total_tests": 161,
+          "avg_mileage": 71815.0
+        }
+      },
+      {
+        "model": "LS430",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 187,
+        "avg_vs_national": 19.81,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.68,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.81,
+          "total_tests": 187,
+          "avg_mileage": 128496.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.68,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.81,
+          "total_tests": 187,
+          "avg_mileage": 128496.0
+        }
+      },
+      {
+        "model": "LS460",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 141,
+        "avg_vs_national": 19.56,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.43,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.56,
+          "total_tests": 141,
+          "avg_mileage": 97540.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.43,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.56,
+          "total_tests": 141,
+          "avg_mileage": 97540.0
+        }
+      },
+      {
+        "model": "LS",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 165,
+        "avg_vs_national": 19.52,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.39,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.52,
+          "total_tests": 165,
+          "avg_mileage": 112761.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.39,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.52,
+          "total_tests": 165,
+          "avg_mileage": 112761.0
+        }
+      },
+      {
+        "model": "SC430",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 304,
+        "avg_vs_national": 19.41,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.28,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.41,
+          "total_tests": 304,
+          "avg_mileage": 93168.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 79.28,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.41,
+          "total_tests": 304,
+          "avg_mileage": 93168.0
+        }
+      },
+      {
+        "model": "GS",
+        "model_year": 2012,
+        "fuel_type": "HY",
+        "total_tests": 200,
+        "avg_vs_national": 19.34,
+        "durability_trend": -10.19,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 93.98,
+          "national_pass_rate": 71.23,
+          "vs_national": 22.75,
+          "total_tests": 133,
+          "avg_mileage": 82226.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 79.1,
+          "national_pass_rate": 66.54,
+          "vs_national": 12.56,
+          "total_tests": 67,
+          "avg_mileage": 99804.0
+        }
+      },
+      {
+        "model": "LS430",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 252,
+        "avg_vs_national": 19.1,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.97,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.1,
+          "total_tests": 252,
+          "avg_mileage": 127512.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.97,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.1,
+          "total_tests": 252,
+          "avg_mileage": 127512.0
+        }
+      },
+      {
+        "model": "RX 450H F SPORT CVT",
+        "model_year": 2012,
+        "fuel_type": "HY",
+        "total_tests": 155,
+        "avg_vs_national": 18.98,
+        "durability_trend": 5.64,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 89.74,
+          "national_pass_rate": 66.54,
+          "vs_national": 23.2,
+          "total_tests": 39,
+          "avg_mileage": 95147.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 88.79,
+          "national_pass_rate": 71.23,
+          "vs_national": 17.56,
+          "total_tests": 116,
+          "avg_mileage": 91217.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "RX300",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 167,
+        "avg_vs_national": -1.79,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.08,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.79,
+          "total_tests": 167,
+          "avg_mileage": 124841.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.08,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.79,
+          "total_tests": 167,
+          "avg_mileage": 124841.0
+        }
+      },
+      {
+        "model": "IS",
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 142,
+        "avg_vs_national": -1.22,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 85.21,
+          "national_pass_rate": 86.43,
+          "vs_national": -1.22,
+          "total_tests": 142,
+          "avg_mileage": 33086.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 85.21,
+          "national_pass_rate": 86.43,
+          "vs_national": -1.22,
+          "total_tests": 142,
+          "avg_mileage": 33086.0
+        }
+      },
+      {
+        "model": "RX300",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 237,
+        "avg_vs_national": 0.05,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.92,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.05,
+          "total_tests": 237,
+          "avg_mileage": 124205.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.92,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.05,
+          "total_tests": 237,
+          "avg_mileage": 124205.0
+        }
+      },
+      {
+        "model": "RC",
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 405,
+        "avg_vs_national": 1.97,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 88.4,
+          "national_pass_rate": 86.43,
+          "vs_national": 1.97,
+          "total_tests": 405,
+          "avg_mileage": 28363.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 88.4,
+          "national_pass_rate": 86.43,
+          "vs_national": 1.97,
+          "total_tests": 405,
+          "avg_mileage": 28363.0
+        }
+      },
+      {
+        "model": "IS",
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 1229,
+        "avg_vs_national": 2.59,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 89.02,
+          "national_pass_rate": 86.43,
+          "vs_national": 2.59,
+          "total_tests": 1229,
+          "avg_mileage": 41184.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 89.02,
+          "national_pass_rate": 86.43,
+          "vs_national": 2.59,
+          "total_tests": 1229,
+          "avg_mileage": 41184.0
+        }
+      },
+      {
+        "model": "IS200",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 806,
+        "avg_vs_national": 3.53,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.4,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.53,
+          "total_tests": 806,
+          "avg_mileage": 117361.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.4,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.53,
+          "total_tests": 806,
+          "avg_mileage": 117361.0
+        }
+      },
+      {
+        "model": "IS200",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 1004,
+        "avg_vs_national": 3.68,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.55,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.68,
+          "total_tests": 1004,
+          "avg_mileage": 113674.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.55,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.68,
+          "total_tests": 1004,
+          "avg_mileage": 113674.0
+        }
+      },
+      {
+        "model": "GS300",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "avg_vs_national": 3.77,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.64,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.77,
+          "total_tests": 110,
+          "avg_mileage": 122479.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.64,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.77,
+          "total_tests": 110,
+          "avg_mileage": 122479.0
+        }
+      },
+      {
+        "model": "CT",
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 1938,
+        "avg_vs_national": 4.44,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.87,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.44,
+          "total_tests": 1938,
+          "avg_mileage": 32787.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.87,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.44,
+          "total_tests": 1938,
+          "avg_mileage": 32787.0
+        }
+      },
+      {
+        "model": "IS200",
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 408,
+        "avg_vs_national": 4.54,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 71.08,
+          "national_pass_rate": 66.54,
+          "vs_national": 4.54,
+          "total_tests": 408,
+          "avg_mileage": 108972.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 71.08,
+          "national_pass_rate": 66.54,
+          "vs_national": 4.54,
+          "total_tests": 408,
+          "avg_mileage": 108972.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 33,
+          "tests": 47218
+        },
+        "maturing": {
+          "vehicles": 47,
+          "tests": 36715
+        },
+        "proven": {
+          "vehicles": 95,
+          "tests": 54624
+        }
+      },
+      "proven_vehicles_tested": 89,
+      "proven_above_average_pct": 100.0,
+      "proven_avg_vs_national": 15.16,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "LS600H",
+          "model_year": 2008,
+          "fuel_type": "HY",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 155,
+          "pass_rate": 87.74,
+          "vs_national_at_age": 30.44,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 123009.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SC430",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 196,
+          "pass_rate": 84.18,
+          "vs_national_at_age": 26.88,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 77397.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GS300",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 105,
+          "pass_rate": 80.95,
+          "vs_national_at_age": 23.65,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 88815.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "IS250C",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 140,
+          "pass_rate": 80.71,
+          "vs_national_at_age": 23.41,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 77437.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LS430",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 259,
+          "pass_rate": 80.31,
+          "vs_national_at_age": 23.01,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 123659.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SC430",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 161,
+          "pass_rate": 80.12,
+          "vs_national_at_age": 22.82,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 71815.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LS430",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 187,
+          "pass_rate": 79.68,
+          "vs_national_at_age": 22.38,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 128496.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "IS250C",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 135,
+          "pass_rate": 85.19,
+          "vs_national_at_age": 22.36,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 61045.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LS460",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 141,
+          "pass_rate": 79.43,
+          "vs_national_at_age": 22.13,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 97540.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LS",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 165,
+          "pass_rate": 79.39,
+          "vs_national_at_age": 22.09,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 112761.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SC430",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 304,
+          "pass_rate": 79.28,
+          "vs_national_at_age": 21.98,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 93168.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LS430",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 252,
+          "pass_rate": 78.97,
+          "vs_national_at_age": 21.67,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 127512.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GS300",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 179,
+          "pass_rate": 78.21,
+          "vs_national_at_age": 20.91,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 98962.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GS450H",
+          "model_year": 2008,
+          "fuel_type": "HY",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 350,
+          "pass_rate": 78.0,
+          "vs_national_at_age": 20.7,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 109589.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LS430",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 159,
+          "pass_rate": 77.99,
+          "vs_national_at_age": 20.69,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 125840.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "RX",
+          "model_year": 2018,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 553,
+          "pass_rate": 96.2,
+          "vs_national_at_age": 15.0,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 41295.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RX",
+          "model_year": 2017,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1928,
+          "pass_rate": 93.88,
+          "vs_national_at_age": 12.68,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 47770.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RX",
+          "model_year": 2016,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1319,
+          "pass_rate": 92.49,
+          "vs_national_at_age": 11.29,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 55016.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "GS",
+          "model_year": 2017,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 370,
+          "pass_rate": 92.43,
+          "vs_national_at_age": 11.23,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 50461.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "GS",
+          "model_year": 2016,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 336,
+          "pass_rate": 91.67,
+          "vs_national_at_age": 10.47,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 63398.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RX",
+          "model_year": 2020,
+          "fuel_type": "HY",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 428,
+          "pass_rate": 95.56,
+          "vs_national_at_age": 9.71,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 24836.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "NX",
+          "model_year": 2018,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1363,
+          "pass_rate": 90.54,
+          "vs_national_at_age": 9.34,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 42897.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RX",
+          "model_year": 2018,
+          "fuel_type": "HY",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 1289,
+          "pass_rate": 94.72,
+          "vs_national_at_age": 8.87,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 37911.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "NX",
+          "model_year": 2017,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 3759,
+          "pass_rate": 89.86,
+          "vs_national_at_age": 8.66,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 46041.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RX",
+          "model_year": 2019,
+          "fuel_type": "HY",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 2317,
+          "pass_rate": 94.43,
+          "vs_national_at_age": 8.58,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 31041.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "NX": {
+        "core_model": "NX",
+        "years_covered": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 91.9,
+                "vs_national": 6.05,
+                "total_tests": 3098,
+                "avg_mileage": 36867.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 93.5,
+                "vs_national": 7.65,
+                "total_tests": 4584,
+                "avg_mileage": 29352.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 92.17,
+                "vs_national": 6.32,
+                "total_tests": 1060,
+                "avg_mileage": 26274.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 88.94,
+                "vs_national": 7.74,
+                "total_tests": 2197,
+                "avg_mileage": 51532.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 89.86,
+                "vs_national": 8.66,
+                "total_tests": 3759,
+                "avg_mileage": 46041.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 90.54,
+                "vs_national": 9.34,
+                "total_tests": 1363,
+                "avg_mileage": 42897.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 86.94,
+                "vs_national": 11.81,
+                "total_tests": 689,
+                "avg_mileage": 67770.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 88.55,
+                "vs_national": 13.42,
+                "total_tests": 3074,
+                "avg_mileage": 59972.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 87.21,
+                "vs_national": 12.08,
+                "total_tests": 1446,
+                "avg_mileage": 55976.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "UX": {
+        "core_model": "UX",
+        "years_covered": [
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2019,
+                "pass_rate": 93.92,
+                "vs_national": 8.07,
+                "total_tests": 3439,
+                "avg_mileage": 30126.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 93.35,
+                "vs_national": 7.5,
+                "total_tests": 933,
+                "avg_mileage": 25276.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "RX": {
+        "core_model": "RX",
+        "years_covered": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 94.72,
+                "vs_national": 8.87,
+                "total_tests": 1289,
+                "avg_mileage": 37911.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 94.43,
+                "vs_national": 8.58,
+                "total_tests": 2317,
+                "avg_mileage": 31041.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 95.56,
+                "vs_national": 9.71,
+                "total_tests": 428,
+                "avg_mileage": 24836.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 92.49,
+                "vs_national": 11.29,
+                "total_tests": 1319,
+                "avg_mileage": 55016.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 93.88,
+                "vs_national": 12.68,
+                "total_tests": 1928,
+                "avg_mileage": 47770.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 96.2,
+                "vs_national": 15.0,
+                "total_tests": 553,
+                "avg_mileage": 41295.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 88.57,
+                "vs_national": 13.44,
+                "total_tests": 901,
+                "avg_mileage": 71754.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 88.28,
+                "vs_national": 13.15,
+                "total_tests": 1271,
+                "avg_mileage": 64526.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 91.65,
+                "vs_national": 16.52,
+                "total_tests": 874,
+                "avg_mileage": 58269.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 84.71,
+                "vs_national": 16.47,
+                "total_tests": 425,
+                "avg_mileage": 89746.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 86.93,
+                "vs_national": 18.69,
+                "total_tests": 1767,
+                "avg_mileage": 82364.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 87.36,
+                "vs_national": 19.12,
+                "total_tests": 696,
+                "avg_mileage": 77028.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "LS430": {
+        "core_model": "LS430",
+        "years_covered": [
+          2004,
+          2005
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 78.97,
+                "vs_national": 21.67,
+                "total_tests": 252,
+                "avg_mileage": 127512.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 80.31,
+                "vs_national": 23.01,
+                "total_tests": 259,
+                "avg_mileage": 123659.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2005,
+          "vs_national": 23.01,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": 21.67,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "RX450H": {
+        "core_model": "RX450H",
+        "years_covered": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012
+        ],
+        "trajectory_by_age": {
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 86.23,
+                "vs_national": 17.99,
+                "total_tests": 414,
+                "avg_mileage": 86370.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 73.45,
+                "vs_national": 10.62,
+                "total_tests": 1209,
+                "avg_mileage": 106861.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 77.82,
+                "vs_national": 14.99,
+                "total_tests": 1691,
+                "avg_mileage": 102301.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 79.7,
+                "vs_national": 16.87,
+                "total_tests": 660,
+                "avg_mileage": 93941.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2008,
+                "pass_rate": 73.5,
+                "vs_national": 16.2,
+                "total_tests": 200,
+                "avg_mileage": 131262.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 75.47,
+                "vs_national": 18.17,
+                "total_tests": 1158,
+                "avg_mileage": 117718.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 76.91,
+                "vs_national": 19.61,
+                "total_tests": 1217,
+                "avg_mileage": 114363.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 19.61,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2010,
+          "vs_national": 10.62,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "RX400H": {
+        "core_model": "RX400H",
+        "years_covered": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 67.3,
+                "vs_national": 10.0,
+                "total_tests": 786,
+                "avg_mileage": 143586.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 71.21,
+                "vs_national": 13.91,
+                "total_tests": 1570,
+                "avg_mileage": 137069.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 70.49,
+                "vs_national": 13.19,
+                "total_tests": 2267,
+                "avg_mileage": 133315.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 73.31,
+                "vs_national": 16.01,
+                "total_tests": 2053,
+                "avg_mileage": 123977.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 77.77,
+                "vs_national": 20.47,
+                "total_tests": 1066,
+                "avg_mileage": 114271.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 20.47,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": 10.0,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "SC430": {
+        "core_model": "SC430",
+        "years_covered": [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2001,
+                "pass_rate": 70.37,
+                "vs_national": 13.07,
+                "total_tests": 216,
+                "avg_mileage": 97443.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 72.97,
+                "vs_national": 15.67,
+                "total_tests": 381,
+                "avg_mileage": 98928.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 79.28,
+                "vs_national": 21.98,
+                "total_tests": 304,
+                "avg_mileage": 93168.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 71.56,
+                "vs_national": 14.26,
+                "total_tests": 225,
+                "avg_mileage": 90634.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 72.37,
+                "vs_national": 15.07,
+                "total_tests": 228,
+                "avg_mileage": 86440.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2003,
+          "vs_national": 21.98,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2001,
+          "vs_national": 13.07,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "CT": {
+        "core_model": "CT",
+        "years_covered": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 90.59,
+                "vs_national": 4.74,
+                "total_tests": 1871,
+                "avg_mileage": 36401.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 90.87,
+                "vs_national": 5.02,
+                "total_tests": 1938,
+                "avg_mileage": 32787.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 91.9,
+                "vs_national": 6.05,
+                "total_tests": 284,
+                "avg_mileage": 24301.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 89.53,
+                "vs_national": 8.33,
+                "total_tests": 1795,
+                "avg_mileage": 56297.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 88.72,
+                "vs_national": 7.52,
+                "total_tests": 2979,
+                "avg_mileage": 47136.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 87.92,
+                "vs_national": 6.72,
+                "total_tests": 861,
+                "avg_mileage": 43399.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 87.7,
+                "vs_national": 12.57,
+                "total_tests": 2171,
+                "avg_mileage": 74564.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 85.97,
+                "vs_national": 10.84,
+                "total_tests": 3507,
+                "avg_mileage": 69254.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 87.92,
+                "vs_national": 12.79,
+                "total_tests": 1184,
+                "avg_mileage": 62879.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 80.25,
+                "vs_national": 12.01,
+                "total_tests": 1940,
+                "avg_mileage": 91840.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 80.26,
+                "vs_national": 12.02,
+                "total_tests": 3637,
+                "avg_mileage": 87097.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 83.46,
+                "vs_national": 15.22,
+                "total_tests": 1626,
+                "avg_mileage": 81653.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2011,
+                "pass_rate": 78.87,
+                "vs_national": 16.04,
+                "total_tests": 3649,
+                "avg_mileage": 100089.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 79.57,
+                "vs_national": 16.74,
+                "total_tests": 2100,
+                "avg_mileage": 99843.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 16.74,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2011,
+          "vs_national": 16.04,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "IS": {
+        "core_model": "IS",
+        "years_covered": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 90.45,
+                "vs_national": 4.6,
+                "total_tests": 1005,
+                "avg_mileage": 44968.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 89.02,
+                "vs_national": 3.17,
+                "total_tests": 1229,
+                "avg_mileage": 41184.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 89.08,
+                "vs_national": 7.88,
+                "total_tests": 1090,
+                "avg_mileage": 64786.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 89.28,
+                "vs_national": 8.08,
+                "total_tests": 1521,
+                "avg_mileage": 54872.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 89.29,
+                "vs_national": 8.09,
+                "total_tests": 448,
+                "avg_mileage": 54779.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 87.72,
+                "vs_national": 12.59,
+                "total_tests": 1709,
+                "avg_mileage": 72789.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 88.02,
+                "vs_national": 12.89,
+                "total_tests": 2814,
+                "avg_mileage": 69021.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 87.16,
+                "vs_national": 12.03,
+                "total_tests": 849,
+                "avg_mileage": 76008.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2013,
+                "pass_rate": 84.99,
+                "vs_national": 16.75,
+                "total_tests": 1446,
+                "avg_mileage": 91757.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 85.48,
+                "vs_national": 17.24,
+                "total_tests": 1384,
+                "avg_mileage": 79613.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "IS250": {
+        "core_model": "IS250",
+        "years_covered": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012
+        ],
+        "trajectory_by_age": {
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 85.51,
+                "vs_national": 17.27,
+                "total_tests": 207,
+                "avg_mileage": 70300.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 79.66,
+                "vs_national": 16.83,
+                "total_tests": 595,
+                "avg_mileage": 84244.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 81.4,
+                "vs_national": 18.57,
+                "total_tests": 742,
+                "avg_mileage": 78628.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 81.4,
+                "vs_national": 18.57,
+                "total_tests": 215,
+                "avg_mileage": 72393.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 67.9,
+                "vs_national": 10.6,
+                "total_tests": 754,
+                "avg_mileage": 111257.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 70.54,
+                "vs_national": 13.24,
+                "total_tests": 1918,
+                "avg_mileage": 108738.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 72.5,
+                "vs_national": 15.2,
+                "total_tests": 2044,
+                "avg_mileage": 104730.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 74.54,
+                "vs_national": 17.24,
+                "total_tests": 1642,
+                "avg_mileage": 99728.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 76.41,
+                "vs_national": 19.11,
+                "total_tests": 1187,
+                "avg_mileage": 89653.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 76.5,
+                "vs_national": 19.2,
+                "total_tests": 617,
+                "avg_mileage": 90086.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 19.2,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": 10.6,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "GS300": {
+        "core_model": "GS300",
+        "years_covered": [
+          2005,
+          2006,
+          2007
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 69.28,
+                "vs_national": 11.98,
+                "total_tests": 778,
+                "avg_mileage": 109597.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 67.7,
+                "vs_national": 10.4,
+                "total_tests": 452,
+                "avg_mileage": 108264.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 70.2,
+                "vs_national": 12.9,
+                "total_tests": 302,
+                "avg_mileage": 105464.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2007,
+          "vs_national": 12.9,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": 10.4,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

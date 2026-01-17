@@ -1,0 +1,1112 @@
+{
+  "meta": {
+    "make": "ROLLS ROYCE",
+    "generated_at": "2026-01-15T17:43:43.369059",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 1,
+    "make": "ROLLS ROYCE",
+    "total_tests": 3028,
+    "total_models": 144,
+    "avg_pass_rate": 94.72,
+    "weighted_pass_rate": 94.72,
+    "best_model": "CULLINAN V12 AUTO 2019",
+    "best_model_pass_rate": 98.2,
+    "worst_model": "GHOST 2011",
+    "worst_model_pass_rate": 89.22,
+    "rank": 1
+  },
+  "competitors": [
+    {
+      "make": "ROLLS ROYCE",
+      "avg_pass_rate": 94.72,
+      "total_tests": 3028,
+      "rank": 1,
+      "total_models": 144
+    },
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    }
+  ],
+  "summary": {
+    "total_tests": 3028,
+    "total_models": 144,
+    "avg_pass_rate": 94.72,
+    "rank": 1,
+    "rank_total": 75,
+    "best_model": "CULLINAN V12 AUTO 2019",
+    "best_model_pass_rate": 98.2,
+    "worst_model": "GHOST 2011",
+    "worst_model_pass_rate": 89.22,
+    "vs_national": 23.21,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "CULLINAN V12 AUTO",
+      "total_tests": 111,
+      "total_passes": 109,
+      "total_fails": 2,
+      "pass_rate": 98.2,
+      "avg_mileage": 19810.0,
+      "year_from": 2019,
+      "year_to": 2019,
+      "variant_count": 1,
+      "variants": "CULLINAN V12 AUTO"
+    },
+    {
+      "core_model": "DAWN",
+      "total_tests": 221,
+      "total_passes": 208,
+      "total_fails": 10,
+      "pass_rate": 94.12,
+      "avg_mileage": 17043.0,
+      "year_from": 2016,
+      "year_to": 2018,
+      "variant_count": 2,
+      "variants": "DAWN"
+    },
+    {
+      "core_model": "WRAITH",
+      "total_tests": 217,
+      "total_passes": 204,
+      "total_fails": 11,
+      "pass_rate": 94.01,
+      "avg_mileage": 31162.0,
+      "year_from": 2014,
+      "year_to": 2015,
+      "variant_count": 2,
+      "variants": "WRAITH"
+    },
+    {
+      "core_model": "GHOST",
+      "total_tests": 215,
+      "total_passes": 195,
+      "total_fails": 13,
+      "pass_rate": 90.7,
+      "avg_mileage": 49017.0,
+      "year_from": 2010,
+      "year_to": 2011,
+      "variant_count": 2,
+      "variants": "GHOST"
+    }
+  ],
+  "model_year_breakdowns": {
+    "CULLINAN V12 AUTO": [
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 111,
+        "pass_rate": 98.2,
+        "avg_mileage": 19810.0,
+        "pass_rate_vs_national": 11.99,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "DAWN": [
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 112,
+        "pass_rate": 91.96,
+        "avg_mileage": 14053.0,
+        "pass_rate_vs_national": 7.72,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 109,
+        "pass_rate": 96.33,
+        "avg_mileage": 20032.0,
+        "pass_rate_vs_national": 17.68,
+        "national_avg_for_year": 78.65
+      }
+    ],
+    "WRAITH": [
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "pass_rate": 91.59,
+        "avg_mileage": 30193.0,
+        "pass_rate_vs_national": 16.1,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "pass_rate": 96.36,
+        "avg_mileage": 32131.0,
+        "pass_rate_vs_national": 24.65,
+        "national_avg_for_year": 71.71
+      }
+    ],
+    "GHOST": [
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "pass_rate": 89.22,
+        "avg_mileage": 46298.0,
+        "pass_rate_vs_national": 26.23,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 113,
+        "pass_rate": 92.04,
+        "avg_mileage": 51736.0,
+        "pass_rate_vs_national": 31.54,
+        "national_avg_for_year": 60.5
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 7,
+      "total_tests": 764,
+      "pass_rate": 93.72,
+      "fuel_name": "Petrol"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "GHOST",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "pass_rate": 92.04,
+      "pass_rate_vs_national": 31.54,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "GHOST",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "pass_rate": 89.22,
+      "pass_rate_vs_national": 26.23,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "WRAITH",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "pass_rate": 96.36,
+      "pass_rate_vs_national": 24.65,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "DAWN",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 109,
+      "pass_rate": 96.33,
+      "pass_rate_vs_national": 17.68,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "WRAITH",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "pass_rate": 91.59,
+      "pass_rate_vs_national": 16.1,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "CULLINAN V12 AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 111,
+      "pass_rate": 98.2,
+      "pass_rate_vs_national": 11.99,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "DAWN",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 112,
+      "pass_rate": 91.96,
+      "pass_rate_vs_national": 7.72,
+      "national_avg_for_year": 84.24
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "DAWN",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 112,
+      "pass_rate": 91.96,
+      "pass_rate_vs_national": 7.72,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "CULLINAN V12 AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 111,
+      "pass_rate": 98.2,
+      "pass_rate_vs_national": 11.99,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "WRAITH",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "pass_rate": 91.59,
+      "pass_rate_vs_national": 16.1,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "DAWN",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 109,
+      "pass_rate": 96.33,
+      "pass_rate_vs_national": 17.68,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "WRAITH",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "pass_rate": 96.36,
+      "pass_rate_vs_national": 24.65,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "GHOST",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "pass_rate": 89.22,
+      "pass_rate_vs_national": 26.23,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "GHOST",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "pass_rate": 92.04,
+      "pass_rate_vs_national": 31.54,
+      "national_avg_for_year": 60.5
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Tyres",
+        "total_failures": 20,
+        "vehicle_count": 7
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 8,
+        "vehicle_count": 5
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 7,
+        "vehicle_count": 5
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 5,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 4,
+        "vehicle_count": 3
+      },
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 4,
+        "vehicle_count": 3
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 1,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 1,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 1,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 1,
+        "vehicle_count": 1
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 9
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 7
+      },
+      {
+        "defect_description": "does not conform to the specified requirements",
+        "category_name": "Identification of the vehicle",
+        "total_occurrences": 6
+      },
+      {
+        "defect_description": "efficiency below requirements",
+        "category_name": "Brakes",
+        "total_occurrences": 4
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 4
+      },
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 3
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 2
+      },
+      {
+        "defect_description": "excessively fluctuating",
+        "category_name": "Brakes",
+        "total_occurrences": 2
+      },
+      {
+        "defect_description": "jets misaligned and not providing sufficient fluid to the windscreen",
+        "category_name": "Visibility",
+        "total_occurrences": 2
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 2
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 65
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 12
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 11
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 9
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 9
+      },
+      {
+        "defect_description": "Nail in tyre",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 8
+      },
+      {
+        "defect_description": "slightly damaged",
+        "category_name": "Tyres",
+        "total_occurrences": 7
+      },
+      {
+        "defect_description": "has a cut but not deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 4
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 3
+      },
+      {
+        "defect_description": "Child Seat fitted not allowing full inspection of adult belt",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 2
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 48
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 17
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 11
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 10
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 10
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 9
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 7
+      },
+      {
+        "defect_description": "all missing",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 1
+      },
+      {
+        "defect_description": "fractured",
+        "category_name": "Road Wheels",
+        "total_occurrences": 1
+      },
+      {
+        "defect_description": "has a lump, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 464,
+      "avg_pass_rate": 95.69
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 208,
+      "avg_pass_rate": 89.9
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 58,
+      "avg_pass_rate": 94.83
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 10,
+      "avg_pass_rate": 80.0
+    }
+  ],
+  "all_models": [
+    {
+      "model": "CULLINAN V12 AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 111,
+      "total_passes": 109,
+      "total_fails": 2,
+      "pass_rate": 98.2,
+      "avg_mileage": 19810.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 26.69
+    },
+    {
+      "model": "WRAITH",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "total_passes": 106,
+      "total_fails": 3,
+      "pass_rate": 96.36,
+      "avg_mileage": 32131.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 24.85
+    },
+    {
+      "model": "DAWN",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 109,
+      "total_passes": 105,
+      "total_fails": 2,
+      "pass_rate": 96.33,
+      "avg_mileage": 20032.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 24.82
+    },
+    {
+      "model": "GHOST",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "total_passes": 104,
+      "total_fails": 6,
+      "pass_rate": 92.04,
+      "avg_mileage": 51736.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 20.52
+    },
+    {
+      "model": "DAWN",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 112,
+      "total_passes": 103,
+      "total_fails": 8,
+      "pass_rate": 91.96,
+      "avg_mileage": 14053.0,
+      "avg_age_years": 4.6,
+      "pass_rate_vs_national": 20.45
+    },
+    {
+      "model": "WRAITH",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "total_passes": 98,
+      "total_fails": 8,
+      "pass_rate": 91.59,
+      "avg_mileage": 30193.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 20.08
+    },
+    {
+      "model": "GHOST",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 91,
+      "total_fails": 7,
+      "pass_rate": 89.22,
+      "avg_mileage": 46298.0,
+      "avg_age_years": 11.6,
+      "pass_rate_vs_national": 17.7
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "GHOST",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 113,
+        "avg_vs_national": 29.16,
+        "durability_trend": 6.45,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 91.94,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.07,
+          "total_tests": 62,
+          "avg_mileage": 50809.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 92.16,
+          "national_pass_rate": 66.54,
+          "vs_national": 25.62,
+          "total_tests": 51,
+          "avg_mileage": 52862.0
+        }
+      },
+      {
+        "model": "GHOST",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "avg_vs_national": 22.68,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 89.22,
+          "national_pass_rate": 66.54,
+          "vs_national": 22.68,
+          "total_tests": 102,
+          "avg_mileage": 46298.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 89.22,
+          "national_pass_rate": 66.54,
+          "vs_national": 22.68,
+          "total_tests": 102,
+          "avg_mileage": 46298.0
+        }
+      },
+      {
+        "model": "WRAITH",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "avg_vs_national": 21.96,
+        "durability_trend": 5.61,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 96.15,
+          "national_pass_rate": 71.23,
+          "vs_national": 24.92,
+          "total_tests": 52,
+          "avg_mileage": 33732.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 96.55,
+          "national_pass_rate": 77.24,
+          "vs_national": 19.31,
+          "total_tests": 58,
+          "avg_mileage": 30696.0
+        }
+      },
+      {
+        "model": "DAWN",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 109,
+        "avg_vs_national": 16.31,
+        "durability_trend": -3.62,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 100.0,
+          "national_pass_rate": 82.13,
+          "vs_national": 17.87,
+          "total_tests": 62,
+          "avg_mileage": 20331.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 91.49,
+          "national_pass_rate": 77.24,
+          "vs_national": 14.25,
+          "total_tests": 47,
+          "avg_mileage": 19637.0
+        }
+      },
+      {
+        "model": "WRAITH",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "avg_vs_national": 14.35,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 91.59,
+          "national_pass_rate": 77.24,
+          "vs_national": 14.35,
+          "total_tests": 107,
+          "avg_mileage": 30193.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 91.59,
+          "national_pass_rate": 77.24,
+          "vs_national": 14.35,
+          "total_tests": 107,
+          "avg_mileage": 30193.0
+        }
+      },
+      {
+        "model": "CULLINAN V12 AUTO",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 111,
+        "avg_vs_national": 11.77,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 98.2,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.77,
+          "total_tests": 111,
+          "avg_mileage": 19810.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 98.2,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.77,
+          "total_tests": 111,
+          "avg_mileage": 19810.0
+        }
+      },
+      {
+        "model": "DAWN",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 112,
+        "avg_vs_national": 7.99,
+        "durability_trend": 4.82,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 92.19,
+          "national_pass_rate": 82.13,
+          "vs_national": 10.06,
+          "total_tests": 64,
+          "avg_mileage": 15338.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.67,
+          "national_pass_rate": 86.43,
+          "vs_national": 5.24,
+          "total_tests": 48,
+          "avg_mileage": 12340.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "DAWN",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 112,
+        "avg_vs_national": 7.99,
+        "durability_trend": 4.82,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 92.19,
+          "national_pass_rate": 82.13,
+          "vs_national": 10.06,
+          "total_tests": 64,
+          "avg_mileage": 15338.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.67,
+          "national_pass_rate": 86.43,
+          "vs_national": 5.24,
+          "total_tests": 48,
+          "avg_mileage": 12340.0
+        }
+      },
+      {
+        "model": "CULLINAN V12 AUTO",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 111,
+        "avg_vs_national": 11.77,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 98.2,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.77,
+          "total_tests": 111,
+          "avg_mileage": 19810.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 98.2,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.77,
+          "total_tests": 111,
+          "avg_mileage": 19810.0
+        }
+      },
+      {
+        "model": "WRAITH",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "avg_vs_national": 14.35,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 91.59,
+          "national_pass_rate": 77.24,
+          "vs_national": 14.35,
+          "total_tests": 107,
+          "avg_mileage": 30193.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 91.59,
+          "national_pass_rate": 77.24,
+          "vs_national": 14.35,
+          "total_tests": 107,
+          "avg_mileage": 30193.0
+        }
+      },
+      {
+        "model": "DAWN",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 109,
+        "avg_vs_national": 16.31,
+        "durability_trend": -3.62,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 100.0,
+          "national_pass_rate": 82.13,
+          "vs_national": 17.87,
+          "total_tests": 62,
+          "avg_mileage": 20331.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 91.49,
+          "national_pass_rate": 77.24,
+          "vs_national": 14.25,
+          "total_tests": 47,
+          "avg_mileage": 19637.0
+        }
+      },
+      {
+        "model": "WRAITH",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "avg_vs_national": 21.96,
+        "durability_trend": 5.61,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 96.15,
+          "national_pass_rate": 71.23,
+          "vs_national": 24.92,
+          "total_tests": 52,
+          "avg_mileage": 33732.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 96.55,
+          "national_pass_rate": 77.24,
+          "vs_national": 19.31,
+          "total_tests": 58,
+          "avg_mileage": 30696.0
+        }
+      },
+      {
+        "model": "GHOST",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "avg_vs_national": 22.68,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 89.22,
+          "national_pass_rate": 66.54,
+          "vs_national": 22.68,
+          "total_tests": 102,
+          "avg_mileage": 46298.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 89.22,
+          "national_pass_rate": 66.54,
+          "vs_national": 22.68,
+          "total_tests": 102,
+          "avg_mileage": 46298.0
+        }
+      },
+      {
+        "model": "GHOST",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 113,
+        "avg_vs_national": 29.16,
+        "durability_trend": 6.45,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 91.94,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.07,
+          "total_tests": 62,
+          "avg_mileage": 50809.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 92.16,
+          "national_pass_rate": 66.54,
+          "vs_national": 25.62,
+          "total_tests": 51,
+          "avg_mileage": 52862.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 3,
+          "tests": 285
+        },
+        "maturing": {
+          "vehicles": 3,
+          "tests": 264
+        },
+        "proven": {
+          "vehicles": 2,
+          "tests": 215
+        }
+      },
+      "proven_vehicles_tested": 1,
+      "proven_above_average_pct": 100.0,
+      "proven_avg_vs_national": 26.39,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "GHOST",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 102,
+          "pass_rate": 89.22,
+          "vs_national_at_age": 26.39,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 46298.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "CULLINAN V12 AUTO",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 111,
+          "pass_rate": 98.2,
+          "vs_national_at_age": 12.35,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 19810.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {}
+  }
+}

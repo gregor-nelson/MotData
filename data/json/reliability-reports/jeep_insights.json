@@ -1,0 +1,4689 @@
+{
+  "meta": {
+    "make": "JEEP",
+    "generated_at": "2026-01-15T17:43:24.255536",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 30,
+    "make": "JEEP",
+    "total_tests": 67544,
+    "total_models": 985,
+    "avg_pass_rate": 74.82,
+    "weighted_pass_rate": 74.82,
+    "best_model": "WRANGLER NIGHT EAGLE UNLTD A 2020",
+    "best_model_pass_rate": 95.0,
+    "worst_model": "PATRIOT SPORT PLUS 2010",
+    "worst_model_pass_rate": 42.31,
+    "rank": 30
+  },
+  "competitors": [
+    {
+      "make": "JEEP",
+      "avg_pass_rate": 74.82,
+      "total_tests": 67544,
+      "rank": 30,
+      "total_models": 985
+    },
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    }
+  ],
+  "summary": {
+    "total_tests": 67544,
+    "total_models": 985,
+    "avg_pass_rate": 74.82,
+    "rank": 30,
+    "rank_total": 75,
+    "best_model": "WRANGLER NIGHT EAGLE UNLTD A 2020",
+    "best_model_pass_rate": 95.0,
+    "worst_model": "PATRIOT SPORT PLUS 2010",
+    "worst_model_pass_rate": 42.31,
+    "vs_national": 3.31,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "WRANGLER",
+      "total_tests": 3163,
+      "total_passes": 2558,
+      "total_fails": 437,
+      "pass_rate": 80.87,
+      "avg_mileage": 38235.0,
+      "year_from": 2013,
+      "year_to": 2020,
+      "variant_count": 14,
+      "variants": "WRANGLER,WRANGLER NIGHT EAGLE UNLTD A"
+    },
+    {
+      "core_model": "COMPASS",
+      "total_tests": 8750,
+      "total_passes": 6965,
+      "total_fails": 1472,
+      "pass_rate": 79.6,
+      "avg_mileage": 58049.0,
+      "year_from": 2011,
+      "year_to": 2020,
+      "variant_count": 15,
+      "variants": "COMPASS,COMPASS LIMITED CRD,COMPASS LIMITED CVT"
+    },
+    {
+      "core_model": "RENEGADE",
+      "total_tests": 26229,
+      "total_passes": 20694,
+      "total_fails": 4416,
+      "pass_rate": 78.9,
+      "avg_mileage": 38728.0,
+      "year_from": 2015,
+      "year_to": 2020,
+      "variant_count": 14,
+      "variants": "RENEGADE,RENEGADE NIGHT EAGLE,RENEGADE NIGHT EAGLE AUTO"
+    },
+    {
+      "core_model": "GRAND CHEROKEE",
+      "total_tests": 8346,
+      "total_passes": 6512,
+      "total_fails": 1513,
+      "pass_rate": 78.03,
+      "avg_mileage": 90243.0,
+      "year_from": 2002,
+      "year_to": 2019,
+      "variant_count": 18,
+      "variants": "GRAND CHEROKEE,GRAND CHEROKEE CRD LTD A,GRAND CHEROKEE CRD LTD AUTO,GRAND CHEROKEE LIMITED CRD A,GRAND CHEROKEE OVERLAND CRD A,GRAND CHEROKEE S-LTD CRD A"
+    },
+    {
+      "core_model": "G-CHEROKEE O-LAND SUMMIT CRD A",
+      "total_tests": 104,
+      "total_passes": 75,
+      "total_fails": 25,
+      "pass_rate": 72.12,
+      "avg_mileage": 87498.0,
+      "year_from": 2012,
+      "year_to": 2012,
+      "variant_count": 1,
+      "variants": "G-CHEROKEE O-LAND SUMMIT CRD A"
+    },
+    {
+      "core_model": "CHEROKEE",
+      "total_tests": 7550,
+      "total_passes": 5376,
+      "total_fails": 1829,
+      "pass_rate": 71.21,
+      "avg_mileage": 93837.0,
+      "year_from": 2002,
+      "year_to": 2018,
+      "variant_count": 18,
+      "variants": "CHEROKEE,CHEROKEE 3.7 LIMITED AUTO,CHEROKEE CRD SPORT AUTO,CHEROKEE LIMITED AUTO,CHEROKEE LIMITED CRD,CHEROKEE LIMITED CRD A,CHEROKEE LIMITED V6 AUTO"
+    },
+    {
+      "core_model": "COMMANDER LIMITED CRD A",
+      "total_tests": 177,
+      "total_passes": 113,
+      "total_fails": 45,
+      "pass_rate": 63.84,
+      "avg_mileage": 122693.0,
+      "year_from": 2007,
+      "year_to": 2007,
+      "variant_count": 1,
+      "variants": "COMMANDER LIMITED CRD A"
+    },
+    {
+      "core_model": "G-CHEROKEE OVERLAND CRD A",
+      "total_tests": 1376,
+      "total_passes": 864,
+      "total_fails": 408,
+      "pass_rate": 62.79,
+      "avg_mileage": 118456.0,
+      "year_from": 2006,
+      "year_to": 2010,
+      "variant_count": 5,
+      "variants": "G-CHEROKEE OVERLAND CRD A"
+    },
+    {
+      "core_model": "G-CHEROKEE S LTD CRD A",
+      "total_tests": 140,
+      "total_passes": 83,
+      "total_fails": 42,
+      "pass_rate": 59.29,
+      "avg_mileage": 107136.0,
+      "year_from": 2010,
+      "year_to": 2010,
+      "variant_count": 1,
+      "variants": "G-CHEROKEE S LTD CRD A"
+    },
+    {
+      "core_model": "PATRIOT LIMITED CRD",
+      "total_tests": 458,
+      "total_passes": 226,
+      "total_fails": 202,
+      "pass_rate": 49.34,
+      "avg_mileage": 105400.0,
+      "year_from": 2008,
+      "year_to": 2011,
+      "variant_count": 3,
+      "variants": "PATRIOT LIMITED CRD"
+    },
+    {
+      "core_model": "PATRIOT SPORT",
+      "total_tests": 348,
+      "total_passes": 160,
+      "total_fails": 160,
+      "pass_rate": 45.98,
+      "avg_mileage": 97632.0,
+      "year_from": 2008,
+      "year_to": 2010,
+      "variant_count": 3,
+      "variants": "PATRIOT SPORT,PATRIOT SPORT CRD,PATRIOT SPORT PLUS"
+    }
+  ],
+  "model_year_breakdowns": {
+    "WRANGLER": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 122,
+        "pass_rate": 87.7,
+        "avg_mileage": 22414.0,
+        "pass_rate_vs_national": 0.03,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 543,
+        "pass_rate": 92.63,
+        "avg_mileage": 23616.0,
+        "pass_rate_vs_national": 4.96,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 199,
+        "pass_rate": 87.94,
+        "avg_mileage": 28757.0,
+        "pass_rate_vs_national": 1.73,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 454,
+        "pass_rate": 89.65,
+        "avg_mileage": 26821.0,
+        "pass_rate_vs_national": 3.44,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 216,
+        "pass_rate": 79.17,
+        "avg_mileage": 34609.0,
+        "pass_rate_vs_national": -5.07,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 156,
+        "pass_rate": 87.18,
+        "avg_mileage": 29870.0,
+        "pass_rate_vs_national": 2.94,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 149,
+        "pass_rate": 79.87,
+        "avg_mileage": 38492.0,
+        "pass_rate_vs_national": -1.81,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 123,
+        "pass_rate": 79.67,
+        "avg_mileage": 34248.0,
+        "pass_rate_vs_national": -2.01,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 180,
+        "pass_rate": 70.0,
+        "avg_mileage": 49915.0,
+        "pass_rate_vs_national": -8.65,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 119,
+        "pass_rate": 74.79,
+        "avg_mileage": 38030.0,
+        "pass_rate_vs_national": -3.86,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 435,
+        "pass_rate": 69.89,
+        "avg_mileage": 55548.0,
+        "pass_rate_vs_national": -5.6,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 306,
+        "pass_rate": 70.59,
+        "avg_mileage": 60123.0,
+        "pass_rate_vs_national": -1.12,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 161,
+        "pass_rate": 66.46,
+        "avg_mileage": 69236.0,
+        "pass_rate_vs_national": -1.83,
+        "national_avg_for_year": 68.29
+      }
+    ],
+    "COMPASS": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 316,
+        "pass_rate": 87.03,
+        "avg_mileage": 24963.0,
+        "pass_rate_vs_national": -0.64,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1308,
+        "pass_rate": 86.47,
+        "avg_mileage": 22182.0,
+        "pass_rate_vs_national": -1.2,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 1086,
+        "pass_rate": 79.47,
+        "avg_mileage": 31430.0,
+        "pass_rate_vs_national": -6.74,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2038,
+        "pass_rate": 84.49,
+        "avg_mileage": 29142.0,
+        "pass_rate_vs_national": -1.72,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 777,
+        "pass_rate": 74.9,
+        "avg_mileage": 43567.0,
+        "pass_rate_vs_national": -9.34,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1588,
+        "pass_rate": 83.06,
+        "avg_mileage": 34003.0,
+        "pass_rate_vs_national": -1.18,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 203,
+        "pass_rate": 64.04,
+        "avg_mileage": 75642.0,
+        "pass_rate_vs_national": -7.67,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 225,
+        "pass_rate": 78.67,
+        "avg_mileage": 61326.0,
+        "pass_rate_vs_national": 6.96,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 304,
+        "pass_rate": 64.14,
+        "avg_mileage": 79897.0,
+        "pass_rate_vs_national": -4.15,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 169,
+        "pass_rate": 69.23,
+        "avg_mileage": 67119.0,
+        "pass_rate_vs_national": 0.94,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 237,
+        "pass_rate": 62.45,
+        "avg_mileage": 81676.0,
+        "pass_rate_vs_national": -3.18,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 195,
+        "pass_rate": 67.69,
+        "avg_mileage": 70685.0,
+        "pass_rate_vs_national": 2.06,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 189,
+        "pass_rate": 53.97,
+        "avg_mileage": 90303.0,
+        "pass_rate_vs_national": -9.02,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 115,
+        "pass_rate": 62.61,
+        "avg_mileage": 78905.0,
+        "pass_rate_vs_national": -0.38,
+        "national_avg_for_year": 62.99
+      }
+    ],
+    "RENEGADE": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 365,
+        "pass_rate": 89.59,
+        "avg_mileage": 24148.0,
+        "pass_rate_vs_national": 1.92,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1305,
+        "pass_rate": 88.74,
+        "avg_mileage": 19970.0,
+        "pass_rate_vs_national": 1.07,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 456,
+        "pass_rate": 87.5,
+        "avg_mileage": 31024.0,
+        "pass_rate_vs_national": 1.29,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1258,
+        "pass_rate": 91.18,
+        "avg_mileage": 25063.0,
+        "pass_rate_vs_national": 4.97,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 964,
+        "pass_rate": 83.61,
+        "avg_mileage": 41195.0,
+        "pass_rate_vs_national": -0.63,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1357,
+        "pass_rate": 86.22,
+        "avg_mileage": 33103.0,
+        "pass_rate_vs_national": 1.98,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 1993,
+        "pass_rate": 79.63,
+        "avg_mileage": 52004.0,
+        "pass_rate_vs_national": -2.05,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 2047,
+        "pass_rate": 84.61,
+        "avg_mileage": 41570.0,
+        "pass_rate_vs_national": 2.93,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 6392,
+        "pass_rate": 75.27,
+        "avg_mileage": 60137.0,
+        "pass_rate_vs_national": -3.38,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 4171,
+        "pass_rate": 79.79,
+        "avg_mileage": 49170.0,
+        "pass_rate_vs_national": 1.14,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 3641,
+        "pass_rate": 70.23,
+        "avg_mileage": 68624.0,
+        "pass_rate_vs_national": -5.26,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 2280,
+        "pass_rate": 73.33,
+        "avg_mileage": 56238.0,
+        "pass_rate_vs_national": -2.16,
+        "national_avg_for_year": 75.49
+      }
+    ],
+    "GRAND CHEROKEE": [
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 209,
+        "pass_rate": 89.47,
+        "avg_mileage": 32874.0,
+        "pass_rate_vs_national": 3.26,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 398,
+        "pass_rate": 89.2,
+        "avg_mileage": 43928.0,
+        "pass_rate_vs_national": 4.96,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 715,
+        "pass_rate": 86.15,
+        "avg_mileage": 55658.0,
+        "pass_rate_vs_national": 4.47,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 163,
+        "pass_rate": 93.25,
+        "avg_mileage": 41085.0,
+        "pass_rate_vs_national": 11.57,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 967,
+        "pass_rate": 82.73,
+        "avg_mileage": 61596.0,
+        "pass_rate_vs_national": 4.08,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 1343,
+        "pass_rate": 82.65,
+        "avg_mileage": 69543.0,
+        "pass_rate_vs_national": 7.16,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 1472,
+        "pass_rate": 80.16,
+        "avg_mileage": 79632.0,
+        "pass_rate_vs_national": 8.45,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 881,
+        "pass_rate": 78.32,
+        "avg_mileage": 86313.0,
+        "pass_rate_vs_national": 10.03,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 376,
+        "pass_rate": 76.86,
+        "avg_mileage": 90077.0,
+        "pass_rate_vs_national": 11.23,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 150,
+        "pass_rate": 71.33,
+        "avg_mileage": 103317.0,
+        "pass_rate_vs_national": 8.34,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 195,
+        "pass_rate": 63.08,
+        "avg_mileage": 119345.0,
+        "pass_rate_vs_national": 5.69,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 183,
+        "pass_rate": 59.56,
+        "avg_mileage": 123213.0,
+        "pass_rate_vs_national": 2.59,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 517,
+        "pass_rate": 62.86,
+        "avg_mileage": 124096.0,
+        "pass_rate_vs_national": 6.68,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 360,
+        "pass_rate": 63.89,
+        "avg_mileage": 122094.0,
+        "pass_rate_vs_national": 7.64,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 182,
+        "pass_rate": 53.3,
+        "avg_mileage": 127060.0,
+        "pass_rate_vs_national": -2.73,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 117,
+        "pass_rate": 65.81,
+        "avg_mileage": 126608.0,
+        "pass_rate_vs_national": 9.13,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 118,
+        "pass_rate": 55.08,
+        "avg_mileage": 131618.0,
+        "pass_rate_vs_national": -2.46,
+        "national_avg_for_year": 57.54
+      }
+    ],
+    "G-CHEROKEE O-LAND SUMMIT CRD A": [
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 104,
+        "pass_rate": 72.12,
+        "avg_mileage": 87498.0,
+        "pass_rate_vs_national": 6.49,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "CHEROKEE": [
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 294,
+        "pass_rate": 85.03,
+        "avg_mileage": 40885.0,
+        "pass_rate_vs_national": 0.79,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 542,
+        "pass_rate": 82.66,
+        "avg_mileage": 49083.0,
+        "pass_rate_vs_national": 0.98,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1421,
+        "pass_rate": 79.24,
+        "avg_mileage": 61160.0,
+        "pass_rate_vs_national": 0.59,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 2031,
+        "pass_rate": 75.82,
+        "avg_mileage": 71047.0,
+        "pass_rate_vs_national": 0.33,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 1204,
+        "pass_rate": 72.18,
+        "avg_mileage": 75837.0,
+        "pass_rate_vs_national": 0.47,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 103,
+        "pass_rate": 53.4,
+        "avg_mileage": 97354.0,
+        "pass_rate_vs_national": -7.1,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 155,
+        "pass_rate": 61.29,
+        "avg_mileage": 97535.0,
+        "pass_rate_vs_national": 2.28,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 518,
+        "pass_rate": 52.9,
+        "avg_mileage": 105186.0,
+        "pass_rate_vs_national": -4.07,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 349,
+        "pass_rate": 54.73,
+        "avg_mileage": 110845.0,
+        "pass_rate_vs_national": -1.45,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 139,
+        "pass_rate": 58.99,
+        "avg_mileage": 96769.0,
+        "pass_rate_vs_national": 2.81,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 271,
+        "pass_rate": 56.46,
+        "avg_mileage": 112606.0,
+        "pass_rate_vs_national": 0.21,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 195,
+        "pass_rate": 55.38,
+        "avg_mileage": 117942.0,
+        "pass_rate_vs_national": -0.65,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 174,
+        "pass_rate": 53.45,
+        "avg_mileage": 120360.0,
+        "pass_rate_vs_national": -3.23,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 154,
+        "pass_rate": 59.74,
+        "avg_mileage": 98632.0,
+        "pass_rate_vs_national": 2.2,
+        "national_avg_for_year": 57.54
+      }
+    ],
+    "COMMANDER LIMITED CRD A": [
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 177,
+        "pass_rate": 63.84,
+        "avg_mileage": 122693.0,
+        "pass_rate_vs_national": 6.87,
+        "national_avg_for_year": 56.97
+      }
+    ],
+    "G-CHEROKEE OVERLAND CRD A": [
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 118,
+        "pass_rate": 66.95,
+        "avg_mileage": 109400.0,
+        "pass_rate_vs_national": 6.45,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 217,
+        "pass_rate": 66.82,
+        "avg_mileage": 112647.0,
+        "pass_rate_vs_national": 7.81,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 229,
+        "pass_rate": 59.39,
+        "avg_mileage": 122317.0,
+        "pass_rate_vs_national": 2.0,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 511,
+        "pass_rate": 62.82,
+        "avg_mileage": 122466.0,
+        "pass_rate_vs_national": 5.85,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 301,
+        "pass_rate": 60.8,
+        "avg_mileage": 125450.0,
+        "pass_rate_vs_national": 4.62,
+        "national_avg_for_year": 56.18
+      }
+    ],
+    "G-CHEROKEE S LTD CRD A": [
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 140,
+        "pass_rate": 59.29,
+        "avg_mileage": 107136.0,
+        "pass_rate_vs_national": -1.21,
+        "national_avg_for_year": 60.5
+      }
+    ],
+    "PATRIOT LIMITED CRD": [
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 109,
+        "pass_rate": 46.79,
+        "avg_mileage": 91856.0,
+        "pass_rate_vs_national": -16.2,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 142,
+        "pass_rate": 46.48,
+        "avg_mileage": 110338.0,
+        "pass_rate_vs_national": -12.53,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 207,
+        "pass_rate": 52.66,
+        "avg_mileage": 114005.0,
+        "pass_rate_vs_national": -4.73,
+        "national_avg_for_year": 57.39
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 26,
+      "total_tests": 20143,
+      "pass_rate": 82.1,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 67,
+      "total_tests": 36498,
+      "pass_rate": 74.22,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 163,
+      "pass_rate": 93.25,
+      "pass_rate_vs_national": 11.57,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "GRAND CHEROKEE OVERLAND CRD A",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 376,
+      "pass_rate": 76.86,
+      "pass_rate_vs_national": 11.23,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 701,
+      "pass_rate": 79.17,
+      "pass_rate_vs_national": 10.88,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD AUTO",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 117,
+      "pass_rate": 65.81,
+      "pass_rate_vs_national": 9.13,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 1472,
+      "pass_rate": 80.16,
+      "pass_rate_vs_national": 8.45,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "GRAND CHEROKEE LIMITED CRD A",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 150,
+      "pass_rate": 71.33,
+      "pass_rate_vs_national": 8.34,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "G-CHEROKEE OVERLAND CRD A",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 217,
+      "pass_rate": 66.82,
+      "pass_rate_vs_national": 7.81,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD A",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 360,
+      "pass_rate": 63.89,
+      "pass_rate_vs_national": 7.64,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "WRANGLER NIGHT EAGLE UNLTD A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 120,
+      "pass_rate": 95.0,
+      "pass_rate_vs_national": 7.33,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 1343,
+      "pass_rate": 82.65,
+      "pass_rate_vs_national": 7.16,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 225,
+      "pass_rate": 78.67,
+      "pass_rate_vs_national": 6.96,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "COMMANDER LIMITED CRD A",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 177,
+      "pass_rate": 63.84,
+      "pass_rate_vs_national": 6.87,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "GRAND CHEROKEE S-LTD CRD A",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 180,
+      "pass_rate": 75.0,
+      "pass_rate_vs_national": 6.71,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD A",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 517,
+      "pass_rate": 62.86,
+      "pass_rate_vs_national": 6.68,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "G-CHEROKEE O-LAND SUMMIT CRD A",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 104,
+      "pass_rate": 72.12,
+      "pass_rate_vs_national": 6.49,
+      "national_avg_for_year": 65.63
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "PATRIOT SPORT PLUS",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "pass_rate": 42.16,
+      "pass_rate_vs_national": -18.34,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "PATRIOT LIMITED CRD",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 109,
+      "pass_rate": 46.79,
+      "pass_rate_vs_national": -16.2,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "PATRIOT SPORT",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 134,
+      "pass_rate": 44.03,
+      "pass_rate_vs_national": -13.36,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "PATRIOT LIMITED CRD",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 142,
+      "pass_rate": 46.48,
+      "pass_rate_vs_national": -12.53,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 777,
+      "pass_rate": 74.9,
+      "pass_rate_vs_national": -9.34,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "COMPASS LIMITED CRD",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 189,
+      "pass_rate": 53.97,
+      "pass_rate_vs_national": -9.02,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 180,
+      "pass_rate": 70.0,
+      "pass_rate_vs_national": -8.65,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "CHEROKEE CRD SPORT AUTO",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 122,
+      "pass_rate": 48.36,
+      "pass_rate_vs_national": -8.61,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 203,
+      "pass_rate": 64.04,
+      "pass_rate_vs_national": -7.67,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "CHEROKEE LIMITED AUTO",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 103,
+      "pass_rate": 53.4,
+      "pass_rate_vs_national": -7.1,
+      "national_avg_for_year": 60.5
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 4558,
+        "vehicle_count": 92
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 3330,
+        "vehicle_count": 91
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 2749,
+        "vehicle_count": 89
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 2645,
+        "vehicle_count": 88
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 1972,
+        "vehicle_count": 93
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 1849,
+        "vehicle_count": 92
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 1180,
+        "vehicle_count": 67
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 790,
+        "vehicle_count": 84
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 379,
+        "vehicle_count": 74
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 168,
+        "vehicle_count": 54
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 137,
+        "vehicle_count": 47
+      },
+      {
+        "category_name": "Seat belt installation check",
+        "total_failures": 2,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Speedometer and speed limiter",
+        "total_failures": 1,
+        "vehicle_count": 1
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 2063
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 1252
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 1235
+      },
+      {
+        "defect_description": "malfunctioning or obviously inoperative",
+        "category_name": "Tyres",
+        "total_occurrences": 806
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 733
+      },
+      {
+        "defect_description": "ball joint excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 581
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 549
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 525
+      },
+      {
+        "defect_description": "ball joint dust cover excessively damaged or deteriorated so that it no longer prevents the ingress of dirt",
+        "category_name": "Steering",
+        "total_occurrences": 428
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 418
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 10284
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 6565
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 4112
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 3225
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 2380
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 1799
+      },
+      {
+        "defect_description": "worn, but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 1338
+      },
+      {
+        "defect_description": "Child Seat fitted not allowing full inspection of adult belt",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 1322
+      },
+      {
+        "defect_description": "ball joint has slight play",
+        "category_name": "Suspension",
+        "total_occurrences": 1109
+      },
+      {
+        "defect_description": "Nail in tyre",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 734
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 9886
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 6707
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 4845
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 3437
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 1469
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 531
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 214
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 212
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 165
+      },
+      {
+        "defect_description": "emits excessive smoke or vapour likely to obscure the vision of other road users",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 66
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 11386,
+      "avg_pass_rate": 89.2
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 21729,
+      "avg_pass_rate": 80.4
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 13910,
+      "avg_pass_rate": 72.03
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 5815,
+      "avg_pass_rate": 64.56
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 2335,
+      "avg_pass_rate": 59.36
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 939,
+      "avg_pass_rate": 54.74
+    }
+  ],
+  "all_models": [
+    {
+      "model": "WRANGLER NIGHT EAGLE UNLTD A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 120,
+      "total_passes": 114,
+      "total_fails": 3,
+      "pass_rate": 95.0,
+      "avg_mileage": 25985.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 23.49
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 451,
+      "total_passes": 422,
+      "total_fails": 25,
+      "pass_rate": 93.57,
+      "avg_mileage": 19932.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 22.06
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 163,
+      "total_passes": 152,
+      "total_fails": 6,
+      "pass_rate": 93.25,
+      "avg_mileage": 41085.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 21.74
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 423,
+      "total_passes": 389,
+      "total_fails": 22,
+      "pass_rate": 91.96,
+      "avg_mileage": 21247.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 20.45
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1258,
+      "total_passes": 1147,
+      "total_fails": 85,
+      "pass_rate": 91.18,
+      "avg_mileage": 25063.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 19.67
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 454,
+      "total_passes": 407,
+      "total_fails": 35,
+      "pass_rate": 89.65,
+      "avg_mileage": 26821.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 18.14
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 365,
+      "total_passes": 327,
+      "total_fails": 32,
+      "pass_rate": 89.59,
+      "avg_mileage": 24148.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.08
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 209,
+      "total_passes": 187,
+      "total_fails": 19,
+      "pass_rate": 89.47,
+      "avg_mileage": 32874.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 17.96
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 398,
+      "total_passes": 355,
+      "total_fails": 34,
+      "pass_rate": 89.2,
+      "avg_mileage": 43928.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 17.69
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 199,
+      "total_passes": 175,
+      "total_fails": 19,
+      "pass_rate": 87.94,
+      "avg_mileage": 28757.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 16.43
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 122,
+      "total_passes": 107,
+      "total_fails": 8,
+      "pass_rate": 87.7,
+      "avg_mileage": 22414.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 16.19
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 456,
+      "total_passes": 399,
+      "total_fails": 46,
+      "pass_rate": 87.5,
+      "avg_mileage": 31024.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.99
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 156,
+      "total_passes": 136,
+      "total_fails": 15,
+      "pass_rate": 87.18,
+      "avg_mileage": 29870.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 15.67
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 316,
+      "total_passes": 275,
+      "total_fails": 28,
+      "pass_rate": 87.03,
+      "avg_mileage": 24963.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.51
+    },
+    {
+      "model": "RENEGADE NIGHT EAGLE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 622,
+      "total_passes": 538,
+      "total_fails": 63,
+      "pass_rate": 86.5,
+      "avg_mileage": 21132.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 14.98
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1308,
+      "total_passes": 1131,
+      "total_fails": 146,
+      "pass_rate": 86.47,
+      "avg_mileage": 22182.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 14.96
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1357,
+      "total_passes": 1170,
+      "total_fails": 145,
+      "pass_rate": 86.22,
+      "avg_mileage": 33103.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 14.71
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 715,
+      "total_passes": 616,
+      "total_fails": 86,
+      "pass_rate": 86.15,
+      "avg_mileage": 55658.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 14.64
+    },
+    {
+      "model": "RENEGADE NIGHT EAGLE AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 232,
+      "total_passes": 198,
+      "total_fails": 26,
+      "pass_rate": 85.34,
+      "avg_mileage": 18845.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 13.83
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 294,
+      "total_passes": 250,
+      "total_fails": 38,
+      "pass_rate": 85.03,
+      "avg_mileage": 40885.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 13.52
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 2047,
+      "total_passes": 1732,
+      "total_fails": 245,
+      "pass_rate": 84.61,
+      "avg_mileage": 41570.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 13.1
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2038,
+      "total_passes": 1722,
+      "total_fails": 255,
+      "pass_rate": 84.49,
+      "avg_mileage": 29142.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 12.98
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 964,
+      "total_passes": 806,
+      "total_fails": 125,
+      "pass_rate": 83.61,
+      "avg_mileage": 41195.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 12.1
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1588,
+      "total_passes": 1319,
+      "total_fails": 221,
+      "pass_rate": 83.06,
+      "avg_mileage": 34003.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 11.55
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 967,
+      "total_passes": 800,
+      "total_fails": 150,
+      "pass_rate": 82.73,
+      "avg_mileage": 61596.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 11.22
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 542,
+      "total_passes": 448,
+      "total_fails": 77,
+      "pass_rate": 82.66,
+      "avg_mileage": 49083.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 11.15
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 1343,
+      "total_passes": 1110,
+      "total_fails": 197,
+      "pass_rate": 82.65,
+      "avg_mileage": 69543.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 11.14
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 1472,
+      "total_passes": 1180,
+      "total_fails": 255,
+      "pass_rate": 80.16,
+      "avg_mileage": 79632.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 8.65
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 149,
+      "total_passes": 119,
+      "total_fails": 20,
+      "pass_rate": 79.87,
+      "avg_mileage": 38492.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 8.35
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 4171,
+      "total_passes": 3328,
+      "total_fails": 630,
+      "pass_rate": 79.79,
+      "avg_mileage": 49170.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 8.28
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 123,
+      "total_passes": 98,
+      "total_fails": 20,
+      "pass_rate": 79.67,
+      "avg_mileage": 34248.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 8.16
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 1993,
+      "total_passes": 1587,
+      "total_fails": 322,
+      "pass_rate": 79.63,
+      "avg_mileage": 52004.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 8.12
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1086,
+      "total_passes": 863,
+      "total_fails": 188,
+      "pass_rate": 79.47,
+      "avg_mileage": 31430.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 7.96
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1421,
+      "total_passes": 1126,
+      "total_fails": 241,
+      "pass_rate": 79.24,
+      "avg_mileage": 61160.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 7.73
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 701,
+      "total_passes": 555,
+      "total_fails": 118,
+      "pass_rate": 79.17,
+      "avg_mileage": 86809.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 7.66
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 216,
+      "total_passes": 171,
+      "total_fails": 35,
+      "pass_rate": 79.17,
+      "avg_mileage": 34609.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 7.66
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 225,
+      "total_passes": 177,
+      "total_fails": 43,
+      "pass_rate": 78.67,
+      "avg_mileage": 61326.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 7.16
+    },
+    {
+      "model": "GRAND CHEROKEE OVERLAND CRD A",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 376,
+      "total_passes": 289,
+      "total_fails": 64,
+      "pass_rate": 76.86,
+      "avg_mileage": 90077.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 5.35
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 2031,
+      "total_passes": 1540,
+      "total_fails": 422,
+      "pass_rate": 75.82,
+      "avg_mileage": 71047.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 4.31
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 6392,
+      "total_passes": 4811,
+      "total_fails": 1273,
+      "pass_rate": 75.27,
+      "avg_mileage": 60137.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 3.76
+    },
+    {
+      "model": "GRAND CHEROKEE S-LTD CRD A",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 180,
+      "total_passes": 135,
+      "total_fails": 36,
+      "pass_rate": 75.0,
+      "avg_mileage": 85816.0,
+      "avg_age_years": 9.6,
+      "pass_rate_vs_national": 3.49
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 777,
+      "total_passes": 582,
+      "total_fails": 149,
+      "pass_rate": 74.9,
+      "avg_mileage": 43567.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 3.39
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 119,
+      "total_passes": 89,
+      "total_fails": 28,
+      "pass_rate": 74.79,
+      "avg_mileage": 38030.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 3.28
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 2280,
+      "total_passes": 1672,
+      "total_fails": 504,
+      "pass_rate": 73.33,
+      "avg_mileage": 56238.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 1.82
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 1204,
+      "total_passes": 869,
+      "total_fails": 297,
+      "pass_rate": 72.18,
+      "avg_mileage": 75837.0,
+      "avg_age_years": 8.3,
+      "pass_rate_vs_national": 0.67
+    },
+    {
+      "model": "G-CHEROKEE O-LAND SUMMIT CRD A",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 104,
+      "total_passes": 75,
+      "total_fails": 25,
+      "pass_rate": 72.12,
+      "avg_mileage": 87498.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 0.6
+    },
+    {
+      "model": "GRAND CHEROKEE LIMITED CRD A",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 150,
+      "total_passes": 107,
+      "total_fails": 34,
+      "pass_rate": 71.33,
+      "avg_mileage": 103317.0,
+      "avg_age_years": 11.3,
+      "pass_rate_vs_national": -0.18
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 306,
+      "total_passes": 216,
+      "total_fails": 62,
+      "pass_rate": 70.59,
+      "avg_mileage": 60123.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": -0.92
+    },
+    {
+      "model": "RENEGADE",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 3641,
+      "total_passes": 2557,
+      "total_fails": 895,
+      "pass_rate": 70.23,
+      "avg_mileage": 68624.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": -1.28
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 180,
+      "total_passes": 126,
+      "total_fails": 37,
+      "pass_rate": 70.0,
+      "avg_mileage": 49915.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": -1.51
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 435,
+      "total_passes": 304,
+      "total_fails": 91,
+      "pass_rate": 69.89,
+      "avg_mileage": 55548.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": -1.63
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 169,
+      "total_passes": 117,
+      "total_fails": 41,
+      "pass_rate": 69.23,
+      "avg_mileage": 67119.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": -2.28
+    },
+    {
+      "model": "COMPASS LIMITED CVT",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 195,
+      "total_passes": 132,
+      "total_fails": 49,
+      "pass_rate": 67.69,
+      "avg_mileage": 70685.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -3.82
+    },
+    {
+      "model": "G-CHEROKEE OVERLAND CRD A",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 118,
+      "total_passes": 79,
+      "total_fails": 29,
+      "pass_rate": 66.95,
+      "avg_mileage": 109400.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -4.56
+    },
+    {
+      "model": "G-CHEROKEE OVERLAND CRD A",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 217,
+      "total_passes": 145,
+      "total_fails": 59,
+      "pass_rate": 66.82,
+      "avg_mileage": 112647.0,
+      "avg_age_years": 13.3,
+      "pass_rate_vs_national": -4.69
+    },
+    {
+      "model": "WRANGLER",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 161,
+      "total_passes": 107,
+      "total_fails": 42,
+      "pass_rate": 66.46,
+      "avg_mileage": 69236.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": -5.05
+    },
+    {
+      "model": "COMPASS LIMITED CRD",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 107,
+      "total_passes": 71,
+      "total_fails": 32,
+      "pass_rate": 66.36,
+      "avg_mileage": 79018.0,
+      "avg_age_years": 9.6,
+      "pass_rate_vs_national": -5.16
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD AUTO",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 117,
+      "total_passes": 77,
+      "total_fails": 35,
+      "pass_rate": 65.81,
+      "avg_mileage": 126608.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -5.7
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 203,
+      "total_passes": 130,
+      "total_fails": 58,
+      "pass_rate": 64.04,
+      "avg_mileage": 75642.0,
+      "avg_age_years": 8.6,
+      "pass_rate_vs_national": -7.47
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD A",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 360,
+      "total_passes": 230,
+      "total_fails": 100,
+      "pass_rate": 63.89,
+      "avg_mileage": 122094.0,
+      "avg_age_years": 17.3,
+      "pass_rate_vs_national": -7.62
+    },
+    {
+      "model": "COMMANDER LIMITED CRD A",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 177,
+      "total_passes": 113,
+      "total_fails": 45,
+      "pass_rate": 63.84,
+      "avg_mileage": 122693.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -7.67
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD A",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 195,
+      "total_passes": 123,
+      "total_fails": 62,
+      "pass_rate": 63.08,
+      "avg_mileage": 119345.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -8.43
+    },
+    {
+      "model": "COMPASS",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 197,
+      "total_passes": 124,
+      "total_fails": 62,
+      "pass_rate": 62.94,
+      "avg_mileage": 80775.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": -8.57
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD A",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 517,
+      "total_passes": 325,
+      "total_fails": 137,
+      "pass_rate": 62.86,
+      "avg_mileage": 124096.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -8.65
+    },
+    {
+      "model": "G-CHEROKEE OVERLAND CRD A",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 511,
+      "total_passes": 321,
+      "total_fails": 149,
+      "pass_rate": 62.82,
+      "avg_mileage": 122466.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -8.69
+    },
+    {
+      "model": "COMPASS LIMITED CVT",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 115,
+      "total_passes": 72,
+      "total_fails": 40,
+      "pass_rate": 62.61,
+      "avg_mileage": 78905.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": -8.9
+    },
+    {
+      "model": "COMPASS LIMITED CRD",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 237,
+      "total_passes": 148,
+      "total_fails": 82,
+      "pass_rate": 62.45,
+      "avg_mileage": 81676.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -9.06
+    },
+    {
+      "model": "CHEROKEE LIMITED AUTO",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 155,
+      "total_passes": 95,
+      "total_fails": 49,
+      "pass_rate": 61.29,
+      "avg_mileage": 97535.0,
+      "avg_age_years": 13.3,
+      "pass_rate_vs_national": -10.22
+    },
+    {
+      "model": "G-CHEROKEE OVERLAND CRD A",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 301,
+      "total_passes": 183,
+      "total_fails": 95,
+      "pass_rate": 60.8,
+      "avg_mileage": 125450.0,
+      "avg_age_years": 16.3,
+      "pass_rate_vs_national": -10.71
+    },
+    {
+      "model": "CHEROKEE 3.7 LIMITED AUTO",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 154,
+      "total_passes": 92,
+      "total_fails": 53,
+      "pass_rate": 59.74,
+      "avg_mileage": 98632.0,
+      "avg_age_years": 20.6,
+      "pass_rate_vs_national": -11.77
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD A",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 183,
+      "total_passes": 109,
+      "total_fails": 57,
+      "pass_rate": 59.56,
+      "avg_mileage": 123213.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -11.95
+    },
+    {
+      "model": "G-CHEROKEE OVERLAND CRD A",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 229,
+      "total_passes": 136,
+      "total_fails": 76,
+      "pass_rate": 59.39,
+      "avg_mileage": 122317.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -12.12
+    },
+    {
+      "model": "G-CHEROKEE S LTD CRD A",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 140,
+      "total_passes": 83,
+      "total_fails": 42,
+      "pass_rate": 59.29,
+      "avg_mileage": 107136.0,
+      "avg_age_years": 12.3,
+      "pass_rate_vs_national": -12.23
+    },
+    {
+      "model": "CHEROKEE LIMITED V6 AUTO",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 139,
+      "total_passes": 82,
+      "total_fails": 42,
+      "pass_rate": 58.99,
+      "avg_mileage": 96769.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -12.52
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 131,
+      "total_passes": 76,
+      "total_fails": 44,
+      "pass_rate": 58.02,
+      "avg_mileage": 117042.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -13.5
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD A",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 168,
+      "total_passes": 97,
+      "total_fails": 57,
+      "pass_rate": 57.74,
+      "avg_mileage": 111635.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -13.77
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD A",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 195,
+      "total_passes": 108,
+      "total_fails": 78,
+      "pass_rate": 55.38,
+      "avg_mileage": 117942.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -16.13
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD AUTO",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 118,
+      "total_passes": 65,
+      "total_fails": 44,
+      "pass_rate": 55.08,
+      "avg_mileage": 131618.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -16.43
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD A",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 258,
+      "total_passes": 141,
+      "total_fails": 94,
+      "pass_rate": 54.65,
+      "avg_mileage": 99754.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -16.86
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 103,
+      "total_passes": 56,
+      "total_fails": 43,
+      "pass_rate": 54.37,
+      "avg_mileage": 113577.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -17.14
+    },
+    {
+      "model": "COMPASS LIMITED CRD",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 189,
+      "total_passes": 102,
+      "total_fails": 78,
+      "pass_rate": 53.97,
+      "avg_mileage": 90303.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": -17.54
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 138,
+      "total_passes": 74,
+      "total_fails": 52,
+      "pass_rate": 53.62,
+      "avg_mileage": 109501.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -17.89
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD A",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 174,
+      "total_passes": 93,
+      "total_fails": 72,
+      "pass_rate": 53.45,
+      "avg_mileage": 120360.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -18.06
+    },
+    {
+      "model": "CHEROKEE LIMITED AUTO",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 103,
+      "total_passes": 55,
+      "total_fails": 36,
+      "pass_rate": 53.4,
+      "avg_mileage": 97354.0,
+      "avg_age_years": 12.8,
+      "pass_rate_vs_national": -18.11
+    },
+    {
+      "model": "GRAND CHEROKEE CRD LTD AUTO",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 182,
+      "total_passes": 97,
+      "total_fails": 79,
+      "pass_rate": 53.3,
+      "avg_mileage": 127060.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -18.21
+    },
+    {
+      "model": "CHEROKEE LIMITED CRD A",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 218,
+      "total_passes": 115,
+      "total_fails": 78,
+      "pass_rate": 52.75,
+      "avg_mileage": 104648.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -18.76
+    },
+    {
+      "model": "PATRIOT LIMITED CRD",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 207,
+      "total_passes": 109,
+      "total_fails": 87,
+      "pass_rate": 52.66,
+      "avg_mileage": 114005.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -18.85
+    },
+    {
+      "model": "PATRIOT SPORT CRD",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 112,
+      "total_passes": 58,
+      "total_fails": 47,
+      "pass_rate": 51.79,
+      "avg_mileage": 110568.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -19.73
+    },
+    {
+      "model": "CHEROKEE CRD SPORT AUTO",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 122,
+      "total_passes": 59,
+      "total_fails": 56,
+      "pass_rate": 48.36,
+      "avg_mileage": 106302.0,
+      "avg_age_years": 15.2,
+      "pass_rate_vs_national": -23.15
+    },
+    {
+      "model": "PATRIOT LIMITED CRD",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 109,
+      "total_passes": 51,
+      "total_fails": 52,
+      "pass_rate": 46.79,
+      "avg_mileage": 91856.0,
+      "avg_age_years": 11.7,
+      "pass_rate_vs_national": -24.72
+    },
+    {
+      "model": "PATRIOT LIMITED CRD",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 142,
+      "total_passes": 66,
+      "total_fails": 63,
+      "pass_rate": 46.48,
+      "avg_mileage": 110338.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -25.03
+    },
+    {
+      "model": "PATRIOT SPORT",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 134,
+      "total_passes": 59,
+      "total_fails": 66,
+      "pass_rate": 44.03,
+      "avg_mileage": 95741.0,
+      "avg_age_years": 14.3,
+      "pass_rate_vs_national": -27.48
+    },
+    {
+      "model": "PATRIOT SPORT PLUS",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 43,
+      "total_fails": 47,
+      "pass_rate": 42.16,
+      "avg_mileage": 86588.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -29.35
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 163,
+        "avg_vs_national": 11.12,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 93.25,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.12,
+          "total_tests": 163,
+          "avg_mileage": 41085.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 93.25,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.12,
+          "total_tests": 163,
+          "avg_mileage": 41085.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 701,
+        "avg_vs_national": 7.94,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 79.17,
+          "national_pass_rate": 71.23,
+          "vs_national": 7.94,
+          "total_tests": 701,
+          "avg_mileage": 86809.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 79.17,
+          "national_pass_rate": 71.23,
+          "vs_national": 7.94,
+          "total_tests": 701,
+          "avg_mileage": 86809.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE OVERLAND CRD A",
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 376,
+        "avg_vs_national": 7.49,
+        "durability_trend": 0.78,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 74.5,
+          "national_pass_rate": 66.54,
+          "vs_national": 7.96,
+          "total_tests": 149,
+          "avg_mileage": 91652.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 78.41,
+          "national_pass_rate": 71.23,
+          "vs_national": 7.18,
+          "total_tests": 227,
+          "avg_mileage": 89044.0
+        }
+      },
+      {
+        "model": "G-CHEROKEE OVERLAND CRD A",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 217,
+        "avg_vs_national": 6.95,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.82,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.95,
+          "total_tests": 217,
+          "avg_mileage": 112647.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.82,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.95,
+          "total_tests": 217,
+          "avg_mileage": 112647.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE CRD LTD AUTO",
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 117,
+        "avg_vs_national": 5.94,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.81,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.94,
+          "total_tests": 117,
+          "avg_mileage": 126608.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.81,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.94,
+          "total_tests": 117,
+          "avg_mileage": 126608.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 1343,
+        "avg_vs_national": 5.41,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 82.65,
+          "national_pass_rate": 77.24,
+          "vs_national": 5.41,
+          "total_tests": 1343,
+          "avg_mileage": 69543.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 82.65,
+          "national_pass_rate": 77.24,
+          "vs_national": 5.41,
+          "total_tests": 1343,
+          "avg_mileage": 69543.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 1472,
+        "avg_vs_national": 5.37,
+        "durability_trend": 0.67,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 77.0,
+          "national_pass_rate": 71.23,
+          "vs_national": 5.77,
+          "total_tests": 600,
+          "avg_mileage": 83948.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 82.34,
+          "national_pass_rate": 77.24,
+          "vs_national": 5.1,
+          "total_tests": 872,
+          "avg_mileage": 76663.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE LIMITED CRD A",
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 150,
+        "avg_vs_national": 4.79,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 71.33,
+          "national_pass_rate": 66.54,
+          "vs_national": 4.79,
+          "total_tests": 150,
+          "avg_mileage": 103317.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 71.33,
+          "national_pass_rate": 66.54,
+          "vs_national": 4.79,
+          "total_tests": 150,
+          "avg_mileage": 103317.0
+        }
+      },
+      {
+        "model": "RENEGADE",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1258,
+        "avg_vs_national": 4.75,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.18,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.75,
+          "total_tests": 1258,
+          "avg_mileage": 25063.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.18,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.75,
+          "total_tests": 1258,
+          "avg_mileage": 25063.0
+        }
+      },
+      {
+        "model": "COMPASS",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 225,
+        "avg_vs_national": 4.6,
+        "durability_trend": 13.83,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 82.35,
+          "national_pass_rate": 71.23,
+          "vs_national": 11.12,
+          "total_tests": 119,
+          "avg_mileage": 64147.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 74.53,
+          "national_pass_rate": 77.24,
+          "vs_national": -2.71,
+          "total_tests": 106,
+          "avg_mileage": 58160.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 398,
+        "avg_vs_national": 4.59,
+        "durability_trend": 5.59,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 89.94,
+          "national_pass_rate": 82.13,
+          "vs_national": 7.81,
+          "total_tests": 169,
+          "avg_mileage": 45024.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 88.65,
+          "national_pass_rate": 86.43,
+          "vs_national": 2.22,
+          "total_tests": 229,
+          "avg_mileage": 43118.0
+        }
+      },
+      {
+        "model": "WRANGLER",
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 130,
+        "avg_vs_national": 4.34,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.77,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.34,
+          "total_tests": 130,
+          "avg_mileage": 21891.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.77,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.34,
+          "total_tests": 130,
+          "avg_mileage": 21891.0
+        }
+      },
+      {
+        "model": "RENEGADE",
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 108,
+        "avg_vs_national": 4.31,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.74,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.31,
+          "total_tests": 108,
+          "avg_mileage": 20672.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.74,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.31,
+          "total_tests": 108,
+          "avg_mileage": 20672.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 715,
+        "avg_vs_national": 4.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 86.15,
+          "national_pass_rate": 82.13,
+          "vs_national": 4.02,
+          "total_tests": 715,
+          "avg_mileage": 55658.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 86.15,
+          "national_pass_rate": 82.13,
+          "vs_national": 4.02,
+          "total_tests": 715,
+          "avg_mileage": 55658.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE CRD LTD A",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 360,
+        "avg_vs_national": 4.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.89,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.02,
+          "total_tests": 360,
+          "avg_mileage": 122094.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.89,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.02,
+          "total_tests": 360,
+          "avg_mileage": 122094.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "PATRIOT SPORT PLUS",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "avg_vs_national": -21.84,
+        "durability_trend": 0.69,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 38.46,
+          "national_pass_rate": 59.87,
+          "vs_national": -21.41,
+          "total_tests": 39,
+          "avg_mileage": 91305.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 44.44,
+          "national_pass_rate": 66.54,
+          "vs_national": -22.1,
+          "total_tests": 63,
+          "avg_mileage": 83668.0
+        }
+      },
+      {
+        "model": "PATRIOT LIMITED CRD",
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 109,
+        "avg_vs_national": -19.75,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 46.79,
+          "national_pass_rate": 66.54,
+          "vs_national": -19.75,
+          "total_tests": 109,
+          "avg_mileage": 91856.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 46.79,
+          "national_pass_rate": 66.54,
+          "vs_national": -19.75,
+          "total_tests": 109,
+          "avg_mileage": 91856.0
+        }
+      },
+      {
+        "model": "PATRIOT SPORT",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 134,
+        "avg_vs_national": -15.84,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 44.03,
+          "national_pass_rate": 59.87,
+          "vs_national": -15.84,
+          "total_tests": 134,
+          "avg_mileage": 95741.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 44.03,
+          "national_pass_rate": 59.87,
+          "vs_national": -15.84,
+          "total_tests": 134,
+          "avg_mileage": 95741.0
+        }
+      },
+      {
+        "model": "PATRIOT LIMITED CRD",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 142,
+        "avg_vs_national": -13.39,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.39,
+          "total_tests": 142,
+          "avg_mileage": 110338.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.39,
+          "total_tests": 142,
+          "avg_mileage": 110338.0
+        }
+      },
+      {
+        "model": "COMPASS LIMITED CRD",
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 189,
+        "avg_vs_national": -12.57,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 53.97,
+          "national_pass_rate": 66.54,
+          "vs_national": -12.57,
+          "total_tests": 189,
+          "avg_mileage": 90303.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 53.97,
+          "national_pass_rate": 66.54,
+          "vs_national": -12.57,
+          "total_tests": 189,
+          "avg_mileage": 90303.0
+        }
+      },
+      {
+        "model": "CHEROKEE CRD SPORT AUTO",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 122,
+        "avg_vs_national": -11.51,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.36,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.51,
+          "total_tests": 122,
+          "avg_mileage": 106302.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.36,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.51,
+          "total_tests": 122,
+          "avg_mileage": 106302.0
+        }
+      },
+      {
+        "model": "WRANGLER",
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 180,
+        "avg_vs_national": -10.03,
+        "durability_trend": -3.96,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 73.79,
+          "national_pass_rate": 82.13,
+          "vs_national": -8.34,
+          "total_tests": 103,
+          "avg_mileage": 47761.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 64.94,
+          "national_pass_rate": 77.24,
+          "vs_national": -12.3,
+          "total_tests": 77,
+          "avg_mileage": 52796.0
+        }
+      },
+      {
+        "model": "COMPASS",
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 203,
+        "avg_vs_national": -9.76,
+        "durability_trend": 1.41,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 62.07,
+          "national_pass_rate": 71.23,
+          "vs_national": -9.16,
+          "total_tests": 116,
+          "avg_mileage": 78017.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 66.67,
+          "national_pass_rate": 77.24,
+          "vs_national": -10.57,
+          "total_tests": 87,
+          "avg_mileage": 72475.0
+        }
+      },
+      {
+        "model": "COMPASS",
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 777,
+        "avg_vs_national": -9.7,
+        "durability_trend": -7.76,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 80.04,
+          "national_pass_rate": 86.43,
+          "vs_national": -6.39,
+          "total_tests": 446,
+          "avg_mileage": 42139.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 67.98,
+          "national_pass_rate": 82.13,
+          "vs_national": -14.15,
+          "total_tests": 331,
+          "avg_mileage": 45498.0
+        }
+      },
+      {
+        "model": "COMPASS",
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 197,
+        "avg_vs_national": -8.29,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 62.94,
+          "national_pass_rate": 71.23,
+          "vs_national": -8.29,
+          "total_tests": 197,
+          "avg_mileage": 80775.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 62.94,
+          "national_pass_rate": 71.23,
+          "vs_national": -8.29,
+          "total_tests": 197,
+          "avg_mileage": 80775.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 37,
+          "tests": 25451
+        },
+        "maturing": {
+          "vehicles": 26,
+          "tests": 21168
+        },
+        "proven": {
+          "vehicles": 40,
+          "tests": 7045
+        }
+      },
+      "proven_vehicles_tested": 33,
+      "proven_above_average_pct": 51.5,
+      "proven_avg_vs_national": -0.27,
+      "durability_rating": "Average",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "GRAND CHEROKEE OVERLAND CRD A",
+          "model_year": 2012,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 149,
+          "pass_rate": 74.5,
+          "vs_national_at_age": 11.67,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 91652.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "G-CHEROKEE OVERLAND CRD A",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 217,
+          "pass_rate": 66.82,
+          "vs_national_at_age": 9.52,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 112647.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE CRD LTD AUTO",
+          "model_year": 2003,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 117,
+          "pass_rate": 65.81,
+          "vs_national_at_age": 8.51,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 126608.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE LIMITED CRD A",
+          "model_year": 2011,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 150,
+          "pass_rate": 71.33,
+          "vs_national_at_age": 8.5,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 103317.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE CRD LTD A",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 360,
+          "pass_rate": 63.89,
+          "vs_national_at_age": 6.59,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 122094.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "COMMANDER LIMITED CRD A",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 177,
+          "pass_rate": 63.84,
+          "vs_national_at_age": 6.54,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 122693.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE CRD LTD A",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 195,
+          "pass_rate": 63.08,
+          "vs_national_at_age": 5.78,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 119345.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE CRD LTD A",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 517,
+          "pass_rate": 62.86,
+          "vs_national_at_age": 5.56,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 124096.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "G-CHEROKEE OVERLAND CRD A",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 511,
+          "pass_rate": 62.82,
+          "vs_national_at_age": 5.52,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 122466.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CHEROKEE LIMITED AUTO",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 155,
+          "pass_rate": 61.29,
+          "vs_national_at_age": 3.99,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 97535.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "G-CHEROKEE OVERLAND CRD A",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 301,
+          "pass_rate": 60.8,
+          "vs_national_at_age": 3.5,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 125450.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CHEROKEE 3.7 LIMITED AUTO",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 154,
+          "pass_rate": 59.74,
+          "vs_national_at_age": 2.44,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 98632.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE CRD LTD A",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 183,
+          "pass_rate": 59.56,
+          "vs_national_at_age": 2.26,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 123213.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "G-CHEROKEE OVERLAND CRD A",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 229,
+          "pass_rate": 59.39,
+          "vs_national_at_age": 2.09,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 122317.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CHEROKEE LIMITED V6 AUTO",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 139,
+          "pass_rate": 58.99,
+          "vs_national_at_age": 1.69,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 96769.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "PATRIOT LIMITED CRD",
+          "model_year": 2011,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 109,
+          "pass_rate": 46.79,
+          "vs_national_at_age": -16.04,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 91856.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 11-12 years"
+        },
+        {
+          "model": "PATRIOT SPORT",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 134,
+          "pass_rate": 44.03,
+          "vs_national_at_age": -13.27,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 95741.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "PATRIOT LIMITED CRD",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 142,
+          "pass_rate": 46.48,
+          "vs_national_at_age": -10.82,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 110338.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CHEROKEE CRD SPORT AUTO",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 122,
+          "pass_rate": 48.36,
+          "vs_national_at_age": -8.94,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 106302.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "COMPASS LIMITED CRD",
+          "model_year": 2011,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 189,
+          "pass_rate": 53.97,
+          "vs_national_at_age": -8.86,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 90303.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 11-12 years"
+        },
+        {
+          "model": "PATRIOT SPORT CRD",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 112,
+          "pass_rate": 51.79,
+          "vs_national_at_age": -5.51,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 110568.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "PATRIOT LIMITED CRD",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 207,
+          "pass_rate": 52.66,
+          "vs_national_at_age": -4.64,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 114005.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CHEROKEE LIMITED CRD A",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 218,
+          "pass_rate": 52.75,
+          "vs_national_at_age": -4.55,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 104648.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "GRAND CHEROKEE CRD LTD AUTO",
+          "model_year": 2004,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 182,
+          "pass_rate": 53.3,
+          "vs_national_at_age": -4.0,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 127060.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CHEROKEE LIMITED CRD A",
+          "model_year": 2003,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 174,
+          "pass_rate": 53.45,
+          "vs_national_at_age": -3.85,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 120360.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 163,
+          "pass_rate": 93.25,
+          "vs_national_at_age": 12.05,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 41085.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2018,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 169,
+          "pass_rate": 89.94,
+          "vs_national_at_age": 8.74,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 45024.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RENEGADE",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 1258,
+          "pass_rate": 91.18,
+          "vs_national_at_age": 5.33,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 25063.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2017,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 715,
+          "pass_rate": 86.15,
+          "vs_national_at_age": 4.95,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 55658.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "WRANGLER",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 130,
+          "pass_rate": 90.77,
+          "vs_national_at_age": 4.92,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 21891.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RENEGADE",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 108,
+          "pass_rate": 90.74,
+          "vs_national_at_age": 4.89,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 20672.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "WRANGLER",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 454,
+          "pass_rate": 89.65,
+          "vs_national_at_age": 3.8,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 26821.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2019,
+          "fuel_type": "DI",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 209,
+          "pass_rate": 89.47,
+          "vs_national_at_age": 3.62,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 32874.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RENEGADE NIGHT EAGLE",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 142,
+          "pass_rate": 89.44,
+          "vs_national_at_age": 3.59,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 22475.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RENEGADE",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 2047,
+          "pass_rate": 84.61,
+          "vs_national_at_age": 3.41,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 41570.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "G-CHEROKEE OVERLAND CRD A": {
+        "core_model": "G-CHEROKEE OVERLAND CRD A",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 60.8,
+                "vs_national": 3.5,
+                "total_tests": 301,
+                "avg_mileage": 125450.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 62.82,
+                "vs_national": 5.52,
+                "total_tests": 511,
+                "avg_mileage": 122466.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 59.39,
+                "vs_national": 2.09,
+                "total_tests": 229,
+                "avg_mileage": 122317.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 66.82,
+                "vs_national": 9.52,
+                "total_tests": 217,
+                "avg_mileage": 112647.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 9.52,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": 2.09,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "GRAND": {
+        "core_model": "GRAND",
+        "years_covered": [
+          2005,
+          2006,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 88.65,
+                "vs_national": 2.8,
+                "total_tests": 229,
+                "avg_mileage": 43118.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 89.47,
+                "vs_national": 3.62,
+                "total_tests": 209,
+                "avg_mileage": 32874.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 82.52,
+                "vs_national": 1.32,
+                "total_tests": 515,
+                "avg_mileage": 59169.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 87.47,
+                "vs_national": 6.27,
+                "total_tests": 878,
+                "avg_mileage": 48372.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 82.34,
+                "vs_national": 7.21,
+                "total_tests": 872,
+                "avg_mileage": 76663.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 82.65,
+                "vs_national": 7.52,
+                "total_tests": 1343,
+                "avg_mileage": 69543.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 82.96,
+                "vs_national": 7.83,
+                "total_tests": 452,
+                "avg_mileage": 64361.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 78.41,
+                "vs_national": 10.17,
+                "total_tests": 227,
+                "avg_mileage": 89044.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 78.32,
+                "vs_national": 10.08,
+                "total_tests": 881,
+                "avg_mileage": 86313.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 77.0,
+                "vs_national": 8.76,
+                "total_tests": 600,
+                "avg_mileage": 83948.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 63.89,
+                "vs_national": 6.59,
+                "total_tests": 360,
+                "avg_mileage": 122094.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 62.86,
+                "vs_national": 5.56,
+                "total_tests": 517,
+                "avg_mileage": 124096.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2005,
+          "vs_national": 6.59,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": 5.56,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "RENEGADE": {
+        "core_model": "RENEGADE",
+        "years_covered": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 86.79,
+                "vs_national": 0.94,
+                "total_tests": 1491,
+                "avg_mileage": 35469.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 90.2,
+                "vs_national": 4.35,
+                "total_tests": 1714,
+                "avg_mileage": 28044.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 88.19,
+                "vs_national": 2.34,
+                "total_tests": 415,
+                "avg_mileage": 22257.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 79.19,
+                "vs_national": -2.01,
+                "total_tests": 5941,
+                "avg_mileage": 52295.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 82.15,
+                "vs_national": 0.95,
+                "total_tests": 4040,
+                "avg_mileage": 46787.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 82.17,
+                "vs_national": 0.97,
+                "total_tests": 830,
+                "avg_mileage": 40166.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2015,
+                "pass_rate": 71.42,
+                "vs_national": -3.71,
+                "total_tests": 5921,
+                "avg_mileage": 62431.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 74.3,
+                "vs_national": -0.83,
+                "total_tests": 4622,
+                "avg_mileage": 57701.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "PATRIOT SPORT": {
+        "core_model": "PATRIOT SPORT",
+        "years_covered": [
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2008,
+                "pass_rate": 47.56,
+                "vs_national": -9.74,
+                "total_tests": 246,
+                "avg_mileage": 103155.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2008,
+          "vs_national": -9.74,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": -9.74,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "G-CHEROKEE": {
+        "core_model": "G-CHEROKEE",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 60.8,
+                "vs_national": 3.5,
+                "total_tests": 301,
+                "avg_mileage": 125450.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 62.82,
+                "vs_national": 5.52,
+                "total_tests": 511,
+                "avg_mileage": 122466.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 59.39,
+                "vs_national": 2.09,
+                "total_tests": 229,
+                "avg_mileage": 122317.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 66.82,
+                "vs_national": 9.52,
+                "total_tests": 217,
+                "avg_mileage": 112647.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 9.52,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": 2.09,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "WRANGLER": {
+        "core_model": "WRANGLER",
+        "years_covered": [
+          2015,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 83.46,
+                "vs_national": -2.39,
+                "total_tests": 260,
+                "avg_mileage": 31609.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 89.13,
+                "vs_national": 3.28,
+                "total_tests": 653,
+                "avg_mileage": 27789.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 88.21,
+                "vs_national": 2.36,
+                "total_tests": 212,
+                "avg_mileage": 24596.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 79.78,
+                "vs_national": -1.42,
+                "total_tests": 272,
+                "avg_mileage": 36370.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2015,
+                "pass_rate": 69.89,
+                "vs_national": -5.24,
+                "total_tests": 435,
+                "avg_mileage": 55548.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "GRAND CHEROKEE": {
+        "core_model": "GRAND CHEROKEE",
+        "years_covered": [
+          2005,
+          2006,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 88.65,
+                "vs_national": 2.8,
+                "total_tests": 229,
+                "avg_mileage": 43118.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 89.47,
+                "vs_national": 3.62,
+                "total_tests": 209,
+                "avg_mileage": 32874.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 82.52,
+                "vs_national": 1.32,
+                "total_tests": 515,
+                "avg_mileage": 59169.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 87.47,
+                "vs_national": 6.27,
+                "total_tests": 878,
+                "avg_mileage": 48372.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 82.34,
+                "vs_national": 7.21,
+                "total_tests": 872,
+                "avg_mileage": 76663.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 82.65,
+                "vs_national": 7.52,
+                "total_tests": 1343,
+                "avg_mileage": 69543.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 82.96,
+                "vs_national": 7.83,
+                "total_tests": 452,
+                "avg_mileage": 64361.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 78.41,
+                "vs_national": 10.17,
+                "total_tests": 227,
+                "avg_mileage": 89044.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 78.32,
+                "vs_national": 10.08,
+                "total_tests": 881,
+                "avg_mileage": 86313.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 77.0,
+                "vs_national": 8.76,
+                "total_tests": 600,
+                "avg_mileage": 83948.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 63.89,
+                "vs_national": 6.59,
+                "total_tests": 360,
+                "avg_mileage": 122094.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 62.86,
+                "vs_national": 5.56,
+                "total_tests": 517,
+                "avg_mileage": 124096.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2005,
+          "vs_national": 6.59,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": 5.56,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "PATRIOT": {
+        "core_model": "PATRIOT",
+        "years_covered": [
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2008,
+                "pass_rate": 49.89,
+                "vs_national": -7.41,
+                "total_tests": 453,
+                "avg_mileage": 106771.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2008,
+          "vs_national": -7.41,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": -7.41,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "PATRIOT LIMITED CRD": {
+        "core_model": "PATRIOT LIMITED CRD",
+        "years_covered": [
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2008,
+                "pass_rate": 52.66,
+                "vs_national": -4.64,
+                "total_tests": 207,
+                "avg_mileage": 114005.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2008,
+          "vs_national": -4.64,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": -4.64,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "COMPASS": {
+        "core_model": "COMPASS",
+        "years_covered": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 83.41,
+                "vs_national": -2.44,
+                "total_tests": 1501,
+                "avg_mileage": 37053.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 82.74,
+                "vs_national": -3.11,
+                "total_tests": 3124,
+                "avg_mileage": 30286.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 86.48,
+                "vs_national": 0.63,
+                "total_tests": 355,
+                "avg_mileage": 24863.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 75.12,
+                "vs_national": -6.08,
+                "total_tests": 864,
+                "avg_mileage": 41769.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 64.35,
+                "vs_national": -3.89,
+                "total_tests": 258,
+                "avg_mileage": 73953.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 65.96,
+                "vs_national": -2.28,
+                "total_tests": 473,
+                "avg_mileage": 75637.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 72.34,
+                "vs_national": 4.1,
+                "total_tests": 235,
+                "avg_mileage": 71082.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2011,
+                "pass_rate": 57.24,
+                "vs_national": -5.59,
+                "total_tests": 304,
+                "avg_mileage": 84604.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2011,
+          "vs_national": -5.59,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2011,
+          "vs_national": -5.59,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "CHEROKEE": {
+        "core_model": "CHEROKEE",
+        "years_covered": [
+          2005,
+          2006,
+          2007,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 86.41,
+                "vs_national": 0.56,
+                "total_tests": 206,
+                "avg_mileage": 39671.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 77.73,
+                "vs_national": -3.47,
+                "total_tests": 669,
+                "avg_mileage": 57467.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 82.66,
+                "vs_national": 1.46,
+                "total_tests": 542,
+                "avg_mileage": 49083.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 73.29,
+                "vs_national": -1.84,
+                "total_tests": 790,
+                "avg_mileage": 74622.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 75.82,
+                "vs_national": 0.69,
+                "total_tests": 2031,
+                "avg_mileage": 71047.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 80.59,
+                "vs_national": 5.46,
+                "total_tests": 752,
+                "avg_mileage": 64445.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 70.05,
+                "vs_national": 1.81,
+                "total_tests": 414,
+                "avg_mileage": 78162.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 56.46,
+                "vs_national": -0.84,
+                "total_tests": 271,
+                "avg_mileage": 112606.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 55.94,
+                "vs_national": -1.36,
+                "total_tests": 488,
+                "avg_mileage": 106153.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 52.89,
+                "vs_national": -4.41,
+                "total_tests": 518,
+                "avg_mileage": 105186.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2005,
+          "vs_national": -0.84,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": -4.41,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

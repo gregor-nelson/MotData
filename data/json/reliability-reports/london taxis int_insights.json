@@ -1,0 +1,1893 @@
+{
+  "meta": {
+    "make": "LONDON TAXIS INT",
+    "generated_at": "2026-01-15T17:43:34.407369",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 62,
+    "make": "LONDON TAXIS INT",
+    "total_tests": 15484,
+    "total_models": 198,
+    "avg_pass_rate": 63.02,
+    "weighted_pass_rate": 63.02,
+    "best_model": "TX4 ELEGANCE AUTO 2014",
+    "best_model_pass_rate": 74.29,
+    "worst_model": "TX4 2008",
+    "worst_model_pass_rate": 52.5,
+    "rank": 62
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    },
+    {
+      "make": "LONDON TAXIS INT",
+      "avg_pass_rate": 63.02,
+      "total_tests": 15484,
+      "rank": 62,
+      "total_models": 198
+    }
+  ],
+  "summary": {
+    "total_tests": 15484,
+    "total_models": 198,
+    "avg_pass_rate": 63.02,
+    "rank": 62,
+    "rank_total": 75,
+    "best_model": "TX4 ELEGANCE AUTO 2014",
+    "best_model_pass_rate": 74.29,
+    "worst_model": "TX4 2008",
+    "worst_model_pass_rate": 52.5,
+    "vs_national": -8.49,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "TX4",
+      "total_tests": 13601,
+      "total_passes": 8629,
+      "total_fails": 3280,
+      "pass_rate": 63.44,
+      "avg_mileage": 214035.0,
+      "year_from": 2007,
+      "year_to": 2017,
+      "variant_count": 13,
+      "variants": "TX4,TX4 ELEGANCE AUTO,TX4 LIMITED EDITION AUTO"
+    },
+    {
+      "core_model": "TX II",
+      "total_tests": 316,
+      "total_passes": 176,
+      "total_fails": 125,
+      "pass_rate": 55.7,
+      "avg_mileage": 310961.0,
+      "year_from": 2005,
+      "year_to": 2006,
+      "variant_count": 2,
+      "variants": "TX II"
+    }
+  ],
+  "model_year_breakdowns": {
+    "TX4": [
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 1064,
+        "pass_rate": 67.58,
+        "avg_mileage": 122960.0,
+        "pass_rate_vs_national": -14.1,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1646,
+        "pass_rate": 69.99,
+        "avg_mileage": 144473.0,
+        "pass_rate_vs_national": -8.66,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 2092,
+        "pass_rate": 66.3,
+        "avg_mileage": 165422.0,
+        "pass_rate_vs_national": -9.19,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 2260,
+        "pass_rate": 61.59,
+        "avg_mileage": 186517.0,
+        "pass_rate_vs_national": -10.12,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 1177,
+        "pass_rate": 64.32,
+        "avg_mileage": 209136.0,
+        "pass_rate_vs_national": -3.97,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 1237,
+        "pass_rate": 62.57,
+        "avg_mileage": 230362.0,
+        "pass_rate_vs_national": -3.06,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 1223,
+        "pass_rate": 60.83,
+        "avg_mileage": 255658.0,
+        "pass_rate_vs_national": -2.16,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 1052,
+        "pass_rate": 60.08,
+        "avg_mileage": 292820.0,
+        "pass_rate_vs_national": -0.42,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 716,
+        "pass_rate": 60.89,
+        "avg_mileage": 285559.0,
+        "pass_rate_vs_national": 1.88,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 521,
+        "pass_rate": 52.59,
+        "avg_mileage": 285602.0,
+        "pass_rate_vs_national": -4.8,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 613,
+        "pass_rate": 59.05,
+        "avg_mileage": 294466.0,
+        "pass_rate_vs_national": 2.08,
+        "national_avg_for_year": 56.97
+      }
+    ],
+    "TX II": [
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 186,
+        "pass_rate": 53.76,
+        "avg_mileage": 316768.0,
+        "pass_rate_vs_national": -2.42,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 130,
+        "pass_rate": 58.46,
+        "avg_mileage": 305153.0,
+        "pass_rate_vs_national": 2.21,
+        "national_avg_for_year": 56.25
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "DI",
+      "model_count": 15,
+      "total_tests": 13917,
+      "pass_rate": 63.27,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "TX4 ELEGANCE AUTO",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 105,
+      "pass_rate": 74.29,
+      "pass_rate_vs_national": 2.58,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "TX II",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 130,
+      "pass_rate": 58.46,
+      "pass_rate_vs_national": 2.21,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "TX4",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 613,
+      "pass_rate": 59.05,
+      "pass_rate_vs_national": 2.08,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "TX4",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 716,
+      "pass_rate": 60.89,
+      "pass_rate_vs_national": 1.88,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "TX4",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 1052,
+      "pass_rate": 60.08,
+      "pass_rate_vs_national": -0.42,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "TX4",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 1223,
+      "pass_rate": 60.83,
+      "pass_rate_vs_national": -2.16,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "TX II",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 186,
+      "pass_rate": 53.76,
+      "pass_rate_vs_national": -2.42,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "TX4",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 1237,
+      "pass_rate": 62.57,
+      "pass_rate_vs_national": -3.06,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "TX4",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1177,
+      "pass_rate": 64.32,
+      "pass_rate_vs_national": -3.97,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "TX4",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 521,
+      "pass_rate": 52.59,
+      "pass_rate_vs_national": -4.8,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "TX4",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1646,
+      "pass_rate": 69.99,
+      "pass_rate_vs_national": -8.66,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "TX4",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 2092,
+      "pass_rate": 66.3,
+      "pass_rate_vs_national": -9.19,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "TX4",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 2155,
+      "pass_rate": 60.97,
+      "pass_rate_vs_national": -10.74,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "TX4",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 582,
+      "pass_rate": 68.56,
+      "pass_rate_vs_national": -13.12,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "TX4 LIMITED EDITION AUTO",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 482,
+      "pass_rate": 66.39,
+      "pass_rate_vs_national": -15.29,
+      "national_avg_for_year": 81.68
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "TX4 LIMITED EDITION AUTO",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 482,
+      "pass_rate": 66.39,
+      "pass_rate_vs_national": -15.29,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "TX4",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 582,
+      "pass_rate": 68.56,
+      "pass_rate_vs_national": -13.12,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "TX4",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 2155,
+      "pass_rate": 60.97,
+      "pass_rate_vs_national": -10.74,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "TX4",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 2092,
+      "pass_rate": 66.3,
+      "pass_rate_vs_national": -9.19,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "TX4",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1646,
+      "pass_rate": 69.99,
+      "pass_rate_vs_national": -8.66,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "TX4",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 521,
+      "pass_rate": 52.59,
+      "pass_rate_vs_national": -4.8,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "TX4",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1177,
+      "pass_rate": 64.32,
+      "pass_rate_vs_national": -3.97,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "TX4",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 1237,
+      "pass_rate": 62.57,
+      "pass_rate_vs_national": -3.06,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "TX II",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 186,
+      "pass_rate": 53.76,
+      "pass_rate_vs_national": -2.42,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "TX4",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 1223,
+      "pass_rate": 60.83,
+      "pass_rate_vs_national": -2.16,
+      "national_avg_for_year": 62.99
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 2384,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 2274,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 1502,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 869,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 713,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 703,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 592,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 528,
+        "vehicle_count": 15
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 201,
+        "vehicle_count": 13
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 38,
+        "vehicle_count": 8
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 9,
+        "vehicle_count": 3
+      },
+      {
+        "category_name": "Speedometer and speed limiter",
+        "total_failures": 1,
+        "vehicle_count": 1
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 857
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 622
+      },
+      {
+        "defect_description": "efficiency below requirements",
+        "category_name": "Brakes",
+        "total_occurrences": 552
+      },
+      {
+        "defect_description": "ball joint excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 541
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 392
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 335
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 238
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 207
+      },
+      {
+        "defect_description": "not working on dipped beam",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 203
+      },
+      {
+        "defect_description": "ball joint has excessive play ",
+        "category_name": "Steering",
+        "total_occurrences": 181
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 1802
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 1166
+      },
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 1099
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 585
+      },
+      {
+        "defect_description": "has slight play",
+        "category_name": "Suspension",
+        "total_occurrences": 551
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 509
+      },
+      {
+        "defect_description": "ball joint has slight play",
+        "category_name": "Suspension",
+        "total_occurrences": 464
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 439
+      },
+      {
+        "defect_description": "has a slightly worn bush",
+        "category_name": "Suspension",
+        "total_occurrences": 253
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 176
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 1356
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 537
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 506
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 277
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 227
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 188
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 40
+      },
+      {
+        "defect_description": "ball joint likely to become detached",
+        "category_name": "Suspension",
+        "total_occurrences": 20
+      },
+      {
+        "defect_description": "pin or bush likely to become detached",
+        "category_name": "Suspension",
+        "total_occurrences": 18
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 16
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 72,
+      "avg_pass_rate": 61.11
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 66,
+      "avg_pass_rate": 78.79
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 437,
+      "avg_pass_rate": 70.48
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 1015,
+      "avg_pass_rate": 68.57
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 1853,
+      "avg_pass_rate": 67.35
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 10027,
+      "avg_pass_rate": 61.87
+    }
+  ],
+  "all_models": [
+    {
+      "model": "TX4 ELEGANCE AUTO",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 105,
+      "total_passes": 78,
+      "total_fails": 19,
+      "pass_rate": 74.29,
+      "avg_mileage": 183505.0,
+      "avg_age_years": 8.6,
+      "pass_rate_vs_national": 2.77
+    },
+    {
+      "model": "TX4",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1646,
+      "total_passes": 1152,
+      "total_fails": 285,
+      "pass_rate": 69.99,
+      "avg_mileage": 144473.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": -1.52
+    },
+    {
+      "model": "TX4",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 582,
+      "total_passes": 399,
+      "total_fails": 89,
+      "pass_rate": 68.56,
+      "avg_mileage": 122912.0,
+      "avg_age_years": 5.6,
+      "pass_rate_vs_national": -2.95
+    },
+    {
+      "model": "TX4 LIMITED EDITION AUTO",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 482,
+      "total_passes": 320,
+      "total_fails": 90,
+      "pass_rate": 66.39,
+      "avg_mileage": 123007.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": -5.12
+    },
+    {
+      "model": "TX4",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 2092,
+      "total_passes": 1387,
+      "total_fails": 387,
+      "pass_rate": 66.3,
+      "avg_mileage": 165422.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": -5.21
+    },
+    {
+      "model": "TX4",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1177,
+      "total_passes": 757,
+      "total_fails": 238,
+      "pass_rate": 64.32,
+      "avg_mileage": 209136.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": -7.19
+    },
+    {
+      "model": "TX4",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 1237,
+      "total_passes": 774,
+      "total_fails": 259,
+      "pass_rate": 62.57,
+      "avg_mileage": 230362.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": -8.94
+    },
+    {
+      "model": "TX4",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 2155,
+      "total_passes": 1314,
+      "total_fails": 475,
+      "pass_rate": 60.97,
+      "avg_mileage": 189529.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": -10.54
+    },
+    {
+      "model": "TX4",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 716,
+      "total_passes": 436,
+      "total_fails": 263,
+      "pass_rate": 60.89,
+      "avg_mileage": 285559.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -10.62
+    },
+    {
+      "model": "TX4",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 1223,
+      "total_passes": 744,
+      "total_fails": 355,
+      "pass_rate": 60.83,
+      "avg_mileage": 255658.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": -10.68
+    },
+    {
+      "model": "TX4",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 1052,
+      "total_passes": 632,
+      "total_fails": 359,
+      "pass_rate": 60.08,
+      "avg_mileage": 292820.0,
+      "avg_age_years": 12.3,
+      "pass_rate_vs_national": -11.43
+    },
+    {
+      "model": "TX4",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 613,
+      "total_passes": 362,
+      "total_fails": 228,
+      "pass_rate": 59.05,
+      "avg_mileage": 294466.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -12.46
+    },
+    {
+      "model": "TX II",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 130,
+      "total_passes": 76,
+      "total_fails": 48,
+      "pass_rate": 58.46,
+      "avg_mileage": 305153.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -13.05
+    },
+    {
+      "model": "TX II",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 186,
+      "total_passes": 100,
+      "total_fails": 77,
+      "pass_rate": 53.76,
+      "avg_mileage": 316768.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -17.75
+    },
+    {
+      "model": "TX4",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 521,
+      "total_passes": 274,
+      "total_fails": 233,
+      "pass_rate": 52.59,
+      "avg_mileage": 285602.0,
+      "avg_age_years": 14.4,
+      "pass_rate_vs_national": -18.92
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "TX4",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 716,
+        "avg_vs_national": 1.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.89,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.02,
+          "total_tests": 716,
+          "avg_mileage": 285559.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.89,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.02,
+          "total_tests": 716,
+          "avg_mileage": 285559.0
+        }
+      },
+      {
+        "model": "TX4 ELEGANCE AUTO",
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 105,
+        "avg_vs_national": 0.88,
+        "durability_trend": 2.82,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 73.13,
+          "national_pass_rate": 71.23,
+          "vs_national": 1.9,
+          "total_tests": 67,
+          "avg_mileage": 185422.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 76.32,
+          "national_pass_rate": 77.24,
+          "vs_national": -0.92,
+          "total_tests": 38,
+          "avg_mileage": 180126.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 613,
+        "avg_vs_national": -0.82,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.05,
+          "national_pass_rate": 59.87,
+          "vs_national": -0.82,
+          "total_tests": 613,
+          "avg_mileage": 294466.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.05,
+          "national_pass_rate": 59.87,
+          "vs_national": -0.82,
+          "total_tests": 613,
+          "avg_mileage": 294466.0
+        }
+      },
+      {
+        "model": "TX II",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 130,
+        "avg_vs_national": -1.41,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.46,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.41,
+          "total_tests": 130,
+          "avg_mileage": 305153.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.46,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.41,
+          "total_tests": 130,
+          "avg_mileage": 305153.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 1052,
+        "avg_vs_national": -4.21,
+        "durability_trend": -1.1,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 62.7,
+          "national_pass_rate": 66.54,
+          "vs_national": -3.84,
+          "total_tests": 697,
+          "avg_mileage": 294538.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.93,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.94,
+          "total_tests": 355,
+          "avg_mileage": 289461.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 1223,
+        "avg_vs_national": -5.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 60.83,
+          "national_pass_rate": 66.54,
+          "vs_national": -5.71,
+          "total_tests": 1223,
+          "avg_mileage": 255658.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 60.83,
+          "national_pass_rate": 66.54,
+          "vs_national": -5.71,
+          "total_tests": 1223,
+          "avg_mileage": 255658.0
+        }
+      },
+      {
+        "model": "TX II",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 186,
+        "avg_vs_national": -6.11,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.76,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.11,
+          "total_tests": 186,
+          "avg_mileage": 316768.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.76,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.11,
+          "total_tests": 186,
+          "avg_mileage": 316768.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 1177,
+        "avg_vs_national": -6.91,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 64.32,
+          "national_pass_rate": 71.23,
+          "vs_national": -6.91,
+          "total_tests": 1177,
+          "avg_mileage": 209136.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 64.32,
+          "national_pass_rate": 71.23,
+          "vs_national": -6.91,
+          "total_tests": 1177,
+          "avg_mileage": 209136.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 1237,
+        "avg_vs_national": -7.11,
+        "durability_trend": 5.09,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 62.84,
+          "national_pass_rate": 66.54,
+          "vs_national": -3.7,
+          "total_tests": 409,
+          "avg_mileage": 239233.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 62.44,
+          "national_pass_rate": 71.23,
+          "vs_national": -8.79,
+          "total_tests": 828,
+          "avg_mileage": 225986.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 521,
+        "avg_vs_national": -7.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 521,
+          "avg_mileage": 285602.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 521,
+          "avg_mileage": 285602.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1646,
+        "avg_vs_national": -10.17,
+        "durability_trend": 5.97,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 70.63,
+          "national_pass_rate": 77.24,
+          "vs_national": -6.61,
+          "total_tests": 664,
+          "avg_mileage": 153374.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 69.55,
+          "national_pass_rate": 82.13,
+          "vs_national": -12.58,
+          "total_tests": 982,
+          "avg_mileage": 138454.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 2092,
+        "avg_vs_national": -10.94,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 66.3,
+          "national_pass_rate": 77.24,
+          "vs_national": -10.94,
+          "total_tests": 2092,
+          "avg_mileage": 165422.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 66.3,
+          "national_pass_rate": 77.24,
+          "vs_national": -10.94,
+          "total_tests": 2092,
+          "avg_mileage": 165422.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 2155,
+        "avg_vs_national": -13.36,
+        "durability_trend": 3.23,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 59.54,
+          "national_pass_rate": 71.23,
+          "vs_national": -11.69,
+          "total_tests": 1043,
+          "avg_mileage": 198791.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 62.32,
+          "national_pass_rate": 77.24,
+          "vs_national": -14.92,
+          "total_tests": 1112,
+          "avg_mileage": 180811.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 582,
+        "avg_vs_national": -13.57,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 68.56,
+          "national_pass_rate": 82.13,
+          "vs_national": -13.57,
+          "total_tests": 582,
+          "avg_mileage": 122912.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 68.56,
+          "national_pass_rate": 82.13,
+          "vs_national": -13.57,
+          "total_tests": 582,
+          "avg_mileage": 122912.0
+        }
+      },
+      {
+        "model": "TX4 LIMITED EDITION AUTO",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 482,
+        "avg_vs_national": -15.74,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 66.39,
+          "national_pass_rate": 82.13,
+          "vs_national": -15.74,
+          "total_tests": 482,
+          "avg_mileage": 123007.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 66.39,
+          "national_pass_rate": 82.13,
+          "vs_national": -15.74,
+          "total_tests": 482,
+          "avg_mileage": 123007.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "TX4 LIMITED EDITION AUTO",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 482,
+        "avg_vs_national": -15.74,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 66.39,
+          "national_pass_rate": 82.13,
+          "vs_national": -15.74,
+          "total_tests": 482,
+          "avg_mileage": 123007.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 66.39,
+          "national_pass_rate": 82.13,
+          "vs_national": -15.74,
+          "total_tests": 482,
+          "avg_mileage": 123007.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 582,
+        "avg_vs_national": -13.57,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 68.56,
+          "national_pass_rate": 82.13,
+          "vs_national": -13.57,
+          "total_tests": 582,
+          "avg_mileage": 122912.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 68.56,
+          "national_pass_rate": 82.13,
+          "vs_national": -13.57,
+          "total_tests": 582,
+          "avg_mileage": 122912.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 2155,
+        "avg_vs_national": -13.36,
+        "durability_trend": 3.23,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 59.54,
+          "national_pass_rate": 71.23,
+          "vs_national": -11.69,
+          "total_tests": 1043,
+          "avg_mileage": 198791.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 62.32,
+          "national_pass_rate": 77.24,
+          "vs_national": -14.92,
+          "total_tests": 1112,
+          "avg_mileage": 180811.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 2092,
+        "avg_vs_national": -10.94,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 66.3,
+          "national_pass_rate": 77.24,
+          "vs_national": -10.94,
+          "total_tests": 2092,
+          "avg_mileage": 165422.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 66.3,
+          "national_pass_rate": 77.24,
+          "vs_national": -10.94,
+          "total_tests": 2092,
+          "avg_mileage": 165422.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1646,
+        "avg_vs_national": -10.17,
+        "durability_trend": 5.97,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 70.63,
+          "national_pass_rate": 77.24,
+          "vs_national": -6.61,
+          "total_tests": 664,
+          "avg_mileage": 153374.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 69.55,
+          "national_pass_rate": 82.13,
+          "vs_national": -12.58,
+          "total_tests": 982,
+          "avg_mileage": 138454.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 521,
+        "avg_vs_national": -7.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 521,
+          "avg_mileage": 285602.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 521,
+          "avg_mileage": 285602.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 1237,
+        "avg_vs_national": -7.11,
+        "durability_trend": 5.09,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 62.84,
+          "national_pass_rate": 66.54,
+          "vs_national": -3.7,
+          "total_tests": 409,
+          "avg_mileage": 239233.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 62.44,
+          "national_pass_rate": 71.23,
+          "vs_national": -8.79,
+          "total_tests": 828,
+          "avg_mileage": 225986.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 1177,
+        "avg_vs_national": -6.91,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 64.32,
+          "national_pass_rate": 71.23,
+          "vs_national": -6.91,
+          "total_tests": 1177,
+          "avg_mileage": 209136.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 64.32,
+          "national_pass_rate": 71.23,
+          "vs_national": -6.91,
+          "total_tests": 1177,
+          "avg_mileage": 209136.0
+        }
+      },
+      {
+        "model": "TX II",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 186,
+        "avg_vs_national": -6.11,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.76,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.11,
+          "total_tests": 186,
+          "avg_mileage": 316768.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.76,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.11,
+          "total_tests": 186,
+          "avg_mileage": 316768.0
+        }
+      },
+      {
+        "model": "TX4",
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 1223,
+        "avg_vs_national": -5.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 60.83,
+          "national_pass_rate": 66.54,
+          "vs_national": -5.71,
+          "total_tests": 1223,
+          "avg_mileage": 255658.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 60.83,
+          "national_pass_rate": 66.54,
+          "vs_national": -5.71,
+          "total_tests": 1223,
+          "avg_mileage": 255658.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 3,
+          "tests": 2046
+        },
+        "maturing": {
+          "vehicles": 6,
+          "tests": 7021
+        },
+        "proven": {
+          "vehicles": 8,
+          "tests": 4850
+        }
+      },
+      "proven_vehicles_tested": 9,
+      "proven_above_average_pct": 44.4,
+      "proven_avg_vs_national": -0.7,
+      "durability_rating": "Average",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "TX4",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 716,
+          "pass_rate": 60.89,
+          "vs_national_at_age": 3.59,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 285559.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "TX4",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 613,
+          "pass_rate": 59.05,
+          "vs_national_at_age": 1.75,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 294466.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "TX II",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 130,
+          "pass_rate": 58.46,
+          "vs_national_at_age": 1.16,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 305153.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "TX4",
+          "model_year": 2012,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 409,
+          "pass_rate": 62.84,
+          "vs_national_at_age": 0.01,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 239233.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "TX4",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 521,
+          "pass_rate": 52.59,
+          "vs_national_at_age": -4.71,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 285602.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TX II",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 186,
+          "pass_rate": 53.76,
+          "vs_national_at_age": -3.54,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 316768.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TX4",
+          "model_year": 2010,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 355,
+          "pass_rate": 54.93,
+          "vs_national_at_age": -2.37,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 289461.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TX4",
+          "model_year": 2011,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 1223,
+          "pass_rate": 60.83,
+          "vs_national_at_age": -2.0,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 255658.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 11-12 years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": []
+    },
+    "model_trajectories": {
+      "TX4": {
+        "core_model": "TX4",
+        "years_covered": [
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "trajectory_by_age": {
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 69.55,
+                "vs_national": -11.65,
+                "total_tests": 982,
+                "avg_mileage": 138454.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 67.58,
+                "vs_national": -13.62,
+                "total_tests": 1064,
+                "avg_mileage": 122960.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 62.78,
+                "vs_national": -12.35,
+                "total_tests": 1150,
+                "avg_mileage": 180469.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 66.3,
+                "vs_national": -8.83,
+                "total_tests": 2092,
+                "avg_mileage": 165422.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 70.63,
+                "vs_national": -4.5,
+                "total_tests": 664,
+                "avg_mileage": 153374.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 62.44,
+                "vs_national": -5.8,
+                "total_tests": 828,
+                "avg_mileage": 225986.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 64.32,
+                "vs_national": -3.92,
+                "total_tests": 1177,
+                "avg_mileage": 209136.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 60.36,
+                "vs_national": -7.88,
+                "total_tests": 1110,
+                "avg_mileage": 192107.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 62.7,
+                "vs_national": -0.13,
+                "total_tests": 697,
+                "avg_mileage": 294538.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 60.83,
+                "vs_national": -2.0,
+                "total_tests": 1223,
+                "avg_mileage": 255658.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 62.84,
+                "vs_national": 0.01,
+                "total_tests": 409,
+                "avg_mileage": 239233.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2007,
+                "pass_rate": 59.05,
+                "vs_national": 1.75,
+                "total_tests": 613,
+                "avg_mileage": 294466.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 52.59,
+                "vs_national": -4.71,
+                "total_tests": 521,
+                "avg_mileage": 285602.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 60.89,
+                "vs_national": 3.59,
+                "total_tests": 716,
+                "avg_mileage": 285559.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 54.93,
+                "vs_national": -2.37,
+                "total_tests": 355,
+                "avg_mileage": 289461.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 3.59,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": -4.71,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

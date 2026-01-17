@@ -1,0 +1,7094 @@
+{
+  "meta": {
+    "make": "LAND ROVER",
+    "generated_at": "2026-01-15T17:43:09.681112",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 26,
+    "make": "LAND ROVER",
+    "total_tests": 870604,
+    "total_models": 1526,
+    "avg_pass_rate": 77.02,
+    "weighted_pass_rate": 77.02,
+    "best_model": "RANGE ROVER WESTMINSTER SDV6 A 2020",
+    "best_model_pass_rate": 94.88,
+    "worst_model": "FREELANDER 2005",
+    "worst_model_pass_rate": 51.46,
+    "rank": 26
+  },
+  "competitors": [
+    {
+      "make": "PORSCHE",
+      "avg_pass_rate": 87.14,
+      "total_tests": 152600,
+      "rank": 14,
+      "total_models": 938
+    },
+    {
+      "make": "BMW",
+      "avg_pass_rate": 78.49,
+      "total_tests": 1808787,
+      "rank": 22,
+      "total_models": 3161
+    },
+    {
+      "make": "JAGUAR",
+      "avg_pass_rate": 78.23,
+      "total_tests": 336140,
+      "rank": 23,
+      "total_models": 872
+    },
+    {
+      "make": "AUDI",
+      "avg_pass_rate": 77.9,
+      "total_tests": 1663207,
+      "rank": 25,
+      "total_models": 2244
+    },
+    {
+      "make": "LAND ROVER",
+      "avg_pass_rate": 77.02,
+      "total_tests": 870604,
+      "rank": 26,
+      "total_models": 1526
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "avg_pass_rate": 76.91,
+      "total_tests": 1662304,
+      "rank": 27,
+      "total_models": 4410
+    },
+    {
+      "make": "VOLVO",
+      "avg_pass_rate": 73.22,
+      "total_tests": 556785,
+      "rank": 35,
+      "total_models": 1271
+    }
+  ],
+  "summary": {
+    "total_tests": 870604,
+    "total_models": 1526,
+    "avg_pass_rate": 77.02,
+    "rank": 26,
+    "rank_total": 75,
+    "best_model": "RANGE ROVER WESTMINSTER SDV6 A 2020",
+    "best_model_pass_rate": 94.88,
+    "worst_model": "FREELANDER 2005",
+    "worst_model_pass_rate": 51.46,
+    "vs_national": 5.51,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "R ROVER VELAR R-DYN SE D275 A",
+      "total_tests": 117,
+      "total_passes": 109,
+      "total_fails": 6,
+      "pass_rate": 93.16,
+      "avg_mileage": 36218.0,
+      "year_from": 2019,
+      "year_to": 2019,
+      "variant_count": 1,
+      "variants": "R ROVER VELAR R-DYN SE D275 A"
+    },
+    {
+      "core_model": "R ROVER SPORT HSE DYN PHEV A",
+      "total_tests": 102,
+      "total_passes": 95,
+      "total_fails": 7,
+      "pass_rate": 93.14,
+      "avg_mileage": 26468.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "R ROVER SPORT HSE DYN PHEV A"
+    },
+    {
+      "core_model": "RROVER EVOQUE R-DYN SE P300E A",
+      "total_tests": 188,
+      "total_passes": 167,
+      "total_fails": 18,
+      "pass_rate": 88.83,
+      "avg_mileage": 26979.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "RROVER EVOQUE R-DYN SE P300E A"
+    },
+    {
+      "core_model": "RROVER EVOQUE RDYN HSE P300E A",
+      "total_tests": 298,
+      "total_passes": 264,
+      "total_fails": 31,
+      "pass_rate": 88.59,
+      "avg_mileage": 25876.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "RROVER EVOQUE RDYN HSE P300E A"
+    },
+    {
+      "core_model": "R ROVER EVOQUE FIRST EDITION A",
+      "total_tests": 880,
+      "total_passes": 774,
+      "total_fails": 75,
+      "pass_rate": 87.95,
+      "avg_mileage": 21208.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 2,
+      "variants": "R ROVER EVOQUE FIRST EDITION A"
+    },
+    {
+      "core_model": "SPORT",
+      "total_tests": 140,
+      "total_passes": 123,
+      "total_fails": 16,
+      "pass_rate": 87.86,
+      "avg_mileage": 82170.0,
+      "year_from": 2014,
+      "year_to": 2014,
+      "variant_count": 1,
+      "variants": "SPORT"
+    },
+    {
+      "core_model": "R ROVER EVOQUE FIRST ED D A",
+      "total_tests": 2793,
+      "total_passes": 2452,
+      "total_fails": 277,
+      "pass_rate": 87.79,
+      "avg_mileage": 26052.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 2,
+      "variants": "R ROVER EVOQUE FIRST ED D A"
+    },
+    {
+      "core_model": "R ROVER EVOQUE R-DYN HSE D A",
+      "total_tests": 3180,
+      "total_passes": 2785,
+      "total_fails": 335,
+      "pass_rate": 87.58,
+      "avg_mileage": 25656.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 2,
+      "variants": "R ROVER EVOQUE R-DYN HSE D A"
+    },
+    {
+      "core_model": "RR SPORT HSE DYN BLCK D MHEV A",
+      "total_tests": 111,
+      "total_passes": 97,
+      "total_fails": 10,
+      "pass_rate": 87.39,
+      "avg_mileage": 29468.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "RR SPORT HSE DYN BLCK D MHEV A"
+    },
+    {
+      "core_model": "R ROVER VELAR SV-ABIO DYN ED A",
+      "total_tests": 233,
+      "total_passes": 202,
+      "total_fails": 20,
+      "pass_rate": 86.7,
+      "avg_mileage": 25684.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 2,
+      "variants": "R ROVER VELAR SV-ABIO DYN ED A"
+    },
+    {
+      "core_model": "RROVER SPORT ABIO DYN D MHEV A",
+      "total_tests": 100,
+      "total_passes": 86,
+      "total_fails": 12,
+      "pass_rate": 86.0,
+      "avg_mileage": 31882.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "RROVER SPORT ABIO DYN D MHEV A"
+    },
+    {
+      "core_model": "R ROVER EVOQUE R-DYN S P300E A",
+      "total_tests": 317,
+      "total_passes": 272,
+      "total_fails": 39,
+      "pass_rate": 85.8,
+      "avg_mileage": 28825.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "R ROVER EVOQUE R-DYN S P300E A"
+    },
+    {
+      "core_model": "DISCOVRY SPRT RDYN HSE P300E A",
+      "total_tests": 209,
+      "total_passes": 179,
+      "total_fails": 27,
+      "pass_rate": 85.65,
+      "avg_mileage": 31574.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "DISCOVRY SPRT RDYN HSE P300E A"
+    },
+    {
+      "core_model": "R ROVER SPRT HSE SLVR D MHEV A",
+      "total_tests": 172,
+      "total_passes": 145,
+      "total_fails": 22,
+      "pass_rate": 84.3,
+      "avg_mileage": 28826.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "R ROVER SPRT HSE SLVR D MHEV A"
+    },
+    {
+      "core_model": "R ROVER EVOQUE R-DYN S D 4X2",
+      "total_tests": 1560,
+      "total_passes": 1311,
+      "total_fails": 210,
+      "pass_rate": 84.04,
+      "avg_mileage": 26708.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 2,
+      "variants": "R ROVER EVOQUE R-DYN S D 4X2"
+    },
+    {
+      "core_model": "RR SPORT HSE DYN BLACK P400E A",
+      "total_tests": 128,
+      "total_passes": 107,
+      "total_fails": 20,
+      "pass_rate": 83.59,
+      "avg_mileage": 29132.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "RR SPORT HSE DYN BLACK P400E A"
+    },
+    {
+      "core_model": "RANGE ROVER",
+      "total_tests": 396206,
+      "total_passes": 321809,
+      "total_fails": 62231,
+      "pass_rate": 81.22,
+      "avg_mileage": 64279.0,
+      "year_from": 2000,
+      "year_to": 2020,
+      "variant_count": 147,
+      "variants": "RANGE ROVER,RANGE ROVER EVOQUE,RANGE ROVER EVOQUE D 4X2,RANGE ROVER EVOQUE D AUTO,RANGE ROVER EVOQUE HSE AUTO,RANGE ROVER EVOQUE HSE D AUTO,RANGE ROVER EVOQUE R-DY SE D A,RANGE ROVER EVOQUE R-DYN D 4X2,RANGE ROVER EVOQUE R-DYN D A,RANGE ROVER EVOQUE R-DYN HSE A,RANGE ROVER EVOQUE R-DYN S A,RANGE ROVER EVOQUE R-DYN S D A,RANGE ROVER EVOQUE R-DYN SE A,RANGE ROVER EVOQUE R-DYNAMIC A,RANGE ROVER EVOQUE S AUTO,RANGE ROVER EVOQUE S D 4X2,RANGE ROVER EVOQUE S D AUTO,RANGE ROVER EVOQUE S P300E A,RANGE ROVER EVOQUE SE AUTO,RANGE ROVER EVOQUE SE D AUTO,RANGE ROVER SPORT,RANGE ROVER SPORT HSE AUTO,RANGE ROVER SPORT HSE DYN A,RANGE ROVER SPORT HST AUTO,RANGE ROVER VELAR,RANGE ROVER WESTMINSTER SDV6 A"
+    },
+    {
+      "core_model": "DISCOVERY",
+      "total_tests": 253059,
+      "total_passes": 195226,
+      "total_fails": 47056,
+      "pass_rate": 77.15,
+      "avg_mileage": 61366.0,
+      "year_from": 2000,
+      "year_to": 2021,
+      "variant_count": 84,
+      "variants": "DISCOVERY,DISCOVERY ANN-SARY ED SDV6 A,DISCOVERY HSE SD4 AUTO,DISCOVERY HSE SD6 AUTO,DISCOVERY HSE SDV6 AUTO,DISCOVERY LANDMARK SD4 AUTO,DISCOVERY LANDMARK SD6 AUTO,DISCOVERY LUXURY HSE SD4 AUTO,DISCOVERY LUXURY HSE SD6 AUTO,DISCOVERY LUXURY HSE SDV6 AUTO,DISCOVERY R-DYNAM HSE D MHEV A,DISCOVERY SE SD4 AUTO,DISCOVERY SE SD6 AUTO,DISCOVERY SE SDV6 AUTO,DISCOVERY SPORT,DISCOVERY SPORT D 4X2,DISCOVERY SPORT HSE D AUTO,DISCOVERY SPORT R-DYN HSE A,DISCOVERY SPORT R-DYN HSE D A,DISCOVERY SPORT R-DYN S D A,DISCOVERY SPORT R-DYN SE D A,DISCOVERY SPORT R-DYNAMIC S A,DISCOVERY SPORT R-DYNAMIC SE A,DISCOVERY SPORT S AUTO,DISCOVERY SPORT S D 4X2,DISCOVERY SPORT S D AUTO,DISCOVERY SPORT SE AUTO,DISCOVERY SPORT SE D 4X2,DISCOVERY SPORT SE D AUTO,DISCOVERY SPRT R-DYN S P300E A,DISCOVERY SPRT RDYN SE P300E A,DISCOVERY SPT RDYN S+ D MHEV A"
+    },
+    {
+      "core_model": "DEFENDER",
+      "total_tests": 71055,
+      "total_passes": 49773,
+      "total_fails": 17016,
+      "pass_rate": 70.05,
+      "avg_mileage": 72978.0,
+      "year_from": 2000,
+      "year_to": 2020,
+      "variant_count": 24,
+      "variants": "DEFENDER,DEFENDER D AUTO,DEFENDER FIRST EDITION D AUTO,DEFENDER HSE D AUTO,DEFENDER S D AUTO,DEFENDER SE AUTO,DEFENDER SE D AUTO,DEFENDER X MHEV AUTO"
+    },
+    {
+      "core_model": "FREELANDER",
+      "total_tests": 128597,
+      "total_passes": 85079,
+      "total_fails": 35564,
+      "pass_rate": 66.16,
+      "avg_mileage": 115111.0,
+      "year_from": 2000,
+      "year_to": 2014,
+      "variant_count": 22,
+      "variants": "FREELANDER"
+    }
+  ],
+  "model_year_breakdowns": {
+    "R ROVER VELAR R-DYN SE D275 A": [
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 117,
+        "pass_rate": 93.16,
+        "avg_mileage": 36218.0,
+        "pass_rate_vs_national": 6.95,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "R ROVER SPORT HSE DYN PHEV A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 102,
+        "pass_rate": 93.14,
+        "avg_mileage": 26468.0,
+        "pass_rate_vs_national": 5.47,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "RROVER EVOQUE R-DYN SE P300E A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 188,
+        "pass_rate": 88.83,
+        "avg_mileage": 26979.0,
+        "pass_rate_vs_national": 1.16,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "RROVER EVOQUE RDYN HSE P300E A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 298,
+        "pass_rate": 88.59,
+        "avg_mileage": 25876.0,
+        "pass_rate_vs_national": 0.92,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "R ROVER EVOQUE FIRST EDITION A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 369,
+        "pass_rate": 87.26,
+        "avg_mileage": 18641.0,
+        "pass_rate_vs_national": -0.41,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 511,
+        "pass_rate": 88.45,
+        "avg_mileage": 23775.0,
+        "pass_rate_vs_national": 2.24,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "SPORT": [
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 140,
+        "pass_rate": 87.86,
+        "avg_mileage": 82170.0,
+        "pass_rate_vs_national": 16.15,
+        "national_avg_for_year": 71.71
+      }
+    ],
+    "R ROVER EVOQUE FIRST ED D A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 1199,
+        "pass_rate": 87.49,
+        "avg_mileage": 22855.0,
+        "pass_rate_vs_national": -0.18,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 1594,
+        "pass_rate": 88.02,
+        "avg_mileage": 29249.0,
+        "pass_rate_vs_national": 1.81,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "R ROVER EVOQUE R-DYN HSE D A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 1396,
+        "pass_rate": 88.25,
+        "avg_mileage": 22803.0,
+        "pass_rate_vs_national": 0.58,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 1784,
+        "pass_rate": 87.05,
+        "avg_mileage": 28508.0,
+        "pass_rate_vs_national": 0.84,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "RR SPORT HSE DYN BLCK D MHEV A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 111,
+        "pass_rate": 87.39,
+        "avg_mileage": 29468.0,
+        "pass_rate_vs_national": -0.28,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "R ROVER VELAR SV-ABIO DYN ED A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 123,
+        "pass_rate": 86.18,
+        "avg_mileage": 23402.0,
+        "pass_rate_vs_national": -1.49,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "pass_rate": 87.27,
+        "avg_mileage": 27965.0,
+        "pass_rate_vs_national": 1.06,
+        "national_avg_for_year": 86.21
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "HY",
+      "model_count": 15,
+      "total_tests": 8830,
+      "pass_rate": 89.15,
+      "fuel_name": "Hybrid Electric"
+    },
+    {
+      "fuel_type": "ED",
+      "model_count": 2,
+      "total_tests": 258,
+      "pass_rate": 82.56,
+      "fuel_name": "Plug-in Hybrid"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 100,
+      "total_tests": 49436,
+      "pass_rate": 80.19,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 181,
+      "total_tests": 800921,
+      "pass_rate": 76.58,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 168,
+      "pass_rate": 80.36,
+      "pass_rate_vs_national": 21.35,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 170,
+      "pass_rate": 78.24,
+      "pass_rate_vs_national": 20.85,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 147,
+      "pass_rate": 86.39,
+      "pass_rate_vs_national": 20.76,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 349,
+      "pass_rate": 79.66,
+      "pass_rate_vs_national": 19.16,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 284,
+      "pass_rate": 79.58,
+      "pass_rate_vs_national": 19.08,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 124,
+      "pass_rate": 84.68,
+      "pass_rate_vs_national": 19.05,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 218,
+      "pass_rate": 81.19,
+      "pass_rate_vs_national": 18.2,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 566,
+      "pass_rate": 73.85,
+      "pass_rate_vs_national": 16.88,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 258,
+      "pass_rate": 75.58,
+      "pass_rate_vs_national": 16.57,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 204,
+      "pass_rate": 84.8,
+      "pass_rate_vs_national": 16.51,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "SPORT",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 140,
+      "pass_rate": 87.86,
+      "pass_rate_vs_national": 16.15,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 384,
+      "pass_rate": 87.76,
+      "pass_rate_vs_national": 16.05,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 196,
+      "pass_rate": 71.94,
+      "pass_rate_vs_national": 15.91,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 321,
+      "pass_rate": 77.88,
+      "pass_rate_vs_national": 14.89,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 228,
+      "pass_rate": 82.89,
+      "pass_rate_vs_national": 14.6,
+      "national_avg_for_year": 68.29
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "DISCOVERY SPORT S D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 317,
+      "pass_rate": 75.08,
+      "pass_rate_vs_national": -12.59,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYNAMIC S A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "pass_rate": 74.81,
+      "pass_rate_vs_national": -11.4,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 271,
+      "pass_rate": 78.6,
+      "pass_rate_vs_national": -9.07,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "DISCOVERY SPORT D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 159,
+      "pass_rate": 78.62,
+      "pass_rate_vs_national": -9.05,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 249,
+      "pass_rate": 51.81,
+      "pass_rate_vs_national": -8.81,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYNAMIC SE A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 125,
+      "pass_rate": 79.2,
+      "pass_rate_vs_national": -7.01,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN S D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1492,
+      "pass_rate": 80.97,
+      "pass_rate_vs_national": -6.7,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "DISCOVERY LANDMARK SD4 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 179,
+      "pass_rate": 81.01,
+      "pass_rate_vs_national": -6.66,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 951,
+      "pass_rate": 81.91,
+      "pass_rate_vs_national": -5.76,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 332,
+      "pass_rate": 55.12,
+      "pass_rate_vs_national": -5.5,
+      "national_avg_for_year": 60.62
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 68258,
+        "vehicle_count": 293
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 55496,
+        "vehicle_count": 289
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 52308,
+        "vehicle_count": 262
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 41346,
+        "vehicle_count": 298
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 28481,
+        "vehicle_count": 288
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 25347,
+        "vehicle_count": 246
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 17045,
+        "vehicle_count": 134
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 15394,
+        "vehicle_count": 262
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 9720,
+        "vehicle_count": 251
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 4112,
+        "vehicle_count": 218
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 2336,
+        "vehicle_count": 150
+      },
+      {
+        "category_name": "Seat belt installation check",
+        "total_failures": 3,
+        "vehicle_count": 3
+      },
+      {
+        "category_name": "Buses and coaches supplementary tests",
+        "total_failures": 3,
+        "vehicle_count": 3
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 25244
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 16010
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 12401
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 11212
+      },
+      {
+        "defect_description": "excessively corroded",
+        "category_name": "Brakes",
+        "total_occurrences": 9429
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 9370
+      },
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 8191
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 7067
+      },
+      {
+        "defect_description": "ball joint has excessive play ",
+        "category_name": "Steering",
+        "total_occurrences": 6545
+      },
+      {
+        "defect_description": "not working on dipped beam",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 5873
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 119904
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 79110
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 78725
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 50302
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 41891
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 37722
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 34108
+      },
+      {
+        "defect_description": "corroded but not seriously weakened",
+        "category_name": "Suspension",
+        "total_occurrences": 13250
+      },
+      {
+        "defect_description": "has a cut but not deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 12235
+      },
+      {
+        "defect_description": "Child Seat fitted not allowing full inspection of adult belt",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 11417
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 118120
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 94494
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 79968
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 39714
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 16998
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 8952
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 8832
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 6949
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 2637
+      },
+      {
+        "defect_description": "leaking on a hydraulic braking system ",
+        "category_name": "Brakes",
+        "total_occurrences": 947
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 101269,
+      "avg_pass_rate": 88.96
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 233462,
+      "avg_pass_rate": 84.03
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 193806,
+      "avg_pass_rate": 78.78
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 143698,
+      "avg_pass_rate": 71.46
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 99961,
+      "avg_pass_rate": 65.34
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 85118,
+      "avg_pass_rate": 61.87
+    }
+  ],
+  "all_models": [
+    {
+      "model": "RANGE ROVER WESTMINSTER SDV6 A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 254,
+      "total_passes": 241,
+      "total_fails": 11,
+      "pass_rate": 94.88,
+      "avg_mileage": 28861.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 23.37
+    },
+    {
+      "model": "RANGE ROVER EVOQUE SE AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 209,
+      "total_passes": 198,
+      "total_fails": 9,
+      "pass_rate": 94.74,
+      "avg_mileage": 18635.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 23.23
+    },
+    {
+      "model": "RANGE ROVER EVOQUE HSE AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 128,
+      "total_passes": 120,
+      "total_fails": 6,
+      "pass_rate": 93.75,
+      "avg_mileage": 21632.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 22.24
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN HSE A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 435,
+      "total_passes": 406,
+      "total_fails": 22,
+      "pass_rate": 93.33,
+      "avg_mileage": 16778.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 21.82
+    },
+    {
+      "model": "R ROVER VELAR R-DYN SE D275 A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 117,
+      "total_passes": 109,
+      "total_fails": 6,
+      "pass_rate": 93.16,
+      "avg_mileage": 36218.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 21.65
+    },
+    {
+      "model": "R ROVER SPORT HSE DYN PHEV A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 102,
+      "total_passes": 95,
+      "total_fails": 7,
+      "pass_rate": 93.14,
+      "avg_mileage": 26468.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 21.63
+    },
+    {
+      "model": "RANGE ROVER EVOQUE S AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 377,
+      "total_passes": 349,
+      "total_fails": 20,
+      "pass_rate": 92.57,
+      "avg_mileage": 22643.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 21.06
+    },
+    {
+      "model": "DISCOVERY R-DYNAM HSE D MHEV A",
+      "model_year": 2021,
+      "fuel_type": "DI",
+      "total_tests": 119,
+      "total_passes": 110,
+      "total_fails": 8,
+      "pass_rate": 92.44,
+      "avg_mileage": 30119.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 20.93
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN SE A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 720,
+      "total_passes": 664,
+      "total_fails": 39,
+      "pass_rate": 92.22,
+      "avg_mileage": 19569.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 20.71
+    },
+    {
+      "model": "RANGE ROVER EVOQUE S AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 428,
+      "total_passes": 393,
+      "total_fails": 31,
+      "pass_rate": 91.82,
+      "avg_mileage": 18594.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 20.31
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 121,
+      "total_passes": 111,
+      "total_fails": 9,
+      "pass_rate": 91.74,
+      "avg_mileage": 26110.0,
+      "avg_age_years": 3.6,
+      "pass_rate_vs_national": 20.22
+    },
+    {
+      "model": "DEFENDER SE D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 884,
+      "total_passes": 809,
+      "total_fails": 58,
+      "pass_rate": 91.52,
+      "avg_mileage": 28862.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 20.0
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 1021,
+      "total_passes": 934,
+      "total_fails": 76,
+      "pass_rate": 91.48,
+      "avg_mileage": 36523.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 19.97
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYNAMIC S A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 125,
+      "total_passes": 114,
+      "total_fails": 10,
+      "pass_rate": 91.2,
+      "avg_mileage": 23931.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 19.69
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 680,
+      "total_passes": 620,
+      "total_fails": 45,
+      "pass_rate": 91.18,
+      "avg_mileage": 36283.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 19.67
+    },
+    {
+      "model": "DEFENDER S D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 696,
+      "total_passes": 632,
+      "total_fails": 48,
+      "pass_rate": 90.8,
+      "avg_mileage": 29895.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 19.29
+    },
+    {
+      "model": "DEFENDER HSE D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 587,
+      "total_passes": 532,
+      "total_fails": 50,
+      "pass_rate": 90.63,
+      "avg_mileage": 31336.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 19.12
+    },
+    {
+      "model": "DEFENDER X MHEV AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 266,
+      "total_passes": 241,
+      "total_fails": 19,
+      "pass_rate": 90.6,
+      "avg_mileage": 26125.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 19.09
+    },
+    {
+      "model": "DISCOVERY SPT RDYN S+ D MHEV A",
+      "model_year": 2021,
+      "fuel_type": "DI",
+      "total_tests": 117,
+      "total_passes": 106,
+      "total_fails": 8,
+      "pass_rate": 90.6,
+      "avg_mileage": 26221.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 19.09
+    },
+    {
+      "model": "DEFENDER SE AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 191,
+      "total_passes": 173,
+      "total_fails": 16,
+      "pass_rate": 90.58,
+      "avg_mileage": 27561.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 19.07
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 966,
+      "total_passes": 873,
+      "total_fails": 75,
+      "pass_rate": 90.37,
+      "avg_mileage": 30187.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 18.86
+    },
+    {
+      "model": "RANGE ROVER EVOQUE SE D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 576,
+      "total_passes": 520,
+      "total_fails": 46,
+      "pass_rate": 90.28,
+      "avg_mileage": 24359.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.77
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 212,
+      "total_passes": 191,
+      "total_fails": 21,
+      "pass_rate": 90.09,
+      "avg_mileage": 26774.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.58
+    },
+    {
+      "model": "DEFENDER FIRST EDITION D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 909,
+      "total_passes": 818,
+      "total_fails": 77,
+      "pass_rate": 89.99,
+      "avg_mileage": 29825.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.48
+    },
+    {
+      "model": "DISCOVERY LANDMARK SD6 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 437,
+      "total_passes": 393,
+      "total_fails": 36,
+      "pass_rate": 89.93,
+      "avg_mileage": 40198.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 18.42
+    },
+    {
+      "model": "DISCOVERY SE SD6 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 237,
+      "total_passes": 213,
+      "total_fails": 18,
+      "pass_rate": 89.87,
+      "avg_mileage": 44800.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.36
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN S A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 689,
+      "total_passes": 619,
+      "total_fails": 56,
+      "pass_rate": 89.84,
+      "avg_mileage": 19429.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.33
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 613,
+      "total_passes": 550,
+      "total_fails": 56,
+      "pass_rate": 89.72,
+      "avg_mileage": 29692.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 18.21
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 1740,
+      "total_passes": 1560,
+      "total_fails": 141,
+      "pass_rate": 89.66,
+      "avg_mileage": 29173.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.14
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN S A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 679,
+      "total_passes": 608,
+      "total_fails": 57,
+      "pass_rate": 89.54,
+      "avg_mileage": 24030.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 18.03
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 2198,
+      "total_passes": 1968,
+      "total_fails": 186,
+      "pass_rate": 89.54,
+      "avg_mileage": 36539.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 18.03
+    },
+    {
+      "model": "DISCOVERY LUXURY HSE SDV6 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 986,
+      "total_passes": 881,
+      "total_fails": 92,
+      "pass_rate": 89.35,
+      "avg_mileage": 41447.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 17.84
+    },
+    {
+      "model": "RANGE ROVER EVOQUE S D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1247,
+      "total_passes": 1114,
+      "total_fails": 112,
+      "pass_rate": 89.33,
+      "avg_mileage": 24295.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.82
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN HSE A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 635,
+      "total_passes": 567,
+      "total_fails": 56,
+      "pass_rate": 89.29,
+      "avg_mileage": 23109.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 17.78
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 457,
+      "total_passes": 408,
+      "total_fails": 44,
+      "pass_rate": 89.28,
+      "avg_mileage": 34464.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 17.77
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1369,
+      "total_passes": 1221,
+      "total_fails": 127,
+      "pass_rate": 89.19,
+      "avg_mileage": 25736.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 17.68
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 3530,
+      "total_passes": 3148,
+      "total_fails": 320,
+      "pass_rate": 89.18,
+      "avg_mileage": 38950.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 17.67
+    },
+    {
+      "model": "DISCOVERY SPORT SE AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 166,
+      "total_passes": 148,
+      "total_fails": 15,
+      "pass_rate": 89.16,
+      "avg_mileage": 24077.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 17.65
+    },
+    {
+      "model": "RANGE ROVER EVOQUE SE AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 221,
+      "total_passes": 197,
+      "total_fails": 20,
+      "pass_rate": 89.14,
+      "avg_mileage": 21416.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 17.63
+    },
+    {
+      "model": "DISCOVERY HSE SD4 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 147,
+      "total_passes": 131,
+      "total_fails": 13,
+      "pass_rate": 89.12,
+      "avg_mileage": 31463.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.6
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN S D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2879,
+      "total_passes": 2564,
+      "total_fails": 260,
+      "pass_rate": 89.06,
+      "avg_mileage": 24362.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.55
+    },
+    {
+      "model": "DISCOVERY SE SD6 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 109,
+      "total_passes": 97,
+      "total_fails": 11,
+      "pass_rate": 88.99,
+      "avg_mileage": 52702.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 17.48
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 515,
+      "total_passes": 458,
+      "total_fails": 43,
+      "pass_rate": 88.93,
+      "avg_mileage": 43925.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 17.42
+    },
+    {
+      "model": "RANGE ROVER EVOQUE D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 207,
+      "total_passes": 184,
+      "total_fails": 16,
+      "pass_rate": 88.89,
+      "avg_mileage": 25487.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 17.38
+    },
+    {
+      "model": "RANGE ROVER EVOQUE HSE D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 198,
+      "total_passes": 176,
+      "total_fails": 13,
+      "pass_rate": 88.89,
+      "avg_mileage": 22655.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 17.38
+    },
+    {
+      "model": "RANGE ROVER SPORT HSE AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 108,
+      "total_passes": 96,
+      "total_fails": 9,
+      "pass_rate": 88.89,
+      "avg_mileage": 24797.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.38
+    },
+    {
+      "model": "RROVER EVOQUE R-DYN SE P300E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 188,
+      "total_passes": 167,
+      "total_fails": 18,
+      "pass_rate": 88.83,
+      "avg_mileage": 26979.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 17.32
+    },
+    {
+      "model": "RANGE ROVER EVOQUE HSE D AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 427,
+      "total_passes": 379,
+      "total_fails": 40,
+      "pass_rate": 88.76,
+      "avg_mileage": 27165.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 17.25
+    },
+    {
+      "model": "DISCOVERY HSE SDV6 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 229,
+      "total_passes": 203,
+      "total_fails": 20,
+      "pass_rate": 88.65,
+      "avg_mileage": 33186.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.14
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1877,
+      "total_passes": 1664,
+      "total_fails": 176,
+      "pass_rate": 88.65,
+      "avg_mileage": 32570.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 17.14
+    },
+    {
+      "model": "DISCOVERY SPORT SE AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 299,
+      "total_passes": 265,
+      "total_fails": 28,
+      "pass_rate": 88.63,
+      "avg_mileage": 21039.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.12
+    },
+    {
+      "model": "RROVER EVOQUE RDYN HSE P300E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 298,
+      "total_passes": 264,
+      "total_fails": 31,
+      "pass_rate": 88.59,
+      "avg_mileage": 25876.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.08
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2059,
+      "total_passes": 1823,
+      "total_fails": 192,
+      "pass_rate": 88.54,
+      "avg_mileage": 31128.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.03
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYNAMIC A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 157,
+      "total_passes": 139,
+      "total_fails": 15,
+      "pass_rate": 88.54,
+      "avg_mileage": 20647.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 17.02
+    },
+    {
+      "model": "RANGE ROVER SPORT HSE DYN A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 122,
+      "total_passes": 108,
+      "total_fails": 8,
+      "pass_rate": 88.52,
+      "avg_mileage": 25560.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.01
+    },
+    {
+      "model": "DISCOVERY HSE SD6 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 538,
+      "total_passes": 476,
+      "total_fails": 48,
+      "pass_rate": 88.48,
+      "avg_mileage": 46248.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 16.96
+    },
+    {
+      "model": "R ROVER EVOQUE FIRST EDITION A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 511,
+      "total_passes": 452,
+      "total_fails": 41,
+      "pass_rate": 88.45,
+      "avg_mileage": 23775.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.94
+    },
+    {
+      "model": "DISCOVERY HSE SD4 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 362,
+      "total_passes": 320,
+      "total_fails": 37,
+      "pass_rate": 88.4,
+      "avg_mileage": 39590.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.89
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DY SE D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2055,
+      "total_passes": 1815,
+      "total_fails": 194,
+      "pass_rate": 88.32,
+      "avg_mileage": 24437.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.81
+    },
+    {
+      "model": "DISCOVERY LANDMARK SD6 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1209,
+      "total_passes": 1067,
+      "total_fails": 113,
+      "pass_rate": 88.25,
+      "avg_mileage": 34096.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.74
+    },
+    {
+      "model": "R ROVER EVOQUE R-DYN HSE D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1396,
+      "total_passes": 1232,
+      "total_fails": 137,
+      "pass_rate": 88.25,
+      "avg_mileage": 22803.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.74
+    },
+    {
+      "model": "DISCOVERY HSE SD6 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1766,
+      "total_passes": 1558,
+      "total_fails": 162,
+      "pass_rate": 88.22,
+      "avg_mileage": 37839.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.71
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 1048,
+      "total_passes": 924,
+      "total_fails": 101,
+      "pass_rate": 88.17,
+      "avg_mileage": 44560.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 16.66
+    },
+    {
+      "model": "DISCOVERY SPRT RDYN SE P300E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 177,
+      "total_passes": 156,
+      "total_fails": 19,
+      "pass_rate": 88.14,
+      "avg_mileage": 29765.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 16.62
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 430,
+      "total_passes": 379,
+      "total_fails": 41,
+      "pass_rate": 88.14,
+      "avg_mileage": 41848.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 16.63
+    },
+    {
+      "model": "R ROVER EVOQUE FIRST ED D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1594,
+      "total_passes": 1403,
+      "total_fails": 161,
+      "pass_rate": 88.02,
+      "avg_mileage": 29249.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.51
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 3231,
+      "total_passes": 2844,
+      "total_fails": 307,
+      "pass_rate": 88.02,
+      "avg_mileage": 33148.0,
+      "avg_age_years": 3.5,
+      "pass_rate_vs_national": 16.51
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 7241,
+      "total_passes": 6372,
+      "total_fails": 722,
+      "pass_rate": 88.0,
+      "avg_mileage": 38284.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 16.49
+    },
+    {
+      "model": "DISCOVERY SE SD4 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 216,
+      "total_passes": 190,
+      "total_fails": 20,
+      "pass_rate": 87.96,
+      "avg_mileage": 43360.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.45
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN SE A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 705,
+      "total_passes": 620,
+      "total_fails": 76,
+      "pass_rate": 87.94,
+      "avg_mileage": 23479.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.43
+    },
+    {
+      "model": "SPORT",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 140,
+      "total_passes": 123,
+      "total_fails": 16,
+      "pass_rate": 87.86,
+      "avg_mileage": 82170.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 16.35
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 4505,
+      "total_passes": 3957,
+      "total_fails": 459,
+      "pass_rate": 87.84,
+      "avg_mileage": 47920.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 16.32
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 542,
+      "total_passes": 476,
+      "total_fails": 54,
+      "pass_rate": 87.82,
+      "avg_mileage": 40258.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 16.31
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 384,
+      "total_passes": 337,
+      "total_fails": 41,
+      "pass_rate": 87.76,
+      "avg_mileage": 66017.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 16.25
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 570,
+      "total_passes": 500,
+      "total_fails": 63,
+      "pass_rate": 87.72,
+      "avg_mileage": 49716.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 16.21
+    },
+    {
+      "model": "DISCOVERY SPORT HSE D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 608,
+      "total_passes": 533,
+      "total_fails": 59,
+      "pass_rate": 87.66,
+      "avg_mileage": 24165.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.15
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 15612,
+      "total_passes": 13686,
+      "total_fails": 1573,
+      "pass_rate": 87.66,
+      "avg_mileage": 41130.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 16.15
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1636,
+      "total_passes": 1433,
+      "total_fails": 166,
+      "pass_rate": 87.59,
+      "avg_mileage": 38107.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 16.08
+    },
+    {
+      "model": "RANGE ROVER SPORT HST AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 465,
+      "total_passes": 407,
+      "total_fails": 47,
+      "pass_rate": 87.53,
+      "avg_mileage": 33078.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.02
+    },
+    {
+      "model": "R ROVER EVOQUE FIRST ED D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1199,
+      "total_passes": 1049,
+      "total_fails": 116,
+      "pass_rate": 87.49,
+      "avg_mileage": 22855.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.98
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 683,
+      "total_passes": 597,
+      "total_fails": 54,
+      "pass_rate": 87.41,
+      "avg_mileage": 24194.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.9
+    },
+    {
+      "model": "DISCOVERY ANN-SARY ED SDV6 A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 349,
+      "total_passes": 305,
+      "total_fails": 41,
+      "pass_rate": 87.39,
+      "avg_mileage": 42257.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 15.88
+    },
+    {
+      "model": "RR SPORT HSE DYN BLCK D MHEV A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 111,
+      "total_passes": 97,
+      "total_fails": 10,
+      "pass_rate": 87.39,
+      "avg_mileage": 29468.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.88
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 3498,
+      "total_passes": 3056,
+      "total_fails": 358,
+      "pass_rate": 87.36,
+      "avg_mileage": 30232.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.85
+    },
+    {
+      "model": "DISCOVERY LUXURY HSE SD6 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1277,
+      "total_passes": 1115,
+      "total_fails": 130,
+      "pass_rate": 87.31,
+      "avg_mileage": 31943.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.8
+    },
+    {
+      "model": "DISCOVERY HSE SDV6 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1259,
+      "total_passes": 1099,
+      "total_fails": 131,
+      "pass_rate": 87.29,
+      "avg_mileage": 48181.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 15.78
+    },
+    {
+      "model": "R ROVER VELAR SV-ABIO DYN ED A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "total_passes": 96,
+      "total_fails": 10,
+      "pass_rate": 87.27,
+      "avg_mileage": 27965.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.76
+    },
+    {
+      "model": "R ROVER EVOQUE FIRST EDITION A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 369,
+      "total_passes": 322,
+      "total_fails": 34,
+      "pass_rate": 87.26,
+      "avg_mileage": 18641.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.75
+    },
+    {
+      "model": "RANGE ROVER EVOQUE S D AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1880,
+      "total_passes": 1640,
+      "total_fails": 198,
+      "pass_rate": 87.23,
+      "avg_mileage": 30889.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.72
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 180,
+      "total_passes": 157,
+      "total_fails": 19,
+      "pass_rate": 87.22,
+      "avg_mileage": 48207.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 15.71
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 8449,
+      "total_passes": 7368,
+      "total_fails": 870,
+      "pass_rate": 87.21,
+      "avg_mileage": 46530.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 15.69
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 2146,
+      "total_passes": 1870,
+      "total_fails": 230,
+      "pass_rate": 87.14,
+      "avg_mileage": 48846.0,
+      "avg_age_years": 3.5,
+      "pass_rate_vs_national": 15.63
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 1107,
+      "total_passes": 964,
+      "total_fails": 114,
+      "pass_rate": 87.08,
+      "avg_mileage": 46812.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 15.57
+    },
+    {
+      "model": "R ROVER EVOQUE R-DYN HSE D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1784,
+      "total_passes": 1553,
+      "total_fails": 198,
+      "pass_rate": 87.05,
+      "avg_mileage": 28508.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.54
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYNAMIC SE A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 469,
+      "total_passes": 408,
+      "total_fails": 47,
+      "pass_rate": 86.99,
+      "avg_mileage": 22515.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.48
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 414,
+      "total_passes": 359,
+      "total_fails": 45,
+      "pass_rate": 86.71,
+      "avg_mileage": 42592.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 15.2
+    },
+    {
+      "model": "RANGE ROVER SPORT HST AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 413,
+      "total_passes": 358,
+      "total_fails": 43,
+      "pass_rate": 86.68,
+      "avg_mileage": 27366.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.17
+    },
+    {
+      "model": "DISCOVERY LUXURY HSE SD6 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 715,
+      "total_passes": 619,
+      "total_fails": 79,
+      "pass_rate": 86.57,
+      "avg_mileage": 39253.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 15.06
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1600,
+      "total_passes": 1385,
+      "total_fails": 171,
+      "pass_rate": 86.56,
+      "avg_mileage": 36218.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 15.05
+    },
+    {
+      "model": "DISCOVERY SE SDV6 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 238,
+      "total_passes": 206,
+      "total_fails": 25,
+      "pass_rate": 86.55,
+      "avg_mileage": 55959.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.04
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN HSE A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 119,
+      "total_passes": 103,
+      "total_fails": 16,
+      "pass_rate": 86.55,
+      "avg_mileage": 25334.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 15.04
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN HSE A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 409,
+      "total_passes": 354,
+      "total_fails": 50,
+      "pass_rate": 86.55,
+      "avg_mileage": 20465.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.04
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN S D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 3390,
+      "total_passes": 2933,
+      "total_fails": 408,
+      "pass_rate": 86.52,
+      "avg_mileage": 30144.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.01
+    },
+    {
+      "model": "DISCOVERY SE SD4 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 111,
+      "total_passes": 96,
+      "total_fails": 13,
+      "pass_rate": 86.49,
+      "avg_mileage": 37940.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 14.98
+    },
+    {
+      "model": "DISCOVERY LUXURY HSE SD4 AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 207,
+      "total_passes": 179,
+      "total_fails": 27,
+      "pass_rate": 86.47,
+      "avg_mileage": 36660.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 14.96
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 147,
+      "total_passes": 127,
+      "total_fails": 16,
+      "pass_rate": 86.39,
+      "avg_mileage": 71098.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 14.88
+    },
+    {
+      "model": "DISCOVERY SPRT R-DYN S P300E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 131,
+      "total_passes": 113,
+      "total_fails": 18,
+      "pass_rate": 86.26,
+      "avg_mileage": 29887.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 14.75
+    },
+    {
+      "model": "RANGE ROVER EVOQUE S P300E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 145,
+      "total_passes": 125,
+      "total_fails": 20,
+      "pass_rate": 86.21,
+      "avg_mileage": 27035.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 14.7
+    },
+    {
+      "model": "R ROVER VELAR SV-ABIO DYN ED A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 123,
+      "total_passes": 106,
+      "total_fails": 10,
+      "pass_rate": 86.18,
+      "avg_mileage": 23402.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 14.67
+    },
+    {
+      "model": "RANGE ROVER EVOQUE S D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 699,
+      "total_passes": 602,
+      "total_fails": 78,
+      "pass_rate": 86.12,
+      "avg_mileage": 25395.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 14.61
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 526,
+      "total_passes": 453,
+      "total_fails": 65,
+      "pass_rate": 86.12,
+      "avg_mileage": 59676.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 14.61
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 22174,
+      "total_passes": 19091,
+      "total_fails": 2519,
+      "pass_rate": 86.1,
+      "avg_mileage": 50911.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 14.59
+    },
+    {
+      "model": "RROVER SPORT ABIO DYN D MHEV A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 100,
+      "total_passes": 86,
+      "total_fails": 12,
+      "pass_rate": 86.0,
+      "avg_mileage": 31882.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 14.49
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 8083,
+      "total_passes": 6950,
+      "total_fails": 944,
+      "pass_rate": 85.98,
+      "avg_mileage": 54036.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 14.47
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 262,
+      "total_passes": 225,
+      "total_fails": 29,
+      "pass_rate": 85.88,
+      "avg_mileage": 33025.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 14.37
+    },
+    {
+      "model": "R ROVER EVOQUE R-DYN S P300E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 317,
+      "total_passes": 272,
+      "total_fails": 39,
+      "pass_rate": 85.8,
+      "avg_mileage": 28825.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 14.29
+    },
+    {
+      "model": "RANGE ROVER EVOQUE D AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 322,
+      "total_passes": 276,
+      "total_fails": 41,
+      "pass_rate": 85.71,
+      "avg_mileage": 32263.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 14.2
+    },
+    {
+      "model": "DISCOVRY SPRT RDYN HSE P300E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 209,
+      "total_passes": 179,
+      "total_fails": 27,
+      "pass_rate": 85.65,
+      "avg_mileage": 31574.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 14.14
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYNAMIC A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 132,
+      "total_passes": 113,
+      "total_fails": 16,
+      "pass_rate": 85.61,
+      "avg_mileage": 20930.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 14.1
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DY SE D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 2790,
+      "total_passes": 2387,
+      "total_fails": 352,
+      "pass_rate": 85.56,
+      "avg_mileage": 30457.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 14.04
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 159,
+      "total_passes": 136,
+      "total_fails": 21,
+      "pass_rate": 85.53,
+      "avg_mileage": 56541.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 14.02
+    },
+    {
+      "model": "DEFENDER D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 138,
+      "total_passes": 118,
+      "total_fails": 14,
+      "pass_rate": 85.51,
+      "avg_mileage": 30576.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 14.0
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 24643,
+      "total_passes": 20977,
+      "total_fails": 3021,
+      "pass_rate": 85.12,
+      "avg_mileage": 58802.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 13.61
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN HSE D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2088,
+      "total_passes": 1776,
+      "total_fails": 260,
+      "pass_rate": 85.06,
+      "avg_mileage": 24677.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 13.55
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 321,
+      "total_passes": 273,
+      "total_fails": 40,
+      "pass_rate": 85.05,
+      "avg_mileage": 42918.0,
+      "avg_age_years": 5.2,
+      "pass_rate_vs_national": 13.54
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2015,
+      "fuel_type": "ED",
+      "total_tests": 127,
+      "total_passes": 108,
+      "total_fails": 17,
+      "pass_rate": 85.04,
+      "avg_mileage": 72866.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 13.53
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN SE D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2289,
+      "total_passes": 1945,
+      "total_fails": 280,
+      "pass_rate": 84.97,
+      "avg_mileage": 26975.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 13.46
+    },
+    {
+      "model": "R ROVER EVOQUE R-DYN S D 4X2",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 655,
+      "total_passes": 556,
+      "total_fails": 80,
+      "pass_rate": 84.89,
+      "avg_mileage": 28915.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 13.37
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1328,
+      "total_passes": 1127,
+      "total_fails": 152,
+      "pass_rate": 84.86,
+      "avg_mileage": 29894.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 13.35
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 204,
+      "total_passes": 173,
+      "total_fails": 27,
+      "pass_rate": 84.8,
+      "avg_mileage": 62529.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 13.29
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1673,
+      "total_passes": 1418,
+      "total_fails": 201,
+      "pass_rate": 84.76,
+      "avg_mileage": 35274.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 13.25
+    },
+    {
+      "model": "DISCOVERY SPORT SE D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1161,
+      "total_passes": 984,
+      "total_fails": 147,
+      "pass_rate": 84.75,
+      "avg_mileage": 26783.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 13.24
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 9295,
+      "total_passes": 7874,
+      "total_fails": 1131,
+      "pass_rate": 84.71,
+      "avg_mileage": 44718.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 13.2
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 124,
+      "total_passes": 105,
+      "total_fails": 17,
+      "pass_rate": 84.68,
+      "avg_mileage": 78851.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 13.17
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 4873,
+      "total_passes": 4126,
+      "total_fails": 644,
+      "pass_rate": 84.67,
+      "avg_mileage": 58935.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 13.16
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 9667,
+      "total_passes": 8180,
+      "total_fails": 1304,
+      "pass_rate": 84.62,
+      "avg_mileage": 60820.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 13.11
+    },
+    {
+      "model": "DISCOVERY LUXURY HSE SD4 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 156,
+      "total_passes": 132,
+      "total_fails": 19,
+      "pass_rate": 84.62,
+      "avg_mileage": 29137.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 13.1
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 727,
+      "total_passes": 615,
+      "total_fails": 94,
+      "pass_rate": 84.59,
+      "avg_mileage": 53685.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 13.08
+    },
+    {
+      "model": "DISCOVERY SPORT S AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 174,
+      "total_passes": 147,
+      "total_fails": 19,
+      "pass_rate": 84.48,
+      "avg_mileage": 21855.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 12.97
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 322,
+      "total_passes": 272,
+      "total_fails": 43,
+      "pass_rate": 84.47,
+      "avg_mileage": 66215.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 12.96
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 4102,
+      "total_passes": 3463,
+      "total_fails": 472,
+      "pass_rate": 84.42,
+      "avg_mileage": 28462.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 12.91
+    },
+    {
+      "model": "RANGE ROVER EVOQUE D 4X2",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 524,
+      "total_passes": 442,
+      "total_fails": 73,
+      "pass_rate": 84.35,
+      "avg_mileage": 30217.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 12.84
+    },
+    {
+      "model": "R ROVER SPRT HSE SLVR D MHEV A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 172,
+      "total_passes": 145,
+      "total_fails": 22,
+      "pass_rate": 84.3,
+      "avg_mileage": 28826.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 12.79
+    },
+    {
+      "model": "RANGE ROVER EVOQUE SE D AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1121,
+      "total_passes": 945,
+      "total_fails": 156,
+      "pass_rate": 84.3,
+      "avg_mileage": 30650.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 12.79
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 3207,
+      "total_passes": 2703,
+      "total_fails": 411,
+      "pass_rate": 84.28,
+      "avg_mileage": 50615.0,
+      "avg_age_years": 5.2,
+      "pass_rate_vs_national": 12.77
+    },
+    {
+      "model": "DISCOVERY SPORT S D AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 871,
+      "total_passes": 734,
+      "total_fails": 108,
+      "pass_rate": 84.27,
+      "avg_mileage": 28228.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 12.76
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 9258,
+      "total_passes": 7789,
+      "total_fails": 1252,
+      "pass_rate": 84.13,
+      "avg_mileage": 56578.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 12.62
+    },
+    {
+      "model": "DISCOVERY SPORT SE D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 157,
+      "total_passes": 132,
+      "total_fails": 20,
+      "pass_rate": 84.08,
+      "avg_mileage": 27524.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 12.57
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN SE D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1165,
+      "total_passes": 975,
+      "total_fails": 152,
+      "pass_rate": 83.69,
+      "avg_mileage": 33224.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 12.18
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 7709,
+      "total_passes": 6450,
+      "total_fails": 919,
+      "pass_rate": 83.67,
+      "avg_mileage": 36502.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 12.16
+    },
+    {
+      "model": "RR SPORT HSE DYN BLACK P400E A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 128,
+      "total_passes": 107,
+      "total_fails": 20,
+      "pass_rate": 83.59,
+      "avg_mileage": 29132.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 12.08
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN HSE D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 665,
+      "total_passes": 555,
+      "total_fails": 92,
+      "pass_rate": 83.46,
+      "avg_mileage": 31705.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 11.95
+    },
+    {
+      "model": "DISCOVERY SPORT S D AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 574,
+      "total_passes": 479,
+      "total_fails": 83,
+      "pass_rate": 83.45,
+      "avg_mileage": 34909.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 11.94
+    },
+    {
+      "model": "R ROVER EVOQUE R-DYN S D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 905,
+      "total_passes": 755,
+      "total_fails": 130,
+      "pass_rate": 83.43,
+      "avg_mileage": 24501.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 11.91
+    },
+    {
+      "model": "RANGE ROVER EVOQUE D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 831,
+      "total_passes": 693,
+      "total_fails": 118,
+      "pass_rate": 83.39,
+      "avg_mileage": 25656.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 11.88
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1756,
+      "total_passes": 1462,
+      "total_fails": 178,
+      "pass_rate": 83.26,
+      "avg_mileage": 31726.0,
+      "avg_age_years": 6.6,
+      "pass_rate_vs_national": 11.75
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 5881,
+      "total_passes": 4881,
+      "total_fails": 871,
+      "pass_rate": 83.0,
+      "avg_mileage": 76563.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 11.49
+    },
+    {
+      "model": "RANGE ROVER VELAR",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 582,
+      "total_passes": 483,
+      "total_fails": 78,
+      "pass_rate": 82.99,
+      "avg_mileage": 42080.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 11.48
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN S D A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 346,
+      "total_passes": 287,
+      "total_fails": 49,
+      "pass_rate": 82.95,
+      "avg_mileage": 33490.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 11.44
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1095,
+      "total_passes": 908,
+      "total_fails": 154,
+      "pass_rate": 82.92,
+      "avg_mileage": 30188.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 11.41
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 228,
+      "total_passes": 189,
+      "total_fails": 31,
+      "pass_rate": 82.89,
+      "avg_mileage": 71855.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 11.38
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 5649,
+      "total_passes": 4682,
+      "total_fails": 866,
+      "pass_rate": 82.88,
+      "avg_mileage": 84155.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 11.37
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 17457,
+      "total_passes": 14455,
+      "total_fails": 2387,
+      "pass_rate": 82.8,
+      "avg_mileage": 45514.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 11.29
+    },
+    {
+      "model": "RANGE ROVER EVOQUE S D 4X2",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 498,
+      "total_passes": 412,
+      "total_fails": 73,
+      "pass_rate": 82.73,
+      "avg_mileage": 29152.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 11.22
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 22899,
+      "total_passes": 18938,
+      "total_fails": 3108,
+      "pass_rate": 82.7,
+      "avg_mileage": 54855.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 11.19
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN D 4X2",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 641,
+      "total_passes": 530,
+      "total_fails": 99,
+      "pass_rate": 82.68,
+      "avg_mileage": 28083.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 11.17
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 5164,
+      "total_passes": 4256,
+      "total_fails": 796,
+      "pass_rate": 82.42,
+      "avg_mileage": 67704.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 10.91
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 290,
+      "total_passes": 239,
+      "total_fails": 47,
+      "pass_rate": 82.41,
+      "avg_mileage": 56947.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 10.9
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 18976,
+      "total_passes": 15622,
+      "total_fails": 2742,
+      "pass_rate": 82.33,
+      "avg_mileage": 67663.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 10.81
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 10287,
+      "total_passes": 8451,
+      "total_fails": 1580,
+      "pass_rate": 82.15,
+      "avg_mileage": 65189.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 10.64
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 951,
+      "total_passes": 779,
+      "total_fails": 144,
+      "pass_rate": 81.91,
+      "avg_mileage": 25335.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 10.4
+    },
+    {
+      "model": "DISCOVERY SPORT SE D AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 992,
+      "total_passes": 812,
+      "total_fails": 142,
+      "pass_rate": 81.85,
+      "avg_mileage": 32658.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 10.34
+    },
+    {
+      "model": "DISCOVERY SPORT HSE D AUTO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 512,
+      "total_passes": 419,
+      "total_fails": 81,
+      "pass_rate": 81.84,
+      "avg_mileage": 30529.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 10.33
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 15330,
+      "total_passes": 12536,
+      "total_fails": 2215,
+      "pass_rate": 81.77,
+      "avg_mileage": 73939.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 10.26
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 22388,
+      "total_passes": 18299,
+      "total_fails": 3207,
+      "pass_rate": 81.74,
+      "avg_mileage": 63795.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 10.22
+    },
+    {
+      "model": "DISCOVERY SPORT",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 10768,
+      "total_passes": 8795,
+      "total_fails": 1491,
+      "pass_rate": 81.68,
+      "avg_mileage": 37213.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 10.17
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 310,
+      "total_passes": 253,
+      "total_fails": 50,
+      "pass_rate": 81.61,
+      "avg_mileage": 61607.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 10.1
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 272,
+      "total_passes": 221,
+      "total_fails": 44,
+      "pass_rate": 81.25,
+      "avg_mileage": 50370.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 9.74
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 218,
+      "total_passes": 177,
+      "total_fails": 34,
+      "pass_rate": 81.19,
+      "avg_mileage": 81020.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 9.68
+    },
+    {
+      "model": "DISCOVERY LANDMARK SD4 AUTO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 179,
+      "total_passes": 145,
+      "total_fails": 30,
+      "pass_rate": 81.01,
+      "avg_mileage": 32232.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 9.49
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYN S D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1492,
+      "total_passes": 1208,
+      "total_fails": 235,
+      "pass_rate": 80.97,
+      "avg_mileage": 28063.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 9.45
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 16176,
+      "total_passes": 13071,
+      "total_fails": 2566,
+      "pass_rate": 80.8,
+      "avg_mileage": 77207.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 9.29
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 9889,
+      "total_passes": 7979,
+      "total_fails": 1492,
+      "pass_rate": 80.69,
+      "avg_mileage": 74501.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 9.17
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 10428,
+      "total_passes": 8388,
+      "total_fails": 1775,
+      "pass_rate": 80.44,
+      "avg_mileage": 72965.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 8.93
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 168,
+      "total_passes": 135,
+      "total_fails": 28,
+      "pass_rate": 80.36,
+      "avg_mileage": 92272.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": 8.85
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 9365,
+      "total_passes": 7514,
+      "total_fails": 1533,
+      "pass_rate": 80.23,
+      "avg_mileage": 86936.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 8.72
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2015,
+      "fuel_type": "ED",
+      "total_tests": 131,
+      "total_passes": 105,
+      "total_fails": 21,
+      "pass_rate": 80.15,
+      "avg_mileage": 68607.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 8.64
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 8418,
+      "total_passes": 6739,
+      "total_fails": 1463,
+      "pass_rate": 80.05,
+      "avg_mileage": 82956.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 8.54
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 6450,
+      "total_passes": 5157,
+      "total_fails": 1106,
+      "pass_rate": 79.95,
+      "avg_mileage": 89583.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 8.44
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 349,
+      "total_passes": 278,
+      "total_fails": 68,
+      "pass_rate": 79.66,
+      "avg_mileage": 92813.0,
+      "avg_age_years": 12.6,
+      "pass_rate_vs_national": 8.15
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 284,
+      "total_passes": 226,
+      "total_fails": 49,
+      "pass_rate": 79.58,
+      "avg_mileage": 90568.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 8.07
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 9119,
+      "total_passes": 7240,
+      "total_fails": 1626,
+      "pass_rate": 79.39,
+      "avg_mileage": 88798.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 7.88
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 11681,
+      "total_passes": 9261,
+      "total_fails": 1862,
+      "pass_rate": 79.28,
+      "avg_mileage": 79699.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 7.77
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYNAMIC SE A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 125,
+      "total_passes": 99,
+      "total_fails": 20,
+      "pass_rate": 79.2,
+      "avg_mileage": 26526.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 7.69
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 6534,
+      "total_passes": 5170,
+      "total_fails": 953,
+      "pass_rate": 79.12,
+      "avg_mileage": 45221.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 7.61
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 6154,
+      "total_passes": 4843,
+      "total_fails": 1155,
+      "pass_rate": 78.7,
+      "avg_mileage": 95869.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 7.19
+    },
+    {
+      "model": "DISCOVERY SPORT D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 159,
+      "total_passes": 125,
+      "total_fails": 31,
+      "pass_rate": 78.62,
+      "avg_mileage": 28683.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 7.11
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 430,
+      "total_passes": 338,
+      "total_fails": 80,
+      "pass_rate": 78.6,
+      "avg_mileage": 73065.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 7.09
+    },
+    {
+      "model": "RANGE ROVER EVOQUE R-DYN D A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 271,
+      "total_passes": 213,
+      "total_fails": 52,
+      "pass_rate": 78.6,
+      "avg_mileage": 27596.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 7.09
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 170,
+      "total_passes": 133,
+      "total_fails": 28,
+      "pass_rate": 78.24,
+      "avg_mileage": 110130.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 6.72
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 321,
+      "total_passes": 250,
+      "total_fails": 61,
+      "pass_rate": 77.88,
+      "avg_mileage": 83909.0,
+      "avg_age_years": 11.2,
+      "pass_rate_vs_national": 6.37
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 7586,
+      "total_passes": 5907,
+      "total_fails": 1421,
+      "pass_rate": 77.87,
+      "avg_mileage": 95870.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 6.36
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 325,
+      "total_passes": 253,
+      "total_fails": 63,
+      "pass_rate": 77.85,
+      "avg_mileage": 73021.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 6.34
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 12605,
+      "total_passes": 9749,
+      "total_fails": 2403,
+      "pass_rate": 77.34,
+      "avg_mileage": 85937.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 5.83
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 240,
+      "total_passes": 185,
+      "total_fails": 53,
+      "pass_rate": 77.08,
+      "avg_mileage": 89872.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 5.57
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 5745,
+      "total_passes": 4397,
+      "total_fails": 961,
+      "pass_rate": 76.54,
+      "avg_mileage": 54935.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 5.03
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 5507,
+      "total_passes": 4184,
+      "total_fails": 1115,
+      "pass_rate": 75.98,
+      "avg_mileage": 102766.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 4.47
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 4533,
+      "total_passes": 3430,
+      "total_fails": 971,
+      "pass_rate": 75.67,
+      "avg_mileage": 98746.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 4.16
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 13284,
+      "total_passes": 10051,
+      "total_fails": 2642,
+      "pass_rate": 75.66,
+      "avg_mileage": 90462.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 4.15
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 258,
+      "total_passes": 195,
+      "total_fails": 57,
+      "pass_rate": 75.58,
+      "avg_mileage": 101874.0,
+      "avg_age_years": 13.3,
+      "pass_rate_vs_national": 4.07
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 3578,
+      "total_passes": 2694,
+      "total_fails": 746,
+      "pass_rate": 75.29,
+      "avg_mileage": 98463.0,
+      "avg_age_years": 11.2,
+      "pass_rate_vs_national": 3.78
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 10506,
+      "total_passes": 7907,
+      "total_fails": 2174,
+      "pass_rate": 75.26,
+      "avg_mileage": 97004.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 3.75
+    },
+    {
+      "model": "RANGE ROVER EVOQUE",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 13009,
+      "total_passes": 9788,
+      "total_fails": 2668,
+      "pass_rate": 75.24,
+      "avg_mileage": 95235.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 3.73
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 6499,
+      "total_passes": 4882,
+      "total_fails": 1313,
+      "pass_rate": 75.12,
+      "avg_mileage": 107435.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 3.61
+    },
+    {
+      "model": "DISCOVERY SPORT S D 4X2",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 317,
+      "total_passes": 238,
+      "total_fails": 67,
+      "pass_rate": 75.08,
+      "avg_mileage": 27906.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 3.57
+    },
+    {
+      "model": "DISCOVERY SPORT R-DYNAMIC S A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "total_passes": 98,
+      "total_fails": 30,
+      "pass_rate": 74.81,
+      "avg_mileage": 25612.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 3.3
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 5662,
+      "total_passes": 4232,
+      "total_fails": 1243,
+      "pass_rate": 74.74,
+      "avg_mileage": 109952.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 3.23
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 7016,
+      "total_passes": 5217,
+      "total_fails": 1527,
+      "pass_rate": 74.36,
+      "avg_mileage": 114017.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 2.85
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 12391,
+      "total_passes": 9195,
+      "total_fails": 2587,
+      "pass_rate": 74.21,
+      "avg_mileage": 107393.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 2.7
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 566,
+      "total_passes": 418,
+      "total_fails": 122,
+      "pass_rate": 73.85,
+      "avg_mileage": 123835.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 2.34
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 3206,
+      "total_passes": 2359,
+      "total_fails": 768,
+      "pass_rate": 73.58,
+      "avg_mileage": 115931.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 2.07
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 6233,
+      "total_passes": 4562,
+      "total_fails": 1392,
+      "pass_rate": 73.19,
+      "avg_mileage": 122569.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 1.68
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 4293,
+      "total_passes": 3132,
+      "total_fails": 832,
+      "pass_rate": 72.96,
+      "avg_mileage": 62133.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 1.45
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 3757,
+      "total_passes": 2717,
+      "total_fails": 943,
+      "pass_rate": 72.32,
+      "avg_mileage": 109180.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 0.81
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 2533,
+      "total_passes": 1830,
+      "total_fails": 631,
+      "pass_rate": 72.25,
+      "avg_mileage": 123300.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 0.74
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 196,
+      "total_passes": 141,
+      "total_fails": 48,
+      "pass_rate": 71.94,
+      "avg_mileage": 118414.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": 0.43
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 415,
+      "total_passes": 295,
+      "total_fails": 89,
+      "pass_rate": 71.08,
+      "avg_mileage": 109422.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -0.43
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 358,
+      "total_passes": 254,
+      "total_fails": 80,
+      "pass_rate": 70.95,
+      "avg_mileage": 112914.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -0.56
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 411,
+      "total_passes": 291,
+      "total_fails": 95,
+      "pass_rate": 70.8,
+      "avg_mileage": 148297.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -0.71
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 2634,
+      "total_passes": 1864,
+      "total_fails": 671,
+      "pass_rate": 70.77,
+      "avg_mileage": 132464.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -0.74
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 6775,
+      "total_passes": 4783,
+      "total_fails": 1713,
+      "pass_rate": 70.6,
+      "avg_mileage": 130013.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -0.91
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1091,
+      "total_passes": 770,
+      "total_fails": 273,
+      "pass_rate": 70.58,
+      "avg_mileage": 119687.0,
+      "avg_age_years": 17.3,
+      "pass_rate_vs_national": -0.93
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 816,
+      "total_passes": 575,
+      "total_fails": 199,
+      "pass_rate": 70.47,
+      "avg_mileage": 121281.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -1.05
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 4680,
+      "total_passes": 3296,
+      "total_fails": 1128,
+      "pass_rate": 70.43,
+      "avg_mileage": 115514.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -1.08
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 295,
+      "total_passes": 207,
+      "total_fails": 79,
+      "pass_rate": 70.17,
+      "avg_mileage": 141551.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": -1.34
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 3571,
+      "total_passes": 2496,
+      "total_fails": 934,
+      "pass_rate": 69.9,
+      "avg_mileage": 137554.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -1.61
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 3815,
+      "total_passes": 2666,
+      "total_fails": 844,
+      "pass_rate": 69.88,
+      "avg_mileage": 67734.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -1.63
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 612,
+      "total_passes": 425,
+      "total_fails": 160,
+      "pass_rate": 69.44,
+      "avg_mileage": 124876.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -2.07
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 931,
+      "total_passes": 645,
+      "total_fails": 243,
+      "pass_rate": 69.28,
+      "avg_mileage": 121841.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -2.23
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1268,
+      "total_passes": 876,
+      "total_fails": 342,
+      "pass_rate": 69.09,
+      "avg_mileage": 126256.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -2.43
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 3894,
+      "total_passes": 2689,
+      "total_fails": 941,
+      "pass_rate": 69.05,
+      "avg_mileage": 78187.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -2.46
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 798,
+      "total_passes": 551,
+      "total_fails": 211,
+      "pass_rate": 69.05,
+      "avg_mileage": 122467.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -2.46
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1131,
+      "total_passes": 775,
+      "total_fails": 267,
+      "pass_rate": 68.52,
+      "avg_mileage": 116922.0,
+      "avg_age_years": 16.6,
+      "pass_rate_vs_national": -2.99
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 974,
+      "total_passes": 667,
+      "total_fails": 250,
+      "pass_rate": 68.48,
+      "avg_mileage": 130902.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -3.03
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 491,
+      "total_passes": 336,
+      "total_fails": 124,
+      "pass_rate": 68.43,
+      "avg_mileage": 139347.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -3.08
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 2147,
+      "total_passes": 1468,
+      "total_fails": 589,
+      "pass_rate": 68.37,
+      "avg_mileage": 146382.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -3.14
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 3952,
+      "total_passes": 2691,
+      "total_fails": 1018,
+      "pass_rate": 68.09,
+      "avg_mileage": 80934.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -3.42
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 14263,
+      "total_passes": 9695,
+      "total_fails": 3679,
+      "pass_rate": 67.97,
+      "avg_mileage": 114812.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -3.54
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 4607,
+      "total_passes": 3123,
+      "total_fails": 1172,
+      "pass_rate": 67.79,
+      "avg_mileage": 123240.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -3.72
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 158,
+      "total_passes": 107,
+      "total_fails": 36,
+      "pass_rate": 67.72,
+      "avg_mileage": 100017.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -3.79
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 805,
+      "total_passes": 545,
+      "total_fails": 223,
+      "pass_rate": 67.7,
+      "avg_mileage": 125172.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -3.81
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 10194,
+      "total_passes": 6893,
+      "total_fails": 2651,
+      "pass_rate": 67.62,
+      "avg_mileage": 120953.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -3.89
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 2424,
+      "total_passes": 1639,
+      "total_fails": 675,
+      "pass_rate": 67.62,
+      "avg_mileage": 140001.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -3.9
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 3688,
+      "total_passes": 2483,
+      "total_fails": 993,
+      "pass_rate": 67.33,
+      "avg_mileage": 93672.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -4.18
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 3925,
+      "total_passes": 2620,
+      "total_fails": 1072,
+      "pass_rate": 66.75,
+      "avg_mileage": 98945.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -4.76
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 5467,
+      "total_passes": 3642,
+      "total_fails": 1513,
+      "pass_rate": 66.62,
+      "avg_mileage": 134631.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -4.89
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 5604,
+      "total_passes": 3726,
+      "total_fails": 1492,
+      "pass_rate": 66.49,
+      "avg_mileage": 131606.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -5.02
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 2330,
+      "total_passes": 1538,
+      "total_fails": 702,
+      "pass_rate": 66.01,
+      "avg_mileage": 148241.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -5.5
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 2652,
+      "total_passes": 1750,
+      "total_fails": 697,
+      "pass_rate": 65.99,
+      "avg_mileage": 144044.0,
+      "avg_age_years": 17.3,
+      "pass_rate_vs_national": -5.52
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 3465,
+      "total_passes": 2285,
+      "total_fails": 976,
+      "pass_rate": 65.95,
+      "avg_mileage": 86500.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -5.57
+    },
+    {
+      "model": "RANGE ROVER SPORT",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 5155,
+      "total_passes": 3397,
+      "total_fails": 1401,
+      "pass_rate": 65.9,
+      "avg_mileage": 139941.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -5.61
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 4106,
+      "total_passes": 2684,
+      "total_fails": 1202,
+      "pass_rate": 65.37,
+      "avg_mileage": 111083.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -6.14
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 1910,
+      "total_passes": 1242,
+      "total_fails": 576,
+      "pass_rate": 65.03,
+      "avg_mileage": 151277.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -6.48
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 4202,
+      "total_passes": 2731,
+      "total_fails": 1220,
+      "pass_rate": 64.99,
+      "avg_mileage": 117625.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -6.52
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 3718,
+      "total_passes": 2413,
+      "total_fails": 1102,
+      "pass_rate": 64.9,
+      "avg_mileage": 104590.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -6.61
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 2538,
+      "total_passes": 1641,
+      "total_fails": 723,
+      "pass_rate": 64.66,
+      "avg_mileage": 158583.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -6.85
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 5415,
+      "total_passes": 3488,
+      "total_fails": 1556,
+      "pass_rate": 64.41,
+      "avg_mileage": 143920.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -7.1
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 4330,
+      "total_passes": 2761,
+      "total_fails": 1319,
+      "pass_rate": 63.76,
+      "avg_mileage": 124721.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -7.75
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 176,
+      "total_passes": 112,
+      "total_fails": 55,
+      "pass_rate": 63.64,
+      "avg_mileage": 107059.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -7.87
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 3828,
+      "total_passes": 2432,
+      "total_fails": 1180,
+      "pass_rate": 63.53,
+      "avg_mileage": 128868.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -7.98
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 6062,
+      "total_passes": 3844,
+      "total_fails": 1811,
+      "pass_rate": 63.41,
+      "avg_mileage": 146497.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -8.1
+    },
+    {
+      "model": "RANGE ROVER",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 839,
+      "total_passes": 532,
+      "total_fails": 270,
+      "pass_rate": 63.41,
+      "avg_mileage": 153336.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -8.1
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 3153,
+      "total_passes": 1995,
+      "total_fails": 975,
+      "pass_rate": 63.27,
+      "avg_mileage": 128619.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -8.24
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 7434,
+      "total_passes": 4703,
+      "total_fails": 2197,
+      "pass_rate": 63.26,
+      "avg_mileage": 147709.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -8.25
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 6757,
+      "total_passes": 4272,
+      "total_fails": 2086,
+      "pass_rate": 63.22,
+      "avg_mileage": 148342.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -8.29
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 4972,
+      "total_passes": 3136,
+      "total_fails": 1534,
+      "pass_rate": 63.07,
+      "avg_mileage": 152898.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -8.44
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 8302,
+      "total_passes": 5225,
+      "total_fails": 2516,
+      "pass_rate": 62.94,
+      "avg_mileage": 160059.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -8.57
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 11488,
+      "total_passes": 7199,
+      "total_fails": 3507,
+      "pass_rate": 62.67,
+      "avg_mileage": 131326.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -8.85
+    },
+    {
+      "model": "DEFENDER",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 2980,
+      "total_passes": 1839,
+      "total_fails": 968,
+      "pass_rate": 61.71,
+      "avg_mileage": 131810.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -9.8
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 154,
+      "total_passes": 95,
+      "total_fails": 44,
+      "pass_rate": 61.69,
+      "avg_mileage": 111906.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -9.82
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 8534,
+      "total_passes": 5248,
+      "total_fails": 2643,
+      "pass_rate": 61.5,
+      "avg_mileage": 154656.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -10.02
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 161,
+      "total_passes": 99,
+      "total_fails": 55,
+      "pass_rate": 61.49,
+      "avg_mileage": 115278.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -10.02
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 3885,
+      "total_passes": 2387,
+      "total_fails": 1221,
+      "pass_rate": 61.44,
+      "avg_mileage": 153002.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -10.07
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 14731,
+      "total_passes": 9039,
+      "total_fails": 4626,
+      "pass_rate": 61.36,
+      "avg_mileage": 137877.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -10.15
+    },
+    {
+      "model": "DISCOVERY",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 151,
+      "total_passes": 92,
+      "total_fails": 55,
+      "pass_rate": 60.93,
+      "avg_mileage": 123177.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -10.58
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 553,
+      "total_passes": 318,
+      "total_fails": 197,
+      "pass_rate": 57.5,
+      "avg_mileage": 104034.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -14.01
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 458,
+      "total_passes": 253,
+      "total_fails": 170,
+      "pass_rate": 55.24,
+      "avg_mileage": 100726.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -16.27
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 332,
+      "total_passes": 183,
+      "total_fails": 126,
+      "pass_rate": 55.12,
+      "avg_mileage": 132951.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -16.39
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 698,
+      "total_passes": 381,
+      "total_fails": 263,
+      "pass_rate": 54.58,
+      "avg_mileage": 105779.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -16.93
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 2352,
+      "total_passes": 1260,
+      "total_fails": 918,
+      "pass_rate": 53.57,
+      "avg_mileage": 140842.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -17.94
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 1017,
+      "total_passes": 543,
+      "total_fails": 387,
+      "pass_rate": 53.39,
+      "avg_mileage": 136206.0,
+      "avg_age_years": 21.4,
+      "pass_rate_vs_national": -18.12
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 3276,
+      "total_passes": 1731,
+      "total_fails": 1294,
+      "pass_rate": 52.84,
+      "avg_mileage": 135422.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -18.67
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 7420,
+      "total_passes": 3895,
+      "total_fails": 2909,
+      "pass_rate": 52.49,
+      "avg_mileage": 125723.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -19.02
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 5144,
+      "total_passes": 2672,
+      "total_fails": 2063,
+      "pass_rate": 51.94,
+      "avg_mileage": 130168.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -19.57
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 249,
+      "total_passes": 129,
+      "total_fails": 101,
+      "pass_rate": 51.81,
+      "avg_mileage": 97075.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -19.7
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 882,
+      "total_passes": 456,
+      "total_fails": 357,
+      "pass_rate": 51.7,
+      "avg_mileage": 101839.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -19.81
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 6289,
+      "total_passes": 3234,
+      "total_fails": 2551,
+      "pass_rate": 51.42,
+      "avg_mileage": 127820.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -20.09
+    },
+    {
+      "model": "FREELANDER",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1031,
+      "total_passes": 530,
+      "total_fails": 420,
+      "pass_rate": 51.41,
+      "avg_mileage": 101412.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -20.1
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "RANGE ROVER SPORT",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 168,
+        "avg_vs_national": 20.49,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.36,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.49,
+          "total_tests": 168,
+          "avg_mileage": 92272.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.36,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.49,
+          "total_tests": 168,
+          "avg_mileage": 92272.0
+        }
+      },
+      {
+        "model": "RANGE ROVER",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 170,
+        "avg_vs_national": 18.37,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.24,
+          "national_pass_rate": 59.87,
+          "vs_national": 18.37,
+          "total_tests": 170,
+          "avg_mileage": 110130.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.24,
+          "national_pass_rate": 59.87,
+          "vs_national": 18.37,
+          "total_tests": 170,
+          "avg_mileage": 110130.0
+        }
+      },
+      {
+        "model": "RANGE ROVER",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 147,
+        "avg_vs_national": 17.53,
+        "durability_trend": 10.32,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 89.19,
+          "national_pass_rate": 66.54,
+          "vs_national": 22.65,
+          "total_tests": 74,
+          "avg_mileage": 77688.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 83.56,
+          "national_pass_rate": 71.23,
+          "vs_national": 12.33,
+          "total_tests": 73,
+          "avg_mileage": 64417.0
+        }
+      },
+      {
+        "model": "RANGE ROVER",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 349,
+        "avg_vs_national": 17.0,
+        "durability_trend": 8.2,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.3,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.43,
+          "total_tests": 203,
+          "avg_mileage": 92744.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 78.77,
+          "national_pass_rate": 66.54,
+          "vs_national": 12.23,
+          "total_tests": 146,
+          "avg_mileage": 92909.0
+        }
+      },
+      {
+        "model": "RANGE ROVER SPORT",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 284,
+        "avg_vs_national": 16.63,
+        "durability_trend": -1.48,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 83.97,
+          "national_pass_rate": 66.54,
+          "vs_national": 17.43,
+          "total_tests": 131,
+          "avg_mileage": 88552.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 75.82,
+          "national_pass_rate": 59.87,
+          "vs_national": 15.95,
+          "total_tests": 153,
+          "avg_mileage": 92295.0
+        }
+      },
+      {
+        "model": "RANGE ROVER SPORT",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 124,
+        "avg_vs_national": 15.75,
+        "durability_trend": 12.26,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 88.52,
+          "national_pass_rate": 66.54,
+          "vs_national": 21.98,
+          "total_tests": 61,
+          "avg_mileage": 80623.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 80.95,
+          "national_pass_rate": 71.23,
+          "vs_national": 9.72,
+          "total_tests": 63,
+          "avg_mileage": 77136.0
+        }
+      },
+      {
+        "model": "RANGE ROVER",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 258,
+        "avg_vs_national": 15.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 75.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 15.71,
+          "total_tests": 258,
+          "avg_mileage": 101874.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 75.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 15.71,
+          "total_tests": 258,
+          "avg_mileage": 101874.0
+        }
+      },
+      {
+        "model": "RANGE ROVER SPORT",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 218,
+        "avg_vs_national": 14.65,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 81.19,
+          "national_pass_rate": 66.54,
+          "vs_national": 14.65,
+          "total_tests": 218,
+          "avg_mileage": 81020.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 81.19,
+          "national_pass_rate": 66.54,
+          "vs_national": 14.65,
+          "total_tests": 218,
+          "avg_mileage": 81020.0
+        }
+      },
+      {
+        "model": "RANGE ROVER",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 566,
+        "avg_vs_national": 13.98,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 73.85,
+          "national_pass_rate": 59.87,
+          "vs_national": 13.98,
+          "total_tests": 566,
+          "avg_mileage": 123835.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 73.85,
+          "national_pass_rate": 59.87,
+          "vs_national": 13.98,
+          "total_tests": 566,
+          "avg_mileage": 123835.0
+        }
+      },
+      {
+        "model": "RANGE ROVER EVOQUE",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 204,
+        "avg_vs_national": 13.57,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 84.8,
+          "national_pass_rate": 71.23,
+          "vs_national": 13.57,
+          "total_tests": 204,
+          "avg_mileage": 62529.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 84.8,
+          "national_pass_rate": 71.23,
+          "vs_national": 13.57,
+          "total_tests": 204,
+          "avg_mileage": 62529.0
+        }
+      },
+      {
+        "model": "RANGE ROVER SPORT",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 384,
+        "avg_vs_national": 13.53,
+        "durability_trend": 5.49,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 87.5,
+          "national_pass_rate": 71.23,
+          "vs_national": 16.27,
+          "total_tests": 192,
+          "avg_mileage": 67535.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 88.02,
+          "national_pass_rate": 77.24,
+          "vs_national": 10.78,
+          "total_tests": 192,
+          "avg_mileage": 64499.0
+        }
+      },
+      {
+        "model": "SPORT",
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 140,
+        "avg_vs_national": 13.32,
+        "durability_trend": 2.11,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 85.71,
+          "national_pass_rate": 71.23,
+          "vs_national": 14.48,
+          "total_tests": 63,
+          "avg_mileage": 83070.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 89.61,
+          "national_pass_rate": 77.24,
+          "vs_national": 12.37,
+          "total_tests": 77,
+          "avg_mileage": 81435.0
+        }
+      },
+      {
+        "model": "RANGE ROVER",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 2533,
+        "avg_vs_national": 12.38,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 72.25,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.38,
+          "total_tests": 2533,
+          "avg_mileage": 123300.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 72.25,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.38,
+          "total_tests": 2533,
+          "avg_mileage": 123300.0
+        }
+      },
+      {
+        "model": "DISCOVERY",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 196,
+        "avg_vs_national": 12.07,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 71.94,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.07,
+          "total_tests": 196,
+          "avg_mileage": 118414.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 71.94,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.07,
+          "total_tests": 196,
+          "avg_mileage": 118414.0
+        }
+      },
+      {
+        "model": "RANGE ROVER SPORT",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 228,
+        "avg_vs_national": 11.66,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 82.89,
+          "national_pass_rate": 71.23,
+          "vs_national": 11.66,
+          "total_tests": 228,
+          "avg_mileage": 71855.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 82.89,
+          "national_pass_rate": 71.23,
+          "vs_national": 11.66,
+          "total_tests": 228,
+          "avg_mileage": 71855.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "DISCOVERY SPORT R-DYNAMIC S A",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 131,
+        "avg_vs_national": -11.62,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 74.81,
+          "national_pass_rate": 86.43,
+          "vs_national": -11.62,
+          "total_tests": 131,
+          "avg_mileage": 25612.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 74.81,
+          "national_pass_rate": 86.43,
+          "vs_national": -11.62,
+          "total_tests": 131,
+          "avg_mileage": 25612.0
+        }
+      },
+      {
+        "model": "FREELANDER",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 1031,
+        "avg_vs_national": -8.46,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.41,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.46,
+          "total_tests": 1031,
+          "avg_mileage": 101412.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.41,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.46,
+          "total_tests": 1031,
+          "avg_mileage": 101412.0
+        }
+      },
+      {
+        "model": "FREELANDER",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 6289,
+        "avg_vs_national": -8.45,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.42,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.45,
+          "total_tests": 6289,
+          "avg_mileage": 127820.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.42,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.45,
+          "total_tests": 6289,
+          "avg_mileage": 127820.0
+        }
+      },
+      {
+        "model": "FREELANDER",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 882,
+        "avg_vs_national": -8.17,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.7,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.17,
+          "total_tests": 882,
+          "avg_mileage": 101839.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.7,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.17,
+          "total_tests": 882,
+          "avg_mileage": 101839.0
+        }
+      },
+      {
+        "model": "FREELANDER",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 249,
+        "avg_vs_national": -8.06,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.81,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.06,
+          "total_tests": 249,
+          "avg_mileage": 97075.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.81,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.06,
+          "total_tests": 249,
+          "avg_mileage": 97075.0
+        }
+      },
+      {
+        "model": "FREELANDER",
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 5144,
+        "avg_vs_national": -7.93,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.94,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.93,
+          "total_tests": 5144,
+          "avg_mileage": 130168.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.94,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.93,
+          "total_tests": 5144,
+          "avg_mileage": 130168.0
+        }
+      },
+      {
+        "model": "FREELANDER",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 7420,
+        "avg_vs_national": -7.38,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.49,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.38,
+          "total_tests": 7420,
+          "avg_mileage": 125723.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.49,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.38,
+          "total_tests": 7420,
+          "avg_mileage": 125723.0
+        }
+      },
+      {
+        "model": "DISCOVERY SPORT R-DYNAMIC SE A",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 125,
+        "avg_vs_national": -7.23,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 79.2,
+          "national_pass_rate": 86.43,
+          "vs_national": -7.23,
+          "total_tests": 125,
+          "avg_mileage": 26526.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 79.2,
+          "national_pass_rate": 86.43,
+          "vs_national": -7.23,
+          "total_tests": 125,
+          "avg_mileage": 26526.0
+        }
+      },
+      {
+        "model": "FREELANDER",
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 3276,
+        "avg_vs_national": -7.03,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.84,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.03,
+          "total_tests": 3276,
+          "avg_mileage": 135422.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.84,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.03,
+          "total_tests": 3276,
+          "avg_mileage": 135422.0
+        }
+      },
+      {
+        "model": "DISCOVERY SPORT R-DYN S D A",
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 382,
+        "avg_vs_national": -6.85,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 79.58,
+          "national_pass_rate": 86.43,
+          "vs_national": -6.85,
+          "total_tests": 382,
+          "avg_mileage": 30003.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 79.58,
+          "national_pass_rate": 86.43,
+          "vs_national": -6.85,
+          "total_tests": 382,
+          "avg_mileage": 30003.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 168,
+          "tests": 277212
+        },
+        "maturing": {
+          "vehicles": 48,
+          "tests": 235478
+        },
+        "proven": {
+          "vehicles": 98,
+          "tests": 309043
+        }
+      },
+      "proven_vehicles_tested": 103,
+      "proven_above_average_pct": 88.3,
+      "proven_avg_vs_national": 8.9,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "RANGE ROVER SPORT",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 168,
+          "pass_rate": 80.36,
+          "vs_national_at_age": 23.06,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 92272.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 203,
+          "pass_rate": 80.3,
+          "vs_national_at_age": 23.0,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 92744.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 170,
+          "pass_rate": 78.24,
+          "vs_national_at_age": 20.94,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 110130.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER SPORT",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 153,
+          "pass_rate": 75.82,
+          "vs_national_at_age": 18.52,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 92295.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER SPORT",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 218,
+          "pass_rate": 81.19,
+          "vs_national_at_age": 18.36,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 81020.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 258,
+          "pass_rate": 75.58,
+          "vs_national_at_age": 18.28,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 101874.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER SPORT",
+          "model_year": 2010,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2824,
+          "pass_rate": 73.97,
+          "vs_national_at_age": 16.67,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 111223.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 566,
+          "pass_rate": 73.85,
+          "vs_national_at_age": 16.55,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 123835.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER SPORT",
+          "model_year": 2012,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 3004,
+          "pass_rate": 78.89,
+          "vs_national_at_age": 16.06,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 98094.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2010,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1539,
+          "pass_rate": 73.23,
+          "vs_national_at_age": 15.93,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 116927.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 254,
+          "pass_rate": 78.35,
+          "vs_national_at_age": 15.52,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 75568.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 321,
+          "pass_rate": 77.88,
+          "vs_national_at_age": 15.05,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 83909.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2533,
+          "pass_rate": 72.25,
+          "vs_national_at_age": 14.95,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 123300.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DISCOVERY",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 196,
+          "pass_rate": 71.94,
+          "vs_national_at_age": 14.64,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 118414.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 240,
+          "pass_rate": 77.08,
+          "vs_national_at_age": 14.25,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 89872.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "FREELANDER",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1031,
+          "pass_rate": 51.41,
+          "vs_national_at_age": -5.89,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 101412.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 6289,
+          "pass_rate": 51.42,
+          "vs_national_at_age": -5.88,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 127820.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 882,
+          "pass_rate": 51.7,
+          "vs_national_at_age": -5.6,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 101839.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2000,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 249,
+          "pass_rate": 51.81,
+          "vs_national_at_age": -5.49,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 97075.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2004,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 5144,
+          "pass_rate": 51.94,
+          "vs_national_at_age": -5.36,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 130168.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 7420,
+          "pass_rate": 52.49,
+          "vs_national_at_age": -4.81,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 125723.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2003,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 3276,
+          "pass_rate": 52.84,
+          "vs_national_at_age": -4.46,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 135422.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2001,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1017,
+          "pass_rate": 53.39,
+          "vs_national_at_age": -3.91,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 136206.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2002,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2352,
+          "pass_rate": 53.57,
+          "vs_national_at_age": -3.73,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 140842.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FREELANDER",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 698,
+          "pass_rate": 54.58,
+          "vs_national_at_age": -2.72,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 105779.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "RANGE ROVER EVOQUE",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 680,
+          "pass_rate": 91.18,
+          "vs_national_at_age": 9.98,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 36283.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 302,
+          "pass_rate": 90.4,
+          "vs_national_at_age": 9.2,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 32990.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2018,
+          "fuel_type": "HY",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 131,
+          "pass_rate": 89.31,
+          "vs_national_at_age": 8.11,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 45160.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE R-DYN HSE A",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 115,
+          "pass_rate": 93.91,
+          "vs_national_at_age": 8.06,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 17330.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE HSE AUTO",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 128,
+          "pass_rate": 93.75,
+          "vs_national_at_age": 7.9,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 21632.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 256,
+          "pass_rate": 88.67,
+          "vs_national_at_age": 7.47,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 39830.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "R ROVER VELAR R-DYN SE D275 A",
+          "model_year": 2019,
+          "fuel_type": "DI",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 117,
+          "pass_rate": 93.16,
+          "vs_national_at_age": 7.31,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 36218.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER",
+          "model_year": 2018,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 2004,
+          "pass_rate": 88.17,
+          "vs_national_at_age": 6.97,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 51553.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE R-DYN SE A",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 194,
+          "pass_rate": 92.78,
+          "vs_national_at_age": 6.93,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 21367.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "RANGE ROVER EVOQUE S AUTO",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 377,
+          "pass_rate": 92.57,
+          "vs_national_at_age": 6.72,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 22643.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "RANGE": {
+        "core_model": "RANGE",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 87.51,
+                "vs_national": 1.66,
+                "total_tests": 26398,
+                "avg_mileage": 39659.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 86.94,
+                "vs_national": 1.09,
+                "total_tests": 43910,
+                "avg_mileage": 29834.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 88.64,
+                "vs_national": 2.79,
+                "total_tests": 8896,
+                "avg_mileage": 26143.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 84.95,
+                "vs_national": 3.75,
+                "total_tests": 22458,
+                "avg_mileage": 55218.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 85.45,
+                "vs_national": 4.25,
+                "total_tests": 42451,
+                "avg_mileage": 48991.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 86.29,
+                "vs_national": 5.09,
+                "total_tests": 17770,
+                "avg_mileage": 44042.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 81.66,
+                "vs_national": 6.53,
+                "total_tests": 16384,
+                "avg_mileage": 69366.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 81.97,
+                "vs_national": 6.84,
+                "total_tests": 36559,
+                "avg_mileage": 66019.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 83.01,
+                "vs_national": 7.88,
+                "total_tests": 19083,
+                "avg_mileage": 59822.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 76.25,
+                "vs_national": 8.01,
+                "total_tests": 12473,
+                "avg_mileage": 82196.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 78.67,
+                "vs_national": 10.43,
+                "total_tests": 28931,
+                "avg_mileage": 78621.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 80.53,
+                "vs_national": 12.29,
+                "total_tests": 14724,
+                "avg_mileage": 75179.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 75.28,
+                "vs_national": 12.45,
+                "total_tests": 4782,
+                "avg_mileage": 101290.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 74.94,
+                "vs_national": 12.11,
+                "total_tests": 13621,
+                "avg_mileage": 94202.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 76.48,
+                "vs_national": 13.65,
+                "total_tests": 11924,
+                "avg_mileage": 88681.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 69.99,
+                "vs_national": 12.69,
+                "total_tests": 1023,
+                "avg_mileage": 136587.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 67.98,
+                "vs_national": 10.68,
+                "total_tests": 1296,
+                "avg_mileage": 132260.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 66.89,
+                "vs_national": 9.59,
+                "total_tests": 1655,
+                "avg_mileage": 137309.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 66.21,
+                "vs_national": 8.91,
+                "total_tests": 2708,
+                "avg_mileage": 136872.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 66.94,
+                "vs_national": 9.64,
+                "total_tests": 3261,
+                "avg_mileage": 135041.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 67.82,
+                "vs_national": 10.52,
+                "total_tests": 6864,
+                "avg_mileage": 135254.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 67.02,
+                "vs_national": 9.72,
+                "total_tests": 9978,
+                "avg_mileage": 130780.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 68.29,
+                "vs_national": 10.99,
+                "total_tests": 10156,
+                "avg_mileage": 125604.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 69.06,
+                "vs_national": 11.76,
+                "total_tests": 7569,
+                "avg_mileage": 116463.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 71.43,
+                "vs_national": 14.13,
+                "total_tests": 7639,
+                "avg_mileage": 108240.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 74.06,
+                "vs_national": 16.76,
+                "total_tests": 4719,
+                "avg_mileage": 103297.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 16.76,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2003,
+          "vs_national": 8.91,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "RANGE ROVER": {
+        "core_model": "RANGE ROVER",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 87.51,
+                "vs_national": 1.66,
+                "total_tests": 26398,
+                "avg_mileage": 39659.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 86.94,
+                "vs_national": 1.09,
+                "total_tests": 43910,
+                "avg_mileage": 29834.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 88.64,
+                "vs_national": 2.79,
+                "total_tests": 8896,
+                "avg_mileage": 26143.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 84.95,
+                "vs_national": 3.75,
+                "total_tests": 22458,
+                "avg_mileage": 55218.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 85.45,
+                "vs_national": 4.25,
+                "total_tests": 42451,
+                "avg_mileage": 48991.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 86.29,
+                "vs_national": 5.09,
+                "total_tests": 17770,
+                "avg_mileage": 44042.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 81.66,
+                "vs_national": 6.53,
+                "total_tests": 16384,
+                "avg_mileage": 69366.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 81.97,
+                "vs_national": 6.84,
+                "total_tests": 36559,
+                "avg_mileage": 66019.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 83.01,
+                "vs_national": 7.88,
+                "total_tests": 19083,
+                "avg_mileage": 59822.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 76.25,
+                "vs_national": 8.01,
+                "total_tests": 12473,
+                "avg_mileage": 82196.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 78.67,
+                "vs_national": 10.43,
+                "total_tests": 28931,
+                "avg_mileage": 78621.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 80.53,
+                "vs_national": 12.29,
+                "total_tests": 14724,
+                "avg_mileage": 75179.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 75.28,
+                "vs_national": 12.45,
+                "total_tests": 4782,
+                "avg_mileage": 101290.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 74.94,
+                "vs_national": 12.11,
+                "total_tests": 13621,
+                "avg_mileage": 94202.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 76.48,
+                "vs_national": 13.65,
+                "total_tests": 11924,
+                "avg_mileage": 88681.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 69.99,
+                "vs_national": 12.69,
+                "total_tests": 1023,
+                "avg_mileage": 136587.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 67.98,
+                "vs_national": 10.68,
+                "total_tests": 1296,
+                "avg_mileage": 132260.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 66.89,
+                "vs_national": 9.59,
+                "total_tests": 1655,
+                "avg_mileage": 137309.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 66.21,
+                "vs_national": 8.91,
+                "total_tests": 2708,
+                "avg_mileage": 136872.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 66.94,
+                "vs_national": 9.64,
+                "total_tests": 3261,
+                "avg_mileage": 135041.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 67.82,
+                "vs_national": 10.52,
+                "total_tests": 6864,
+                "avg_mileage": 135254.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 67.02,
+                "vs_national": 9.72,
+                "total_tests": 9978,
+                "avg_mileage": 130780.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 68.29,
+                "vs_national": 10.99,
+                "total_tests": 10156,
+                "avg_mileage": 125604.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 69.06,
+                "vs_national": 11.76,
+                "total_tests": 7569,
+                "avg_mileage": 116463.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 71.43,
+                "vs_national": 14.13,
+                "total_tests": 7639,
+                "avg_mileage": 108240.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 74.06,
+                "vs_national": 16.76,
+                "total_tests": 4719,
+                "avg_mileage": 103297.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 16.76,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2003,
+          "vs_national": 8.91,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "DEFENDER": {
+        "core_model": "DEFENDER",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2020,
+                "pass_rate": 90.27,
+                "vs_national": 4.42,
+                "total_tests": 1038,
+                "avg_mileage": 29797.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 80.41,
+                "vs_national": -0.79,
+                "total_tests": 679,
+                "avg_mileage": 33077.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 78.0,
+                "vs_national": 2.87,
+                "total_tests": 3223,
+                "avg_mileage": 53715.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 79.12,
+                "vs_national": 3.99,
+                "total_tests": 6534,
+                "avg_mileage": 45221.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 85.05,
+                "vs_national": 9.92,
+                "total_tests": 1077,
+                "avg_mileage": 30874.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 70.49,
+                "vs_national": 2.25,
+                "total_tests": 2033,
+                "avg_mileage": 65108.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 72.96,
+                "vs_national": 4.72,
+                "total_tests": 4293,
+                "avg_mileage": 62133.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 74.66,
+                "vs_national": 6.42,
+                "total_tests": 2522,
+                "avg_mileage": 56493.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 68.38,
+                "vs_national": 5.55,
+                "total_tests": 2138,
+                "avg_mileage": 78764.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 69.05,
+                "vs_national": 6.22,
+                "total_tests": 3894,
+                "avg_mileage": 78187.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 69.19,
+                "vs_national": 6.36,
+                "total_tests": 1782,
+                "avg_mileage": 70731.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 61.71,
+                "vs_national": 4.41,
+                "total_tests": 2980,
+                "avg_mileage": 131810.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 63.27,
+                "vs_national": 5.97,
+                "total_tests": 3153,
+                "avg_mileage": 128619.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 63.53,
+                "vs_national": 6.23,
+                "total_tests": 3828,
+                "avg_mileage": 128868.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 63.76,
+                "vs_national": 6.46,
+                "total_tests": 4330,
+                "avg_mileage": 124721.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 64.99,
+                "vs_national": 7.69,
+                "total_tests": 4202,
+                "avg_mileage": 117625.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 65.37,
+                "vs_national": 8.07,
+                "total_tests": 4106,
+                "avg_mileage": 111083.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 64.9,
+                "vs_national": 7.6,
+                "total_tests": 3718,
+                "avg_mileage": 104590.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 66.75,
+                "vs_national": 9.45,
+                "total_tests": 3925,
+                "avg_mileage": 98945.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 67.33,
+                "vs_national": 10.03,
+                "total_tests": 3688,
+                "avg_mileage": 93672.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 65.95,
+                "vs_national": 8.65,
+                "total_tests": 3465,
+                "avg_mileage": 86500.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 67.75,
+                "vs_national": 10.45,
+                "total_tests": 1814,
+                "avg_mileage": 83492.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 10.45,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2000,
+          "vs_national": 4.41,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "R ROVER EVOQUE R-DYN HSE D A": {
+        "core_model": "R ROVER EVOQUE R-DYN HSE D A",
+        "years_covered": [
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2019,
+                "pass_rate": 87.05,
+                "vs_national": 1.2,
+                "total_tests": 1784,
+                "avg_mileage": 28508.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 88.6,
+                "vs_national": 2.75,
+                "total_tests": 465,
+                "avg_mileage": 24178.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "FREELANDER": {
+        "core_model": "FREELANDER",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014
+        ],
+        "trajectory_by_age": {
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 80.61,
+                "vs_national": 5.48,
+                "total_tests": 6230,
+                "avg_mileage": 76405.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 76.78,
+                "vs_national": 8.54,
+                "total_tests": 5745,
+                "avg_mileage": 93978.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 75.66,
+                "vs_national": 7.42,
+                "total_tests": 13284,
+                "avg_mileage": 90462.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 77.77,
+                "vs_national": 9.53,
+                "total_tests": 5451,
+                "avg_mileage": 83464.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 69.33,
+                "vs_national": 6.5,
+                "total_tests": 7177,
+                "avg_mileage": 111673.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 74.21,
+                "vs_national": 11.38,
+                "total_tests": 12391,
+                "avg_mileage": 107393.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 73.43,
+                "vs_national": 10.6,
+                "total_tests": 4761,
+                "avg_mileage": 100654.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 53.7,
+                "vs_national": -3.6,
+                "total_tests": 581,
+                "avg_mileage": 115013.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 53.96,
+                "vs_national": -3.34,
+                "total_tests": 1475,
+                "avg_mileage": 118466.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 54.32,
+                "vs_national": -2.98,
+                "total_tests": 2905,
+                "avg_mileage": 122438.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 53.15,
+                "vs_national": -4.15,
+                "total_tests": 3974,
+                "avg_mileage": 120601.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 51.85,
+                "vs_national": -5.45,
+                "total_tests": 6175,
+                "avg_mileage": 115790.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 51.45,
+                "vs_national": -5.85,
+                "total_tests": 7171,
+                "avg_mileage": 114830.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 52.49,
+                "vs_national": -4.81,
+                "total_tests": 7420,
+                "avg_mileage": 125723.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 61.59,
+                "vs_national": 4.29,
+                "total_tests": 15089,
+                "avg_mileage": 125396.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 62.67,
+                "vs_national": 5.37,
+                "total_tests": 11488,
+                "avg_mileage": 131326.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 67.62,
+                "vs_national": 10.32,
+                "total_tests": 10194,
+                "avg_mileage": 120953.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 66.6,
+                "vs_national": 9.3,
+                "total_tests": 7086,
+                "avg_mileage": 117992.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2011,
+          "vs_national": 11.38,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -5.85,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "DISCOVERY": {
+        "core_model": "DISCOVERY",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 84.28,
+                "vs_national": -1.57,
+                "total_tests": 17524,
+                "avg_mileage": 42845.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 83.87,
+                "vs_national": -1.98,
+                "total_tests": 24220,
+                "avg_mileage": 37507.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 85.93,
+                "vs_national": 0.08,
+                "total_tests": 4506,
+                "avg_mileage": 29899.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 82.52,
+                "vs_national": 1.32,
+                "total_tests": 17850,
+                "avg_mileage": 65677.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 83.27,
+                "vs_national": 2.07,
+                "total_tests": 33159,
+                "avg_mileage": 52241.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 83.27,
+                "vs_national": 2.07,
+                "total_tests": 10103,
+                "avg_mileage": 46978.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 78.99,
+                "vs_national": 3.86,
+                "total_tests": 4146,
+                "avg_mileage": 92619.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 81.19,
+                "vs_national": 6.06,
+                "total_tests": 24695,
+                "avg_mileage": 80438.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 80.05,
+                "vs_national": 4.92,
+                "total_tests": 14427,
+                "avg_mileage": 73178.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 74.78,
+                "vs_national": 6.54,
+                "total_tests": 3585,
+                "avg_mileage": 110558.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 75.12,
+                "vs_national": 6.88,
+                "total_tests": 6499,
+                "avg_mileage": 107435.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 76.51,
+                "vs_national": 8.27,
+                "total_tests": 3440,
+                "avg_mileage": 99791.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 70.98,
+                "vs_national": 8.15,
+                "total_tests": 3212,
+                "avg_mileage": 127520.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 73.19,
+                "vs_national": 10.36,
+                "total_tests": 6233,
+                "avg_mileage": 122569.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 73.91,
+                "vs_national": 11.08,
+                "total_tests": 3431,
+                "avg_mileage": 117631.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 64.45,
+                "vs_national": 7.15,
+                "total_tests": 2689,
+                "avg_mileage": 140880.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 61.44,
+                "vs_national": 4.14,
+                "total_tests": 4046,
+                "avg_mileage": 134140.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 63.03,
+                "vs_national": 5.73,
+                "total_tests": 5126,
+                "avg_mileage": 132402.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 63.42,
+                "vs_national": 6.12,
+                "total_tests": 6238,
+                "avg_mileage": 126778.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 63.47,
+                "vs_national": 6.17,
+                "total_tests": 6953,
+                "avg_mileage": 133378.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 63.19,
+                "vs_national": 5.89,
+                "total_tests": 8597,
+                "avg_mileage": 150805.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 61.5,
+                "vs_national": 4.2,
+                "total_tests": 8534,
+                "avg_mileage": 154656.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 63.26,
+                "vs_national": 5.96,
+                "total_tests": 7434,
+                "avg_mileage": 147709.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 64.41,
+                "vs_national": 7.11,
+                "total_tests": 5415,
+                "avg_mileage": 143920.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 66.62,
+                "vs_national": 9.32,
+                "total_tests": 5467,
+                "avg_mileage": 134631.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 70.25,
+                "vs_national": 12.95,
+                "total_tests": 3563,
+                "avg_mileage": 132261.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 12.95,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2001,
+          "vs_national": 4.14,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "R ROVER EVOQUE FIRST ED D A": {
+        "core_model": "R ROVER EVOQUE FIRST ED D A",
+        "years_covered": [
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2019,
+                "pass_rate": 88.02,
+                "vs_national": 2.17,
+                "total_tests": 1594,
+                "avg_mileage": 29249.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 90.36,
+                "vs_national": 4.51,
+                "total_tests": 332,
+                "avg_mileage": 24631.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "R ROVER EVOQUE FIRST EDITION A": {
+        "core_model": "R ROVER EVOQUE FIRST EDITION A",
+        "years_covered": [
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2019,
+                "pass_rate": 88.45,
+                "vs_national": 2.6,
+                "total_tests": 511,
+                "avg_mileage": 23775.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "R ROVER EVOQUE R-DYN S D 4X2": {
+        "core_model": "R ROVER EVOQUE R-DYN S D 4X2",
+        "years_covered": [
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2019,
+                "pass_rate": 84.89,
+                "vs_national": -0.96,
+                "total_tests": 655,
+                "avg_mileage": 28915.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 83.45,
+                "vs_national": -2.4,
+                "total_tests": 284,
+                "avg_mileage": 26540.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      }
+    }
+  }
+}

@@ -1,0 +1,7007 @@
+{
+  "meta": {
+    "make": "SEAT",
+    "generated_at": "2026-01-15T17:43:14.929876",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 33,
+    "make": "SEAT",
+    "total_tests": 544899,
+    "total_models": 683,
+    "avg_pass_rate": 73.76,
+    "weighted_pass_rate": 73.76,
+    "best_model": "ATECA XPERIENCE LUX TSI EVO SA 2020",
+    "best_model_pass_rate": 98.23,
+    "worst_model": "ALHAMBRA 2002",
+    "worst_model_pass_rate": 43.18,
+    "rank": 33
+  },
+  "competitors": [
+    {
+      "make": "SKODA",
+      "avg_pass_rate": 76.69,
+      "total_tests": 764629,
+      "rank": 28,
+      "total_models": 728
+    },
+    {
+      "make": "KIA",
+      "avg_pass_rate": 73.9,
+      "total_tests": 886213,
+      "rank": 32,
+      "total_models": 1057
+    },
+    {
+      "make": "SEAT",
+      "avg_pass_rate": 73.76,
+      "total_tests": 544899,
+      "rank": 33,
+      "total_models": 683
+    },
+    {
+      "make": "HYUNDAI",
+      "avg_pass_rate": 73.27,
+      "total_tests": 858542,
+      "rank": 34,
+      "total_models": 1000
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    }
+  ],
+  "summary": {
+    "total_tests": 544899,
+    "total_models": 683,
+    "avg_pass_rate": 73.76,
+    "rank": 33,
+    "rank_total": 75,
+    "best_model": "ATECA XPERIENCE LUX TSI EVO SA 2020",
+    "best_model_pass_rate": 98.23,
+    "worst_model": "ALHAMBRA 2002",
+    "worst_model_pass_rate": 43.18,
+    "vs_national": 2.25,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "TARACCO XCELLENCE TSI EVO S-A",
+      "total_tests": 254,
+      "total_passes": 226,
+      "total_fails": 22,
+      "pass_rate": 88.98,
+      "avg_mileage": 24930.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "TARACCO XCELLENCE TSI EVO S-A"
+    },
+    {
+      "core_model": "ATECA",
+      "total_tests": 39215,
+      "total_passes": 34879,
+      "total_fails": 3371,
+      "pass_rate": 88.94,
+      "avg_mileage": 33411.0,
+      "year_from": 2016,
+      "year_to": 2020,
+      "variant_count": 20,
+      "variants": "ATECA,ATECA FR BLACK EDITION TSI EVO,ATECA FR SPORT TSI EVO S-A,ATECA FR TSI EVO,ATECA FR TSI EVO S-A,ATECA SE TECHNOLOGY TSI EVO,ATECA SE TECHNOLOGY TSI EVO SA,ATECA XPERIENCE LUX TSI EVO,ATECA XPERIENCE LUX TSI EVO SA,ATECA XPERIENCE TSI EVO,ATECA XPERIENCE TSI EVO S-A"
+    },
+    {
+      "core_model": "ARONA",
+      "total_tests": 38466,
+      "total_passes": 33098,
+      "total_fails": 4421,
+      "pass_rate": 86.04,
+      "avg_mileage": 29897.0,
+      "year_from": 2017,
+      "year_to": 2021,
+      "variant_count": 8,
+      "variants": "ARONA"
+    },
+    {
+      "core_model": "TARRACO",
+      "total_tests": 6255,
+      "total_passes": 5349,
+      "total_fails": 762,
+      "pass_rate": 85.52,
+      "avg_mileage": 31455.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 4,
+      "variants": "TARRACO"
+    },
+    {
+      "core_model": "TARACCO SE TECH TSI EVO SA",
+      "total_tests": 161,
+      "total_passes": 135,
+      "total_fails": 21,
+      "pass_rate": 83.85,
+      "avg_mileage": 28582.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "TARACCO SE TECH TSI EVO SA"
+    },
+    {
+      "core_model": "TARACCO X-LNC LUX TSI EVO SA",
+      "total_tests": 243,
+      "total_passes": 202,
+      "total_fails": 36,
+      "pass_rate": 83.13,
+      "avg_mileage": 24973.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "TARACCO X-LNC LUX TSI EVO SA"
+    },
+    {
+      "core_model": "MII",
+      "total_tests": 17685,
+      "total_passes": 13973,
+      "total_fails": 2654,
+      "pass_rate": 79.01,
+      "avg_mileage": 39533.0,
+      "year_from": 2012,
+      "year_to": 2020,
+      "variant_count": 9,
+      "variants": "MII,MII EV"
+    },
+    {
+      "core_model": "LEON",
+      "total_tests": 184750,
+      "total_passes": 141578,
+      "total_fails": 34759,
+      "pass_rate": 76.63,
+      "avg_mileage": 77082.0,
+      "year_from": 2001,
+      "year_to": 2021,
+      "variant_count": 54,
+      "variants": "LEON,LEON FIRST EDITION ETSI EVO SA,LEON FR BLACK ED TSI EVO S-A,LEON FR BLACK EDITION TDI S-A,LEON FR BLACK EDITION TSI EVO,LEON FR ETSI S-A,LEON FR PHEV S-A,LEON FR TSI EVO,LEON SE DYNAMIC TSI,LEON SE DYNAMIC TSI EVO,LEON XCELLENCE LUX TDI S-A"
+    },
+    {
+      "core_model": "ALHAMBRA",
+      "total_tests": 28313,
+      "total_passes": 21092,
+      "total_fails": 5959,
+      "pass_rate": 74.5,
+      "avg_mileage": 102328.0,
+      "year_from": 2002,
+      "year_to": 2020,
+      "variant_count": 22,
+      "variants": "ALHAMBRA"
+    },
+    {
+      "core_model": "TOLEDO",
+      "total_tests": 5870,
+      "total_passes": 4139,
+      "total_fails": 1410,
+      "pass_rate": 70.51,
+      "avg_mileage": 106754.0,
+      "year_from": 2005,
+      "year_to": 2018,
+      "variant_count": 15,
+      "variants": "TOLEDO"
+    },
+    {
+      "core_model": "IBIZA",
+      "total_tests": 194333,
+      "total_passes": 128755,
+      "total_fails": 53274,
+      "pass_rate": 66.25,
+      "avg_mileage": 79441.0,
+      "year_from": 2001,
+      "year_to": 2021,
+      "variant_count": 41,
+      "variants": "IBIZA,IBIZA FR MPI,IBIZA FR SPORT MPI"
+    },
+    {
+      "core_model": "EXEO",
+      "total_tests": 5169,
+      "total_passes": 3399,
+      "total_fails": 1458,
+      "pass_rate": 65.76,
+      "avg_mileage": 127319.0,
+      "year_from": 2009,
+      "year_to": 2013,
+      "variant_count": 5,
+      "variants": "EXEO"
+    },
+    {
+      "core_model": "ALTEA",
+      "total_tests": 16589,
+      "total_passes": 9751,
+      "total_fails": 5613,
+      "pass_rate": 58.78,
+      "avg_mileage": 103937.0,
+      "year_from": 2004,
+      "year_to": 2015,
+      "variant_count": 28,
+      "variants": "ALTEA,ALTEA XL"
+    },
+    {
+      "core_model": "AROSA",
+      "total_tests": 1934,
+      "total_passes": 1090,
+      "total_fails": 666,
+      "pass_rate": 56.36,
+      "avg_mileage": 74353.0,
+      "year_from": 2000,
+      "year_to": 2004,
+      "variant_count": 5,
+      "variants": "AROSA"
+    }
+  ],
+  "model_year_breakdowns": {
+    "TARACCO XCELLENCE TSI EVO S-A": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 254,
+        "pass_rate": 88.98,
+        "avg_mileage": 24930.0,
+        "pass_rate_vs_national": 1.31,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "ATECA": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 884,
+        "pass_rate": 86.99,
+        "avg_mileage": 31229.0,
+        "pass_rate_vs_national": -0.68,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 6748,
+        "pass_rate": 90.92,
+        "avg_mileage": 23735.0,
+        "pass_rate_vs_national": 3.25,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 3441,
+        "pass_rate": 89.31,
+        "avg_mileage": 36666.0,
+        "pass_rate_vs_national": 3.1,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 7546,
+        "pass_rate": 90.52,
+        "avg_mileage": 30773.0,
+        "pass_rate_vs_national": 4.31,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 2868,
+        "pass_rate": 87.41,
+        "avg_mileage": 48092.0,
+        "pass_rate_vs_national": 3.17,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 6162,
+        "pass_rate": 89.14,
+        "avg_mileage": 39523.0,
+        "pass_rate_vs_national": 4.9,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 3211,
+        "pass_rate": 85.58,
+        "avg_mileage": 59006.0,
+        "pass_rate_vs_national": 3.9,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 6465,
+        "pass_rate": 87.83,
+        "avg_mileage": 46473.0,
+        "pass_rate_vs_national": 6.15,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1150,
+        "pass_rate": 86.87,
+        "avg_mileage": 61173.0,
+        "pass_rate_vs_national": 8.22,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 740,
+        "pass_rate": 87.3,
+        "avg_mileage": 54205.0,
+        "pass_rate_vs_national": 8.65,
+        "national_avg_for_year": 78.65
+      }
+    ],
+    "ARONA": [
+      {
+        "model_year": 2021,
+        "fuel_type": "PE",
+        "total_tests": 156,
+        "pass_rate": 90.38,
+        "avg_mileage": 20863.0,
+        "pass_rate_vs_national": -0.47,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 340,
+        "pass_rate": 89.12,
+        "avg_mileage": 27598.0,
+        "pass_rate_vs_national": 1.45,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 10410,
+        "pass_rate": 88.72,
+        "avg_mileage": 20403.0,
+        "pass_rate_vs_national": 1.05,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 2425,
+        "pass_rate": 84.45,
+        "avg_mileage": 32964.0,
+        "pass_rate_vs_national": -1.76,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 12386,
+        "pass_rate": 88.86,
+        "avg_mileage": 25954.0,
+        "pass_rate_vs_national": 2.65,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 2548,
+        "pass_rate": 80.14,
+        "avg_mileage": 40965.0,
+        "pass_rate_vs_national": -4.1,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 9588,
+        "pass_rate": 82.15,
+        "avg_mileage": 32295.0,
+        "pass_rate_vs_national": -2.09,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 613,
+        "pass_rate": 72.59,
+        "avg_mileage": 38130.0,
+        "pass_rate_vs_national": -9.09,
+        "national_avg_for_year": 81.68
+      }
+    ],
+    "TARRACO": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 1024,
+        "pass_rate": 87.99,
+        "avg_mileage": 28547.0,
+        "pass_rate_vs_national": 0.32,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 964,
+        "pass_rate": 83.2,
+        "avg_mileage": 27248.0,
+        "pass_rate_vs_national": -4.47,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 2341,
+        "pass_rate": 85.9,
+        "avg_mileage": 37531.0,
+        "pass_rate_vs_national": -0.31,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1926,
+        "pass_rate": 84.89,
+        "avg_mileage": 32493.0,
+        "pass_rate_vs_national": -1.32,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "TARACCO SE TECH TSI EVO SA": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 161,
+        "pass_rate": 83.85,
+        "avg_mileage": 28582.0,
+        "pass_rate_vs_national": -3.82,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "TARACCO X-LNC LUX TSI EVO SA": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 243,
+        "pass_rate": 83.13,
+        "avg_mileage": 24973.0,
+        "pass_rate_vs_national": -4.54,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "MII": [
+      {
+        "model_year": 2020,
+        "fuel_type": "EL",
+        "total_tests": 275,
+        "pass_rate": 85.45,
+        "avg_mileage": 14014.0,
+        "pass_rate_vs_national": -2.22,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1321,
+        "pass_rate": 89.7,
+        "avg_mileage": 20744.0,
+        "pass_rate_vs_national": 3.49,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1261,
+        "pass_rate": 85.01,
+        "avg_mileage": 26930.0,
+        "pass_rate_vs_national": 0.77,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 1477,
+        "pass_rate": 84.83,
+        "avg_mileage": 33098.0,
+        "pass_rate_vs_national": 3.15,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 2227,
+        "pass_rate": 78.9,
+        "avg_mileage": 39780.0,
+        "pass_rate_vs_national": 0.25,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 2697,
+        "pass_rate": 79.27,
+        "avg_mileage": 45983.0,
+        "pass_rate_vs_national": 3.78,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 3107,
+        "pass_rate": 78.6,
+        "avg_mileage": 52224.0,
+        "pass_rate_vs_national": 6.89,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 3542,
+        "pass_rate": 73.88,
+        "avg_mileage": 58858.0,
+        "pass_rate_vs_national": 5.59,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 1778,
+        "pass_rate": 71.65,
+        "avg_mileage": 64167.0,
+        "pass_rate_vs_national": 6.02,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "LEON": [
+      {
+        "model_year": 2021,
+        "fuel_type": "PE",
+        "total_tests": 219,
+        "pass_rate": 91.78,
+        "avg_mileage": 24971.0,
+        "pass_rate_vs_national": 0.93,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 1380,
+        "pass_rate": 80.65,
+        "avg_mileage": 37148.0,
+        "pass_rate_vs_national": -7.02,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 990,
+        "pass_rate": 88.08,
+        "avg_mileage": 25099.0,
+        "pass_rate_vs_national": 0.41,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 11054,
+        "pass_rate": 88.03,
+        "avg_mileage": 25732.0,
+        "pass_rate_vs_national": 0.36,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 3198,
+        "pass_rate": 77.89,
+        "avg_mileage": 44883.0,
+        "pass_rate_vs_national": -8.32,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 16187,
+        "pass_rate": 85.31,
+        "avg_mileage": 32643.0,
+        "pass_rate_vs_national": -0.9,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 4487,
+        "pass_rate": 81.66,
+        "avg_mileage": 56829.0,
+        "pass_rate_vs_national": -2.58,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 16712,
+        "pass_rate": 84.23,
+        "avg_mileage": 40635.0,
+        "pass_rate_vs_national": -0.01,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 5949,
+        "pass_rate": 81.27,
+        "avg_mileage": 65477.0,
+        "pass_rate_vs_national": -0.41,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 12324,
+        "pass_rate": 83.33,
+        "avg_mileage": 48737.0,
+        "pass_rate_vs_national": 1.65,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 6656,
+        "pass_rate": 80.41,
+        "avg_mileage": 76505.0,
+        "pass_rate_vs_national": 1.76,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 9293,
+        "pass_rate": 83.26,
+        "avg_mileage": 54956.0,
+        "pass_rate_vs_national": 4.61,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 8948,
+        "pass_rate": 78.59,
+        "avg_mileage": 85677.0,
+        "pass_rate_vs_national": 3.1,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 8343,
+        "pass_rate": 81.79,
+        "avg_mileage": 63213.0,
+        "pass_rate_vs_national": 6.3,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 11492,
+        "pass_rate": 77.53,
+        "avg_mileage": 94657.0,
+        "pass_rate_vs_national": 5.82,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 7465,
+        "pass_rate": 80.71,
+        "avg_mileage": 70162.0,
+        "pass_rate_vs_national": 9.0,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 7555,
+        "pass_rate": 72.84,
+        "avg_mileage": 99244.0,
+        "pass_rate_vs_national": 4.55,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 4213,
+        "pass_rate": 74.93,
+        "avg_mileage": 76210.0,
+        "pass_rate_vs_national": 6.64,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 7514,
+        "pass_rate": 68.11,
+        "avg_mileage": 104748.0,
+        "pass_rate_vs_national": 2.48,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 1734,
+        "pass_rate": 71.16,
+        "avg_mileage": 82576.0,
+        "pass_rate_vs_national": 5.53,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 4792,
+        "pass_rate": 64.84,
+        "avg_mileage": 115168.0,
+        "pass_rate_vs_national": 1.85,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 2198,
+        "pass_rate": 64.15,
+        "avg_mileage": 89384.0,
+        "pass_rate_vs_national": 1.16,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 4607,
+        "pass_rate": 62.45,
+        "avg_mileage": 121866.0,
+        "pass_rate_vs_national": 1.95,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 1712,
+        "pass_rate": 63.96,
+        "avg_mileage": 96285.0,
+        "pass_rate_vs_national": 3.46,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 3588,
+        "pass_rate": 59.84,
+        "avg_mileage": 124305.0,
+        "pass_rate_vs_national": 0.83,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 1882,
+        "pass_rate": 63.28,
+        "avg_mileage": 96379.0,
+        "pass_rate_vs_national": 4.27,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 3173,
+        "pass_rate": 58.08,
+        "avg_mileage": 131770.0,
+        "pass_rate_vs_national": 0.69,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 2232,
+        "pass_rate": 60.26,
+        "avg_mileage": 102811.0,
+        "pass_rate_vs_national": 2.87,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 3265,
+        "pass_rate": 59.11,
+        "avg_mileage": 137250.0,
+        "pass_rate_vs_national": 2.14,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 2017,
+        "pass_rate": 58.11,
+        "avg_mileage": 107980.0,
+        "pass_rate_vs_national": 1.14,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 2105,
+        "pass_rate": 53.25,
+        "avg_mileage": 140384.0,
+        "pass_rate_vs_national": -2.93,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 1428,
+        "pass_rate": 53.85,
+        "avg_mileage": 109557.0,
+        "pass_rate_vs_national": -2.33,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 984,
+        "pass_rate": 56.1,
+        "avg_mileage": 147754.0,
+        "pass_rate_vs_national": -0.15,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 1063,
+        "pass_rate": 61.05,
+        "avg_mileage": 112089.0,
+        "pass_rate_vs_national": 4.8,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 649,
+        "pass_rate": 57.78,
+        "avg_mileage": 157239.0,
+        "pass_rate_vs_national": 1.75,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 1075,
+        "pass_rate": 61.58,
+        "avg_mileage": 116758.0,
+        "pass_rate_vs_national": 5.55,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 271,
+        "pass_rate": 54.61,
+        "avg_mileage": 158143.0,
+        "pass_rate_vs_national": -2.07,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 1087,
+        "pass_rate": 61.09,
+        "avg_mileage": 121685.0,
+        "pass_rate_vs_national": 4.41,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 141,
+        "pass_rate": 62.41,
+        "avg_mileage": 146910.0,
+        "pass_rate_vs_national": 4.87,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 510,
+        "pass_rate": 61.57,
+        "avg_mileage": 116561.0,
+        "pass_rate_vs_national": 4.03,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 258,
+        "pass_rate": 63.95,
+        "avg_mileage": 120696.0,
+        "pass_rate_vs_national": 5.27,
+        "national_avg_for_year": 58.68
+      }
+    ],
+    "ALHAMBRA": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 743,
+        "pass_rate": 86.54,
+        "avg_mileage": 28449.0,
+        "pass_rate_vs_national": -1.13,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "pass_rate": 88.24,
+        "avg_mileage": 23296.0,
+        "pass_rate_vs_national": 0.57,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 2587,
+        "pass_rate": 84.96,
+        "avg_mileage": 40775.0,
+        "pass_rate_vs_national": -1.25,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 123,
+        "pass_rate": 79.67,
+        "avg_mileage": 32141.0,
+        "pass_rate_vs_national": -6.54,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 2491,
+        "pass_rate": 84.75,
+        "avg_mileage": 55851.0,
+        "pass_rate_vs_national": 0.51,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 6062,
+        "pass_rate": 81.57,
+        "avg_mileage": 73099.0,
+        "pass_rate_vs_national": -0.11,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 4165,
+        "pass_rate": 79.33,
+        "avg_mileage": 95040.0,
+        "pass_rate_vs_national": 0.68,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "pass_rate": 82.35,
+        "avg_mileage": 64542.0,
+        "pass_rate_vs_national": 3.7,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 2216,
+        "pass_rate": 75.32,
+        "avg_mileage": 101554.0,
+        "pass_rate_vs_national": -0.17,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 1907,
+        "pass_rate": 73.1,
+        "avg_mileage": 102186.0,
+        "pass_rate_vs_national": 1.39,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 1591,
+        "pass_rate": 69.83,
+        "avg_mileage": 101635.0,
+        "pass_rate_vs_national": 1.54,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 1430,
+        "pass_rate": 66.43,
+        "avg_mileage": 116740.0,
+        "pass_rate_vs_national": 0.8,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 1228,
+        "pass_rate": 63.52,
+        "avg_mileage": 121376.0,
+        "pass_rate_vs_national": 0.53,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 386,
+        "pass_rate": 57.51,
+        "avg_mileage": 132273.0,
+        "pass_rate_vs_national": -2.99,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 367,
+        "pass_rate": 50.68,
+        "avg_mileage": 136634.0,
+        "pass_rate_vs_national": -8.33,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 543,
+        "pass_rate": 46.41,
+        "avg_mileage": 140876.0,
+        "pass_rate_vs_national": -10.98,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 515,
+        "pass_rate": 46.99,
+        "avg_mileage": 138802.0,
+        "pass_rate_vs_national": -9.98,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 466,
+        "pass_rate": 47.21,
+        "avg_mileage": 146127.0,
+        "pass_rate_vs_national": -8.97,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 394,
+        "pass_rate": 47.46,
+        "avg_mileage": 150486.0,
+        "pass_rate_vs_national": -8.79,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 475,
+        "pass_rate": 45.47,
+        "avg_mileage": 150400.0,
+        "pass_rate_vs_national": -10.56,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 303,
+        "pass_rate": 45.87,
+        "avg_mileage": 152054.0,
+        "pass_rate_vs_national": -10.81,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 117,
+        "pass_rate": 43.59,
+        "avg_mileage": 146888.0,
+        "pass_rate_vs_national": -13.95,
+        "national_avg_for_year": 57.54
+      }
+    ],
+    "TOLEDO": [
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 141,
+        "pass_rate": 78.01,
+        "avg_mileage": 138374.0,
+        "pass_rate_vs_national": -6.23,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1004,
+        "pass_rate": 80.98,
+        "avg_mileage": 40872.0,
+        "pass_rate_vs_national": -3.26,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 281,
+        "pass_rate": 71.89,
+        "avg_mileage": 135366.0,
+        "pass_rate_vs_national": -9.79,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 482,
+        "pass_rate": 77.59,
+        "avg_mileage": 46352.0,
+        "pass_rate_vs_national": -4.09,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 422,
+        "pass_rate": 72.04,
+        "avg_mileage": 139247.0,
+        "pass_rate_vs_national": -6.61,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 201,
+        "pass_rate": 79.6,
+        "avg_mileage": 54561.0,
+        "pass_rate_vs_national": 0.95,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 553,
+        "pass_rate": 67.63,
+        "avg_mileage": 152658.0,
+        "pass_rate_vs_national": -7.86,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 277,
+        "pass_rate": 74.01,
+        "avg_mileage": 62476.0,
+        "pass_rate_vs_national": -1.48,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 550,
+        "pass_rate": 66.91,
+        "avg_mileage": 151131.0,
+        "pass_rate_vs_national": -4.8,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 448,
+        "pass_rate": 73.44,
+        "avg_mileage": 69066.0,
+        "pass_rate_vs_national": 1.73,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 751,
+        "pass_rate": 64.98,
+        "avg_mileage": 147263.0,
+        "pass_rate_vs_national": -3.31,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 270,
+        "pass_rate": 70.37,
+        "avg_mileage": 71821.0,
+        "pass_rate_vs_national": 2.08,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 123,
+        "pass_rate": 46.34,
+        "avg_mileage": 128008.0,
+        "pass_rate_vs_national": -10.63,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 182,
+        "pass_rate": 44.51,
+        "avg_mileage": 130627.0,
+        "pass_rate_vs_national": -11.67,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 185,
+        "pass_rate": 45.41,
+        "avg_mileage": 133483.0,
+        "pass_rate_vs_national": -10.84,
+        "national_avg_for_year": 56.25
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "HY",
+      "model_count": 3,
+      "total_tests": 990,
+      "pass_rate": 88.08,
+      "fuel_name": "Hybrid Electric"
+    },
+    {
+      "fuel_type": "EL",
+      "model_count": 1,
+      "total_tests": 275,
+      "pass_rate": 85.45,
+      "fuel_name": "Electric"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 109,
+      "total_tests": 366233,
+      "pass_rate": 74.96,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 101,
+      "total_tests": 171739,
+      "pass_rate": 71.05,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "ATECA XPERIENCE LUX TSI EVO SA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "pass_rate": 98.23,
+      "pass_rate_vs_national": 10.56,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "LEON",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 7465,
+      "pass_rate": 80.71,
+      "pass_rate_vs_national": 9.0,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 740,
+      "pass_rate": 87.3,
+      "pass_rate_vs_national": 8.65,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1150,
+      "pass_rate": 86.87,
+      "pass_rate_vs_national": 8.22,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "ATECA XPERIENCE LUX TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 101,
+      "pass_rate": 95.05,
+      "pass_rate_vs_national": 7.38,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 160,
+      "pass_rate": 65.62,
+      "pass_rate_vs_national": 6.94,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "MII",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 3107,
+      "pass_rate": 78.6,
+      "pass_rate_vs_national": 6.89,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "LEON",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 4213,
+      "pass_rate": 74.93,
+      "pass_rate_vs_national": 6.64,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "LEON",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 8343,
+      "pass_rate": 81.79,
+      "pass_rate_vs_national": 6.3,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "AROSA",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 188,
+      "pass_rate": 64.89,
+      "pass_rate_vs_national": 6.21,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 6465,
+      "pass_rate": 87.83,
+      "pass_rate_vs_national": 6.15,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "MII",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1778,
+      "pass_rate": 71.65,
+      "pass_rate_vs_national": 6.02,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "EXEO",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 715,
+      "pass_rate": 64.9,
+      "pass_rate_vs_national": 5.89,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "LEON",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 11492,
+      "pass_rate": 77.53,
+      "pass_rate_vs_national": 5.82,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "MII",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 3542,
+      "pass_rate": 73.88,
+      "pass_rate_vs_national": 5.59,
+      "national_avg_for_year": 68.29
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "IBIZA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 102,
+      "pass_rate": 64.71,
+      "pass_rate_vs_national": -16.97,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 610,
+      "pass_rate": 61.15,
+      "pass_rate_vs_national": -14.34,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 117,
+      "pass_rate": 43.59,
+      "pass_rate_vs_national": -13.95,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 182,
+      "pass_rate": 44.51,
+      "pass_rate_vs_national": -11.67,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 543,
+      "pass_rate": 46.41,
+      "pass_rate_vs_national": -10.98,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 185,
+      "pass_rate": 45.41,
+      "pass_rate_vs_national": -10.84,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 303,
+      "pass_rate": 45.87,
+      "pass_rate_vs_national": -10.81,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 1172,
+      "pass_rate": 61.01,
+      "pass_rate_vs_national": -10.7,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 123,
+      "pass_rate": 46.34,
+      "pass_rate_vs_national": -10.63,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 475,
+      "pass_rate": 45.47,
+      "pass_rate_vs_national": -10.56,
+      "national_avg_for_year": 56.03
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 44054,
+        "vehicle_count": 214
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 43157,
+        "vehicle_count": 199
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 37843,
+        "vehicle_count": 214
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 34776,
+        "vehicle_count": 210
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 25417,
+        "vehicle_count": 212
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 15690,
+        "vehicle_count": 181
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 15221,
+        "vehicle_count": 192
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 8038,
+        "vehicle_count": 134
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 5407,
+        "vehicle_count": 195
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 1766,
+        "vehicle_count": 122
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 1012,
+        "vehicle_count": 117
+      },
+      {
+        "category_name": "Seat belt installation check",
+        "total_failures": 1,
+        "vehicle_count": 1
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 14507
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 12379
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 8033
+      },
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 7824
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 7715
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 7416
+      },
+      {
+        "defect_description": "has a serious fluid leak ",
+        "category_name": "Suspension",
+        "total_occurrences": 6883
+      },
+      {
+        "defect_description": "projected beam image is obviously incorrect",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 5372
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 4671
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Visibility",
+        "total_occurrences": 4600
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 97389
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 50966
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 49550
+      },
+      {
+        "defect_description": "has light misting of oil",
+        "category_name": "Suspension",
+        "total_occurrences": 46799
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 42820
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 23385
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 13426
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 11126
+      },
+      {
+        "defect_description": "Child Seat fitted not allowing full inspection of adult belt",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 10462
+      },
+      {
+        "defect_description": "has a minor leak of exhaust gases",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 8424
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 98746
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 52312
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 52250
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 52223
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 14597
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 8053
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 6441
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 1253
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 1154
+      },
+      {
+        "defect_description": "has a lump, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1043
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 106509,
+      "avg_pass_rate": 88.84
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 173991,
+      "avg_pass_rate": 79.27
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 121643,
+      "avg_pass_rate": 68.39
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 76426,
+      "avg_pass_rate": 60.66
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 37573,
+      "avg_pass_rate": 58.62
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 22149,
+      "avg_pass_rate": 58.31
+    }
+  ],
+  "all_models": [
+    {
+      "model": "ATECA XPERIENCE LUX TSI EVO SA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "total_passes": 111,
+      "total_fails": 0,
+      "pass_rate": 98.23,
+      "avg_mileage": 21081.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 26.72
+    },
+    {
+      "model": "ATECA XPERIENCE LUX TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 101,
+      "total_passes": 96,
+      "total_fails": 2,
+      "pass_rate": 95.05,
+      "avg_mileage": 23661.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 23.54
+    },
+    {
+      "model": "LEON FR TSI EVO",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 119,
+      "total_passes": 111,
+      "total_fails": 7,
+      "pass_rate": 93.28,
+      "avg_mileage": 26619.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 21.77
+    },
+    {
+      "model": "ATECA FR BLACK EDITION TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 149,
+      "total_passes": 137,
+      "total_fails": 9,
+      "pass_rate": 91.95,
+      "avg_mileage": 24162.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 20.44
+    },
+    {
+      "model": "ATECA XPERIENCE TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 121,
+      "total_passes": 111,
+      "total_fails": 5,
+      "pass_rate": 91.74,
+      "avg_mileage": 23988.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 20.22
+    },
+    {
+      "model": "ATECA XPERIENCE TSI EVO S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 443,
+      "total_passes": 406,
+      "total_fails": 24,
+      "pass_rate": 91.65,
+      "avg_mileage": 22799.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 20.14
+    },
+    {
+      "model": "LEON FR ETSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 178,
+      "total_passes": 163,
+      "total_fails": 13,
+      "pass_rate": 91.57,
+      "avg_mileage": 26017.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 20.06
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 4509,
+      "total_passes": 4123,
+      "total_fails": 287,
+      "pass_rate": 91.44,
+      "avg_mileage": 22842.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 19.93
+    },
+    {
+      "model": "ATECA FR TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 204,
+      "total_passes": 186,
+      "total_fails": 13,
+      "pass_rate": 91.18,
+      "avg_mileage": 25467.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 19.67
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 7546,
+      "total_passes": 6831,
+      "total_fails": 546,
+      "pass_rate": 90.52,
+      "avg_mileage": 30773.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 19.01
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 354,
+      "total_passes": 320,
+      "total_fails": 26,
+      "pass_rate": 90.4,
+      "avg_mileage": 21864.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 18.88
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 156,
+      "total_passes": 141,
+      "total_fails": 12,
+      "pass_rate": 90.38,
+      "avg_mileage": 20863.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 18.87
+    },
+    {
+      "model": "LEON FR TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1742,
+      "total_passes": 1569,
+      "total_fails": 131,
+      "pass_rate": 90.07,
+      "avg_mileage": 25002.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 18.56
+    },
+    {
+      "model": "LEON SE DYNAMIC TSI EVO",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 100,
+      "total_passes": 90,
+      "total_fails": 8,
+      "pass_rate": 90.0,
+      "avg_mileage": 23322.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 18.49
+    },
+    {
+      "model": "MII",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1321,
+      "total_passes": 1185,
+      "total_fails": 88,
+      "pass_rate": 89.7,
+      "avg_mileage": 20744.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 18.19
+    },
+    {
+      "model": "LEON FR BLACK EDITION TDI S-A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 125,
+      "total_passes": 112,
+      "total_fails": 11,
+      "pass_rate": 89.6,
+      "avg_mileage": 33500.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.09
+    },
+    {
+      "model": "LEON SE DYNAMIC TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 377,
+      "total_passes": 337,
+      "total_fails": 31,
+      "pass_rate": 89.39,
+      "avg_mileage": 24884.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.88
+    },
+    {
+      "model": "ATECA FR TSI EVO S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 141,
+      "total_passes": 126,
+      "total_fails": 13,
+      "pass_rate": 89.36,
+      "avg_mileage": 23006.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 17.85
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 3441,
+      "total_passes": 3073,
+      "total_fails": 298,
+      "pass_rate": 89.31,
+      "avg_mileage": 36666.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 17.79
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 6162,
+      "total_passes": 5493,
+      "total_fails": 530,
+      "pass_rate": 89.14,
+      "avg_mileage": 39523.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 17.63
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 340,
+      "total_passes": 303,
+      "total_fails": 26,
+      "pass_rate": 89.12,
+      "avg_mileage": 27598.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.61
+    },
+    {
+      "model": "LEON FR BLACK ED TSI EVO S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 483,
+      "total_passes": 430,
+      "total_fails": 40,
+      "pass_rate": 89.03,
+      "avg_mileage": 28164.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.52
+    },
+    {
+      "model": "TARACCO XCELLENCE TSI EVO S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 254,
+      "total_passes": 226,
+      "total_fails": 22,
+      "pass_rate": 88.98,
+      "avg_mileage": 24930.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.47
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 12386,
+      "total_passes": 11006,
+      "total_fails": 1107,
+      "pass_rate": 88.86,
+      "avg_mileage": 25954.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 17.35
+    },
+    {
+      "model": "LEON SE DYNAMIC TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 887,
+      "total_passes": 788,
+      "total_fails": 81,
+      "pass_rate": 88.84,
+      "avg_mileage": 24790.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 17.33
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 10410,
+      "total_passes": 9236,
+      "total_fails": 913,
+      "pass_rate": 88.72,
+      "avg_mileage": 20403.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.21
+    },
+    {
+      "model": "LEON FR PHEV S-A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 592,
+      "total_passes": 525,
+      "total_fails": 56,
+      "pass_rate": 88.68,
+      "avg_mileage": 28637.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 17.17
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 90,
+      "total_fails": 9,
+      "pass_rate": 88.24,
+      "avg_mileage": 23296.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 16.72
+    },
+    {
+      "model": "IBIZA FR MPI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 553,
+      "total_passes": 487,
+      "total_fails": 42,
+      "pass_rate": 88.07,
+      "avg_mileage": 21378.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 16.55
+    },
+    {
+      "model": "TARRACO",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1024,
+      "total_passes": 901,
+      "total_fails": 101,
+      "pass_rate": 87.99,
+      "avg_mileage": 28547.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.48
+    },
+    {
+      "model": "LEON FR BLACK EDITION TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1281,
+      "total_passes": 1127,
+      "total_fails": 126,
+      "pass_rate": 87.98,
+      "avg_mileage": 25774.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.47
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 6465,
+      "total_passes": 5678,
+      "total_fails": 604,
+      "pass_rate": 87.83,
+      "avg_mileage": 46473.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 16.32
+    },
+    {
+      "model": "ATECA SE TECHNOLOGY TSI EVO SA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 324,
+      "total_passes": 284,
+      "total_fails": 27,
+      "pass_rate": 87.65,
+      "avg_mileage": 23499.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 16.14
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 7690,
+      "total_passes": 6730,
+      "total_fails": 690,
+      "pass_rate": 87.52,
+      "avg_mileage": 23367.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.01
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 11463,
+      "total_passes": 10022,
+      "total_fails": 1082,
+      "pass_rate": 87.43,
+      "avg_mileage": 28715.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.92
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 2868,
+      "total_passes": 2507,
+      "total_fails": 300,
+      "pass_rate": 87.41,
+      "avg_mileage": 48092.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 15.9
+    },
+    {
+      "model": "LEON FR ETSI S-A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 143,
+      "total_passes": 125,
+      "total_fails": 12,
+      "pass_rate": 87.41,
+      "avg_mileage": 25058.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 15.9
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 740,
+      "total_passes": 646,
+      "total_fails": 76,
+      "pass_rate": 87.3,
+      "avg_mileage": 54205.0,
+      "avg_age_years": 6.1,
+      "pass_rate_vs_national": 15.79
+    },
+    {
+      "model": "LEON",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 6106,
+      "total_passes": 5317,
+      "total_fails": 632,
+      "pass_rate": 87.08,
+      "avg_mileage": 25492.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.57
+    },
+    {
+      "model": "LEON FIRST EDITION ETSI EVO SA",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 255,
+      "total_passes": 222,
+      "total_fails": 27,
+      "pass_rate": 87.06,
+      "avg_mileage": 21602.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.55
+    },
+    {
+      "model": "ATECA FR SPORT TSI EVO S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "total_passes": 114,
+      "total_fails": 11,
+      "pass_rate": 87.02,
+      "avg_mileage": 25180.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 15.51
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 884,
+      "total_passes": 769,
+      "total_fails": 90,
+      "pass_rate": 86.99,
+      "avg_mileage": 31229.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.48
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1150,
+      "total_passes": 999,
+      "total_fails": 126,
+      "pass_rate": 86.87,
+      "avg_mileage": 61173.0,
+      "avg_age_years": 6.2,
+      "pass_rate_vs_national": 15.36
+    },
+    {
+      "model": "IBIZA FR MPI",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1256,
+      "total_passes": 1091,
+      "total_fails": 128,
+      "pass_rate": 86.86,
+      "avg_mileage": 26817.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 15.35
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 743,
+      "total_passes": 643,
+      "total_fails": 77,
+      "pass_rate": 86.54,
+      "avg_mileage": 28449.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.03
+    },
+    {
+      "model": "LEON XCELLENCE LUX TDI S-A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 102,
+      "total_passes": 88,
+      "total_fails": 13,
+      "pass_rate": 86.27,
+      "avg_mileage": 33886.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 14.76
+    },
+    {
+      "model": "ATECA SE TECHNOLOGY TSI EVO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 512,
+      "total_passes": 441,
+      "total_fails": 56,
+      "pass_rate": 86.13,
+      "avg_mileage": 25395.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 14.62
+    },
+    {
+      "model": "TARRACO",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 2341,
+      "total_passes": 2011,
+      "total_fails": 280,
+      "pass_rate": 85.9,
+      "avg_mileage": 37531.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 14.39
+    },
+    {
+      "model": "ATECA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 3211,
+      "total_passes": 2748,
+      "total_fails": 354,
+      "pass_rate": 85.58,
+      "avg_mileage": 59006.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 14.07
+    },
+    {
+      "model": "MII EV",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 275,
+      "total_passes": 235,
+      "total_fails": 31,
+      "pass_rate": 85.45,
+      "avg_mileage": 14014.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 13.94
+    },
+    {
+      "model": "LEON",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 15185,
+      "total_passes": 12967,
+      "total_fails": 1802,
+      "pass_rate": 85.39,
+      "avg_mileage": 32520.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 13.88
+    },
+    {
+      "model": "IBIZA FR SPORT MPI",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 195,
+      "total_passes": 166,
+      "total_fails": 23,
+      "pass_rate": 85.13,
+      "avg_mileage": 27461.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 13.62
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 261,
+      "total_passes": 222,
+      "total_fails": 31,
+      "pass_rate": 85.06,
+      "avg_mileage": 41236.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 13.55
+    },
+    {
+      "model": "MII",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1261,
+      "total_passes": 1072,
+      "total_fails": 113,
+      "pass_rate": 85.01,
+      "avg_mileage": 26930.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 13.5
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 2587,
+      "total_passes": 2198,
+      "total_fails": 314,
+      "pass_rate": 84.96,
+      "avg_mileage": 40775.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 13.45
+    },
+    {
+      "model": "TARRACO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1926,
+      "total_passes": 1635,
+      "total_fails": 251,
+      "pass_rate": 84.89,
+      "avg_mileage": 32493.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 13.38
+    },
+    {
+      "model": "MII",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 1477,
+      "total_passes": 1253,
+      "total_fails": 146,
+      "pass_rate": 84.83,
+      "avg_mileage": 33098.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 13.32
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 2491,
+      "total_passes": 2111,
+      "total_fails": 305,
+      "pass_rate": 84.75,
+      "avg_mileage": 55851.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 13.23
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 2425,
+      "total_passes": 2048,
+      "total_fails": 327,
+      "pass_rate": 84.45,
+      "avg_mileage": 32964.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 12.94
+    },
+    {
+      "model": "LEON",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 16712,
+      "total_passes": 14077,
+      "total_fails": 2136,
+      "pass_rate": 84.23,
+      "avg_mileage": 40635.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 12.72
+    },
+    {
+      "model": "LEON FR BLACK EDITION TSI EVO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1002,
+      "total_passes": 842,
+      "total_fails": 131,
+      "pass_rate": 84.03,
+      "avg_mileage": 32765.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 12.52
+    },
+    {
+      "model": "LEON XCELLENCE LUX TDI S-A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 156,
+      "total_passes": 131,
+      "total_fails": 21,
+      "pass_rate": 83.97,
+      "avg_mileage": 28468.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 12.46
+    },
+    {
+      "model": "TARACCO SE TECH TSI EVO SA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 161,
+      "total_passes": 135,
+      "total_fails": 21,
+      "pass_rate": 83.85,
+      "avg_mileage": 28582.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 12.34
+    },
+    {
+      "model": "LEON",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 12324,
+      "total_passes": 10269,
+      "total_fails": 1596,
+      "pass_rate": 83.33,
+      "avg_mileage": 48737.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 11.81
+    },
+    {
+      "model": "LEON",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 9293,
+      "total_passes": 7737,
+      "total_fails": 1255,
+      "pass_rate": 83.26,
+      "avg_mileage": 54956.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 11.75
+    },
+    {
+      "model": "TARRACO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 964,
+      "total_passes": 802,
+      "total_fails": 130,
+      "pass_rate": 83.2,
+      "avg_mileage": 27248.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 11.68
+    },
+    {
+      "model": "TARACCO X-LNC LUX TSI EVO SA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 243,
+      "total_passes": 202,
+      "total_fails": 36,
+      "pass_rate": 83.13,
+      "avg_mileage": 24973.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 11.62
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 84,
+      "total_fails": 13,
+      "pass_rate": 82.35,
+      "avg_mileage": 64542.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 10.84
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 9588,
+      "total_passes": 7877,
+      "total_fails": 1454,
+      "pass_rate": 82.15,
+      "avg_mileage": 32295.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 10.64
+    },
+    {
+      "model": "LEON",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 8343,
+      "total_passes": 6824,
+      "total_fails": 1240,
+      "pass_rate": 81.79,
+      "avg_mileage": 63213.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 10.28
+    },
+    {
+      "model": "LEON",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 4487,
+      "total_passes": 3664,
+      "total_fails": 659,
+      "pass_rate": 81.66,
+      "avg_mileage": 56829.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 10.15
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 6062,
+      "total_passes": 4945,
+      "total_fails": 858,
+      "pass_rate": 81.57,
+      "avg_mileage": 73099.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 10.06
+    },
+    {
+      "model": "LEON",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 5949,
+      "total_passes": 4835,
+      "total_fails": 878,
+      "pass_rate": 81.27,
+      "avg_mileage": 65477.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 9.76
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1004,
+      "total_passes": 813,
+      "total_fails": 171,
+      "pass_rate": 80.98,
+      "avg_mileage": 40872.0,
+      "avg_age_years": 4.2,
+      "pass_rate_vs_national": 9.47
+    },
+    {
+      "model": "LEON",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 7465,
+      "total_passes": 6025,
+      "total_fails": 1143,
+      "pass_rate": 80.71,
+      "avg_mileage": 70162.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 9.2
+    },
+    {
+      "model": "LEON",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 6656,
+      "total_passes": 5352,
+      "total_fails": 1056,
+      "pass_rate": 80.41,
+      "avg_mileage": 76505.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 8.9
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 2548,
+      "total_passes": 2042,
+      "total_fails": 419,
+      "pass_rate": 80.14,
+      "avg_mileage": 40965.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 8.63
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 123,
+      "total_passes": 98,
+      "total_fails": 24,
+      "pass_rate": 79.67,
+      "avg_mileage": 32141.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 8.16
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 201,
+      "total_passes": 160,
+      "total_fails": 33,
+      "pass_rate": 79.6,
+      "avg_mileage": 54561.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 8.09
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 12843,
+      "total_passes": 10200,
+      "total_fails": 2125,
+      "pass_rate": 79.42,
+      "avg_mileage": 37340.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 7.91
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 4165,
+      "total_passes": 3304,
+      "total_fails": 697,
+      "pass_rate": 79.33,
+      "avg_mileage": 95040.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 7.82
+    },
+    {
+      "model": "MII",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 2697,
+      "total_passes": 2138,
+      "total_fails": 415,
+      "pass_rate": 79.27,
+      "avg_mileage": 45983.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 7.76
+    },
+    {
+      "model": "LEON",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1099,
+      "total_passes": 870,
+      "total_fails": 170,
+      "pass_rate": 79.16,
+      "avg_mileage": 49475.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 7.65
+    },
+    {
+      "model": "MII",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 2227,
+      "total_passes": 1757,
+      "total_fails": 322,
+      "pass_rate": 78.9,
+      "avg_mileage": 39780.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 7.38
+    },
+    {
+      "model": "MII",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 3107,
+      "total_passes": 2442,
+      "total_fails": 484,
+      "pass_rate": 78.6,
+      "avg_mileage": 52224.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 7.09
+    },
+    {
+      "model": "LEON",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 8948,
+      "total_passes": 7032,
+      "total_fails": 1528,
+      "pass_rate": 78.59,
+      "avg_mileage": 85677.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 7.08
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 141,
+      "total_passes": 110,
+      "total_fails": 26,
+      "pass_rate": 78.01,
+      "avg_mileage": 138374.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 6.5
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 144,
+      "total_passes": 112,
+      "total_fails": 27,
+      "pass_rate": 77.78,
+      "avg_mileage": 48503.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 6.27
+    },
+    {
+      "model": "LEON",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 3096,
+      "total_passes": 2403,
+      "total_fails": 553,
+      "pass_rate": 77.62,
+      "avg_mileage": 55879.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 6.11
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 482,
+      "total_passes": 374,
+      "total_fails": 92,
+      "pass_rate": 77.59,
+      "avg_mileage": 46352.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 6.08
+    },
+    {
+      "model": "LEON",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 11492,
+      "total_passes": 8910,
+      "total_fails": 2072,
+      "pass_rate": 77.53,
+      "avg_mileage": 94657.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 6.02
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 2216,
+      "total_passes": 1669,
+      "total_fails": 455,
+      "pass_rate": 75.32,
+      "avg_mileage": 101554.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 3.81
+    },
+    {
+      "model": "LEON",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 4213,
+      "total_passes": 3157,
+      "total_fails": 855,
+      "pass_rate": 74.93,
+      "avg_mileage": 76210.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 3.42
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 277,
+      "total_passes": 205,
+      "total_fails": 61,
+      "pass_rate": 74.01,
+      "avg_mileage": 62476.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 2.5
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 465,
+      "total_passes": 344,
+      "total_fails": 86,
+      "pass_rate": 73.98,
+      "avg_mileage": 66526.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 2.47
+    },
+    {
+      "model": "MII",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 3542,
+      "total_passes": 2617,
+      "total_fails": 677,
+      "pass_rate": 73.88,
+      "avg_mileage": 58858.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 2.37
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 448,
+      "total_passes": 329,
+      "total_fails": 89,
+      "pass_rate": 73.44,
+      "avg_mileage": 69066.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 1.93
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 1907,
+      "total_passes": 1394,
+      "total_fails": 438,
+      "pass_rate": 73.1,
+      "avg_mileage": 102186.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 1.59
+    },
+    {
+      "model": "LEON",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 7555,
+      "total_passes": 5503,
+      "total_fails": 1630,
+      "pass_rate": 72.84,
+      "avg_mileage": 99244.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 1.33
+    },
+    {
+      "model": "ARONA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 613,
+      "total_passes": 445,
+      "total_fails": 163,
+      "pass_rate": 72.59,
+      "avg_mileage": 38130.0,
+      "avg_age_years": 5.1,
+      "pass_rate_vs_national": 1.08
+    },
+    {
+      "model": "EXEO",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 504,
+      "total_passes": 365,
+      "total_fails": 127,
+      "pass_rate": 72.42,
+      "avg_mileage": 114318.0,
+      "avg_age_years": 9.6,
+      "pass_rate_vs_national": 0.91
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 422,
+      "total_passes": 304,
+      "total_fails": 91,
+      "pass_rate": 72.04,
+      "avg_mileage": 139247.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 0.53
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 281,
+      "total_passes": 202,
+      "total_fails": 57,
+      "pass_rate": 71.89,
+      "avg_mileage": 135366.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 0.38
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 707,
+      "total_passes": 508,
+      "total_fails": 147,
+      "pass_rate": 71.85,
+      "avg_mileage": 74075.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 0.34
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 15822,
+      "total_passes": 11350,
+      "total_fails": 3837,
+      "pass_rate": 71.74,
+      "avg_mileage": 44005.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 0.22
+    },
+    {
+      "model": "MII",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1778,
+      "total_passes": 1274,
+      "total_fails": 378,
+      "pass_rate": 71.65,
+      "avg_mileage": 64167.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 0.14
+    },
+    {
+      "model": "LEON",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1734,
+      "total_passes": 1234,
+      "total_fails": 398,
+      "pass_rate": 71.16,
+      "avg_mileage": 82576.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -0.35
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 270,
+      "total_passes": 190,
+      "total_fails": 65,
+      "pass_rate": 70.37,
+      "avg_mileage": 71821.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -1.14
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 18015,
+      "total_passes": 12676,
+      "total_fails": 4469,
+      "pass_rate": 70.36,
+      "avg_mileage": 52161.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": -1.15
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1591,
+      "total_passes": 1111,
+      "total_fails": 413,
+      "pass_rate": 69.83,
+      "avg_mileage": 101635.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -1.68
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1236,
+      "total_passes": 862,
+      "total_fails": 300,
+      "pass_rate": 69.74,
+      "avg_mileage": 83999.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -1.77
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 465,
+      "total_passes": 324,
+      "total_fails": 124,
+      "pass_rate": 69.68,
+      "avg_mileage": 69422.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": -1.83
+    },
+    {
+      "model": "ALTEA XL",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 113,
+      "total_passes": 78,
+      "total_fails": 25,
+      "pass_rate": 69.03,
+      "avg_mileage": 90453.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": -2.48
+    },
+    {
+      "model": "EXEO",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 1001,
+      "total_passes": 690,
+      "total_fails": 265,
+      "pass_rate": 68.93,
+      "avg_mileage": 120032.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -2.58
+    },
+    {
+      "model": "ALTEA XL",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 101,
+      "total_passes": 69,
+      "total_fails": 25,
+      "pass_rate": 68.32,
+      "avg_mileage": 100608.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": -3.19
+    },
+    {
+      "model": "LEON",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 7514,
+      "total_passes": 5118,
+      "total_fails": 1959,
+      "pass_rate": 68.11,
+      "avg_mileage": 104748.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -3.4
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 17687,
+      "total_passes": 11995,
+      "total_fails": 4479,
+      "pass_rate": 67.82,
+      "avg_mileage": 58691.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": -3.69
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 553,
+      "total_passes": 374,
+      "total_fails": 143,
+      "pass_rate": 67.63,
+      "avg_mileage": 152658.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": -3.88
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 550,
+      "total_passes": 368,
+      "total_fails": 145,
+      "pass_rate": 66.91,
+      "avg_mileage": 151131.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": -4.6
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 1430,
+      "total_passes": 950,
+      "total_fails": 410,
+      "pass_rate": 66.43,
+      "avg_mileage": 116740.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -5.08
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 1488,
+      "total_passes": 987,
+      "total_fails": 412,
+      "pass_rate": 66.33,
+      "avg_mileage": 93781.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -5.18
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 160,
+      "total_passes": 105,
+      "total_fails": 44,
+      "pass_rate": 65.62,
+      "avg_mileage": 88412.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -5.89
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 18658,
+      "total_passes": 12155,
+      "total_fails": 5176,
+      "pass_rate": 65.15,
+      "avg_mileage": 65805.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": -6.36
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 751,
+      "total_passes": 488,
+      "total_fails": 212,
+      "pass_rate": 64.98,
+      "avg_mileage": 147263.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": -6.53
+    },
+    {
+      "model": "EXEO",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 715,
+      "total_passes": 464,
+      "total_fails": 198,
+      "pass_rate": 64.9,
+      "avg_mileage": 134448.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -6.62
+    },
+    {
+      "model": "AROSA",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 188,
+      "total_passes": 122,
+      "total_fails": 48,
+      "pass_rate": 64.89,
+      "avg_mileage": 73999.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -6.62
+    },
+    {
+      "model": "LEON",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 4792,
+      "total_passes": 3107,
+      "total_fails": 1399,
+      "pass_rate": 64.84,
+      "avg_mileage": 115168.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -6.67
+    },
+    {
+      "model": "EXEO",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 1586,
+      "total_passes": 1028,
+      "total_fails": 454,
+      "pass_rate": 64.82,
+      "avg_mileage": 130361.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -6.69
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 102,
+      "total_passes": 66,
+      "total_fails": 31,
+      "pass_rate": 64.71,
+      "avg_mileage": 66050.0,
+      "avg_age_years": 5.6,
+      "pass_rate_vs_national": -6.8
+    },
+    {
+      "model": "LEON",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 2198,
+      "total_passes": 1410,
+      "total_fails": 638,
+      "pass_rate": 64.15,
+      "avg_mileage": 89384.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -7.36
+    },
+    {
+      "model": "LEON",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 1712,
+      "total_passes": 1095,
+      "total_fails": 514,
+      "pass_rate": 63.96,
+      "avg_mileage": 96285.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -7.55
+    },
+    {
+      "model": "LEON",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 258,
+      "total_passes": 165,
+      "total_fails": 76,
+      "pass_rate": 63.95,
+      "avg_mileage": 120696.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -7.56
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 1127,
+      "total_passes": 719,
+      "total_fails": 335,
+      "pass_rate": 63.8,
+      "avg_mileage": 100607.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -7.71
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 1228,
+      "total_passes": 780,
+      "total_fails": 372,
+      "pass_rate": 63.52,
+      "avg_mileage": 121376.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -7.99
+    },
+    {
+      "model": "LEON",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 1882,
+      "total_passes": 1191,
+      "total_fails": 559,
+      "pass_rate": 63.28,
+      "avg_mileage": 96379.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -8.23
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 106,
+      "total_passes": 67,
+      "total_fails": 32,
+      "pass_rate": 63.21,
+      "avg_mileage": 73790.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -8.3
+    },
+    {
+      "model": "ALTEA XL",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 249,
+      "total_passes": 157,
+      "total_fails": 70,
+      "pass_rate": 63.05,
+      "avg_mileage": 85098.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -8.46
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 13743,
+      "total_passes": 8624,
+      "total_fails": 4069,
+      "pass_rate": 62.75,
+      "avg_mileage": 72448.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": -8.76
+    },
+    {
+      "model": "EXEO",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 1363,
+      "total_passes": 852,
+      "total_fails": 414,
+      "pass_rate": 62.51,
+      "avg_mileage": 137438.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -9.0
+    },
+    {
+      "model": "LEON",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 4607,
+      "total_passes": 2877,
+      "total_fails": 1428,
+      "pass_rate": 62.45,
+      "avg_mileage": 121866.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -9.06
+    },
+    {
+      "model": "LEON",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 141,
+      "total_passes": 88,
+      "total_fails": 41,
+      "pass_rate": 62.41,
+      "avg_mileage": 146910.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -9.1
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 11065,
+      "total_passes": 6898,
+      "total_fails": 3421,
+      "pass_rate": 62.34,
+      "avg_mileage": 77567.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -9.17
+    },
+    {
+      "model": "LEON",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1075,
+      "total_passes": 662,
+      "total_fails": 318,
+      "pass_rate": 61.58,
+      "avg_mileage": 116758.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -9.93
+    },
+    {
+      "model": "LEON",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 510,
+      "total_passes": 314,
+      "total_fails": 150,
+      "pass_rate": 61.57,
+      "avg_mileage": 116561.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -9.94
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 610,
+      "total_passes": 373,
+      "total_fails": 189,
+      "pass_rate": 61.15,
+      "avg_mileage": 78777.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": -10.36
+    },
+    {
+      "model": "LEON",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 1087,
+      "total_passes": 664,
+      "total_fails": 321,
+      "pass_rate": 61.09,
+      "avg_mileage": 121685.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -10.43
+    },
+    {
+      "model": "LEON",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1063,
+      "total_passes": 649,
+      "total_fails": 334,
+      "pass_rate": 61.05,
+      "avg_mileage": 112089.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -10.46
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 1172,
+      "total_passes": 715,
+      "total_fails": 358,
+      "pass_rate": 61.01,
+      "avg_mileage": 86032.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": -10.5
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 11185,
+      "total_passes": 6820,
+      "total_fails": 3665,
+      "pass_rate": 60.97,
+      "avg_mileage": 83049.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -10.54
+    },
+    {
+      "model": "ALTEA XL",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 116,
+      "total_passes": 70,
+      "total_fails": 34,
+      "pass_rate": 60.34,
+      "avg_mileage": 114533.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -11.17
+    },
+    {
+      "model": "LEON",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 2232,
+      "total_passes": 1345,
+      "total_fails": 709,
+      "pass_rate": 60.26,
+      "avg_mileage": 102811.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -11.25
+    },
+    {
+      "model": "LEON",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 3588,
+      "total_passes": 2147,
+      "total_fails": 1168,
+      "pass_rate": 59.84,
+      "avg_mileage": 124305.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -11.67
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 3195,
+      "total_passes": 1904,
+      "total_fails": 1073,
+      "pass_rate": 59.59,
+      "avg_mileage": 98333.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -11.92
+    },
+    {
+      "model": "LEON",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 3265,
+      "total_passes": 1930,
+      "total_fails": 1074,
+      "pass_rate": 59.11,
+      "avg_mileage": 137250.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": -12.4
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 3087,
+      "total_passes": 1821,
+      "total_fails": 1042,
+      "pass_rate": 58.99,
+      "avg_mileage": 95511.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -12.52
+    },
+    {
+      "model": "ALTEA XL",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 198,
+      "total_passes": 116,
+      "total_fails": 66,
+      "pass_rate": 58.59,
+      "avg_mileage": 122057.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -12.92
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 3544,
+      "total_passes": 2066,
+      "total_fails": 1249,
+      "pass_rate": 58.3,
+      "avg_mileage": 106401.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -13.22
+    },
+    {
+      "model": "LEON",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 2017,
+      "total_passes": 1172,
+      "total_fails": 684,
+      "pass_rate": 58.11,
+      "avg_mileage": 107980.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -13.4
+    },
+    {
+      "model": "LEON",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 3173,
+      "total_passes": 1843,
+      "total_fails": 1090,
+      "pass_rate": 58.08,
+      "avg_mileage": 131770.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -13.43
+    },
+    {
+      "model": "LEON",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 649,
+      "total_passes": 375,
+      "total_fails": 230,
+      "pass_rate": 57.78,
+      "avg_mileage": 157239.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -13.73
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 1177,
+      "total_passes": 677,
+      "total_fails": 413,
+      "pass_rate": 57.52,
+      "avg_mileage": 108077.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -13.99
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 386,
+      "total_passes": 222,
+      "total_fails": 145,
+      "pass_rate": 57.51,
+      "avg_mileage": 132273.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -14.0
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 8272,
+      "total_passes": 4747,
+      "total_fails": 2876,
+      "pass_rate": 57.39,
+      "avg_mileage": 87073.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -14.12
+    },
+    {
+      "model": "AROSA",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 543,
+      "total_passes": 310,
+      "total_fails": 187,
+      "pass_rate": 57.09,
+      "avg_mileage": 73404.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -14.42
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 3253,
+      "total_passes": 1842,
+      "total_fails": 1165,
+      "pass_rate": 56.62,
+      "avg_mileage": 111665.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -14.89
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 365,
+      "total_passes": 206,
+      "total_fails": 132,
+      "pass_rate": 56.44,
+      "avg_mileage": 93582.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -15.07
+    },
+    {
+      "model": "LEON",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 984,
+      "total_passes": 552,
+      "total_fails": 325,
+      "pass_rate": 56.1,
+      "avg_mileage": 147754.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -15.41
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 1287,
+      "total_passes": 721,
+      "total_fails": 472,
+      "pass_rate": 56.02,
+      "avg_mileage": 116582.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -15.49
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 153,
+      "total_passes": 85,
+      "total_fails": 55,
+      "pass_rate": 55.56,
+      "avg_mileage": 84606.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -15.96
+    },
+    {
+      "model": "ALTEA XL",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 227,
+      "total_passes": 126,
+      "total_fails": 82,
+      "pass_rate": 55.51,
+      "avg_mileage": 125888.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -16.0
+    },
+    {
+      "model": "AROSA",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 672,
+      "total_passes": 371,
+      "total_fails": 229,
+      "pass_rate": 55.21,
+      "avg_mileage": 74265.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -16.3
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 194,
+      "total_passes": 107,
+      "total_fails": 75,
+      "pass_rate": 55.15,
+      "avg_mileage": 86699.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -16.36
+    },
+    {
+      "model": "AROSA",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 133,
+      "total_passes": 73,
+      "total_fails": 48,
+      "pass_rate": 54.89,
+      "avg_mileage": 76111.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -16.62
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 587,
+      "total_passes": 321,
+      "total_fails": 227,
+      "pass_rate": 54.68,
+      "avg_mileage": 101859.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -16.83
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 1798,
+      "total_passes": 982,
+      "total_fails": 677,
+      "pass_rate": 54.62,
+      "avg_mileage": 126184.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -16.89
+    },
+    {
+      "model": "LEON",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 271,
+      "total_passes": 148,
+      "total_fails": 97,
+      "pass_rate": 54.61,
+      "avg_mileage": 158143.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -16.9
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 328,
+      "total_passes": 179,
+      "total_fails": 126,
+      "pass_rate": 54.57,
+      "avg_mileage": 100447.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -16.94
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 226,
+      "total_passes": 122,
+      "total_fails": 81,
+      "pass_rate": 53.98,
+      "avg_mileage": 132993.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -17.53
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 8560,
+      "total_passes": 4615,
+      "total_fails": 3259,
+      "pass_rate": 53.91,
+      "avg_mileage": 93357.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -17.6
+    },
+    {
+      "model": "LEON",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1428,
+      "total_passes": 769,
+      "total_fails": 543,
+      "pass_rate": 53.85,
+      "avg_mileage": 109557.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -17.66
+    },
+    {
+      "model": "AROSA",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 398,
+      "total_passes": 214,
+      "total_fails": 154,
+      "pass_rate": 53.77,
+      "avg_mileage": 73988.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -17.74
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 372,
+      "total_passes": 200,
+      "total_fails": 138,
+      "pass_rate": 53.76,
+      "avg_mileage": 88596.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -17.75
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 1629,
+      "total_passes": 870,
+      "total_fails": 641,
+      "pass_rate": 53.41,
+      "avg_mileage": 121694.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -18.1
+    },
+    {
+      "model": "LEON",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 2105,
+      "total_passes": 1121,
+      "total_fails": 791,
+      "pass_rate": 53.25,
+      "avg_mileage": 140384.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -18.26
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 592,
+      "total_passes": 313,
+      "total_fails": 230,
+      "pass_rate": 52.87,
+      "avg_mileage": 129708.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -18.64
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 543,
+      "total_passes": 286,
+      "total_fails": 211,
+      "pass_rate": 52.67,
+      "avg_mileage": 136652.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -18.84
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 214,
+      "total_passes": 112,
+      "total_fails": 80,
+      "pass_rate": 52.34,
+      "avg_mileage": 141378.0,
+      "avg_age_years": 18.3,
+      "pass_rate_vs_national": -19.17
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 1364,
+      "total_passes": 705,
+      "total_fails": 524,
+      "pass_rate": 51.69,
+      "avg_mileage": 113784.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -19.82
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 1008,
+      "total_passes": 516,
+      "total_fails": 408,
+      "pass_rate": 51.19,
+      "avg_mileage": 128763.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -20.32
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 177,
+      "total_passes": 90,
+      "total_fails": 66,
+      "pass_rate": 50.85,
+      "avg_mileage": 141231.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -20.66
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 530,
+      "total_passes": 269,
+      "total_fails": 218,
+      "pass_rate": 50.75,
+      "avg_mileage": 102915.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -20.76
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 367,
+      "total_passes": 186,
+      "total_fails": 156,
+      "pass_rate": 50.68,
+      "avg_mileage": 136634.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -20.83
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 385,
+      "total_passes": 195,
+      "total_fails": 155,
+      "pass_rate": 50.65,
+      "avg_mileage": 134094.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -20.86
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 722,
+      "total_passes": 362,
+      "total_fails": 286,
+      "pass_rate": 50.14,
+      "avg_mileage": 127731.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -21.37
+    },
+    {
+      "model": "ALTEA XL",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 276,
+      "total_passes": 138,
+      "total_fails": 111,
+      "pass_rate": 50.0,
+      "avg_mileage": 122029.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -21.51
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1536,
+      "total_passes": 760,
+      "total_fails": 625,
+      "pass_rate": 49.48,
+      "avg_mileage": 91555.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -22.03
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 247,
+      "total_passes": 122,
+      "total_fails": 100,
+      "pass_rate": 49.39,
+      "avg_mileage": 105439.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -22.12
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1333,
+      "total_passes": 651,
+      "total_fails": 548,
+      "pass_rate": 48.84,
+      "avg_mileage": 88513.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -22.67
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 5194,
+      "total_passes": 2537,
+      "total_fails": 2186,
+      "pass_rate": 48.84,
+      "avg_mileage": 95267.0,
+      "avg_age_years": 14.4,
+      "pass_rate_vs_national": -22.67
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 2847,
+      "total_passes": 1387,
+      "total_fails": 1150,
+      "pass_rate": 48.72,
+      "avg_mileage": 94814.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -22.79
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 1056,
+      "total_passes": 508,
+      "total_fails": 435,
+      "pass_rate": 48.11,
+      "avg_mileage": 91740.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -23.4
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 4023,
+      "total_passes": 1930,
+      "total_fails": 1672,
+      "pass_rate": 47.97,
+      "avg_mileage": 94311.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -23.54
+    },
+    {
+      "model": "IBIZA",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 1152,
+      "total_passes": 549,
+      "total_fails": 478,
+      "pass_rate": 47.66,
+      "avg_mileage": 121318.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -23.85
+    },
+    {
+      "model": "ALTEA",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 120,
+      "total_passes": 57,
+      "total_fails": 53,
+      "pass_rate": 47.5,
+      "avg_mileage": 101926.0,
+      "avg_age_years": 18.2,
+      "pass_rate_vs_national": -24.01
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 394,
+      "total_passes": 187,
+      "total_fails": 170,
+      "pass_rate": 47.46,
+      "avg_mileage": 150486.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -24.05
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 466,
+      "total_passes": 220,
+      "total_fails": 210,
+      "pass_rate": 47.21,
+      "avg_mileage": 146127.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -24.3
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 515,
+      "total_passes": 242,
+      "total_fails": 231,
+      "pass_rate": 46.99,
+      "avg_mileage": 138802.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -24.52
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 543,
+      "total_passes": 252,
+      "total_fails": 252,
+      "pass_rate": 46.41,
+      "avg_mileage": 140876.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -25.1
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 123,
+      "total_passes": 57,
+      "total_fails": 58,
+      "pass_rate": 46.34,
+      "avg_mileage": 128008.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -25.17
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 303,
+      "total_passes": 139,
+      "total_fails": 139,
+      "pass_rate": 45.87,
+      "avg_mileage": 152054.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -25.64
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 475,
+      "total_passes": 216,
+      "total_fails": 216,
+      "pass_rate": 45.47,
+      "avg_mileage": 150400.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -26.04
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 185,
+      "total_passes": 84,
+      "total_fails": 87,
+      "pass_rate": 45.41,
+      "avg_mileage": 133483.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -26.11
+    },
+    {
+      "model": "TOLEDO",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 182,
+      "total_passes": 81,
+      "total_fails": 80,
+      "pass_rate": 44.51,
+      "avg_mileage": 130627.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -27.01
+    },
+    {
+      "model": "ALHAMBRA",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 117,
+      "total_passes": 51,
+      "total_fails": 55,
+      "pass_rate": 43.59,
+      "avg_mileage": 146888.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -27.92
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "LEON",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 7465,
+        "avg_vs_national": 5.94,
+        "durability_trend": 1.96,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 78.32,
+          "national_pass_rate": 71.23,
+          "vs_national": 7.09,
+          "total_tests": 3068,
+          "avg_mileage": 74056.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 82.37,
+          "national_pass_rate": 77.24,
+          "vs_national": 5.13,
+          "total_tests": 4397,
+          "avg_mileage": 67445.0
+        }
+      },
+      {
+        "model": "ATECA",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 740,
+        "avg_vs_national": 5.81,
+        "durability_trend": 6.6,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 88.78,
+          "national_pass_rate": 77.24,
+          "vs_national": 11.54,
+          "total_tests": 98,
+          "avg_mileage": 59269.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.07,
+          "national_pass_rate": 82.13,
+          "vs_national": 4.94,
+          "total_tests": 642,
+          "avg_mileage": 53432.0
+        }
+      },
+      {
+        "model": "IBIZA",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 160,
+        "avg_vs_national": 5.75,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.62,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.75,
+          "total_tests": 160,
+          "avg_mileage": 88412.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.62,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.75,
+          "total_tests": 160,
+          "avg_mileage": 88412.0
+        }
+      },
+      {
+        "model": "ATECA",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 6465,
+        "avg_vs_national": 5.7,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.83,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.7,
+          "total_tests": 6465,
+          "avg_mileage": 46473.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.83,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.7,
+          "total_tests": 6465,
+          "avg_mileage": 46473.0
+        }
+      },
+      {
+        "model": "ATECA",
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1150,
+        "avg_vs_national": 5.57,
+        "durability_trend": 1.46,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 84.02,
+          "national_pass_rate": 77.24,
+          "vs_national": 6.78,
+          "total_tests": 194,
+          "avg_mileage": 67090.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.45,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.32,
+          "total_tests": 956,
+          "avg_mileage": 59972.0
+        }
+      },
+      {
+        "model": "EXEO",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 715,
+        "avg_vs_national": 5.03,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.9,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.03,
+          "total_tests": 715,
+          "avg_mileage": 134448.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.9,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.03,
+          "total_tests": 715,
+          "avg_mileage": 134448.0
+        }
+      },
+      {
+        "model": "AROSA",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 188,
+        "avg_vs_national": 5.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.89,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.02,
+          "total_tests": 188,
+          "avg_mileage": 73999.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.89,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.02,
+          "total_tests": 188,
+          "avg_mileage": 73999.0
+        }
+      },
+      {
+        "model": "ATECA",
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1092,
+        "avg_vs_national": 4.69,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.12,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.69,
+          "total_tests": 1092,
+          "avg_mileage": 25448.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.12,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.69,
+          "total_tests": 1092,
+          "avg_mileage": 25448.0
+        }
+      },
+      {
+        "model": "LEON",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 8343,
+        "avg_vs_national": 4.55,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 81.79,
+          "national_pass_rate": 77.24,
+          "vs_national": 4.55,
+          "total_tests": 8343,
+          "avg_mileage": 63213.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 81.79,
+          "national_pass_rate": 77.24,
+          "vs_national": 4.55,
+          "total_tests": 8343,
+          "avg_mileage": 63213.0
+        }
+      },
+      {
+        "model": "ATECA",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 7546,
+        "avg_vs_national": 4.09,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.52,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.09,
+          "total_tests": 7546,
+          "avg_mileage": 30773.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 90.52,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.09,
+          "total_tests": 7546,
+          "avg_mileage": 30773.0
+        }
+      },
+      {
+        "model": "LEON",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 258,
+        "avg_vs_national": 4.08,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.95,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.08,
+          "total_tests": 258,
+          "avg_mileage": 120696.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.95,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.08,
+          "total_tests": 258,
+          "avg_mileage": 120696.0
+        }
+      },
+      {
+        "model": "ATECA",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 6162,
+        "avg_vs_national": 3.94,
+        "durability_trend": 1.96,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.47,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.34,
+          "total_tests": 1764,
+          "avg_mileage": 43260.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 89.81,
+          "national_pass_rate": 86.43,
+          "vs_national": 3.38,
+          "total_tests": 4398,
+          "avg_mileage": 38024.0
+        }
+      },
+      {
+        "model": "MII",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 3107,
+        "avg_vs_national": 3.78,
+        "durability_trend": 3.33,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 77.0,
+          "national_pass_rate": 71.23,
+          "vs_national": 5.77,
+          "total_tests": 1252,
+          "avg_mileage": 56256.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 79.68,
+          "national_pass_rate": 77.24,
+          "vs_national": 2.44,
+          "total_tests": 1855,
+          "avg_mileage": 49503.0
+        }
+      },
+      {
+        "model": "LEON",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 4213,
+        "avg_vs_national": 3.7,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 74.93,
+          "national_pass_rate": 71.23,
+          "vs_national": 3.7,
+          "total_tests": 4213,
+          "avg_mileage": 76210.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 74.93,
+          "national_pass_rate": 71.23,
+          "vs_national": 3.7,
+          "total_tests": 4213,
+          "avg_mileage": 76210.0
+        }
+      },
+      {
+        "model": "ATECA",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 3211,
+        "avg_vs_national": 3.45,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 85.58,
+          "national_pass_rate": 82.13,
+          "vs_national": 3.45,
+          "total_tests": 3211,
+          "avg_mileage": 59006.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 85.58,
+          "national_pass_rate": 82.13,
+          "vs_national": 3.45,
+          "total_tests": 3211,
+          "avg_mileage": 59006.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "IBIZA",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 102,
+        "avg_vs_national": -17.42,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 64.71,
+          "national_pass_rate": 82.13,
+          "vs_national": -17.42,
+          "total_tests": 102,
+          "avg_mileage": 66050.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 64.71,
+          "national_pass_rate": 82.13,
+          "vs_national": -17.42,
+          "total_tests": 102,
+          "avg_mileage": 66050.0
+        }
+      },
+      {
+        "model": "ALHAMBRA",
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 117,
+        "avg_vs_national": -16.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 43.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -16.28,
+          "total_tests": 117,
+          "avg_mileage": 146888.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 43.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -16.28,
+          "total_tests": 117,
+          "avg_mileage": 146888.0
+        }
+      },
+      {
+        "model": "IBIZA",
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 610,
+        "avg_vs_national": -16.09,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 61.15,
+          "national_pass_rate": 77.24,
+          "vs_national": -16.09,
+          "total_tests": 610,
+          "avg_mileage": 78777.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 61.15,
+          "national_pass_rate": 77.24,
+          "vs_national": -16.09,
+          "total_tests": 610,
+          "avg_mileage": 78777.0
+        }
+      },
+      {
+        "model": "TOLEDO",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 182,
+        "avg_vs_national": -15.36,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 44.51,
+          "national_pass_rate": 59.87,
+          "vs_national": -15.36,
+          "total_tests": 182,
+          "avg_mileage": 130627.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 44.51,
+          "national_pass_rate": 59.87,
+          "vs_national": -15.36,
+          "total_tests": 182,
+          "avg_mileage": 130627.0
+        }
+      },
+      {
+        "model": "TOLEDO",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 185,
+        "avg_vs_national": -14.46,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 45.41,
+          "national_pass_rate": 59.87,
+          "vs_national": -14.46,
+          "total_tests": 185,
+          "avg_mileage": 133483.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 45.41,
+          "national_pass_rate": 59.87,
+          "vs_national": -14.46,
+          "total_tests": 185,
+          "avg_mileage": 133483.0
+        }
+      },
+      {
+        "model": "ALHAMBRA",
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 475,
+        "avg_vs_national": -14.4,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 45.47,
+          "national_pass_rate": 59.87,
+          "vs_national": -14.4,
+          "total_tests": 475,
+          "avg_mileage": 150400.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 45.47,
+          "national_pass_rate": 59.87,
+          "vs_national": -14.4,
+          "total_tests": 475,
+          "avg_mileage": 150400.0
+        }
+      },
+      {
+        "model": "ALHAMBRA",
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 303,
+        "avg_vs_national": -14.0,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 45.87,
+          "national_pass_rate": 59.87,
+          "vs_national": -14.0,
+          "total_tests": 303,
+          "avg_mileage": 152054.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 45.87,
+          "national_pass_rate": 59.87,
+          "vs_national": -14.0,
+          "total_tests": 303,
+          "avg_mileage": 152054.0
+        }
+      },
+      {
+        "model": "TOLEDO",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 123,
+        "avg_vs_national": -13.53,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.34,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.53,
+          "total_tests": 123,
+          "avg_mileage": 128008.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.34,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.53,
+          "total_tests": 123,
+          "avg_mileage": 128008.0
+        }
+      },
+      {
+        "model": "ALHAMBRA",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 543,
+        "avg_vs_national": -13.46,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.41,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.46,
+          "total_tests": 543,
+          "avg_mileage": 140876.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.41,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.46,
+          "total_tests": 543,
+          "avg_mileage": 140876.0
+        }
+      },
+      {
+        "model": "IBIZA",
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 1172,
+        "avg_vs_national": -13.29,
+        "durability_trend": 5.06,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 60.52,
+          "national_pass_rate": 71.23,
+          "vs_national": -10.71,
+          "total_tests": 575,
+          "avg_mileage": 88715.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 61.47,
+          "national_pass_rate": 77.24,
+          "vs_national": -15.77,
+          "total_tests": 597,
+          "avg_mileage": 83448.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 87,
+          "tests": 215907
+        },
+        "maturing": {
+          "vehicles": 50,
+          "tests": 158112
+        },
+        "proven": {
+          "vehicles": 93,
+          "tests": 131202
+        }
+      },
+      "proven_vehicles_tested": 96,
+      "proven_above_average_pct": 35.4,
+      "proven_avg_vs_national": -2.38,
+      "durability_rating": "Below Average",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "IBIZA",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 160,
+          "pass_rate": 65.62,
+          "vs_national_at_age": 8.32,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 88412.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "EXEO",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 715,
+          "pass_rate": 64.9,
+          "vs_national_at_age": 7.6,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 134448.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "AROSA",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 188,
+          "pass_rate": 64.89,
+          "vs_national_at_age": 7.59,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 73999.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 822,
+          "pass_rate": 70.07,
+          "vs_national_at_age": 7.24,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 83497.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 258,
+          "pass_rate": 63.95,
+          "vs_national_at_age": 6.65,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 120696.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1882,
+          "pass_rate": 63.28,
+          "vs_national_at_age": 5.98,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 96379.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 799,
+          "pass_rate": 63.2,
+          "vs_national_at_age": 5.9,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 98993.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "EXEO",
+          "model_year": 2010,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 640,
+          "pass_rate": 62.97,
+          "vs_national_at_age": 5.67,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 142133.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ALTEA XL",
+          "model_year": 2011,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 101,
+          "pass_rate": 68.32,
+          "vs_national_at_age": 5.49,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 100608.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2002,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 141,
+          "pass_rate": 62.41,
+          "vs_national_at_age": 5.11,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 146910.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "MII",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 575,
+          "pass_rate": 67.83,
+          "vs_national_at_age": 5.0,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 69150.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1075,
+          "pass_rate": 61.58,
+          "vs_national_at_age": 4.28,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 116758.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 510,
+          "pass_rate": 61.57,
+          "vs_national_at_age": 4.27,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 116561.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2012,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 3398,
+          "pass_rate": 66.69,
+          "vs_national_at_age": 3.86,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 107840.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "LEON",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1087,
+          "pass_rate": 61.09,
+          "vs_national_at_age": 3.79,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 121685.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "ALHAMBRA",
+          "model_year": 2002,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 117,
+          "pass_rate": 43.59,
+          "vs_national_at_age": -13.71,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 146888.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TOLEDO",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 182,
+          "pass_rate": 44.51,
+          "vs_national_at_age": -12.79,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 130627.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TOLEDO",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 185,
+          "pass_rate": 45.41,
+          "vs_national_at_age": -11.89,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 133483.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ALHAMBRA",
+          "model_year": 2004,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 475,
+          "pass_rate": 45.47,
+          "vs_national_at_age": -11.83,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 150400.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ALHAMBRA",
+          "model_year": 2003,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 303,
+          "pass_rate": 45.87,
+          "vs_national_at_age": -11.43,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 152054.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TOLEDO",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 123,
+          "pass_rate": 46.34,
+          "vs_national_at_age": -10.96,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 128008.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ALHAMBRA",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 543,
+          "pass_rate": 46.41,
+          "vs_national_at_age": -10.89,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 140876.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ALHAMBRA",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 515,
+          "pass_rate": 46.99,
+          "vs_national_at_age": -10.31,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 138802.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ALHAMBRA",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 466,
+          "pass_rate": 47.21,
+          "vs_national_at_age": -10.09,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 146127.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ALHAMBRA",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 394,
+          "pass_rate": 47.46,
+          "vs_national_at_age": -9.84,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 150486.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "ATECA",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 6465,
+          "pass_rate": 87.83,
+          "vs_national_at_age": 6.63,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 46473.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1764,
+          "pass_rate": 87.47,
+          "vs_national_at_age": 6.27,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 43260.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2016,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 956,
+          "pass_rate": 87.45,
+          "vs_national_at_age": 6.25,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 59972.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 642,
+          "pass_rate": 87.07,
+          "vs_national_at_age": 5.87,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 53432.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 1092,
+          "pass_rate": 91.12,
+          "vs_national_at_age": 5.27,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 25448.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2018,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 895,
+          "pass_rate": 86.26,
+          "vs_national_at_age": 5.06,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 52389.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 7546,
+          "pass_rate": 90.52,
+          "vs_national_at_age": 4.67,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 30773.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2017,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 3211,
+          "pass_rate": 85.58,
+          "vs_national_at_age": 4.38,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 59006.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "ATECA",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 4398,
+          "pass_rate": 89.81,
+          "vs_national_at_age": 3.96,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 38024.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "MII",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 1321,
+          "pass_rate": 89.7,
+          "vs_national_at_age": 3.85,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 20744.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "TOLEDO": {
+        "core_model": "TOLEDO",
+        "years_covered": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 82.1,
+                "vs_national": -3.75,
+                "total_tests": 844,
+                "avg_mileage": 85381.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 78.0,
+                "vs_national": -3.2,
+                "total_tests": 350,
+                "avg_mileage": 92301.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 75.49,
+                "vs_national": -5.71,
+                "total_tests": 763,
+                "avg_mileage": 90859.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 76.41,
+                "vs_national": -4.79,
+                "total_tests": 301,
+                "avg_mileage": 96132.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 71.87,
+                "vs_national": -3.26,
+                "total_tests": 583,
+                "avg_mileage": 107697.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 69.76,
+                "vs_national": -5.37,
+                "total_tests": 830,
+                "avg_mileage": 107567.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 69.96,
+                "vs_national": -5.17,
+                "total_tests": 273,
+                "avg_mileage": 103178.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2013,
+                "pass_rate": 66.41,
+                "vs_national": -1.83,
+                "total_tests": 1021,
+                "avg_mileage": 109542.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 66.99,
+                "vs_national": -1.25,
+                "total_tests": 415,
+                "avg_mileage": 113795.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "TARRACO": {
+        "core_model": "TARRACO",
+        "years_covered": [
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2019,
+                "pass_rate": 85.44,
+                "vs_national": -0.41,
+                "total_tests": 4267,
+                "avg_mileage": 35012.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 85.55,
+                "vs_national": -0.3,
+                "total_tests": 526,
+                "avg_mileage": 30318.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "AROSA": {
+        "core_model": "AROSA",
+        "years_covered": [
+          2002,
+          2003,
+          2004
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2002,
+                "pass_rate": 53.77,
+                "vs_national": -3.53,
+                "total_tests": 398,
+                "avg_mileage": 73988.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 57.09,
+                "vs_national": -0.21,
+                "total_tests": 543,
+                "avg_mileage": 73404.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 55.21,
+                "vs_national": -2.09,
+                "total_tests": 672,
+                "avg_mileage": 74265.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2003,
+          "vs_national": -0.21,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2002,
+          "vs_national": -3.53,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "ALHAMBRA": {
+        "core_model": "ALHAMBRA",
+        "years_covered": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 85.56,
+                "vs_national": -0.29,
+                "total_tests": 1440,
+                "avg_mileage": 48931.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 84.72,
+                "vs_national": -1.13,
+                "total_tests": 2710,
+                "avg_mileage": 36458.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 80.25,
+                "vs_national": -0.95,
+                "total_tests": 2531,
+                "avg_mileage": 71917.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 81.57,
+                "vs_national": 0.37,
+                "total_tests": 6062,
+                "avg_mileage": 73099.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 83.63,
+                "vs_national": 2.43,
+                "total_tests": 1051,
+                "avg_mileage": 65333.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 72.61,
+                "vs_national": -2.52,
+                "total_tests": 1037,
+                "avg_mileage": 99120.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 75.32,
+                "vs_national": 0.19,
+                "total_tests": 2216,
+                "avg_mileage": 101554.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 78.17,
+                "vs_national": 3.04,
+                "total_tests": 1736,
+                "avg_mileage": 90381.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 67.68,
+                "vs_national": -0.56,
+                "total_tests": 786,
+                "avg_mileage": 115609.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 69.83,
+                "vs_national": 1.59,
+                "total_tests": 1591,
+                "avg_mileage": 101635.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 73.68,
+                "vs_national": 5.44,
+                "total_tests": 870,
+                "avg_mileage": 105836.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 61.54,
+                "vs_national": -1.29,
+                "total_tests": 247,
+                "avg_mileage": 131716.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 63.52,
+                "vs_national": 0.69,
+                "total_tests": 1228,
+                "avg_mileage": 121376.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 64.91,
+                "vs_national": 2.08,
+                "total_tests": 644,
+                "avg_mileage": 118121.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2003,
+                "pass_rate": 45.87,
+                "vs_national": -11.43,
+                "total_tests": 303,
+                "avg_mileage": 152054.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 45.47,
+                "vs_national": -11.83,
+                "total_tests": 475,
+                "avg_mileage": 150400.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 47.46,
+                "vs_national": -9.84,
+                "total_tests": 394,
+                "avg_mileage": 150486.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 47.21,
+                "vs_national": -10.09,
+                "total_tests": 466,
+                "avg_mileage": 146127.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 46.99,
+                "vs_national": -10.31,
+                "total_tests": 515,
+                "avg_mileage": 138802.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 46.41,
+                "vs_national": -10.89,
+                "total_tests": 543,
+                "avg_mileage": 140876.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 50.68,
+                "vs_national": -6.62,
+                "total_tests": 367,
+                "avg_mileage": 136634.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 2.08,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": -11.83,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "ATECA": {
+        "core_model": "ATECA",
+        "years_covered": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 89.23,
+                "vs_national": 3.38,
+                "total_tests": 6371,
+                "avg_mileage": 42084.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 90.14,
+                "vs_national": 4.29,
+                "total_tests": 10987,
+                "avg_mileage": 33720.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 89.93,
+                "vs_national": 4.08,
+                "total_tests": 1569,
+                "avg_mileage": 27182.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 87.3,
+                "vs_national": 6.1,
+                "total_tests": 1598,
+                "avg_mileage": 56702.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 87.08,
+                "vs_national": 5.88,
+                "total_tests": 9676,
+                "avg_mileage": 52740.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 87.06,
+                "vs_national": 5.86,
+                "total_tests": 2659,
+                "avg_mileage": 47825.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 85.62,
+                "vs_national": 10.49,
+                "total_tests": 292,
+                "avg_mileage": 63180.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "MII": {
+        "core_model": "MII",
+        "years_covered": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 85.85,
+                "vs_national": 0.0,
+                "total_tests": 926,
+                "avg_mileage": 26214.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 89.7,
+                "vs_national": 3.85,
+                "total_tests": 1321,
+                "avg_mileage": 20744.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 80.12,
+                "vs_national": -1.08,
+                "total_tests": 1308,
+                "avg_mileage": 38118.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 84.83,
+                "vs_national": 3.63,
+                "total_tests": 1477,
+                "avg_mileage": 33098.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 82.69,
+                "vs_national": 1.49,
+                "total_tests": 335,
+                "avg_mileage": 28908.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 79.68,
+                "vs_national": 4.55,
+                "total_tests": 1855,
+                "avg_mileage": 49503.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 79.27,
+                "vs_national": 4.14,
+                "total_tests": 2697,
+                "avg_mileage": 45983.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 77.15,
+                "vs_national": 2.02,
+                "total_tests": 919,
+                "avg_mileage": 42146.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 73.48,
+                "vs_national": 5.24,
+                "total_tests": 1203,
+                "avg_mileage": 61786.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 73.88,
+                "vs_national": 5.64,
+                "total_tests": 3542,
+                "avg_mileage": 58858.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 77.0,
+                "vs_national": 8.76,
+                "total_tests": 1252,
+                "avg_mileage": 56256.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 67.83,
+                "vs_national": 5.0,
+                "total_tests": 575,
+                "avg_mileage": 69150.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 5.0,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2012,
+          "vs_national": 5.0,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "IBIZA": {
+        "core_model": "IBIZA",
+        "years_covered": [
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 81.26,
+                "vs_national": -4.59,
+                "total_tests": 8302,
+                "avg_mileage": 42181.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 87.29,
+                "vs_national": 1.44,
+                "total_tests": 13175,
+                "avg_mileage": 31057.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 84.93,
+                "vs_national": -0.92,
+                "total_tests": 2177,
+                "avg_mileage": 24213.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 72.11,
+                "vs_national": -9.09,
+                "total_tests": 10705,
+                "avg_mileage": 58151.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 71.69,
+                "vs_national": -9.51,
+                "total_tests": 15924,
+                "avg_mileage": 55028.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 76.11,
+                "vs_national": -5.09,
+                "total_tests": 4685,
+                "avg_mileage": 44277.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 66.75,
+                "vs_national": -8.38,
+                "total_tests": 11076,
+                "avg_mileage": 73291.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 67.6,
+                "vs_national": -7.53,
+                "total_tests": 18297,
+                "avg_mileage": 68734.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 67.91,
+                "vs_national": -7.22,
+                "total_tests": 7775,
+                "avg_mileage": 63956.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 62.98,
+                "vs_national": -5.26,
+                "total_tests": 7768,
+                "avg_mileage": 85123.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 62.06,
+                "vs_national": -6.18,
+                "total_tests": 16830,
+                "avg_mileage": 83980.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 62.57,
+                "vs_national": -5.67,
+                "total_tests": 8754,
+                "avg_mileage": 78972.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 57.98,
+                "vs_national": -4.85,
+                "total_tests": 6281,
+                "avg_mileage": 96862.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 60.33,
+                "vs_national": -2.5,
+                "total_tests": 14729,
+                "avg_mileage": 94725.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 60.23,
+                "vs_national": -2.6,
+                "total_tests": 6492,
+                "avg_mileage": 91345.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2002,
+                "pass_rate": 53.76,
+                "vs_national": -3.54,
+                "total_tests": 372,
+                "avg_mileage": 88596.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 48.5,
+                "vs_national": -8.8,
+                "total_tests": 1233,
+                "avg_mileage": 116486.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 49.59,
+                "vs_national": -7.71,
+                "total_tests": 1559,
+                "avg_mileage": 110753.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 49.71,
+                "vs_national": -7.59,
+                "total_tests": 1921,
+                "avg_mileage": 112825.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 49.43,
+                "vs_national": -7.87,
+                "total_tests": 3439,
+                "avg_mileage": 112261.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 48.3,
+                "vs_national": -9.0,
+                "total_tests": 4745,
+                "avg_mileage": 111021.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 48.63,
+                "vs_national": -8.67,
+                "total_tests": 6346,
+                "avg_mileage": 108293.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 53.6,
+                "vs_national": -3.7,
+                "total_tests": 9924,
+                "avg_mileage": 103571.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 56.19,
+                "vs_national": -1.11,
+                "total_tests": 5244,
+                "avg_mileage": 102419.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": -1.11,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": -9.0,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "LEON": {
+        "core_model": "LEON",
+        "years_covered": [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 85.0,
+                "vs_national": -0.85,
+                "total_tests": 13891,
+                "avg_mileage": 46646.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 84.08,
+                "vs_national": -1.77,
+                "total_tests": 19385,
+                "avg_mileage": 38763.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 84.49,
+                "vs_national": -1.36,
+                "total_tests": 3326,
+                "avg_mileage": 30760.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 82.95,
+                "vs_national": 1.75,
+                "total_tests": 9194,
+                "avg_mileage": 62662.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 82.66,
+                "vs_national": 1.46,
+                "total_tests": 18273,
+                "avg_mileage": 57107.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 81.19,
+                "vs_national": -0.01,
+                "total_tests": 7308,
+                "avg_mileage": 52215.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 79.69,
+                "vs_national": 4.56,
+                "total_tests": 10950,
+                "avg_mileage": 79768.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 80.13,
+                "vs_national": 5.0,
+                "total_tests": 17291,
+                "avg_mileage": 74445.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 80.86,
+                "vs_national": 5.73,
+                "total_tests": 6755,
+                "avg_mileage": 69837.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 69.81,
+                "vs_national": 1.57,
+                "total_tests": 5028,
+                "avg_mileage": 91972.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 73.59,
+                "vs_national": 5.35,
+                "total_tests": 11768,
+                "avg_mileage": 87727.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 77.53,
+                "vs_national": 9.29,
+                "total_tests": 8007,
+                "avg_mileage": 86059.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 63.97,
+                "vs_national": 1.14,
+                "total_tests": 3331,
+                "avg_mileage": 106237.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 64.62,
+                "vs_national": 1.79,
+                "total_tests": 6990,
+                "avg_mileage": 102276.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 67.35,
+                "vs_national": 4.52,
+                "total_tests": 4220,
+                "avg_mileage": 95669.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2001,
+                "pass_rate": 63.95,
+                "vs_national": 6.65,
+                "total_tests": 258,
+                "avg_mileage": 120696.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 61.75,
+                "vs_national": 4.45,
+                "total_tests": 651,
+                "avg_mileage": 131736.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 59.8,
+                "vs_national": 2.5,
+                "total_tests": 1358,
+                "avg_mileage": 139914.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 60.15,
+                "vs_national": 2.85,
+                "total_tests": 1724,
+                "avg_mileage": 136999.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 58.67,
+                "vs_national": 1.37,
+                "total_tests": 2047,
+                "avg_mileage": 129922.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 53.49,
+                "vs_national": -3.81,
+                "total_tests": 3533,
+                "avg_mileage": 124971.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 58.73,
+                "vs_national": 1.43,
+                "total_tests": 5282,
+                "avg_mileage": 122615.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 58.98,
+                "vs_national": 1.68,
+                "total_tests": 5405,
+                "avg_mileage": 117291.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 61.02,
+                "vs_national": 3.72,
+                "total_tests": 5470,
+                "avg_mileage": 110342.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 61.61,
+                "vs_national": 4.31,
+                "total_tests": 2988,
+                "avg_mileage": 112257.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2001,
+          "vs_national": 6.65,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": -3.81,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "EXEO": {
+        "core_model": "EXEO",
+        "years_covered": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013
+        ],
+        "trajectory_by_age": {
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 70.8,
+                "vs_national": 2.56,
+                "total_tests": 572,
+                "avg_mileage": 118530.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 72.42,
+                "vs_national": 4.18,
+                "total_tests": 504,
+                "avg_mileage": 114318.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 62.1,
+                "vs_national": -0.73,
+                "total_tests": 723,
+                "avg_mileage": 133289.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 64.82,
+                "vs_national": 1.99,
+                "total_tests": 1586,
+                "avg_mileage": 130361.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 66.43,
+                "vs_national": 3.6,
+                "total_tests": 429,
+                "avg_mileage": 122036.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2009,
+                "pass_rate": 64.9,
+                "vs_national": 7.6,
+                "total_tests": 715,
+                "avg_mileage": 134448.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 62.97,
+                "vs_national": 5.67,
+                "total_tests": 640,
+                "avg_mileage": 142133.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 7.6,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2010,
+          "vs_national": -0.73,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "ALTEA": {
+        "core_model": "ALTEA",
+        "years_covered": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015
+        ],
+        "trajectory_by_age": {
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 73.87,
+                "vs_national": -1.26,
+                "total_tests": 421,
+                "avg_mileage": 71000.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 73.98,
+                "vs_national": -1.15,
+                "total_tests": 465,
+                "avg_mileage": 66526.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 66.32,
+                "vs_national": -1.92,
+                "total_tests": 962,
+                "avg_mileage": 83453.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 68.62,
+                "vs_national": 0.38,
+                "total_tests": 1485,
+                "avg_mileage": 84549.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 68.88,
+                "vs_national": 0.64,
+                "total_tests": 286,
+                "avg_mileage": 78601.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 60.66,
+                "vs_national": -2.17,
+                "total_tests": 788,
+                "avg_mileage": 100889.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 63.22,
+                "vs_national": 0.39,
+                "total_tests": 1381,
+                "avg_mileage": 95274.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 66.31,
+                "vs_national": 3.48,
+                "total_tests": 745,
+                "avg_mileage": 89602.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 50.6,
+                "vs_national": -6.7,
+                "total_tests": 334,
+                "avg_mileage": 121652.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 51.64,
+                "vs_national": -5.66,
+                "total_tests": 790,
+                "avg_mileage": 121046.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 51.04,
+                "vs_national": -6.26,
+                "total_tests": 1538,
+                "avg_mileage": 115839.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 54.71,
+                "vs_national": -2.59,
+                "total_tests": 2612,
+                "avg_mileage": 117977.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 53.16,
+                "vs_national": -4.14,
+                "total_tests": 2233,
+                "avg_mileage": 114723.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 56.38,
+                "vs_national": -0.92,
+                "total_tests": 1850,
+                "avg_mileage": 110740.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 53.79,
+                "vs_national": -3.51,
+                "total_tests": 699,
+                "avg_mileage": 105577.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 3.48,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": -6.7,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "ARONA": {
+        "core_model": "ARONA",
+        "years_covered": [
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 83.02,
+                "vs_national": -2.83,
+                "total_tests": 8833,
+                "avg_mileage": 35253.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 88.14,
+                "vs_national": 2.29,
+                "total_tests": 14811,
+                "avg_mileage": 29459.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 85.89,
+                "vs_national": 0.04,
+                "total_tests": 2574,
+                "avg_mileage": 26438.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 72.59,
+                "vs_national": -8.61,
+                "total_tests": 613,
+                "avg_mileage": 38130.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 78.3,
+                "vs_national": -2.9,
+                "total_tests": 3303,
+                "avg_mileage": 40289.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      }
+    }
+  }
+}

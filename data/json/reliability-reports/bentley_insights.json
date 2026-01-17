@@ -1,0 +1,2817 @@
+{
+  "meta": {
+    "make": "BENTLEY",
+    "generated_at": "2026-01-15T17:43:32.496114",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 5,
+    "make": "BENTLEY",
+    "total_tests": 19522,
+    "total_models": 205,
+    "avg_pass_rate": 91.64,
+    "weighted_pass_rate": 91.64,
+    "best_model": "MULSANNE 2015",
+    "best_model_pass_rate": 98.08,
+    "worst_model": "ARNAGE 2002",
+    "worst_model_pass_rate": 83.63,
+    "rank": 5
+  },
+  "competitors": [
+    {
+      "make": "BENTLEY",
+      "avg_pass_rate": 91.64,
+      "total_tests": 19522,
+      "rank": 5,
+      "total_models": 205
+    },
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    }
+  ],
+  "summary": {
+    "total_tests": 19522,
+    "total_models": 205,
+    "avg_pass_rate": 91.64,
+    "rank": 5,
+    "rank_total": 75,
+    "best_model": "MULSANNE 2015",
+    "best_model_pass_rate": 98.08,
+    "worst_model": "ARNAGE 2002",
+    "worst_model_pass_rate": 83.63,
+    "vs_national": 20.13,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "MULSANNE",
+      "total_tests": 226,
+      "total_passes": 219,
+      "total_fails": 6,
+      "pass_rate": 96.9,
+      "avg_mileage": 27610.0,
+      "year_from": 2015,
+      "year_to": 2016,
+      "variant_count": 2,
+      "variants": "MULSANNE"
+    },
+    {
+      "core_model": "FLYING SPUR",
+      "total_tests": 509,
+      "total_passes": 485,
+      "total_fails": 22,
+      "pass_rate": 95.28,
+      "avg_mileage": 35066.0,
+      "year_from": 2014,
+      "year_to": 2016,
+      "variant_count": 3,
+      "variants": "FLYING SPUR"
+    },
+    {
+      "core_model": "BENTAYGA",
+      "total_tests": 2151,
+      "total_passes": 2035,
+      "total_fails": 93,
+      "pass_rate": 94.61,
+      "avg_mileage": 34326.0,
+      "year_from": 2016,
+      "year_to": 2020,
+      "variant_count": 7,
+      "variants": "BENTAYGA"
+    },
+    {
+      "core_model": "CONTINENTAL",
+      "total_tests": 13765,
+      "total_passes": 12544,
+      "total_fails": 1013,
+      "pass_rate": 91.13,
+      "avg_mileage": 36963.0,
+      "year_from": 2004,
+      "year_to": 2020,
+      "variant_count": 20,
+      "variants": "CONTINENTAL,CONTINENTAL FLYING SPUR W12 A,CONTINENTAL GT,CONTINENTAL GT V8 AUTO"
+    },
+    {
+      "core_model": "ARNAGE",
+      "total_tests": 983,
+      "total_passes": 849,
+      "total_fails": 108,
+      "pass_rate": 86.37,
+      "avg_mileage": 57699.0,
+      "year_from": 2000,
+      "year_to": 2005,
+      "variant_count": 6,
+      "variants": "ARNAGE"
+    }
+  ],
+  "model_year_breakdowns": {
+    "MULSANNE": [
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 122,
+        "pass_rate": 95.9,
+        "avg_mileage": 26396.0,
+        "pass_rate_vs_national": 17.25,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 104,
+        "pass_rate": 98.08,
+        "avg_mileage": 28823.0,
+        "pass_rate_vs_national": 22.59,
+        "national_avg_for_year": 75.49
+      }
+    ],
+    "FLYING SPUR": [
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 134,
+        "pass_rate": 96.27,
+        "avg_mileage": 30285.0,
+        "pass_rate_vs_national": 17.62,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 183,
+        "pass_rate": 95.08,
+        "avg_mileage": 36431.0,
+        "pass_rate_vs_national": 19.59,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 192,
+        "pass_rate": 94.79,
+        "avg_mileage": 38481.0,
+        "pass_rate_vs_national": 23.08,
+        "national_avg_for_year": 71.71
+      }
+    ],
+    "BENTAYGA": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 363,
+        "pass_rate": 96.14,
+        "avg_mileage": 20505.0,
+        "pass_rate_vs_national": 8.47,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 314,
+        "pass_rate": 92.99,
+        "avg_mileage": 26024.0,
+        "pass_rate_vs_national": 6.78,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 201,
+        "pass_rate": 93.53,
+        "avg_mileage": 37874.0,
+        "pass_rate_vs_national": 9.29,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 343,
+        "pass_rate": 95.34,
+        "avg_mileage": 32694.0,
+        "pass_rate_vs_national": 11.1,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 335,
+        "pass_rate": 95.82,
+        "avg_mileage": 43262.0,
+        "pass_rate_vs_national": 14.14,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 218,
+        "pass_rate": 92.66,
+        "avg_mileage": 38883.0,
+        "pass_rate_vs_national": 10.98,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 377,
+        "pass_rate": 94.43,
+        "avg_mileage": 41040.0,
+        "pass_rate_vs_national": 15.78,
+        "national_avg_for_year": 78.65
+      }
+    ],
+    "CONTINENTAL": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 643,
+        "pass_rate": 94.4,
+        "avg_mileage": 12573.0,
+        "pass_rate_vs_national": 6.73,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 781,
+        "pass_rate": 94.88,
+        "avg_mileage": 15030.0,
+        "pass_rate_vs_national": 8.67,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 567,
+        "pass_rate": 94.71,
+        "avg_mileage": 18818.0,
+        "pass_rate_vs_national": 10.47,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 578,
+        "pass_rate": 94.12,
+        "avg_mileage": 24344.0,
+        "pass_rate_vs_national": 12.44,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 853,
+        "pass_rate": 93.67,
+        "avg_mileage": 27212.0,
+        "pass_rate_vs_national": 15.02,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 785,
+        "pass_rate": 94.14,
+        "avg_mileage": 29992.0,
+        "pass_rate_vs_national": 18.65,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 757,
+        "pass_rate": 93.92,
+        "avg_mileage": 34046.0,
+        "pass_rate_vs_national": 22.21,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 732,
+        "pass_rate": 94.54,
+        "avg_mileage": 39214.0,
+        "pass_rate_vs_national": 26.25,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 743,
+        "pass_rate": 92.06,
+        "avg_mileage": 40874.0,
+        "pass_rate_vs_national": 26.43,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 573,
+        "pass_rate": 90.75,
+        "avg_mileage": 43739.0,
+        "pass_rate_vs_national": 27.76,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 541,
+        "pass_rate": 90.39,
+        "avg_mileage": 44623.0,
+        "pass_rate_vs_national": 29.89,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 430,
+        "pass_rate": 92.56,
+        "avg_mileage": 49931.0,
+        "pass_rate_vs_national": 33.55,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 902,
+        "pass_rate": 87.58,
+        "avg_mileage": 53578.0,
+        "pass_rate_vs_national": 30.19,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1363,
+        "pass_rate": 90.1,
+        "avg_mileage": 56222.0,
+        "pass_rate_vs_national": 33.13,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 1163,
+        "pass_rate": 87.02,
+        "avg_mileage": 61528.0,
+        "pass_rate_vs_national": 30.84,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 1218,
+        "pass_rate": 87.85,
+        "avg_mileage": 66506.0,
+        "pass_rate_vs_national": 31.6,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 1136,
+        "pass_rate": 86.53,
+        "avg_mileage": 68673.0,
+        "pass_rate_vs_national": 30.5,
+        "national_avg_for_year": 56.03
+      }
+    ],
+    "ARNAGE": [
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 130,
+        "pass_rate": 86.15,
+        "avg_mileage": 51540.0,
+        "pass_rate_vs_national": 29.9,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 104,
+        "pass_rate": 89.42,
+        "avg_mileage": 53207.0,
+        "pass_rate_vs_national": 33.39,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 135,
+        "pass_rate": 88.15,
+        "avg_mileage": 54600.0,
+        "pass_rate_vs_national": 31.47,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 170,
+        "pass_rate": 83.53,
+        "avg_mileage": 60742.0,
+        "pass_rate_vs_national": 25.99,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 237,
+        "pass_rate": 86.5,
+        "avg_mileage": 61818.0,
+        "pass_rate_vs_national": 27.82,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 207,
+        "pass_rate": 85.99,
+        "avg_mileage": 64287.0,
+        "pass_rate_vs_national": 25.37,
+        "national_avg_for_year": 60.62
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "DI",
+      "model_count": 2,
+      "total_tests": 536,
+      "pass_rate": 94.96,
+      "fuel_name": "Diesel"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 36,
+      "total_tests": 17098,
+      "pass_rate": 91.37,
+      "fuel_name": "Petrol"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 430,
+      "pass_rate": 92.56,
+      "pass_rate_vs_national": 33.55,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 104,
+      "pass_rate": 89.42,
+      "pass_rate_vs_national": 33.39,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1363,
+      "pass_rate": 90.1,
+      "pass_rate_vs_national": 33.13,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1218,
+      "pass_rate": 87.85,
+      "pass_rate_vs_national": 31.6,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 135,
+      "pass_rate": 88.15,
+      "pass_rate_vs_national": 31.47,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1163,
+      "pass_rate": 87.02,
+      "pass_rate_vs_national": 30.84,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1136,
+      "pass_rate": 86.53,
+      "pass_rate_vs_national": 30.5,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 902,
+      "pass_rate": 87.58,
+      "pass_rate_vs_national": 30.19,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 130,
+      "pass_rate": 86.15,
+      "pass_rate_vs_national": 29.9,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 541,
+      "pass_rate": 90.39,
+      "pass_rate_vs_national": 29.89,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 237,
+      "pass_rate": 86.5,
+      "pass_rate_vs_national": 27.82,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 573,
+      "pass_rate": 90.75,
+      "pass_rate_vs_national": 27.76,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 743,
+      "pass_rate": 92.06,
+      "pass_rate_vs_national": 26.43,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 732,
+      "pass_rate": 94.54,
+      "pass_rate_vs_national": 26.25,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 170,
+      "pass_rate": 83.53,
+      "pass_rate_vs_national": 25.99,
+      "national_avg_for_year": 57.54
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "CONTINENTAL GT V8 AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 345,
+      "pass_rate": 94.2,
+      "pass_rate_vs_national": 6.53,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 314,
+      "pass_rate": 92.99,
+      "pass_rate_vs_national": 6.78,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 184,
+      "pass_rate": 94.57,
+      "pass_rate_vs_national": 6.9,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "CONTINENTAL FLYING SPUR W12 A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 114,
+      "pass_rate": 94.74,
+      "pass_rate_vs_national": 7.07,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 363,
+      "pass_rate": 96.14,
+      "pass_rate_vs_national": 8.47,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 781,
+      "pass_rate": 94.88,
+      "pass_rate_vs_national": 8.67,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 201,
+      "pass_rate": 93.53,
+      "pass_rate_vs_national": 9.29,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 567,
+      "pass_rate": 94.71,
+      "pass_rate_vs_national": 10.47,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 218,
+      "pass_rate": 92.66,
+      "pass_rate_vs_national": 10.98,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 343,
+      "pass_rate": 95.34,
+      "pass_rate_vs_national": 11.1,
+      "national_avg_for_year": 84.24
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Tyres",
+        "total_failures": 514,
+        "vehicle_count": 38
+      },
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 357,
+        "vehicle_count": 36
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 351,
+        "vehicle_count": 29
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 266,
+        "vehicle_count": 26
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 161,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 138,
+        "vehicle_count": 24
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 107,
+        "vehicle_count": 31
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 71,
+        "vehicle_count": 25
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 71,
+        "vehicle_count": 14
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 26,
+        "vehicle_count": 13
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 21,
+        "vehicle_count": 12
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 259
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 151
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 102
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 86
+      },
+      {
+        "defect_description": "does not conform to the specified requirements",
+        "category_name": "Identification of the vehicle",
+        "total_occurrences": 75
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 63
+      },
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 61
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 50
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 41
+      },
+      {
+        "defect_description": "warning lamp indicates a fault",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 37
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 1087
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 688
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 660
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 441
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 348
+      },
+      {
+        "defect_description": "has a cut but not deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 233
+      },
+      {
+        "defect_description": "Nail in tyre",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 210
+      },
+      {
+        "defect_description": "slightly damaged",
+        "category_name": "Tyres",
+        "total_occurrences": 158
+      },
+      {
+        "defect_description": "worn, but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 103
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 53
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 981
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 725
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 675
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 483
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 292
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 175
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 100
+      },
+      {
+        "defect_description": "has a lump, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 31
+      },
+      {
+        "defect_description": "fractured",
+        "category_name": "Road Wheels",
+        "total_occurrences": 21
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 9
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 6650,
+      "avg_pass_rate": 95.05
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 6775,
+      "avg_pass_rate": 91.85
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 3088,
+      "avg_pass_rate": 86.4
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 768,
+      "avg_pass_rate": 82.42
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 146,
+      "avg_pass_rate": 77.4
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 17,
+      "avg_pass_rate": 88.24
+    }
+  ],
+  "all_models": [
+    {
+      "model": "MULSANNE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 104,
+      "total_passes": 102,
+      "total_fails": 2,
+      "pass_rate": 98.08,
+      "avg_mileage": 28823.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 26.57
+    },
+    {
+      "model": "FLYING SPUR",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 134,
+      "total_passes": 129,
+      "total_fails": 5,
+      "pass_rate": 96.27,
+      "avg_mileage": 30285.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 24.76
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 363,
+      "total_passes": 349,
+      "total_fails": 12,
+      "pass_rate": 96.14,
+      "avg_mileage": 20505.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 24.63
+    },
+    {
+      "model": "MULSANNE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 122,
+      "total_passes": 117,
+      "total_fails": 4,
+      "pass_rate": 95.9,
+      "avg_mileage": 26396.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 24.39
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 335,
+      "total_passes": 321,
+      "total_fails": 9,
+      "pass_rate": 95.82,
+      "avg_mileage": 43262.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 24.31
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 343,
+      "total_passes": 327,
+      "total_fails": 12,
+      "pass_rate": 95.34,
+      "avg_mileage": 32694.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 23.82
+    },
+    {
+      "model": "FLYING SPUR",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 183,
+      "total_passes": 174,
+      "total_fails": 8,
+      "pass_rate": 95.08,
+      "avg_mileage": 36431.0,
+      "avg_age_years": 7.6,
+      "pass_rate_vs_national": 23.57
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 781,
+      "total_passes": 741,
+      "total_fails": 36,
+      "pass_rate": 94.88,
+      "avg_mileage": 15030.0,
+      "avg_age_years": 3.5,
+      "pass_rate_vs_national": 23.37
+    },
+    {
+      "model": "FLYING SPUR",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 192,
+      "total_passes": 182,
+      "total_fails": 9,
+      "pass_rate": 94.79,
+      "avg_mileage": 38481.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 23.28
+    },
+    {
+      "model": "CONTINENTAL FLYING SPUR W12 A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 114,
+      "total_passes": 108,
+      "total_fails": 4,
+      "pass_rate": 94.74,
+      "avg_mileage": 14262.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 23.23
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 567,
+      "total_passes": 537,
+      "total_fails": 24,
+      "pass_rate": 94.71,
+      "avg_mileage": 18818.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 23.2
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 184,
+      "total_passes": 174,
+      "total_fails": 9,
+      "pass_rate": 94.57,
+      "avg_mileage": 10806.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 23.05
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 732,
+      "total_passes": 692,
+      "total_fails": 34,
+      "pass_rate": 94.54,
+      "avg_mileage": 39214.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 23.02
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 377,
+      "total_passes": 356,
+      "total_fails": 18,
+      "pass_rate": 94.43,
+      "avg_mileage": 41040.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 22.92
+    },
+    {
+      "model": "CONTINENTAL GT V8 AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 345,
+      "total_passes": 325,
+      "total_fails": 14,
+      "pass_rate": 94.2,
+      "avg_mileage": 12651.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 22.69
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 785,
+      "total_passes": 739,
+      "total_fails": 34,
+      "pass_rate": 94.14,
+      "avg_mileage": 29992.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 22.63
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 578,
+      "total_passes": 544,
+      "total_fails": 28,
+      "pass_rate": 94.12,
+      "avg_mileage": 24344.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 22.61
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 757,
+      "total_passes": 711,
+      "total_fails": 41,
+      "pass_rate": 93.92,
+      "avg_mileage": 34046.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 22.41
+    },
+    {
+      "model": "CONTINENTAL GT",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 486,
+      "total_passes": 456,
+      "total_fails": 24,
+      "pass_rate": 93.83,
+      "avg_mileage": 27015.0,
+      "avg_age_years": 6.3,
+      "pass_rate_vs_national": 22.32
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 201,
+      "total_passes": 188,
+      "total_fails": 11,
+      "pass_rate": 93.53,
+      "avg_mileage": 37874.0,
+      "avg_age_years": 4.6,
+      "pass_rate_vs_national": 22.02
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 367,
+      "total_passes": 343,
+      "total_fails": 18,
+      "pass_rate": 93.46,
+      "avg_mileage": 27408.0,
+      "avg_age_years": 6.7,
+      "pass_rate_vs_national": 21.95
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 314,
+      "total_passes": 292,
+      "total_fails": 16,
+      "pass_rate": 92.99,
+      "avg_mileage": 26024.0,
+      "avg_age_years": 3.5,
+      "pass_rate_vs_national": 21.48
+    },
+    {
+      "model": "BENTAYGA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 218,
+      "total_passes": 202,
+      "total_fails": 15,
+      "pass_rate": 92.66,
+      "avg_mileage": 38883.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 21.15
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 430,
+      "total_passes": 398,
+      "total_fails": 23,
+      "pass_rate": 92.56,
+      "avg_mileage": 49931.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 21.05
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 743,
+      "total_passes": 684,
+      "total_fails": 52,
+      "pass_rate": 92.06,
+      "avg_mileage": 40874.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 20.55
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 573,
+      "total_passes": 520,
+      "total_fails": 42,
+      "pass_rate": 90.75,
+      "avg_mileage": 43739.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 19.24
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 541,
+      "total_passes": 489,
+      "total_fails": 45,
+      "pass_rate": 90.39,
+      "avg_mileage": 44623.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 18.88
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1363,
+      "total_passes": 1228,
+      "total_fails": 109,
+      "pass_rate": 90.1,
+      "avg_mileage": 56222.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 18.58
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 104,
+      "total_passes": 93,
+      "total_fails": 9,
+      "pass_rate": 89.42,
+      "avg_mileage": 53207.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 17.91
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 135,
+      "total_passes": 119,
+      "total_fails": 14,
+      "pass_rate": 88.15,
+      "avg_mileage": 54600.0,
+      "avg_age_years": 19.6,
+      "pass_rate_vs_national": 16.64
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1218,
+      "total_passes": 1070,
+      "total_fails": 130,
+      "pass_rate": 87.85,
+      "avg_mileage": 66506.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 16.34
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 902,
+      "total_passes": 790,
+      "total_fails": 89,
+      "pass_rate": 87.58,
+      "avg_mileage": 53578.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 16.07
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1163,
+      "total_passes": 1012,
+      "total_fails": 127,
+      "pass_rate": 87.02,
+      "avg_mileage": 61528.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 15.51
+    },
+    {
+      "model": "CONTINENTAL",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1136,
+      "total_passes": 983,
+      "total_fails": 130,
+      "pass_rate": 86.53,
+      "avg_mileage": 68673.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": 15.02
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 237,
+      "total_passes": 205,
+      "total_fails": 29,
+      "pass_rate": 86.5,
+      "avg_mileage": 61818.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": 14.99
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 130,
+      "total_passes": 112,
+      "total_fails": 14,
+      "pass_rate": 86.15,
+      "avg_mileage": 51540.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 14.64
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 207,
+      "total_passes": 178,
+      "total_fails": 21,
+      "pass_rate": 85.99,
+      "avg_mileage": 64287.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": 14.48
+    },
+    {
+      "model": "ARNAGE",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 170,
+      "total_passes": 142,
+      "total_fails": 21,
+      "pass_rate": 83.53,
+      "avg_mileage": 60742.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": 12.02
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 430,
+        "avg_vs_national": 32.69,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.56,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.69,
+          "total_tests": 430,
+          "avg_mileage": 49931.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.56,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.69,
+          "total_tests": 430,
+          "avg_mileage": 49931.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1363,
+        "avg_vs_national": 30.23,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.1,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.23,
+          "total_tests": 1363,
+          "avg_mileage": 56222.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.1,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.23,
+          "total_tests": 1363,
+          "avg_mileage": 56222.0
+        }
+      },
+      {
+        "model": "ARNAGE",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 104,
+        "avg_vs_national": 29.55,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.42,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.55,
+          "total_tests": 104,
+          "avg_mileage": 53207.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.42,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.55,
+          "total_tests": 104,
+          "avg_mileage": 53207.0
+        }
+      },
+      {
+        "model": "ARNAGE",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 135,
+        "avg_vs_national": 28.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 88.15,
+          "national_pass_rate": 59.87,
+          "vs_national": 28.28,
+          "total_tests": 135,
+          "avg_mileage": 54600.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 88.15,
+          "national_pass_rate": 59.87,
+          "vs_national": 28.28,
+          "total_tests": 135,
+          "avg_mileage": 54600.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 1218,
+        "avg_vs_national": 27.98,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.85,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.98,
+          "total_tests": 1218,
+          "avg_mileage": 66506.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.85,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.98,
+          "total_tests": 1218,
+          "avg_mileage": 66506.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 902,
+        "avg_vs_national": 27.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.71,
+          "total_tests": 902,
+          "avg_mileage": 53578.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.71,
+          "total_tests": 902,
+          "avg_mileage": 53578.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 541,
+        "avg_vs_national": 27.3,
+        "durability_trend": 7.34,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.71,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.84,
+          "total_tests": 280,
+          "avg_mileage": 46190.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 90.04,
+          "national_pass_rate": 66.54,
+          "vs_national": 23.5,
+          "total_tests": 261,
+          "avg_mileage": 42943.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 1163,
+        "avg_vs_national": 27.15,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.02,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.15,
+          "total_tests": 1163,
+          "avg_mileage": 61528.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.02,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.15,
+          "total_tests": 1163,
+          "avg_mileage": 61528.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 1136,
+        "avg_vs_national": 26.66,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.53,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.66,
+          "total_tests": 1136,
+          "avg_mileage": 68673.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.53,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.66,
+          "total_tests": 1136,
+          "avg_mileage": 68673.0
+        }
+      },
+      {
+        "model": "ARNAGE",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 237,
+        "avg_vs_national": 26.63,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.5,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.63,
+          "total_tests": 237,
+          "avg_mileage": 61818.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.5,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.63,
+          "total_tests": 237,
+          "avg_mileage": 61818.0
+        }
+      },
+      {
+        "model": "ARNAGE",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 130,
+        "avg_vs_national": 26.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.15,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.28,
+          "total_tests": 130,
+          "avg_mileage": 51540.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.15,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.28,
+          "total_tests": 130,
+          "avg_mileage": 51540.0
+        }
+      },
+      {
+        "model": "ARNAGE",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 207,
+        "avg_vs_national": 26.12,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 85.99,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.12,
+          "total_tests": 207,
+          "avg_mileage": 64287.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 85.99,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.12,
+          "total_tests": 207,
+          "avg_mileage": 64287.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 573,
+        "avg_vs_national": 24.21,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 90.75,
+          "national_pass_rate": 66.54,
+          "vs_national": 24.21,
+          "total_tests": 573,
+          "avg_mileage": 43739.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 90.75,
+          "national_pass_rate": 66.54,
+          "vs_national": 24.21,
+          "total_tests": 573,
+          "avg_mileage": 43739.0
+        }
+      },
+      {
+        "model": "ARNAGE",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 170,
+        "avg_vs_national": 23.66,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 83.53,
+          "national_pass_rate": 59.87,
+          "vs_national": 23.66,
+          "total_tests": 170,
+          "avg_mileage": 60742.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 83.53,
+          "national_pass_rate": 59.87,
+          "vs_national": 23.66,
+          "total_tests": 170,
+          "avg_mileage": 60742.0
+        }
+      },
+      {
+        "model": "CONTINENTAL",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 732,
+        "avg_vs_national": 23.31,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 94.54,
+          "national_pass_rate": 71.23,
+          "vs_national": 23.31,
+          "total_tests": 732,
+          "avg_mileage": 39214.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 94.54,
+          "national_pass_rate": 71.23,
+          "vs_national": 23.31,
+          "total_tests": 732,
+          "avg_mileage": 39214.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "BENTAYGA",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 314,
+        "avg_vs_national": 6.56,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.99,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.56,
+          "total_tests": 314,
+          "avg_mileage": 26024.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.99,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.56,
+          "total_tests": 314,
+          "avg_mileage": 26024.0
+        }
+      },
+      {
+        "model": "CONTINENTAL GT",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 781,
+        "avg_vs_national": 8.45,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.88,
+          "national_pass_rate": 86.43,
+          "vs_national": 8.45,
+          "total_tests": 781,
+          "avg_mileage": 15030.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.88,
+          "national_pass_rate": 86.43,
+          "vs_national": 8.45,
+          "total_tests": 781,
+          "avg_mileage": 15030.0
+        }
+      },
+      {
+        "model": "BENTAYGA",
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 201,
+        "avg_vs_national": 9.56,
+        "durability_trend": 3.15,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 93.04,
+          "national_pass_rate": 82.13,
+          "vs_national": 10.91,
+          "total_tests": 115,
+          "avg_mileage": 39435.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.19,
+          "national_pass_rate": 86.43,
+          "vs_national": 7.76,
+          "total_tests": 86,
+          "avg_mileage": 35787.0
+        }
+      },
+      {
+        "model": "CONTINENTAL GT",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 567,
+        "avg_vs_national": 9.89,
+        "durability_trend": 3.71,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.34,
+          "national_pass_rate": 82.13,
+          "vs_national": 12.21,
+          "total_tests": 212,
+          "avg_mileage": 19388.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.93,
+          "national_pass_rate": 86.43,
+          "vs_national": 8.5,
+          "total_tests": 355,
+          "avg_mileage": 18478.0
+        }
+      },
+      {
+        "model": "BENTAYGA",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 218,
+        "avg_vs_national": 10.53,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 92.66,
+          "national_pass_rate": 82.13,
+          "vs_national": 10.53,
+          "total_tests": 218,
+          "avg_mileage": 38883.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 92.66,
+          "national_pass_rate": 82.13,
+          "vs_national": 10.53,
+          "total_tests": 218,
+          "avg_mileage": 38883.0
+        }
+      },
+      {
+        "model": "BENTAYGA",
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 106,
+        "avg_vs_national": 10.74,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 97.17,
+          "national_pass_rate": 86.43,
+          "vs_national": 10.74,
+          "total_tests": 106,
+          "avg_mileage": 21478.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 97.17,
+          "national_pass_rate": 86.43,
+          "vs_national": 10.74,
+          "total_tests": 106,
+          "avg_mileage": 21478.0
+        }
+      },
+      {
+        "model": "CONTINENTAL GT V8 AUTO",
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 118,
+        "avg_vs_national": 11.03,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 97.46,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.03,
+          "total_tests": 118,
+          "avg_mileage": 13753.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 97.46,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.03,
+          "total_tests": 118,
+          "avg_mileage": 13753.0
+        }
+      },
+      {
+        "model": "BENTAYGA",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 343,
+        "avg_vs_national": 11.24,
+        "durability_trend": 6.27,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 96.24,
+          "national_pass_rate": 82.13,
+          "vs_national": 14.11,
+          "total_tests": 186,
+          "avg_mileage": 34558.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.27,
+          "national_pass_rate": 86.43,
+          "vs_national": 7.84,
+          "total_tests": 157,
+          "avg_mileage": 30485.0
+        }
+      },
+      {
+        "model": "CONTINENTAL GT",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 578,
+        "avg_vs_national": 11.99,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.12,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.99,
+          "total_tests": 578,
+          "avg_mileage": 24344.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.12,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.99,
+          "total_tests": 578,
+          "avg_mileage": 24344.0
+        }
+      },
+      {
+        "model": "CONTINENTAL GT",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 486,
+        "avg_vs_national": 13.25,
+        "durability_trend": 6.38,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 94.84,
+          "national_pass_rate": 77.24,
+          "vs_national": 17.6,
+          "total_tests": 155,
+          "avg_mileage": 27359.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 93.35,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.22,
+          "total_tests": 331,
+          "avg_mileage": 26854.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 17,
+          "tests": 4476
+        },
+        "maturing": {
+          "vehicles": 12,
+          "tests": 3826
+        },
+        "proven": {
+          "vehicles": 15,
+          "tests": 8659
+        }
+      },
+      "proven_vehicles_tested": 16,
+      "proven_above_average_pct": 100.0,
+      "proven_avg_vs_national": 30.07,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 430,
+          "pass_rate": 92.56,
+          "vs_national_at_age": 35.26,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 49931.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 280,
+          "pass_rate": 90.71,
+          "vs_national_at_age": 33.41,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 46190.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1363,
+          "pass_rate": 90.1,
+          "vs_national_at_age": 32.8,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 56222.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ARNAGE",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 104,
+          "pass_rate": 89.42,
+          "vs_national_at_age": 32.12,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 53207.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ARNAGE",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 135,
+          "pass_rate": 88.15,
+          "vs_national_at_age": 30.85,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 54600.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1218,
+          "pass_rate": 87.85,
+          "vs_national_at_age": 30.55,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66506.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 902,
+          "pass_rate": 87.58,
+          "vs_national_at_age": 30.28,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 53578.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1163,
+          "pass_rate": 87.02,
+          "vs_national_at_age": 29.72,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 61528.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1136,
+          "pass_rate": 86.53,
+          "vs_national_at_age": 29.23,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 68673.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ARNAGE",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 237,
+          "pass_rate": 86.5,
+          "vs_national_at_age": 29.2,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 61818.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 350,
+          "pass_rate": 91.71,
+          "vs_national_at_age": 28.88,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 39990.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ARNAGE",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 130,
+          "pass_rate": 86.15,
+          "vs_national_at_age": 28.85,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 51540.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ARNAGE",
+          "model_year": 2000,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 207,
+          "pass_rate": 85.99,
+          "vs_national_at_age": 28.69,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 64287.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CONTINENTAL",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 573,
+          "pass_rate": 90.75,
+          "vs_national_at_age": 27.92,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 43739.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ARNAGE",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 170,
+          "pass_rate": 83.53,
+          "vs_national_at_age": 26.23,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 60742.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "BENTAYGA",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 186,
+          "pass_rate": 96.24,
+          "vs_national_at_age": 15.04,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 34558.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BENTAYGA",
+          "model_year": 2017,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 335,
+          "pass_rate": 95.82,
+          "vs_national_at_age": 14.62,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 43262.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BENTAYGA",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 209,
+          "pass_rate": 95.22,
+          "vs_national_at_age": 14.02,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 39812.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "CONTINENTAL GT",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 212,
+          "pass_rate": 94.34,
+          "vs_national_at_age": 13.14,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 19388.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "CONTINENTAL GT",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 578,
+          "pass_rate": 94.12,
+          "vs_national_at_age": 12.92,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 24344.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "CONTINENTAL GT",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 331,
+          "pass_rate": 93.35,
+          "vs_national_at_age": 12.15,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 26854.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BENTAYGA",
+          "model_year": 2018,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 115,
+          "pass_rate": 93.04,
+          "vs_national_at_age": 11.84,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 39435.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "CONTINENTAL GT V8 AUTO",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 118,
+          "pass_rate": 97.46,
+          "vs_national_at_age": 11.61,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 13753.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BENTAYGA",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 218,
+          "pass_rate": 92.66,
+          "vs_national_at_age": 11.46,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 38883.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BENTAYGA",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 106,
+          "pass_rate": 97.17,
+          "vs_national_at_age": 11.32,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 21478.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "BENTAYGA": {
+        "core_model": "BENTAYGA",
+        "years_covered": [
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 94.24,
+                "vs_national": 8.39,
+                "total_tests": 243,
+                "avg_mileage": 33136.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 92.99,
+                "vs_national": 7.14,
+                "total_tests": 314,
+                "avg_mileage": 26024.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 95.22,
+                "vs_national": 14.02,
+                "total_tests": 209,
+                "avg_mileage": 39812.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 94.57,
+                "vs_national": 13.37,
+                "total_tests": 553,
+                "avg_mileage": 41073.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 95.02,
+                "vs_national": 13.82,
+                "total_tests": 301,
+                "avg_mileage": 36997.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "CONTINENTAL": {
+        "core_model": "CONTINENTAL",
+        "years_covered": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 94.93,
+                "vs_national": 9.08,
+                "total_tests": 355,
+                "avg_mileage": 18478.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 94.88,
+                "vs_national": 9.03,
+                "total_tests": 781,
+                "avg_mileage": 15030.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 96.48,
+                "vs_national": 10.63,
+                "total_tests": 227,
+                "avg_mileage": 12970.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 92.65,
+                "vs_national": 11.45,
+                "total_tests": 449,
+                "avg_mileage": 27736.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 94.12,
+                "vs_national": 12.92,
+                "total_tests": 578,
+                "avg_mileage": 24344.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 94.34,
+                "vs_national": 13.14,
+                "total_tests": 212,
+                "avg_mileage": 19388.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 94.5,
+                "vs_national": 19.37,
+                "total_tests": 400,
+                "avg_mileage": 32289.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 94.14,
+                "vs_national": 19.01,
+                "total_tests": 785,
+                "avg_mileage": 29992.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 94.8,
+                "vs_national": 19.67,
+                "total_tests": 404,
+                "avg_mileage": 27097.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 92.37,
+                "vs_national": 24.13,
+                "total_tests": 393,
+                "avg_mileage": 41662.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 94.54,
+                "vs_national": 26.3,
+                "total_tests": 732,
+                "avg_mileage": 39214.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 93.28,
+                "vs_national": 25.04,
+                "total_tests": 357,
+                "avg_mileage": 36015.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 90.04,
+                "vs_national": 27.21,
+                "total_tests": 261,
+                "avg_mileage": 42943.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 90.75,
+                "vs_national": 27.92,
+                "total_tests": 573,
+                "avg_mileage": 43739.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 91.71,
+                "vs_national": 28.88,
+                "total_tests": 350,
+                "avg_mileage": 39990.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 86.53,
+                "vs_national": 29.23,
+                "total_tests": 1136,
+                "avg_mileage": 68673.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 87.85,
+                "vs_national": 30.55,
+                "total_tests": 1218,
+                "avg_mileage": 66506.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 87.02,
+                "vs_national": 29.72,
+                "total_tests": 1163,
+                "avg_mileage": 61528.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 90.1,
+                "vs_national": 32.8,
+                "total_tests": 1363,
+                "avg_mileage": 56222.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 87.58,
+                "vs_national": 30.28,
+                "total_tests": 902,
+                "avg_mileage": 53578.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 92.56,
+                "vs_national": 35.26,
+                "total_tests": 430,
+                "avg_mileage": 49931.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 90.71,
+                "vs_national": 33.41,
+                "total_tests": 280,
+                "avg_mileage": 46190.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 35.26,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2010,
+          "vs_national": 27.21,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "ARNAGE": {
+        "core_model": "ARNAGE",
+        "years_covered": [
+          2000,
+          2001
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 85.99,
+                "vs_national": 28.69,
+                "total_tests": 207,
+                "avg_mileage": 64287.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 86.5,
+                "vs_national": 29.2,
+                "total_tests": 237,
+                "avg_mileage": 61818.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2001,
+          "vs_national": 29.2,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2000,
+          "vs_national": 28.69,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

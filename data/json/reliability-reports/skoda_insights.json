@@ -1,0 +1,6800 @@
+{
+  "meta": {
+    "make": "SKODA",
+    "generated_at": "2026-01-15T17:43:13.238416",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 28,
+    "make": "SKODA",
+    "total_tests": 764629,
+    "total_models": 728,
+    "avg_pass_rate": 76.69,
+    "weighted_pass_rate": 76.69,
+    "best_model": "OCTAVIA SE TECH TSI IV S-A 2021",
+    "best_model_pass_rate": 97.35,
+    "worst_model": "ROOMSTER 2006",
+    "worst_model_pass_rate": 46.17,
+    "rank": 28
+  },
+  "competitors": [
+    {
+      "make": "SKODA",
+      "avg_pass_rate": 76.69,
+      "total_tests": 764629,
+      "rank": 28,
+      "total_models": 728
+    },
+    {
+      "make": "KIA",
+      "avg_pass_rate": 73.9,
+      "total_tests": 886213,
+      "rank": 32,
+      "total_models": 1057
+    },
+    {
+      "make": "SEAT",
+      "avg_pass_rate": 73.76,
+      "total_tests": 544899,
+      "rank": 33,
+      "total_models": 683
+    },
+    {
+      "make": "HYUNDAI",
+      "avg_pass_rate": 73.27,
+      "total_tests": 858542,
+      "rank": 34,
+      "total_models": 1000
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    }
+  ],
+  "summary": {
+    "total_tests": 764629,
+    "total_models": 728,
+    "avg_pass_rate": 76.69,
+    "rank": 28,
+    "rank_total": 75,
+    "best_model": "OCTAVIA SE TECH TSI IV S-A 2021",
+    "best_model_pass_rate": 97.35,
+    "worst_model": "ROOMSTER 2006",
+    "worst_model_pass_rate": 46.17,
+    "vs_national": 5.18,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "ENYAQ IV 60",
+      "total_tests": 455,
+      "total_passes": 429,
+      "total_fails": 20,
+      "pass_rate": 94.29,
+      "avg_mileage": 28489.0,
+      "year_from": 2022,
+      "year_to": 2022,
+      "variant_count": 1,
+      "variants": "ENYAQ IV 60"
+    },
+    {
+      "core_model": "KAMIQ SE L TSI",
+      "total_tests": 3687,
+      "total_passes": 3349,
+      "total_fails": 274,
+      "pass_rate": 90.83,
+      "avg_mileage": 21779.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 4,
+      "variants": "KAMIQ SE L TSI,KAMIQ SE L TSI S-A"
+    },
+    {
+      "core_model": "KAROQ",
+      "total_tests": 41589,
+      "total_passes": 37537,
+      "total_fails": 3133,
+      "pass_rate": 90.26,
+      "avg_mileage": 29933.0,
+      "year_from": 2018,
+      "year_to": 2021,
+      "variant_count": 15,
+      "variants": "KAROQ,KAROQ SE DRIVE TSI,KAROQ SE DRIVE TSI S-A,KAROQ SPORTLINE TSI,KAROQ SPORTLINE TSI S-A,KAROQ SPORTLNE TDI SCR 4X4 SA"
+    },
+    {
+      "core_model": "KAMIQ SE TSI",
+      "total_tests": 3357,
+      "total_passes": 3024,
+      "total_fails": 265,
+      "pass_rate": 90.08,
+      "avg_mileage": 22102.0,
+      "year_from": 2019,
+      "year_to": 2020,
+      "variant_count": 4,
+      "variants": "KAMIQ SE TSI,KAMIQ SE TSI S-A"
+    },
+    {
+      "core_model": "SCALA",
+      "total_tests": 4842,
+      "total_passes": 4326,
+      "total_fails": 435,
+      "pass_rate": 89.34,
+      "avg_mileage": 28720.0,
+      "year_from": 2019,
+      "year_to": 2021,
+      "variant_count": 5,
+      "variants": "SCALA"
+    },
+    {
+      "core_model": "KODIAQ",
+      "total_tests": 30145,
+      "total_passes": 26925,
+      "total_fails": 2677,
+      "pass_rate": 89.32,
+      "avg_mileage": 36713.0,
+      "year_from": 2017,
+      "year_to": 2021,
+      "variant_count": 12,
+      "variants": "KODIAQ,KODIAQ SE DRIVE TSI,KODIAQ SE DRIVE TSI S-A"
+    },
+    {
+      "core_model": "KAMIQ MONTE CARLO TSI",
+      "total_tests": 240,
+      "total_passes": 212,
+      "total_fails": 26,
+      "pass_rate": 88.33,
+      "avg_mileage": 22968.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 2,
+      "variants": "KAMIQ MONTE CARLO TSI,KAMIQ MONTE CARLO TSI S-A"
+    },
+    {
+      "core_model": "KAMIQ S TSI",
+      "total_tests": 150,
+      "total_passes": 127,
+      "total_fails": 20,
+      "pass_rate": 84.67,
+      "avg_mileage": 24360.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "KAMIQ S TSI"
+    },
+    {
+      "core_model": "CITIGO",
+      "total_tests": 52423,
+      "total_passes": 42703,
+      "total_fails": 6742,
+      "pass_rate": 81.46,
+      "avg_mileage": 39286.0,
+      "year_from": 2012,
+      "year_to": 2020,
+      "variant_count": 9,
+      "variants": "CITIGO,CITIGO E SE L IV"
+    },
+    {
+      "core_model": "YETI",
+      "total_tests": 76330,
+      "total_passes": 60329,
+      "total_fails": 12988,
+      "pass_rate": 79.04,
+      "avg_mileage": 73548.0,
+      "year_from": 2009,
+      "year_to": 2017,
+      "variant_count": 18,
+      "variants": "YETI"
+    },
+    {
+      "core_model": "SUPERB",
+      "total_tests": 62010,
+      "total_passes": 48733,
+      "total_fails": 11168,
+      "pass_rate": 78.59,
+      "avg_mileage": 79061.0,
+      "year_from": 2004,
+      "year_to": 2022,
+      "variant_count": 39,
+      "variants": "SUPERB,SUPERB L AND K IV PHEV S-A,SUPERB SE L IV PHEV S-A,SUPERB SE L TDI,SUPERB SE L TDI S-A,SUPERB SE L TSI,SUPERB SE L TSI S-A,SUPERB SE TECH IV PHEV S-A,SUPERB SPORTLINE + IV PHEV S-A"
+    },
+    {
+      "core_model": "OCTAVIA",
+      "total_tests": 205894,
+      "total_passes": 155843,
+      "total_fails": 40563,
+      "pass_rate": 75.69,
+      "avg_mileage": 93378.0,
+      "year_from": 2000,
+      "year_to": 2021,
+      "variant_count": 52,
+      "variants": "OCTAVIA,OCTAVIA SE FIRST EDITION TSI,OCTAVIA SE L FIRST ED TDI S-A,OCTAVIA SE L FIRST EDITION TDI,OCTAVIA SE L FIRST EDITION TSI,OCTAVIA SE L TSI,OCTAVIA SE TECH TSI IV S-A,OCTAVIA SE TECHNOLOGY TDI,OCTAVIA SE TECHNOLOGY TSI"
+    },
+    {
+      "core_model": "RAPID",
+      "total_tests": 22799,
+      "total_passes": 17240,
+      "total_fails": 4506,
+      "pass_rate": 75.62,
+      "avg_mileage": 77894.0,
+      "year_from": 2012,
+      "year_to": 2019,
+      "variant_count": 14,
+      "variants": "RAPID"
+    },
+    {
+      "core_model": "FABIA",
+      "total_tests": 235989,
+      "total_passes": 168073,
+      "total_fails": 54190,
+      "pass_rate": 71.22,
+      "avg_mileage": 80227.0,
+      "year_from": 2000,
+      "year_to": 2021,
+      "variant_count": 42,
+      "variants": "FABIA,FABIA SE DRIVE MPI,FABIA SE DRIVE TSI"
+    },
+    {
+      "core_model": "ROOMSTER",
+      "total_tests": 19258,
+      "total_passes": 12844,
+      "total_fails": 5202,
+      "pass_rate": 66.69,
+      "avg_mileage": 86411.0,
+      "year_from": 2006,
+      "year_to": 2015,
+      "variant_count": 20,
+      "variants": "ROOMSTER"
+    },
+    {
+      "core_model": "FELICIA",
+      "total_tests": 365,
+      "total_passes": 226,
+      "total_fails": 123,
+      "pass_rate": 61.92,
+      "avg_mileage": 89451.0,
+      "year_from": 2000,
+      "year_to": 2000,
+      "variant_count": 2,
+      "variants": "FELICIA"
+    }
+  ],
+  "model_year_breakdowns": {
+    "ENYAQ IV 60": [
+      {
+        "model_year": 2022,
+        "fuel_type": "EL",
+        "total_tests": 455,
+        "pass_rate": 94.29,
+        "avg_mileage": 28489.0,
+        "pass_rate_vs_national": 1.43,
+        "national_avg_for_year": 92.86
+      }
+    ],
+    "KAMIQ SE L TSI": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 3394,
+        "pass_rate": 90.87,
+        "avg_mileage": 19877.0,
+        "pass_rate_vs_national": 3.2,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 293,
+        "pass_rate": 90.44,
+        "avg_mileage": 23680.0,
+        "pass_rate_vs_national": 4.23,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "KAROQ": [
+      {
+        "model_year": 2021,
+        "fuel_type": "PE",
+        "total_tests": 423,
+        "pass_rate": 92.91,
+        "avg_mileage": 22521.0,
+        "pass_rate_vs_national": 2.06,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 1757,
+        "pass_rate": 90.21,
+        "avg_mileage": 29751.0,
+        "pass_rate_vs_national": 2.54,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 10805,
+        "pass_rate": 89.42,
+        "avg_mileage": 23853.0,
+        "pass_rate_vs_national": 1.75,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 5552,
+        "pass_rate": 89.55,
+        "avg_mileage": 36569.0,
+        "pass_rate_vs_national": 3.34,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 9014,
+        "pass_rate": 91.96,
+        "avg_mileage": 32125.0,
+        "pass_rate_vs_national": 5.75,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 4776,
+        "pass_rate": 89.91,
+        "avg_mileage": 42564.0,
+        "pass_rate_vs_national": 5.67,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 9262,
+        "pass_rate": 90.07,
+        "avg_mileage": 35633.0,
+        "pass_rate_vs_national": 5.83,
+        "national_avg_for_year": 84.24
+      }
+    ],
+    "KAMIQ SE TSI": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 2991,
+        "pass_rate": 90.27,
+        "avg_mileage": 19908.0,
+        "pass_rate_vs_national": 2.6,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 366,
+        "pass_rate": 88.52,
+        "avg_mileage": 24297.0,
+        "pass_rate_vs_national": 2.31,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "SCALA": [
+      {
+        "model_year": 2021,
+        "fuel_type": "PE",
+        "total_tests": 104,
+        "pass_rate": 96.15,
+        "avg_mileage": 24843.0,
+        "pass_rate_vs_national": 5.3,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 165,
+        "pass_rate": 86.67,
+        "avg_mileage": 37219.0,
+        "pass_rate_vs_national": -1.0,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 3013,
+        "pass_rate": 89.94,
+        "avg_mileage": 21696.0,
+        "pass_rate_vs_national": 2.27,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 112,
+        "pass_rate": 83.93,
+        "avg_mileage": 33201.0,
+        "pass_rate_vs_national": -2.28,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1448,
+        "pass_rate": 88.33,
+        "avg_mileage": 26640.0,
+        "pass_rate_vs_national": 2.12,
+        "national_avg_for_year": 86.21
+      }
+    ],
+    "KODIAQ": [
+      {
+        "model_year": 2021,
+        "fuel_type": "DI",
+        "total_tests": 154,
+        "pass_rate": 96.1,
+        "avg_mileage": 28546.0,
+        "pass_rate_vs_national": 5.25,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2021,
+        "fuel_type": "PE",
+        "total_tests": 181,
+        "pass_rate": 95.03,
+        "avg_mileage": 24721.0,
+        "pass_rate_vs_national": 4.18,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 2620,
+        "pass_rate": 89.2,
+        "avg_mileage": 31162.0,
+        "pass_rate_vs_national": 1.53,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 4608,
+        "pass_rate": 90.54,
+        "avg_mileage": 26038.0,
+        "pass_rate_vs_national": 2.87,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 4913,
+        "pass_rate": 88.28,
+        "avg_mileage": 40377.0,
+        "pass_rate_vs_national": 2.07,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 3906,
+        "pass_rate": 90.25,
+        "avg_mileage": 32642.0,
+        "pass_rate_vs_national": 4.04,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 4410,
+        "pass_rate": 89.41,
+        "avg_mileage": 50844.0,
+        "pass_rate_vs_national": 5.17,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 3179,
+        "pass_rate": 89.68,
+        "avg_mileage": 41947.0,
+        "pass_rate_vs_national": 5.44,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 2883,
+        "pass_rate": 87.72,
+        "avg_mileage": 61438.0,
+        "pass_rate_vs_national": 6.04,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 3291,
+        "pass_rate": 88.45,
+        "avg_mileage": 50763.0,
+        "pass_rate_vs_national": 6.77,
+        "national_avg_for_year": 81.68
+      }
+    ],
+    "KAMIQ MONTE CARLO TSI": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 240,
+        "pass_rate": 88.33,
+        "avg_mileage": 22968.0,
+        "pass_rate_vs_national": 0.66,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "KAMIQ S TSI": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 150,
+        "pass_rate": 84.67,
+        "avg_mileage": 24360.0,
+        "pass_rate_vs_national": -3.0,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "CITIGO": [
+      {
+        "model_year": 2020,
+        "fuel_type": "EL",
+        "total_tests": 220,
+        "pass_rate": 89.09,
+        "avg_mileage": 15255.0,
+        "pass_rate_vs_national": 1.42,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 4568,
+        "pass_rate": 91.86,
+        "avg_mileage": 21853.0,
+        "pass_rate_vs_national": 5.65,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 5402,
+        "pass_rate": 85.62,
+        "avg_mileage": 26689.0,
+        "pass_rate_vs_national": 1.38,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 6294,
+        "pass_rate": 83.21,
+        "avg_mileage": 32924.0,
+        "pass_rate_vs_national": 1.53,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 7824,
+        "pass_rate": 77.99,
+        "avg_mileage": 39193.0,
+        "pass_rate_vs_national": -0.66,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 8108,
+        "pass_rate": 80.18,
+        "avg_mileage": 44650.0,
+        "pass_rate_vs_national": 4.69,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 9161,
+        "pass_rate": 79.53,
+        "avg_mileage": 54356.0,
+        "pass_rate_vs_national": 7.82,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 7060,
+        "pass_rate": 79.41,
+        "avg_mileage": 57618.0,
+        "pass_rate_vs_national": 11.12,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 3786,
+        "pass_rate": 78.02,
+        "avg_mileage": 61034.0,
+        "pass_rate_vs_national": 12.39,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "YETI": [
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 3700,
+        "pass_rate": 86.38,
+        "avg_mileage": 49340.0,
+        "pass_rate_vs_national": 4.7,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 7520,
+        "pass_rate": 85.52,
+        "avg_mileage": 37914.0,
+        "pass_rate_vs_national": 3.84,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 5479,
+        "pass_rate": 82.83,
+        "avg_mileage": 57870.0,
+        "pass_rate_vs_national": 4.18,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 7718,
+        "pass_rate": 84.48,
+        "avg_mileage": 44405.0,
+        "pass_rate_vs_national": 5.83,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 7230,
+        "pass_rate": 79.24,
+        "avg_mileage": 67817.0,
+        "pass_rate_vs_national": 3.75,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 5496,
+        "pass_rate": 82.99,
+        "avg_mileage": 48668.0,
+        "pass_rate_vs_national": 7.5,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 8018,
+        "pass_rate": 77.74,
+        "avg_mileage": 75859.0,
+        "pass_rate_vs_national": 6.03,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 4314,
+        "pass_rate": 83.29,
+        "avg_mileage": 54413.0,
+        "pass_rate_vs_national": 11.58,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 7680,
+        "pass_rate": 75.89,
+        "avg_mileage": 84814.0,
+        "pass_rate_vs_national": 7.6,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 2651,
+        "pass_rate": 82.65,
+        "avg_mileage": 62484.0,
+        "pass_rate_vs_national": 14.36,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 5005,
+        "pass_rate": 69.75,
+        "avg_mileage": 95822.0,
+        "pass_rate_vs_national": 4.12,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 1804,
+        "pass_rate": 77.88,
+        "avg_mileage": 72015.0,
+        "pass_rate_vs_national": 12.25,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 3224,
+        "pass_rate": 67.59,
+        "avg_mileage": 103965.0,
+        "pass_rate_vs_national": 4.6,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 2091,
+        "pass_rate": 74.56,
+        "avg_mileage": 78097.0,
+        "pass_rate_vs_national": 11.57,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 2540,
+        "pass_rate": 64.69,
+        "avg_mileage": 108777.0,
+        "pass_rate_vs_national": 4.19,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 1296,
+        "pass_rate": 67.82,
+        "avg_mileage": 83527.0,
+        "pass_rate_vs_national": 7.32,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 420,
+        "pass_rate": 62.38,
+        "avg_mileage": 114527.0,
+        "pass_rate_vs_national": 3.37,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 144,
+        "pass_rate": 63.19,
+        "avg_mileage": 83542.0,
+        "pass_rate_vs_national": 4.18,
+        "national_avg_for_year": 59.01
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "EL",
+      "model_count": 2,
+      "total_tests": 675,
+      "pass_rate": 92.59,
+      "fuel_name": "Electric"
+    },
+    {
+      "fuel_type": "HY",
+      "model_count": 5,
+      "total_tests": 1338,
+      "pass_rate": 84.53,
+      "fuel_name": "Hybrid Electric"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 130,
+      "total_tests": 439106,
+      "pass_rate": 79.19,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 103,
+      "total_tests": 318414,
+      "pass_rate": 73.0,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "YETI",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 2651,
+      "pass_rate": 82.65,
+      "pass_rate_vs_national": 14.36,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 121,
+      "pass_rate": 73.55,
+      "pass_rate_vs_national": 13.05,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 3786,
+      "pass_rate": 78.02,
+      "pass_rate_vs_national": 12.39,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "YETI",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1804,
+      "pass_rate": 77.88,
+      "pass_rate_vs_national": 12.25,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "YETI",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 4314,
+      "pass_rate": 83.29,
+      "pass_rate_vs_national": 11.58,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "YETI",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 2091,
+      "pass_rate": 74.56,
+      "pass_rate_vs_national": 11.57,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 244,
+      "pass_rate": 83.2,
+      "pass_rate_vs_national": 11.49,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 7060,
+      "pass_rate": 79.41,
+      "pass_rate_vs_national": 11.12,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 664,
+      "pass_rate": 71.23,
+      "pass_rate_vs_national": 10.73,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 3148,
+      "pass_rate": 81.99,
+      "pass_rate_vs_national": 10.28,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 2196,
+      "pass_rate": 81.69,
+      "pass_rate_vs_national": 9.98,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 3795,
+      "pass_rate": 85.06,
+      "pass_rate_vs_national": 9.57,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 1890,
+      "pass_rate": 77.67,
+      "pass_rate_vs_national": 9.38,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 268,
+      "pass_rate": 76.87,
+      "pass_rate_vs_national": 8.58,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 8286,
+      "pass_rate": 71.35,
+      "pass_rate_vs_national": 8.36,
+      "national_avg_for_year": 62.99
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "FABIA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 146,
+      "pass_rate": 70.55,
+      "pass_rate_vs_national": -13.69,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 281,
+      "pass_rate": 44.48,
+      "pass_rate_vs_national": -11.7,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 1410,
+      "pass_rate": 47.23,
+      "pass_rate_vs_national": -9.74,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "SUPERB SPORTLINE + IV PHEV S-A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 188,
+      "pass_rate": 78.72,
+      "pass_rate_vs_national": -8.95,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 196,
+      "pass_rate": 75.51,
+      "pass_rate_vs_national": -8.73,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 647,
+      "pass_rate": 50.7,
+      "pass_rate_vs_national": -8.31,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 1248,
+      "pass_rate": 49.2,
+      "pass_rate_vs_national": -8.19,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1680,
+      "pass_rate": 70.77,
+      "pass_rate_vs_national": -7.88,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 3151,
+      "pass_rate": 48.24,
+      "pass_rate_vs_national": -7.79,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 4375,
+      "pass_rate": 51.52,
+      "pass_rate_vs_national": -7.49,
+      "national_avg_for_year": 59.01
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 60872,
+        "vehicle_count": 236
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 54601,
+        "vehicle_count": 224
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 43941,
+        "vehicle_count": 240
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 41585,
+        "vehicle_count": 235
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 22984,
+        "vehicle_count": 233
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 19715,
+        "vehicle_count": 196
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 18794,
+        "vehicle_count": 219
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 6376,
+        "vehicle_count": 215
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 6212,
+        "vehicle_count": 136
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 1386,
+        "vehicle_count": 129
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 1254,
+        "vehicle_count": 129
+      },
+      {
+        "category_name": "Speedometer and speed limiter",
+        "total_failures": 3,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Seat belt installation check",
+        "total_failures": 1,
+        "vehicle_count": 1
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 19506
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 14328
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 12997
+      },
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 9991
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 9384
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 8141
+      },
+      {
+        "defect_description": "constant velocity boot split or insecure, no longer prevents the ingress of dirt",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 8074
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 7466
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 7032
+      },
+      {
+        "defect_description": "projected beam image is obviously incorrect",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 5863
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 117384
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 74855
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 69127
+      },
+      {
+        "defect_description": "has light misting of oil",
+        "category_name": "Suspension",
+        "total_occurrences": 51095
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 48923
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 41713
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 16726
+      },
+      {
+        "defect_description": "Child Seat fitted not allowing full inspection of adult belt",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 12231
+      },
+      {
+        "defect_description": "corroded but not seriously weakened",
+        "category_name": "Suspension",
+        "total_occurrences": 11621
+      },
+      {
+        "defect_description": "worn, but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 11523
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 116873
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 76367
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 72487
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 59527
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 17031
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 10097
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 8669
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 2099
+      },
+      {
+        "defect_description": "has a lump, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1412
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 1197
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 145577,
+      "avg_pass_rate": 89.87
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 238204,
+      "avg_pass_rate": 82.88
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 164123,
+      "avg_pass_rate": 73.54
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 100015,
+      "avg_pass_rate": 65.24
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 55243,
+      "avg_pass_rate": 60.97
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 55417,
+      "avg_pass_rate": 60.22
+    }
+  ],
+  "all_models": [
+    {
+      "model": "OCTAVIA SE TECH TSI IV S-A",
+      "model_year": 2021,
+      "fuel_type": "HY",
+      "total_tests": 113,
+      "total_passes": 110,
+      "total_fails": 3,
+      "pass_rate": 97.35,
+      "avg_mileage": 41313.0,
+      "avg_age_years": 1.5,
+      "pass_rate_vs_national": 25.83
+    },
+    {
+      "model": "OCTAVIA SE TECHNOLOGY TDI",
+      "model_year": 2021,
+      "fuel_type": "DI",
+      "total_tests": 109,
+      "total_passes": 105,
+      "total_fails": 4,
+      "pass_rate": 96.33,
+      "avg_mileage": 45895.0,
+      "avg_age_years": 1.7,
+      "pass_rate_vs_national": 24.82
+    },
+    {
+      "model": "SCALA",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 104,
+      "total_passes": 100,
+      "total_fails": 3,
+      "pass_rate": 96.15,
+      "avg_mileage": 24843.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 24.64
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2021,
+      "fuel_type": "DI",
+      "total_tests": 154,
+      "total_passes": 148,
+      "total_fails": 4,
+      "pass_rate": 96.1,
+      "avg_mileage": 28546.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 24.59
+    },
+    {
+      "model": "OCTAVIA SE L FIRST EDITION TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 814,
+      "total_passes": 776,
+      "total_fails": 29,
+      "pass_rate": 95.33,
+      "avg_mileage": 23834.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 23.82
+    },
+    {
+      "model": "OCTAVIA SE L TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 327,
+      "total_passes": 311,
+      "total_fails": 12,
+      "pass_rate": 95.11,
+      "avg_mileage": 29609.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 23.6
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 181,
+      "total_passes": 172,
+      "total_fails": 8,
+      "pass_rate": 95.03,
+      "avg_mileage": 24721.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 23.52
+    },
+    {
+      "model": "OCTAVIA SE TECHNOLOGY TSI",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "total_passes": 107,
+      "total_fails": 6,
+      "pass_rate": 94.69,
+      "avg_mileage": 31391.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 23.18
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2022,
+      "fuel_type": "DI",
+      "total_tests": 177,
+      "total_passes": 167,
+      "total_fails": 6,
+      "pass_rate": 94.35,
+      "avg_mileage": 40391.0,
+      "avg_age_years": 0.6,
+      "pass_rate_vs_national": 22.84
+    },
+    {
+      "model": "ENYAQ IV 60",
+      "model_year": 2022,
+      "fuel_type": "EL",
+      "total_tests": 455,
+      "total_passes": 429,
+      "total_fails": 20,
+      "pass_rate": 94.29,
+      "avg_mileage": 28489.0,
+      "avg_age_years": 0.4,
+      "pass_rate_vs_national": 22.77
+    },
+    {
+      "model": "KAROQ SE DRIVE TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 352,
+      "total_passes": 329,
+      "total_fails": 21,
+      "pass_rate": 93.47,
+      "avg_mileage": 23411.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 21.96
+    },
+    {
+      "model": "KAROQ",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 423,
+      "total_passes": 393,
+      "total_fails": 18,
+      "pass_rate": 92.91,
+      "avg_mileage": 22521.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 21.4
+    },
+    {
+      "model": "FABIA SE DRIVE TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 393,
+      "total_passes": 365,
+      "total_fails": 18,
+      "pass_rate": 92.88,
+      "avg_mileage": 19721.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 21.36
+    },
+    {
+      "model": "OCTAVIA SE FIRST EDITION TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 582,
+      "total_passes": 537,
+      "total_fails": 36,
+      "pass_rate": 92.27,
+      "avg_mileage": 25908.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 20.76
+    },
+    {
+      "model": "KAROQ SE DRIVE TSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 219,
+      "total_passes": 202,
+      "total_fails": 12,
+      "pass_rate": 92.24,
+      "avg_mileage": 23533.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 20.73
+    },
+    {
+      "model": "KAROQ",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 8619,
+      "total_passes": 7941,
+      "total_fails": 519,
+      "pass_rate": 92.13,
+      "avg_mileage": 28423.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 20.62
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 4568,
+      "total_passes": 4196,
+      "total_fails": 221,
+      "pass_rate": 91.86,
+      "avg_mileage": 21853.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 20.35
+    },
+    {
+      "model": "KAROQ SPORTLNE TDI SCR 4X4 SA",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 218,
+      "total_passes": 200,
+      "total_fails": 14,
+      "pass_rate": 91.74,
+      "avg_mileage": 28427.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 20.23
+    },
+    {
+      "model": "KAMIQ SE L TSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1814,
+      "total_passes": 1660,
+      "total_fails": 122,
+      "pass_rate": 91.51,
+      "avg_mileage": 18701.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 20.0
+    },
+    {
+      "model": "OCTAVIA SE L FIRST EDITION TDI",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 105,
+      "total_passes": 96,
+      "total_fails": 8,
+      "pass_rate": 91.43,
+      "avg_mileage": 38949.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 19.92
+    },
+    {
+      "model": "OCTAVIA SE TECHNOLOGY TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 995,
+      "total_passes": 908,
+      "total_fails": 77,
+      "pass_rate": 91.26,
+      "avg_mileage": 31642.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 19.75
+    },
+    {
+      "model": "KAMIQ SE L TSI S-A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 171,
+      "total_passes": 156,
+      "total_fails": 13,
+      "pass_rate": 91.23,
+      "avg_mileage": 21766.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 19.72
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 277,
+      "total_passes": 252,
+      "total_fails": 22,
+      "pass_rate": 90.97,
+      "avg_mileage": 21178.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 19.46
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 4230,
+      "total_passes": 3833,
+      "total_fails": 327,
+      "pass_rate": 90.61,
+      "avg_mileage": 26066.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 19.1
+    },
+    {
+      "model": "SUPERB SE L TSI S-A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 370,
+      "total_passes": 335,
+      "total_fails": 26,
+      "pass_rate": 90.54,
+      "avg_mileage": 32160.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 19.03
+    },
+    {
+      "model": "KAMIQ SE TSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1057,
+      "total_passes": 956,
+      "total_fails": 82,
+      "pass_rate": 90.44,
+      "avg_mileage": 18446.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.93
+    },
+    {
+      "model": "OCTAVIA SE L FIRST ED TDI S-A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 279,
+      "total_passes": 252,
+      "total_fails": 23,
+      "pass_rate": 90.32,
+      "avg_mileage": 34843.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 18.81
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 3906,
+      "total_passes": 3525,
+      "total_fails": 323,
+      "pass_rate": 90.25,
+      "avg_mileage": 32642.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 18.73
+    },
+    {
+      "model": "SUPERB SE L TSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 460,
+      "total_passes": 415,
+      "total_fails": 30,
+      "pass_rate": 90.22,
+      "avg_mileage": 23008.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.71
+    },
+    {
+      "model": "KAMIQ SE TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1934,
+      "total_passes": 1744,
+      "total_fails": 146,
+      "pass_rate": 90.18,
+      "avg_mileage": 21370.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.66
+    },
+    {
+      "model": "KODIAQ SE DRIVE TSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 254,
+      "total_passes": 229,
+      "total_fails": 21,
+      "pass_rate": 90.16,
+      "avg_mileage": 25892.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.65
+    },
+    {
+      "model": "KAMIQ SE L TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1580,
+      "total_passes": 1424,
+      "total_fails": 130,
+      "pass_rate": 90.13,
+      "avg_mileage": 21053.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.62
+    },
+    {
+      "model": "KAROQ SPORTLINE TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 293,
+      "total_passes": 264,
+      "total_fails": 23,
+      "pass_rate": 90.1,
+      "avg_mileage": 24806.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.59
+    },
+    {
+      "model": "KAROQ",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 9262,
+      "total_passes": 8342,
+      "total_fails": 715,
+      "pass_rate": 90.07,
+      "avg_mileage": 35633.0,
+      "avg_age_years": 4.2,
+      "pass_rate_vs_national": 18.56
+    },
+    {
+      "model": "KAROQ",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1539,
+      "total_passes": 1385,
+      "total_fails": 123,
+      "pass_rate": 89.99,
+      "avg_mileage": 31074.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.48
+    },
+    {
+      "model": "SCALA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 3013,
+      "total_passes": 2710,
+      "total_fails": 255,
+      "pass_rate": 89.94,
+      "avg_mileage": 21696.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.43
+    },
+    {
+      "model": "KAROQ",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 4776,
+      "total_passes": 4294,
+      "total_fails": 349,
+      "pass_rate": 89.91,
+      "avg_mileage": 42564.0,
+      "avg_age_years": 4.2,
+      "pass_rate_vs_national": 18.4
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 5464,
+      "total_passes": 4909,
+      "total_fails": 433,
+      "pass_rate": 89.84,
+      "avg_mileage": 28848.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.33
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 11111,
+      "total_passes": 9980,
+      "total_fails": 908,
+      "pass_rate": 89.82,
+      "avg_mileage": 35524.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 18.31
+    },
+    {
+      "model": "KAMIQ MONTE CARLO TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 117,
+      "total_passes": 105,
+      "total_fails": 11,
+      "pass_rate": 89.74,
+      "avg_mileage": 22171.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 18.23
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 3179,
+      "total_passes": 2851,
+      "total_fails": 277,
+      "pass_rate": 89.68,
+      "avg_mileage": 41947.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 18.17
+    },
+    {
+      "model": "KAROQ",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 5426,
+      "total_passes": 4863,
+      "total_fails": 463,
+      "pass_rate": 89.62,
+      "avg_mileage": 36913.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 18.11
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 4410,
+      "total_passes": 3943,
+      "total_fails": 376,
+      "pass_rate": 89.41,
+      "avg_mileage": 50844.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 17.9
+    },
+    {
+      "model": "KAMIQ SE L TSI",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 122,
+      "total_passes": 109,
+      "total_fails": 9,
+      "pass_rate": 89.34,
+      "avg_mileage": 25594.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 17.83
+    },
+    {
+      "model": "KAROQ",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 8887,
+      "total_passes": 7931,
+      "total_fails": 720,
+      "pass_rate": 89.24,
+      "avg_mileage": 22373.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.73
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2620,
+      "total_passes": 2337,
+      "total_fails": 238,
+      "pass_rate": 89.2,
+      "avg_mileage": 31162.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.69
+    },
+    {
+      "model": "CITIGO E SE L IV",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 220,
+      "total_passes": 196,
+      "total_fails": 16,
+      "pass_rate": 89.09,
+      "avg_mileage": 15255.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.58
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 9387,
+      "total_passes": 8363,
+      "total_fails": 798,
+      "pass_rate": 89.09,
+      "avg_mileage": 43634.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 17.58
+    },
+    {
+      "model": "KAROQ SPORTLINE TSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1054,
+      "total_passes": 936,
+      "total_fails": 100,
+      "pass_rate": 88.8,
+      "avg_mileage": 25142.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 17.29
+    },
+    {
+      "model": "KAMIQ SE TSI S-A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 151,
+      "total_passes": 134,
+      "total_fails": 15,
+      "pass_rate": 88.74,
+      "avg_mileage": 24630.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 17.23
+    },
+    {
+      "model": "KODIAQ SE DRIVE TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 124,
+      "total_passes": 110,
+      "total_fails": 10,
+      "pass_rate": 88.71,
+      "avg_mileage": 26155.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 17.2
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 3291,
+      "total_passes": 2911,
+      "total_fails": 301,
+      "pass_rate": 88.45,
+      "avg_mileage": 50763.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 16.94
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 485,
+      "total_passes": 429,
+      "total_fails": 45,
+      "pass_rate": 88.45,
+      "avg_mileage": 33516.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 16.94
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 1995,
+      "total_passes": 1764,
+      "total_fails": 208,
+      "pass_rate": 88.42,
+      "avg_mileage": 51267.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 16.91
+    },
+    {
+      "model": "KAMIQ SE TSI",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 215,
+      "total_passes": 190,
+      "total_fails": 22,
+      "pass_rate": 88.37,
+      "avg_mileage": 23963.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 16.86
+    },
+    {
+      "model": "SCALA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1448,
+      "total_passes": 1279,
+      "total_fails": 142,
+      "pass_rate": 88.33,
+      "avg_mileage": 26640.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 16.82
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 8981,
+      "total_passes": 7932,
+      "total_fails": 760,
+      "pass_rate": 88.32,
+      "avg_mileage": 20464.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 16.81
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 4913,
+      "total_passes": 4337,
+      "total_fails": 502,
+      "pass_rate": 88.28,
+      "avg_mileage": 40377.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.77
+    },
+    {
+      "model": "KAROQ SPORTLINE TSI",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "total_passes": 97,
+      "total_fails": 11,
+      "pass_rate": 88.18,
+      "avg_mileage": 35116.0,
+      "avg_age_years": 3.0,
+      "pass_rate_vs_national": 16.67
+    },
+    {
+      "model": "KAROQ SPORTLINE TSI S-A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 285,
+      "total_passes": 251,
+      "total_fails": 30,
+      "pass_rate": 88.07,
+      "avg_mileage": 32836.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 16.56
+    },
+    {
+      "model": "KODIAQ",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 2883,
+      "total_passes": 2529,
+      "total_fails": 290,
+      "pass_rate": 87.72,
+      "avg_mileage": 61438.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 16.21
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 2313,
+      "total_passes": 2027,
+      "total_fails": 245,
+      "pass_rate": 87.64,
+      "avg_mileage": 42707.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 16.12
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2409,
+      "total_passes": 2105,
+      "total_fails": 261,
+      "pass_rate": 87.38,
+      "avg_mileage": 35967.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.87
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 14795,
+      "total_passes": 12902,
+      "total_fails": 1290,
+      "pass_rate": 87.21,
+      "avg_mileage": 25805.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.69
+    },
+    {
+      "model": "SUPERB SE L TDI S-A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 195,
+      "total_passes": 170,
+      "total_fails": 19,
+      "pass_rate": 87.18,
+      "avg_mileage": 53055.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 15.67
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 7778,
+      "total_passes": 6768,
+      "total_fails": 821,
+      "pass_rate": 87.01,
+      "avg_mileage": 48996.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 15.5
+    },
+    {
+      "model": "KAMIQ MONTE CARLO TSI S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 123,
+      "total_passes": 107,
+      "total_fails": 15,
+      "pass_rate": 86.99,
+      "avg_mileage": 23764.0,
+      "avg_age_years": 2.1,
+      "pass_rate_vs_national": 15.48
+    },
+    {
+      "model": "OCTAVIA SE TECHNOLOGY TDI",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 175,
+      "total_passes": 152,
+      "total_fails": 23,
+      "pass_rate": 86.86,
+      "avg_mileage": 54597.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.35
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1073,
+      "total_passes": 932,
+      "total_fails": 107,
+      "pass_rate": 86.86,
+      "avg_mileage": 29869.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.35
+    },
+    {
+      "model": "SUPERB SE L TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 129,
+      "total_passes": 112,
+      "total_fails": 14,
+      "pass_rate": 86.82,
+      "avg_mileage": 25058.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.31
+    },
+    {
+      "model": "SCALA",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 165,
+      "total_passes": 143,
+      "total_fails": 18,
+      "pass_rate": 86.67,
+      "avg_mileage": 37219.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.16
+    },
+    {
+      "model": "KAROQ SPORTLNE TDI SCR 4X4 SA",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 126,
+      "total_passes": 109,
+      "total_fails": 15,
+      "pass_rate": 86.51,
+      "avg_mileage": 36225.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 15.0
+    },
+    {
+      "model": "YETI",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 3700,
+      "total_passes": 3196,
+      "total_fails": 371,
+      "pass_rate": 86.38,
+      "avg_mileage": 49340.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 14.87
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 5787,
+      "total_passes": 4987,
+      "total_fails": 632,
+      "pass_rate": 86.18,
+      "avg_mileage": 56574.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 14.67
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 3113,
+      "total_passes": 2680,
+      "total_fails": 330,
+      "pass_rate": 86.09,
+      "avg_mileage": 50038.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 14.58
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 1168,
+      "total_passes": 1002,
+      "total_fails": 144,
+      "pass_rate": 85.79,
+      "avg_mileage": 48512.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 14.28
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 5402,
+      "total_passes": 4625,
+      "total_fails": 491,
+      "pass_rate": 85.62,
+      "avg_mileage": 26689.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 14.11
+    },
+    {
+      "model": "YETI",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 7520,
+      "total_passes": 6431,
+      "total_fails": 821,
+      "pass_rate": 85.52,
+      "avg_mileage": 37914.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 14.01
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 1452,
+      "total_passes": 1241,
+      "total_fails": 183,
+      "pass_rate": 85.47,
+      "avg_mileage": 56696.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 13.96
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 7355,
+      "total_passes": 6268,
+      "total_fails": 852,
+      "pass_rate": 85.22,
+      "avg_mileage": 76241.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 13.71
+    },
+    {
+      "model": "SUPERB SE L IV PHEV S-A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 463,
+      "total_passes": 394,
+      "total_fails": 59,
+      "pass_rate": 85.1,
+      "avg_mileage": 36934.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 13.59
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 3795,
+      "total_passes": 3228,
+      "total_fails": 449,
+      "pass_rate": 85.06,
+      "avg_mileage": 61318.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 13.55
+    },
+    {
+      "model": "KAMIQ S TSI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 150,
+      "total_passes": 127,
+      "total_fails": 20,
+      "pass_rate": 84.67,
+      "avg_mileage": 24360.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 13.16
+    },
+    {
+      "model": "SUPERB SE L TDI S-A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 711,
+      "total_passes": 601,
+      "total_fails": 97,
+      "pass_rate": 84.53,
+      "avg_mileage": 44920.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 13.02
+    },
+    {
+      "model": "YETI",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 7718,
+      "total_passes": 6520,
+      "total_fails": 924,
+      "pass_rate": 84.48,
+      "avg_mileage": 44405.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 12.97
+    },
+    {
+      "model": "SCALA",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 112,
+      "total_passes": 94,
+      "total_fails": 17,
+      "pass_rate": 83.93,
+      "avg_mileage": 33201.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 12.42
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 9079,
+      "total_passes": 7615,
+      "total_fails": 1156,
+      "pass_rate": 83.87,
+      "avg_mileage": 62841.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 12.36
+    },
+    {
+      "model": "FABIA SE DRIVE MPI",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 154,
+      "total_passes": 129,
+      "total_fails": 17,
+      "pass_rate": 83.77,
+      "avg_mileage": 19456.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 12.26
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 16736,
+      "total_passes": 14015,
+      "total_fails": 2075,
+      "pass_rate": 83.74,
+      "avg_mileage": 33019.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 12.23
+    },
+    {
+      "model": "SUPERB SE TECH IV PHEV S-A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 406,
+      "total_passes": 340,
+      "total_fails": 56,
+      "pass_rate": 83.74,
+      "avg_mileage": 47923.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 12.23
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1966,
+      "total_passes": 1646,
+      "total_fails": 268,
+      "pass_rate": 83.72,
+      "avg_mileage": 39736.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 12.21
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1329,
+      "total_passes": 1107,
+      "total_fails": 166,
+      "pass_rate": 83.3,
+      "avg_mileage": 51134.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 11.78
+    },
+    {
+      "model": "YETI",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 4314,
+      "total_passes": 3593,
+      "total_fails": 529,
+      "pass_rate": 83.29,
+      "avg_mileage": 54413.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 11.78
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 6294,
+      "total_passes": 5237,
+      "total_fails": 725,
+      "pass_rate": 83.21,
+      "avg_mileage": 32924.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 11.7
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 244,
+      "total_passes": 203,
+      "total_fails": 37,
+      "pass_rate": 83.2,
+      "avg_mileage": 75607.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 11.69
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 10778,
+      "total_passes": 8948,
+      "total_fails": 1434,
+      "pass_rate": 83.02,
+      "avg_mileage": 86894.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 11.51
+    },
+    {
+      "model": "YETI",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 5496,
+      "total_passes": 4561,
+      "total_fails": 687,
+      "pass_rate": 82.99,
+      "avg_mileage": 48668.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 11.48
+    },
+    {
+      "model": "YETI",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 5479,
+      "total_passes": 4538,
+      "total_fails": 750,
+      "pass_rate": 82.83,
+      "avg_mileage": 57870.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 11.31
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 5329,
+      "total_passes": 4410,
+      "total_fails": 758,
+      "pass_rate": 82.75,
+      "avg_mileage": 73952.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 11.24
+    },
+    {
+      "model": "SUPERB L AND K IV PHEV S-A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 168,
+      "total_passes": 139,
+      "total_fails": 25,
+      "pass_rate": 82.74,
+      "avg_mileage": 35869.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 11.23
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 7366,
+      "total_passes": 6093,
+      "total_fails": 1079,
+      "pass_rate": 82.72,
+      "avg_mileage": 84836.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 11.21
+    },
+    {
+      "model": "YETI",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 2651,
+      "total_passes": 2191,
+      "total_fails": 375,
+      "pass_rate": 82.65,
+      "avg_mileage": 62484.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 11.14
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 3943,
+      "total_passes": 3254,
+      "total_fails": 593,
+      "pass_rate": 82.53,
+      "avg_mileage": 62363.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 11.02
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 3148,
+      "total_passes": 2581,
+      "total_fails": 447,
+      "pass_rate": 81.99,
+      "avg_mileage": 70332.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 10.48
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 2196,
+      "total_passes": 1794,
+      "total_fails": 309,
+      "pass_rate": 81.69,
+      "avg_mileage": 53844.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 10.18
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 7033,
+      "total_passes": 5745,
+      "total_fails": 1063,
+      "pass_rate": 81.69,
+      "avg_mileage": 94337.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 10.18
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 17178,
+      "total_passes": 13978,
+      "total_fails": 2598,
+      "pass_rate": 81.37,
+      "avg_mileage": 40349.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 9.86
+    },
+    {
+      "model": "SUPERB SE L TDI",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 180,
+      "total_passes": 146,
+      "total_fails": 28,
+      "pass_rate": 81.11,
+      "avg_mileage": 44929.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 9.6
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 245,
+      "total_passes": 198,
+      "total_fails": 39,
+      "pass_rate": 80.82,
+      "avg_mileage": 61798.0,
+      "avg_age_years": 7.3,
+      "pass_rate_vs_national": 9.31
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 1037,
+      "total_passes": 837,
+      "total_fails": 167,
+      "pass_rate": 80.71,
+      "avg_mileage": 62210.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 9.2
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 384,
+      "total_passes": 309,
+      "total_fails": 60,
+      "pass_rate": 80.47,
+      "avg_mileage": 66351.0,
+      "avg_age_years": 7.6,
+      "pass_rate_vs_national": 8.96
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 15072,
+      "total_passes": 12102,
+      "total_fails": 2253,
+      "pass_rate": 80.29,
+      "avg_mileage": 97248.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 8.78
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 8108,
+      "total_passes": 6501,
+      "total_fails": 1113,
+      "pass_rate": 80.18,
+      "avg_mileage": 44650.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 8.67
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 15455,
+      "total_passes": 12379,
+      "total_fails": 2532,
+      "pass_rate": 80.1,
+      "avg_mileage": 50475.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 8.59
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 9161,
+      "total_passes": 7286,
+      "total_fails": 1332,
+      "pass_rate": 79.53,
+      "avg_mileage": 54356.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 8.02
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 7060,
+      "total_passes": 5606,
+      "total_fails": 1043,
+      "pass_rate": 79.41,
+      "avg_mileage": 57618.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 7.89
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 2995,
+      "total_passes": 2377,
+      "total_fails": 512,
+      "pass_rate": 79.37,
+      "avg_mileage": 48270.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 7.85
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 17813,
+      "total_passes": 14125,
+      "total_fails": 3069,
+      "pass_rate": 79.3,
+      "avg_mileage": 46662.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 7.79
+    },
+    {
+      "model": "YETI",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 7230,
+      "total_passes": 5729,
+      "total_fails": 1193,
+      "pass_rate": 79.24,
+      "avg_mileage": 67817.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 7.73
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 15780,
+      "total_passes": 12439,
+      "total_fails": 2580,
+      "pass_rate": 78.83,
+      "avg_mileage": 107622.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 7.32
+    },
+    {
+      "model": "SUPERB SPORTLINE + IV PHEV S-A",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 188,
+      "total_passes": 148,
+      "total_fails": 36,
+      "pass_rate": 78.72,
+      "avg_mileage": 37979.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 7.21
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 11826,
+      "total_passes": 9300,
+      "total_fails": 1941,
+      "pass_rate": 78.64,
+      "avg_mileage": 55383.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 7.13
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 2511,
+      "total_passes": 1968,
+      "total_fails": 454,
+      "pass_rate": 78.38,
+      "avg_mileage": 55448.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 6.86
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 3786,
+      "total_passes": 2954,
+      "total_fails": 640,
+      "pass_rate": 78.02,
+      "avg_mileage": 61034.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 6.51
+    },
+    {
+      "model": "CITIGO",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 7824,
+      "total_passes": 6102,
+      "total_fails": 1161,
+      "pass_rate": 77.99,
+      "avg_mileage": 39193.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 6.48
+    },
+    {
+      "model": "YETI",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1804,
+      "total_passes": 1405,
+      "total_fails": 336,
+      "pass_rate": 77.88,
+      "avg_mileage": 72015.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 6.37
+    },
+    {
+      "model": "YETI",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 8018,
+      "total_passes": 6233,
+      "total_fails": 1462,
+      "pass_rate": 77.74,
+      "avg_mileage": 75859.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 6.23
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 1890,
+      "total_passes": 1468,
+      "total_fails": 320,
+      "pass_rate": 77.67,
+      "avg_mileage": 61057.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 6.16
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 14075,
+      "total_passes": 10828,
+      "total_fails": 2551,
+      "pass_rate": 76.93,
+      "avg_mileage": 112854.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 5.42
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1681,
+      "total_passes": 1293,
+      "total_fails": 328,
+      "pass_rate": 76.92,
+      "avg_mileage": 67009.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 5.41
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 268,
+      "total_passes": 206,
+      "total_fails": 52,
+      "pass_rate": 76.87,
+      "avg_mileage": 77763.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 5.35
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1854,
+      "total_passes": 1421,
+      "total_fails": 351,
+      "pass_rate": 76.65,
+      "avg_mileage": 58978.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 5.13
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 2116,
+      "total_passes": 1613,
+      "total_fails": 429,
+      "pass_rate": 76.23,
+      "avg_mileage": 77269.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 4.72
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 14560,
+      "total_passes": 11092,
+      "total_fails": 2672,
+      "pass_rate": 76.18,
+      "avg_mileage": 61803.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 4.67
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 3383,
+      "total_passes": 2572,
+      "total_fails": 646,
+      "pass_rate": 76.03,
+      "avg_mileage": 66380.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 4.52
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 4592,
+      "total_passes": 3485,
+      "total_fails": 944,
+      "pass_rate": 75.89,
+      "avg_mileage": 111272.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 4.38
+    },
+    {
+      "model": "YETI",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 7680,
+      "total_passes": 5828,
+      "total_fails": 1547,
+      "pass_rate": 75.89,
+      "avg_mileage": 84814.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 4.37
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 196,
+      "total_passes": 148,
+      "total_fails": 39,
+      "pass_rate": 75.51,
+      "avg_mileage": 94676.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 4.0
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 2479,
+      "total_passes": 1859,
+      "total_fails": 514,
+      "pass_rate": 74.99,
+      "avg_mileage": 70870.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 3.48
+    },
+    {
+      "model": "YETI",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 2091,
+      "total_passes": 1559,
+      "total_fails": 462,
+      "pass_rate": 74.56,
+      "avg_mileage": 78097.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 3.05
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 1015,
+      "total_passes": 756,
+      "total_fails": 205,
+      "pass_rate": 74.48,
+      "avg_mileage": 90737.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 2.97
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 581,
+      "total_passes": 431,
+      "total_fails": 115,
+      "pass_rate": 74.18,
+      "avg_mileage": 71817.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 2.67
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 518,
+      "total_passes": 382,
+      "total_fails": 112,
+      "pass_rate": 73.75,
+      "avg_mileage": 83540.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 2.23
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 9496,
+      "total_passes": 6995,
+      "total_fails": 1943,
+      "pass_rate": 73.66,
+      "avg_mileage": 67493.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 2.15
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 4541,
+      "total_passes": 3343,
+      "total_fails": 1037,
+      "pass_rate": 73.62,
+      "avg_mileage": 117693.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 2.11
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 2030,
+      "total_passes": 1493,
+      "total_fails": 403,
+      "pass_rate": 73.55,
+      "avg_mileage": 76154.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 2.04
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 121,
+      "total_passes": 89,
+      "total_fails": 20,
+      "pass_rate": 73.55,
+      "avg_mileage": 94241.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 2.04
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1566,
+      "total_passes": 1149,
+      "total_fails": 327,
+      "pass_rate": 73.37,
+      "avg_mileage": 68543.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 1.86
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 9212,
+      "total_passes": 6712,
+      "total_fails": 2008,
+      "pass_rate": 72.86,
+      "avg_mileage": 121421.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 1.35
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 8286,
+      "total_passes": 5912,
+      "total_fails": 1893,
+      "pass_rate": 71.35,
+      "avg_mileage": 72901.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -0.16
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 664,
+      "total_passes": 473,
+      "total_fails": 152,
+      "pass_rate": 71.23,
+      "avg_mileage": 74303.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -0.28
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 1022,
+      "total_passes": 727,
+      "total_fails": 235,
+      "pass_rate": 71.14,
+      "avg_mileage": 71215.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": -0.38
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 3597,
+      "total_passes": 2557,
+      "total_fails": 881,
+      "pass_rate": 71.09,
+      "avg_mileage": 124689.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": -0.42
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 1390,
+      "total_passes": 985,
+      "total_fails": 323,
+      "pass_rate": 70.86,
+      "avg_mileage": 101749.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": -0.65
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1680,
+      "total_passes": 1189,
+      "total_fails": 402,
+      "pass_rate": 70.77,
+      "avg_mileage": 92523.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": -0.74
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 146,
+      "total_passes": 103,
+      "total_fails": 37,
+      "pass_rate": 70.55,
+      "avg_mileage": 54104.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": -0.96
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 2367,
+      "total_passes": 1662,
+      "total_fails": 554,
+      "pass_rate": 70.22,
+      "avg_mileage": 82423.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -1.3
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 802,
+      "total_passes": 562,
+      "total_fails": 190,
+      "pass_rate": 70.07,
+      "avg_mileage": 81958.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": -1.44
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 2085,
+      "total_passes": 1455,
+      "total_fails": 511,
+      "pass_rate": 69.78,
+      "avg_mileage": 105542.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": -1.73
+    },
+    {
+      "model": "YETI",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 5005,
+      "total_passes": 3491,
+      "total_fails": 1301,
+      "pass_rate": 69.75,
+      "avg_mileage": 95822.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -1.76
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 818,
+      "total_passes": 568,
+      "total_fails": 219,
+      "pass_rate": 69.44,
+      "avg_mileage": 93927.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": -2.07
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 3185,
+      "total_passes": 2206,
+      "total_fails": 795,
+      "pass_rate": 69.26,
+      "avg_mileage": 82783.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": -2.25
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 3567,
+      "total_passes": 2428,
+      "total_fails": 950,
+      "pass_rate": 68.07,
+      "avg_mileage": 132364.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -3.44
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 2734,
+      "total_passes": 1855,
+      "total_fails": 749,
+      "pass_rate": 67.85,
+      "avg_mileage": 94301.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -3.66
+    },
+    {
+      "model": "YETI",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 1296,
+      "total_passes": 879,
+      "total_fails": 365,
+      "pass_rate": 67.82,
+      "avg_mileage": 83527.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -3.69
+    },
+    {
+      "model": "YETI",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 3224,
+      "total_passes": 2179,
+      "total_fails": 909,
+      "pass_rate": 67.59,
+      "avg_mileage": 103965.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -3.92
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 4562,
+      "total_passes": 3078,
+      "total_fails": 1251,
+      "pass_rate": 67.47,
+      "avg_mileage": 90893.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -4.04
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 7548,
+      "total_passes": 5079,
+      "total_fails": 1888,
+      "pass_rate": 67.29,
+      "avg_mileage": 74108.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -4.22
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1090,
+      "total_passes": 731,
+      "total_fails": 303,
+      "pass_rate": 67.06,
+      "avg_mileage": 117337.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": -4.45
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 1647,
+      "total_passes": 1095,
+      "total_fails": 438,
+      "pass_rate": 66.48,
+      "avg_mileage": 96064.0,
+      "avg_age_years": 13.3,
+      "pass_rate_vs_national": -5.03
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 5587,
+      "total_passes": 3710,
+      "total_fails": 1546,
+      "pass_rate": 66.4,
+      "avg_mileage": 91803.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -5.11
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 9152,
+      "total_passes": 6054,
+      "total_fails": 2550,
+      "pass_rate": 66.15,
+      "avg_mileage": 129273.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": -5.36
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 4976,
+      "total_passes": 3287,
+      "total_fails": 1383,
+      "pass_rate": 66.06,
+      "avg_mileage": 97966.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -5.45
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 885,
+      "total_passes": 584,
+      "total_fails": 239,
+      "pass_rate": 65.99,
+      "avg_mileage": 89654.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -5.52
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 6227,
+      "total_passes": 4038,
+      "total_fails": 1816,
+      "pass_rate": 64.85,
+      "avg_mileage": 135333.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -6.66
+    },
+    {
+      "model": "YETI",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 2540,
+      "total_passes": 1643,
+      "total_fails": 782,
+      "pass_rate": 64.69,
+      "avg_mileage": 108777.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -6.83
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 2103,
+      "total_passes": 1345,
+      "total_fails": 637,
+      "pass_rate": 63.96,
+      "avg_mileage": 142705.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": -7.55
+    },
+    {
+      "model": "YETI",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 144,
+      "total_passes": 91,
+      "total_fails": 49,
+      "pass_rate": 63.19,
+      "avg_mileage": 83542.0,
+      "avg_age_years": 13.1,
+      "pass_rate_vs_national": -8.32
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 618,
+      "total_passes": 389,
+      "total_fails": 195,
+      "pass_rate": 62.94,
+      "avg_mileage": 96063.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -8.57
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 928,
+      "total_passes": 583,
+      "total_fails": 287,
+      "pass_rate": 62.82,
+      "avg_mileage": 139652.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -8.69
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 225,
+      "total_passes": 141,
+      "total_fails": 64,
+      "pass_rate": 62.67,
+      "avg_mileage": 150596.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -8.84
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 549,
+      "total_passes": 344,
+      "total_fails": 170,
+      "pass_rate": 62.66,
+      "avg_mileage": 124916.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -8.85
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1612,
+      "total_passes": 1007,
+      "total_fails": 504,
+      "pass_rate": 62.47,
+      "avg_mileage": 114512.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -9.04
+    },
+    {
+      "model": "FELICIA",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 253,
+      "total_passes": 158,
+      "total_fails": 84,
+      "pass_rate": 62.45,
+      "avg_mileage": 71447.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -9.06
+    },
+    {
+      "model": "YETI",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 420,
+      "total_passes": 262,
+      "total_fails": 125,
+      "pass_rate": 62.38,
+      "avg_mileage": 114527.0,
+      "avg_age_years": 13.2,
+      "pass_rate_vs_national": -9.13
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 4319,
+      "total_passes": 2691,
+      "total_fails": 1359,
+      "pass_rate": 62.31,
+      "avg_mileage": 102172.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -9.2
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 1780,
+      "total_passes": 1109,
+      "total_fails": 551,
+      "pass_rate": 62.3,
+      "avg_mileage": 142002.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": -9.21
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 4223,
+      "total_passes": 2610,
+      "total_fails": 1294,
+      "pass_rate": 61.8,
+      "avg_mileage": 105086.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -9.71
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 556,
+      "total_passes": 342,
+      "total_fails": 159,
+      "pass_rate": 61.51,
+      "avg_mileage": 81032.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -10.0
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 7247,
+      "total_passes": 4449,
+      "total_fails": 2371,
+      "pass_rate": 61.39,
+      "avg_mileage": 138887.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -10.12
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 162,
+      "total_passes": 99,
+      "total_fails": 48,
+      "pass_rate": 61.11,
+      "avg_mileage": 140738.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -10.4
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 362,
+      "total_passes": 221,
+      "total_fails": 114,
+      "pass_rate": 61.05,
+      "avg_mileage": 133902.0,
+      "avg_age_years": 14.3,
+      "pass_rate_vs_national": -10.46
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 10252,
+      "total_passes": 6253,
+      "total_fails": 3045,
+      "pass_rate": 60.99,
+      "avg_mileage": 76181.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -10.52
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 5631,
+      "total_passes": 3424,
+      "total_fails": 1856,
+      "pass_rate": 60.81,
+      "avg_mileage": 136780.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -10.7
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 625,
+      "total_passes": 380,
+      "total_fails": 198,
+      "pass_rate": 60.8,
+      "avg_mileage": 125307.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -10.71
+    },
+    {
+      "model": "FELICIA",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 112,
+      "total_passes": 68,
+      "total_fails": 39,
+      "pass_rate": 60.71,
+      "avg_mileage": 107454.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -10.8
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 703,
+      "total_passes": 421,
+      "total_fails": 231,
+      "pass_rate": 59.89,
+      "avg_mileage": 107955.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -11.62
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 563,
+      "total_passes": 337,
+      "total_fails": 186,
+      "pass_rate": 59.86,
+      "avg_mileage": 124504.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -11.65
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 181,
+      "total_passes": 107,
+      "total_fails": 56,
+      "pass_rate": 59.12,
+      "avg_mileage": 129400.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -12.39
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 377,
+      "total_passes": 222,
+      "total_fails": 129,
+      "pass_rate": 58.89,
+      "avg_mileage": 122749.0,
+      "avg_age_years": 21.4,
+      "pass_rate_vs_national": -12.62
+    },
+    {
+      "model": "RAPID",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 119,
+      "total_passes": 70,
+      "total_fails": 44,
+      "pass_rate": 58.82,
+      "avg_mileage": 109472.0,
+      "avg_age_years": 10.1,
+      "pass_rate_vs_national": -12.69
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 2113,
+      "total_passes": 1241,
+      "total_fails": 705,
+      "pass_rate": 58.73,
+      "avg_mileage": 118328.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -12.78
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1157,
+      "total_passes": 678,
+      "total_fails": 399,
+      "pass_rate": 58.6,
+      "avg_mileage": 109709.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -12.91
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 5088,
+      "total_passes": 2948,
+      "total_fails": 1783,
+      "pass_rate": 57.94,
+      "avg_mileage": 143908.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -13.57
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1039,
+      "total_passes": 601,
+      "total_fails": 354,
+      "pass_rate": 57.84,
+      "avg_mileage": 87825.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -13.67
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 901,
+      "total_passes": 518,
+      "total_fails": 318,
+      "pass_rate": 57.49,
+      "avg_mileage": 116558.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -14.02
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 135,
+      "total_passes": 76,
+      "total_fails": 51,
+      "pass_rate": 56.3,
+      "avg_mileage": 152875.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -15.21
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 671,
+      "total_passes": 377,
+      "total_fails": 245,
+      "pass_rate": 56.18,
+      "avg_mileage": 160543.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -15.33
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 5133,
+      "total_passes": 2880,
+      "total_fails": 1876,
+      "pass_rate": 56.11,
+      "avg_mileage": 149213.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -15.4
+    },
+    {
+      "model": "SUPERB",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 230,
+      "total_passes": 129,
+      "total_fails": 83,
+      "pass_rate": 56.09,
+      "avg_mileage": 128740.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -15.42
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 7145,
+      "total_passes": 4006,
+      "total_fails": 2479,
+      "pass_rate": 56.07,
+      "avg_mileage": 84812.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -15.44
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 2158,
+      "total_passes": 1201,
+      "total_fails": 796,
+      "pass_rate": 55.65,
+      "avg_mileage": 143395.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -15.86
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 133,
+      "total_passes": 74,
+      "total_fails": 52,
+      "pass_rate": 55.64,
+      "avg_mileage": 118796.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -15.87
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 3240,
+      "total_passes": 1789,
+      "total_fails": 1194,
+      "pass_rate": 55.22,
+      "avg_mileage": 133284.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -16.29
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 361,
+      "total_passes": 197,
+      "total_fails": 134,
+      "pass_rate": 54.57,
+      "avg_mileage": 80106.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -16.94
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 1590,
+      "total_passes": 866,
+      "total_fails": 561,
+      "pass_rate": 54.47,
+      "avg_mileage": 83296.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -17.05
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 3757,
+      "total_passes": 2038,
+      "total_fails": 1424,
+      "pass_rate": 54.25,
+      "avg_mileage": 125221.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -17.27
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 1744,
+      "total_passes": 943,
+      "total_fails": 675,
+      "pass_rate": 54.07,
+      "avg_mileage": 152085.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -17.44
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 2825,
+      "total_passes": 1527,
+      "total_fails": 1083,
+      "pass_rate": 54.05,
+      "avg_mileage": 137885.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -17.46
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 1135,
+      "total_passes": 610,
+      "total_fails": 417,
+      "pass_rate": 53.74,
+      "avg_mileage": 82459.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -17.77
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 613,
+      "total_passes": 329,
+      "total_fails": 245,
+      "pass_rate": 53.67,
+      "avg_mileage": 136213.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -17.84
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 6288,
+      "total_passes": 3373,
+      "total_fails": 2314,
+      "pass_rate": 53.64,
+      "avg_mileage": 86438.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": -17.87
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 359,
+      "total_passes": 191,
+      "total_fails": 142,
+      "pass_rate": 53.2,
+      "avg_mileage": 161534.0,
+      "avg_age_years": 21.4,
+      "pass_rate_vs_national": -18.31
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 3699,
+      "total_passes": 1964,
+      "total_fails": 1450,
+      "pass_rate": 53.1,
+      "avg_mileage": 150701.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -18.42
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 2639,
+      "total_passes": 1399,
+      "total_fails": 1061,
+      "pass_rate": 53.01,
+      "avg_mileage": 150294.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -18.5
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1261,
+      "total_passes": 668,
+      "total_fails": 480,
+      "pass_rate": 52.97,
+      "avg_mileage": 94900.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -18.54
+    },
+    {
+      "model": "OCTAVIA",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 1142,
+      "total_passes": 602,
+      "total_fails": 437,
+      "pass_rate": 52.71,
+      "avg_mileage": 158606.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -18.8
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 5502,
+      "total_passes": 2846,
+      "total_fails": 2150,
+      "pass_rate": 51.73,
+      "avg_mileage": 88274.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -19.78
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 4375,
+      "total_passes": 2254,
+      "total_fails": 1732,
+      "pass_rate": 51.52,
+      "avg_mileage": 107895.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -19.99
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 1059,
+      "total_passes": 543,
+      "total_fails": 427,
+      "pass_rate": 51.27,
+      "avg_mileage": 139818.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -20.24
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 4684,
+      "total_passes": 2398,
+      "total_fails": 1873,
+      "pass_rate": 51.2,
+      "avg_mileage": 115684.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -20.32
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 647,
+      "total_passes": 328,
+      "total_fails": 277,
+      "pass_rate": 50.7,
+      "avg_mileage": 106287.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -20.82
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 2526,
+      "total_passes": 1279,
+      "total_fails": 1019,
+      "pass_rate": 50.63,
+      "avg_mileage": 86462.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -20.88
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 4380,
+      "total_passes": 2203,
+      "total_fails": 1772,
+      "pass_rate": 50.3,
+      "avg_mileage": 89839.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -21.21
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 842,
+      "total_passes": 422,
+      "total_fails": 350,
+      "pass_rate": 50.12,
+      "avg_mileage": 141502.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -21.39
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 1248,
+      "total_passes": 614,
+      "total_fails": 539,
+      "pass_rate": 49.2,
+      "avg_mileage": 116545.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -22.31
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 176,
+      "total_passes": 86,
+      "total_fails": 79,
+      "pass_rate": 48.86,
+      "avg_mileage": 98951.0,
+      "avg_age_years": 16.1,
+      "pass_rate_vs_national": -22.65
+    },
+    {
+      "model": "FABIA",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 3151,
+      "total_passes": 1520,
+      "total_fails": 1329,
+      "pass_rate": 48.24,
+      "avg_mileage": 88865.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -23.27
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 1410,
+      "total_passes": 666,
+      "total_fails": 637,
+      "pass_rate": 47.23,
+      "avg_mileage": 122023.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -24.28
+    },
+    {
+      "model": "ROOMSTER",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 281,
+      "total_passes": 125,
+      "total_fails": 138,
+      "pass_rate": 44.48,
+      "avg_mileage": 126771.0,
+      "avg_age_years": 16.2,
+      "pass_rate_vs_national": -27.03
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "YETI",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 2651,
+        "avg_vs_national": 11.42,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 82.65,
+          "national_pass_rate": 71.23,
+          "vs_national": 11.42,
+          "total_tests": 2651,
+          "avg_mileage": 62484.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 82.65,
+          "national_pass_rate": 71.23,
+          "vs_national": 11.42,
+          "total_tests": 2651,
+          "avg_mileage": 62484.0
+        }
+      },
+      {
+        "model": "SUPERB",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 121,
+        "avg_vs_national": 10.43,
+        "durability_trend": -5.25,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 79.66,
+          "national_pass_rate": 66.54,
+          "vs_national": 13.12,
+          "total_tests": 59,
+          "avg_mileage": 90728.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.74,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.87,
+          "total_tests": 62,
+          "avg_mileage": 97585.0
+        }
+      },
+      {
+        "model": "YETI",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 1804,
+        "avg_vs_national": 8.71,
+        "durability_trend": 2.53,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 76.67,
+          "national_pass_rate": 66.54,
+          "vs_national": 10.13,
+          "total_tests": 793,
+          "avg_mileage": 76004.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 78.83,
+          "national_pass_rate": 71.23,
+          "vs_national": 7.6,
+          "total_tests": 1011,
+          "avg_mileage": 68883.0
+        }
+      },
+      {
+        "model": "YETI",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 4314,
+        "avg_vs_national": 8.43,
+        "durability_trend": 1.66,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 80.66,
+          "national_pass_rate": 71.23,
+          "vs_national": 9.43,
+          "total_tests": 1706,
+          "avg_mileage": 57949.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 85.01,
+          "national_pass_rate": 77.24,
+          "vs_national": 7.77,
+          "total_tests": 2608,
+          "avg_mileage": 52102.0
+        }
+      },
+      {
+        "model": "SUPERB",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 244,
+        "avg_vs_national": 8.4,
+        "durability_trend": 8.79,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 84.85,
+          "national_pass_rate": 71.23,
+          "vs_national": 13.62,
+          "total_tests": 99,
+          "avg_mileage": 87832.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 82.07,
+          "national_pass_rate": 77.24,
+          "vs_national": 4.83,
+          "total_tests": 145,
+          "avg_mileage": 67261.0
+        }
+      },
+      {
+        "model": "CITIGO",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 7060,
+        "avg_vs_national": 8.18,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 79.41,
+          "national_pass_rate": 71.23,
+          "vs_national": 8.18,
+          "total_tests": 7060,
+          "avg_mileage": 57618.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 79.41,
+          "national_pass_rate": 71.23,
+          "vs_national": 8.18,
+          "total_tests": 7060,
+          "avg_mileage": 57618.0
+        }
+      },
+      {
+        "model": "CITIGO",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 3786,
+        "avg_vs_national": 8.14,
+        "durability_trend": 4.45,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 77.85,
+          "national_pass_rate": 66.54,
+          "vs_national": 11.31,
+          "total_tests": 1088,
+          "avg_mileage": 65457.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 78.09,
+          "national_pass_rate": 71.23,
+          "vs_national": 6.86,
+          "total_tests": 2698,
+          "avg_mileage": 59251.0
+        }
+      },
+      {
+        "model": "YETI",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 2091,
+        "avg_vs_national": 8.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 74.56,
+          "national_pass_rate": 66.54,
+          "vs_national": 8.02,
+          "total_tests": 2091,
+          "avg_mileage": 78097.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 74.56,
+          "national_pass_rate": 66.54,
+          "vs_national": 8.02,
+          "total_tests": 2091,
+          "avg_mileage": 78097.0
+        }
+      },
+      {
+        "model": "OCTAVIA",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 3795,
+        "avg_vs_national": 7.82,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 85.06,
+          "national_pass_rate": 77.24,
+          "vs_national": 7.82,
+          "total_tests": 3795,
+          "avg_mileage": 61318.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 85.06,
+          "national_pass_rate": 77.24,
+          "vs_national": 7.82,
+          "total_tests": 3795,
+          "avg_mileage": 61318.0
+        }
+      },
+      {
+        "model": "ROOMSTER",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 664,
+        "avg_vs_national": 7.33,
+        "durability_trend": 5.64,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 70.61,
+          "national_pass_rate": 59.87,
+          "vs_national": 10.74,
+          "total_tests": 262,
+          "avg_mileage": 76801.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 71.64,
+          "national_pass_rate": 66.54,
+          "vs_national": 5.1,
+          "total_tests": 402,
+          "avg_mileage": 72675.0
+        }
+      },
+      {
+        "model": "OCTAVIA",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 3148,
+        "avg_vs_national": 7.11,
+        "durability_trend": 2.92,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 80.11,
+          "national_pass_rate": 71.23,
+          "vs_national": 8.88,
+          "total_tests": 1237,
+          "avg_mileage": 74949.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 83.2,
+          "national_pass_rate": 77.24,
+          "vs_national": 5.96,
+          "total_tests": 1911,
+          "avg_mileage": 67343.0
+        }
+      },
+      {
+        "model": "ROOMSTER",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 2196,
+        "avg_vs_national": 6.7,
+        "durability_trend": 4.2,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 80.56,
+          "national_pass_rate": 71.23,
+          "vs_national": 9.33,
+          "total_tests": 823,
+          "avg_mileage": 55271.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 82.37,
+          "national_pass_rate": 77.24,
+          "vs_national": 5.13,
+          "total_tests": 1373,
+          "avg_mileage": 52987.0
+        }
+      },
+      {
+        "model": "OCTAVIA",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 1647,
+        "avg_vs_national": 6.61,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.61,
+          "total_tests": 1647,
+          "avg_mileage": 96064.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.61,
+          "total_tests": 1647,
+          "avg_mileage": 96064.0
+        }
+      },
+      {
+        "model": "ROOMSTER",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 1890,
+        "avg_vs_national": 6.44,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 77.67,
+          "national_pass_rate": 71.23,
+          "vs_national": 6.44,
+          "total_tests": 1890,
+          "avg_mileage": 61057.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 77.67,
+          "national_pass_rate": 71.23,
+          "vs_national": 6.44,
+          "total_tests": 1890,
+          "avg_mileage": 61057.0
+        }
+      },
+      {
+        "model": "KODIAQ",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 3291,
+        "avg_vs_national": 6.32,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 88.45,
+          "national_pass_rate": 82.13,
+          "vs_national": 6.32,
+          "total_tests": 3291,
+          "avg_mileage": 50763.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 88.45,
+          "national_pass_rate": 82.13,
+          "vs_national": 6.32,
+          "total_tests": 3291,
+          "avg_mileage": 50763.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "ROOMSTER",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 281,
+        "avg_vs_national": -15.39,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 44.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -15.39,
+          "total_tests": 281,
+          "avg_mileage": 126771.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 44.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -15.39,
+          "total_tests": 281,
+          "avg_mileage": 126771.0
+        }
+      },
+      {
+        "model": "FABIA",
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 146,
+        "avg_vs_national": -14.29,
+        "durability_trend": 1.08,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 68.52,
+          "national_pass_rate": 82.13,
+          "vs_national": -13.61,
+          "total_tests": 54,
+          "avg_mileage": 61647.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 71.74,
+          "national_pass_rate": 86.43,
+          "vs_national": -14.69,
+          "total_tests": 92,
+          "avg_mileage": 49676.0
+        }
+      },
+      {
+        "model": "ROOMSTER",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 1410,
+        "avg_vs_national": -12.64,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 47.23,
+          "national_pass_rate": 59.87,
+          "vs_national": -12.64,
+          "total_tests": 1410,
+          "avg_mileage": 122023.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 47.23,
+          "national_pass_rate": 59.87,
+          "vs_national": -12.64,
+          "total_tests": 1410,
+          "avg_mileage": 122023.0
+        }
+      },
+      {
+        "model": "RAPID",
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 119,
+        "avg_vs_national": -11.81,
+        "durability_trend": -1.6,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 59.62,
+          "national_pass_rate": 71.23,
+          "vs_national": -11.61,
+          "total_tests": 104,
+          "avg_mileage": 107438.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 53.33,
+          "national_pass_rate": 66.54,
+          "vs_national": -13.21,
+          "total_tests": 15,
+          "avg_mileage": 123578.0
+        }
+      },
+      {
+        "model": "FABIA",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 3151,
+        "avg_vs_national": -11.63,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.24,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.63,
+          "total_tests": 3151,
+          "avg_mileage": 88865.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.24,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.63,
+          "total_tests": 3151,
+          "avg_mileage": 88865.0
+        }
+      },
+      {
+        "model": "ROOMSTER",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 176,
+        "avg_vs_national": -11.01,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.86,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.01,
+          "total_tests": 176,
+          "avg_mileage": 98951.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.86,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.01,
+          "total_tests": 176,
+          "avg_mileage": 98951.0
+        }
+      },
+      {
+        "model": "ROOMSTER",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 1248,
+        "avg_vs_national": -10.67,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 49.2,
+          "national_pass_rate": 59.87,
+          "vs_national": -10.67,
+          "total_tests": 1248,
+          "avg_mileage": 116545.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 49.2,
+          "national_pass_rate": 59.87,
+          "vs_national": -10.67,
+          "total_tests": 1248,
+          "avg_mileage": 116545.0
+        }
+      },
+      {
+        "model": "FABIA",
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 842,
+        "avg_vs_national": -9.75,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.12,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.75,
+          "total_tests": 842,
+          "avg_mileage": 141502.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.12,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.75,
+          "total_tests": 842,
+          "avg_mileage": 141502.0
+        }
+      },
+      {
+        "model": "FABIA",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 4380,
+        "avg_vs_national": -9.57,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.3,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.57,
+          "total_tests": 4380,
+          "avg_mileage": 89839.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.3,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.57,
+          "total_tests": 4380,
+          "avg_mileage": 89839.0
+        }
+      },
+      {
+        "model": "RAPID",
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1680,
+        "avg_vs_national": -9.28,
+        "durability_trend": 2.52,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 69.41,
+          "national_pass_rate": 77.24,
+          "vs_national": -7.83,
+          "total_tests": 716,
+          "avg_mileage": 96848.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 71.78,
+          "national_pass_rate": 82.13,
+          "vs_national": -10.35,
+          "total_tests": 964,
+          "avg_mileage": 89315.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 102,
+          "tests": 273702
+        },
+        "maturing": {
+          "vehicles": 62,
+          "tests": 245555
+        },
+        "proven": {
+          "vehicles": 89,
+          "tests": 193318
+        }
+      },
+      "proven_vehicles_tested": 96,
+      "proven_above_average_pct": 60.4,
+      "proven_avg_vs_national": 1.36,
+      "durability_rating": "Average",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "CITIGO",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 1088,
+          "pass_rate": 77.85,
+          "vs_national_at_age": 15.02,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 65457.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "YETI",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 793,
+          "pass_rate": 76.67,
+          "vs_national_at_age": 13.84,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 76004.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ROOMSTER",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 262,
+          "pass_rate": 70.61,
+          "vs_national_at_age": 13.31,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 76801.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "YETI",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 2091,
+          "pass_rate": 74.56,
+          "vs_national_at_age": 11.73,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 78097.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SUPERB",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 237,
+          "pass_rate": 73.42,
+          "vs_national_at_age": 10.59,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 86366.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 4427,
+          "pass_rate": 72.08,
+          "vs_national_at_age": 9.25,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 70086.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "OCTAVIA",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1647,
+          "pass_rate": 66.48,
+          "vs_national_at_age": 9.18,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 96064.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "YETI",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 566,
+          "pass_rate": 66.43,
+          "vs_national_at_age": 9.13,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 86387.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "OCTAVIA",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1275,
+          "pass_rate": 66.04,
+          "vs_national_at_age": 8.74,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 98121.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 8286,
+          "pass_rate": 71.35,
+          "vs_national_at_age": 8.52,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 72901.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ROOMSTER",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 1022,
+          "pass_rate": 71.14,
+          "vs_national_at_age": 8.31,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 71215.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 3429,
+          "pass_rate": 64.71,
+          "vs_national_at_age": 7.41,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 77020.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ROOMSTER",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 649,
+          "pass_rate": 69.65,
+          "vs_national_at_age": 6.82,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 70841.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SUPERB",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 818,
+          "pass_rate": 69.44,
+          "vs_national_at_age": 6.61,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 93927.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "YETI",
+          "model_year": 2010,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1152,
+          "pass_rate": 63.89,
+          "vs_national_at_age": 6.59,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 112307.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "ROOMSTER",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 281,
+          "pass_rate": 44.48,
+          "vs_national_at_age": -12.82,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 126771.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ROOMSTER",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1410,
+          "pass_rate": 47.23,
+          "vs_national_at_age": -10.07,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 122023.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 3151,
+          "pass_rate": 48.24,
+          "vs_national_at_age": -9.06,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 88865.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ROOMSTER",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 176,
+          "pass_rate": 48.86,
+          "vs_national_at_age": -8.44,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 98951.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ROOMSTER",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1248,
+          "pass_rate": 49.2,
+          "vs_national_at_age": -8.1,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 116545.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2002,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 842,
+          "pass_rate": 50.12,
+          "vs_national_at_age": -7.18,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 141502.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 4380,
+          "pass_rate": 50.3,
+          "vs_national_at_age": -7.0,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 89839.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2526,
+          "pass_rate": 50.63,
+          "vs_national_at_age": -6.67,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 86462.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "ROOMSTER",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 647,
+          "pass_rate": 50.7,
+          "vs_national_at_age": -6.6,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 106287.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FABIA",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 4684,
+          "pass_rate": 51.2,
+          "vs_national_at_age": -6.1,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 115684.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "KODIAQ",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1016,
+          "pass_rate": 88.78,
+          "vs_national_at_age": 7.58,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 46084.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "KODIAQ",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 3291,
+          "pass_rate": 88.45,
+          "vs_national_at_age": 7.25,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 50763.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "SUPERB",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1995,
+          "pass_rate": 88.42,
+          "vs_national_at_age": 7.22,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 51267.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "KAROQ",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 2181,
+          "pass_rate": 88.31,
+          "vs_national_at_age": 7.11,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 39411.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "KAROQ",
+          "model_year": 2018,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 967,
+          "pass_rate": 88.21,
+          "vs_national_at_age": 7.01,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 49743.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "KODIAQ",
+          "model_year": 2018,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1250,
+          "pass_rate": 87.92,
+          "vs_national_at_age": 6.72,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 55866.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "KODIAQ",
+          "model_year": 2017,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 2883,
+          "pass_rate": 87.72,
+          "vs_national_at_age": 6.52,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 61438.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "OCTAVIA",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 3735,
+          "pass_rate": 87.71,
+          "vs_national_at_age": 6.51,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 54175.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "SUPERB",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 646,
+          "pass_rate": 87.62,
+          "vs_national_at_age": 6.42,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 47940.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "KAROQ",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 8619,
+          "pass_rate": 92.13,
+          "vs_national_at_age": 6.28,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 28423.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "OCTAVIA": {
+        "core_model": "OCTAVIA",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 88.1,
+                "vs_national": 2.25,
+                "total_tests": 11660,
+                "avg_mileage": 56641.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 87.14,
+                "vs_national": 1.29,
+                "total_tests": 20190,
+                "avg_mileage": 49183.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 87.0,
+                "vs_national": 1.15,
+                "total_tests": 2445,
+                "avg_mileage": 38365.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 82.66,
+                "vs_national": 1.46,
+                "total_tests": 12651,
+                "avg_mileage": 73318.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 84.69,
+                "vs_national": 3.49,
+                "total_tests": 18556,
+                "avg_mileage": 67945.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 85.75,
+                "vs_national": 4.55,
+                "total_tests": 5082,
+                "avg_mileage": 67172.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 79.19,
+                "vs_national": 4.06,
+                "total_tests": 10035,
+                "avg_mileage": 87789.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 80.04,
+                "vs_national": 4.91,
+                "total_tests": 19575,
+                "avg_mileage": 84470.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 80.8,
+                "vs_national": 5.67,
+                "total_tests": 8208,
+                "avg_mileage": 82562.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 68.4,
+                "vs_national": 0.16,
+                "total_tests": 6525,
+                "avg_mileage": 103421.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 73.49,
+                "vs_national": 5.25,
+                "total_tests": 11328,
+                "avg_mileage": 99345.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 75.99,
+                "vs_national": 7.75,
+                "total_tests": 7188,
+                "avg_mileage": 97056.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 64.23,
+                "vs_national": 1.4,
+                "total_tests": 5264,
+                "avg_mileage": 114007.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 65.58,
+                "vs_national": 2.75,
+                "total_tests": 11814,
+                "avg_mileage": 113568.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 65.14,
+                "vs_national": 2.31,
+                "total_tests": 4994,
+                "avg_mileage": 109017.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 55.97,
+                "vs_national": -1.33,
+                "total_tests": 268,
+                "avg_mileage": 135836.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 56.11,
+                "vs_national": -1.19,
+                "total_tests": 736,
+                "avg_mileage": 142142.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 59.1,
+                "vs_national": 1.8,
+                "total_tests": 1220,
+                "avg_mileage": 142730.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 55.57,
+                "vs_national": -1.73,
+                "total_tests": 1767,
+                "avg_mileage": 141957.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 55.48,
+                "vs_national": -1.82,
+                "total_tests": 2307,
+                "avg_mileage": 138295.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 54.15,
+                "vs_national": -3.15,
+                "total_tests": 3540,
+                "avg_mileage": 133426.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 55.15,
+                "vs_national": -2.15,
+                "total_tests": 5812,
+                "avg_mileage": 134515.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 57.63,
+                "vs_national": 0.33,
+                "total_tests": 6745,
+                "avg_mileage": 131863.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 58.06,
+                "vs_national": 0.76,
+                "total_tests": 6245,
+                "avg_mileage": 126809.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 62.09,
+                "vs_national": 4.79,
+                "total_tests": 7278,
+                "avg_mileage": 116422.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 61.97,
+                "vs_national": 4.67,
+                "total_tests": 4717,
+                "avg_mileage": 119519.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 4.79,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -3.15,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "KODIAQ": {
+        "core_model": "KODIAQ",
+        "years_covered": [
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 90.04,
+                "vs_national": 4.19,
+                "total_tests": 5323,
+                "avg_mileage": 44431.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 89.15,
+                "vs_national": 3.3,
+                "total_tests": 8819,
+                "avg_mileage": 36510.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 86.87,
+                "vs_national": 1.02,
+                "total_tests": 1607,
+                "avg_mileage": 28319.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 88.11,
+                "vs_national": 6.91,
+                "total_tests": 6174,
+                "avg_mileage": 56101.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 88.31,
+                "vs_national": 7.11,
+                "total_tests": 2266,
+                "avg_mileage": 50975.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "FABIA": {
+        "core_model": "FABIA",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 84.86,
+                "vs_national": -0.99,
+                "total_tests": 12329,
+                "avg_mileage": 40699.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 87.21,
+                "vs_national": 1.36,
+                "total_tests": 14795,
+                "avg_mileage": 25805.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 87.26,
+                "vs_national": 1.41,
+                "total_tests": 1994,
+                "avg_mileage": 21792.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 80.39,
+                "vs_national": -0.81,
+                "total_tests": 12073,
+                "avg_mileage": 54697.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 81.33,
+                "vs_national": 0.13,
+                "total_tests": 18215,
+                "avg_mileage": 51280.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 80.3,
+                "vs_national": -0.9,
+                "total_tests": 4553,
+                "avg_mileage": 49097.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 78.62,
+                "vs_national": 3.49,
+                "total_tests": 9087,
+                "avg_mileage": 65628.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 79.39,
+                "vs_national": 4.26,
+                "total_tests": 17934,
+                "avg_mileage": 60673.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 76.98,
+                "vs_national": 1.85,
+                "total_tests": 7421,
+                "avg_mileage": 59849.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 72.76,
+                "vs_national": 4.52,
+                "total_tests": 7740,
+                "avg_mileage": 80216.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 74.1,
+                "vs_national": 5.86,
+                "total_tests": 19122,
+                "avg_mileage": 76348.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 73.63,
+                "vs_national": 5.39,
+                "total_tests": 5924,
+                "avg_mileage": 73603.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 67.55,
+                "vs_national": 4.72,
+                "total_tests": 6417,
+                "avg_mileage": 86850.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 68.25,
+                "vs_national": 5.42,
+                "total_tests": 12605,
+                "avg_mileage": 87537.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 69.07,
+                "vs_national": 6.24,
+                "total_tests": 6732,
+                "avg_mileage": 85628.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 54.57,
+                "vs_national": -2.73,
+                "total_tests": 361,
+                "avg_mileage": 80106.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 53.72,
+                "vs_national": -3.58,
+                "total_tests": 1748,
+                "avg_mileage": 109336.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 52.96,
+                "vs_national": -4.34,
+                "total_tests": 2432,
+                "avg_mileage": 112399.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 50.82,
+                "vs_national": -6.48,
+                "total_tests": 3585,
+                "avg_mileage": 113140.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 51.25,
+                "vs_national": -6.05,
+                "total_tests": 5309,
+                "avg_mileage": 116130.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 51.77,
+                "vs_national": -5.53,
+                "total_tests": 7205,
+                "avg_mileage": 113862.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 53.02,
+                "vs_national": -4.28,
+                "total_tests": 8742,
+                "avg_mileage": 110779.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 53.87,
+                "vs_national": -3.43,
+                "total_tests": 10045,
+                "avg_mileage": 105830.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 54.14,
+                "vs_national": -3.16,
+                "total_tests": 11829,
+                "avg_mileage": 100248.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 58.16,
+                "vs_national": 0.86,
+                "total_tests": 14627,
+                "avg_mileage": 92038.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 62.64,
+                "vs_national": 5.34,
+                "total_tests": 5354,
+                "avg_mileage": 92892.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 6.24,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2003,
+          "vs_national": -6.48,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "RAPID": {
+        "core_model": "RAPID",
+        "years_covered": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 85.4,
+                "vs_national": -0.45,
+                "total_tests": 1535,
+                "avg_mileage": 64111.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 88.45,
+                "vs_national": 2.6,
+                "total_tests": 485,
+                "avg_mileage": 33516.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 77.26,
+                "vs_national": -3.94,
+                "total_tests": 2555,
+                "avg_mileage": 71003.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 78.13,
+                "vs_national": -3.07,
+                "total_tests": 4010,
+                "avg_mileage": 69504.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 77.04,
+                "vs_national": -4.16,
+                "total_tests": 627,
+                "avg_mileage": 72201.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 75.02,
+                "vs_national": -0.11,
+                "total_tests": 3079,
+                "avg_mileage": 82565.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 74.17,
+                "vs_national": -0.96,
+                "total_tests": 3244,
+                "avg_mileage": 80364.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 72.31,
+                "vs_national": -2.82,
+                "total_tests": 1636,
+                "avg_mileage": 78533.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2013,
+                "pass_rate": 71.28,
+                "vs_national": 3.04,
+                "total_tests": 3120,
+                "avg_mileage": 96746.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 71.87,
+                "vs_national": 3.63,
+                "total_tests": 2389,
+                "avg_mileage": 90195.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "KAROQ": {
+        "core_model": "KAROQ",
+        "years_covered": [
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 90.52,
+                "vs_national": 4.67,
+                "total_tests": 10890,
+                "avg_mileage": 37605.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 91.04,
+                "vs_national": 5.19,
+                "total_tests": 14566,
+                "avg_mileage": 33903.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 89.6,
+                "vs_national": 3.75,
+                "total_tests": 2558,
+                "avg_mileage": 27437.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 88.28,
+                "vs_national": 7.08,
+                "total_tests": 3148,
+                "avg_mileage": 44577.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "YETI": {
+        "core_model": "YETI",
+        "years_covered": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "trajectory_by_age": {
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 84.84,
+                "vs_national": 3.64,
+                "total_tests": 8321,
+                "avg_mileage": 49437.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 85.8,
+                "vs_national": 4.6,
+                "total_tests": 11220,
+                "avg_mileage": 43627.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 81.45,
+                "vs_national": 6.32,
+                "total_tests": 7261,
+                "avg_mileage": 62626.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 80.86,
+                "vs_national": 5.73,
+                "total_tests": 12726,
+                "avg_mileage": 58243.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 81.99,
+                "vs_national": 6.86,
+                "total_tests": 4876,
+                "avg_mileage": 53969.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 72.81,
+                "vs_national": 4.57,
+                "total_tests": 3792,
+                "avg_mileage": 80742.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 77.62,
+                "vs_national": 9.38,
+                "total_tests": 10331,
+                "avg_mileage": 73649.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 77.14,
+                "vs_national": 8.9,
+                "total_tests": 5071,
+                "avg_mileage": 68780.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 66.57,
+                "vs_national": 3.74,
+                "total_tests": 2118,
+                "avg_mileage": 93577.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 70.33,
+                "vs_national": 7.5,
+                "total_tests": 5315,
+                "avg_mileage": 91031.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 70.77,
+                "vs_national": 7.94,
+                "total_tests": 3017,
+                "avg_mileage": 87927.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2009,
+                "pass_rate": 62.59,
+                "vs_national": 5.29,
+                "total_tests": 564,
+                "avg_mileage": 99035.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 64.73,
+                "vs_national": 7.43,
+                "total_tests": 1718,
+                "avg_mileage": 99347.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 7.94,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2010,
+          "vs_national": 3.74,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "CITIGO": {
+        "core_model": "CITIGO",
+        "years_covered": [
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 86.71,
+                "vs_national": 0.86,
+                "total_tests": 3981,
+                "avg_mileage": 25796.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 91.86,
+                "vs_national": 6.01,
+                "total_tests": 4568,
+                "avg_mileage": 21853.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 79.37,
+                "vs_national": -1.83,
+                "total_tests": 4827,
+                "avg_mileage": 37844.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 83.21,
+                "vs_national": 2.01,
+                "total_tests": 6294,
+                "avg_mileage": 32924.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 82.55,
+                "vs_national": 1.35,
+                "total_tests": 1421,
+                "avg_mileage": 29192.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 80.14,
+                "vs_national": 5.01,
+                "total_tests": 5029,
+                "avg_mileage": 51654.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 80.18,
+                "vs_national": 5.05,
+                "total_tests": 8108,
+                "avg_mileage": 44650.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 75.78,
+                "vs_national": 0.65,
+                "total_tests": 2997,
+                "avg_mileage": 41365.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 78.09,
+                "vs_national": 9.85,
+                "total_tests": 2698,
+                "avg_mileage": 59251.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 79.41,
+                "vs_national": 11.17,
+                "total_tests": 7060,
+                "avg_mileage": 57618.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 78.8,
+                "vs_national": 10.56,
+                "total_tests": 4132,
+                "avg_mileage": 57647.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 77.85,
+                "vs_national": 15.02,
+                "total_tests": 1088,
+                "avg_mileage": 65457.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 15.02,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2012,
+          "vs_national": 15.02,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "ROOMSTER": {
+        "core_model": "ROOMSTER",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015
+        ],
+        "trajectory_by_age": {
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 80.97,
+                "vs_national": 5.84,
+                "total_tests": 1719,
+                "avg_mileage": 60527.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 82.67,
+                "vs_national": 7.54,
+                "total_tests": 1713,
+                "avg_mileage": 58743.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 73.45,
+                "vs_national": 5.21,
+                "total_tests": 1371,
+                "avg_mileage": 77049.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 75.41,
+                "vs_national": 7.17,
+                "total_tests": 2692,
+                "avg_mileage": 71508.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 78.73,
+                "vs_national": 10.49,
+                "total_tests": 1058,
+                "avg_mileage": 66305.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 68.01,
+                "vs_national": 5.18,
+                "total_tests": 744,
+                "avg_mileage": 89645.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 68.05,
+                "vs_national": 5.22,
+                "total_tests": 1640,
+                "avg_mileage": 83639.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 67.22,
+                "vs_national": 4.39,
+                "total_tests": 1080,
+                "avg_mileage": 81553.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 46.17,
+                "vs_national": -11.13,
+                "total_tests": 457,
+                "avg_mileage": 112861.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 49.94,
+                "vs_national": -7.36,
+                "total_tests": 2671,
+                "avg_mileage": 108462.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 53.13,
+                "vs_national": -4.17,
+                "total_tests": 2287,
+                "avg_mileage": 102185.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 55.7,
+                "vs_national": -1.6,
+                "total_tests": 1203,
+                "avg_mileage": 93660.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 62.28,
+                "vs_national": 4.98,
+                "total_tests": 623,
+                "avg_mileage": 93015.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2011,
+          "vs_national": 5.22,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": -11.13,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "SUPERB": {
+        "core_model": "SUPERB",
+        "years_covered": [
+          2005,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 84.48,
+                "vs_national": -1.37,
+                "total_tests": 5226,
+                "avg_mileage": 54024.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 84.78,
+                "vs_national": -1.07,
+                "total_tests": 6917,
+                "avg_mileage": 45886.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 85.97,
+                "vs_national": 0.12,
+                "total_tests": 1041,
+                "avg_mileage": 42324.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 82.93,
+                "vs_national": 1.73,
+                "total_tests": 4990,
+                "avg_mileage": 71467.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 83.93,
+                "vs_national": 2.73,
+                "total_tests": 9361,
+                "avg_mileage": 68052.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 83.69,
+                "vs_national": 2.49,
+                "total_tests": 2416,
+                "avg_mileage": 67562.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 74.76,
+                "vs_national": -0.37,
+                "total_tests": 2726,
+                "avg_mileage": 90581.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 76.14,
+                "vs_national": 1.01,
+                "total_tests": 4837,
+                "avg_mileage": 86535.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 81.49,
+                "vs_national": 6.36,
+                "total_tests": 3495,
+                "avg_mileage": 81531.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 68.02,
+                "vs_national": -0.22,
+                "total_tests": 2280,
+                "avg_mileage": 105408.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 71.49,
+                "vs_national": 3.25,
+                "total_tests": 3865,
+                "avg_mileage": 101226.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 73.24,
+                "vs_national": 5.0,
+                "total_tests": 2059,
+                "avg_mileage": 105260.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 63.29,
+                "vs_national": 0.46,
+                "total_tests": 1117,
+                "avg_mileage": 115966.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 65.49,
+                "vs_national": 2.66,
+                "total_tests": 2921,
+                "avg_mileage": 118316.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 69.75,
+                "vs_national": 6.92,
+                "total_tests": 1805,
+                "avg_mileage": 111088.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 62.67,
+                "vs_national": 5.37,
+                "total_tests": 225,
+                "avg_mileage": 150596.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 56.09,
+                "vs_national": -1.21,
+                "total_tests": 230,
+                "avg_mileage": 128740.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 61.05,
+                "vs_national": 3.75,
+                "total_tests": 362,
+                "avg_mileage": 133902.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 62.82,
+                "vs_national": 5.52,
+                "total_tests": 928,
+                "avg_mileage": 139652.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 62.63,
+                "vs_national": 5.33,
+                "total_tests": 784,
+                "avg_mileage": 120379.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 6.92,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": -1.21,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

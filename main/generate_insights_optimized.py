@@ -26,33 +26,23 @@ from datetime import datetime
 # CONFIGURATION
 # =============================================================================
 
-DATA_DIR = Path(__file__).parent
-OUTPUT_DB = DATA_DIR / "mot_insights.db"
-DUCKDB_FILE = DATA_DIR / "mot_processing.duckdb"  # Disk-backed for lower RAM
-MIN_SAMPLE_SIZE = 100
+DATA_DIR = Path(__file__).parent.parent / "data" / "source"
+OUTPUT_DIR = DATA_DIR / "data"
+OUTPUT_DB = OUTPUT_DIR / "mot_insights.db"
+DUCKDB_FILE = OUTPUT_DIR / "mot_processing.duckdb"  # Disk-backed for lower RAM
 
 # Performance tuning - optimized for 8GB VPS
 DUCKDB_THREADS = 2            # Fewer threads = less memory pressure
 DUCKDB_MEMORY_LIMIT = '4GB'   # Leave ~3.5GB for OS, Python, disk spillover
 
-# Mileage bands (in miles)
+# Mileage bands (in miles) - no upper cap on final band
 MILEAGE_BANDS = [
     (0, 30000, "0-30k", 0),
     (30001, 60000, "30k-60k", 1),
     (60001, 90000, "60k-90k", 2),
     (90001, 120000, "90k-120k", 3),
     (120001, 150000, "120k-150k", 4),
-    (150001, 999999999, "150k+", 5),
-]
-
-# Age bands (in years)
-AGE_BANDS = [
-    (3, 4, "3-4 years", 0),
-    (5, 6, "5-6 years", 1),
-    (7, 8, "7-8 years", 2),
-    (9, 10, "9-10 years", 3),
-    (11, 12, "11-12 years", 4),
-    (13, 99, "13+ years", 5),
+    (150001, None, "150k+", 5),  # No upper limit
 ]
 
 
@@ -68,9 +58,11 @@ def create_duckdb_connection():
     print(f"\nStarted at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"Data directory: {DATA_DIR}")
     print(f"Output database: {OUTPUT_DB}")
-    print(f"Minimum sample size: {MIN_SAMPLE_SIZE}")
     print(f"DuckDB threads: {DUCKDB_THREADS}")
     print(f"DuckDB memory limit: {DUCKDB_MEMORY_LIMIT}")
+
+    # Create output directory if it doesn't exist
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # Remove old DuckDB file if exists
     if DUCKDB_FILE.exists():
@@ -83,7 +75,7 @@ def create_duckdb_connection():
     conn.execute(f"SET threads = {DUCKDB_THREADS}")
     conn.execute(f"SET memory_limit = '{DUCKDB_MEMORY_LIMIT}'")
 
-    print("\n[1/20] Importing CSV files into DuckDB...")
+    print("\n[1/19] Importing CSV files into DuckDB...")
 
     # Import main tables
     csv_files = {
@@ -117,7 +109,7 @@ def create_duckdb_connection():
 
 def create_base_tests_table(conn):
     """Create a filtered base table for reuse in all queries."""
-    print("\n[2/20] Creating filtered base_tests table...")
+    print("\n[2/19] Creating filtered base_tests table...")
 
     conn.execute("""
         CREATE TABLE base_tests AS
@@ -139,7 +131,6 @@ def create_base_tests_table(conn):
           AND tr.test_result IN ('P', 'F', 'PRS')
           AND CAST(tr.test_class_id AS VARCHAR) = '4'
           AND tr.first_use_date != '1971-01-01'
-          AND YEAR(tr.first_use_date) >= 2000
           AND tr.make != 'UNCLASSIFIED'
     """)
 
@@ -300,21 +291,6 @@ def create_output_database():
         )
     """)
 
-    # Age band analysis (complement to mileage bands)
-    cursor.execute("""
-        CREATE TABLE age_bands (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            make TEXT NOT NULL,
-            model TEXT NOT NULL,
-            model_year INTEGER NOT NULL,
-            fuel_type TEXT,
-            age_band TEXT NOT NULL,
-            band_order INTEGER NOT NULL,
-            total_tests INTEGER NOT NULL,
-            pass_rate REAL NOT NULL,
-            avg_mileage REAL
-        )
-    """)
 
     # First MOT vs subsequent MOT comparison
     cursor.execute("""
@@ -477,7 +453,6 @@ def create_output_database():
     cursor.execute("CREATE INDEX idx_gi_lookup ON geographic_insights(make, model, model_year, fuel_type)")
     cursor.execute("CREATE INDEX idx_av_lookup ON available_vehicles(make, model, model_year)")
     cursor.execute("CREATE INDEX idx_dd_lookup ON dangerous_defects(make, model, model_year, fuel_type)")
-    cursor.execute("CREATE INDEX idx_ab_lookup ON age_bands(make, model, model_year, fuel_type)")
     cursor.execute("CREATE INDEX idx_fmi_lookup ON first_mot_insights(make, model, model_year, fuel_type)")
     cursor.execute("CREATE INDEX idx_mr_lookup ON manufacturer_rankings(make)")
     cursor.execute("CREATE INDEX idx_sp_lookup ON seasonal_patterns(make, model, model_year, fuel_type)")
@@ -495,7 +470,7 @@ def create_output_database():
 
 def generate_national_averages(duck_conn, sqlite_conn):
     """Calculate national averages for benchmarking - BULK operation."""
-    print("\n[3/20] Calculating national averages...")
+    print("\n[3/19] Calculating national averages...")
     cursor = sqlite_conn.cursor()
 
     # Overall pass rate
@@ -534,7 +509,6 @@ def generate_national_averages(duck_conn, sqlite_conn):
             100.0 * SUM(CASE WHEN test_result = 'P' THEN 1 ELSE 0 END) / COUNT(*) as pass_rate
         FROM base_tests
         GROUP BY model_year
-        HAVING COUNT(*) >= 1000
         ORDER BY model_year
     """).fetchall()
 
@@ -552,7 +526,6 @@ def generate_national_averages(duck_conn, sqlite_conn):
             100.0 * SUM(CASE WHEN test_result = 'P' THEN 1 ELSE 0 END) / COUNT(*) as pass_rate
         FROM base_tests
         GROUP BY fuel_type
-        HAVING COUNT(*) >= 1000
     """).fetchall()
 
     for fuel, count, fuel_pass_rate in by_fuel:
@@ -569,7 +542,7 @@ def generate_national_averages(duck_conn, sqlite_conn):
 
 def generate_vehicle_insights_bulk(duck_conn, sqlite_conn, national_pass_rate):
     """Generate core statistics for ALL vehicles in one bulk query."""
-    print("\n[4/20] Generating core vehicle statistics (BULK)...")
+    print("\n[4/19] Generating core vehicle statistics (BULK)...")
 
     # Single bulk query for all vehicle combinations
     results = duck_conn.execute(f"""
@@ -586,7 +559,6 @@ def generate_vehicle_insights_bulk(duck_conn, sqlite_conn, national_pass_rate):
             AVG(vehicle_age) as avg_age
         FROM base_tests
         GROUP BY make, model, model_year, fuel_type
-        HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
         ORDER BY total_tests DESC
     """).fetchall()
 
@@ -626,15 +598,14 @@ def generate_vehicle_insights_bulk(duck_conn, sqlite_conn, national_pass_rate):
 
 def generate_failure_categories_bulk(duck_conn, sqlite_conn):
     """Generate top 10 failure categories per vehicle using window functions."""
-    print("\n[5/20] Generating failure category breakdowns (BULK)...")
+    print("\n[5/19] Generating failure category breakdowns (BULK)...")
 
     # First, get vehicle totals for percentage calculation
-    duck_conn.execute(f"""
+    duck_conn.execute("""
         CREATE TEMP TABLE vehicle_totals AS
         SELECT make, model, model_year, fuel_type, COUNT(*) as total_tests
         FROM base_tests
         GROUP BY make, model, model_year, fuel_type
-        HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
     """)
 
     # Bulk query with window function for top 10 per vehicle
@@ -677,7 +648,6 @@ def generate_failure_categories_bulk(duck_conn, sqlite_conn):
         SELECT make, model, model_year, fuel_type, category_id, category_name,
                failure_count, total_tests, rank
         FROM ranked
-        WHERE rank <= 10
         ORDER BY make, model, model_year, fuel_type, rank
     """).fetchall()
 
@@ -699,15 +669,14 @@ def generate_failure_categories_bulk(duck_conn, sqlite_conn):
 
 def generate_top_defects_bulk(duck_conn, sqlite_conn):
     """Generate top 10 failures + top 10 advisories per vehicle using memory-efficient approach."""
-    print("\n[6/20] Generating top specific defects (BULK)...")
+    print("\n[6/19] Generating top specific defects (BULK)...")
 
     # Get vehicle totals
-    duck_conn.execute(f"""
+    duck_conn.execute("""
         CREATE TEMP TABLE vehicle_totals AS
         SELECT make, model, model_year, fuel_type, COUNT(*) as total_tests
         FROM base_tests
         GROUP BY make, model, model_year, fuel_type
-        HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
     """)
 
     cursor = sqlite_conn.cursor()
@@ -742,7 +711,7 @@ def generate_top_defects_bulk(duck_conn, sqlite_conn):
                 ftd.model_year,
                 ftd.fuel_type,
                 ftd.rfr_id,
-                COALESCE(id.rfr_desc, 'Unknown') as defect_desc,
+                COALESCE(NULLIF(id.rfr_insp_manual_desc, ''), id.rfr_desc, 'Unknown') as defect_desc,
                 ig.item_name as category_name,
                 COUNT(*) as occurrence_count
             FROM failure_test_defects ftd
@@ -750,7 +719,7 @@ def generate_top_defects_bulk(duck_conn, sqlite_conn):
             LEFT JOIN item_group ig ON id.test_item_set_section_id = ig.test_item_id
                                    AND CAST(ig.test_class_id AS VARCHAR) = '4' AND ig.parent_id = 0
             GROUP BY ftd.make, ftd.model, ftd.model_year, ftd.fuel_type,
-                     ftd.rfr_id, id.rfr_desc, ig.item_name
+                     ftd.rfr_id, defect_desc, ig.item_name
         ),
         ranked AS (
             SELECT
@@ -769,7 +738,7 @@ def generate_top_defects_bulk(duck_conn, sqlite_conn):
         SELECT make, model, model_year, fuel_type, rfr_id, defect_desc,
                category_name, occurrence_count, total_tests, rank
         FROM ranked
-        WHERE rank <= 10
+        -- No rank limit - capture ALL failure defects
     """).fetchall()
 
     duck_conn.execute("DROP TABLE IF EXISTS failure_test_defects")
@@ -816,7 +785,7 @@ def generate_top_defects_bulk(duck_conn, sqlite_conn):
                 atd.model_year,
                 atd.fuel_type,
                 atd.rfr_id,
-                COALESCE(id.rfr_advisory_text, id.rfr_desc, 'Unknown') as defect_desc,
+                COALESCE(NULLIF(id.rfr_insp_manual_desc, ''), id.rfr_advisory_text, id.rfr_desc, 'Unknown') as defect_desc,
                 ig.item_name as category_name,
                 COUNT(*) as occurrence_count
             FROM advisory_test_defects atd
@@ -843,7 +812,7 @@ def generate_top_defects_bulk(duck_conn, sqlite_conn):
         SELECT make, model, model_year, fuel_type, rfr_id, defect_desc,
                category_name, occurrence_count, total_tests, rank
         FROM ranked
-        WHERE rank <= 10
+        -- No rank limit - capture ALL advisory defects
     """).fetchall()
 
     duck_conn.execute("DROP TABLE IF EXISTS advisory_test_defects")
@@ -861,6 +830,80 @@ def generate_top_defects_bulk(duck_conn, sqlite_conn):
 
     print(f"{len(advisories):,} entries")
 
+    # =========================================================================
+    # MINOR DEFECTS - Same pattern as advisories, rfr_type_code = 'M'
+    # =========================================================================
+    print("  Processing minor defects...", end=" ", flush=True)
+
+    # Step 1: Create deduplicated intermediate table (can spill to disk)
+    duck_conn.execute("""
+        CREATE TEMP TABLE minor_test_defects AS
+        SELECT DISTINCT
+            bt.test_id,
+            bt.make,
+            bt.model,
+            bt.model_year,
+            bt.fuel_type,
+            ti.rfr_id
+        FROM base_tests bt
+        JOIN test_item ti ON bt.test_id = ti.test_id
+        WHERE ti.rfr_type_code = 'M'
+    """)
+
+    # Step 2: Now count from the deduplicated table (much less memory)
+    minor_results = duck_conn.execute("""
+        WITH defect_counts AS (
+            SELECT
+                mtd.make,
+                mtd.model,
+                mtd.model_year,
+                mtd.fuel_type,
+                mtd.rfr_id,
+                COALESCE(NULLIF(id.rfr_insp_manual_desc, ''), id.rfr_desc, 'Unknown') as defect_desc,
+                ig.item_name as category_name,
+                COUNT(*) as occurrence_count
+            FROM minor_test_defects mtd
+            LEFT JOIN item_detail id ON mtd.rfr_id = id.rfr_id AND CAST(id.test_class_id AS VARCHAR) = '4'
+            LEFT JOIN item_group ig ON id.test_item_set_section_id = ig.test_item_id
+                                   AND CAST(ig.test_class_id AS VARCHAR) = '4' AND ig.parent_id = 0
+            GROUP BY mtd.make, mtd.model, mtd.model_year, mtd.fuel_type,
+                     mtd.rfr_id, defect_desc, ig.item_name
+        ),
+        ranked AS (
+            SELECT
+                dc.*,
+                vt.total_tests,
+                ROW_NUMBER() OVER (
+                    PARTITION BY dc.make, dc.model, dc.model_year, dc.fuel_type
+                    ORDER BY dc.occurrence_count DESC
+                ) as rank
+            FROM defect_counts dc
+            JOIN vehicle_totals vt ON dc.make = vt.make
+                                   AND dc.model = vt.model
+                                   AND dc.model_year = vt.model_year
+                                   AND dc.fuel_type = vt.fuel_type
+        )
+        SELECT make, model, model_year, fuel_type, rfr_id, defect_desc,
+               category_name, occurrence_count, total_tests, rank
+        FROM ranked
+        -- No rank limit - capture ALL minor defects
+    """).fetchall()
+
+    duck_conn.execute("DROP TABLE IF EXISTS minor_test_defects")
+
+    for row in minor_results:
+        make, model, year, fuel_type, rfr_id, desc, cat, count, total_tests, rank = row
+        pct = (count / total_tests) * 100 if total_tests > 0 else 0
+        cursor.execute("""
+            INSERT INTO top_defects
+            (make, model, model_year, fuel_type, rfr_id, defect_description, category_name,
+             defect_type, occurrence_count, occurrence_percentage, rank)
+            VALUES (?, ?, ?, ?, ?, ?, ?, 'minor', ?, ?, ?)
+        """, (make, model, year, fuel_type, rfr_id, desc, cat, count, round(pct, 2), rank))
+        total_inserted += 1
+
+    print(f"{len(minor_results):,} entries")
+
     duck_conn.execute("DROP TABLE IF EXISTS vehicle_totals")
     sqlite_conn.commit()
     print(f"  Generated {total_inserted:,} total defect entries")
@@ -868,28 +911,27 @@ def generate_top_defects_bulk(duck_conn, sqlite_conn):
 
 def generate_mileage_bands_bulk(duck_conn, sqlite_conn):
     """Generate pass rates by mileage band for all vehicles in bulk."""
-    print("\n[7/20] Generating mileage band analysis (BULK)...")
+    print("\n[7/19] Generating mileage band analysis (BULK)...")
 
-    # Build CASE expression for mileage bands
+    # Build CASE expression for mileage bands (handles None for no upper limit)
     case_expr = "CASE "
     for low, high, label, order in MILEAGE_BANDS:
-        case_expr += f"WHEN test_mileage >= {low} AND test_mileage <= {high} THEN '{label}' "
+        if high is None:
+            case_expr += f"WHEN test_mileage >= {low} THEN '{label}' "
+        else:
+            case_expr += f"WHEN test_mileage >= {low} AND test_mileage <= {high} THEN '{label}' "
     case_expr += "END"
 
     order_expr = "CASE "
     for low, high, label, order in MILEAGE_BANDS:
-        case_expr2 = f"WHEN test_mileage >= {low} AND test_mileage <= {high} THEN {order} "
-        order_expr += case_expr2
+        if high is None:
+            order_expr += f"WHEN test_mileage >= {low} THEN {order} "
+        else:
+            order_expr += f"WHEN test_mileage >= {low} AND test_mileage <= {high} THEN {order} "
     order_expr += "END"
 
     results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        mileage_stats AS (
+        WITH mileage_stats AS (
             SELECT
                 bt.make,
                 bt.model,
@@ -901,13 +943,8 @@ def generate_mileage_bands_bulk(duck_conn, sqlite_conn):
                 SUM(CASE WHEN bt.test_result = 'P' THEN 1 ELSE 0 END) as passes,
                 AVG(bt.test_mileage) as avg_mileage
             FROM base_tests bt
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE bt.test_mileage > 0
             GROUP BY bt.make, bt.model, bt.model_year, bt.fuel_type, mileage_band, band_order
-            HAVING COUNT(*) >= 10
         )
         SELECT make, model, model_year, fuel_type, mileage_band, band_order,
                total_tests, passes, avg_mileage
@@ -934,15 +971,9 @@ def generate_mileage_bands_bulk(duck_conn, sqlite_conn):
 
 def generate_geographic_insights_bulk(duck_conn, sqlite_conn):
     """Generate pass rates by postcode area for all vehicles in bulk."""
-    print("\n[8/20] Generating geographic insights (BULK)...")
+    print("\n[8/19] Generating geographic insights (BULK)...")
 
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        )
+    results = duck_conn.execute("""
         SELECT
             bt.make,
             bt.model,
@@ -952,13 +983,8 @@ def generate_geographic_insights_bulk(duck_conn, sqlite_conn):
             COUNT(*) as total_tests,
             100.0 * SUM(CASE WHEN bt.test_result = 'P' THEN 1 ELSE 0 END) / COUNT(*) as pass_rate
         FROM base_tests bt
-        JOIN vehicle_combos vc ON bt.make = vc.make
-                               AND bt.model = vc.model
-                               AND bt.model_year = vc.model_year
-                               AND bt.fuel_type = vc.fuel_type
         WHERE bt.postcode_area != 'XX'
         GROUP BY bt.make, bt.model, bt.model_year, bt.fuel_type, bt.postcode_area
-        HAVING COUNT(*) >= 20
     """).fetchall()
 
     cursor = sqlite_conn.cursor()
@@ -976,17 +1002,11 @@ def generate_geographic_insights_bulk(duck_conn, sqlite_conn):
 
 def generate_defect_locations_bulk(duck_conn, sqlite_conn):
     """Generate defect location breakdown for all vehicles in bulk."""
-    print("\n[9/20] Generating defect location analysis (BULK)...")
+    print("\n[9/19] Generating defect location analysis (BULK)...")
 
     # Get location data with percentages using window functions
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        location_counts AS (
+    results = duck_conn.execute("""
+        WITH location_counts AS (
             SELECT
                 bt.make,
                 bt.model,
@@ -1000,10 +1020,6 @@ def generate_defect_locations_bulk(duck_conn, sqlite_conn):
             FROM base_tests bt
             JOIN test_item ti ON bt.test_id = ti.test_id
             LEFT JOIN mdr_rfr_location loc ON ti.location_id = loc.id
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE ti.rfr_type_code IN ('F', 'P')
               AND ti.location_id IS NOT NULL
               AND ti.location_id > 0
@@ -1023,14 +1039,13 @@ def generate_defect_locations_bulk(duck_conn, sqlite_conn):
             FROM location_counts lc
         )
         SELECT make, model, model_year, fuel_type, location_id, lateral_pos,
-               longitudinal, vertical, failure_count, vehicle_total
+               longitudinal, vertical, failure_count, vehicle_total, rank
         FROM with_totals
-        WHERE rank <= 20
     """).fetchall()
 
     cursor = sqlite_conn.cursor()
     for row in results:
-        make, model, year, fuel_type, loc_id, lateral, longitudinal, vertical, count, total = row
+        make, model, year, fuel_type, loc_id, lateral, longitudinal, vertical, count, total, rank = row
         pct = (count / total) * 100 if total > 0 else 0
         cursor.execute("""
             INSERT INTO defect_locations
@@ -1046,18 +1061,12 @@ def generate_defect_locations_bulk(duck_conn, sqlite_conn):
 
 def generate_advisory_progression_bulk(duck_conn, sqlite_conn):
     """Track advisory to failure progression using bulk operations."""
-    print("\n[10/20] Analyzing advisory-to-failure progression (BULK)...")
+    print("\n[10/19] Analyzing advisory-to-failure progression (BULK)...")
     print("  (This is the most complex analysis - may take several minutes)")
 
     # This is computationally intensive but still uses bulk operations
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        advisory_tests AS (
+    results = duck_conn.execute("""
+        WITH advisory_tests AS (
             SELECT DISTINCT
                 bt.vehicle_id,
                 bt.make,
@@ -1073,10 +1082,6 @@ def generate_advisory_progression_bulk(duck_conn, sqlite_conn):
             JOIN item_detail id ON ti.rfr_id = id.rfr_id AND CAST(id.test_class_id AS VARCHAR) = '4'
             JOIN item_group ig ON id.test_item_set_section_id = ig.test_item_id
                               AND CAST(ig.test_class_id AS VARCHAR) = '4'
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE ti.rfr_type_code = 'A'
               AND ig.parent_id = 0
               AND ig.test_item_id != 0
@@ -1094,10 +1099,6 @@ def generate_advisory_progression_bulk(duck_conn, sqlite_conn):
             FROM base_tests bt
             JOIN test_item ti ON bt.test_id = ti.test_id
             JOIN item_detail id ON ti.rfr_id = id.rfr_id AND CAST(id.test_class_id AS VARCHAR) = '4'
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE ti.rfr_type_code IN ('F', 'P')
         ),
         progressions AS (
@@ -1142,7 +1143,6 @@ def generate_advisory_progression_bulk(duck_conn, sqlite_conn):
                 AVG(CASE WHEN p.miles_to_failure > 0 THEN p.miles_to_failure END) as avg_miles
             FROM progressions p
             GROUP BY p.make, p.model, p.model_year, p.fuel_type, p.category_id, p.category_name
-            HAVING COUNT(DISTINCT p.vehicle_id) >= 5
         )
         SELECT
             ps.make,
@@ -1185,7 +1185,7 @@ def generate_advisory_progression_bulk(duck_conn, sqlite_conn):
 
 def generate_rankings(sqlite_conn):
     """Generate comparative rankings from the computed data."""
-    print("\n[11/20] Generating comparative rankings...")
+    print("\n[11/19] Generating comparative rankings...")
     cursor = sqlite_conn.cursor()
 
     # Overall ranking (all vehicles by pass rate)
@@ -1197,7 +1197,6 @@ def generate_rankings(sqlite_conn):
             (SELECT COUNT(*) FROM vehicle_insights) as total,
             pass_rate
         FROM vehicle_insights
-        WHERE total_tests >= 100
     """)
 
     # Ranking within same make
@@ -1209,7 +1208,6 @@ def generate_rankings(sqlite_conn):
             COUNT(*) OVER (PARTITION BY make) as total,
             pass_rate
         FROM vehicle_insights
-        WHERE total_tests >= 100
     """)
 
     # Ranking within same model year
@@ -1221,7 +1219,6 @@ def generate_rankings(sqlite_conn):
             COUNT(*) OVER (PARTITION BY model_year) as total,
             pass_rate
         FROM vehicle_insights
-        WHERE total_tests >= 100
     """)
 
     sqlite_conn.commit()
@@ -1232,15 +1229,14 @@ def generate_rankings(sqlite_conn):
 
 def generate_dangerous_defects_bulk(duck_conn, sqlite_conn):
     """Generate dangerous defect tracking - serious safety issues."""
-    print("\n[12/20] Generating dangerous defects analysis (BULK)...")
+    print("\n[12/19] Generating dangerous defects analysis (BULK)...")
 
     # Get vehicle totals
-    duck_conn.execute(f"""
+    duck_conn.execute("""
         CREATE TEMP TABLE IF NOT EXISTS vehicle_totals AS
         SELECT make, model, model_year, fuel_type, COUNT(*) as total_tests
         FROM base_tests
         GROUP BY make, model, model_year, fuel_type
-        HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
     """)
 
     # Step 1: Create deduplicated intermediate table (same pattern as top_defects)
@@ -1271,7 +1267,7 @@ def generate_dangerous_defects_bulk(duck_conn, sqlite_conn):
                 dtd.model_year,
                 dtd.fuel_type,
                 dtd.rfr_id,
-                COALESCE(id.rfr_desc, 'Unknown') as defect_desc,
+                COALESCE(NULLIF(id.rfr_insp_manual_desc, ''), id.rfr_desc, 'Unknown') as defect_desc,
                 ig.item_name as category_name,
                 COUNT(*) as occurrence_count
             FROM dangerous_test_defects dtd
@@ -1280,7 +1276,7 @@ def generate_dangerous_defects_bulk(duck_conn, sqlite_conn):
             LEFT JOIN item_group ig ON id.test_item_set_section_id = ig.test_item_id
                 AND CAST(ig.test_class_id AS VARCHAR) = '4' AND ig.parent_id = 0
             GROUP BY dtd.make, dtd.model, dtd.model_year, dtd.fuel_type,
-                     dtd.rfr_id, id.rfr_desc, ig.item_name
+                     dtd.rfr_id, defect_desc, ig.item_name
         ),
         ranked AS (
             SELECT
@@ -1299,7 +1295,7 @@ def generate_dangerous_defects_bulk(duck_conn, sqlite_conn):
         SELECT make, model, model_year, fuel_type, rfr_id, defect_desc,
                category_name, occurrence_count, total_tests, rank
         FROM ranked
-        WHERE rank <= 10
+        -- No rank limit - capture ALL dangerous defects
     """).fetchall()
 
     duck_conn.execute("DROP TABLE IF EXISTS dangerous_test_defects")
@@ -1319,83 +1315,12 @@ def generate_dangerous_defects_bulk(duck_conn, sqlite_conn):
     print(f"  Generated {len(results):,} dangerous defect entries")
 
 
-def generate_age_bands_bulk(duck_conn, sqlite_conn):
-    """Generate pass rates by vehicle age band."""
-    print("\n[13/20] Generating age band analysis (BULK)...")
-
-    # Build CASE expression for age bands
-    case_expr = "CASE "
-    for low, high, label, order in AGE_BANDS:
-        case_expr += f"WHEN vehicle_age >= {low} AND vehicle_age <= {high} THEN '{label}' "
-    case_expr += "END"
-
-    order_expr = "CASE "
-    for low, high, label, order in AGE_BANDS:
-        order_expr += f"WHEN vehicle_age >= {low} AND vehicle_age <= {high} THEN {order} "
-    order_expr += "END"
-
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        age_stats AS (
-            SELECT
-                bt.make,
-                bt.model,
-                bt.model_year,
-                bt.fuel_type,
-                {case_expr} as age_band,
-                {order_expr} as band_order,
-                COUNT(*) as total_tests,
-                SUM(CASE WHEN bt.test_result = 'P' THEN 1 ELSE 0 END) as passes,
-                AVG(CASE WHEN bt.test_mileage > 0 THEN bt.test_mileage END) as avg_mileage
-            FROM base_tests bt
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
-            WHERE bt.vehicle_age >= 3
-            GROUP BY bt.make, bt.model, bt.model_year, bt.fuel_type, age_band, band_order
-            HAVING COUNT(*) >= 10
-        )
-        SELECT make, model, model_year, fuel_type, age_band, band_order,
-               total_tests, passes, avg_mileage
-        FROM age_stats
-        WHERE age_band IS NOT NULL
-        ORDER BY make, model, model_year, fuel_type, band_order
-    """).fetchall()
-
-    cursor = sqlite_conn.cursor()
-    for row in results:
-        make, model, year, fuel_type, band, order, tests, passes, avg_mileage = row
-        pass_rate = (passes / tests) * 100 if tests > 0 else 0
-        cursor.execute("""
-            INSERT INTO age_bands
-            (make, model, model_year, fuel_type, age_band, band_order,
-             total_tests, pass_rate, avg_mileage)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (make, model, year, fuel_type, band, order,
-              tests, round(pass_rate, 2), round(avg_mileage, 0) if avg_mileage else None))
-
-    sqlite_conn.commit()
-    print(f"  Generated {len(results):,} age band entries")
-
-
 def generate_first_mot_insights_bulk(duck_conn, sqlite_conn):
     """Generate first MOT vs subsequent MOT comparison."""
-    print("\n[14/20] Generating first MOT insights (BULK)...")
+    print("\n[13/19] Generating first MOT insights (BULK)...")
 
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        mot_stats AS (
+    results = duck_conn.execute("""
+        WITH mot_stats AS (
             SELECT
                 bt.make,
                 bt.model,
@@ -1406,12 +1331,7 @@ def generate_first_mot_insights_bulk(duck_conn, sqlite_conn):
                 SUM(CASE WHEN bt.test_result = 'P' THEN 1 ELSE 0 END) as passes,
                 AVG(CASE WHEN bt.test_mileage > 0 THEN bt.test_mileage END) as avg_mileage
             FROM base_tests bt
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             GROUP BY bt.make, bt.model, bt.model_year, bt.fuel_type, mot_type
-            HAVING COUNT(*) >= 20
         ),
         defect_counts AS (
             SELECT
@@ -1424,10 +1344,6 @@ def generate_first_mot_insights_bulk(duck_conn, sqlite_conn):
                 COUNT(DISTINCT bt.test_id) as failed_tests
             FROM base_tests bt
             JOIN test_item ti ON bt.test_id = ti.test_id
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE bt.test_result IN ('F', 'PRS')
               AND ti.rfr_type_code IN ('F', 'P')
             GROUP BY bt.make, bt.model, bt.model_year, bt.fuel_type, mot_type
@@ -1463,9 +1379,9 @@ def generate_first_mot_insights_bulk(duck_conn, sqlite_conn):
 
 def generate_manufacturer_rankings(duck_conn, sqlite_conn):
     """Generate manufacturer-level rankings."""
-    print("\n[15/20] Generating manufacturer rankings (BULK)...")
+    print("\n[14/19] Generating manufacturer rankings (BULK)...")
 
-    results = duck_conn.execute(f"""
+    results = duck_conn.execute("""
         WITH make_stats AS (
             SELECT
                 make,
@@ -1475,7 +1391,6 @@ def generate_manufacturer_rankings(duck_conn, sqlite_conn):
                 100.0 * SUM(CASE WHEN test_result = 'P' THEN 1 ELSE 0 END) / COUNT(*) as weighted_pass_rate
             FROM base_tests
             GROUP BY make
-            HAVING COUNT(*) >= 1000
         ),
         model_pass_rates AS (
             SELECT
@@ -1485,7 +1400,6 @@ def generate_manufacturer_rankings(duck_conn, sqlite_conn):
                 COUNT(*) as tests
             FROM base_tests
             GROUP BY make, model, model_year
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
         ),
         best_models AS (
             SELECT make, model_desc, pass_rate,
@@ -1533,7 +1447,7 @@ def generate_manufacturer_rankings(duck_conn, sqlite_conn):
 
 def generate_seasonal_patterns_bulk(duck_conn, sqlite_conn):
     """Generate seasonal/monthly pass rate patterns."""
-    print("\n[16/20] Generating seasonal patterns (BULK)...")
+    print("\n[15/19] Generating seasonal patterns (BULK)...")
 
     # First, generate national seasonal averages
     national_seasonal = duck_conn.execute("""
@@ -1560,13 +1474,7 @@ def generate_seasonal_patterns_bulk(duck_conn, sqlite_conn):
         """, (month, quarter, tests, round(pass_rate, 2)))
 
     # Now per-vehicle seasonal patterns
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        )
+    results = duck_conn.execute("""
         SELECT
             bt.make,
             bt.model,
@@ -1582,12 +1490,7 @@ def generate_seasonal_patterns_bulk(duck_conn, sqlite_conn):
             COUNT(*) as total_tests,
             100.0 * SUM(CASE WHEN bt.test_result = 'P' THEN 1 ELSE 0 END) / COUNT(*) as pass_rate
         FROM base_tests bt
-        JOIN vehicle_combos vc ON bt.make = vc.make
-                               AND bt.model = vc.model
-                               AND bt.model_year = vc.model_year
-                               AND bt.fuel_type = vc.fuel_type
         GROUP BY bt.make, bt.model, bt.model_year, bt.fuel_type, month, quarter
-        HAVING COUNT(*) >= 10
     """).fetchall()
 
     for row in results:
@@ -1604,16 +1507,10 @@ def generate_seasonal_patterns_bulk(duck_conn, sqlite_conn):
 
 def generate_failure_severity_bulk(duck_conn, sqlite_conn):
     """Generate failure severity breakdown (Minor/Major/Dangerous)."""
-    print("\n[17/20] Generating failure severity breakdown (BULK)...")
+    print("\n[16/19] Generating failure severity breakdown (BULK)...")
 
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        severity_counts AS (
+    results = duck_conn.execute("""
+        WITH severity_counts AS (
             SELECT
                 bt.make,
                 bt.model,
@@ -1631,10 +1528,6 @@ def generate_failure_severity_bulk(duck_conn, sqlite_conn):
             FROM base_tests bt
             JOIN test_item ti ON bt.test_id = ti.test_id
             LEFT JOIN item_detail id ON ti.rfr_id = id.rfr_id AND CAST(id.test_class_id AS VARCHAR) = '4'
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE ti.rfr_type_code IN ('F', 'P')
             GROUP BY bt.make, bt.model, bt.model_year, bt.fuel_type, severity
         ),
@@ -1664,17 +1557,11 @@ def generate_failure_severity_bulk(duck_conn, sqlite_conn):
 
 def generate_retest_success_bulk(duck_conn, sqlite_conn):
     """Generate retest success rate tracking."""
-    print("\n[18/20] Generating retest success rates (BULK)...")
+    print("\n[17/19] Generating retest success rates (BULK)...")
     print("  (Analyzing vehicle retests within 30 days - may take a few minutes)")
 
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        failed_tests AS (
+    results = duck_conn.execute("""
+        WITH failed_tests AS (
             SELECT
                 bt.vehicle_id,
                 bt.make,
@@ -1684,10 +1571,6 @@ def generate_retest_success_bulk(duck_conn, sqlite_conn):
                 bt.test_date as fail_date,
                 bt.test_id
             FROM base_tests bt
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE bt.test_result = 'F'
         ),
         retests AS (
@@ -1721,7 +1604,6 @@ def generate_retest_success_bulk(duck_conn, sqlite_conn):
             FROM failed_tests ft
             LEFT JOIN retests rt ON ft.test_id = rt.failed_test_id
             GROUP BY ft.make, ft.model, ft.model_year, ft.fuel_type
-            HAVING COUNT(DISTINCT ft.test_id) >= 10
         )
         SELECT * FROM stats
     """).fetchall()
@@ -1745,17 +1627,11 @@ def generate_retest_success_bulk(duck_conn, sqlite_conn):
 
 def generate_component_mileage_thresholds_bulk(duck_conn, sqlite_conn):
     """Generate component failure rates by mileage band to identify failure thresholds."""
-    print("\n[19/20] Generating component mileage thresholds (BULK)...")
+    print("\n[18/19] Generating component mileage thresholds (BULK)...")
     print("  (Analyzing when each component starts failing - may take several minutes)")
 
-    results = duck_conn.execute(f"""
-        WITH vehicle_combos AS (
-            SELECT make, model, model_year, fuel_type
-            FROM base_tests
-            GROUP BY make, model, model_year, fuel_type
-            HAVING COUNT(*) >= {MIN_SAMPLE_SIZE}
-        ),
-        mileage_band_tests AS (
+    results = duck_conn.execute("""
+        WITH mileage_band_tests AS (
             SELECT
                 bt.make,
                 bt.model,
@@ -1771,10 +1647,6 @@ def generate_component_mileage_thresholds_bulk(duck_conn, sqlite_conn):
                 END as mileage_band,
                 bt.test_id
             FROM base_tests bt
-            JOIN vehicle_combos vc ON bt.make = vc.make
-                                   AND bt.model = vc.model
-                                   AND bt.model_year = vc.model_year
-                                   AND bt.fuel_type = vc.fuel_type
             WHERE bt.test_mileage > 0
         ),
         band_totals AS (
@@ -1819,7 +1691,6 @@ def generate_component_mileage_thresholds_bulk(duck_conn, sqlite_conn):
                                AND cf.model_year = bt.model_year
                                AND cf.fuel_type = bt.fuel_type
                                AND cf.mileage_band = bt.mileage_band
-            WHERE bt.total_tests >= 10
         ),
         pivoted AS (
             SELECT
@@ -1832,7 +1703,6 @@ def generate_component_mileage_thresholds_bulk(duck_conn, sqlite_conn):
                 MAX(CASE WHEN mileage_band = '150k+' THEN failure_rate END) as rate_150k_plus
             FROM failure_rates
             GROUP BY make, model, model_year, fuel_type, category_id, category_name
-            HAVING COUNT(*) >= 3  -- At least 3 bands with data
         )
         SELECT * FROM pivoted
     """).fetchall()
@@ -1884,7 +1754,7 @@ def generate_component_mileage_thresholds_bulk(duck_conn, sqlite_conn):
 
 def cleanup(duck_conn):
     """Clean up temporary DuckDB file."""
-    print("\n[20/20] Cleaning up...")
+    print("\n[19/19] Cleaning up...")
     duck_conn.close()
 
     if DUCKDB_FILE.exists():
@@ -1945,7 +1815,7 @@ def validate_output():
     tables = ['national_averages', 'vehicle_insights', 'failure_categories',
               'top_defects', 'mileage_bands', 'geographic_insights',
               'defect_locations', 'advisory_progression', 'vehicle_rankings',
-              'available_vehicles', 'dangerous_defects', 'age_bands',
+              'available_vehicles', 'dangerous_defects',
               'first_mot_insights', 'manufacturer_rankings', 'seasonal_patterns',
               'national_seasonal', 'failure_severity', 'retest_success',
               'component_mileage_thresholds']
@@ -1998,7 +1868,6 @@ def main():
 
     # New enhanced insights
     generate_dangerous_defects_bulk(duck_conn, sqlite_conn)
-    generate_age_bands_bulk(duck_conn, sqlite_conn)
     generate_first_mot_insights_bulk(duck_conn, sqlite_conn)
     generate_manufacturer_rankings(duck_conn, sqlite_conn)
     generate_seasonal_patterns_bulk(duck_conn, sqlite_conn)

@@ -1,0 +1,2527 @@
+{
+  "meta": {
+    "make": "ABARTH",
+    "generated_at": "2026-01-15T17:43:29.043511",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 21,
+    "make": "ABARTH",
+    "total_tests": 27292,
+    "total_models": 108,
+    "avg_pass_rate": 78.77,
+    "weighted_pass_rate": 78.77,
+    "best_model": "124 SPIDER MULTIAIR AUTO 2019",
+    "best_model_pass_rate": 92.89,
+    "worst_model": "500 2013",
+    "worst_model_pass_rate": 65.08,
+    "rank": 21
+  },
+  "competitors": [
+    {
+      "make": "ABARTH",
+      "avg_pass_rate": 78.77,
+      "total_tests": 27292,
+      "rank": 21,
+      "total_models": 108
+    },
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    }
+  ],
+  "summary": {
+    "total_tests": 27292,
+    "total_models": 108,
+    "avg_pass_rate": 78.77,
+    "rank": 21,
+    "rank_total": 75,
+    "best_model": "124 SPIDER MULTIAIR AUTO 2019",
+    "best_model_pass_rate": 92.89,
+    "worst_model": "500 2013",
+    "worst_model_pass_rate": 65.08,
+    "vs_national": 7.26,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "124 SPIDER MULTIAIR",
+      "total_tests": 1585,
+      "total_passes": 1429,
+      "total_fails": 107,
+      "pass_rate": 90.16,
+      "avg_mileage": 23874.0,
+      "year_from": 2016,
+      "year_to": 2019,
+      "variant_count": 5,
+      "variants": "124 SPIDER MULTIAIR,124 SPIDER MULTIAIR AUTO"
+    },
+    {
+      "core_model": "695",
+      "total_tests": 379,
+      "total_passes": 331,
+      "total_fails": 41,
+      "pass_rate": 87.34,
+      "avg_mileage": 27501.0,
+      "year_from": 2017,
+      "year_to": 2018,
+      "variant_count": 2,
+      "variants": "695"
+    },
+    {
+      "core_model": "595C",
+      "total_tests": 1751,
+      "total_passes": 1477,
+      "total_fails": 220,
+      "pass_rate": 84.35,
+      "avg_mileage": 24846.0,
+      "year_from": 2016,
+      "year_to": 2020,
+      "variant_count": 5,
+      "variants": "595C"
+    },
+    {
+      "core_model": "595",
+      "total_tests": 16533,
+      "total_passes": 13311,
+      "total_fails": 2647,
+      "pass_rate": 80.51,
+      "avg_mileage": 36816.0,
+      "year_from": 2012,
+      "year_to": 2020,
+      "variant_count": 10,
+      "variants": "595,595 PISTA 70TH ANNIVERSARY"
+    },
+    {
+      "core_model": "PUNTO",
+      "total_tests": 102,
+      "total_passes": 74,
+      "total_fails": 22,
+      "pass_rate": 72.55,
+      "avg_mileage": 85761.0,
+      "year_from": 2011,
+      "year_to": 2011,
+      "variant_count": 1,
+      "variants": "PUNTO"
+    },
+    {
+      "core_model": "500",
+      "total_tests": 5414,
+      "total_passes": 3640,
+      "total_fails": 1467,
+      "pass_rate": 67.23,
+      "avg_mileage": 64373.0,
+      "year_from": 2009,
+      "year_to": 2015,
+      "variant_count": 7,
+      "variants": "500"
+    }
+  ],
+  "model_year_breakdowns": {
+    "124 SPIDER MULTIAIR": [
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 197,
+        "pass_rate": 92.89,
+        "avg_mileage": 17176.0,
+        "pass_rate_vs_national": 6.68,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 911,
+        "pass_rate": 90.56,
+        "avg_mileage": 23273.0,
+        "pass_rate_vs_national": 6.32,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 336,
+        "pass_rate": 88.1,
+        "avg_mileage": 28373.0,
+        "pass_rate_vs_national": 6.42,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 141,
+        "pass_rate": 88.65,
+        "avg_mileage": 27277.0,
+        "pass_rate_vs_national": 10.0,
+        "national_avg_for_year": 78.65
+      }
+    ],
+    "695": [
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 261,
+        "pass_rate": 86.21,
+        "avg_mileage": 22332.0,
+        "pass_rate_vs_national": 1.97,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 118,
+        "pass_rate": 89.83,
+        "avg_mileage": 32669.0,
+        "pass_rate_vs_national": 8.15,
+        "national_avg_for_year": 81.68
+      }
+    ],
+    "595C": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 254,
+        "pass_rate": 89.37,
+        "avg_mileage": 15283.0,
+        "pass_rate_vs_national": 1.7,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 402,
+        "pass_rate": 88.31,
+        "avg_mileage": 18749.0,
+        "pass_rate_vs_national": 2.1,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 440,
+        "pass_rate": 82.05,
+        "avg_mileage": 25418.0,
+        "pass_rate_vs_national": -2.19,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 371,
+        "pass_rate": 82.21,
+        "avg_mileage": 30011.0,
+        "pass_rate_vs_national": 0.53,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 284,
+        "pass_rate": 80.63,
+        "avg_mileage": 34769.0,
+        "pass_rate_vs_national": 1.98,
+        "national_avg_for_year": 78.65
+      }
+    ],
+    "595": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1660,
+        "pass_rate": 88.61,
+        "avg_mileage": 17714.0,
+        "pass_rate_vs_national": 0.94,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2317,
+        "pass_rate": 86.92,
+        "avg_mileage": 22058.0,
+        "pass_rate_vs_national": 0.71,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 3586,
+        "pass_rate": 83.46,
+        "avg_mileage": 29281.0,
+        "pass_rate_vs_national": -0.78,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 3092,
+        "pass_rate": 78.65,
+        "avg_mileage": 36551.0,
+        "pass_rate_vs_national": -3.03,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 2983,
+        "pass_rate": 76.43,
+        "avg_mileage": 41340.0,
+        "pass_rate_vs_national": -2.22,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 1664,
+        "pass_rate": 74.22,
+        "avg_mileage": 45027.0,
+        "pass_rate_vs_national": -1.27,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 554,
+        "pass_rate": 73.83,
+        "avg_mileage": 46865.0,
+        "pass_rate_vs_national": 2.12,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 489,
+        "pass_rate": 71.17,
+        "avg_mileage": 55418.0,
+        "pass_rate_vs_national": 2.88,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 188,
+        "pass_rate": 68.62,
+        "avg_mileage": 56191.0,
+        "pass_rate_vs_national": 2.99,
+        "national_avg_for_year": 65.63
+      }
+    ],
+    "PUNTO": [
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "pass_rate": 72.55,
+        "avg_mileage": 85761.0,
+        "pass_rate_vs_national": 9.56,
+        "national_avg_for_year": 62.99
+      }
+    ],
+    "500": [
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 739,
+        "pass_rate": 71.04,
+        "avg_mileage": 47828.0,
+        "pass_rate_vs_national": -4.45,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 788,
+        "pass_rate": 68.4,
+        "avg_mileage": 53523.0,
+        "pass_rate_vs_national": -3.31,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 547,
+        "pass_rate": 65.08,
+        "avg_mileage": 60893.0,
+        "pass_rate_vs_national": -3.21,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 742,
+        "pass_rate": 67.79,
+        "avg_mileage": 65200.0,
+        "pass_rate_vs_national": 2.16,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 884,
+        "pass_rate": 66.63,
+        "avg_mileage": 69439.0,
+        "pass_rate_vs_national": 3.64,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 953,
+        "pass_rate": 65.69,
+        "avg_mileage": 74058.0,
+        "pass_rate_vs_national": 5.19,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 761,
+        "pass_rate": 65.97,
+        "avg_mileage": 79667.0,
+        "pass_rate_vs_national": 6.96,
+        "national_avg_for_year": 59.01
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 30,
+      "total_tests": 25764,
+      "pass_rate": 78.64,
+      "fuel_name": "Petrol"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "124 SPIDER MULTIAIR",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 141,
+      "pass_rate": 88.65,
+      "pass_rate_vs_national": 10.0,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "PUNTO",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "pass_rate": 72.55,
+      "pass_rate_vs_national": 9.56,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "695",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 118,
+      "pass_rate": 89.83,
+      "pass_rate_vs_national": 8.15,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "124 SPIDER MULTIAIR",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 529,
+      "pass_rate": 91.49,
+      "pass_rate_vs_national": 7.25,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "500",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 761,
+      "pass_rate": 65.97,
+      "pass_rate_vs_national": 6.96,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "124 SPIDER MULTIAIR AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 197,
+      "pass_rate": 92.89,
+      "pass_rate_vs_national": 6.68,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "124 SPIDER MULTIAIR",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 336,
+      "pass_rate": 88.1,
+      "pass_rate_vs_national": 6.42,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "500",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 953,
+      "pass_rate": 65.69,
+      "pass_rate_vs_national": 5.19,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "124 SPIDER MULTIAIR AUTO",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 382,
+      "pass_rate": 89.27,
+      "pass_rate_vs_national": 5.03,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "500",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 884,
+      "pass_rate": 66.63,
+      "pass_rate_vs_national": 3.64,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "595 PISTA 70TH ANNIVERSARY",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 144,
+      "pass_rate": 90.97,
+      "pass_rate_vs_national": 3.3,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "595",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 188,
+      "pass_rate": 68.62,
+      "pass_rate_vs_national": 2.99,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "595",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 489,
+      "pass_rate": 71.17,
+      "pass_rate_vs_national": 2.88,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "500",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 742,
+      "pass_rate": 67.79,
+      "pass_rate_vs_national": 2.16,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "595",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 554,
+      "pass_rate": 73.83,
+      "pass_rate_vs_national": 2.12,
+      "national_avg_for_year": 71.71
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "500",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 739,
+      "pass_rate": 71.04,
+      "pass_rate_vs_national": -4.45,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "500",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 788,
+      "pass_rate": 68.4,
+      "pass_rate_vs_national": -3.31,
+      "national_avg_for_year": 71.71
+    },
+    {
+      "model": "500",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 547,
+      "pass_rate": 65.08,
+      "pass_rate_vs_national": -3.21,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "595",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 3092,
+      "pass_rate": 78.65,
+      "pass_rate_vs_national": -3.03,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "595",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 2983,
+      "pass_rate": 76.43,
+      "pass_rate_vs_national": -2.22,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "595C",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 440,
+      "pass_rate": 82.05,
+      "pass_rate_vs_national": -2.19,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "595",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1664,
+      "pass_rate": 74.22,
+      "pass_rate_vs_national": -1.27,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "595",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 3586,
+      "pass_rate": 83.46,
+      "pass_rate_vs_national": -0.78,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "595C",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 371,
+      "pass_rate": 82.21,
+      "pass_rate_vs_national": 0.53,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "595",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2317,
+      "pass_rate": 86.92,
+      "pass_rate_vs_national": 0.71,
+      "national_avg_for_year": 86.21
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Suspension",
+        "total_failures": 1759,
+        "vehicle_count": 28
+      },
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 1699,
+        "vehicle_count": 30
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 1433,
+        "vehicle_count": 30
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 966,
+        "vehicle_count": 30
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 927,
+        "vehicle_count": 30
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 588,
+        "vehicle_count": 30
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 448,
+        "vehicle_count": 19
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 89,
+        "vehicle_count": 25
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 77,
+        "vehicle_count": 19
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 67,
+        "vehicle_count": 14
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 17,
+        "vehicle_count": 7
+      },
+      {
+        "category_name": "Buses and coaches supplementary tests",
+        "total_failures": 2,
+        "vehicle_count": 2
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 503
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 382
+      },
+      {
+        "defect_description": "has an excessively worn bush",
+        "category_name": "Suspension",
+        "total_occurrences": 366
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 304
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 292
+      },
+      {
+        "defect_description": "ball joint excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 245
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 241
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 235
+      },
+      {
+        "defect_description": "constant velocity boot split or insecure, no longer prevents the ingress of dirt",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 193
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 186
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 4079
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 3664
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 1716
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 1456
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 978
+      },
+      {
+        "defect_description": "has light misting of oil",
+        "category_name": "Suspension",
+        "total_occurrences": 945
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 577
+      },
+      {
+        "defect_description": "has a slightly worn bush",
+        "category_name": "Suspension",
+        "total_occurrences": 540
+      },
+      {
+        "defect_description": "worn, but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 432
+      },
+      {
+        "defect_description": "Nail in tyre",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 184
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 4000
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 3723
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 2009
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1105
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 605
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 363
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 324
+      },
+      {
+        "defect_description": "has a lump, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 53
+      },
+      {
+        "defect_description": "seriously damaged",
+        "category_name": "Tyres",
+        "total_occurrences": 17
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 10
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 11063,
+      "avg_pass_rate": 87.36
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 10059,
+      "avg_pass_rate": 75.55
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 3476,
+      "avg_pass_rate": 65.45
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 907,
+      "avg_pass_rate": 62.85
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 131,
+      "avg_pass_rate": 54.96
+    }
+  ],
+  "all_models": [
+    {
+      "model": "124 SPIDER MULTIAIR AUTO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 197,
+      "total_passes": 183,
+      "total_fails": 7,
+      "pass_rate": 92.89,
+      "avg_mileage": 17176.0,
+      "avg_age_years": 3.5,
+      "pass_rate_vs_national": 21.38
+    },
+    {
+      "model": "124 SPIDER MULTIAIR",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 529,
+      "total_passes": 484,
+      "total_fails": 28,
+      "pass_rate": 91.49,
+      "avg_mileage": 23846.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 19.98
+    },
+    {
+      "model": "595 PISTA 70TH ANNIVERSARY",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 144,
+      "total_passes": 131,
+      "total_fails": 9,
+      "pass_rate": 90.97,
+      "avg_mileage": 18515.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 19.46
+    },
+    {
+      "model": "695",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 118,
+      "total_passes": 106,
+      "total_fails": 9,
+      "pass_rate": 89.83,
+      "avg_mileage": 32669.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 18.32
+    },
+    {
+      "model": "595C",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 254,
+      "total_passes": 227,
+      "total_fails": 21,
+      "pass_rate": 89.37,
+      "avg_mileage": 15283.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.86
+    },
+    {
+      "model": "124 SPIDER MULTIAIR AUTO",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 382,
+      "total_passes": 341,
+      "total_fails": 31,
+      "pass_rate": 89.27,
+      "avg_mileage": 22699.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 17.76
+    },
+    {
+      "model": "124 SPIDER MULTIAIR",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 141,
+      "total_passes": 125,
+      "total_fails": 10,
+      "pass_rate": 88.65,
+      "avg_mileage": 27277.0,
+      "avg_age_years": 6.3,
+      "pass_rate_vs_national": 17.14
+    },
+    {
+      "model": "595",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1516,
+      "total_passes": 1340,
+      "total_fails": 132,
+      "pass_rate": 88.39,
+      "avg_mileage": 16912.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 16.88
+    },
+    {
+      "model": "595C",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 402,
+      "total_passes": 355,
+      "total_fails": 33,
+      "pass_rate": 88.31,
+      "avg_mileage": 18749.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 16.8
+    },
+    {
+      "model": "124 SPIDER MULTIAIR",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 336,
+      "total_passes": 296,
+      "total_fails": 31,
+      "pass_rate": 88.1,
+      "avg_mileage": 28373.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 16.58
+    },
+    {
+      "model": "595",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2317,
+      "total_passes": 2014,
+      "total_fails": 236,
+      "pass_rate": 86.92,
+      "avg_mileage": 22058.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.41
+    },
+    {
+      "model": "695",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 261,
+      "total_passes": 225,
+      "total_fails": 32,
+      "pass_rate": 86.21,
+      "avg_mileage": 22332.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 14.7
+    },
+    {
+      "model": "595",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 3586,
+      "total_passes": 2993,
+      "total_fails": 487,
+      "pass_rate": 83.46,
+      "avg_mileage": 29281.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 11.95
+    },
+    {
+      "model": "595C",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 371,
+      "total_passes": 305,
+      "total_fails": 54,
+      "pass_rate": 82.21,
+      "avg_mileage": 30011.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 10.7
+    },
+    {
+      "model": "595C",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 440,
+      "total_passes": 361,
+      "total_fails": 65,
+      "pass_rate": 82.05,
+      "avg_mileage": 25418.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 10.53
+    },
+    {
+      "model": "595C",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 284,
+      "total_passes": 229,
+      "total_fails": 47,
+      "pass_rate": 80.63,
+      "avg_mileage": 34769.0,
+      "avg_age_years": 6.3,
+      "pass_rate_vs_national": 9.12
+    },
+    {
+      "model": "595",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 3092,
+      "total_passes": 2432,
+      "total_fails": 572,
+      "pass_rate": 78.65,
+      "avg_mileage": 36551.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 7.14
+    },
+    {
+      "model": "595",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 2983,
+      "total_passes": 2280,
+      "total_fails": 569,
+      "pass_rate": 76.43,
+      "avg_mileage": 41340.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 4.92
+    },
+    {
+      "model": "595",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1664,
+      "total_passes": 1235,
+      "total_fails": 364,
+      "pass_rate": 74.22,
+      "avg_mileage": 45027.0,
+      "avg_age_years": 7.3,
+      "pass_rate_vs_national": 2.71
+    },
+    {
+      "model": "595",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 554,
+      "total_passes": 409,
+      "total_fails": 114,
+      "pass_rate": 73.83,
+      "avg_mileage": 46865.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 2.32
+    },
+    {
+      "model": "PUNTO",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 74,
+      "total_fails": 22,
+      "pass_rate": 72.55,
+      "avg_mileage": 85761.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 1.04
+    },
+    {
+      "model": "595",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 489,
+      "total_passes": 348,
+      "total_fails": 120,
+      "pass_rate": 71.17,
+      "avg_mileage": 55418.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -0.35
+    },
+    {
+      "model": "500",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 739,
+      "total_passes": 525,
+      "total_fails": 182,
+      "pass_rate": 71.04,
+      "avg_mileage": 47828.0,
+      "avg_age_years": 7.6,
+      "pass_rate_vs_national": -0.47
+    },
+    {
+      "model": "595",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 188,
+      "total_passes": 129,
+      "total_fails": 44,
+      "pass_rate": 68.62,
+      "avg_mileage": 56191.0,
+      "avg_age_years": 10.1,
+      "pass_rate_vs_national": -2.89
+    },
+    {
+      "model": "500",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 788,
+      "total_passes": 539,
+      "total_fails": 204,
+      "pass_rate": 68.4,
+      "avg_mileage": 53523.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": -3.11
+    },
+    {
+      "model": "500",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 742,
+      "total_passes": 503,
+      "total_fails": 200,
+      "pass_rate": 67.79,
+      "avg_mileage": 65200.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": -3.72
+    },
+    {
+      "model": "500",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 884,
+      "total_passes": 589,
+      "total_fails": 243,
+      "pass_rate": 66.63,
+      "avg_mileage": 69439.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -4.88
+    },
+    {
+      "model": "500",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 761,
+      "total_passes": 502,
+      "total_fails": 227,
+      "pass_rate": 65.97,
+      "avg_mileage": 79667.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -5.55
+    },
+    {
+      "model": "500",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 953,
+      "total_passes": 626,
+      "total_fails": 258,
+      "pass_rate": 65.69,
+      "avg_mileage": 74058.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -5.82
+    },
+    {
+      "model": "500",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 547,
+      "total_passes": 356,
+      "total_fails": 153,
+      "pass_rate": 65.08,
+      "avg_mileage": 60893.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": -6.43
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "124 SPIDER MULTIAIR",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 141,
+        "avg_vs_national": 7.77,
+        "durability_trend": 20.13,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 100.0,
+          "national_pass_rate": 77.24,
+          "vs_national": 22.76,
+          "total_tests": 36,
+          "avg_mileage": 31310.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 84.76,
+          "national_pass_rate": 82.13,
+          "vs_national": 2.63,
+          "total_tests": 105,
+          "avg_mileage": 25895.0
+        }
+      },
+      {
+        "model": "695",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 118,
+        "avg_vs_national": 7.7,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 89.83,
+          "national_pass_rate": 82.13,
+          "vs_national": 7.7,
+          "total_tests": 118,
+          "avg_mileage": 32669.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 89.83,
+          "national_pass_rate": 82.13,
+          "vs_national": 7.7,
+          "total_tests": 118,
+          "avg_mileage": 32669.0
+        }
+      },
+      {
+        "model": "124 SPIDER MULTIAIR",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 529,
+        "avg_vs_national": 6.66,
+        "durability_trend": 1.61,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 89.8,
+          "national_pass_rate": 82.13,
+          "vs_national": 7.67,
+          "total_tests": 196,
+          "avg_mileage": 25486.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.49,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.06,
+          "total_tests": 333,
+          "avg_mileage": 22881.0
+        }
+      },
+      {
+        "model": "124 SPIDER MULTIAIR AUTO",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 197,
+        "avg_vs_national": 6.46,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.89,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.46,
+          "total_tests": 197,
+          "avg_mileage": 17176.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.89,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.46,
+          "total_tests": 197,
+          "avg_mileage": 17176.0
+        }
+      },
+      {
+        "model": "500",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 761,
+        "avg_vs_national": 6.1,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.97,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.1,
+          "total_tests": 761,
+          "avg_mileage": 79667.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.97,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.1,
+          "total_tests": 761,
+          "avg_mileage": 79667.0
+        }
+      },
+      {
+        "model": "PUNTO",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "avg_vs_national": 6.01,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 72.55,
+          "national_pass_rate": 66.54,
+          "vs_national": 6.01,
+          "total_tests": 102,
+          "avg_mileage": 85761.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 72.55,
+          "national_pass_rate": 66.54,
+          "vs_national": 6.01,
+          "total_tests": 102,
+          "avg_mileage": 85761.0
+        }
+      },
+      {
+        "model": "124 SPIDER MULTIAIR",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 336,
+        "avg_vs_national": 5.97,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 88.1,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.97,
+          "total_tests": 336,
+          "avg_mileage": 28373.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 88.1,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.97,
+          "total_tests": 336,
+          "avg_mileage": 28373.0
+        }
+      },
+      {
+        "model": "124 SPIDER MULTIAIR AUTO",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 382,
+        "avg_vs_national": 3.93,
+        "durability_trend": 9.01,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 92.78,
+          "national_pass_rate": 82.13,
+          "vs_national": 10.65,
+          "total_tests": 97,
+          "avg_mileage": 25212.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 88.07,
+          "national_pass_rate": 86.43,
+          "vs_national": 1.64,
+          "total_tests": 285,
+          "avg_mileage": 21843.0
+        }
+      },
+      {
+        "model": "500",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 953,
+        "avg_vs_national": 2.25,
+        "durability_trend": 5.83,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.24,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.37,
+          "total_tests": 443,
+          "avg_mileage": 79097.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 66.08,
+          "national_pass_rate": 66.54,
+          "vs_national": -0.46,
+          "total_tests": 510,
+          "avg_mileage": 69701.0
+        }
+      },
+      {
+        "model": "595C",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 402,
+        "avg_vs_national": 1.88,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 88.31,
+          "national_pass_rate": 86.43,
+          "vs_national": 1.88,
+          "total_tests": 402,
+          "avg_mileage": 18749.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 88.31,
+          "national_pass_rate": 86.43,
+          "vs_national": 1.88,
+          "total_tests": 402,
+          "avg_mileage": 18749.0
+        }
+      },
+      {
+        "model": "695",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 261,
+        "avg_vs_national": 1.47,
+        "durability_trend": 6.24,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.38,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.25,
+          "total_tests": 103,
+          "avg_mileage": 22199.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 85.44,
+          "national_pass_rate": 86.43,
+          "vs_national": -0.99,
+          "total_tests": 158,
+          "avg_mileage": 22419.0
+        }
+      },
+      {
+        "model": "595",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2317,
+        "avg_vs_national": 0.49,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 86.92,
+          "national_pass_rate": 86.43,
+          "vs_national": 0.49,
+          "total_tests": 2317,
+          "avg_mileage": 22058.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 86.92,
+          "national_pass_rate": 86.43,
+          "vs_national": 0.49,
+          "total_tests": 2317,
+          "avg_mileage": 22058.0
+        }
+      },
+      {
+        "model": "500",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 884,
+        "avg_vs_national": 0.09,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 66.63,
+          "national_pass_rate": 66.54,
+          "vs_national": 0.09,
+          "total_tests": 884,
+          "avg_mileage": 69439.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 66.63,
+          "national_pass_rate": 66.54,
+          "vs_national": 0.09,
+          "total_tests": 884,
+          "avg_mileage": 69439.0
+        }
+      },
+      {
+        "model": "595C",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 371,
+        "avg_vs_national": 0.08,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 82.21,
+          "national_pass_rate": 82.13,
+          "vs_national": 0.08,
+          "total_tests": 371,
+          "avg_mileage": 30011.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 82.21,
+          "national_pass_rate": 82.13,
+          "vs_national": 0.08,
+          "total_tests": 371,
+          "avg_mileage": 30011.0
+        }
+      },
+      {
+        "model": "595C",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 284,
+        "avg_vs_national": 0.01,
+        "durability_trend": -11.93,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 85.79,
+          "national_pass_rate": 82.13,
+          "vs_national": 3.66,
+          "total_tests": 197,
+          "avg_mileage": 34392.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 68.97,
+          "national_pass_rate": 77.24,
+          "vs_national": -8.27,
+          "total_tests": 87,
+          "avg_mileage": 35624.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "500",
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 788,
+        "avg_vs_national": -6.37,
+        "durability_trend": 4.63,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 67.59,
+          "national_pass_rate": 71.23,
+          "vs_national": -3.64,
+          "total_tests": 324,
+          "avg_mileage": 56366.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 68.97,
+          "national_pass_rate": 77.24,
+          "vs_national": -8.27,
+          "total_tests": 464,
+          "avg_mileage": 51537.0
+        }
+      },
+      {
+        "model": "500",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 739,
+        "avg_vs_national": -6.2,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 71.04,
+          "national_pass_rate": 77.24,
+          "vs_national": -6.2,
+          "total_tests": 739,
+          "avg_mileage": 47828.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 71.04,
+          "national_pass_rate": 77.24,
+          "vs_national": -6.2,
+          "total_tests": 739,
+          "avg_mileage": 47828.0
+        }
+      },
+      {
+        "model": "500",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 547,
+        "avg_vs_national": -6.15,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 65.08,
+          "national_pass_rate": 71.23,
+          "vs_national": -6.15,
+          "total_tests": 547,
+          "avg_mileage": 60893.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 65.08,
+          "national_pass_rate": 71.23,
+          "vs_national": -6.15,
+          "total_tests": 547,
+          "avg_mileage": 60893.0
+        }
+      },
+      {
+        "model": "595",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 2983,
+        "avg_vs_national": -3.56,
+        "durability_trend": 0.33,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 73.87,
+          "national_pass_rate": 77.24,
+          "vs_national": -3.37,
+          "total_tests": 1309,
+          "avg_mileage": 43497.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 78.43,
+          "national_pass_rate": 82.13,
+          "vs_national": -3.7,
+          "total_tests": 1674,
+          "avg_mileage": 39652.0
+        }
+      },
+      {
+        "model": "595",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 3092,
+        "avg_vs_national": -3.48,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 78.65,
+          "national_pass_rate": 82.13,
+          "vs_national": -3.48,
+          "total_tests": 3092,
+          "avg_mileage": 36551.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 78.65,
+          "national_pass_rate": 82.13,
+          "vs_national": -3.48,
+          "total_tests": 3092,
+          "avg_mileage": 36551.0
+        }
+      },
+      {
+        "model": "595C",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 440,
+        "avg_vs_national": -3.03,
+        "durability_trend": 4.25,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 82.01,
+          "national_pass_rate": 82.13,
+          "vs_national": -0.12,
+          "total_tests": 139,
+          "avg_mileage": 27957.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 82.06,
+          "national_pass_rate": 86.43,
+          "vs_national": -4.37,
+          "total_tests": 301,
+          "avg_mileage": 24245.0
+        }
+      },
+      {
+        "model": "595",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 1664,
+        "avg_vs_national": -3.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 74.22,
+          "national_pass_rate": 77.24,
+          "vs_national": -3.02,
+          "total_tests": 1664,
+          "avg_mileage": 45027.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 74.22,
+          "national_pass_rate": 77.24,
+          "vs_national": -3.02,
+          "total_tests": 1664,
+          "avg_mileage": 45027.0
+        }
+      },
+      {
+        "model": "595",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 188,
+        "avg_vs_national": -1.94,
+        "durability_trend": 11.06,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 74.07,
+          "national_pass_rate": 66.54,
+          "vs_national": 7.53,
+          "total_tests": 27,
+          "avg_mileage": 49827.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 67.7,
+          "national_pass_rate": 71.23,
+          "vs_national": -3.53,
+          "total_tests": 161,
+          "avg_mileage": 57258.0
+        }
+      },
+      {
+        "model": "595",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 3586,
+        "avg_vs_national": -1.48,
+        "durability_trend": 2.87,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 82.53,
+          "national_pass_rate": 82.13,
+          "vs_national": 0.4,
+          "total_tests": 1242,
+          "avg_mileage": 31358.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 83.96,
+          "national_pass_rate": 86.43,
+          "vs_national": -2.47,
+          "total_tests": 2344,
+          "avg_mileage": 28180.0
+        }
+      },
+      {
+        "model": "500",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 742,
+        "avg_vs_national": -1.2,
+        "durability_trend": 0.38,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 65.54,
+          "national_pass_rate": 66.54,
+          "vs_national": -1.0,
+          "total_tests": 354,
+          "avg_mileage": 66772.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 69.85,
+          "national_pass_rate": 71.23,
+          "vs_national": -1.38,
+          "total_tests": 388,
+          "avg_mileage": 63766.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 18,
+          "tests": 14497
+        },
+        "maturing": {
+          "vehicles": 11,
+          "tests": 6762
+        },
+        "proven": {
+          "vehicles": 6,
+          "tests": 3081
+        }
+      },
+      "proven_vehicles_tested": 6,
+      "proven_above_average_pct": 100.0,
+      "proven_avg_vs_national": 6.01,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "PUNTO",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 102,
+          "pass_rate": 72.55,
+          "vs_national_at_age": 9.72,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 85761.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "500",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 761,
+          "pass_rate": 65.97,
+          "vs_national_at_age": 8.67,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 79667.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "500",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 443,
+          "pass_rate": 65.24,
+          "vs_national_at_age": 7.94,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 79097.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "500",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 884,
+          "pass_rate": 66.63,
+          "vs_national_at_age": 3.8,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 69439.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "500",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 354,
+          "pass_rate": 65.54,
+          "vs_national_at_age": 2.71,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 66772.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "695",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 118,
+          "pass_rate": 89.83,
+          "vs_national_at_age": 8.63,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 32669.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "124 SPIDER MULTIAIR",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 196,
+          "pass_rate": 89.8,
+          "vs_national_at_age": 8.6,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 25486.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "124 SPIDER MULTIAIR AUTO",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 197,
+          "pass_rate": 92.89,
+          "vs_national_at_age": 7.04,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 17176.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "124 SPIDER MULTIAIR",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 336,
+          "pass_rate": 88.1,
+          "vs_national_at_age": 6.9,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 28373.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "124 SPIDER MULTIAIR",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 333,
+          "pass_rate": 92.49,
+          "vs_national_at_age": 6.64,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 22881.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "695",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 103,
+          "pass_rate": 87.38,
+          "vs_national_at_age": 6.18,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 22199.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "595C",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 197,
+          "pass_rate": 85.79,
+          "vs_national_at_age": 4.59,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 34392.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "124 SPIDER MULTIAIR",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 105,
+          "pass_rate": 84.76,
+          "vs_national_at_age": 3.56,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 25895.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "595C",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 402,
+          "pass_rate": 88.31,
+          "vs_national_at_age": 2.46,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 18749.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "124 SPIDER MULTIAIR AUTO",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 285,
+          "pass_rate": 88.07,
+          "vs_national_at_age": 2.22,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 21843.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "500": {
+        "core_model": "500",
+        "years_covered": [
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015
+        ],
+        "trajectory_by_age": {
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 68.97,
+                "vs_national": -6.16,
+                "total_tests": 464,
+                "avg_mileage": 51537.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 71.04,
+                "vs_national": -4.09,
+                "total_tests": 739,
+                "avg_mileage": 47828.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 69.85,
+                "vs_national": 1.61,
+                "total_tests": 388,
+                "avg_mileage": 63766.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 65.08,
+                "vs_national": -3.16,
+                "total_tests": 547,
+                "avg_mileage": 60893.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 67.59,
+                "vs_national": -0.65,
+                "total_tests": 324,
+                "avg_mileage": 56366.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 66.08,
+                "vs_national": 3.25,
+                "total_tests": 510,
+                "avg_mileage": 69701.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 66.63,
+                "vs_national": 3.8,
+                "total_tests": 884,
+                "avg_mileage": 69439.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 65.54,
+                "vs_national": 2.71,
+                "total_tests": 354,
+                "avg_mileage": 66772.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2009,
+                "pass_rate": 65.97,
+                "vs_national": 8.67,
+                "total_tests": 761,
+                "avg_mileage": 79667.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 65.24,
+                "vs_national": 7.94,
+                "total_tests": 443,
+                "avg_mileage": 79097.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 8.67,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2012,
+          "vs_national": 2.71,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "595C": {
+        "core_model": "595C",
+        "years_covered": [
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 82.06,
+                "vs_national": -3.79,
+                "total_tests": 301,
+                "avg_mileage": 24245.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 88.31,
+                "vs_national": 2.46,
+                "total_tests": 402,
+                "avg_mileage": 18749.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 82.21,
+                "vs_national": 1.01,
+                "total_tests": 371,
+                "avg_mileage": 30011.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "124 SPIDER MULTIAIR": {
+        "core_model": "124 SPIDER MULTIAIR",
+        "years_covered": [
+          2017,
+          2018
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 90.45,
+                "vs_national": 4.6,
+                "total_tests": 618,
+                "avg_mileage": 22362.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 88.1,
+                "vs_national": 6.9,
+                "total_tests": 336,
+                "avg_mileage": 28373.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 90.79,
+                "vs_national": 9.59,
+                "total_tests": 293,
+                "avg_mileage": 25349.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "595": {
+        "core_model": "595",
+        "years_covered": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 83.96,
+                "vs_national": -1.89,
+                "total_tests": 2344,
+                "avg_mileage": 28180.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 86.92,
+                "vs_national": 1.07,
+                "total_tests": 2317,
+                "avg_mileage": 22058.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 86.35,
+                "vs_national": 0.5,
+                "total_tests": 425,
+                "avg_mileage": 19184.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 78.43,
+                "vs_national": -2.77,
+                "total_tests": 1674,
+                "avg_mileage": 39652.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 78.65,
+                "vs_national": -2.55,
+                "total_tests": 3092,
+                "avg_mileage": 36551.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 82.53,
+                "vs_national": 1.33,
+                "total_tests": 1242,
+                "avg_mileage": 31358.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 74.92,
+                "vs_national": -0.21,
+                "total_tests": 315,
+                "avg_mileage": 45453.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 74.22,
+                "vs_national": -0.91,
+                "total_tests": 1664,
+                "avg_mileage": 45027.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 73.87,
+                "vs_national": -1.26,
+                "total_tests": 1309,
+                "avg_mileage": 43497.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2013,
+                "pass_rate": 71.17,
+                "vs_national": 2.93,
+                "total_tests": 489,
+                "avg_mileage": 55418.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 72.38,
+                "vs_national": 4.14,
+                "total_tests": 239,
+                "avg_mileage": 48731.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      }
+    }
+  }
+}

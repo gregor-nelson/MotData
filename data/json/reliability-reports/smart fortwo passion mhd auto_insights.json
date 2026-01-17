@@ -1,0 +1,649 @@
+{
+  "meta": {
+    "make": "SMART FORTWO PASSION MHD AUTO",
+    "generated_at": "2026-01-15T17:43:50.209693",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 38,
+    "make": "SMART FORTWO PASSION MHD AUTO",
+    "total_tests": 1598,
+    "total_models": 7,
+    "avg_pass_rate": 72.84,
+    "weighted_pass_rate": 72.84,
+    "best_model": "UNCLASSIFIED 2013",
+    "best_model_pass_rate": 73.4,
+    "worst_model": "UNCLASSIFIED 2012",
+    "worst_model_pass_rate": 72.46,
+    "rank": 38
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "SMART FORTWO PASSION MHD AUTO",
+      "avg_pass_rate": 72.84,
+      "total_tests": 1598,
+      "rank": 38,
+      "total_models": 7
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    }
+  ],
+  "summary": {
+    "total_tests": 1598,
+    "total_models": 7,
+    "avg_pass_rate": 72.84,
+    "rank": 38,
+    "rank_total": 75,
+    "best_model": "UNCLASSIFIED 2013",
+    "best_model_pass_rate": 73.4,
+    "worst_model": "UNCLASSIFIED 2012",
+    "worst_model_pass_rate": 72.46,
+    "vs_national": 1.33,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "UNCLASSIFIED",
+      "total_tests": 1581,
+      "total_passes": 1152,
+      "total_fails": 325,
+      "pass_rate": 72.87,
+      "avg_mileage": 48533.0,
+      "year_from": 2012,
+      "year_to": 2013,
+      "variant_count": 2,
+      "variants": "UNCLASSIFIED"
+    }
+  ],
+  "model_year_breakdowns": {
+    "UNCLASSIFIED": [
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 609,
+        "pass_rate": 73.4,
+        "avg_mileage": 47001.0,
+        "pass_rate_vs_national": 5.11,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 972,
+        "pass_rate": 72.53,
+        "avg_mileage": 50064.0,
+        "pass_rate_vs_national": 6.9,
+        "national_avg_for_year": 65.63
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 2,
+      "total_tests": 1581,
+      "pass_rate": 72.87,
+      "fuel_name": "Petrol"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 972,
+      "pass_rate": 72.53,
+      "pass_rate_vs_national": 6.9,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 609,
+      "pass_rate": 73.4,
+      "pass_rate_vs_national": 5.11,
+      "national_avg_for_year": 68.29
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 609,
+      "pass_rate": 73.4,
+      "pass_rate_vs_national": 5.11,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 972,
+      "pass_rate": 72.53,
+      "pass_rate_vs_national": 6.9,
+      "national_avg_for_year": 65.63
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 182,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 118,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 88,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 75,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 73,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 39,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 32,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 4,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 2,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 2,
+        "vehicle_count": 2
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 67
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 54
+      },
+      {
+        "defect_description": "excessively binding",
+        "category_name": "Brakes",
+        "total_occurrences": 53
+      },
+      {
+        "defect_description": "not working on dipped beam",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 49
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 30
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 29
+      },
+      {
+        "defect_description": "too low",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 25
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 22
+      },
+      {
+        "defect_description": "projected beam image is obviously incorrect",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 18
+      },
+      {
+        "defect_description": "excessively corroded",
+        "category_name": "Brakes",
+        "total_occurrences": 10
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 196
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 173
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 159
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 88
+      },
+      {
+        "defect_description": "binding but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 57
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 55
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 44
+      },
+      {
+        "defect_description": "deteriorated but not likely to be misread",
+        "category_name": "Identification of the vehicle",
+        "total_occurrences": 23
+      },
+      {
+        "defect_description": "Nail in tyre",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 20
+      },
+      {
+        "defect_description": "has a minor leak of exhaust gases",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 20
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 200
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 167
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 104
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 44
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 35
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 14
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 8
+      },
+      {
+        "defect_description": "seriously damaged",
+        "category_name": "Tyres",
+        "total_occurrences": 6
+      },
+      {
+        "defect_description": "all not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 2
+      },
+      {
+        "defect_description": "leaking on a hydraulic braking system ",
+        "category_name": "Brakes",
+        "total_occurrences": 2
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 329,
+      "avg_pass_rate": 81.16
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 813,
+      "avg_pass_rate": 73.31
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 363,
+      "avg_pass_rate": 65.84
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 61,
+      "avg_pass_rate": 62.29
+    }
+  ],
+  "all_models": [
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 609,
+      "total_passes": 447,
+      "total_fails": 121,
+      "pass_rate": 73.4,
+      "avg_mileage": 47001.0,
+      "avg_age_years": 9.7,
+      "pass_rate_vs_national": 1.89
+    },
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 972,
+      "total_passes": 705,
+      "total_fails": 204,
+      "pass_rate": 72.53,
+      "avg_mileage": 50064.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 1.02
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "UNCLASSIFIED",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 972,
+        "avg_vs_national": 2.64,
+        "durability_trend": 0.7,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 69.68,
+          "national_pass_rate": 66.54,
+          "vs_national": 3.14,
+          "total_tests": 277,
+          "avg_mileage": 52477.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 73.67,
+          "national_pass_rate": 71.23,
+          "vs_national": 2.44,
+          "total_tests": 695,
+          "avg_mileage": 49101.0
+        }
+      },
+      {
+        "model": "UNCLASSIFIED",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 609,
+        "avg_vs_national": 2.17,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 73.4,
+          "national_pass_rate": 71.23,
+          "vs_national": 2.17,
+          "total_tests": 609,
+          "avg_mileage": 47001.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 73.4,
+          "national_pass_rate": 71.23,
+          "vs_national": 2.17,
+          "total_tests": 609,
+          "avg_mileage": 47001.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "UNCLASSIFIED",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 609,
+        "avg_vs_national": 2.17,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 73.4,
+          "national_pass_rate": 71.23,
+          "vs_national": 2.17,
+          "total_tests": 609,
+          "avg_mileage": 47001.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 73.4,
+          "national_pass_rate": 71.23,
+          "vs_national": 2.17,
+          "total_tests": 609,
+          "avg_mileage": 47001.0
+        }
+      },
+      {
+        "model": "UNCLASSIFIED",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 972,
+        "avg_vs_national": 2.64,
+        "durability_trend": 0.7,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 69.68,
+          "national_pass_rate": 66.54,
+          "vs_national": 3.14,
+          "total_tests": 277,
+          "avg_mileage": 52477.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 73.67,
+          "national_pass_rate": 71.23,
+          "vs_national": 2.44,
+          "total_tests": 695,
+          "avg_mileage": 49101.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "maturing": {
+          "vehicles": 2,
+          "tests": 1304
+        },
+        "proven": {
+          "vehicles": 1,
+          "tests": 277
+        }
+      },
+      "proven_vehicles_tested": 1,
+      "proven_above_average_pct": 100.0,
+      "proven_avg_vs_national": 6.85,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "UNCLASSIFIED",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 277,
+          "pass_rate": 69.68,
+          "vs_national_at_age": 6.85,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 52477.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": []
+    },
+    "model_trajectories": {
+      "UNCLASSIFIED": {
+        "core_model": "UNCLASSIFIED",
+        "years_covered": [
+          2012,
+          2013
+        ],
+        "trajectory_by_age": {
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 73.67,
+                "vs_national": 5.43,
+                "total_tests": 695,
+                "avg_mileage": 49101.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 73.4,
+                "vs_national": 5.16,
+                "total_tests": 609,
+                "avg_mileage": 47001.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 69.68,
+                "vs_national": 6.85,
+                "total_tests": 277,
+                "avg_mileage": 52477.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 6.85,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2012,
+          "vs_national": 6.85,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

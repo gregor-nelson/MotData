@@ -1,0 +1,2567 @@
+{
+  "meta": {
+    "make": "ROVER",
+    "generated_at": "2026-01-15T17:43:33.137453",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 71,
+    "make": "ROVER",
+    "total_tests": 18309,
+    "total_models": 158,
+    "avg_pass_rate": 58.86,
+    "weighted_pass_rate": 58.86,
+    "best_model": "MINI 2000",
+    "best_model_pass_rate": 72.0,
+    "worst_model": "45 2005",
+    "worst_model_pass_rate": 53.61,
+    "rank": 71
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    },
+    {
+      "make": "ROVER",
+      "avg_pass_rate": 58.86,
+      "total_tests": 18309,
+      "rank": 71,
+      "total_models": 158
+    }
+  ],
+  "summary": {
+    "total_tests": 18309,
+    "total_models": 158,
+    "avg_pass_rate": 58.86,
+    "rank": 71,
+    "rank_total": 75,
+    "best_model": "MINI 2000",
+    "best_model_pass_rate": 72.0,
+    "worst_model": "45 2005",
+    "worst_model_pass_rate": 53.61,
+    "vs_national": -12.65,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "MINI",
+      "total_tests": 1559,
+      "total_passes": 1108,
+      "total_fails": 393,
+      "pass_rate": 71.07,
+      "avg_mileage": 44139.0,
+      "year_from": 2000,
+      "year_to": 2001,
+      "variant_count": 2,
+      "variants": "MINI"
+    },
+    {
+      "core_model": "25",
+      "total_tests": 3802,
+      "total_passes": 2291,
+      "total_fails": 1199,
+      "pass_rate": 60.26,
+      "avg_mileage": 65128.0,
+      "year_from": 2000,
+      "year_to": 2005,
+      "variant_count": 6,
+      "variants": "25"
+    },
+    {
+      "core_model": "45",
+      "total_tests": 2180,
+      "total_passes": 1264,
+      "total_fails": 771,
+      "pass_rate": 57.98,
+      "avg_mileage": 73667.0,
+      "year_from": 2000,
+      "year_to": 2005,
+      "variant_count": 6,
+      "variants": "45"
+    },
+    {
+      "core_model": "75",
+      "total_tests": 9031,
+      "total_passes": 5122,
+      "total_fails": 3448,
+      "pass_rate": 56.72,
+      "avg_mileage": 103208.0,
+      "year_from": 2000,
+      "year_to": 2006,
+      "variant_count": 12,
+      "variants": "75"
+    },
+    {
+      "core_model": "STREETWISE",
+      "total_tests": 249,
+      "total_passes": 132,
+      "total_fails": 97,
+      "pass_rate": 53.01,
+      "avg_mileage": 73968.0,
+      "year_from": 2004,
+      "year_to": 2004,
+      "variant_count": 1,
+      "variants": "STREETWISE"
+    }
+  ],
+  "model_year_breakdowns": {
+    "MINI": [
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 384,
+        "pass_rate": 68.23,
+        "avg_mileage": 42935.0,
+        "pass_rate_vs_national": 9.55,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 1175,
+        "pass_rate": 72.0,
+        "avg_mileage": 45342.0,
+        "pass_rate_vs_national": 11.38,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "25": [
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 446,
+        "pass_rate": 57.85,
+        "avg_mileage": 64263.0,
+        "pass_rate_vs_national": 1.6,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 677,
+        "pass_rate": 58.79,
+        "avg_mileage": 65258.0,
+        "pass_rate_vs_national": 2.76,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 783,
+        "pass_rate": 60.03,
+        "avg_mileage": 64939.0,
+        "pass_rate_vs_national": 3.35,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 704,
+        "pass_rate": 62.93,
+        "avg_mileage": 64294.0,
+        "pass_rate_vs_national": 5.39,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 722,
+        "pass_rate": 58.17,
+        "avg_mileage": 66247.0,
+        "pass_rate_vs_national": -0.51,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 470,
+        "pass_rate": 64.26,
+        "avg_mileage": 65768.0,
+        "pass_rate_vs_national": 3.64,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "45": [
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 256,
+        "pass_rate": 54.3,
+        "avg_mileage": 70624.0,
+        "pass_rate_vs_national": -1.95,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 463,
+        "pass_rate": 60.48,
+        "avg_mileage": 72712.0,
+        "pass_rate_vs_national": 4.45,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 452,
+        "pass_rate": 59.51,
+        "avg_mileage": 73876.0,
+        "pass_rate_vs_national": 2.83,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 405,
+        "pass_rate": 56.05,
+        "avg_mileage": 71264.0,
+        "pass_rate_vs_national": -1.49,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 346,
+        "pass_rate": 59.25,
+        "avg_mileage": 76709.0,
+        "pass_rate_vs_national": 0.57,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 258,
+        "pass_rate": 55.81,
+        "avg_mileage": 76816.0,
+        "pass_rate_vs_national": -4.81,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "75": [
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 168,
+        "pass_rate": 57.14,
+        "avg_mileage": 104447.0,
+        "pass_rate_vs_national": 0.96,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 918,
+        "pass_rate": 54.47,
+        "avg_mileage": 114247.0,
+        "pass_rate_vs_national": -1.78,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 343,
+        "pass_rate": 65.31,
+        "avg_mileage": 72450.0,
+        "pass_rate_vs_national": 9.06,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 1838,
+        "pass_rate": 52.83,
+        "avg_mileage": 123811.0,
+        "pass_rate_vs_national": -3.2,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 767,
+        "pass_rate": 60.76,
+        "avg_mileage": 80757.0,
+        "pass_rate_vs_national": 4.73,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 1263,
+        "pass_rate": 52.89,
+        "avg_mileage": 129291.0,
+        "pass_rate_vs_national": -3.79,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 844,
+        "pass_rate": 60.07,
+        "avg_mileage": 85497.0,
+        "pass_rate_vs_national": 3.39,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 984,
+        "pass_rate": 54.27,
+        "avg_mileage": 133025.0,
+        "pass_rate_vs_national": -3.27,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 618,
+        "pass_rate": 64.56,
+        "avg_mileage": 87038.0,
+        "pass_rate_vs_national": 7.02,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "DI",
+        "total_tests": 324,
+        "pass_rate": 55.56,
+        "avg_mileage": 134753.0,
+        "pass_rate_vs_national": -3.12,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 563,
+        "pass_rate": 61.28,
+        "avg_mileage": 86572.0,
+        "pass_rate_vs_national": 2.6,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 401,
+        "pass_rate": 57.86,
+        "avg_mileage": 86607.0,
+        "pass_rate_vs_national": -2.76,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "STREETWISE": [
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 249,
+        "pass_rate": 53.01,
+        "avg_mileage": 73968.0,
+        "pass_rate_vs_national": -3.02,
+        "national_avg_for_year": 56.03
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 21,
+      "total_tests": 11326,
+      "pass_rate": 61.52,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 6,
+      "total_tests": 5495,
+      "pass_rate": 53.67,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "MINI",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 1175,
+      "pass_rate": 72.0,
+      "pass_rate_vs_national": 11.38,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "MINI",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 384,
+      "pass_rate": 68.23,
+      "pass_rate_vs_national": 9.55,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "75",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 343,
+      "pass_rate": 65.31,
+      "pass_rate_vs_national": 9.06,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "75",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 618,
+      "pass_rate": 64.56,
+      "pass_rate_vs_national": 7.02,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "25",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 704,
+      "pass_rate": 62.93,
+      "pass_rate_vs_national": 5.39,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "75",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 767,
+      "pass_rate": 60.76,
+      "pass_rate_vs_national": 4.73,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "45",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 463,
+      "pass_rate": 60.48,
+      "pass_rate_vs_national": 4.45,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "25",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 470,
+      "pass_rate": 64.26,
+      "pass_rate_vs_national": 3.64,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "75",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 844,
+      "pass_rate": 60.07,
+      "pass_rate_vs_national": 3.39,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "25",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 783,
+      "pass_rate": 60.03,
+      "pass_rate_vs_national": 3.35,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "45",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 452,
+      "pass_rate": 59.51,
+      "pass_rate_vs_national": 2.83,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "25",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 677,
+      "pass_rate": 58.79,
+      "pass_rate_vs_national": 2.76,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "75",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 563,
+      "pass_rate": 61.28,
+      "pass_rate_vs_national": 2.6,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "25",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 446,
+      "pass_rate": 57.85,
+      "pass_rate_vs_national": 1.6,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "75",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 168,
+      "pass_rate": 57.14,
+      "pass_rate_vs_national": 0.96,
+      "national_avg_for_year": 56.18
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "45",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 258,
+      "pass_rate": 55.81,
+      "pass_rate_vs_national": -4.81,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "75",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 1263,
+      "pass_rate": 52.89,
+      "pass_rate_vs_national": -3.79,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "75",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 984,
+      "pass_rate": 54.27,
+      "pass_rate_vs_national": -3.27,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "75",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 1838,
+      "pass_rate": 52.83,
+      "pass_rate_vs_national": -3.2,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "75",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 324,
+      "pass_rate": 55.56,
+      "pass_rate_vs_national": -3.12,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "STREETWISE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 249,
+      "pass_rate": 53.01,
+      "pass_rate_vs_national": -3.02,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "75",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 401,
+      "pass_rate": 57.86,
+      "pass_rate_vs_national": -2.76,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "45",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 256,
+      "pass_rate": 54.3,
+      "pass_rate_vs_national": -1.95,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "75",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 918,
+      "pass_rate": 54.47,
+      "pass_rate_vs_national": -1.78,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "45",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 405,
+      "pass_rate": 56.05,
+      "pass_rate_vs_national": -1.49,
+      "national_avg_for_year": 57.54
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Suspension",
+        "total_failures": 2933,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 2717,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 2094,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 1783,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 1125,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 915,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 840,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 780,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 657,
+        "vehicle_count": 27
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 51,
+        "vehicle_count": 9
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 51,
+        "vehicle_count": 17
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "prescribed area excessively corroded significantly reducing structural strength",
+        "category_name": "Suspension",
+        "total_occurrences": 996
+      },
+      {
+        "defect_description": "constant velocity boot split or insecure, no longer prevents the ingress of dirt",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 564
+      },
+      {
+        "defect_description": "projected beam image is obviously incorrect",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 537
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 531
+      },
+      {
+        "defect_description": "efficiency below requirements",
+        "category_name": "Brakes",
+        "total_occurrences": 497
+      },
+      {
+        "defect_description": "warning lamp indicates a fault",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 439
+      },
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 425
+      },
+      {
+        "defect_description": "ball joint excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 415
+      },
+      {
+        "defect_description": "excessively corroded",
+        "category_name": "Brakes",
+        "total_occurrences": 395
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 354
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 2707
+      },
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 2220
+      },
+      {
+        "defect_description": "corroded but not seriously weakened",
+        "category_name": "Suspension",
+        "total_occurrences": 1704
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 1694
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 1344
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 1082
+      },
+      {
+        "defect_description": "prescribed area is corroded but not considered excessive",
+        "category_name": "Suspension",
+        "total_occurrences": 919
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 851
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 641
+      },
+      {
+        "defect_description": "has a minor leak of exhaust gases",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 543
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 2429
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1801
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 1467
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 731
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 298
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 143
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 102
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 93
+      },
+      {
+        "defect_description": "leaking on a hydraulic braking system ",
+        "category_name": "Brakes",
+        "total_occurrences": 75
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 61
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 1127,
+      "avg_pass_rate": 75.69
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 4215,
+      "avg_pass_rate": 65.31
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 4747,
+      "avg_pass_rate": 59.15
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 3248,
+      "avg_pass_rate": 54.74
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 1888,
+      "avg_pass_rate": 49.63
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 1502,
+      "avg_pass_rate": 48.34
+    }
+  ],
+  "all_models": [
+    {
+      "model": "MINI",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 1175,
+      "total_passes": 846,
+      "total_fails": 286,
+      "pass_rate": 72.0,
+      "avg_mileage": 45342.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": 0.49
+    },
+    {
+      "model": "MINI",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 384,
+      "total_passes": 262,
+      "total_fails": 107,
+      "pass_rate": 68.23,
+      "avg_mileage": 42935.0,
+      "avg_age_years": 21.7,
+      "pass_rate_vs_national": -3.28
+    },
+    {
+      "model": "75",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 343,
+      "total_passes": 224,
+      "total_fails": 103,
+      "pass_rate": 65.31,
+      "avg_mileage": 72450.0,
+      "avg_age_years": 17.7,
+      "pass_rate_vs_national": -6.2
+    },
+    {
+      "model": "75",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 618,
+      "total_passes": 399,
+      "total_fails": 196,
+      "pass_rate": 64.56,
+      "avg_mileage": 87038.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -6.95
+    },
+    {
+      "model": "25",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 470,
+      "total_passes": 302,
+      "total_fails": 126,
+      "pass_rate": 64.26,
+      "avg_mileage": 65768.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -7.26
+    },
+    {
+      "model": "25",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 704,
+      "total_passes": 443,
+      "total_fails": 202,
+      "pass_rate": 62.93,
+      "avg_mileage": 64294.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -8.58
+    },
+    {
+      "model": "75",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 563,
+      "total_passes": 345,
+      "total_fails": 196,
+      "pass_rate": 61.28,
+      "avg_mileage": 86572.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -10.23
+    },
+    {
+      "model": "75",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 767,
+      "total_passes": 466,
+      "total_fails": 256,
+      "pass_rate": 60.76,
+      "avg_mileage": 80757.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -10.75
+    },
+    {
+      "model": "45",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 463,
+      "total_passes": 280,
+      "total_fails": 155,
+      "pass_rate": 60.48,
+      "avg_mileage": 72712.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -11.04
+    },
+    {
+      "model": "75",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 844,
+      "total_passes": 507,
+      "total_fails": 289,
+      "pass_rate": 60.07,
+      "avg_mileage": 85497.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -11.44
+    },
+    {
+      "model": "25",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 783,
+      "total_passes": 470,
+      "total_fails": 250,
+      "pass_rate": 60.03,
+      "avg_mileage": 64939.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -11.49
+    },
+    {
+      "model": "45",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 452,
+      "total_passes": 269,
+      "total_fails": 155,
+      "pass_rate": 59.51,
+      "avg_mileage": 73876.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -12.0
+    },
+    {
+      "model": "45",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 346,
+      "total_passes": 205,
+      "total_fails": 115,
+      "pass_rate": 59.25,
+      "avg_mileage": 76709.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -12.26
+    },
+    {
+      "model": "25",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 677,
+      "total_passes": 398,
+      "total_fails": 224,
+      "pass_rate": 58.79,
+      "avg_mileage": 65258.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -12.72
+    },
+    {
+      "model": "25",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 722,
+      "total_passes": 420,
+      "total_fails": 247,
+      "pass_rate": 58.17,
+      "avg_mileage": 66247.0,
+      "avg_age_years": 21.4,
+      "pass_rate_vs_national": -13.34
+    },
+    {
+      "model": "75",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 401,
+      "total_passes": 232,
+      "total_fails": 145,
+      "pass_rate": 57.86,
+      "avg_mileage": 86607.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -13.66
+    },
+    {
+      "model": "25",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 446,
+      "total_passes": 258,
+      "total_fails": 150,
+      "pass_rate": 57.85,
+      "avg_mileage": 64263.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": -13.66
+    },
+    {
+      "model": "75",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 168,
+      "total_passes": 96,
+      "total_fails": 63,
+      "pass_rate": 57.14,
+      "avg_mileage": 104447.0,
+      "avg_age_years": 16.6,
+      "pass_rate_vs_national": -14.37
+    },
+    {
+      "model": "45",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 405,
+      "total_passes": 227,
+      "total_fails": 150,
+      "pass_rate": 56.05,
+      "avg_mileage": 71264.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -15.46
+    },
+    {
+      "model": "45",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 258,
+      "total_passes": 144,
+      "total_fails": 99,
+      "pass_rate": 55.81,
+      "avg_mileage": 76816.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -15.7
+    },
+    {
+      "model": "75",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 324,
+      "total_passes": 180,
+      "total_fails": 127,
+      "pass_rate": 55.56,
+      "avg_mileage": 134753.0,
+      "avg_age_years": 21.4,
+      "pass_rate_vs_national": -15.96
+    },
+    {
+      "model": "75",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 918,
+      "total_passes": 500,
+      "total_fails": 374,
+      "pass_rate": 54.47,
+      "avg_mileage": 114247.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": -17.04
+    },
+    {
+      "model": "45",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 256,
+      "total_passes": 139,
+      "total_fails": 97,
+      "pass_rate": 54.3,
+      "avg_mileage": 70624.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": -17.21
+    },
+    {
+      "model": "75",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 984,
+      "total_passes": 534,
+      "total_fails": 393,
+      "pass_rate": 54.27,
+      "avg_mileage": 133025.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -17.24
+    },
+    {
+      "model": "STREETWISE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 249,
+      "total_passes": 132,
+      "total_fails": 97,
+      "pass_rate": 53.01,
+      "avg_mileage": 73968.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -18.5
+    },
+    {
+      "model": "75",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 1263,
+      "total_passes": 668,
+      "total_fails": 539,
+      "pass_rate": 52.89,
+      "avg_mileage": 129291.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -18.62
+    },
+    {
+      "model": "75",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 1838,
+      "total_passes": 971,
+      "total_fails": 767,
+      "pass_rate": 52.83,
+      "avg_mileage": 123811.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -18.68
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "MINI",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 1175,
+        "avg_vs_national": 12.13,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 72.0,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.13,
+          "total_tests": 1175,
+          "avg_mileage": 45342.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 72.0,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.13,
+          "total_tests": 1175,
+          "avg_mileage": 45342.0
+        }
+      },
+      {
+        "model": "MINI",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 384,
+        "avg_vs_national": 8.36,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 68.23,
+          "national_pass_rate": 59.87,
+          "vs_national": 8.36,
+          "total_tests": 384,
+          "avg_mileage": 42935.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 68.23,
+          "national_pass_rate": 59.87,
+          "vs_national": 8.36,
+          "total_tests": 384,
+          "avg_mileage": 42935.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 343,
+        "avg_vs_national": 5.44,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.31,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.44,
+          "total_tests": 343,
+          "avg_mileage": 72450.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.31,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.44,
+          "total_tests": 343,
+          "avg_mileage": 72450.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 618,
+        "avg_vs_national": 4.69,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.56,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.69,
+          "total_tests": 618,
+          "avg_mileage": 87038.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.56,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.69,
+          "total_tests": 618,
+          "avg_mileage": 87038.0
+        }
+      },
+      {
+        "model": "25",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 470,
+        "avg_vs_national": 4.39,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.26,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.39,
+          "total_tests": 470,
+          "avg_mileage": 65768.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.26,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.39,
+          "total_tests": 470,
+          "avg_mileage": 65768.0
+        }
+      },
+      {
+        "model": "25",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 704,
+        "avg_vs_national": 3.06,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 62.93,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.06,
+          "total_tests": 704,
+          "avg_mileage": 64294.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 62.93,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.06,
+          "total_tests": 704,
+          "avg_mileage": 64294.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 563,
+        "avg_vs_national": 1.41,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.28,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.41,
+          "total_tests": 563,
+          "avg_mileage": 86572.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.28,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.41,
+          "total_tests": 563,
+          "avg_mileage": 86572.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 767,
+        "avg_vs_national": 0.89,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.76,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.89,
+          "total_tests": 767,
+          "avg_mileage": 80757.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.76,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.89,
+          "total_tests": 767,
+          "avg_mileage": 80757.0
+        }
+      },
+      {
+        "model": "45",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 463,
+        "avg_vs_national": 0.61,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.61,
+          "total_tests": 463,
+          "avg_mileage": 72712.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.61,
+          "total_tests": 463,
+          "avg_mileage": 72712.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 844,
+        "avg_vs_national": 0.2,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.2,
+          "total_tests": 844,
+          "avg_mileage": 85497.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.2,
+          "total_tests": 844,
+          "avg_mileage": 85497.0
+        }
+      },
+      {
+        "model": "25",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 783,
+        "avg_vs_national": 0.16,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.03,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.16,
+          "total_tests": 783,
+          "avg_mileage": 64939.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.03,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.16,
+          "total_tests": 783,
+          "avg_mileage": 64939.0
+        }
+      },
+      {
+        "model": "45",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 452,
+        "avg_vs_national": -0.36,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.51,
+          "national_pass_rate": 59.87,
+          "vs_national": -0.36,
+          "total_tests": 452,
+          "avg_mileage": 73876.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.51,
+          "national_pass_rate": 59.87,
+          "vs_national": -0.36,
+          "total_tests": 452,
+          "avg_mileage": 73876.0
+        }
+      },
+      {
+        "model": "45",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 346,
+        "avg_vs_national": -0.62,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.25,
+          "national_pass_rate": 59.87,
+          "vs_national": -0.62,
+          "total_tests": 346,
+          "avg_mileage": 76709.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 59.25,
+          "national_pass_rate": 59.87,
+          "vs_national": -0.62,
+          "total_tests": 346,
+          "avg_mileage": 76709.0
+        }
+      },
+      {
+        "model": "25",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 677,
+        "avg_vs_national": -1.08,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.79,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.08,
+          "total_tests": 677,
+          "avg_mileage": 65258.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.79,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.08,
+          "total_tests": 677,
+          "avg_mileage": 65258.0
+        }
+      },
+      {
+        "model": "25",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 722,
+        "avg_vs_national": -1.7,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.17,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.7,
+          "total_tests": 722,
+          "avg_mileage": 66247.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 58.17,
+          "national_pass_rate": 59.87,
+          "vs_national": -1.7,
+          "total_tests": 722,
+          "avg_mileage": 66247.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "75",
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 1838,
+        "avg_vs_national": -7.04,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.83,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.04,
+          "total_tests": 1838,
+          "avg_mileage": 123811.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.83,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.04,
+          "total_tests": 1838,
+          "avg_mileage": 123811.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 1263,
+        "avg_vs_national": -6.98,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.98,
+          "total_tests": 1263,
+          "avg_mileage": 129291.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.98,
+          "total_tests": 1263,
+          "avg_mileage": 129291.0
+        }
+      },
+      {
+        "model": "STREETWISE",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 249,
+        "avg_vs_national": -6.86,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.01,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.86,
+          "total_tests": 249,
+          "avg_mileage": 73968.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.01,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.86,
+          "total_tests": 249,
+          "avg_mileage": 73968.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 984,
+        "avg_vs_national": -5.6,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.27,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.6,
+          "total_tests": 984,
+          "avg_mileage": 133025.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.27,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.6,
+          "total_tests": 984,
+          "avg_mileage": 133025.0
+        }
+      },
+      {
+        "model": "45",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 256,
+        "avg_vs_national": -5.57,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.3,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.57,
+          "total_tests": 256,
+          "avg_mileage": 70624.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.3,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.57,
+          "total_tests": 256,
+          "avg_mileage": 70624.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 918,
+        "avg_vs_national": -5.4,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.47,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.4,
+          "total_tests": 918,
+          "avg_mileage": 114247.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.47,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.4,
+          "total_tests": 918,
+          "avg_mileage": 114247.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2001,
+        "fuel_type": "DI",
+        "total_tests": 324,
+        "avg_vs_national": -4.31,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.56,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.31,
+          "total_tests": 324,
+          "avg_mileage": 134753.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.56,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.31,
+          "total_tests": 324,
+          "avg_mileage": 134753.0
+        }
+      },
+      {
+        "model": "45",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 258,
+        "avg_vs_national": -4.06,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.81,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.06,
+          "total_tests": 258,
+          "avg_mileage": 76816.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.81,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.06,
+          "total_tests": 258,
+          "avg_mileage": 76816.0
+        }
+      },
+      {
+        "model": "45",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 405,
+        "avg_vs_national": -3.82,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.05,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.82,
+          "total_tests": 405,
+          "avg_mileage": 71264.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.05,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.82,
+          "total_tests": 405,
+          "avg_mileage": 71264.0
+        }
+      },
+      {
+        "model": "75",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 168,
+        "avg_vs_national": -2.73,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 57.14,
+          "national_pass_rate": 59.87,
+          "vs_national": -2.73,
+          "total_tests": 168,
+          "avg_mileage": 104447.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 57.14,
+          "national_pass_rate": 59.87,
+          "vs_national": -2.73,
+          "total_tests": 168,
+          "avg_mileage": 104447.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "proven": {
+          "vehicles": 27,
+          "tests": 16821
+        }
+      },
+      "proven_vehicles_tested": 27,
+      "proven_above_average_pct": 63.0,
+      "proven_avg_vs_national": 1.87,
+      "durability_rating": "Average",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "MINI",
+          "model_year": 2000,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1175,
+          "pass_rate": 72.0,
+          "vs_national_at_age": 14.7,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 45342.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "MINI",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 384,
+          "pass_rate": 68.23,
+          "vs_national_at_age": 10.93,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 42935.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "75",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 343,
+          "pass_rate": 65.31,
+          "vs_national_at_age": 8.01,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 72450.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "75",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 618,
+          "pass_rate": 64.56,
+          "vs_national_at_age": 7.26,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 87038.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "25",
+          "model_year": 2000,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 470,
+          "pass_rate": 64.26,
+          "vs_national_at_age": 6.96,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 65768.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "25",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 704,
+          "pass_rate": 62.93,
+          "vs_national_at_age": 5.63,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 64294.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "75",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 563,
+          "pass_rate": 61.28,
+          "vs_national_at_age": 3.98,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 86572.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "75",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 767,
+          "pass_rate": 60.76,
+          "vs_national_at_age": 3.46,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 80757.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "45",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 463,
+          "pass_rate": 60.48,
+          "vs_national_at_age": 3.18,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 72712.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "75",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 844,
+          "pass_rate": 60.07,
+          "vs_national_at_age": 2.77,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 85497.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "25",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 783,
+          "pass_rate": 60.03,
+          "vs_national_at_age": 2.73,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 64939.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "45",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 452,
+          "pass_rate": 59.51,
+          "vs_national_at_age": 2.21,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 73876.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "45",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 346,
+          "pass_rate": 59.25,
+          "vs_national_at_age": 1.95,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 76709.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "25",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 677,
+          "pass_rate": 58.79,
+          "vs_national_at_age": 1.49,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 65258.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "25",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 722,
+          "pass_rate": 58.17,
+          "vs_national_at_age": 0.87,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66247.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "75",
+          "model_year": 2004,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1838,
+          "pass_rate": 52.83,
+          "vs_national_at_age": -4.47,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 123811.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "75",
+          "model_year": 2003,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1263,
+          "pass_rate": 52.89,
+          "vs_national_at_age": -4.41,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 129291.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "STREETWISE",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 249,
+          "pass_rate": 53.01,
+          "vs_national_at_age": -4.29,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 73968.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "75",
+          "model_year": 2002,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 984,
+          "pass_rate": 54.27,
+          "vs_national_at_age": -3.03,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 133025.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "45",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 256,
+          "pass_rate": 54.3,
+          "vs_national_at_age": -3.0,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 70624.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "75",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 918,
+          "pass_rate": 54.47,
+          "vs_national_at_age": -2.83,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 114247.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "75",
+          "model_year": 2001,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 324,
+          "pass_rate": 55.56,
+          "vs_national_at_age": -1.74,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 134753.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "45",
+          "model_year": 2000,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 258,
+          "pass_rate": 55.81,
+          "vs_national_at_age": -1.49,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 76816.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "45",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 405,
+          "pass_rate": 56.05,
+          "vs_national_at_age": -1.25,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 71264.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "75",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 168,
+          "pass_rate": 57.14,
+          "vs_national_at_age": -0.16,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 104447.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": []
+    },
+    "model_trajectories": {
+      "45": {
+        "core_model": "45",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 55.81,
+                "vs_national": -1.49,
+                "total_tests": 258,
+                "avg_mileage": 76816.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 59.25,
+                "vs_national": 1.95,
+                "total_tests": 346,
+                "avg_mileage": 76709.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 56.05,
+                "vs_national": -1.25,
+                "total_tests": 405,
+                "avg_mileage": 71264.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 59.51,
+                "vs_national": 2.21,
+                "total_tests": 452,
+                "avg_mileage": 73876.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 60.48,
+                "vs_national": 3.18,
+                "total_tests": 463,
+                "avg_mileage": 72712.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 54.3,
+                "vs_national": -3.0,
+                "total_tests": 256,
+                "avg_mileage": 70624.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2004,
+          "vs_national": 3.18,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -3.0,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "MINI": {
+        "core_model": "MINI",
+        "years_covered": [
+          2000,
+          2001
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 72.0,
+                "vs_national": 14.7,
+                "total_tests": 1175,
+                "avg_mileage": 45342.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 68.23,
+                "vs_national": 10.93,
+                "total_tests": 384,
+                "avg_mileage": 42935.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2000,
+          "vs_national": 14.7,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2001,
+          "vs_national": 10.93,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "75": {
+        "core_model": "75",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 57.86,
+                "vs_national": 0.56,
+                "total_tests": 401,
+                "avg_mileage": 86607.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 59.19,
+                "vs_national": 1.89,
+                "total_tests": 887,
+                "avg_mileage": 110663.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 58.24,
+                "vs_national": 0.94,
+                "total_tests": 1602,
+                "avg_mileage": 110032.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 55.77,
+                "vs_national": -1.53,
+                "total_tests": 2107,
+                "avg_mileage": 107394.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 55.16,
+                "vs_national": -2.14,
+                "total_tests": 2605,
+                "avg_mileage": 102284.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 57.42,
+                "vs_national": 0.12,
+                "total_tests": 1261,
+                "avg_mileage": 93349.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2001,
+          "vs_national": 1.89,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": -2.14,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "STREETWISE": {
+        "core_model": "STREETWISE",
+        "years_covered": [
+          2004
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 53.01,
+                "vs_national": -4.29,
+                "total_tests": 249,
+                "avg_mileage": 73968.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2004,
+          "vs_national": -4.29,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": -4.29,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "25": {
+        "core_model": "25",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 64.26,
+                "vs_national": 6.96,
+                "total_tests": 470,
+                "avg_mileage": 65768.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 58.17,
+                "vs_national": 0.87,
+                "total_tests": 722,
+                "avg_mileage": 66247.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 62.93,
+                "vs_national": 5.63,
+                "total_tests": 704,
+                "avg_mileage": 64294.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 60.03,
+                "vs_national": 2.73,
+                "total_tests": 783,
+                "avg_mileage": 64939.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 58.79,
+                "vs_national": 1.49,
+                "total_tests": 677,
+                "avg_mileage": 65258.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 57.85,
+                "vs_national": 0.55,
+                "total_tests": 446,
+                "avg_mileage": 64263.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2000,
+          "vs_national": 6.96,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": 0.55,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

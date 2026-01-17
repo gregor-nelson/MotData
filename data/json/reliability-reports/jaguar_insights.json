@@ -1,0 +1,6255 @@
+{
+  "meta": {
+    "make": "JAGUAR",
+    "generated_at": "2026-01-15T17:43:17.675320",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 23,
+    "make": "JAGUAR",
+    "total_tests": 336140,
+    "total_models": 872,
+    "avg_pass_rate": 78.23,
+    "weighted_pass_rate": 78.23,
+    "best_model": "F-PACE RDYNAM HSE D MHEV AWD A 2021",
+    "best_model_pass_rate": 95.45,
+    "worst_model": "X-TYPE 2004",
+    "worst_model_pass_rate": 53.92,
+    "rank": 23
+  },
+  "competitors": [
+    {
+      "make": "LEXUS",
+      "avg_pass_rate": 83.27,
+      "total_tests": 157583,
+      "rank": 18,
+      "total_models": 1221
+    },
+    {
+      "make": "BMW",
+      "avg_pass_rate": 78.49,
+      "total_tests": 1808787,
+      "rank": 22,
+      "total_models": 3161
+    },
+    {
+      "make": "JAGUAR",
+      "avg_pass_rate": 78.23,
+      "total_tests": 336140,
+      "rank": 23,
+      "total_models": 872
+    },
+    {
+      "make": "AUDI",
+      "avg_pass_rate": 77.9,
+      "total_tests": 1663207,
+      "rank": 25,
+      "total_models": 2244
+    },
+    {
+      "make": "LAND ROVER",
+      "avg_pass_rate": 77.02,
+      "total_tests": 870604,
+      "rank": 26,
+      "total_models": 1526
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "avg_pass_rate": 76.91,
+      "total_tests": 1662304,
+      "rank": 27,
+      "total_models": 4410
+    },
+    {
+      "make": "VOLVO",
+      "avg_pass_rate": 73.22,
+      "total_tests": 556785,
+      "rank": 35,
+      "total_models": 1271
+    }
+  ],
+  "summary": {
+    "total_tests": 336140,
+    "total_models": 872,
+    "avg_pass_rate": 78.23,
+    "rank": 23,
+    "rank_total": 75,
+    "best_model": "F-PACE RDYNAM HSE D MHEV AWD A 2021",
+    "best_model_pass_rate": 95.45,
+    "worst_model": "X-TYPE 2004",
+    "worst_model_pass_rate": 53.92,
+    "vs_national": 6.72,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "I-PACE",
+      "total_tests": 12913,
+      "total_passes": 11832,
+      "total_fails": 843,
+      "pass_rate": 91.63,
+      "avg_mileage": 29888.0,
+      "year_from": 2018,
+      "year_to": 2021,
+      "variant_count": 4,
+      "variants": "I-PACE"
+    },
+    {
+      "core_model": "F-TYPE",
+      "total_tests": 13661,
+      "total_passes": 12383,
+      "total_fails": 1029,
+      "pass_rate": 90.64,
+      "avg_mileage": 25950.0,
+      "year_from": 2013,
+      "year_to": 2020,
+      "variant_count": 10,
+      "variants": "F-TYPE,F-TYPE FIRST EDITION I4 AUTO,F-TYPE R-DYNAMIC V8 AWD AUTO"
+    },
+    {
+      "core_model": "E-PACE",
+      "total_tests": 27919,
+      "total_passes": 24627,
+      "total_fails": 2582,
+      "pass_rate": 88.21,
+      "avg_mileage": 29559.0,
+      "year_from": 2017,
+      "year_to": 2020,
+      "variant_count": 10,
+      "variants": "E-PACE,E-PACE CHEQUERED FLAG AWD AUTO,E-PACE CHEQUERED FLAG D AWD A"
+    },
+    {
+      "core_model": "F-PACE",
+      "total_tests": 47393,
+      "total_passes": 40371,
+      "total_fails": 5539,
+      "pass_rate": 85.18,
+      "avg_mileage": 39494.0,
+      "year_from": 2016,
+      "year_to": 2021,
+      "variant_count": 11,
+      "variants": "F-PACE,F-PACE RDYNAM HSE D MHEV AWD A"
+    },
+    {
+      "core_model": "XE",
+      "total_tests": 43898,
+      "total_passes": 35780,
+      "total_fails": 6462,
+      "pass_rate": 81.51,
+      "avg_mileage": 41820.0,
+      "year_from": 2015,
+      "year_to": 2020,
+      "variant_count": 13,
+      "variants": "XE,XE REIMS EDITION AUTO"
+    },
+    {
+      "core_model": "XK",
+      "total_tests": 8004,
+      "total_passes": 6490,
+      "total_fails": 1286,
+      "pass_rate": 81.08,
+      "avg_mileage": 57666.0,
+      "year_from": 2006,
+      "year_to": 2015,
+      "variant_count": 10,
+      "variants": "XK"
+    },
+    {
+      "core_model": "XKR",
+      "total_tests": 7969,
+      "total_passes": 6092,
+      "total_fails": 1655,
+      "pass_rate": 76.45,
+      "avg_mileage": 70662.0,
+      "year_from": 2000,
+      "year_to": 2012,
+      "variant_count": 13,
+      "variants": "XKR"
+    },
+    {
+      "core_model": "XJ",
+      "total_tests": 20369,
+      "total_passes": 15556,
+      "total_fails": 4132,
+      "pass_rate": 76.37,
+      "avg_mileage": 83203.0,
+      "year_from": 2000,
+      "year_to": 2020,
+      "variant_count": 28,
+      "variants": "XJ"
+    },
+    {
+      "core_model": "XF",
+      "total_tests": 101601,
+      "total_passes": 76987,
+      "total_fails": 20625,
+      "pass_rate": 75.77,
+      "avg_mileage": 67385.0,
+      "year_from": 2008,
+      "year_to": 2020,
+      "variant_count": 26,
+      "variants": "XF"
+    },
+    {
+      "core_model": "XK8",
+      "total_tests": 3754,
+      "total_passes": 2781,
+      "total_fails": 846,
+      "pass_rate": 74.08,
+      "avg_mileage": 79696.0,
+      "year_from": 2000,
+      "year_to": 2006,
+      "variant_count": 7,
+      "variants": "XK8"
+    },
+    {
+      "core_model": "XJR",
+      "total_tests": 978,
+      "total_passes": 708,
+      "total_fails": 221,
+      "pass_rate": 72.39,
+      "avg_mileage": 105005.0,
+      "year_from": 2000,
+      "year_to": 2007,
+      "variant_count": 6,
+      "variants": "XJR"
+    },
+    {
+      "core_model": "S-TYPE",
+      "total_tests": 12903,
+      "total_passes": 8126,
+      "total_fails": 4093,
+      "pass_rate": 62.98,
+      "avg_mileage": 94465.0,
+      "year_from": 2000,
+      "year_to": 2007,
+      "variant_count": 12,
+      "variants": "S-TYPE"
+    },
+    {
+      "core_model": "X-TYPE",
+      "total_tests": 30191,
+      "total_passes": 17369,
+      "total_fails": 11127,
+      "pass_rate": 57.53,
+      "avg_mileage": 100804.0,
+      "year_from": 2001,
+      "year_to": 2010,
+      "variant_count": 16,
+      "variants": "X-TYPE"
+    }
+  ],
+  "model_year_breakdowns": {
+    "I-PACE": [
+      {
+        "model_year": 2021,
+        "fuel_type": "EL",
+        "total_tests": 120,
+        "pass_rate": 95.0,
+        "avg_mileage": 26584.0,
+        "pass_rate_vs_national": 4.15,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "EL",
+        "total_tests": 7971,
+        "pass_rate": 92.12,
+        "avg_mileage": 27652.0,
+        "pass_rate_vs_national": 4.45,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "EL",
+        "total_tests": 4023,
+        "pass_rate": 90.75,
+        "avg_mileage": 32178.0,
+        "pass_rate_vs_national": 4.54,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "EL",
+        "total_tests": 799,
+        "pass_rate": 90.61,
+        "avg_mileage": 33139.0,
+        "pass_rate_vs_national": 6.37,
+        "national_avg_for_year": 84.24
+      }
+    ],
+    "F-TYPE": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 837,
+        "pass_rate": 89.37,
+        "avg_mileage": 14670.0,
+        "pass_rate_vs_national": 1.7,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1631,
+        "pass_rate": 91.23,
+        "avg_mileage": 18972.0,
+        "pass_rate_vs_national": 5.02,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1832,
+        "pass_rate": 89.63,
+        "avg_mileage": 23304.0,
+        "pass_rate_vs_national": 5.39,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 2101,
+        "pass_rate": 90.72,
+        "avg_mileage": 27575.0,
+        "pass_rate_vs_national": 9.04,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 2079,
+        "pass_rate": 92.16,
+        "avg_mileage": 30784.0,
+        "pass_rate_vs_national": 13.51,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 1953,
+        "pass_rate": 89.91,
+        "avg_mileage": 35909.0,
+        "pass_rate_vs_national": 14.42,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 2087,
+        "pass_rate": 90.94,
+        "avg_mileage": 39573.0,
+        "pass_rate_vs_national": 19.23,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 1141,
+        "pass_rate": 90.18,
+        "avg_mileage": 39369.0,
+        "pass_rate_vs_national": 21.89,
+        "national_avg_for_year": 68.29
+      }
+    ],
+    "E-PACE": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 4569,
+        "pass_rate": 90.74,
+        "avg_mileage": 25637.0,
+        "pass_rate_vs_national": 3.07,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1669,
+        "pass_rate": 91.61,
+        "avg_mileage": 19814.0,
+        "pass_rate_vs_national": 3.94,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 9072,
+        "pass_rate": 87.9,
+        "avg_mileage": 32210.0,
+        "pass_rate_vs_national": 1.69,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2208,
+        "pass_rate": 90.72,
+        "avg_mileage": 26832.0,
+        "pass_rate_vs_national": 4.51,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 8037,
+        "pass_rate": 85.53,
+        "avg_mileage": 40511.0,
+        "pass_rate_vs_national": 1.29,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 2210,
+        "pass_rate": 89.23,
+        "avg_mileage": 32449.0,
+        "pass_rate_vs_national": 4.99,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 154,
+        "pass_rate": 83.77,
+        "avg_mileage": 40481.0,
+        "pass_rate_vs_national": 2.09,
+        "national_avg_for_year": 81.68
+      }
+    ],
+    "F-PACE": [
+      {
+        "model_year": 2021,
+        "fuel_type": "DI",
+        "total_tests": 110,
+        "pass_rate": 95.45,
+        "avg_mileage": 22464.0,
+        "pass_rate_vs_national": 4.6,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 5377,
+        "pass_rate": 86.57,
+        "avg_mileage": 28976.0,
+        "pass_rate_vs_national": -1.1,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1356,
+        "pass_rate": 88.57,
+        "avg_mileage": 23307.0,
+        "pass_rate_vs_national": 0.9,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 7945,
+        "pass_rate": 84.9,
+        "avg_mileage": 37044.0,
+        "pass_rate_vs_national": -1.31,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2028,
+        "pass_rate": 86.64,
+        "avg_mileage": 28884.0,
+        "pass_rate_vs_national": 0.43,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 8913,
+        "pass_rate": 85.71,
+        "avg_mileage": 46915.0,
+        "pass_rate_vs_national": 1.47,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1652,
+        "pass_rate": 88.08,
+        "avg_mileage": 36581.0,
+        "pass_rate_vs_national": 3.84,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 10951,
+        "pass_rate": 83.77,
+        "avg_mileage": 55672.0,
+        "pass_rate_vs_national": 2.09,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 1428,
+        "pass_rate": 84.8,
+        "avg_mileage": 43738.0,
+        "pass_rate_vs_national": 3.12,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 7174,
+        "pass_rate": 83.86,
+        "avg_mileage": 62330.0,
+        "pass_rate_vs_national": 5.21,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 459,
+        "pass_rate": 89.98,
+        "avg_mileage": 48522.0,
+        "pass_rate_vs_national": 11.33,
+        "national_avg_for_year": 78.65
+      }
+    ],
+    "XE": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 811,
+        "pass_rate": 81.38,
+        "avg_mileage": 27585.0,
+        "pass_rate_vs_national": -6.29,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 844,
+        "pass_rate": 89.34,
+        "avg_mileage": 20116.0,
+        "pass_rate_vs_national": 1.67,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 2159,
+        "pass_rate": 80.96,
+        "avg_mileage": 38897.0,
+        "pass_rate_vs_national": -5.25,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2573,
+        "pass_rate": 83.44,
+        "avg_mileage": 27749.0,
+        "pass_rate_vs_national": -2.77,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 3082,
+        "pass_rate": 80.82,
+        "avg_mileage": 49934.0,
+        "pass_rate_vs_national": -3.42,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 2635,
+        "pass_rate": 85.46,
+        "avg_mileage": 33836.0,
+        "pass_rate_vs_national": 1.22,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 8446,
+        "pass_rate": 81.84,
+        "avg_mileage": 55829.0,
+        "pass_rate_vs_national": 0.16,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 2219,
+        "pass_rate": 87.65,
+        "avg_mileage": 37690.0,
+        "pass_rate_vs_national": 5.97,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 10275,
+        "pass_rate": 79.39,
+        "avg_mileage": 66527.0,
+        "pass_rate_vs_national": 0.74,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 2142,
+        "pass_rate": 84.03,
+        "avg_mileage": 44263.0,
+        "pass_rate_vs_national": 5.38,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 6461,
+        "pass_rate": 78.11,
+        "avg_mileage": 73351.0,
+        "pass_rate_vs_national": 2.62,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 2251,
+        "pass_rate": 82.94,
+        "avg_mileage": 47768.0,
+        "pass_rate_vs_national": 7.45,
+        "national_avg_for_year": 75.49
+      }
+    ],
+    "XK": [
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 120,
+        "pass_rate": 84.17,
+        "avg_mileage": 30836.0,
+        "pass_rate_vs_national": 8.68,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 1174,
+        "pass_rate": 88.76,
+        "avg_mileage": 38762.0,
+        "pass_rate_vs_national": 17.05,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 840,
+        "pass_rate": 89.52,
+        "avg_mileage": 43538.0,
+        "pass_rate_vs_national": 21.23,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 544,
+        "pass_rate": 84.93,
+        "avg_mileage": 49198.0,
+        "pass_rate_vs_national": 19.3,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 566,
+        "pass_rate": 84.28,
+        "avg_mileage": 55474.0,
+        "pass_rate_vs_national": 21.29,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 589,
+        "pass_rate": 82.68,
+        "avg_mileage": 62735.0,
+        "pass_rate_vs_national": 22.18,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 599,
+        "pass_rate": 78.13,
+        "avg_mileage": 67346.0,
+        "pass_rate_vs_national": 19.12,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 704,
+        "pass_rate": 77.98,
+        "avg_mileage": 71047.0,
+        "pass_rate_vs_national": 20.59,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1091,
+        "pass_rate": 74.89,
+        "avg_mileage": 76694.0,
+        "pass_rate_vs_national": 17.92,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 1777,
+        "pass_rate": 75.13,
+        "avg_mileage": 81030.0,
+        "pass_rate_vs_national": 18.95,
+        "national_avg_for_year": 56.18
+      }
+    ],
+    "XKR": [
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 337,
+        "pass_rate": 84.87,
+        "avg_mileage": 50960.0,
+        "pass_rate_vs_national": 19.24,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 667,
+        "pass_rate": 82.31,
+        "avg_mileage": 51968.0,
+        "pass_rate_vs_national": 19.32,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 869,
+        "pass_rate": 81.36,
+        "avg_mileage": 60097.0,
+        "pass_rate_vs_national": 20.86,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 659,
+        "pass_rate": 80.58,
+        "avg_mileage": 63049.0,
+        "pass_rate_vs_national": 21.57,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 752,
+        "pass_rate": 74.87,
+        "avg_mileage": 68348.0,
+        "pass_rate_vs_national": 17.48,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1285,
+        "pass_rate": 73.46,
+        "avg_mileage": 72756.0,
+        "pass_rate_vs_national": 16.49,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 391,
+        "pass_rate": 72.63,
+        "avg_mileage": 72996.0,
+        "pass_rate_vs_national": 16.45,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 369,
+        "pass_rate": 77.78,
+        "avg_mileage": 72185.0,
+        "pass_rate_vs_national": 21.53,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 428,
+        "pass_rate": 72.43,
+        "avg_mileage": 79171.0,
+        "pass_rate_vs_national": 16.4,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 460,
+        "pass_rate": 72.83,
+        "avg_mileage": 78172.0,
+        "pass_rate_vs_national": 16.15,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 543,
+        "pass_rate": 72.38,
+        "avg_mileage": 83560.0,
+        "pass_rate_vs_national": 14.84,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 652,
+        "pass_rate": 73.31,
+        "avg_mileage": 82279.0,
+        "pass_rate_vs_national": 14.63,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 557,
+        "pass_rate": 76.3,
+        "avg_mileage": 83062.0,
+        "pass_rate_vs_national": 15.68,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "XJ": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 162,
+        "pass_rate": 93.83,
+        "avg_mileage": 21716.0,
+        "pass_rate_vs_national": 6.16,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 429,
+        "pass_rate": 90.68,
+        "avg_mileage": 26756.0,
+        "pass_rate_vs_national": 4.47,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 627,
+        "pass_rate": 89.63,
+        "avg_mileage": 38410.0,
+        "pass_rate_vs_national": 5.39,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 845,
+        "pass_rate": 86.75,
+        "avg_mileage": 48646.0,
+        "pass_rate_vs_national": 5.07,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 1032,
+        "pass_rate": 84.79,
+        "avg_mileage": 58328.0,
+        "pass_rate_vs_national": 6.14,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 892,
+        "pass_rate": 85.2,
+        "avg_mileage": 63822.0,
+        "pass_rate_vs_national": 9.71,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 977,
+        "pass_rate": 79.73,
+        "avg_mileage": 76985.0,
+        "pass_rate_vs_national": 8.02,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 1075,
+        "pass_rate": 78.79,
+        "avg_mileage": 85829.0,
+        "pass_rate_vs_national": 10.5,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 948,
+        "pass_rate": 80.38,
+        "avg_mileage": 91149.0,
+        "pass_rate_vs_national": 14.75,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 1389,
+        "pass_rate": 77.61,
+        "avg_mileage": 99668.0,
+        "pass_rate_vs_national": 14.62,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 163,
+        "pass_rate": 77.3,
+        "avg_mileage": 75602.0,
+        "pass_rate_vs_national": 14.31,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 1241,
+        "pass_rate": 77.44,
+        "avg_mileage": 103461.0,
+        "pass_rate_vs_national": 16.94,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 173,
+        "pass_rate": 78.03,
+        "avg_mileage": 78902.0,
+        "pass_rate_vs_national": 17.53,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 470,
+        "pass_rate": 77.02,
+        "avg_mileage": 96900.0,
+        "pass_rate_vs_national": 18.01,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 109,
+        "pass_rate": 78.9,
+        "avg_mileage": 69778.0,
+        "pass_rate_vs_national": 19.89,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 700,
+        "pass_rate": 73.14,
+        "avg_mileage": 103119.0,
+        "pass_rate_vs_national": 15.75,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 224,
+        "pass_rate": 82.59,
+        "avg_mileage": 79683.0,
+        "pass_rate_vs_national": 25.2,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 908,
+        "pass_rate": 69.05,
+        "avg_mileage": 109112.0,
+        "pass_rate_vs_national": 12.08,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 357,
+        "pass_rate": 71.71,
+        "avg_mileage": 86466.0,
+        "pass_rate_vs_national": 14.74,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 780,
+        "pass_rate": 70.51,
+        "avg_mileage": 111289.0,
+        "pass_rate_vs_national": 14.33,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 566,
+        "pass_rate": 71.2,
+        "avg_mileage": 95277.0,
+        "pass_rate_vs_national": 15.02,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 144,
+        "pass_rate": 65.28,
+        "avg_mileage": 113319.0,
+        "pass_rate_vs_national": 9.03,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 1012,
+        "pass_rate": 71.64,
+        "avg_mileage": 104377.0,
+        "pass_rate_vs_national": 15.39,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 1645,
+        "pass_rate": 68.75,
+        "avg_mileage": 105719.0,
+        "pass_rate_vs_national": 12.72,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 1753,
+        "pass_rate": 70.45,
+        "avg_mileage": 108758.0,
+        "pass_rate_vs_national": 13.77,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 581,
+        "pass_rate": 69.02,
+        "avg_mileage": 91607.0,
+        "pass_rate_vs_national": 11.48,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 625,
+        "pass_rate": 72.32,
+        "avg_mileage": 92789.0,
+        "pass_rate_vs_national": 13.64,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 542,
+        "pass_rate": 69.74,
+        "avg_mileage": 92222.0,
+        "pass_rate_vs_national": 9.12,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "XF": [
+      {
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 880,
+        "pass_rate": 84.32,
+        "avg_mileage": 26899.0,
+        "pass_rate_vs_national": -3.35,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 393,
+        "pass_rate": 86.77,
+        "avg_mileage": 21352.0,
+        "pass_rate_vs_national": -0.9,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 1835,
+        "pass_rate": 85.07,
+        "avg_mileage": 37819.0,
+        "pass_rate_vs_national": -1.14,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1586,
+        "pass_rate": 86.89,
+        "avg_mileage": 28066.0,
+        "pass_rate_vs_national": 0.68,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 3962,
+        "pass_rate": 85.94,
+        "avg_mileage": 46566.0,
+        "pass_rate_vs_national": 1.7,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1887,
+        "pass_rate": 88.82,
+        "avg_mileage": 34100.0,
+        "pass_rate_vs_national": 4.58,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 6477,
+        "pass_rate": 86.0,
+        "avg_mileage": 55366.0,
+        "pass_rate_vs_national": 4.32,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 641,
+        "pass_rate": 86.9,
+        "avg_mileage": 36831.0,
+        "pass_rate_vs_national": 5.22,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 8283,
+        "pass_rate": 84.06,
+        "avg_mileage": 65177.0,
+        "pass_rate_vs_national": 5.41,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 357,
+        "pass_rate": 86.83,
+        "avg_mileage": 43504.0,
+        "pass_rate_vs_national": 8.18,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 9828,
+        "pass_rate": 77.26,
+        "avg_mileage": 72316.0,
+        "pass_rate_vs_national": 1.77,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 176,
+        "pass_rate": 85.8,
+        "avg_mileage": 51166.0,
+        "pass_rate_vs_national": 10.31,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 12232,
+        "pass_rate": 76.06,
+        "avg_mileage": 81388.0,
+        "pass_rate_vs_national": 4.35,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 252,
+        "pass_rate": 86.9,
+        "avg_mileage": 55643.0,
+        "pass_rate_vs_national": 15.19,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 11085,
+        "pass_rate": 75.14,
+        "avg_mileage": 88322.0,
+        "pass_rate_vs_national": 6.85,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 230,
+        "pass_rate": 80.0,
+        "avg_mileage": 64785.0,
+        "pass_rate_vs_national": 11.71,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 10019,
+        "pass_rate": 72.98,
+        "avg_mileage": 94838.0,
+        "pass_rate_vs_national": 7.35,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 153,
+        "pass_rate": 80.39,
+        "avg_mileage": 75340.0,
+        "pass_rate_vs_national": 14.76,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 8196,
+        "pass_rate": 71.22,
+        "avg_mileage": 99415.0,
+        "pass_rate_vs_national": 8.23,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 370,
+        "pass_rate": 77.84,
+        "avg_mileage": 77758.0,
+        "pass_rate_vs_national": 14.85,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 8113,
+        "pass_rate": 67.58,
+        "avg_mileage": 106645.0,
+        "pass_rate_vs_national": 7.08,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 1739,
+        "pass_rate": 72.0,
+        "avg_mileage": 77936.0,
+        "pass_rate_vs_national": 11.5,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 6799,
+        "pass_rate": 66.05,
+        "avg_mileage": 110448.0,
+        "pass_rate_vs_national": 7.04,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 460,
+        "pass_rate": 70.87,
+        "avg_mileage": 93124.0,
+        "pass_rate_vs_national": 11.86,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 4672,
+        "pass_rate": 62.59,
+        "avg_mileage": 114364.0,
+        "pass_rate_vs_national": 5.2,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 976,
+        "pass_rate": 68.44,
+        "avg_mileage": 92850.0,
+        "pass_rate_vs_national": 11.05,
+        "national_avg_for_year": 57.39
+      }
+    ],
+    "XK8": [
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 111,
+        "pass_rate": 77.48,
+        "avg_mileage": 71483.0,
+        "pass_rate_vs_national": 21.3,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 621,
+        "pass_rate": 73.27,
+        "avg_mileage": 74893.0,
+        "pass_rate_vs_national": 17.02,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 564,
+        "pass_rate": 75.89,
+        "avg_mileage": 79920.0,
+        "pass_rate_vs_national": 19.86,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 611,
+        "pass_rate": 72.83,
+        "avg_mileage": 83445.0,
+        "pass_rate_vs_national": 16.15,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 631,
+        "pass_rate": 75.59,
+        "avg_mileage": 81680.0,
+        "pass_rate_vs_national": 18.05,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 676,
+        "pass_rate": 77.51,
+        "avg_mileage": 82122.0,
+        "pass_rate_vs_national": 18.83,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 540,
+        "pass_rate": 67.78,
+        "avg_mileage": 84330.0,
+        "pass_rate_vs_national": 7.16,
+        "national_avg_for_year": 60.62
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "EL",
+      "model_count": 4,
+      "total_tests": 12913,
+      "pass_rate": 91.63,
+      "fuel_name": "Electric"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 103,
+      "total_tests": 95970,
+      "pass_rate": 78.48,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 59,
+      "total_tests": 222670,
+      "pass_rate": 77.22,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "XJ",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 224,
+      "pass_rate": 82.59,
+      "pass_rate_vs_national": 25.2,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "XK",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 589,
+      "pass_rate": 82.68,
+      "pass_rate_vs_national": 22.18,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 1141,
+      "pass_rate": 90.18,
+      "pass_rate_vs_national": 21.89,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "XKR",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 659,
+      "pass_rate": 80.58,
+      "pass_rate_vs_national": 21.57,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "XKR",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 369,
+      "pass_rate": 77.78,
+      "pass_rate_vs_national": 21.53,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "XK8",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 111,
+      "pass_rate": 77.48,
+      "pass_rate_vs_national": 21.3,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "XK",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 566,
+      "pass_rate": 84.28,
+      "pass_rate_vs_national": 21.29,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "XK",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 840,
+      "pass_rate": 89.52,
+      "pass_rate_vs_national": 21.23,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "XKR",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 869,
+      "pass_rate": 81.36,
+      "pass_rate_vs_national": 20.86,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "XK",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 704,
+      "pass_rate": 77.98,
+      "pass_rate_vs_national": 20.59,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "XJ",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 109,
+      "pass_rate": 78.9,
+      "pass_rate_vs_national": 19.89,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "XK8",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 564,
+      "pass_rate": 75.89,
+      "pass_rate_vs_national": 19.86,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "XKR",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 667,
+      "pass_rate": 82.31,
+      "pass_rate_vs_national": 19.32,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "XK",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 544,
+      "pass_rate": 84.93,
+      "pass_rate_vs_national": 19.3,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "XKR",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 337,
+      "pass_rate": 84.87,
+      "pass_rate_vs_national": 19.24,
+      "national_avg_for_year": 65.63
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "X-TYPE",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 1394,
+      "pass_rate": 49.57,
+      "pass_rate_vs_national": -6.46,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "XE",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 811,
+      "pass_rate": 81.38,
+      "pass_rate_vs_national": -6.29,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "XE",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 2159,
+      "pass_rate": 80.96,
+      "pass_rate_vs_national": -5.25,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 2085,
+      "pass_rate": 51.32,
+      "pass_rate_vs_national": -4.93,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "XE REIMS EDITION AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 211,
+      "pass_rate": 83.41,
+      "pass_rate_vs_national": -4.26,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "XE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 3082,
+      "pass_rate": 80.82,
+      "pass_rate_vs_national": -3.42,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "XF",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 880,
+      "pass_rate": 84.32,
+      "pass_rate_vs_national": -3.35,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "XE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2573,
+      "pass_rate": 83.44,
+      "pass_rate_vs_national": -2.77,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 3344,
+      "pass_rate": 54.37,
+      "pass_rate_vs_national": -2.6,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 2995,
+      "pass_rate": 53.62,
+      "pass_rate_vs_national": -2.56,
+      "national_avg_for_year": 56.18
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 21256,
+        "vehicle_count": 165
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 20739,
+        "vehicle_count": 166
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 18952,
+        "vehicle_count": 154
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 16833,
+        "vehicle_count": 163
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 12379,
+        "vehicle_count": 165
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 7636,
+        "vehicle_count": 154
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 4547,
+        "vehicle_count": 143
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 3236,
+        "vehicle_count": 113
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 2982,
+        "vehicle_count": 130
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 1410,
+        "vehicle_count": 111
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 1013,
+        "vehicle_count": 104
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 6143
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 5745
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 4886
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 4801
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 4177
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 3490
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 3343
+      },
+      {
+        "defect_description": "ball joint dust cover no longer prevents the ingress of dirt",
+        "category_name": "Suspension",
+        "total_occurrences": 3154
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 2636
+      },
+      {
+        "defect_description": "too low",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 2431
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 55237
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 37893
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 27805
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 18212
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 13125
+      },
+      {
+        "defect_description": "corroded but not seriously weakened",
+        "category_name": "Suspension",
+        "total_occurrences": 11620
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 8261
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 6629
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 5118
+      },
+      {
+        "defect_description": "has a cut but not deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 4092
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 53180
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 38423
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 32686
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 19627
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 7797
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 5567
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 4784
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 784
+      },
+      {
+        "defect_description": "has a lump, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 519
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 255
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 62614,
+      "avg_pass_rate": 89.85
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 107179,
+      "avg_pass_rate": 83.85
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 75169,
+      "avg_pass_rate": 75.61
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 49085,
+      "avg_pass_rate": 67.72
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 24384,
+      "avg_pass_rate": 62.13
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 12522,
+      "avg_pass_rate": 58.49
+    }
+  ],
+  "all_models": [
+    {
+      "model": "F-PACE RDYNAM HSE D MHEV AWD A",
+      "model_year": 2021,
+      "fuel_type": "DI",
+      "total_tests": 110,
+      "total_passes": 105,
+      "total_fails": 5,
+      "pass_rate": 95.45,
+      "avg_mileage": 22464.0,
+      "avg_age_years": 2.0,
+      "pass_rate_vs_national": 23.94
+    },
+    {
+      "model": "I-PACE",
+      "model_year": 2021,
+      "fuel_type": "EL",
+      "total_tests": 120,
+      "total_passes": 114,
+      "total_fails": 4,
+      "pass_rate": 95.0,
+      "avg_mileage": 26584.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 23.49
+    },
+    {
+      "model": "XJ",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 162,
+      "total_passes": 152,
+      "total_fails": 6,
+      "pass_rate": 93.83,
+      "avg_mileage": 21716.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 22.32
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 2079,
+      "total_passes": 1916,
+      "total_fails": 130,
+      "pass_rate": 92.16,
+      "avg_mileage": 30784.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 20.65
+    },
+    {
+      "model": "I-PACE",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 7971,
+      "total_passes": 7343,
+      "total_fails": 456,
+      "pass_rate": 92.12,
+      "avg_mileage": 27652.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 20.61
+    },
+    {
+      "model": "F-TYPE FIRST EDITION I4 AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 123,
+      "total_passes": 113,
+      "total_fails": 6,
+      "pass_rate": 91.87,
+      "avg_mileage": 15820.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 20.36
+    },
+    {
+      "model": "E-PACE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 824,
+      "total_passes": 756,
+      "total_fails": 46,
+      "pass_rate": 91.75,
+      "avg_mileage": 19121.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 20.24
+    },
+    {
+      "model": "E-PACE CHEQUERED FLAG AWD AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 845,
+      "total_passes": 773,
+      "total_fails": 48,
+      "pass_rate": 91.48,
+      "avg_mileage": 20507.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 19.97
+    },
+    {
+      "model": "XE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 633,
+      "total_passes": 578,
+      "total_fails": 47,
+      "pass_rate": 91.31,
+      "avg_mileage": 19532.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 19.8
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1631,
+      "total_passes": 1488,
+      "total_fails": 108,
+      "pass_rate": 91.23,
+      "avg_mileage": 18972.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 19.72
+    },
+    {
+      "model": "E-PACE CHEQUERED FLAG D AWD A",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2201,
+      "total_passes": 2006,
+      "total_fails": 147,
+      "pass_rate": 91.14,
+      "avg_mileage": 26020.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 19.63
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 2087,
+      "total_passes": 1898,
+      "total_fails": 158,
+      "pass_rate": 90.94,
+      "avg_mileage": 39573.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 19.43
+    },
+    {
+      "model": "I-PACE",
+      "model_year": 2019,
+      "fuel_type": "EL",
+      "total_tests": 4023,
+      "total_passes": 3651,
+      "total_fails": 316,
+      "pass_rate": 90.75,
+      "avg_mileage": 32178.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 19.24
+    },
+    {
+      "model": "E-PACE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2208,
+      "total_passes": 2003,
+      "total_fails": 154,
+      "pass_rate": 90.72,
+      "avg_mileage": 26832.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 19.2
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 2101,
+      "total_passes": 1906,
+      "total_fails": 157,
+      "pass_rate": 90.72,
+      "avg_mileage": 27575.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 19.21
+    },
+    {
+      "model": "XJ",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 429,
+      "total_passes": 389,
+      "total_fails": 36,
+      "pass_rate": 90.68,
+      "avg_mileage": 26756.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 19.17
+    },
+    {
+      "model": "I-PACE",
+      "model_year": 2018,
+      "fuel_type": "EL",
+      "total_tests": 799,
+      "total_passes": 724,
+      "total_fails": 67,
+      "pass_rate": 90.61,
+      "avg_mileage": 33139.0,
+      "avg_age_years": 4.2,
+      "pass_rate_vs_national": 19.1
+    },
+    {
+      "model": "E-PACE CHEQUERED FLAG D AWD A",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1333,
+      "total_passes": 1206,
+      "total_fails": 102,
+      "pass_rate": 90.47,
+      "avg_mileage": 30828.0,
+      "avg_age_years": 3.2,
+      "pass_rate_vs_national": 18.96
+    },
+    {
+      "model": "F-TYPE R-DYNAMIC V8 AWD AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 125,
+      "total_passes": 113,
+      "total_fails": 10,
+      "pass_rate": 90.4,
+      "avg_mileage": 14445.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 18.89
+    },
+    {
+      "model": "E-PACE",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 2368,
+      "total_passes": 2140,
+      "total_fails": 181,
+      "pass_rate": 90.37,
+      "avg_mileage": 25253.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.86
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 1141,
+      "total_passes": 1029,
+      "total_fails": 94,
+      "pass_rate": 90.18,
+      "avg_mileage": 39369.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 18.67
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 459,
+      "total_passes": 413,
+      "total_fails": 41,
+      "pass_rate": 89.98,
+      "avg_mileage": 48522.0,
+      "avg_age_years": 6.3,
+      "pass_rate_vs_national": 18.47
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1953,
+      "total_passes": 1756,
+      "total_fails": 161,
+      "pass_rate": 89.91,
+      "avg_mileage": 35909.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 18.4
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1832,
+      "total_passes": 1642,
+      "total_fails": 156,
+      "pass_rate": 89.63,
+      "avg_mileage": 23304.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 18.12
+    },
+    {
+      "model": "XJ",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 627,
+      "total_passes": 562,
+      "total_fails": 56,
+      "pass_rate": 89.63,
+      "avg_mileage": 38410.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 18.12
+    },
+    {
+      "model": "XK",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 840,
+      "total_passes": 752,
+      "total_fails": 80,
+      "pass_rate": 89.52,
+      "avg_mileage": 43538.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 18.01
+    },
+    {
+      "model": "E-PACE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 2210,
+      "total_passes": 1972,
+      "total_fails": 181,
+      "pass_rate": 89.23,
+      "avg_mileage": 32449.0,
+      "avg_age_years": 4.2,
+      "pass_rate_vs_national": 17.72
+    },
+    {
+      "model": "XF",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1887,
+      "total_passes": 1676,
+      "total_fails": 169,
+      "pass_rate": 88.82,
+      "avg_mileage": 34100.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 17.31
+    },
+    {
+      "model": "XK",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 1174,
+      "total_passes": 1042,
+      "total_fails": 106,
+      "pass_rate": 88.76,
+      "avg_mileage": 38762.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 17.25
+    },
+    {
+      "model": "F-TYPE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 589,
+      "total_passes": 522,
+      "total_fails": 49,
+      "pass_rate": 88.62,
+      "avg_mileage": 13745.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.11
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1356,
+      "total_passes": 1201,
+      "total_fails": 107,
+      "pass_rate": 88.57,
+      "avg_mileage": 23307.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.06
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1652,
+      "total_passes": 1455,
+      "total_fails": 154,
+      "pass_rate": 88.08,
+      "avg_mileage": 36581.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 16.56
+    },
+    {
+      "model": "XE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 2219,
+      "total_passes": 1945,
+      "total_fails": 205,
+      "pass_rate": 87.65,
+      "avg_mileage": 37690.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 16.14
+    },
+    {
+      "model": "E-PACE",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 7739,
+      "total_passes": 6768,
+      "total_fails": 777,
+      "pass_rate": 87.45,
+      "avg_mileage": 33591.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.94
+    },
+    {
+      "model": "XF",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 252,
+      "total_passes": 219,
+      "total_fails": 24,
+      "pass_rate": 86.9,
+      "avg_mileage": 55643.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 15.39
+    },
+    {
+      "model": "XF",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 641,
+      "total_passes": 557,
+      "total_fails": 66,
+      "pass_rate": 86.9,
+      "avg_mileage": 36831.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 15.38
+    },
+    {
+      "model": "XF",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1586,
+      "total_passes": 1378,
+      "total_fails": 158,
+      "pass_rate": 86.89,
+      "avg_mileage": 28066.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 15.37
+    },
+    {
+      "model": "XF",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 357,
+      "total_passes": 310,
+      "total_fails": 40,
+      "pass_rate": 86.83,
+      "avg_mileage": 43504.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 15.32
+    },
+    {
+      "model": "XF",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 393,
+      "total_passes": 341,
+      "total_fails": 38,
+      "pass_rate": 86.77,
+      "avg_mileage": 21352.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 15.26
+    },
+    {
+      "model": "XJ",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 845,
+      "total_passes": 733,
+      "total_fails": 100,
+      "pass_rate": 86.75,
+      "avg_mileage": 48646.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 15.23
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2028,
+      "total_passes": 1757,
+      "total_fails": 202,
+      "pass_rate": 86.64,
+      "avg_mileage": 28884.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 15.13
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 5377,
+      "total_passes": 4655,
+      "total_fails": 546,
+      "pass_rate": 86.57,
+      "avg_mileage": 28976.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 15.06
+    },
+    {
+      "model": "XF",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 6477,
+      "total_passes": 5570,
+      "total_fails": 747,
+      "pass_rate": 86.0,
+      "avg_mileage": 55366.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 14.49
+    },
+    {
+      "model": "XF",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 3962,
+      "total_passes": 3405,
+      "total_fails": 446,
+      "pass_rate": 85.94,
+      "avg_mileage": 46566.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 14.43
+    },
+    {
+      "model": "XF",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 176,
+      "total_passes": 151,
+      "total_fails": 19,
+      "pass_rate": 85.8,
+      "avg_mileage": 51166.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 14.28
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 8913,
+      "total_passes": 7639,
+      "total_fails": 1017,
+      "pass_rate": 85.71,
+      "avg_mileage": 46915.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 14.2
+    },
+    {
+      "model": "E-PACE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 8037,
+      "total_passes": 6874,
+      "total_fails": 926,
+      "pass_rate": 85.53,
+      "avg_mileage": 40511.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 14.02
+    },
+    {
+      "model": "XE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 2635,
+      "total_passes": 2252,
+      "total_fails": 312,
+      "pass_rate": 85.46,
+      "avg_mileage": 33836.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 13.95
+    },
+    {
+      "model": "XJ",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 892,
+      "total_passes": 760,
+      "total_fails": 121,
+      "pass_rate": 85.2,
+      "avg_mileage": 63822.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 13.69
+    },
+    {
+      "model": "XF",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 1835,
+      "total_passes": 1561,
+      "total_fails": 207,
+      "pass_rate": 85.07,
+      "avg_mileage": 37819.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 13.56
+    },
+    {
+      "model": "XK",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 544,
+      "total_passes": 462,
+      "total_fails": 66,
+      "pass_rate": 84.93,
+      "avg_mileage": 49198.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 13.42
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 7945,
+      "total_passes": 6745,
+      "total_fails": 895,
+      "pass_rate": 84.9,
+      "avg_mileage": 37044.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 13.39
+    },
+    {
+      "model": "XKR",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 337,
+      "total_passes": 286,
+      "total_fails": 45,
+      "pass_rate": 84.87,
+      "avg_mileage": 50960.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 13.36
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 1428,
+      "total_passes": 1211,
+      "total_fails": 171,
+      "pass_rate": 84.8,
+      "avg_mileage": 43738.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 13.29
+    },
+    {
+      "model": "XJ",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 1032,
+      "total_passes": 875,
+      "total_fails": 139,
+      "pass_rate": 84.79,
+      "avg_mileage": 58328.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 13.28
+    },
+    {
+      "model": "XF",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 880,
+      "total_passes": 742,
+      "total_fails": 110,
+      "pass_rate": 84.32,
+      "avg_mileage": 26899.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 12.81
+    },
+    {
+      "model": "XK",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 566,
+      "total_passes": 477,
+      "total_fails": 73,
+      "pass_rate": 84.28,
+      "avg_mileage": 55474.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 12.76
+    },
+    {
+      "model": "XK",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 120,
+      "total_passes": 101,
+      "total_fails": 19,
+      "pass_rate": 84.17,
+      "avg_mileage": 30836.0,
+      "avg_age_years": 7.6,
+      "pass_rate_vs_national": 12.66
+    },
+    {
+      "model": "XF",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 8283,
+      "total_passes": 6963,
+      "total_fails": 1094,
+      "pass_rate": 84.06,
+      "avg_mileage": 65177.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 12.55
+    },
+    {
+      "model": "XE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 2142,
+      "total_passes": 1800,
+      "total_fails": 265,
+      "pass_rate": 84.03,
+      "avg_mileage": 44263.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 12.52
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 7174,
+      "total_passes": 6016,
+      "total_fails": 966,
+      "pass_rate": 83.86,
+      "avg_mileage": 62330.0,
+      "avg_age_years": 6.3,
+      "pass_rate_vs_national": 12.35
+    },
+    {
+      "model": "E-PACE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 154,
+      "total_passes": 129,
+      "total_fails": 20,
+      "pass_rate": 83.77,
+      "avg_mileage": 40481.0,
+      "avg_age_years": 5.1,
+      "pass_rate_vs_national": 12.26
+    },
+    {
+      "model": "F-PACE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 10951,
+      "total_passes": 9174,
+      "total_fails": 1435,
+      "pass_rate": 83.77,
+      "avg_mileage": 55672.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 12.26
+    },
+    {
+      "model": "XE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2573,
+      "total_passes": 2147,
+      "total_fails": 336,
+      "pass_rate": 83.44,
+      "avg_mileage": 27749.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 11.93
+    },
+    {
+      "model": "XE REIMS EDITION AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 211,
+      "total_passes": 176,
+      "total_fails": 27,
+      "pass_rate": 83.41,
+      "avg_mileage": 20699.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 11.9
+    },
+    {
+      "model": "XE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 2251,
+      "total_passes": 1867,
+      "total_fails": 309,
+      "pass_rate": 82.94,
+      "avg_mileage": 47768.0,
+      "avg_age_years": 7.3,
+      "pass_rate_vs_national": 11.43
+    },
+    {
+      "model": "XK",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 589,
+      "total_passes": 487,
+      "total_fails": 91,
+      "pass_rate": 82.68,
+      "avg_mileage": 62735.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 11.17
+    },
+    {
+      "model": "XJ",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 224,
+      "total_passes": 185,
+      "total_fails": 35,
+      "pass_rate": 82.59,
+      "avg_mileage": 79683.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 11.08
+    },
+    {
+      "model": "XKR",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 667,
+      "total_passes": 549,
+      "total_fails": 104,
+      "pass_rate": 82.31,
+      "avg_mileage": 51968.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 10.8
+    },
+    {
+      "model": "XE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 8446,
+      "total_passes": 6912,
+      "total_fails": 1234,
+      "pass_rate": 81.84,
+      "avg_mileage": 55829.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 10.33
+    },
+    {
+      "model": "XE",
+      "model_year": 2020,
+      "fuel_type": "DI",
+      "total_tests": 811,
+      "total_passes": 660,
+      "total_fails": 129,
+      "pass_rate": 81.38,
+      "avg_mileage": 27585.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 9.87
+    },
+    {
+      "model": "XKR",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 869,
+      "total_passes": 707,
+      "total_fails": 146,
+      "pass_rate": 81.36,
+      "avg_mileage": 60097.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 9.85
+    },
+    {
+      "model": "XE",
+      "model_year": 2019,
+      "fuel_type": "DI",
+      "total_tests": 2159,
+      "total_passes": 1748,
+      "total_fails": 327,
+      "pass_rate": 80.96,
+      "avg_mileage": 38897.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 9.45
+    },
+    {
+      "model": "XE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 3082,
+      "total_passes": 2491,
+      "total_fails": 456,
+      "pass_rate": 80.82,
+      "avg_mileage": 49934.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 9.31
+    },
+    {
+      "model": "XKR",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 659,
+      "total_passes": 531,
+      "total_fails": 117,
+      "pass_rate": 80.58,
+      "avg_mileage": 63049.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 9.07
+    },
+    {
+      "model": "XF",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 153,
+      "total_passes": 123,
+      "total_fails": 27,
+      "pass_rate": 80.39,
+      "avg_mileage": 75340.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 8.88
+    },
+    {
+      "model": "XJ",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 948,
+      "total_passes": 762,
+      "total_fails": 165,
+      "pass_rate": 80.38,
+      "avg_mileage": 91149.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 8.87
+    },
+    {
+      "model": "XF",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 230,
+      "total_passes": 184,
+      "total_fails": 40,
+      "pass_rate": 80.0,
+      "avg_mileage": 64785.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 8.49
+    },
+    {
+      "model": "XJ",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 977,
+      "total_passes": 779,
+      "total_fails": 181,
+      "pass_rate": 79.73,
+      "avg_mileage": 76985.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 8.22
+    },
+    {
+      "model": "XE",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 10275,
+      "total_passes": 8157,
+      "total_fails": 1694,
+      "pass_rate": 79.39,
+      "avg_mileage": 66527.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 7.88
+    },
+    {
+      "model": "XJ",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 109,
+      "total_passes": 86,
+      "total_fails": 20,
+      "pass_rate": 78.9,
+      "avg_mileage": 69778.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": 7.39
+    },
+    {
+      "model": "XJ",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1075,
+      "total_passes": 847,
+      "total_fails": 206,
+      "pass_rate": 78.79,
+      "avg_mileage": 85829.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 7.28
+    },
+    {
+      "model": "XK",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 599,
+      "total_passes": 468,
+      "total_fails": 104,
+      "pass_rate": 78.13,
+      "avg_mileage": 67346.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 6.62
+    },
+    {
+      "model": "XE",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 6461,
+      "total_passes": 5047,
+      "total_fails": 1121,
+      "pass_rate": 78.11,
+      "avg_mileage": 73351.0,
+      "avg_age_years": 7.3,
+      "pass_rate_vs_national": 6.6
+    },
+    {
+      "model": "XJ",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 173,
+      "total_passes": 135,
+      "total_fails": 30,
+      "pass_rate": 78.03,
+      "avg_mileage": 78902.0,
+      "avg_age_years": 12.3,
+      "pass_rate_vs_national": 6.52
+    },
+    {
+      "model": "XK",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 704,
+      "total_passes": 549,
+      "total_fails": 131,
+      "pass_rate": 77.98,
+      "avg_mileage": 71047.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 6.47
+    },
+    {
+      "model": "XF",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 370,
+      "total_passes": 288,
+      "total_fails": 63,
+      "pass_rate": 77.84,
+      "avg_mileage": 77758.0,
+      "avg_age_years": 11.6,
+      "pass_rate_vs_national": 6.33
+    },
+    {
+      "model": "XKR",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 369,
+      "total_passes": 287,
+      "total_fails": 69,
+      "pass_rate": 77.78,
+      "avg_mileage": 72185.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 6.27
+    },
+    {
+      "model": "XJ",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 1389,
+      "total_passes": 1078,
+      "total_fails": 272,
+      "pass_rate": 77.61,
+      "avg_mileage": 99668.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 6.1
+    },
+    {
+      "model": "XK8",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 676,
+      "total_passes": 524,
+      "total_fails": 130,
+      "pass_rate": 77.51,
+      "avg_mileage": 82122.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": 6.0
+    },
+    {
+      "model": "XK8",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 111,
+      "total_passes": 86,
+      "total_fails": 20,
+      "pass_rate": 77.48,
+      "avg_mileage": 71483.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 5.97
+    },
+    {
+      "model": "XJ",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 1241,
+      "total_passes": 961,
+      "total_fails": 250,
+      "pass_rate": 77.44,
+      "avg_mileage": 103461.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": 5.93
+    },
+    {
+      "model": "XJ",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 163,
+      "total_passes": 126,
+      "total_fails": 29,
+      "pass_rate": 77.3,
+      "avg_mileage": 75602.0,
+      "avg_age_years": 11.6,
+      "pass_rate_vs_national": 5.79
+    },
+    {
+      "model": "XF",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 9828,
+      "total_passes": 7593,
+      "total_fails": 1763,
+      "pass_rate": 77.26,
+      "avg_mileage": 72316.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 5.75
+    },
+    {
+      "model": "XJ",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 470,
+      "total_passes": 362,
+      "total_fails": 88,
+      "pass_rate": 77.02,
+      "avg_mileage": 96900.0,
+      "avg_age_years": 13.6,
+      "pass_rate_vs_national": 5.51
+    },
+    {
+      "model": "XKR",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 557,
+      "total_passes": 425,
+      "total_fails": 119,
+      "pass_rate": 76.3,
+      "avg_mileage": 83062.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": 4.79
+    },
+    {
+      "model": "XF",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 12232,
+      "total_passes": 9304,
+      "total_fails": 2485,
+      "pass_rate": 76.06,
+      "avg_mileage": 81388.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 4.55
+    },
+    {
+      "model": "XK8",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 564,
+      "total_passes": 428,
+      "total_fails": 112,
+      "pass_rate": 75.89,
+      "avg_mileage": 79920.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 4.38
+    },
+    {
+      "model": "XK8",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 631,
+      "total_passes": 477,
+      "total_fails": 135,
+      "pass_rate": 75.59,
+      "avg_mileage": 81680.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": 4.08
+    },
+    {
+      "model": "XF",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 11085,
+      "total_passes": 8329,
+      "total_fails": 2398,
+      "pass_rate": 75.14,
+      "avg_mileage": 88322.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 3.63
+    },
+    {
+      "model": "XK",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1777,
+      "total_passes": 1335,
+      "total_fails": 373,
+      "pass_rate": 75.13,
+      "avg_mileage": 81030.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 3.62
+    },
+    {
+      "model": "XK",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1091,
+      "total_passes": 817,
+      "total_fails": 243,
+      "pass_rate": 74.89,
+      "avg_mileage": 76694.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 3.37
+    },
+    {
+      "model": "XKR",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 752,
+      "total_passes": 563,
+      "total_fails": 161,
+      "pass_rate": 74.87,
+      "avg_mileage": 68348.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 3.36
+    },
+    {
+      "model": "XJR",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 137,
+      "total_passes": 101,
+      "total_fails": 31,
+      "pass_rate": 73.72,
+      "avg_mileage": 108443.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": 2.21
+    },
+    {
+      "model": "XKR",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1285,
+      "total_passes": 944,
+      "total_fails": 305,
+      "pass_rate": 73.46,
+      "avg_mileage": 72756.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 1.95
+    },
+    {
+      "model": "XJR",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 139,
+      "total_passes": 102,
+      "total_fails": 30,
+      "pass_rate": 73.38,
+      "avg_mileage": 108367.0,
+      "avg_age_years": 21.6,
+      "pass_rate_vs_national": 1.87
+    },
+    {
+      "model": "XJR",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 154,
+      "total_passes": 113,
+      "total_fails": 29,
+      "pass_rate": 73.38,
+      "avg_mileage": 92513.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 1.87
+    },
+    {
+      "model": "XJR",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 244,
+      "total_passes": 179,
+      "total_fails": 56,
+      "pass_rate": 73.36,
+      "avg_mileage": 112872.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": 1.85
+    },
+    {
+      "model": "XKR",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 652,
+      "total_passes": 478,
+      "total_fails": 153,
+      "pass_rate": 73.31,
+      "avg_mileage": 82279.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": 1.8
+    },
+    {
+      "model": "XK8",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 621,
+      "total_passes": 455,
+      "total_fails": 151,
+      "pass_rate": 73.27,
+      "avg_mileage": 74893.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 1.76
+    },
+    {
+      "model": "XJ",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 700,
+      "total_passes": 512,
+      "total_fails": 163,
+      "pass_rate": 73.14,
+      "avg_mileage": 103119.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 1.63
+    },
+    {
+      "model": "XF",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 10019,
+      "total_passes": 7312,
+      "total_fails": 2361,
+      "pass_rate": 72.98,
+      "avg_mileage": 94838.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 1.47
+    },
+    {
+      "model": "XK8",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 611,
+      "total_passes": 445,
+      "total_fails": 148,
+      "pass_rate": 72.83,
+      "avg_mileage": 83445.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": 1.32
+    },
+    {
+      "model": "XKR",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 460,
+      "total_passes": 335,
+      "total_fails": 108,
+      "pass_rate": 72.83,
+      "avg_mileage": 78172.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": 1.32
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 139,
+      "total_passes": 101,
+      "total_fails": 32,
+      "pass_rate": 72.66,
+      "avg_mileage": 79982.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 1.15
+    },
+    {
+      "model": "XKR",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 391,
+      "total_passes": 284,
+      "total_fails": 91,
+      "pass_rate": 72.63,
+      "avg_mileage": 72996.0,
+      "avg_age_years": 16.2,
+      "pass_rate_vs_national": 1.12
+    },
+    {
+      "model": "XKR",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 428,
+      "total_passes": 310,
+      "total_fails": 106,
+      "pass_rate": 72.43,
+      "avg_mileage": 79171.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 0.92
+    },
+    {
+      "model": "XKR",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 543,
+      "total_passes": 393,
+      "total_fails": 131,
+      "pass_rate": 72.38,
+      "avg_mileage": 83560.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": 0.86
+    },
+    {
+      "model": "XJ",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 625,
+      "total_passes": 452,
+      "total_fails": 135,
+      "pass_rate": 72.32,
+      "avg_mileage": 92789.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": 0.81
+    },
+    {
+      "model": "XF",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 1739,
+      "total_passes": 1252,
+      "total_fails": 392,
+      "pass_rate": 72.0,
+      "avg_mileage": 77936.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": 0.48
+    },
+    {
+      "model": "XJ",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 357,
+      "total_passes": 256,
+      "total_fails": 82,
+      "pass_rate": 71.71,
+      "avg_mileage": 86466.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 0.2
+    },
+    {
+      "model": "XJ",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1012,
+      "total_passes": 725,
+      "total_fails": 232,
+      "pass_rate": 71.64,
+      "avg_mileage": 104377.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": 0.13
+    },
+    {
+      "model": "XF",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 8196,
+      "total_passes": 5837,
+      "total_fails": 2022,
+      "pass_rate": 71.22,
+      "avg_mileage": 99415.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -0.29
+    },
+    {
+      "model": "XJ",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 566,
+      "total_passes": 403,
+      "total_fails": 136,
+      "pass_rate": 71.2,
+      "avg_mileage": 95277.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -0.31
+    },
+    {
+      "model": "XF",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 460,
+      "total_passes": 326,
+      "total_fails": 111,
+      "pass_rate": 70.87,
+      "avg_mileage": 93124.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -0.64
+    },
+    {
+      "model": "XJR",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 130,
+      "total_passes": 92,
+      "total_fails": 29,
+      "pass_rate": 70.77,
+      "avg_mileage": 99119.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -0.74
+    },
+    {
+      "model": "XJ",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 780,
+      "total_passes": 550,
+      "total_fails": 195,
+      "pass_rate": 70.51,
+      "avg_mileage": 111289.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -1.0
+    },
+    {
+      "model": "XJ",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 1753,
+      "total_passes": 1235,
+      "total_fails": 452,
+      "pass_rate": 70.45,
+      "avg_mileage": 108758.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -1.06
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 179,
+      "total_passes": 126,
+      "total_fails": 45,
+      "pass_rate": 70.39,
+      "avg_mileage": 98686.0,
+      "avg_age_years": 12.7,
+      "pass_rate_vs_national": -1.12
+    },
+    {
+      "model": "XJ",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 542,
+      "total_passes": 378,
+      "total_fails": 142,
+      "pass_rate": 69.74,
+      "avg_mileage": 92222.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -1.77
+    },
+    {
+      "model": "XJR",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 174,
+      "total_passes": 121,
+      "total_fails": 46,
+      "pass_rate": 69.54,
+      "avg_mileage": 108718.0,
+      "avg_age_years": 18.6,
+      "pass_rate_vs_national": -1.97
+    },
+    {
+      "model": "XJ",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 908,
+      "total_passes": 627,
+      "total_fails": 231,
+      "pass_rate": 69.05,
+      "avg_mileage": 109112.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -2.46
+    },
+    {
+      "model": "XJ",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 581,
+      "total_passes": 401,
+      "total_fails": 158,
+      "pass_rate": 69.02,
+      "avg_mileage": 91607.0,
+      "avg_age_years": 20.6,
+      "pass_rate_vs_national": -2.49
+    },
+    {
+      "model": "XJ",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1645,
+      "total_passes": 1131,
+      "total_fails": 431,
+      "pass_rate": 68.75,
+      "avg_mileage": 105719.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -2.76
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 752,
+      "total_passes": 515,
+      "total_fails": 197,
+      "pass_rate": 68.48,
+      "avg_mileage": 90228.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -3.03
+    },
+    {
+      "model": "XF",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 976,
+      "total_passes": 668,
+      "total_fails": 247,
+      "pass_rate": 68.44,
+      "avg_mileage": 92850.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -3.07
+    },
+    {
+      "model": "XK8",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 540,
+      "total_passes": 366,
+      "total_fails": 150,
+      "pass_rate": 67.78,
+      "avg_mileage": 84330.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -3.73
+    },
+    {
+      "model": "XF",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 8113,
+      "total_passes": 5483,
+      "total_fails": 2228,
+      "pass_rate": 67.58,
+      "avg_mileage": 106645.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -3.93
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 605,
+      "total_passes": 401,
+      "total_fails": 167,
+      "pass_rate": 66.28,
+      "avg_mileage": 85140.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -5.23
+    },
+    {
+      "model": "XF",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 6799,
+      "total_passes": 4491,
+      "total_fails": 1933,
+      "pass_rate": 66.05,
+      "avg_mileage": 110448.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -5.46
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 998,
+      "total_passes": 656,
+      "total_fails": 287,
+      "pass_rate": 65.73,
+      "avg_mileage": 88020.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -5.78
+    },
+    {
+      "model": "XJ",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 144,
+      "total_passes": 94,
+      "total_fails": 41,
+      "pass_rate": 65.28,
+      "avg_mileage": 113319.0,
+      "avg_age_years": 17.3,
+      "pass_rate_vs_national": -6.23
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1632,
+      "total_passes": 1050,
+      "total_fails": 499,
+      "pass_rate": 64.34,
+      "avg_mileage": 90890.0,
+      "avg_age_years": 18.6,
+      "pass_rate_vs_national": -7.17
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 1638,
+      "total_passes": 1046,
+      "total_fails": 522,
+      "pass_rate": 63.86,
+      "avg_mileage": 94974.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -7.65
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 1230,
+      "total_passes": 781,
+      "total_fails": 386,
+      "pass_rate": 63.5,
+      "avg_mileage": 103122.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -8.01
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 846,
+      "total_passes": 530,
+      "total_fails": 286,
+      "pass_rate": 62.65,
+      "avg_mileage": 94333.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": -8.86
+    },
+    {
+      "model": "XF",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 4672,
+      "total_passes": 2924,
+      "total_fails": 1437,
+      "pass_rate": 62.59,
+      "avg_mileage": 114364.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -8.93
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 857,
+      "total_passes": 536,
+      "total_fails": 276,
+      "pass_rate": 62.54,
+      "avg_mileage": 87880.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -8.97
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 1671,
+      "total_passes": 1043,
+      "total_fails": 527,
+      "pass_rate": 62.42,
+      "avg_mileage": 95339.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -9.09
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 4500,
+      "total_passes": 2801,
+      "total_fails": 1501,
+      "pass_rate": 62.24,
+      "avg_mileage": 103088.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -9.27
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1175,
+      "total_passes": 731,
+      "total_fails": 371,
+      "pass_rate": 62.21,
+      "avg_mileage": 87223.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -9.3
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 849,
+      "total_passes": 526,
+      "total_fails": 269,
+      "pass_rate": 61.96,
+      "avg_mileage": 85155.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -9.56
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 929,
+      "total_passes": 554,
+      "total_fails": 322,
+      "pass_rate": 59.63,
+      "avg_mileage": 104375.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -11.88
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 5154,
+      "total_passes": 3064,
+      "total_fails": 1814,
+      "pass_rate": 59.45,
+      "avg_mileage": 113594.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -12.06
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 2349,
+      "total_passes": 1391,
+      "total_fails": 827,
+      "pass_rate": 59.22,
+      "avg_mileage": 86235.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -12.29
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 688,
+      "total_passes": 403,
+      "total_fails": 244,
+      "pass_rate": 58.58,
+      "avg_mileage": 83506.0,
+      "avg_age_years": 21.3,
+      "pass_rate_vs_national": -12.94
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 1307,
+      "total_passes": 763,
+      "total_fails": 465,
+      "pass_rate": 58.38,
+      "avg_mileage": 91989.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -13.13
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1488,
+      "total_passes": 862,
+      "total_fails": 513,
+      "pass_rate": 57.93,
+      "avg_mileage": 88439.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -13.58
+    },
+    {
+      "model": "S-TYPE",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 438,
+      "total_passes": 251,
+      "total_fails": 159,
+      "pass_rate": 57.31,
+      "avg_mileage": 107295.0,
+      "avg_age_years": 18.3,
+      "pass_rate_vs_national": -14.2
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1930,
+      "total_passes": 1102,
+      "total_fails": 694,
+      "pass_rate": 57.1,
+      "avg_mileage": 87070.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -14.41
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 1707,
+      "total_passes": 960,
+      "total_fails": 643,
+      "pass_rate": 56.24,
+      "avg_mileage": 87087.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -15.27
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 215,
+      "total_passes": 117,
+      "total_fails": 87,
+      "pass_rate": 54.42,
+      "avg_mileage": 121804.0,
+      "avg_age_years": 19.2,
+      "pass_rate_vs_national": -17.09
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 3344,
+      "total_passes": 1818,
+      "total_fails": 1342,
+      "pass_rate": 54.37,
+      "avg_mileage": 121141.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": -17.14
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 2995,
+      "total_passes": 1606,
+      "total_fails": 1230,
+      "pass_rate": 53.62,
+      "avg_mileage": 122987.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -17.89
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 2085,
+      "total_passes": 1070,
+      "total_fails": 897,
+      "pass_rate": 51.32,
+      "avg_mileage": 124163.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -20.19
+    },
+    {
+      "model": "X-TYPE",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 1394,
+      "total_passes": 691,
+      "total_fails": 618,
+      "pass_rate": 49.57,
+      "avg_mileage": 122697.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -21.94
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "XJ",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 224,
+        "avg_vs_national": 22.72,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 82.59,
+          "national_pass_rate": 59.87,
+          "vs_national": 22.72,
+          "total_tests": 224,
+          "avg_mileage": 79683.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 82.59,
+          "national_pass_rate": 59.87,
+          "vs_national": 22.72,
+          "total_tests": 224,
+          "avg_mileage": 79683.0
+        }
+      },
+      {
+        "model": "XKR",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 659,
+        "avg_vs_national": 20.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.71,
+          "total_tests": 659,
+          "avg_mileage": 63049.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 80.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 20.71,
+          "total_tests": 659,
+          "avg_mileage": 63049.0
+        }
+      },
+      {
+        "model": "XK",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 589,
+        "avg_vs_national": 19.55,
+        "durability_trend": 5.4,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 82.06,
+          "national_pass_rate": 59.87,
+          "vs_national": 22.19,
+          "total_tests": 301,
+          "avg_mileage": 64584.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 83.33,
+          "national_pass_rate": 66.54,
+          "vs_national": 16.79,
+          "total_tests": 288,
+          "avg_mileage": 60803.0
+        }
+      },
+      {
+        "model": "XJ",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 109,
+        "avg_vs_national": 19.03,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.9,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.03,
+          "total_tests": 109,
+          "avg_mileage": 69778.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.9,
+          "national_pass_rate": 59.87,
+          "vs_national": 19.03,
+          "total_tests": 109,
+          "avg_mileage": 69778.0
+        }
+      },
+      {
+        "model": "F-TYPE",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 1141,
+        "avg_vs_national": 18.95,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 90.18,
+          "national_pass_rate": 71.23,
+          "vs_national": 18.95,
+          "total_tests": 1141,
+          "avg_mileage": 39369.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 90.18,
+          "national_pass_rate": 71.23,
+          "vs_national": 18.95,
+          "total_tests": 1141,
+          "avg_mileage": 39369.0
+        }
+      },
+      {
+        "model": "XK",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 840,
+        "avg_vs_national": 18.29,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 89.52,
+          "national_pass_rate": 71.23,
+          "vs_national": 18.29,
+          "total_tests": 840,
+          "avg_mileage": 43538.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 89.52,
+          "national_pass_rate": 71.23,
+          "vs_national": 18.29,
+          "total_tests": 840,
+          "avg_mileage": 43538.0
+        }
+      },
+      {
+        "model": "XK",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 599,
+        "avg_vs_national": 18.26,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.13,
+          "national_pass_rate": 59.87,
+          "vs_national": 18.26,
+          "total_tests": 599,
+          "avg_mileage": 67346.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.13,
+          "national_pass_rate": 59.87,
+          "vs_national": 18.26,
+          "total_tests": 599,
+          "avg_mileage": 67346.0
+        }
+      },
+      {
+        "model": "XKR",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 869,
+        "avg_vs_national": 18.22,
+        "durability_trend": 0.96,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 78.56,
+          "national_pass_rate": 59.87,
+          "vs_national": 18.69,
+          "total_tests": 443,
+          "avg_mileage": 61300.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 84.27,
+          "national_pass_rate": 66.54,
+          "vs_national": 17.73,
+          "total_tests": 426,
+          "avg_mileage": 58846.0
+        }
+      },
+      {
+        "model": "XK",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 704,
+        "avg_vs_national": 18.11,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.98,
+          "national_pass_rate": 59.87,
+          "vs_national": 18.11,
+          "total_tests": 704,
+          "avg_mileage": 71047.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.98,
+          "national_pass_rate": 59.87,
+          "vs_national": 18.11,
+          "total_tests": 704,
+          "avg_mileage": 71047.0
+        }
+      },
+      {
+        "model": "XKR",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 369,
+        "avg_vs_national": 17.91,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.78,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.91,
+          "total_tests": 369,
+          "avg_mileage": 72185.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.78,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.91,
+          "total_tests": 369,
+          "avg_mileage": 72185.0
+        }
+      },
+      {
+        "model": "XK",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 566,
+        "avg_vs_national": 17.74,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 84.28,
+          "national_pass_rate": 66.54,
+          "vs_national": 17.74,
+          "total_tests": 566,
+          "avg_mileage": 55474.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 84.28,
+          "national_pass_rate": 66.54,
+          "vs_national": 17.74,
+          "total_tests": 566,
+          "avg_mileage": 55474.0
+        }
+      },
+      {
+        "model": "XK8",
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 676,
+        "avg_vs_national": 17.64,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.51,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.64,
+          "total_tests": 676,
+          "avg_mileage": 82122.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.51,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.64,
+          "total_tests": 676,
+          "avg_mileage": 82122.0
+        }
+      },
+      {
+        "model": "XK8",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 111,
+        "avg_vs_national": 17.61,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.61,
+          "total_tests": 111,
+          "avg_mileage": 71483.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.61,
+          "total_tests": 111,
+          "avg_mileage": 71483.0
+        }
+      },
+      {
+        "model": "XJ",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 470,
+        "avg_vs_national": 17.15,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.02,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.15,
+          "total_tests": 470,
+          "avg_mileage": 96900.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 77.02,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.15,
+          "total_tests": 470,
+          "avg_mileage": 96900.0
+        }
+      },
+      {
+        "model": "XKR",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 557,
+        "avg_vs_national": 16.43,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 76.3,
+          "national_pass_rate": 59.87,
+          "vs_national": 16.43,
+          "total_tests": 557,
+          "avg_mileage": 83062.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 76.3,
+          "national_pass_rate": 59.87,
+          "vs_national": 16.43,
+          "total_tests": 557,
+          "avg_mileage": 83062.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "X-TYPE",
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 1394,
+        "avg_vs_national": -10.3,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 49.57,
+          "national_pass_rate": 59.87,
+          "vs_national": -10.3,
+          "total_tests": 1394,
+          "avg_mileage": 122697.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 49.57,
+          "national_pass_rate": 59.87,
+          "vs_national": -10.3,
+          "total_tests": 1394,
+          "avg_mileage": 122697.0
+        }
+      },
+      {
+        "model": "X-TYPE",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 2085,
+        "avg_vs_national": -8.55,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.32,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.55,
+          "total_tests": 2085,
+          "avg_mileage": 124163.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.32,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.55,
+          "total_tests": 2085,
+          "avg_mileage": 124163.0
+        }
+      },
+      {
+        "model": "XE",
+        "model_year": 2020,
+        "fuel_type": "DI",
+        "total_tests": 239,
+        "avg_vs_national": -6.51,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 79.92,
+          "national_pass_rate": 86.43,
+          "vs_national": -6.51,
+          "total_tests": 239,
+          "avg_mileage": 29660.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 79.92,
+          "national_pass_rate": 86.43,
+          "vs_national": -6.51,
+          "total_tests": 239,
+          "avg_mileage": 29660.0
+        }
+      },
+      {
+        "model": "X-TYPE",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 2995,
+        "avg_vs_national": -6.25,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.62,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.25,
+          "total_tests": 2995,
+          "avg_mileage": 122987.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.62,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.25,
+          "total_tests": 2995,
+          "avg_mileage": 122987.0
+        }
+      },
+      {
+        "model": "X-TYPE",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 3344,
+        "avg_vs_national": -5.5,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.37,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.5,
+          "total_tests": 3344,
+          "avg_mileage": 121141.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.37,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.5,
+          "total_tests": 3344,
+          "avg_mileage": 121141.0
+        }
+      },
+      {
+        "model": "XE",
+        "model_year": 2019,
+        "fuel_type": "DI",
+        "total_tests": 2159,
+        "avg_vs_national": -5.47,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 80.96,
+          "national_pass_rate": 86.43,
+          "vs_national": -5.47,
+          "total_tests": 2159,
+          "avg_mileage": 38897.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 80.96,
+          "national_pass_rate": 86.43,
+          "vs_national": -5.47,
+          "total_tests": 2159,
+          "avg_mileage": 38897.0
+        }
+      },
+      {
+        "model": "X-TYPE",
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 215,
+        "avg_vs_national": -5.45,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.42,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.45,
+          "total_tests": 215,
+          "avg_mileage": 121804.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.42,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.45,
+          "total_tests": 215,
+          "avg_mileage": 121804.0
+        }
+      },
+      {
+        "model": "XE",
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 3082,
+        "avg_vs_national": -4.19,
+        "durability_trend": 0.46,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 78.25,
+          "national_pass_rate": 82.13,
+          "vs_national": -3.88,
+          "total_tests": 1016,
+          "avg_mileage": 54276.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 82.09,
+          "national_pass_rate": 86.43,
+          "vs_national": -4.34,
+          "total_tests": 2066,
+          "avg_mileage": 47799.0
+        }
+      },
+      {
+        "model": "X-TYPE",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 1707,
+        "avg_vs_national": -3.63,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.24,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.63,
+          "total_tests": 1707,
+          "avg_mileage": 87087.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.24,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.63,
+          "total_tests": 1707,
+          "avg_mileage": 87087.0
+        }
+      },
+      {
+        "model": "XE",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2573,
+        "avg_vs_national": -2.99,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 83.44,
+          "national_pass_rate": 86.43,
+          "vs_national": -2.99,
+          "total_tests": 2573,
+          "avg_mileage": 27749.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 83.44,
+          "national_pass_rate": 86.43,
+          "vs_national": -2.99,
+          "total_tests": 2573,
+          "avg_mileage": 27749.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 56,
+          "tests": 129022
+        },
+        "maturing": {
+          "vehicles": 30,
+          "tests": 72648
+        },
+        "proven": {
+          "vehicles": 91,
+          "tests": 110888
+        }
+      },
+      "proven_vehicles_tested": 95,
+      "proven_above_average_pct": 92.6,
+      "proven_avg_vs_national": 12.09,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "XJ",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 224,
+          "pass_rate": 82.59,
+          "vs_national_at_age": 25.29,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 79683.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XK",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 301,
+          "pass_rate": 82.06,
+          "vs_national_at_age": 24.76,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 64584.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XKR",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 659,
+          "pass_rate": 80.58,
+          "vs_national_at_age": 23.28,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 63049.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XJ",
+          "model_year": 2010,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 489,
+          "pass_rate": 78.94,
+          "vs_national_at_age": 21.64,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 106158.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XJ",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 109,
+          "pass_rate": 78.9,
+          "vs_national_at_age": 21.6,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 69778.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XK",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 566,
+          "pass_rate": 84.28,
+          "vs_national_at_age": 21.45,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 55474.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XKR",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 443,
+          "pass_rate": 78.56,
+          "vs_national_at_age": 21.26,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 61300.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XKR",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 192,
+          "pass_rate": 83.85,
+          "vs_national_at_age": 21.02,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 53315.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XK",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 185,
+          "pass_rate": 83.78,
+          "vs_national_at_age": 20.95,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 47439.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XK",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 599,
+          "pass_rate": 78.13,
+          "vs_national_at_age": 20.83,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 67346.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XK",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 704,
+          "pass_rate": 77.98,
+          "vs_national_at_age": 20.68,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 71047.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XKR",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 369,
+          "pass_rate": 77.78,
+          "vs_national_at_age": 20.48,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 72185.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XK8",
+          "model_year": 2001,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 676,
+          "pass_rate": 77.51,
+          "vs_national_at_age": 20.21,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 82122.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XK8",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 111,
+          "pass_rate": 77.48,
+          "vs_national_at_age": 20.18,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 71483.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "XJ",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 470,
+          "pass_rate": 77.02,
+          "vs_national_at_age": 19.72,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 96900.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "X-TYPE",
+          "model_year": 2004,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1394,
+          "pass_rate": 49.57,
+          "vs_national_at_age": -7.73,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 122697.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "X-TYPE",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2085,
+          "pass_rate": 51.32,
+          "vs_national_at_age": -5.98,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 124163.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "X-TYPE",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2995,
+          "pass_rate": 53.62,
+          "vs_national_at_age": -3.68,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 122987.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "X-TYPE",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 3344,
+          "pass_rate": 54.37,
+          "vs_national_at_age": -2.93,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 121141.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "X-TYPE",
+          "model_year": 2003,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 215,
+          "pass_rate": 54.42,
+          "vs_national_at_age": -2.88,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 121804.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "X-TYPE",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1707,
+          "pass_rate": 56.24,
+          "vs_national_at_age": -1.06,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 87087.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "X-TYPE",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1930,
+          "pass_rate": 57.1,
+          "vs_national_at_age": -0.2,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 87070.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "F-TYPE",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1124,
+          "pass_rate": 91.28,
+          "vs_national_at_age": 10.08,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 29364.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "F-TYPE",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 2101,
+          "pass_rate": 90.72,
+          "vs_national_at_age": 9.52,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 27575.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "XJ",
+          "model_year": 2018,
+          "fuel_type": "DI",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 248,
+          "pass_rate": 89.52,
+          "vs_national_at_age": 8.32,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 43178.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "XF",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 546,
+          "pass_rate": 89.38,
+          "vs_national_at_age": 8.18,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 36739.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "F-PACE",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 325,
+          "pass_rate": 89.23,
+          "vs_national_at_age": 8.03,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 48035.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "F-TYPE",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 715,
+          "pass_rate": 88.95,
+          "vs_national_at_age": 7.75,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 24874.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "XF",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 199,
+          "pass_rate": 88.94,
+          "vs_national_at_age": 7.74,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 41407.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "I-PACE",
+          "model_year": 2018,
+          "fuel_type": "EL",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 189,
+          "pass_rate": 88.36,
+          "vs_national_at_age": 7.16,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 34788.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "I-PACE",
+          "model_year": 2020,
+          "fuel_type": "EL",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 1575,
+          "pass_rate": 92.83,
+          "vs_national_at_age": 6.98,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 29351.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "E-PACE CHEQUERED FLAG AWD AUTO",
+          "model_year": 2020,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 189,
+          "pass_rate": 92.59,
+          "vs_national_at_age": 6.74,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 22049.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "XF": {
+        "core_model": "XF",
+        "years_covered": [
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 87.13,
+                "vs_national": 1.28,
+                "total_tests": 3976,
+                "avg_mileage": 38639.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 85.91,
+                "vs_national": 0.06,
+                "total_tests": 3421,
+                "avg_mileage": 32943.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 85.27,
+                "vs_national": -0.58,
+                "total_tests": 326,
+                "avg_mileage": 25319.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 85.05,
+                "vs_national": 3.85,
+                "total_tests": 4821,
+                "avg_mileage": 51646.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 86.08,
+                "vs_national": 4.88,
+                "total_tests": 7118,
+                "avg_mileage": 46099.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 86.33,
+                "vs_national": 5.13,
+                "total_tests": 1873,
+                "avg_mileage": 43949.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 76.78,
+                "vs_national": 1.65,
+                "total_tests": 6911,
+                "avg_mileage": 67549.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 77.41,
+                "vs_national": 2.28,
+                "total_tests": 10004,
+                "avg_mileage": 61741.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 83.09,
+                "vs_national": 7.96,
+                "total_tests": 3819,
+                "avg_mileage": 57739.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 74.21,
+                "vs_national": 5.97,
+                "total_tests": 5597,
+                "avg_mileage": 80121.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 75.24,
+                "vs_national": 7.0,
+                "total_tests": 11315,
+                "avg_mileage": 76554.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 75.66,
+                "vs_national": 7.42,
+                "total_tests": 5573,
+                "avg_mileage": 69734.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 69.68,
+                "vs_national": 6.85,
+                "total_tests": 5271,
+                "avg_mileage": 90454.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 71.51,
+                "vs_national": 8.68,
+                "total_tests": 8566,
+                "avg_mileage": 88587.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 71.72,
+                "vs_national": 8.89,
+                "total_tests": 4575,
+                "avg_mileage": 90806.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2008,
+                "pass_rate": 63.6,
+                "vs_national": 6.3,
+                "total_tests": 5648,
+                "avg_mileage": 103607.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 66.36,
+                "vs_national": 9.06,
+                "total_tests": 7259,
+                "avg_mileage": 101786.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 66.84,
+                "vs_national": 9.54,
+                "total_tests": 4581,
+                "avg_mileage": 94543.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 9.54,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": 6.3,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "XK": {
+        "core_model": "XK",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014
+        ],
+        "trajectory_by_age": {
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 88.4,
+                "vs_national": 13.27,
+                "total_tests": 612,
+                "avg_mileage": 37840.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 85.52,
+                "vs_national": 17.28,
+                "total_tests": 359,
+                "avg_mileage": 50104.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 89.52,
+                "vs_national": 21.28,
+                "total_tests": 840,
+                "avg_mileage": 43538.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 89.15,
+                "vs_national": 20.91,
+                "total_tests": 562,
+                "avg_mileage": 39766.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 83.33,
+                "vs_national": 20.5,
+                "total_tests": 288,
+                "avg_mileage": 60803.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 84.28,
+                "vs_national": 21.45,
+                "total_tests": 566,
+                "avg_mileage": 55474.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 75.13,
+                "vs_national": 17.83,
+                "total_tests": 1777,
+                "avg_mileage": 81030.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 74.89,
+                "vs_national": 17.59,
+                "total_tests": 1091,
+                "avg_mileage": 76694.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 77.98,
+                "vs_national": 20.68,
+                "total_tests": 704,
+                "avg_mileage": 71047.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 78.13,
+                "vs_national": 20.83,
+                "total_tests": 599,
+                "avg_mileage": 67346.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 82.06,
+                "vs_national": 24.76,
+                "total_tests": 301,
+                "avg_mileage": 64584.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 24.76,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": 17.59,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "XKR": {
+        "core_model": "XKR",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011
+        ],
+        "trajectory_by_age": {
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 84.27,
+                "vs_national": 21.44,
+                "total_tests": 426,
+                "avg_mileage": 58846.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 82.31,
+                "vs_national": 19.48,
+                "total_tests": 667,
+                "avg_mileage": 51968.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 76.3,
+                "vs_national": 19.0,
+                "total_tests": 557,
+                "avg_mileage": 83062.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 73.31,
+                "vs_national": 16.01,
+                "total_tests": 652,
+                "avg_mileage": 82279.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 72.38,
+                "vs_national": 15.08,
+                "total_tests": 543,
+                "avg_mileage": 83560.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 72.83,
+                "vs_national": 15.53,
+                "total_tests": 460,
+                "avg_mileage": 78172.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 72.43,
+                "vs_national": 15.13,
+                "total_tests": 428,
+                "avg_mileage": 79171.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 77.78,
+                "vs_national": 20.48,
+                "total_tests": 369,
+                "avg_mileage": 72185.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 72.63,
+                "vs_national": 15.33,
+                "total_tests": 391,
+                "avg_mileage": 72996.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 73.46,
+                "vs_national": 16.16,
+                "total_tests": 1285,
+                "avg_mileage": 72756.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 74.87,
+                "vs_national": 17.57,
+                "total_tests": 752,
+                "avg_mileage": 68348.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 80.58,
+                "vs_national": 23.28,
+                "total_tests": 659,
+                "avg_mileage": 63049.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 78.56,
+                "vs_national": 21.26,
+                "total_tests": 443,
+                "avg_mileage": 61300.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 23.28,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2002,
+          "vs_national": 15.08,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "X-TYPE": {
+        "core_model": "X-TYPE",
+        "years_covered": [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2001,
+                "pass_rate": 58.58,
+                "vs_national": 1.28,
+                "total_tests": 688,
+                "avg_mileage": 83506.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 56.24,
+                "vs_national": -1.06,
+                "total_tests": 1707,
+                "avg_mileage": 87087.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 58.82,
+                "vs_national": 1.52,
+                "total_tests": 2564,
+                "avg_mileage": 104020.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 53.94,
+                "vs_national": -3.36,
+                "total_tests": 3324,
+                "avg_mileage": 104884.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 54.07,
+                "vs_national": -3.23,
+                "total_tests": 3573,
+                "avg_mileage": 106301.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 56.04,
+                "vs_national": -1.26,
+                "total_tests": 4170,
+                "avg_mileage": 105105.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 55.91,
+                "vs_national": -1.39,
+                "total_tests": 4193,
+                "avg_mileage": 103148.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 59.8,
+                "vs_national": 2.5,
+                "total_tests": 5293,
+                "avg_mileage": 96788.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 62.24,
+                "vs_national": 4.94,
+                "total_tests": 4500,
+                "avg_mileage": 103088.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 4.94,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": -3.36,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "I-PACE": {
+        "core_model": "I-PACE",
+        "years_covered": [
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 91.31,
+                "vs_national": 5.46,
+                "total_tests": 610,
+                "avg_mileage": 32628.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 90.75,
+                "vs_national": 4.9,
+                "total_tests": 4023,
+                "avg_mileage": 32178.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 92.83,
+                "vs_national": 6.98,
+                "total_tests": 1575,
+                "avg_mileage": 29351.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "XJ": {
+        "core_model": "XJ",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 89.71,
+                "vs_national": 3.86,
+                "total_tests": 379,
+                "avg_mileage": 35291.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 90.68,
+                "vs_national": 4.83,
+                "total_tests": 429,
+                "avg_mileage": 26756.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 85.49,
+                "vs_national": 4.29,
+                "total_tests": 565,
+                "avg_mileage": 55334.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 86.75,
+                "vs_national": 5.55,
+                "total_tests": 845,
+                "avg_mileage": 48646.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 89.52,
+                "vs_national": 8.32,
+                "total_tests": 248,
+                "avg_mileage": 43178.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 82.39,
+                "vs_national": 7.26,
+                "total_tests": 528,
+                "avg_mileage": 73886.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 85.2,
+                "vs_national": 10.07,
+                "total_tests": 892,
+                "avg_mileage": 63822.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 83.94,
+                "vs_national": 8.81,
+                "total_tests": 467,
+                "avg_mileage": 61951.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 81.11,
+                "vs_national": 12.87,
+                "total_tests": 503,
+                "avg_mileage": 89464.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 78.79,
+                "vs_national": 10.55,
+                "total_tests": 1075,
+                "avg_mileage": 85829.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 76.61,
+                "vs_national": 8.37,
+                "total_tests": 449,
+                "avg_mileage": 80628.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 76.7,
+                "vs_national": 13.87,
+                "total_tests": 867,
+                "avg_mileage": 91032.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 77.58,
+                "vs_national": 14.75,
+                "total_tests": 1552,
+                "avg_mileage": 87635.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 79.55,
+                "vs_national": 16.72,
+                "total_tests": 445,
+                "avg_mileage": 93054.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 69.74,
+                "vs_national": 12.44,
+                "total_tests": 542,
+                "avg_mileage": 92222.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 72.32,
+                "vs_national": 15.02,
+                "total_tests": 625,
+                "avg_mileage": 92789.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 69.02,
+                "vs_national": 11.72,
+                "total_tests": 581,
+                "avg_mileage": 91607.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 70.45,
+                "vs_national": 13.15,
+                "total_tests": 1753,
+                "avg_mileage": 108758.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 68.75,
+                "vs_national": 11.45,
+                "total_tests": 1645,
+                "avg_mileage": 105719.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 70.85,
+                "vs_national": 13.55,
+                "total_tests": 1156,
+                "avg_mileage": 108848.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 70.8,
+                "vs_national": 13.5,
+                "total_tests": 1346,
+                "avg_mileage": 103283.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 69.8,
+                "vs_national": 12.5,
+                "total_tests": 1265,
+                "avg_mileage": 97789.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 75.43,
+                "vs_national": 18.13,
+                "total_tests": 924,
+                "avg_mileage": 91401.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 77.37,
+                "vs_national": 20.07,
+                "total_tests": 579,
+                "avg_mileage": 83339.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 78.8,
+                "vs_national": 21.5,
+                "total_tests": 547,
+                "avg_mileage": 91102.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 21.5,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": 11.45,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "XE": {
+        "core_model": "XE",
+        "years_covered": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 83.76,
+                "vs_national": -2.09,
+                "total_tests": 3929,
+                "avg_mileage": 40091.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 82.31,
+                "vs_national": -3.54,
+                "total_tests": 4732,
+                "avg_mileage": 33323.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 83.94,
+                "vs_national": -1.91,
+                "total_tests": 467,
+                "avg_mileage": 25726.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 81.0,
+                "vs_national": -0.2,
+                "total_tests": 6674,
+                "avg_mileage": 53037.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 83.05,
+                "vs_national": 1.85,
+                "total_tests": 10665,
+                "avg_mileage": 46760.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 81.21,
+                "vs_national": 0.01,
+                "total_tests": 1788,
+                "avg_mileage": 45810.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2015,
+                "pass_rate": 79.36,
+                "vs_national": 4.23,
+                "total_tests": 8712,
+                "avg_mileage": 60560.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 79.25,
+                "vs_national": 4.12,
+                "total_tests": 5743,
+                "avg_mileage": 58253.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "F-TYPE": {
+        "core_model": "F-TYPE",
+        "years_covered": [
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 90.06,
+                "vs_national": 4.21,
+                "total_tests": 1117,
+                "avg_mileage": 22299.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 91.23,
+                "vs_national": 5.38,
+                "total_tests": 1631,
+                "avg_mileage": 18972.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 89.12,
+                "vs_national": 3.27,
+                "total_tests": 239,
+                "avg_mileage": 15798.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 91.28,
+                "vs_national": 10.08,
+                "total_tests": 1124,
+                "avg_mileage": 29364.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 90.72,
+                "vs_national": 9.52,
+                "total_tests": 2101,
+                "avg_mileage": 27575.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 88.95,
+                "vs_national": 7.75,
+                "total_tests": 715,
+                "avg_mileage": 24874.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 92.62,
+                "vs_national": 17.49,
+                "total_tests": 1151,
+                "avg_mileage": 38767.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 89.91,
+                "vs_national": 14.78,
+                "total_tests": 1953,
+                "avg_mileage": 35909.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 93.19,
+                "vs_national": 18.06,
+                "total_tests": 955,
+                "avg_mileage": 32456.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2013,
+                "pass_rate": 90.18,
+                "vs_national": 21.94,
+                "total_tests": 1141,
+                "avg_mileage": 39369.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 88.89,
+                "vs_national": 20.65,
+                "total_tests": 936,
+                "avg_mileage": 40565.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "E-PACE": {
+        "core_model": "E-PACE",
+        "years_covered": [
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 87.17,
+                "vs_national": 1.32,
+                "total_tests": 6838,
+                "avg_mileage": 35423.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 88.45,
+                "vs_national": 2.6,
+                "total_tests": 11280,
+                "avg_mileage": 30417.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 90.6,
+                "vs_national": 4.75,
+                "total_tests": 1554,
+                "avg_mileage": 24303.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 84.63,
+                "vs_national": 3.43,
+                "total_tests": 3409,
+                "avg_mileage": 38713.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "F-PACE": {
+        "core_model": "F-PACE",
+        "years_covered": [
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 86.82,
+                "vs_national": 0.97,
+                "total_tests": 6586,
+                "avg_mileage": 39597.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 85.25,
+                "vs_national": -0.6,
+                "total_tests": 9973,
+                "avg_mileage": 32964.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 86.11,
+                "vs_national": 0.26,
+                "total_tests": 1901,
+                "avg_mileage": 28097.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 84.29,
+                "vs_national": 3.09,
+                "total_tests": 5347,
+                "avg_mileage": 54551.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 83.89,
+                "vs_national": 2.69,
+                "total_tests": 12379,
+                "avg_mileage": 49705.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 84.85,
+                "vs_national": 3.65,
+                "total_tests": 3979,
+                "avg_mileage": 45694.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 84.08,
+                "vs_national": 8.95,
+                "total_tests": 2286,
+                "avg_mileage": 57489.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      }
+    }
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "meta": {
+    "make": "LDV",
+    "generated_at": "2026-01-15T17:43:42.134583",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 73,
+    "make": "LDV",
+    "total_tests": 3975,
+    "total_models": 219,
+    "avg_pass_rate": 54.54,
+    "weighted_pass_rate": 54.54,
+    "best_model": "MAXUS 2007",
+    "best_model_pass_rate": 53.92,
+    "worst_model": "CONVOY 2002",
+    "worst_model_pass_rate": 45.54,
+    "rank": 73
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    },
+    {
+      "make": "LDV",
+      "avg_pass_rate": 54.54,
+      "total_tests": 3975,
+      "rank": 73,
+      "total_models": 219
+    }
+  ],
+  "summary": {
+    "total_tests": 3975,
+    "total_models": 219,
+    "avg_pass_rate": 54.54,
+    "rank": 73,
+    "rank_total": 75,
+    "best_model": "MAXUS 2007",
+    "best_model_pass_rate": 53.92,
+    "worst_model": "CONVOY 2002",
+    "worst_model_pass_rate": 45.54,
+    "vs_national": -16.97,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "MAXUS",
+      "total_tests": 2050,
+      "total_passes": 1096,
+      "total_fails": 798,
+      "pass_rate": 53.46,
+      "avg_mileage": 199016.0,
+      "year_from": 2005,
+      "year_to": 2008,
+      "variant_count": 4,
+      "variants": "MAXUS"
+    },
+    {
+      "core_model": "CONVOY",
+      "total_tests": 227,
+      "total_passes": 113,
+      "total_fails": 99,
+      "pass_rate": 49.78,
+      "avg_mileage": 96274.0,
+      "year_from": 2001,
+      "year_to": 2002,
+      "variant_count": 2,
+      "variants": "CONVOY"
+    }
+  ],
+  "model_year_breakdowns": {
+    "MAXUS": [
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 531,
+        "pass_rate": 53.48,
+        "avg_mileage": 230962.0,
+        "pass_rate_vs_national": -3.91,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 855,
+        "pass_rate": 53.92,
+        "avg_mileage": 219054.0,
+        "pass_rate_vs_national": -3.05,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 440,
+        "pass_rate": 52.95,
+        "avg_mileage": 201153.0,
+        "pass_rate_vs_national": -3.23,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 224,
+        "pass_rate": 52.68,
+        "avg_mileage": 144895.0,
+        "pass_rate_vs_national": -3.57,
+        "national_avg_for_year": 56.25
+      }
+    ],
+    "CONVOY": [
+      {
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 106,
+        "pass_rate": 46.23,
+        "avg_mileage": 90434.0,
+        "pass_rate_vs_national": -11.31,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "DI",
+        "total_tests": 121,
+        "pass_rate": 52.89,
+        "avg_mileage": 102113.0,
+        "pass_rate_vs_national": -5.79,
+        "national_avg_for_year": 58.68
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "DI",
+      "model_count": 6,
+      "total_tests": 2277,
+      "pass_rate": 53.1,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "MAXUS",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 855,
+      "pass_rate": 53.92,
+      "pass_rate_vs_national": -3.05,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 440,
+      "pass_rate": 52.95,
+      "pass_rate_vs_national": -3.23,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 224,
+      "pass_rate": 52.68,
+      "pass_rate_vs_national": -3.57,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 531,
+      "pass_rate": 53.48,
+      "pass_rate_vs_national": -3.91,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "CONVOY",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 121,
+      "pass_rate": 52.89,
+      "pass_rate_vs_national": -5.79,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "CONVOY",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 106,
+      "pass_rate": 46.23,
+      "pass_rate_vs_national": -11.31,
+      "national_avg_for_year": 57.54
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "CONVOY",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 106,
+      "pass_rate": 46.23,
+      "pass_rate_vs_national": -11.31,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "CONVOY",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 121,
+      "pass_rate": 52.89,
+      "pass_rate_vs_national": -5.79,
+      "national_avg_for_year": 58.68
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 531,
+      "pass_rate": 53.48,
+      "pass_rate_vs_national": -3.91,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 224,
+      "pass_rate": 52.68,
+      "pass_rate_vs_national": -3.57,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 440,
+      "pass_rate": 52.95,
+      "pass_rate_vs_national": -3.23,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 855,
+      "pass_rate": 53.92,
+      "pass_rate_vs_national": -3.05,
+      "national_avg_for_year": 56.97
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 585,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 520,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 342,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 265,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 249,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 154,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 127,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 125,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 78,
+        "vehicle_count": 6
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 13,
+        "vehicle_count": 2
+      },
+      {
+        "category_name": "Speedometer and speed limiter",
+        "total_failures": 3,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 3,
+        "vehicle_count": 3
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 392
+      },
+      {
+        "defect_description": "excessively corroded",
+        "category_name": "Brakes",
+        "total_occurrences": 142
+      },
+      {
+        "defect_description": "prescribed area excessively corroded significantly reducing structural strength",
+        "category_name": "Suspension",
+        "total_occurrences": 130
+      },
+      {
+        "defect_description": "across an axle",
+        "category_name": "Brakes",
+        "total_occurrences": 112
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 72
+      },
+      {
+        "defect_description": "efficiency below requirements",
+        "category_name": "Brakes",
+        "total_occurrences": 62
+      },
+      {
+        "defect_description": "excessively binding",
+        "category_name": "Brakes",
+        "total_occurrences": 58
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 54
+      },
+      {
+        "defect_description": "constant velocity boot split or insecure, no longer prevents the ingress of dirt",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 46
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 30
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 770
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 356
+      },
+      {
+        "defect_description": "has slight play",
+        "category_name": "Suspension",
+        "total_occurrences": 283
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 267
+      },
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 266
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 234
+      },
+      {
+        "defect_description": "deteriorated but not likely to be misread",
+        "category_name": "Identification of the vehicle",
+        "total_occurrences": 104
+      },
+      {
+        "defect_description": "has light misting of oil",
+        "category_name": "Suspension",
+        "total_occurrences": 89
+      },
+      {
+        "defect_description": "has slight corrosion to ferrule",
+        "category_name": "Brakes",
+        "total_occurrences": 87
+      },
+      {
+        "defect_description": "is corroded but structural rigidity is not significantly reduced",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 83
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 303
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 273
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 247
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 105
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 37
+      },
+      {
+        "defect_description": "seized and ABS not fitted or inoperative",
+        "category_name": "Brakes",
+        "total_occurrences": 36
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 25
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 24
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 10
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 10
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 89,
+      "avg_pass_rate": 57.31
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 202,
+      "avg_pass_rate": 58.91
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 444,
+      "avg_pass_rate": 56.53
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 529,
+      "avg_pass_rate": 54.63
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 301,
+      "avg_pass_rate": 48.51
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 602,
+      "avg_pass_rate": 49.01
+    }
+  ],
+  "all_models": [
+    {
+      "model": "MAXUS",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 855,
+      "total_passes": 461,
+      "total_fails": 332,
+      "pass_rate": 53.92,
+      "avg_mileage": 219054.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": -17.59
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 531,
+      "total_passes": 284,
+      "total_fails": 202,
+      "pass_rate": 53.48,
+      "avg_mileage": 230962.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -18.03
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 440,
+      "total_passes": 233,
+      "total_fails": 171,
+      "pass_rate": 52.95,
+      "avg_mileage": 201153.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -18.56
+    },
+    {
+      "model": "CONVOY",
+      "model_year": 2001,
+      "fuel_type": "DI",
+      "total_tests": 121,
+      "total_passes": 64,
+      "total_fails": 51,
+      "pass_rate": 52.89,
+      "avg_mileage": 102113.0,
+      "avg_age_years": 21.4,
+      "pass_rate_vs_national": -18.62
+    },
+    {
+      "model": "MAXUS",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 224,
+      "total_passes": 118,
+      "total_fails": 93,
+      "pass_rate": 52.68,
+      "avg_mileage": 144895.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -18.83
+    },
+    {
+      "model": "CONVOY",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 106,
+      "total_passes": 49,
+      "total_fails": 48,
+      "pass_rate": 46.23,
+      "avg_mileage": 90434.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -25.28
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "MAXUS",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 855,
+        "avg_vs_national": -5.95,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.92,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.95,
+          "total_tests": 855,
+          "avg_mileage": 219054.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.92,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.95,
+          "total_tests": 855,
+          "avg_mileage": 219054.0
+        }
+      },
+      {
+        "model": "MAXUS",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 531,
+        "avg_vs_national": -6.39,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.39,
+          "total_tests": 531,
+          "avg_mileage": 230962.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.39,
+          "total_tests": 531,
+          "avg_mileage": 230962.0
+        }
+      },
+      {
+        "model": "MAXUS",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 440,
+        "avg_vs_national": -6.92,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.95,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.92,
+          "total_tests": 440,
+          "avg_mileage": 201153.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.95,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.92,
+          "total_tests": 440,
+          "avg_mileage": 201153.0
+        }
+      },
+      {
+        "model": "CONVOY",
+        "model_year": 2001,
+        "fuel_type": "DI",
+        "total_tests": 121,
+        "avg_vs_national": -6.98,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.98,
+          "total_tests": 121,
+          "avg_mileage": 102113.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.98,
+          "total_tests": 121,
+          "avg_mileage": 102113.0
+        }
+      },
+      {
+        "model": "MAXUS",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 224,
+        "avg_vs_national": -7.19,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.68,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.19,
+          "total_tests": 224,
+          "avg_mileage": 144895.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.68,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.19,
+          "total_tests": 224,
+          "avg_mileage": 144895.0
+        }
+      },
+      {
+        "model": "CONVOY",
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 106,
+        "avg_vs_national": -13.64,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.23,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.64,
+          "total_tests": 106,
+          "avg_mileage": 90434.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.23,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.64,
+          "total_tests": 106,
+          "avg_mileage": 90434.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "CONVOY",
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 106,
+        "avg_vs_national": -13.64,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.23,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.64,
+          "total_tests": 106,
+          "avg_mileage": 90434.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 46.23,
+          "national_pass_rate": 59.87,
+          "vs_national": -13.64,
+          "total_tests": 106,
+          "avg_mileage": 90434.0
+        }
+      },
+      {
+        "model": "MAXUS",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 224,
+        "avg_vs_national": -7.19,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.68,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.19,
+          "total_tests": 224,
+          "avg_mileage": 144895.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.68,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.19,
+          "total_tests": 224,
+          "avg_mileage": 144895.0
+        }
+      },
+      {
+        "model": "CONVOY",
+        "model_year": 2001,
+        "fuel_type": "DI",
+        "total_tests": 121,
+        "avg_vs_national": -6.98,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.98,
+          "total_tests": 121,
+          "avg_mileage": 102113.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.98,
+          "total_tests": 121,
+          "avg_mileage": 102113.0
+        }
+      },
+      {
+        "model": "MAXUS",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 440,
+        "avg_vs_national": -6.92,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.95,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.92,
+          "total_tests": 440,
+          "avg_mileage": 201153.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.95,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.92,
+          "total_tests": 440,
+          "avg_mileage": 201153.0
+        }
+      },
+      {
+        "model": "MAXUS",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 531,
+        "avg_vs_national": -6.39,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.39,
+          "total_tests": 531,
+          "avg_mileage": 230962.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.39,
+          "total_tests": 531,
+          "avg_mileage": 230962.0
+        }
+      },
+      {
+        "model": "MAXUS",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 855,
+        "avg_vs_national": -5.95,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.92,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.95,
+          "total_tests": 855,
+          "avg_mileage": 219054.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.92,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.95,
+          "total_tests": 855,
+          "avg_mileage": 219054.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "proven": {
+          "vehicles": 6,
+          "tests": 2277
+        }
+      },
+      "proven_vehicles_tested": 6,
+      "proven_above_average_pct": null,
+      "proven_avg_vs_national": -5.28,
+      "durability_rating": "Below Average",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "CONVOY",
+          "model_year": 2002,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 106,
+          "pass_rate": 46.23,
+          "vs_national_at_age": -11.07,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 90434.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "MAXUS",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 224,
+          "pass_rate": 52.68,
+          "vs_national_at_age": -4.62,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 144895.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CONVOY",
+          "model_year": 2001,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 121,
+          "pass_rate": 52.89,
+          "vs_national_at_age": -4.41,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 102113.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "MAXUS",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 440,
+          "pass_rate": 52.95,
+          "vs_national_at_age": -4.35,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 201153.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "MAXUS",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 531,
+          "pass_rate": 53.48,
+          "vs_national_at_age": -3.82,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 230962.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "MAXUS",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 855,
+          "pass_rate": 53.92,
+          "vs_national_at_age": -3.38,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 219054.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": []
+    },
+    "model_trajectories": {
+      "MAXUS": {
+        "core_model": "MAXUS",
+        "years_covered": [
+          2005,
+          2006,
+          2007,
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 52.68,
+                "vs_national": -4.62,
+                "total_tests": 224,
+                "avg_mileage": 144895.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 52.95,
+                "vs_national": -4.35,
+                "total_tests": 440,
+                "avg_mileage": 201153.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 53.92,
+                "vs_national": -3.38,
+                "total_tests": 855,
+                "avg_mileage": 219054.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 53.48,
+                "vs_national": -3.82,
+                "total_tests": 531,
+                "avg_mileage": 230962.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2007,
+          "vs_national": -3.38,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -4.62,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

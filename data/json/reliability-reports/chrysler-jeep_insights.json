@@ -1,0 +1,2720 @@
+{
+  "meta": {
+    "make": "CHRYSLER-JEEP",
+    "generated_at": "2026-01-15T17:43:35.052724",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 68,
+    "make": "CHRYSLER-JEEP",
+    "total_tests": 12930,
+    "total_models": 354,
+    "avg_pass_rate": 60.7,
+    "weighted_pass_rate": 60.7,
+    "best_model": "CROSSFIRE 2005",
+    "best_model_pass_rate": 74.55,
+    "worst_model": "PATRIOT 2010",
+    "worst_model_pass_rate": 42.08,
+    "rank": 68
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    },
+    {
+      "make": "CHRYSLER-JEEP",
+      "avg_pass_rate": 60.7,
+      "total_tests": 12930,
+      "rank": 68,
+      "total_models": 354
+    }
+  ],
+  "summary": {
+    "total_tests": 12930,
+    "total_models": 354,
+    "avg_pass_rate": 60.7,
+    "rank": 68,
+    "rank_total": 75,
+    "best_model": "CROSSFIRE 2005",
+    "best_model_pass_rate": 74.55,
+    "worst_model": "PATRIOT 2010",
+    "worst_model_pass_rate": 42.08,
+    "vs_national": -10.81,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "COMMANDER",
+      "total_tests": 138,
+      "total_passes": 93,
+      "total_fails": 37,
+      "pass_rate": 67.39,
+      "avg_mileage": 119800.0,
+      "year_from": 2007,
+      "year_to": 2007,
+      "variant_count": 1,
+      "variants": "COMMANDER"
+    },
+    {
+      "core_model": "CROSSFIRE",
+      "total_tests": 225,
+      "total_passes": 148,
+      "total_fails": 65,
+      "pass_rate": 65.78,
+      "avg_mileage": 77327.0,
+      "year_from": 2004,
+      "year_to": 2005,
+      "variant_count": 2,
+      "variants": "CROSSFIRE"
+    },
+    {
+      "core_model": "300",
+      "total_tests": 3626,
+      "total_passes": 2302,
+      "total_fails": 1133,
+      "pass_rate": 63.49,
+      "avg_mileage": 107495.0,
+      "year_from": 2006,
+      "year_to": 2010,
+      "variant_count": 7,
+      "variants": "300"
+    },
+    {
+      "core_model": "GRAND CHEROKEE",
+      "total_tests": 1130,
+      "total_passes": 703,
+      "total_fails": 328,
+      "pass_rate": 62.21,
+      "avg_mileage": 118445.0,
+      "year_from": 2005,
+      "year_to": 2010,
+      "variant_count": 6,
+      "variants": "GRAND CHEROKEE"
+    },
+    {
+      "core_model": "CHEROKEE",
+      "total_tests": 1591,
+      "total_passes": 951,
+      "total_fails": 555,
+      "pass_rate": 59.77,
+      "avg_mileage": 115135.0,
+      "year_from": 2002,
+      "year_to": 2009,
+      "variant_count": 7,
+      "variants": "CHEROKEE"
+    },
+    {
+      "core_model": "PT CRUISER",
+      "total_tests": 110,
+      "total_passes": 64,
+      "total_fails": 40,
+      "pass_rate": 58.18,
+      "avg_mileage": 67136.0,
+      "year_from": 2007,
+      "year_to": 2007,
+      "variant_count": 1,
+      "variants": "PT CRUISER"
+    },
+    {
+      "core_model": "GRAND VOYAGER",
+      "total_tests": 1083,
+      "total_passes": 589,
+      "total_fails": 413,
+      "pass_rate": 54.39,
+      "avg_mileage": 118180.0,
+      "year_from": 2006,
+      "year_to": 2010,
+      "variant_count": 5,
+      "variants": "GRAND VOYAGER"
+    },
+    {
+      "core_model": "PATRIOT",
+      "total_tests": 521,
+      "total_passes": 244,
+      "total_fails": 235,
+      "pass_rate": 46.83,
+      "avg_mileage": 103884.0,
+      "year_from": 2008,
+      "year_to": 2010,
+      "variant_count": 4,
+      "variants": "PATRIOT"
+    }
+  ],
+  "model_year_breakdowns": {
+    "COMMANDER": [
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 138,
+        "pass_rate": 67.39,
+        "avg_mileage": 119800.0,
+        "pass_rate_vs_national": 10.42,
+        "national_avg_for_year": 56.97
+      }
+    ],
+    "CROSSFIRE": [
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "pass_rate": 74.55,
+        "avg_mileage": 75878.0,
+        "pass_rate_vs_national": 18.3,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 115,
+        "pass_rate": 57.39,
+        "avg_mileage": 78775.0,
+        "pass_rate_vs_national": 1.36,
+        "national_avg_for_year": 56.03
+      }
+    ],
+    "300": [
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 383,
+        "pass_rate": 67.36,
+        "avg_mileage": 105162.0,
+        "pass_rate_vs_national": 6.86,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 378,
+        "pass_rate": 58.99,
+        "avg_mileage": 109050.0,
+        "pass_rate_vs_national": -0.02,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 697,
+        "pass_rate": 63.27,
+        "avg_mileage": 116405.0,
+        "pass_rate_vs_national": 5.88,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 1070,
+        "pass_rate": 61.4,
+        "avg_mileage": 116028.0,
+        "pass_rate_vs_national": 4.43,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 179,
+        "pass_rate": 68.72,
+        "avg_mileage": 94180.0,
+        "pass_rate_vs_national": 11.75,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 729,
+        "pass_rate": 65.02,
+        "avg_mileage": 117833.0,
+        "pass_rate_vs_national": 8.84,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 190,
+        "pass_rate": 66.32,
+        "avg_mileage": 93805.0,
+        "pass_rate_vs_national": 10.14,
+        "national_avg_for_year": 56.18
+      }
+    ],
+    "GRAND CHEROKEE": [
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 154,
+        "pass_rate": 72.08,
+        "avg_mileage": 104456.0,
+        "pass_rate_vs_national": 11.58,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 132,
+        "pass_rate": 65.15,
+        "avg_mileage": 111749.0,
+        "pass_rate_vs_national": 6.14,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 173,
+        "pass_rate": 56.65,
+        "avg_mileage": 120580.0,
+        "pass_rate_vs_national": -0.74,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 240,
+        "pass_rate": 61.25,
+        "avg_mileage": 121021.0,
+        "pass_rate_vs_national": 4.28,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 285,
+        "pass_rate": 60.7,
+        "avg_mileage": 126095.0,
+        "pass_rate_vs_national": 4.52,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 146,
+        "pass_rate": 60.27,
+        "avg_mileage": 126766.0,
+        "pass_rate_vs_national": 4.02,
+        "national_avg_for_year": 56.25
+      }
+    ],
+    "CHEROKEE": [
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 115,
+        "pass_rate": 54.78,
+        "avg_mileage": 106157.0,
+        "pass_rate_vs_national": -4.23,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 252,
+        "pass_rate": 65.48,
+        "avg_mileage": 109944.0,
+        "pass_rate_vs_national": 8.51,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 280,
+        "pass_rate": 59.64,
+        "avg_mileage": 113039.0,
+        "pass_rate_vs_national": 3.46,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 273,
+        "pass_rate": 52.01,
+        "avg_mileage": 109055.0,
+        "pass_rate_vs_national": -4.24,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "DI",
+        "total_tests": 354,
+        "pass_rate": 59.89,
+        "avg_mileage": 116618.0,
+        "pass_rate_vs_national": 3.86,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "DI",
+        "total_tests": 217,
+        "pass_rate": 58.99,
+        "avg_mileage": 124648.0,
+        "pass_rate_vs_national": 2.31,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 100,
+        "pass_rate": 74.0,
+        "avg_mileage": 126487.0,
+        "pass_rate_vs_national": 16.46,
+        "national_avg_for_year": 57.54
+      }
+    ],
+    "PT CRUISER": [
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "pass_rate": 58.18,
+        "avg_mileage": 67136.0,
+        "pass_rate_vs_national": 1.21,
+        "national_avg_for_year": 56.97
+      }
+    ],
+    "GRAND VOYAGER": [
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 101,
+        "pass_rate": 53.47,
+        "avg_mileage": 114422.0,
+        "pass_rate_vs_national": -7.03,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 160,
+        "pass_rate": 56.88,
+        "avg_mileage": 113935.0,
+        "pass_rate_vs_national": -2.13,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 352,
+        "pass_rate": 58.24,
+        "avg_mileage": 117998.0,
+        "pass_rate_vs_national": 0.85,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 356,
+        "pass_rate": 51.97,
+        "avg_mileage": 120209.0,
+        "pass_rate_vs_national": -5.0,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 114,
+        "pass_rate": 47.37,
+        "avg_mileage": 124335.0,
+        "pass_rate_vs_national": -8.81,
+        "national_avg_for_year": 56.18
+      }
+    ],
+    "PATRIOT": [
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 121,
+        "pass_rate": 42.15,
+        "avg_mileage": 104442.0,
+        "pass_rate_vs_national": -18.35,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 118,
+        "pass_rate": 48.31,
+        "avg_mileage": 108477.0,
+        "pass_rate_vs_national": -10.7,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 165,
+        "pass_rate": 48.48,
+        "avg_mileage": 110663.0,
+        "pass_rate_vs_national": -8.91,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 117,
+        "pass_rate": 47.86,
+        "avg_mileage": 91952.0,
+        "pass_rate_vs_national": -9.53,
+        "national_avg_for_year": 57.39
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 6,
+      "total_tests": 821,
+      "pass_rate": 62.97,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 27,
+      "total_tests": 7603,
+      "pass_rate": 60.2,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "CROSSFIRE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "pass_rate": 74.55,
+      "pass_rate_vs_national": 18.3,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 100,
+      "pass_rate": 74.0,
+      "pass_rate_vs_national": 16.46,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "300",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 179,
+      "pass_rate": 68.72,
+      "pass_rate_vs_national": 11.75,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 154,
+      "pass_rate": 72.08,
+      "pass_rate_vs_national": 11.58,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "COMMANDER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 138,
+      "pass_rate": 67.39,
+      "pass_rate_vs_national": 10.42,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "300",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 190,
+      "pass_rate": 66.32,
+      "pass_rate_vs_national": 10.14,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "300",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 729,
+      "pass_rate": 65.02,
+      "pass_rate_vs_national": 8.84,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 252,
+      "pass_rate": 65.48,
+      "pass_rate_vs_national": 8.51,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "300",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 383,
+      "pass_rate": 67.36,
+      "pass_rate_vs_national": 6.86,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 132,
+      "pass_rate": 65.15,
+      "pass_rate_vs_national": 6.14,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "300",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 697,
+      "pass_rate": 63.27,
+      "pass_rate_vs_national": 5.88,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 285,
+      "pass_rate": 60.7,
+      "pass_rate_vs_national": 4.52,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "300",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 1070,
+      "pass_rate": 61.4,
+      "pass_rate_vs_national": 4.43,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 240,
+      "pass_rate": 61.25,
+      "pass_rate_vs_national": 4.28,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 146,
+      "pass_rate": 60.27,
+      "pass_rate_vs_national": 4.02,
+      "national_avg_for_year": 56.25
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "PATRIOT",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 121,
+      "pass_rate": 42.15,
+      "pass_rate_vs_national": -18.35,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "PATRIOT",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 118,
+      "pass_rate": 48.31,
+      "pass_rate_vs_national": -10.7,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "PATRIOT",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 117,
+      "pass_rate": 47.86,
+      "pass_rate_vs_national": -9.53,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "PATRIOT",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 165,
+      "pass_rate": 48.48,
+      "pass_rate_vs_national": -8.91,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 114,
+      "pass_rate": 47.37,
+      "pass_rate_vs_national": -8.81,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 101,
+      "pass_rate": 53.47,
+      "pass_rate_vs_national": -7.03,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 356,
+      "pass_rate": 51.97,
+      "pass_rate_vs_national": -5.0,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 273,
+      "pass_rate": 52.01,
+      "pass_rate_vs_national": -4.24,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 115,
+      "pass_rate": 54.78,
+      "pass_rate_vs_national": -4.23,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 160,
+      "pass_rate": 56.88,
+      "pass_rate_vs_national": -2.13,
+      "national_avg_for_year": 59.01
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Brakes",
+        "total_failures": 1556,
+        "vehicle_count": 33
+      },
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 1416,
+        "vehicle_count": 33
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 1208,
+        "vehicle_count": 33
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 450,
+        "vehicle_count": 31
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 435,
+        "vehicle_count": 33
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 383,
+        "vehicle_count": 33
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 375,
+        "vehicle_count": 33
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 347,
+        "vehicle_count": 33
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 187,
+        "vehicle_count": 29
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 57,
+        "vehicle_count": 20
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 31,
+        "vehicle_count": 10
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 784
+      },
+      {
+        "defect_description": "efficiency below requirements",
+        "category_name": "Brakes",
+        "total_occurrences": 430
+      },
+      {
+        "defect_description": "pin or bush excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 336
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 314
+      },
+      {
+        "defect_description": "ball joint has excessive play ",
+        "category_name": "Steering",
+        "total_occurrences": 280
+      },
+      {
+        "defect_description": "ball joint excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 272
+      },
+      {
+        "defect_description": "inoperative on one side",
+        "category_name": "Brakes",
+        "total_occurrences": 208
+      },
+      {
+        "defect_description": "warning lamp indicates an ABS fault",
+        "category_name": "Brakes",
+        "total_occurrences": 208
+      },
+      {
+        "defect_description": "prescribed area excessively corroded significantly reducing structural strength",
+        "category_name": "Suspension",
+        "total_occurrences": 146
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 109
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 1384
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 1200
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 1160
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 934
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 845
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 686
+      },
+      {
+        "defect_description": "ball joint has slight play",
+        "category_name": "Suspension",
+        "total_occurrences": 458
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 417
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 323
+      },
+      {
+        "defect_description": "ball joint has slight play",
+        "category_name": "Steering",
+        "total_occurrences": 265
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 1510
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 1235
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 900
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 581
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 349
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 215
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 60
+      },
+      {
+        "defect_description": "emits excessive smoke or vapour likely to obscure the vision of other road users",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 53
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 36
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 28
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 25,
+      "avg_pass_rate": 84.0
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 456,
+      "avg_pass_rate": 69.74
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 1706,
+      "avg_pass_rate": 61.78
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 2714,
+      "avg_pass_rate": 59.28
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 2074,
+      "avg_pass_rate": 59.21
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 1240,
+      "avg_pass_rate": 57.82
+    }
+  ],
+  "all_models": [
+    {
+      "model": "CROSSFIRE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "total_passes": 82,
+      "total_fails": 22,
+      "pass_rate": 74.55,
+      "avg_mileage": 75878.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": 3.03
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2002,
+      "fuel_type": "DI",
+      "total_tests": 100,
+      "total_passes": 74,
+      "total_fails": 25,
+      "pass_rate": 74.0,
+      "avg_mileage": 126487.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": 2.49
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 154,
+      "total_passes": 111,
+      "total_fails": 27,
+      "pass_rate": 72.08,
+      "avg_mileage": 104456.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 0.57
+    },
+    {
+      "model": "300",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 179,
+      "total_passes": 123,
+      "total_fails": 50,
+      "pass_rate": 68.72,
+      "avg_mileage": 94180.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -2.8
+    },
+    {
+      "model": "COMMANDER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 138,
+      "total_passes": 93,
+      "total_fails": 37,
+      "pass_rate": 67.39,
+      "avg_mileage": 119800.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -4.12
+    },
+    {
+      "model": "300",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 383,
+      "total_passes": 258,
+      "total_fails": 110,
+      "pass_rate": 67.36,
+      "avg_mileage": 105162.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -4.15
+    },
+    {
+      "model": "300",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 190,
+      "total_passes": 126,
+      "total_fails": 51,
+      "pass_rate": 66.32,
+      "avg_mileage": 93805.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -5.2
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 252,
+      "total_passes": 165,
+      "total_fails": 74,
+      "pass_rate": 65.48,
+      "avg_mileage": 109944.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -6.03
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 132,
+      "total_passes": 86,
+      "total_fails": 32,
+      "pass_rate": 65.15,
+      "avg_mileage": 111749.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -6.36
+    },
+    {
+      "model": "300",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 729,
+      "total_passes": 474,
+      "total_fails": 213,
+      "pass_rate": 65.02,
+      "avg_mileage": 117833.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -6.49
+    },
+    {
+      "model": "300",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 697,
+      "total_passes": 441,
+      "total_fails": 220,
+      "pass_rate": 63.27,
+      "avg_mileage": 116405.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -8.24
+    },
+    {
+      "model": "300",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 1070,
+      "total_passes": 657,
+      "total_fails": 357,
+      "pass_rate": 61.4,
+      "avg_mileage": 116028.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -10.11
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 240,
+      "total_passes": 147,
+      "total_fails": 69,
+      "pass_rate": 61.25,
+      "avg_mileage": 121021.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -10.26
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 285,
+      "total_passes": 173,
+      "total_fails": 95,
+      "pass_rate": 60.7,
+      "avg_mileage": 126095.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -10.81
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 146,
+      "total_passes": 88,
+      "total_fails": 50,
+      "pass_rate": 60.27,
+      "avg_mileage": 126766.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -11.24
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2004,
+      "fuel_type": "DI",
+      "total_tests": 354,
+      "total_passes": 212,
+      "total_fails": 130,
+      "pass_rate": 59.89,
+      "avg_mileage": 116618.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -11.62
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 280,
+      "total_passes": 167,
+      "total_fails": 99,
+      "pass_rate": 59.64,
+      "avg_mileage": 113039.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -11.87
+    },
+    {
+      "model": "300",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 378,
+      "total_passes": 223,
+      "total_fails": 132,
+      "pass_rate": 58.99,
+      "avg_mileage": 109050.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -12.52
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2003,
+      "fuel_type": "DI",
+      "total_tests": 217,
+      "total_passes": 128,
+      "total_fails": 77,
+      "pass_rate": 58.99,
+      "avg_mileage": 124648.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -12.52
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 352,
+      "total_passes": 205,
+      "total_fails": 120,
+      "pass_rate": 58.24,
+      "avg_mileage": 117998.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -13.27
+    },
+    {
+      "model": "PT CRUISER",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "total_passes": 64,
+      "total_fails": 40,
+      "pass_rate": 58.18,
+      "avg_mileage": 67136.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": -13.33
+    },
+    {
+      "model": "CROSSFIRE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 115,
+      "total_passes": 66,
+      "total_fails": 43,
+      "pass_rate": 57.39,
+      "avg_mileage": 78775.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -14.12
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 160,
+      "total_passes": 91,
+      "total_fails": 56,
+      "pass_rate": 56.88,
+      "avg_mileage": 113935.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -14.64
+    },
+    {
+      "model": "GRAND CHEROKEE",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 173,
+      "total_passes": 98,
+      "total_fails": 55,
+      "pass_rate": 56.65,
+      "avg_mileage": 120580.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": -14.86
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 115,
+      "total_passes": 63,
+      "total_fails": 35,
+      "pass_rate": 54.78,
+      "avg_mileage": 106157.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -16.73
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 101,
+      "total_passes": 54,
+      "total_fails": 41,
+      "pass_rate": 53.47,
+      "avg_mileage": 114422.0,
+      "avg_age_years": 12.6,
+      "pass_rate_vs_national": -18.05
+    },
+    {
+      "model": "CHEROKEE",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 273,
+      "total_passes": 142,
+      "total_fails": 115,
+      "pass_rate": 52.01,
+      "avg_mileage": 109055.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -19.5
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2007,
+      "fuel_type": "DI",
+      "total_tests": 356,
+      "total_passes": 185,
+      "total_fails": 144,
+      "pass_rate": 51.97,
+      "avg_mileage": 120209.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": -19.54
+    },
+    {
+      "model": "PATRIOT",
+      "model_year": 2008,
+      "fuel_type": "DI",
+      "total_tests": 165,
+      "total_passes": 80,
+      "total_fails": 74,
+      "pass_rate": 48.48,
+      "avg_mileage": 110663.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -23.03
+    },
+    {
+      "model": "PATRIOT",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 118,
+      "total_passes": 57,
+      "total_fails": 52,
+      "pass_rate": 48.31,
+      "avg_mileage": 108477.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -23.21
+    },
+    {
+      "model": "PATRIOT",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 117,
+      "total_passes": 56,
+      "total_fails": 48,
+      "pass_rate": 47.86,
+      "avg_mileage": 91952.0,
+      "avg_age_years": 14.3,
+      "pass_rate_vs_national": -23.65
+    },
+    {
+      "model": "GRAND VOYAGER",
+      "model_year": 2006,
+      "fuel_type": "DI",
+      "total_tests": 114,
+      "total_passes": 54,
+      "total_fails": 52,
+      "pass_rate": 47.37,
+      "avg_mileage": 124335.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -24.14
+    },
+    {
+      "model": "PATRIOT",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 121,
+      "total_passes": 51,
+      "total_fails": 61,
+      "pass_rate": 42.15,
+      "avg_mileage": 104442.0,
+      "avg_age_years": 12.7,
+      "pass_rate_vs_national": -29.36
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "CROSSFIRE",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "avg_vs_national": 14.68,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 74.55,
+          "national_pass_rate": 59.87,
+          "vs_national": 14.68,
+          "total_tests": 110,
+          "avg_mileage": 75878.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 74.55,
+          "national_pass_rate": 59.87,
+          "vs_national": 14.68,
+          "total_tests": 110,
+          "avg_mileage": 75878.0
+        }
+      },
+      {
+        "model": "CHEROKEE",
+        "model_year": 2002,
+        "fuel_type": "DI",
+        "total_tests": 100,
+        "avg_vs_national": 14.13,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 74.0,
+          "national_pass_rate": 59.87,
+          "vs_national": 14.13,
+          "total_tests": 100,
+          "avg_mileage": 126487.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 74.0,
+          "national_pass_rate": 59.87,
+          "vs_national": 14.13,
+          "total_tests": 100,
+          "avg_mileage": 126487.0
+        }
+      },
+      {
+        "model": "300",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 179,
+        "avg_vs_national": 8.85,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 68.72,
+          "national_pass_rate": 59.87,
+          "vs_national": 8.85,
+          "total_tests": 179,
+          "avg_mileage": 94180.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 68.72,
+          "national_pass_rate": 59.87,
+          "vs_national": 8.85,
+          "total_tests": 179,
+          "avg_mileage": 94180.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 154,
+        "avg_vs_national": 8.74,
+        "durability_trend": 3.19,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 70.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 10.4,
+          "total_tests": 74,
+          "avg_mileage": 106498.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 73.75,
+          "national_pass_rate": 66.54,
+          "vs_national": 7.21,
+          "total_tests": 80,
+          "avg_mileage": 102568.0
+        }
+      },
+      {
+        "model": "COMMANDER",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 138,
+        "avg_vs_national": 7.52,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.39,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.52,
+          "total_tests": 138,
+          "avg_mileage": 119800.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.39,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.52,
+          "total_tests": 138,
+          "avg_mileage": 119800.0
+        }
+      },
+      {
+        "model": "300",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 190,
+        "avg_vs_national": 6.45,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.32,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.45,
+          "total_tests": 190,
+          "avg_mileage": 93805.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.32,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.45,
+          "total_tests": 190,
+          "avg_mileage": 93805.0
+        }
+      },
+      {
+        "model": "CHEROKEE",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 252,
+        "avg_vs_national": 5.61,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.61,
+          "total_tests": 252,
+          "avg_mileage": 109944.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.48,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.61,
+          "total_tests": 252,
+          "avg_mileage": 109944.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 132,
+        "avg_vs_national": 5.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.15,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.28,
+          "total_tests": 132,
+          "avg_mileage": 111749.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.15,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.28,
+          "total_tests": 132,
+          "avg_mileage": 111749.0
+        }
+      },
+      {
+        "model": "300",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 729,
+        "avg_vs_national": 5.15,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.02,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.15,
+          "total_tests": 729,
+          "avg_mileage": 117833.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.02,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.15,
+          "total_tests": 729,
+          "avg_mileage": 117833.0
+        }
+      },
+      {
+        "model": "300",
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 383,
+        "avg_vs_national": 4.03,
+        "durability_trend": -0.59,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 70.85,
+          "national_pass_rate": 66.54,
+          "vs_national": 4.31,
+          "total_tests": 199,
+          "avg_mileage": 101155.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.59,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.72,
+          "total_tests": 184,
+          "avg_mileage": 109495.0
+        }
+      },
+      {
+        "model": "300",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 697,
+        "avg_vs_national": 3.4,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.4,
+          "total_tests": 697,
+          "avg_mileage": 116405.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.4,
+          "total_tests": 697,
+          "avg_mileage": 116405.0
+        }
+      },
+      {
+        "model": "300",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 1070,
+        "avg_vs_national": 1.53,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.4,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.53,
+          "total_tests": 1070,
+          "avg_mileage": 116028.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.4,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.53,
+          "total_tests": 1070,
+          "avg_mileage": 116028.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 240,
+        "avg_vs_national": 1.38,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.25,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.38,
+          "total_tests": 240,
+          "avg_mileage": 121021.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.25,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.38,
+          "total_tests": 240,
+          "avg_mileage": 121021.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 285,
+        "avg_vs_national": 0.83,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.7,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.83,
+          "total_tests": 285,
+          "avg_mileage": 126095.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.7,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.83,
+          "total_tests": 285,
+          "avg_mileage": 126095.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 146,
+        "avg_vs_national": 0.4,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.4,
+          "total_tests": 146,
+          "avg_mileage": 126766.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 60.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 0.4,
+          "total_tests": 146,
+          "avg_mileage": 126766.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "PATRIOT",
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 121,
+        "avg_vs_national": -19.93,
+        "durability_trend": 13.61,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 44.44,
+          "national_pass_rate": 59.87,
+          "vs_national": -15.43,
+          "total_tests": 81,
+          "avg_mileage": 110282.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 37.5,
+          "national_pass_rate": 66.54,
+          "vs_national": -29.04,
+          "total_tests": 40,
+          "avg_mileage": 92909.0
+        }
+      },
+      {
+        "model": "GRAND VOYAGER",
+        "model_year": 2006,
+        "fuel_type": "DI",
+        "total_tests": 114,
+        "avg_vs_national": -12.5,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 47.37,
+          "national_pass_rate": 59.87,
+          "vs_national": -12.5,
+          "total_tests": 114,
+          "avg_mileage": 124335.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 47.37,
+          "national_pass_rate": 59.87,
+          "vs_national": -12.5,
+          "total_tests": 114,
+          "avg_mileage": 124335.0
+        }
+      },
+      {
+        "model": "PATRIOT",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 117,
+        "avg_vs_national": -12.01,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 47.86,
+          "national_pass_rate": 59.87,
+          "vs_national": -12.01,
+          "total_tests": 117,
+          "avg_mileage": 91952.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 47.86,
+          "national_pass_rate": 59.87,
+          "vs_national": -12.01,
+          "total_tests": 117,
+          "avg_mileage": 91952.0
+        }
+      },
+      {
+        "model": "PATRIOT",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 118,
+        "avg_vs_national": -11.56,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.31,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.56,
+          "total_tests": 118,
+          "avg_mileage": 108477.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.31,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.56,
+          "total_tests": 118,
+          "avg_mileage": 108477.0
+        }
+      },
+      {
+        "model": "PATRIOT",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 165,
+        "avg_vs_national": -11.39,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.39,
+          "total_tests": 165,
+          "avg_mileage": 110663.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.48,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.39,
+          "total_tests": 165,
+          "avg_mileage": 110663.0
+        }
+      },
+      {
+        "model": "GRAND VOYAGER",
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 101,
+        "avg_vs_national": -9.24,
+        "durability_trend": -5.52,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 60.47,
+          "national_pass_rate": 66.54,
+          "vs_national": -6.07,
+          "total_tests": 43,
+          "avg_mileage": 112204.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 48.28,
+          "national_pass_rate": 59.87,
+          "vs_national": -11.59,
+          "total_tests": 58,
+          "avg_mileage": 116067.0
+        }
+      },
+      {
+        "model": "GRAND VOYAGER",
+        "model_year": 2007,
+        "fuel_type": "DI",
+        "total_tests": 356,
+        "avg_vs_national": -7.9,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.97,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.9,
+          "total_tests": 356,
+          "avg_mileage": 120209.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.97,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.9,
+          "total_tests": 356,
+          "avg_mileage": 120209.0
+        }
+      },
+      {
+        "model": "CHEROKEE",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 273,
+        "avg_vs_national": -7.86,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.01,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.86,
+          "total_tests": 273,
+          "avg_mileage": 109055.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.01,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.86,
+          "total_tests": 273,
+          "avg_mileage": 109055.0
+        }
+      },
+      {
+        "model": "CHEROKEE",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 115,
+        "avg_vs_national": -5.09,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.78,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.09,
+          "total_tests": 115,
+          "avg_mileage": 106157.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.78,
+          "national_pass_rate": 59.87,
+          "vs_national": -5.09,
+          "total_tests": 115,
+          "avg_mileage": 106157.0
+        }
+      },
+      {
+        "model": "GRAND CHEROKEE",
+        "model_year": 2008,
+        "fuel_type": "DI",
+        "total_tests": 173,
+        "avg_vs_national": -3.22,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.65,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.22,
+          "total_tests": 173,
+          "avg_mileage": 120580.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.65,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.22,
+          "total_tests": 173,
+          "avg_mileage": 120580.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "proven": {
+          "vehicles": 33,
+          "tests": 8424
+        }
+      },
+      "proven_vehicles_tested": 31,
+      "proven_above_average_pct": 71.0,
+      "proven_avg_vs_national": 2.64,
+      "durability_rating": "Good",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "CROSSFIRE",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 110,
+          "pass_rate": 74.55,
+          "vs_national_at_age": 17.25,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 75878.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CHEROKEE",
+          "model_year": 2002,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 100,
+          "pass_rate": 74.0,
+          "vs_national_at_age": 16.7,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 126487.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "300",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 179,
+          "pass_rate": 68.72,
+          "vs_national_at_age": 11.42,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 94180.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "COMMANDER",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 138,
+          "pass_rate": 67.39,
+          "vs_national_at_age": 10.09,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 119800.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "300",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 190,
+          "pass_rate": 66.32,
+          "vs_national_at_age": 9.02,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 93805.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CHEROKEE",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 252,
+          "pass_rate": 65.48,
+          "vs_national_at_age": 8.18,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 109944.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 132,
+          "pass_rate": 65.15,
+          "vs_national_at_age": 7.85,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 111749.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "300",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 729,
+          "pass_rate": 65.02,
+          "vs_national_at_age": 7.72,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 117833.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "300",
+          "model_year": 2010,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 184,
+          "pass_rate": 63.59,
+          "vs_national_at_age": 6.29,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 109495.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "300",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 697,
+          "pass_rate": 63.27,
+          "vs_national_at_age": 5.97,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 116405.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "300",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1070,
+          "pass_rate": 61.4,
+          "vs_national_at_age": 4.1,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 116028.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 240,
+          "pass_rate": 61.25,
+          "vs_national_at_age": 3.95,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 121021.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 285,
+          "pass_rate": 60.7,
+          "vs_national_at_age": 3.4,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 126095.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 146,
+          "pass_rate": 60.27,
+          "vs_national_at_age": 2.97,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 126766.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CHEROKEE",
+          "model_year": 2004,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 354,
+          "pass_rate": 59.89,
+          "vs_national_at_age": 2.59,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 116618.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "GRAND VOYAGER",
+          "model_year": 2006,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 114,
+          "pass_rate": 47.37,
+          "vs_national_at_age": -9.93,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 124335.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "PATRIOT",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 117,
+          "pass_rate": 47.86,
+          "vs_national_at_age": -9.44,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 91952.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "PATRIOT",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 118,
+          "pass_rate": 48.31,
+          "vs_national_at_age": -8.99,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 108477.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "PATRIOT",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 165,
+          "pass_rate": 48.48,
+          "vs_national_at_age": -8.82,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 110663.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "GRAND VOYAGER",
+          "model_year": 2007,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 356,
+          "pass_rate": 51.97,
+          "vs_national_at_age": -5.33,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 120209.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CHEROKEE",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 273,
+          "pass_rate": 52.01,
+          "vs_national_at_age": -5.29,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 109055.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CHEROKEE",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 115,
+          "pass_rate": 54.78,
+          "vs_national_at_age": -2.52,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 106157.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "GRAND CHEROKEE",
+          "model_year": 2008,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 173,
+          "pass_rate": 56.65,
+          "vs_national_at_age": -0.65,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 120580.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "GRAND VOYAGER",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 160,
+          "pass_rate": 56.88,
+          "vs_national_at_age": -0.42,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 113935.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": []
+    },
+    "model_trajectories": {
+      "PATRIOT": {
+        "core_model": "PATRIOT",
+        "years_covered": [
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2008,
+                "pass_rate": 48.22,
+                "vs_national": -9.08,
+                "total_tests": 282,
+                "avg_mileage": 101308.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2008,
+          "vs_national": -9.08,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": -9.08,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "GRAND CHEROKEE": {
+        "core_model": "GRAND CHEROKEE",
+        "years_covered": [
+          2006,
+          2007
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 60.7,
+                "vs_national": 3.4,
+                "total_tests": 285,
+                "avg_mileage": 126095.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 61.25,
+                "vs_national": 3.95,
+                "total_tests": 240,
+                "avg_mileage": 121021.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2007,
+          "vs_national": 3.95,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": 3.4,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "GRAND": {
+        "core_model": "GRAND",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 56.89,
+                "vs_national": -0.41,
+                "total_tests": 399,
+                "avg_mileage": 125215.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 55.71,
+                "vs_national": -1.59,
+                "total_tests": 596,
+                "avg_mileage": 120615.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 57.72,
+                "vs_national": 0.42,
+                "total_tests": 525,
+                "avg_mileage": 119289.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 60.62,
+                "vs_national": 3.32,
+                "total_tests": 292,
+                "avg_mileage": 112842.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 3.32,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": -1.59,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "CHEROKEE": {
+        "core_model": "CHEROKEE",
+        "years_covered": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2003,
+                "pass_rate": 58.99,
+                "vs_national": 1.69,
+                "total_tests": 217,
+                "avg_mileage": 124648.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 59.89,
+                "vs_national": 2.59,
+                "total_tests": 354,
+                "avg_mileage": 116618.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 52.01,
+                "vs_national": -5.29,
+                "total_tests": 273,
+                "avg_mileage": 109055.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 59.64,
+                "vs_national": 2.34,
+                "total_tests": 280,
+                "avg_mileage": 113039.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 65.48,
+                "vs_national": 8.18,
+                "total_tests": 252,
+                "avg_mileage": 109944.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2007,
+          "vs_national": 8.18,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -5.29,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "GRAND VOYAGER": {
+        "core_model": "GRAND VOYAGER",
+        "years_covered": [
+          2007,
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2007,
+                "pass_rate": 51.97,
+                "vs_national": -5.33,
+                "total_tests": 356,
+                "avg_mileage": 120209.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 58.24,
+                "vs_national": 0.94,
+                "total_tests": 352,
+                "avg_mileage": 117998.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2008,
+          "vs_national": 0.94,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": -5.33,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "300": {
+        "core_model": "300",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 65.29,
+                "vs_national": 7.99,
+                "total_tests": 919,
+                "avg_mileage": 105819.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 62.45,
+                "vs_national": 5.15,
+                "total_tests": 1249,
+                "avg_mileage": 105104.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 63.27,
+                "vs_national": 5.97,
+                "total_tests": 697,
+                "avg_mileage": 116405.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 58.99,
+                "vs_national": 1.69,
+                "total_tests": 378,
+                "avg_mileage": 109050.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2006,
+          "vs_national": 7.99,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2009,
+          "vs_national": 1.69,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

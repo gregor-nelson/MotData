@@ -1,0 +1,5923 @@
+{
+  "meta": {
+    "make": "PORSCHE",
+    "generated_at": "2026-01-15T17:43:20.690415",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 14,
+    "make": "PORSCHE",
+    "total_tests": 152600,
+    "total_models": 938,
+    "avg_pass_rate": 87.14,
+    "weighted_pass_rate": 87.14,
+    "best_model": "911 CARRERA S-A 2020",
+    "best_model_pass_rate": 97.24,
+    "worst_model": "CAYENNE 2004",
+    "worst_model_pass_rate": 71.84,
+    "rank": 14
+  },
+  "competitors": [
+    {
+      "make": "PORSCHE",
+      "avg_pass_rate": 87.14,
+      "total_tests": 152600,
+      "rank": 14,
+      "total_models": 938
+    },
+    {
+      "make": "LEXUS",
+      "avg_pass_rate": 83.27,
+      "total_tests": 157583,
+      "rank": 18,
+      "total_models": 1221
+    },
+    {
+      "make": "BMW",
+      "avg_pass_rate": 78.49,
+      "total_tests": 1808787,
+      "rank": 22,
+      "total_models": 3161
+    },
+    {
+      "make": "JAGUAR",
+      "avg_pass_rate": 78.23,
+      "total_tests": 336140,
+      "rank": 23,
+      "total_models": 872
+    },
+    {
+      "make": "AUDI",
+      "avg_pass_rate": 77.9,
+      "total_tests": 1663207,
+      "rank": 25,
+      "total_models": 2244
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "avg_pass_rate": 76.91,
+      "total_tests": 1662304,
+      "rank": 27,
+      "total_models": 4410
+    },
+    {
+      "make": "ALFA ROMEO",
+      "avg_pass_rate": 67.23,
+      "total_tests": 72099,
+      "rank": 55,
+      "total_models": 326
+    }
+  ],
+  "summary": {
+    "total_tests": 152600,
+    "total_models": 938,
+    "avg_pass_rate": 87.14,
+    "rank": 14,
+    "rank_total": 75,
+    "best_model": "911 CARRERA S-A 2020",
+    "best_model_pass_rate": 97.24,
+    "worst_model": "CAYENNE 2004",
+    "worst_model_pass_rate": 71.84,
+    "vs_national": 15.63,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "718 CAYMAN GT4",
+      "total_tests": 343,
+      "total_passes": 333,
+      "total_fails": 7,
+      "pass_rate": 97.08,
+      "avg_mileage": 7504.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "718 CAYMAN GT4"
+    },
+    {
+      "core_model": "TAYCAN 4S 79KWH",
+      "total_tests": 355,
+      "total_passes": 328,
+      "total_fails": 25,
+      "pass_rate": 92.39,
+      "avg_mileage": 22040.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "TAYCAN 4S 79KWH"
+    },
+    {
+      "core_model": "macan",
+      "total_tests": 26719,
+      "total_passes": 24501,
+      "total_fails": 1777,
+      "pass_rate": 91.7,
+      "avg_mileage": 46245.0,
+      "year_from": 2014,
+      "year_to": 2021,
+      "variant_count": 13,
+      "variants": "macan"
+    },
+    {
+      "core_model": "TAYCAN TURBO",
+      "total_tests": 930,
+      "total_passes": 835,
+      "total_fails": 84,
+      "pass_rate": 89.78,
+      "avg_mileage": 20030.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 2,
+      "variants": "TAYCAN TURBO,TAYCAN TURBO S"
+    },
+    {
+      "core_model": "TAYCAN 4S 93KWH",
+      "total_tests": 1198,
+      "total_passes": 1071,
+      "total_fails": 123,
+      "pass_rate": 89.4,
+      "avg_mileage": 23720.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "TAYCAN 4S 93KWH"
+    },
+    {
+      "core_model": "CAYMAN",
+      "total_tests": 13767,
+      "total_passes": 12217,
+      "total_fails": 1309,
+      "pass_rate": 88.74,
+      "avg_mileage": 47462.0,
+      "year_from": 2005,
+      "year_to": 2020,
+      "variant_count": 17,
+      "variants": "CAYMAN,CAYMAN S S-A"
+    },
+    {
+      "core_model": "911",
+      "total_tests": 39159,
+      "total_passes": 34694,
+      "total_fails": 3736,
+      "pass_rate": 88.6,
+      "avg_mileage": 44279.0,
+      "year_from": 2000,
+      "year_to": 2020,
+      "variant_count": 25,
+      "variants": "911,911 CARRERA 4 S-A,911 CARRERA S-A,911 TURBO S S-A"
+    },
+    {
+      "core_model": "PANAMERA",
+      "total_tests": 6218,
+      "total_passes": 5442,
+      "total_fails": 698,
+      "pass_rate": 87.52,
+      "avg_mileage": 57672.0,
+      "year_from": 2010,
+      "year_to": 2020,
+      "variant_count": 24,
+      "variants": "PANAMERA,PANAMERA 4 10 YEARS ED PHEV SA,PANAMERA D V6 TIPTRONIC AUTO"
+    },
+    {
+      "core_model": "CAYENNE",
+      "total_tests": 28491,
+      "total_passes": 23992,
+      "total_fails": 3685,
+      "pass_rate": 84.21,
+      "avg_mileage": 73091.0,
+      "year_from": 2003,
+      "year_to": 2020,
+      "variant_count": 38,
+      "variants": "CAYENNE,CAYENNE GTS AUTO,CAYENNE TURBO S E-HYBRID AUTO,CAYENNE V6 D TIPTRONIC"
+    },
+    {
+      "core_model": "BOXSTER",
+      "total_tests": 30541,
+      "total_passes": 25314,
+      "total_fails": 4501,
+      "pass_rate": 82.89,
+      "avg_mileage": 53149.0,
+      "year_from": 2000,
+      "year_to": 2020,
+      "variant_count": 21,
+      "variants": "BOXSTER"
+    }
+  ],
+  "model_year_breakdowns": {
+    "718 CAYMAN GT4": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 343,
+        "pass_rate": 97.08,
+        "avg_mileage": 7504.0,
+        "pass_rate_vs_national": 9.41,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "TAYCAN 4S 79KWH": [
+      {
+        "model_year": 2020,
+        "fuel_type": "EL",
+        "total_tests": 355,
+        "pass_rate": 92.39,
+        "avg_mileage": 22040.0,
+        "pass_rate_vs_national": 4.72,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "macan": [
+      {
+        "model_year": 2021,
+        "fuel_type": "PE",
+        "total_tests": 131,
+        "pass_rate": 96.95,
+        "avg_mileage": 19868.0,
+        "pass_rate_vs_national": 6.1,
+        "national_avg_for_year": 90.85
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 3589,
+        "pass_rate": 93.4,
+        "avg_mileage": 22542.0,
+        "pass_rate_vs_national": 5.73,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 4726,
+        "pass_rate": 94.27,
+        "avg_mileage": 28946.0,
+        "pass_rate_vs_national": 8.06,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 386,
+        "pass_rate": 90.93,
+        "avg_mileage": 45693.0,
+        "pass_rate_vs_national": 6.69,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 3537,
+        "pass_rate": 94.12,
+        "avg_mileage": 36140.0,
+        "pass_rate_vs_national": 9.88,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 2532,
+        "pass_rate": 91.55,
+        "avg_mileage": 51851.0,
+        "pass_rate_vs_national": 9.87,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 2890,
+        "pass_rate": 92.94,
+        "avg_mileage": 41715.0,
+        "pass_rate_vs_national": 11.26,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 2382,
+        "pass_rate": 88.66,
+        "avg_mileage": 58993.0,
+        "pass_rate_vs_national": 10.01,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 1806,
+        "pass_rate": 90.7,
+        "avg_mileage": 47155.0,
+        "pass_rate_vs_national": 12.05,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 2517,
+        "pass_rate": 86.65,
+        "avg_mileage": 65035.0,
+        "pass_rate_vs_national": 11.16,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 1065,
+        "pass_rate": 89.3,
+        "avg_mileage": 53077.0,
+        "pass_rate_vs_national": 13.81,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 822,
+        "pass_rate": 85.28,
+        "avg_mileage": 70938.0,
+        "pass_rate_vs_national": 13.57,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 336,
+        "pass_rate": 89.29,
+        "avg_mileage": 59227.0,
+        "pass_rate_vs_national": 17.58,
+        "national_avg_for_year": 71.71
+      }
+    ],
+    "TAYCAN TURBO": [
+      {
+        "model_year": 2020,
+        "fuel_type": "EL",
+        "total_tests": 930,
+        "pass_rate": 89.78,
+        "avg_mileage": 20030.0,
+        "pass_rate_vs_national": 2.11,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "TAYCAN 4S 93KWH": [
+      {
+        "model_year": 2020,
+        "fuel_type": "EL",
+        "total_tests": 1198,
+        "pass_rate": 89.4,
+        "avg_mileage": 23720.0,
+        "pass_rate_vs_national": 1.73,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "CAYMAN": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 464,
+        "pass_rate": 95.91,
+        "avg_mileage": 13330.0,
+        "pass_rate_vs_national": 8.24,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1058,
+        "pass_rate": 96.03,
+        "avg_mileage": 19246.0,
+        "pass_rate_vs_national": 9.82,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1209,
+        "pass_rate": 93.96,
+        "avg_mileage": 24023.0,
+        "pass_rate_vs_national": 9.72,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 884,
+        "pass_rate": 94.91,
+        "avg_mileage": 28295.0,
+        "pass_rate_vs_national": 13.23,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 982,
+        "pass_rate": 94.09,
+        "avg_mileage": 27005.0,
+        "pass_rate_vs_national": 15.44,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 1124,
+        "pass_rate": 94.4,
+        "avg_mileage": 33234.0,
+        "pass_rate_vs_national": 18.91,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 1202,
+        "pass_rate": 92.18,
+        "avg_mileage": 42091.0,
+        "pass_rate_vs_national": 20.47,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 942,
+        "pass_rate": 90.76,
+        "avg_mileage": 45225.0,
+        "pass_rate_vs_national": 22.47,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 292,
+        "pass_rate": 90.75,
+        "avg_mileage": 47603.0,
+        "pass_rate_vs_national": 25.12,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 504,
+        "pass_rate": 89.88,
+        "avg_mileage": 53273.0,
+        "pass_rate_vs_national": 26.89,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 531,
+        "pass_rate": 88.51,
+        "avg_mileage": 62689.0,
+        "pass_rate_vs_national": 28.01,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 649,
+        "pass_rate": 89.37,
+        "avg_mileage": 64025.0,
+        "pass_rate_vs_national": 30.36,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 882,
+        "pass_rate": 78.46,
+        "avg_mileage": 70451.0,
+        "pass_rate_vs_national": 21.07,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1407,
+        "pass_rate": 79.1,
+        "avg_mileage": 74389.0,
+        "pass_rate_vs_national": 22.13,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 1475,
+        "pass_rate": 77.42,
+        "avg_mileage": 76817.0,
+        "pass_rate_vs_national": 21.24,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 162,
+        "pass_rate": 72.84,
+        "avg_mileage": 79940.0,
+        "pass_rate_vs_national": 16.59,
+        "national_avg_for_year": 56.25
+      }
+    ],
+    "911": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1197,
+        "pass_rate": 95.24,
+        "avg_mileage": 13482.0,
+        "pass_rate_vs_national": 7.57,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2300,
+        "pass_rate": 94.57,
+        "avg_mileage": 15819.0,
+        "pass_rate_vs_national": 8.36,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 2215,
+        "pass_rate": 93.81,
+        "avg_mileage": 16364.0,
+        "pass_rate_vs_national": 9.57,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 1929,
+        "pass_rate": 94.71,
+        "avg_mileage": 21831.0,
+        "pass_rate_vs_national": 13.03,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 1724,
+        "pass_rate": 94.95,
+        "avg_mileage": 25924.0,
+        "pass_rate_vs_national": 16.3,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 1720,
+        "pass_rate": 94.83,
+        "avg_mileage": 29471.0,
+        "pass_rate_vs_national": 19.34,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 1568,
+        "pass_rate": 94.52,
+        "avg_mileage": 32648.0,
+        "pass_rate_vs_national": 22.81,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 1268,
+        "pass_rate": 92.67,
+        "avg_mileage": 41090.0,
+        "pass_rate_vs_national": 24.38,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 1484,
+        "pass_rate": 91.58,
+        "avg_mileage": 45702.0,
+        "pass_rate_vs_national": 25.95,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 1122,
+        "pass_rate": 93.05,
+        "avg_mileage": 42889.0,
+        "pass_rate_vs_national": 30.06,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 1581,
+        "pass_rate": 91.27,
+        "avg_mileage": 48321.0,
+        "pass_rate_vs_national": 30.77,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 1377,
+        "pass_rate": 89.18,
+        "avg_mileage": 57362.0,
+        "pass_rate_vs_national": 30.17,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 1827,
+        "pass_rate": 88.12,
+        "avg_mileage": 56478.0,
+        "pass_rate_vs_national": 30.73,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 2443,
+        "pass_rate": 87.27,
+        "avg_mileage": 58118.0,
+        "pass_rate_vs_national": 30.3,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 2812,
+        "pass_rate": 85.46,
+        "avg_mileage": 66650.0,
+        "pass_rate_vs_national": 29.28,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 2822,
+        "pass_rate": 85.22,
+        "avg_mileage": 69789.0,
+        "pass_rate_vs_national": 28.97,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 2397,
+        "pass_rate": 82.77,
+        "avg_mileage": 72338.0,
+        "pass_rate_vs_national": 26.74,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 2610,
+        "pass_rate": 80.04,
+        "avg_mileage": 78210.0,
+        "pass_rate_vs_national": 23.36,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 2366,
+        "pass_rate": 81.74,
+        "avg_mileage": 82012.0,
+        "pass_rate_vs_national": 24.2,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 1498,
+        "pass_rate": 80.64,
+        "avg_mileage": 86578.0,
+        "pass_rate_vs_national": 21.96,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 899,
+        "pass_rate": 78.98,
+        "avg_mileage": 89640.0,
+        "pass_rate_vs_national": 18.36,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "PANAMERA": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 226,
+        "pass_rate": 90.71,
+        "avg_mileage": 24384.0,
+        "pass_rate_vs_national": 3.04,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 131,
+        "pass_rate": 93.89,
+        "avg_mileage": 23601.0,
+        "pass_rate_vs_national": 6.22,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 432,
+        "pass_rate": 91.44,
+        "avg_mileage": 31826.0,
+        "pass_rate_vs_national": 5.23,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 354,
+        "pass_rate": 92.66,
+        "avg_mileage": 27736.0,
+        "pass_rate_vs_national": 6.45,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 484,
+        "pass_rate": 85.95,
+        "avg_mileage": 41491.0,
+        "pass_rate_vs_national": 1.71,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 291,
+        "pass_rate": 87.63,
+        "avg_mileage": 36163.0,
+        "pass_rate_vs_national": 3.39,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 130,
+        "pass_rate": 90.0,
+        "avg_mileage": 50875.0,
+        "pass_rate_vs_national": 8.32,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 449,
+        "pass_rate": 89.31,
+        "avg_mileage": 47465.0,
+        "pass_rate_vs_national": 7.63,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 413,
+        "pass_rate": 90.07,
+        "avg_mileage": 41453.0,
+        "pass_rate_vs_national": 8.39,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 121,
+        "pass_rate": 85.12,
+        "avg_mileage": 61312.0,
+        "pass_rate_vs_national": 6.47,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 141,
+        "pass_rate": 82.98,
+        "avg_mileage": 57040.0,
+        "pass_rate_vs_national": 4.33,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 470,
+        "pass_rate": 85.53,
+        "avg_mileage": 68351.0,
+        "pass_rate_vs_national": 10.04,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "HY",
+        "total_tests": 113,
+        "pass_rate": 87.61,
+        "avg_mileage": 65631.0,
+        "pass_rate_vs_national": 12.12,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 488,
+        "pass_rate": 87.5,
+        "avg_mileage": 72785.0,
+        "pass_rate_vs_national": 15.79,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "HY",
+        "total_tests": 133,
+        "pass_rate": 89.47,
+        "avg_mileage": 70495.0,
+        "pass_rate_vs_national": 17.76,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 118,
+        "pass_rate": 89.83,
+        "avg_mileage": 58012.0,
+        "pass_rate_vs_national": 18.12,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 547,
+        "pass_rate": 85.01,
+        "avg_mileage": 84747.0,
+        "pass_rate_vs_national": 16.72,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 485,
+        "pass_rate": 84.95,
+        "avg_mileage": 90876.0,
+        "pass_rate_vs_national": 19.32,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 150,
+        "pass_rate": 86.0,
+        "avg_mileage": 66487.0,
+        "pass_rate_vs_national": 20.37,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 105,
+        "pass_rate": 79.05,
+        "avg_mileage": 99064.0,
+        "pass_rate_vs_national": 16.06,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 158,
+        "pass_rate": 83.54,
+        "avg_mileage": 72294.0,
+        "pass_rate_vs_national": 20.55,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 279,
+        "pass_rate": 84.59,
+        "avg_mileage": 76777.0,
+        "pass_rate_vs_national": 24.09,
+        "national_avg_for_year": 60.5
+      }
+    ],
+    "CAYENNE": [
+      {
+        "model_year": 2020,
+        "fuel_type": "HY",
+        "total_tests": 1246,
+        "pass_rate": 92.86,
+        "avg_mileage": 26409.0,
+        "pass_rate_vs_national": 5.19,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 1184,
+        "pass_rate": 93.67,
+        "avg_mileage": 24673.0,
+        "pass_rate_vs_national": 6.0,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 761,
+        "pass_rate": 95.27,
+        "avg_mileage": 31696.0,
+        "pass_rate_vs_national": 9.06,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 2470,
+        "pass_rate": 93.72,
+        "avg_mileage": 31565.0,
+        "pass_rate_vs_national": 7.51,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 547,
+        "pass_rate": 84.28,
+        "avg_mileage": 49522.0,
+        "pass_rate_vs_national": 0.04,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 171,
+        "pass_rate": 92.4,
+        "avg_mileage": 41944.0,
+        "pass_rate_vs_national": 8.16,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1119,
+        "pass_rate": 92.4,
+        "avg_mileage": 40105.0,
+        "pass_rate_vs_national": 8.16,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 1140,
+        "pass_rate": 87.19,
+        "avg_mileage": 57824.0,
+        "pass_rate_vs_national": 5.51,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 410,
+        "pass_rate": 83.9,
+        "avg_mileage": 56054.0,
+        "pass_rate_vs_national": 2.22,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 276,
+        "pass_rate": 90.22,
+        "avg_mileage": 47333.0,
+        "pass_rate_vs_national": 8.54,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 2185,
+        "pass_rate": 85.86,
+        "avg_mileage": 64193.0,
+        "pass_rate_vs_national": 7.21,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 400,
+        "pass_rate": 85.25,
+        "avg_mileage": 64576.0,
+        "pass_rate_vs_national": 6.6,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 249,
+        "pass_rate": 89.56,
+        "avg_mileage": 52611.0,
+        "pass_rate_vs_national": 10.91,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "DI",
+        "total_tests": 1800,
+        "pass_rate": 86.44,
+        "avg_mileage": 71712.0,
+        "pass_rate_vs_national": 10.95,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "HY",
+        "total_tests": 307,
+        "pass_rate": 84.04,
+        "avg_mileage": 77881.0,
+        "pass_rate_vs_national": 8.55,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 296,
+        "pass_rate": 88.85,
+        "avg_mileage": 60365.0,
+        "pass_rate_vs_national": 13.36,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "DI",
+        "total_tests": 1623,
+        "pass_rate": 83.67,
+        "avg_mileage": 81008.0,
+        "pass_rate_vs_national": 11.96,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 225,
+        "pass_rate": 85.33,
+        "avg_mileage": 67591.0,
+        "pass_rate_vs_national": 13.62,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "DI",
+        "total_tests": 1908,
+        "pass_rate": 82.08,
+        "avg_mileage": 90538.0,
+        "pass_rate_vs_national": 13.79,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 234,
+        "pass_rate": 82.91,
+        "avg_mileage": 74560.0,
+        "pass_rate_vs_national": 14.62,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 1596,
+        "pass_rate": 79.7,
+        "avg_mileage": 98063.0,
+        "pass_rate_vs_national": 14.07,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 313,
+        "pass_rate": 85.62,
+        "avg_mileage": 81338.0,
+        "pass_rate_vs_national": 19.99,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 883,
+        "pass_rate": 83.47,
+        "avg_mileage": 107619.0,
+        "pass_rate_vs_national": 20.48,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 213,
+        "pass_rate": 81.69,
+        "avg_mileage": 86888.0,
+        "pass_rate_vs_national": 18.7,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 576,
+        "pass_rate": 82.29,
+        "avg_mileage": 115078.0,
+        "pass_rate_vs_national": 21.79,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 237,
+        "pass_rate": 84.39,
+        "avg_mileage": 90551.0,
+        "pass_rate_vs_national": 23.89,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 535,
+        "pass_rate": 72.15,
+        "avg_mileage": 119957.0,
+        "pass_rate_vs_national": 13.14,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 313,
+        "pass_rate": 75.08,
+        "avg_mileage": 95820.0,
+        "pass_rate_vs_national": 16.07,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 599,
+        "pass_rate": 76.96,
+        "avg_mileage": 103913.0,
+        "pass_rate_vs_national": 19.57,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 690,
+        "pass_rate": 73.48,
+        "avg_mileage": 109064.0,
+        "pass_rate_vs_national": 16.51,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 921,
+        "pass_rate": 74.16,
+        "avg_mileage": 114905.0,
+        "pass_rate_vs_national": 17.98,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 1348,
+        "pass_rate": 73.15,
+        "avg_mileage": 120129.0,
+        "pass_rate_vs_national": 16.9,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 1137,
+        "pass_rate": 71.68,
+        "avg_mileage": 122973.0,
+        "pass_rate_vs_national": 15.65,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 579,
+        "pass_rate": 72.71,
+        "avg_mileage": 118176.0,
+        "pass_rate_vs_national": 16.03,
+        "national_avg_for_year": 56.68
+      }
+    ],
+    "BOXSTER": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 438,
+        "pass_rate": 92.69,
+        "avg_mileage": 13950.0,
+        "pass_rate_vs_national": 5.02,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 930,
+        "pass_rate": 93.76,
+        "avg_mileage": 16844.0,
+        "pass_rate_vs_national": 7.55,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 1033,
+        "pass_rate": 93.9,
+        "avg_mileage": 21773.0,
+        "pass_rate_vs_national": 9.66,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 1012,
+        "pass_rate": 93.87,
+        "avg_mileage": 26453.0,
+        "pass_rate_vs_national": 12.19,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 1232,
+        "pass_rate": 92.53,
+        "avg_mileage": 28230.0,
+        "pass_rate_vs_national": 13.88,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 1074,
+        "pass_rate": 94.32,
+        "avg_mileage": 31947.0,
+        "pass_rate_vs_national": 18.83,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 1203,
+        "pass_rate": 92.1,
+        "avg_mileage": 38295.0,
+        "pass_rate_vs_national": 20.39,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 1279,
+        "pass_rate": 92.73,
+        "avg_mileage": 42039.0,
+        "pass_rate_vs_national": 24.44,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 1059,
+        "pass_rate": 89.14,
+        "avg_mileage": 45351.0,
+        "pass_rate_vs_national": 23.51,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 753,
+        "pass_rate": 90.44,
+        "avg_mileage": 48734.0,
+        "pass_rate_vs_national": 27.45,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 797,
+        "pass_rate": 91.09,
+        "avg_mileage": 54253.0,
+        "pass_rate_vs_national": 30.59,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 833,
+        "pass_rate": 89.56,
+        "avg_mileage": 58982.0,
+        "pass_rate_vs_national": 30.55,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 1077,
+        "pass_rate": 86.44,
+        "avg_mileage": 62531.0,
+        "pass_rate_vs_national": 29.05,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1635,
+        "pass_rate": 83.55,
+        "avg_mileage": 66334.0,
+        "pass_rate_vs_national": 26.58,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 1906,
+        "pass_rate": 82.11,
+        "avg_mileage": 72597.0,
+        "pass_rate_vs_national": 25.93,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 3317,
+        "pass_rate": 79.89,
+        "avg_mileage": 74558.0,
+        "pass_rate_vs_national": 23.64,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 2116,
+        "pass_rate": 74.15,
+        "avg_mileage": 77333.0,
+        "pass_rate_vs_national": 18.12,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 2507,
+        "pass_rate": 73.55,
+        "avg_mileage": 80297.0,
+        "pass_rate_vs_national": 16.87,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 2231,
+        "pass_rate": 72.12,
+        "avg_mileage": 84134.0,
+        "pass_rate_vs_national": 14.58,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 2163,
+        "pass_rate": 73.74,
+        "avg_mileage": 84837.0,
+        "pass_rate_vs_national": 15.06,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 1946,
+        "pass_rate": 74.15,
+        "avg_mileage": 86649.0,
+        "pass_rate_vs_national": 13.53,
+        "national_avg_for_year": 60.62
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "EL",
+      "model_count": 4,
+      "total_tests": 2483,
+      "pass_rate": 89.97,
+      "fuel_name": "Electric"
+    },
+    {
+      "fuel_type": "HY",
+      "model_count": 16,
+      "total_tests": 5273,
+      "pass_rate": 89.8,
+      "fuel_name": "Hybrid Electric"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 99,
+      "total_tests": 116187,
+      "pass_rate": 87.28,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 24,
+      "total_tests": 23778,
+      "pass_rate": 85.59,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "911",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 1581,
+      "pass_rate": 91.27,
+      "pass_rate_vs_national": 30.77,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "911",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1827,
+      "pass_rate": 88.12,
+      "pass_rate_vs_national": 30.73,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 797,
+      "pass_rate": 91.09,
+      "pass_rate_vs_national": 30.59,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 833,
+      "pass_rate": 89.56,
+      "pass_rate_vs_national": 30.55,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 649,
+      "pass_rate": 89.37,
+      "pass_rate_vs_national": 30.36,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "911",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 2443,
+      "pass_rate": 87.27,
+      "pass_rate_vs_national": 30.3,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "911",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 1377,
+      "pass_rate": 89.18,
+      "pass_rate_vs_national": 30.17,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "911",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 1122,
+      "pass_rate": 93.05,
+      "pass_rate_vs_national": 30.06,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "911",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 2812,
+      "pass_rate": 85.46,
+      "pass_rate_vs_national": 29.28,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1077,
+      "pass_rate": 86.44,
+      "pass_rate_vs_national": 29.05,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "911",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 2822,
+      "pass_rate": 85.22,
+      "pass_rate_vs_national": 28.97,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 531,
+      "pass_rate": 88.51,
+      "pass_rate_vs_national": 28.01,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "CAYMAN S S-A",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 108,
+      "pass_rate": 96.3,
+      "pass_rate_vs_national": 28.01,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 753,
+      "pass_rate": 90.44,
+      "pass_rate_vs_national": 27.45,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 504,
+      "pass_rate": 89.88,
+      "pass_rate_vs_national": 26.89,
+      "national_avg_for_year": 62.99
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "CAYENNE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 547,
+      "pass_rate": 84.28,
+      "pass_rate_vs_national": 0.04,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "TAYCAN TURBO",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 586,
+      "pass_rate": 88.91,
+      "pass_rate_vs_national": 1.24,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 484,
+      "pass_rate": 85.95,
+      "pass_rate_vs_national": 1.71,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "TAYCAN 4S 93KWH",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 1198,
+      "pass_rate": 89.4,
+      "pass_rate_vs_national": 1.73,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 410,
+      "pass_rate": 83.9,
+      "pass_rate_vs_national": 2.22,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "PANAMERA 4 10 YEARS ED PHEV SA",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 125,
+      "pass_rate": 90.4,
+      "pass_rate_vs_national": 2.73,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 291,
+      "pass_rate": 87.63,
+      "pass_rate_vs_national": 3.39,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 101,
+      "pass_rate": 91.09,
+      "pass_rate_vs_national": 3.42,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "TAYCAN TURBO S",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 344,
+      "pass_rate": 91.28,
+      "pass_rate_vs_national": 3.61,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 141,
+      "pass_rate": 82.98,
+      "pass_rate_vs_national": 4.33,
+      "national_avg_for_year": 78.65
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 5959,
+        "vehicle_count": 136
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 5554,
+        "vehicle_count": 143
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 3315,
+        "vehicle_count": 126
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 3151,
+        "vehicle_count": 115
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 2771,
+        "vehicle_count": 115
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 2267,
+        "vehicle_count": 128
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 1648,
+        "vehicle_count": 92
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 780,
+        "vehicle_count": 122
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 536,
+        "vehicle_count": 58
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 508,
+        "vehicle_count": 89
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 194,
+        "vehicle_count": 65
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 1548
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 1524
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 1425
+      },
+      {
+        "defect_description": "Lambda reading after 2nd fast idle outside specified limits",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 1357
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 1357
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 995
+      },
+      {
+        "defect_description": "excessively corroded",
+        "category_name": "Brakes",
+        "total_occurrences": 901
+      },
+      {
+        "defect_description": "too high",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 893
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 878
+      },
+      {
+        "defect_description": "constant velocity boot split or insecure, no longer prevents the ingress of dirt",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 729
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 16450
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 8034
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 7093
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 6438
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 4599
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 3378
+      },
+      {
+        "defect_description": "Nail in tyre",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 2144
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 1810
+      },
+      {
+        "defect_description": "has a cut but not deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 1659
+      },
+      {
+        "defect_description": "ball joint has slight play",
+        "category_name": "Suspension",
+        "total_occurrences": 1251
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 15571
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 8139
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 6705
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 5378
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 2476
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1479
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 1220
+      },
+      {
+        "defect_description": "leaking on a hydraulic braking system ",
+        "category_name": "Brakes",
+        "total_occurrences": 197
+      },
+      {
+        "defect_description": "seriously damaged",
+        "category_name": "Tyres",
+        "total_occurrences": 140
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 110
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 40944,
+      "avg_pass_rate": 94.43
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 48315,
+      "avg_pass_rate": 90.09
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 33777,
+      "avg_pass_rate": 82.67
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 16529,
+      "avg_pass_rate": 76.7
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 5552,
+      "avg_pass_rate": 73.14
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 1949,
+      "avg_pass_rate": 69.47
+    }
+  ],
+  "all_models": [
+    {
+      "model": "911 CARRERA S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 145,
+      "total_passes": 141,
+      "total_fails": 3,
+      "pass_rate": 97.24,
+      "avg_mileage": 14660.0,
+      "avg_age_years": 2.5,
+      "pass_rate_vs_national": 25.73
+    },
+    {
+      "model": "718 CAYMAN GT4",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 343,
+      "total_passes": 333,
+      "total_fails": 7,
+      "pass_rate": 97.08,
+      "avg_mileage": 7504.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 25.57
+    },
+    {
+      "model": "macan",
+      "model_year": 2021,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "total_passes": 127,
+      "total_fails": 4,
+      "pass_rate": 96.95,
+      "avg_mileage": 19868.0,
+      "avg_age_years": 1.9,
+      "pass_rate_vs_national": 25.44
+    },
+    {
+      "model": "911 TURBO S S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 206,
+      "total_passes": 199,
+      "total_fails": 6,
+      "pass_rate": 96.6,
+      "avg_mileage": 10800.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 25.09
+    },
+    {
+      "model": "CAYMAN S S-A",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 108,
+      "total_passes": 104,
+      "total_fails": 4,
+      "pass_rate": 96.3,
+      "avg_mileage": 43930.0,
+      "avg_age_years": 9.6,
+      "pass_rate_vs_national": 24.79
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1058,
+      "total_passes": 1016,
+      "total_fails": 36,
+      "pass_rate": 96.03,
+      "avg_mileage": 19246.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 24.52
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 464,
+      "total_passes": 445,
+      "total_fails": 16,
+      "pass_rate": 95.91,
+      "avg_mileage": 13330.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 24.39
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 638,
+      "total_passes": 608,
+      "total_fails": 20,
+      "pass_rate": 95.3,
+      "avg_mileage": 31839.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 23.79
+    },
+    {
+      "model": "CAYENNE TURBO S E-HYBRID AUTO",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 123,
+      "total_passes": 117,
+      "total_fails": 4,
+      "pass_rate": 95.12,
+      "avg_mileage": 31552.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 23.61
+    },
+    {
+      "model": "911",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 1724,
+      "total_passes": 1637,
+      "total_fails": 71,
+      "pass_rate": 94.95,
+      "avg_mileage": 25924.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 23.44
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 884,
+      "total_passes": 839,
+      "total_fails": 40,
+      "pass_rate": 94.91,
+      "avg_mileage": 28295.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 23.4
+    },
+    {
+      "model": "911",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1720,
+      "total_passes": 1631,
+      "total_fails": 75,
+      "pass_rate": 94.83,
+      "avg_mileage": 29471.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 23.31
+    },
+    {
+      "model": "911",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 727,
+      "total_passes": 689,
+      "total_fails": 29,
+      "pass_rate": 94.77,
+      "avg_mileage": 14198.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 23.26
+    },
+    {
+      "model": "911",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 1929,
+      "total_passes": 1827,
+      "total_fails": 88,
+      "pass_rate": 94.71,
+      "avg_mileage": 21831.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 23.2
+    },
+    {
+      "model": "911",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2120,
+      "total_passes": 2005,
+      "total_fails": 91,
+      "pass_rate": 94.58,
+      "avg_mileage": 15718.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 23.06
+    },
+    {
+      "model": "911",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 1568,
+      "total_passes": 1482,
+      "total_fails": 73,
+      "pass_rate": 94.52,
+      "avg_mileage": 32648.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 23.0
+    },
+    {
+      "model": "911 CARRERA S-A",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 180,
+      "total_passes": 170,
+      "total_fails": 7,
+      "pass_rate": 94.44,
+      "avg_mileage": 15919.0,
+      "avg_age_years": 3.1,
+      "pass_rate_vs_national": 22.93
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1124,
+      "total_passes": 1061,
+      "total_fails": 52,
+      "pass_rate": 94.4,
+      "avg_mileage": 33234.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 22.88
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1074,
+      "total_passes": 1013,
+      "total_fails": 48,
+      "pass_rate": 94.32,
+      "avg_mileage": 31947.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 22.81
+    },
+    {
+      "model": "macan",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 4726,
+      "total_passes": 4455,
+      "total_fails": 219,
+      "pass_rate": 94.27,
+      "avg_mileage": 28946.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 22.75
+    },
+    {
+      "model": "CAYENNE GTS AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 96,
+      "total_fails": 6,
+      "pass_rate": 94.12,
+      "avg_mileage": 23430.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 22.61
+    },
+    {
+      "model": "macan",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 3537,
+      "total_passes": 3329,
+      "total_fails": 163,
+      "pass_rate": 94.12,
+      "avg_mileage": 36140.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 22.61
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 982,
+      "total_passes": 924,
+      "total_fails": 48,
+      "pass_rate": 94.09,
+      "avg_mileage": 27005.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 22.58
+    },
+    {
+      "model": "CAYENNE TURBO S E-HYBRID AUTO",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 166,
+      "total_passes": 156,
+      "total_fails": 8,
+      "pass_rate": 93.98,
+      "avg_mileage": 25615.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 22.47
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1209,
+      "total_passes": 1136,
+      "total_fails": 60,
+      "pass_rate": 93.96,
+      "avg_mileage": 24023.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 22.45
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1033,
+      "total_passes": 970,
+      "total_fails": 57,
+      "pass_rate": 93.9,
+      "avg_mileage": 21773.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 22.39
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "total_passes": 123,
+      "total_fails": 8,
+      "pass_rate": 93.89,
+      "avg_mileage": 23601.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 22.38
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 1012,
+      "total_passes": 950,
+      "total_fails": 53,
+      "pass_rate": 93.87,
+      "avg_mileage": 26453.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 22.36
+    },
+    {
+      "model": "911",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 2215,
+      "total_passes": 2078,
+      "total_fails": 117,
+      "pass_rate": 93.81,
+      "avg_mileage": 16364.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 22.3
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 930,
+      "total_passes": 872,
+      "total_fails": 48,
+      "pass_rate": 93.76,
+      "avg_mileage": 16844.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 22.25
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 2470,
+      "total_passes": 2315,
+      "total_fails": 126,
+      "pass_rate": 93.72,
+      "avg_mileage": 31565.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 22.21
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 1082,
+      "total_passes": 1013,
+      "total_fails": 54,
+      "pass_rate": 93.62,
+      "avg_mileage": 25915.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 22.11
+    },
+    {
+      "model": "macan",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 3589,
+      "total_passes": 3352,
+      "total_fails": 190,
+      "pass_rate": 93.4,
+      "avg_mileage": 22542.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 21.89
+    },
+    {
+      "model": "911 CARRERA 4 S-A",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 119,
+      "total_passes": 111,
+      "total_fails": 7,
+      "pass_rate": 93.28,
+      "avg_mileage": 14269.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 21.77
+    },
+    {
+      "model": "911",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 1122,
+      "total_passes": 1044,
+      "total_fails": 61,
+      "pass_rate": 93.05,
+      "avg_mileage": 42889.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 21.54
+    },
+    {
+      "model": "macan",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 2890,
+      "total_passes": 2686,
+      "total_fails": 166,
+      "pass_rate": 92.94,
+      "avg_mileage": 41715.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 21.43
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 1279,
+      "total_passes": 1186,
+      "total_fails": 77,
+      "pass_rate": 92.73,
+      "avg_mileage": 42039.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 21.22
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 438,
+      "total_passes": 406,
+      "total_fails": 30,
+      "pass_rate": 92.69,
+      "avg_mileage": 13950.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 21.18
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 1080,
+      "total_passes": 1001,
+      "total_fails": 71,
+      "pass_rate": 92.69,
+      "avg_mileage": 27203.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 21.17
+    },
+    {
+      "model": "911",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 1268,
+      "total_passes": 1175,
+      "total_fails": 79,
+      "pass_rate": 92.67,
+      "avg_mileage": 41090.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 21.15
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 354,
+      "total_passes": 328,
+      "total_fails": 24,
+      "pass_rate": 92.66,
+      "avg_mileage": 27736.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 21.14
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 1232,
+      "total_passes": 1140,
+      "total_fails": 77,
+      "pass_rate": 92.53,
+      "avg_mileage": 28230.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 21.02
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 171,
+      "total_passes": 158,
+      "total_fails": 13,
+      "pass_rate": 92.4,
+      "avg_mileage": 41944.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 20.89
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 1119,
+      "total_passes": 1034,
+      "total_fails": 66,
+      "pass_rate": 92.4,
+      "avg_mileage": 40105.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 20.89
+    },
+    {
+      "model": "TAYCAN 4S 79KWH",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 355,
+      "total_passes": 328,
+      "total_fails": 25,
+      "pass_rate": 92.39,
+      "avg_mileage": 22040.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 20.88
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 1202,
+      "total_passes": 1108,
+      "total_fails": 83,
+      "pass_rate": 92.18,
+      "avg_mileage": 42091.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 20.67
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 1203,
+      "total_passes": 1108,
+      "total_fails": 89,
+      "pass_rate": 92.1,
+      "avg_mileage": 38295.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 20.59
+    },
+    {
+      "model": "911",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1484,
+      "total_passes": 1359,
+      "total_fails": 109,
+      "pass_rate": 91.58,
+      "avg_mileage": 45702.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 20.07
+    },
+    {
+      "model": "macan",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 2532,
+      "total_passes": 2318,
+      "total_fails": 169,
+      "pass_rate": 91.55,
+      "avg_mileage": 51851.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 20.04
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2019,
+      "fuel_type": "HY",
+      "total_tests": 432,
+      "total_passes": 395,
+      "total_fails": 34,
+      "pass_rate": 91.44,
+      "avg_mileage": 31826.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 19.92
+    },
+    {
+      "model": "TAYCAN TURBO S",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 344,
+      "total_passes": 314,
+      "total_fails": 26,
+      "pass_rate": 91.28,
+      "avg_mileage": 18870.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 19.77
+    },
+    {
+      "model": "911",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 1581,
+      "total_passes": 1443,
+      "total_fails": 115,
+      "pass_rate": 91.27,
+      "avg_mileage": 48321.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 19.76
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 797,
+      "total_passes": 726,
+      "total_fails": 64,
+      "pass_rate": 91.09,
+      "avg_mileage": 54253.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 19.58
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 101,
+      "total_passes": 92,
+      "total_fails": 9,
+      "pass_rate": 91.09,
+      "avg_mileage": 25091.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 19.58
+    },
+    {
+      "model": "macan",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 386,
+      "total_passes": 351,
+      "total_fails": 25,
+      "pass_rate": 90.93,
+      "avg_mileage": 45693.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 19.42
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 292,
+      "total_passes": 265,
+      "total_fails": 23,
+      "pass_rate": 90.75,
+      "avg_mileage": 47603.0,
+      "avg_age_years": 10.7,
+      "pass_rate_vs_national": 19.24
+    },
+    {
+      "model": "macan",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 1806,
+      "total_passes": 1638,
+      "total_fails": 129,
+      "pass_rate": 90.7,
+      "avg_mileage": 47155.0,
+      "avg_age_years": 6.3,
+      "pass_rate_vs_national": 19.19
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 753,
+      "total_passes": 681,
+      "total_fails": 59,
+      "pass_rate": 90.44,
+      "avg_mileage": 48734.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 18.93
+    },
+    {
+      "model": "PANAMERA 4 10 YEARS ED PHEV SA",
+      "model_year": 2020,
+      "fuel_type": "HY",
+      "total_tests": 125,
+      "total_passes": 113,
+      "total_fails": 12,
+      "pass_rate": 90.4,
+      "avg_mileage": 23676.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 18.89
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 276,
+      "total_passes": 249,
+      "total_fails": 19,
+      "pass_rate": 90.22,
+      "avg_mileage": 47333.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 18.71
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 413,
+      "total_passes": 372,
+      "total_fails": 36,
+      "pass_rate": 90.07,
+      "avg_mileage": 41453.0,
+      "avg_age_years": 5.4,
+      "pass_rate_vs_national": 18.56
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 834,
+      "total_passes": 751,
+      "total_fails": 71,
+      "pass_rate": 90.05,
+      "avg_mileage": 46520.0,
+      "avg_age_years": 9.3,
+      "pass_rate_vs_national": 18.54
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 130,
+      "total_passes": 117,
+      "total_fails": 12,
+      "pass_rate": 90.0,
+      "avg_mileage": 50875.0,
+      "avg_age_years": 5.6,
+      "pass_rate_vs_national": 18.49
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 504,
+      "total_passes": 453,
+      "total_fails": 42,
+      "pass_rate": 89.88,
+      "avg_mileage": 53273.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 18.37
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 118,
+      "total_passes": 106,
+      "total_fails": 10,
+      "pass_rate": 89.83,
+      "avg_mileage": 58012.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 18.32
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 833,
+      "total_passes": 746,
+      "total_fails": 77,
+      "pass_rate": 89.56,
+      "avg_mileage": 58982.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 18.04
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 249,
+      "total_passes": 223,
+      "total_fails": 18,
+      "pass_rate": 89.56,
+      "avg_mileage": 52611.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 18.05
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2014,
+      "fuel_type": "HY",
+      "total_tests": 133,
+      "total_passes": 119,
+      "total_fails": 12,
+      "pass_rate": 89.47,
+      "avg_mileage": 70495.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 17.96
+    },
+    {
+      "model": "TAYCAN 4S 93KWH",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 1198,
+      "total_passes": 1071,
+      "total_fails": 123,
+      "pass_rate": 89.4,
+      "avg_mileage": 23720.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.89
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 649,
+      "total_passes": 580,
+      "total_fails": 60,
+      "pass_rate": 89.37,
+      "avg_mileage": 64025.0,
+      "avg_age_years": 13.6,
+      "pass_rate_vs_national": 17.86
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 449,
+      "total_passes": 401,
+      "total_fails": 43,
+      "pass_rate": 89.31,
+      "avg_mileage": 47465.0,
+      "avg_age_years": 5.3,
+      "pass_rate_vs_national": 17.8
+    },
+    {
+      "model": "macan",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 1065,
+      "total_passes": 951,
+      "total_fails": 89,
+      "pass_rate": 89.3,
+      "avg_mileage": 53077.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 17.78
+    },
+    {
+      "model": "macan",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 336,
+      "total_passes": 300,
+      "total_fails": 26,
+      "pass_rate": 89.29,
+      "avg_mileage": 59227.0,
+      "avg_age_years": 8.3,
+      "pass_rate_vs_national": 17.77
+    },
+    {
+      "model": "911",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 1377,
+      "total_passes": 1228,
+      "total_fails": 132,
+      "pass_rate": 89.18,
+      "avg_mileage": 57362.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 17.67
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1059,
+      "total_passes": 944,
+      "total_fails": 102,
+      "pass_rate": 89.14,
+      "avg_mileage": 45351.0,
+      "avg_age_years": 10.3,
+      "pass_rate_vs_national": 17.63
+    },
+    {
+      "model": "TAYCAN TURBO",
+      "model_year": 2020,
+      "fuel_type": "EL",
+      "total_tests": 586,
+      "total_passes": 521,
+      "total_fails": 58,
+      "pass_rate": 88.91,
+      "avg_mileage": 21189.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 17.4
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 296,
+      "total_passes": 263,
+      "total_fails": 26,
+      "pass_rate": 88.85,
+      "avg_mileage": 60365.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 17.34
+    },
+    {
+      "model": "macan",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 2382,
+      "total_passes": 2112,
+      "total_fails": 215,
+      "pass_rate": 88.66,
+      "avg_mileage": 58993.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 17.15
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 531,
+      "total_passes": 470,
+      "total_fails": 52,
+      "pass_rate": 88.51,
+      "avg_mileage": 62689.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 17.0
+    },
+    {
+      "model": "911",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1827,
+      "total_passes": 1610,
+      "total_fails": 171,
+      "pass_rate": 88.12,
+      "avg_mileage": 56478.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 16.61
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 291,
+      "total_passes": 255,
+      "total_fails": 29,
+      "pass_rate": 87.63,
+      "avg_mileage": 36163.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 16.12
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2015,
+      "fuel_type": "HY",
+      "total_tests": 113,
+      "total_passes": 99,
+      "total_fails": 14,
+      "pass_rate": 87.61,
+      "avg_mileage": 65631.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 16.1
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 488,
+      "total_passes": 427,
+      "total_fails": 55,
+      "pass_rate": 87.5,
+      "avg_mileage": 72785.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 15.99
+    },
+    {
+      "model": "911",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 2443,
+      "total_passes": 2132,
+      "total_fails": 266,
+      "pass_rate": 87.27,
+      "avg_mileage": 58118.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 15.76
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2017,
+      "fuel_type": "DI",
+      "total_tests": 1140,
+      "total_passes": 994,
+      "total_fails": 118,
+      "pass_rate": 87.19,
+      "avg_mileage": 57824.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 15.68
+    },
+    {
+      "model": "macan",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 2517,
+      "total_passes": 2181,
+      "total_fails": 279,
+      "pass_rate": 86.65,
+      "avg_mileage": 65035.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 15.14
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1077,
+      "total_passes": 931,
+      "total_fails": 111,
+      "pass_rate": 86.44,
+      "avg_mileage": 62531.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 14.93
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 1800,
+      "total_passes": 1556,
+      "total_fails": 196,
+      "pass_rate": 86.44,
+      "avg_mileage": 71712.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 14.93
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 150,
+      "total_passes": 129,
+      "total_fails": 19,
+      "pass_rate": 86.0,
+      "avg_mileage": 66487.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 14.49
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2018,
+      "fuel_type": "HY",
+      "total_tests": 484,
+      "total_passes": 416,
+      "total_fails": 61,
+      "pass_rate": 85.95,
+      "avg_mileage": 41491.0,
+      "avg_age_years": 4.5,
+      "pass_rate_vs_national": 14.44
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 2185,
+      "total_passes": 1876,
+      "total_fails": 253,
+      "pass_rate": 85.86,
+      "avg_mileage": 64193.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 14.35
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 313,
+      "total_passes": 268,
+      "total_fails": 36,
+      "pass_rate": 85.62,
+      "avg_mileage": 81338.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 14.11
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2015,
+      "fuel_type": "DI",
+      "total_tests": 470,
+      "total_passes": 402,
+      "total_fails": 64,
+      "pass_rate": 85.53,
+      "avg_mileage": 68351.0,
+      "avg_age_years": 7.6,
+      "pass_rate_vs_national": 14.02
+    },
+    {
+      "model": "911",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 2812,
+      "total_passes": 2403,
+      "total_fails": 355,
+      "pass_rate": 85.46,
+      "avg_mileage": 66650.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 13.94
+    },
+    {
+      "model": "PANAMERA D V6 TIPTRONIC AUTO",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 116,
+      "total_passes": 99,
+      "total_fails": 15,
+      "pass_rate": 85.34,
+      "avg_mileage": 92220.0,
+      "avg_age_years": 10.7,
+      "pass_rate_vs_national": 13.83
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 225,
+      "total_passes": 192,
+      "total_fails": 27,
+      "pass_rate": 85.33,
+      "avg_mileage": 67591.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 13.82
+    },
+    {
+      "model": "macan",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 822,
+      "total_passes": 701,
+      "total_fails": 103,
+      "pass_rate": 85.28,
+      "avg_mileage": 70938.0,
+      "avg_age_years": 8.4,
+      "pass_rate_vs_national": 13.77
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 400,
+      "total_passes": 341,
+      "total_fails": 48,
+      "pass_rate": 85.25,
+      "avg_mileage": 64576.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 13.74
+    },
+    {
+      "model": "911",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 2822,
+      "total_passes": 2405,
+      "total_fails": 351,
+      "pass_rate": 85.22,
+      "avg_mileage": 69789.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 13.71
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2016,
+      "fuel_type": "DI",
+      "total_tests": 121,
+      "total_passes": 103,
+      "total_fails": 14,
+      "pass_rate": 85.12,
+      "avg_mileage": 61312.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 13.61
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 547,
+      "total_passes": 465,
+      "total_fails": 76,
+      "pass_rate": 85.01,
+      "avg_mileage": 84747.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 13.5
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 369,
+      "total_passes": 313,
+      "total_fails": 53,
+      "pass_rate": 84.82,
+      "avg_mileage": 89532.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 13.31
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 279,
+      "total_passes": 236,
+      "total_fails": 38,
+      "pass_rate": 84.59,
+      "avg_mileage": 76777.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 13.08
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 237,
+      "total_passes": 200,
+      "total_fails": 29,
+      "pass_rate": 84.39,
+      "avg_mileage": 90551.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": 12.88
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2018,
+      "fuel_type": "DI",
+      "total_tests": 547,
+      "total_passes": 461,
+      "total_fails": 73,
+      "pass_rate": 84.28,
+      "avg_mileage": 49522.0,
+      "avg_age_years": 4.7,
+      "pass_rate_vs_national": 12.77
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2015,
+      "fuel_type": "HY",
+      "total_tests": 307,
+      "total_passes": 258,
+      "total_fails": 32,
+      "pass_rate": 84.04,
+      "avg_mileage": 77881.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 12.53
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2017,
+      "fuel_type": "HY",
+      "total_tests": 410,
+      "total_passes": 344,
+      "total_fails": 57,
+      "pass_rate": 83.9,
+      "avg_mileage": 56054.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 12.39
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2014,
+      "fuel_type": "DI",
+      "total_tests": 1623,
+      "total_passes": 1358,
+      "total_fails": 230,
+      "pass_rate": 83.67,
+      "avg_mileage": 81008.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 12.16
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1635,
+      "total_passes": 1366,
+      "total_fails": 226,
+      "pass_rate": 83.55,
+      "avg_mileage": 66334.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 12.04
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 158,
+      "total_passes": 132,
+      "total_fails": 21,
+      "pass_rate": 83.54,
+      "avg_mileage": 72294.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 12.03
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 883,
+      "total_passes": 737,
+      "total_fails": 127,
+      "pass_rate": 83.47,
+      "avg_mileage": 107619.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 11.95
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2016,
+      "fuel_type": "HY",
+      "total_tests": 141,
+      "total_passes": 117,
+      "total_fails": 23,
+      "pass_rate": 82.98,
+      "avg_mileage": 57040.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 11.47
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 234,
+      "total_passes": 194,
+      "total_fails": 33,
+      "pass_rate": 82.91,
+      "avg_mileage": 74560.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 11.4
+    },
+    {
+      "model": "911",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 2397,
+      "total_passes": 1984,
+      "total_fails": 354,
+      "pass_rate": 82.77,
+      "avg_mileage": 72338.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 11.26
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 576,
+      "total_passes": 474,
+      "total_fails": 90,
+      "pass_rate": 82.29,
+      "avg_mileage": 115078.0,
+      "avg_age_years": 12.3,
+      "pass_rate_vs_national": 10.78
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1906,
+      "total_passes": 1565,
+      "total_fails": 296,
+      "pass_rate": 82.11,
+      "avg_mileage": 72597.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 10.6
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2013,
+      "fuel_type": "DI",
+      "total_tests": 1908,
+      "total_passes": 1566,
+      "total_fails": 302,
+      "pass_rate": 82.08,
+      "avg_mileage": 90538.0,
+      "avg_age_years": 9.4,
+      "pass_rate_vs_national": 10.56
+    },
+    {
+      "model": "911",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 2366,
+      "total_passes": 1934,
+      "total_fails": 362,
+      "pass_rate": 81.74,
+      "avg_mileage": 82012.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": 10.23
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 213,
+      "total_passes": 174,
+      "total_fails": 35,
+      "pass_rate": 81.69,
+      "avg_mileage": 86888.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 10.18
+    },
+    {
+      "model": "911",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 1498,
+      "total_passes": 1208,
+      "total_fails": 241,
+      "pass_rate": 80.64,
+      "avg_mileage": 86578.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": 9.13
+    },
+    {
+      "model": "911",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 2610,
+      "total_passes": 2089,
+      "total_fails": 422,
+      "pass_rate": 80.04,
+      "avg_mileage": 78210.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": 8.53
+    },
+    {
+      "model": "CAYENNE V6 D TIPTRONIC",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 105,
+      "total_passes": 84,
+      "total_fails": 18,
+      "pass_rate": 80.0,
+      "avg_mileage": 97757.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 8.49
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 3317,
+      "total_passes": 2650,
+      "total_fails": 575,
+      "pass_rate": 79.89,
+      "avg_mileage": 74558.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 8.38
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 1491,
+      "total_passes": 1188,
+      "total_fails": 269,
+      "pass_rate": 79.68,
+      "avg_mileage": 98368.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 8.17
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1407,
+      "total_passes": 1113,
+      "total_fails": 241,
+      "pass_rate": 79.1,
+      "avg_mileage": 74389.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 7.59
+    },
+    {
+      "model": "PANAMERA",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 105,
+      "total_passes": 83,
+      "total_fails": 16,
+      "pass_rate": 79.05,
+      "avg_mileage": 99064.0,
+      "avg_age_years": 11.2,
+      "pass_rate_vs_national": 7.54
+    },
+    {
+      "model": "911",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 899,
+      "total_passes": 710,
+      "total_fails": 151,
+      "pass_rate": 78.98,
+      "avg_mileage": 89640.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": 7.47
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 882,
+      "total_passes": 692,
+      "total_fails": 169,
+      "pass_rate": 78.46,
+      "avg_mileage": 70451.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 6.95
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 1475,
+      "total_passes": 1142,
+      "total_fails": 275,
+      "pass_rate": 77.42,
+      "avg_mileage": 76817.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 5.91
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 599,
+      "total_passes": 461,
+      "total_fails": 111,
+      "pass_rate": 76.96,
+      "avg_mileage": 103913.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 5.45
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 313,
+      "total_passes": 235,
+      "total_fails": 64,
+      "pass_rate": 75.08,
+      "avg_mileage": 95820.0,
+      "avg_age_years": 13.6,
+      "pass_rate_vs_national": 3.57
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 921,
+      "total_passes": 683,
+      "total_fails": 190,
+      "pass_rate": 74.16,
+      "avg_mileage": 114905.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 2.65
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 1946,
+      "total_passes": 1443,
+      "total_fails": 443,
+      "pass_rate": 74.15,
+      "avg_mileage": 86649.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": 2.64
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 2116,
+      "total_passes": 1569,
+      "total_fails": 469,
+      "pass_rate": 74.15,
+      "avg_mileage": 77333.0,
+      "avg_age_years": 18.6,
+      "pass_rate_vs_national": 2.64
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 2163,
+      "total_passes": 1595,
+      "total_fails": 492,
+      "pass_rate": 73.74,
+      "avg_mileage": 84837.0,
+      "avg_age_years": 21.5,
+      "pass_rate_vs_national": 2.23
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 2507,
+      "total_passes": 1844,
+      "total_fails": 565,
+      "pass_rate": 73.55,
+      "avg_mileage": 80297.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": 2.04
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 690,
+      "total_passes": 507,
+      "total_fails": 146,
+      "pass_rate": 73.48,
+      "avg_mileage": 109064.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 1.97
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1348,
+      "total_passes": 986,
+      "total_fails": 273,
+      "pass_rate": 73.15,
+      "avg_mileage": 120129.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 1.63
+    },
+    {
+      "model": "CAYMAN",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 162,
+      "total_passes": 118,
+      "total_fails": 37,
+      "pass_rate": 72.84,
+      "avg_mileage": 79940.0,
+      "avg_age_years": 17.1,
+      "pass_rate_vs_national": 1.33
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 579,
+      "total_passes": 421,
+      "total_fails": 124,
+      "pass_rate": 72.71,
+      "avg_mileage": 118176.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": 1.2
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 535,
+      "total_passes": 386,
+      "total_fails": 123,
+      "pass_rate": 72.15,
+      "avg_mileage": 119957.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 0.64
+    },
+    {
+      "model": "BOXSTER",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 2231,
+      "total_passes": 1609,
+      "total_fails": 543,
+      "pass_rate": 72.12,
+      "avg_mileage": 84134.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": 0.61
+    },
+    {
+      "model": "CAYENNE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 1137,
+      "total_passes": 815,
+      "total_fails": 250,
+      "pass_rate": 71.68,
+      "avg_mileage": 122973.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 0.17
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "BOXSTER",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 833,
+        "avg_vs_national": 29.69,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.56,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.69,
+          "total_tests": 833,
+          "avg_mileage": 58982.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.56,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.69,
+          "total_tests": 833,
+          "avg_mileage": 58982.0
+        }
+      },
+      {
+        "model": "CAYMAN",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 649,
+        "avg_vs_national": 29.5,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.37,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.5,
+          "total_tests": 649,
+          "avg_mileage": 64025.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.37,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.5,
+          "total_tests": 649,
+          "avg_mileage": 64025.0
+        }
+      },
+      {
+        "model": "911",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 1377,
+        "avg_vs_national": 29.31,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.31,
+          "total_tests": 1377,
+          "avg_mileage": 57362.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.31,
+          "total_tests": 1377,
+          "avg_mileage": 57362.0
+        }
+      },
+      {
+        "model": "911",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 1827,
+        "avg_vs_national": 28.25,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 88.12,
+          "national_pass_rate": 59.87,
+          "vs_national": 28.25,
+          "total_tests": 1827,
+          "avg_mileage": 56478.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 88.12,
+          "national_pass_rate": 59.87,
+          "vs_national": 28.25,
+          "total_tests": 1827,
+          "avg_mileage": 56478.0
+        }
+      },
+      {
+        "model": "911",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 1581,
+        "avg_vs_national": 28.03,
+        "durability_trend": 5.93,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.9,
+          "national_pass_rate": 59.87,
+          "vs_national": 31.03,
+          "total_tests": 780,
+          "avg_mileage": 49029.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 91.64,
+          "national_pass_rate": 66.54,
+          "vs_national": 25.1,
+          "total_tests": 801,
+          "avg_mileage": 47631.0
+        }
+      },
+      {
+        "model": "BOXSTER",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 797,
+        "avg_vs_national": 27.93,
+        "durability_trend": 8.67,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.08,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.21,
+          "total_tests": 404,
+          "avg_mileage": 55304.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 90.08,
+          "national_pass_rate": 66.54,
+          "vs_national": 23.54,
+          "total_tests": 393,
+          "avg_mileage": 53172.0
+        }
+      },
+      {
+        "model": "911",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 2443,
+        "avg_vs_national": 27.4,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.4,
+          "total_tests": 2443,
+          "avg_mileage": 58118.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.4,
+          "total_tests": 2443,
+          "avg_mileage": 58118.0
+        }
+      },
+      {
+        "model": "BOXSTER",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 1077,
+        "avg_vs_national": 26.57,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.44,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.57,
+          "total_tests": 1077,
+          "avg_mileage": 62531.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 86.44,
+          "national_pass_rate": 59.87,
+          "vs_national": 26.57,
+          "total_tests": 1077,
+          "avg_mileage": 62531.0
+        }
+      },
+      {
+        "model": "911",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 1122,
+        "avg_vs_national": 26.51,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 93.05,
+          "national_pass_rate": 66.54,
+          "vs_national": 26.51,
+          "total_tests": 1122,
+          "avg_mileage": 42889.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 93.05,
+          "national_pass_rate": 66.54,
+          "vs_national": 26.51,
+          "total_tests": 1122,
+          "avg_mileage": 42889.0
+        }
+      },
+      {
+        "model": "911",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 2812,
+        "avg_vs_national": 25.59,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 85.46,
+          "national_pass_rate": 59.87,
+          "vs_national": 25.59,
+          "total_tests": 2812,
+          "avg_mileage": 66650.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 85.46,
+          "national_pass_rate": 59.87,
+          "vs_national": 25.59,
+          "total_tests": 2812,
+          "avg_mileage": 66650.0
+        }
+      },
+      {
+        "model": "911",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 2822,
+        "avg_vs_national": 25.35,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 85.22,
+          "national_pass_rate": 59.87,
+          "vs_national": 25.35,
+          "total_tests": 2822,
+          "avg_mileage": 69789.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 85.22,
+          "national_pass_rate": 59.87,
+          "vs_national": 25.35,
+          "total_tests": 2822,
+          "avg_mileage": 69789.0
+        }
+      },
+      {
+        "model": "CAYMAN",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 531,
+        "avg_vs_national": 25.24,
+        "durability_trend": 5.82,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 88.08,
+          "national_pass_rate": 59.87,
+          "vs_national": 28.21,
+          "total_tests": 260,
+          "avg_mileage": 66076.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 88.93,
+          "national_pass_rate": 66.54,
+          "vs_national": 22.39,
+          "total_tests": 271,
+          "avg_mileage": 59439.0
+        }
+      },
+      {
+        "model": "CAYMAN S S-A",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 108,
+        "avg_vs_national": 25.07,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 96.3,
+          "national_pass_rate": 71.23,
+          "vs_national": 25.07,
+          "total_tests": 108,
+          "avg_mileage": 43930.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 96.3,
+          "national_pass_rate": 71.23,
+          "vs_national": 25.07,
+          "total_tests": 108,
+          "avg_mileage": 43930.0
+        }
+      },
+      {
+        "model": "BOXSTER",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 753,
+        "avg_vs_national": 23.9,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 90.44,
+          "national_pass_rate": 66.54,
+          "vs_national": 23.9,
+          "total_tests": 753,
+          "avg_mileage": 48734.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 90.44,
+          "national_pass_rate": 66.54,
+          "vs_national": 23.9,
+          "total_tests": 753,
+          "avg_mileage": 48734.0
+        }
+      },
+      {
+        "model": "BOXSTER",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1635,
+        "avg_vs_national": 23.68,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 83.55,
+          "national_pass_rate": 59.87,
+          "vs_national": 23.68,
+          "total_tests": 1635,
+          "avg_mileage": 66334.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 83.55,
+          "national_pass_rate": 59.87,
+          "vs_national": 23.68,
+          "total_tests": 1635,
+          "avg_mileage": 66334.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "CAYENNE",
+        "model_year": 2018,
+        "fuel_type": "DI",
+        "total_tests": 547,
+        "avg_vs_national": 0.94,
+        "durability_trend": -2.22,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 88.96,
+          "national_pass_rate": 86.43,
+          "vs_national": 2.53,
+          "total_tests": 154,
+          "avg_mileage": 46641.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 82.44,
+          "national_pass_rate": 82.13,
+          "vs_national": 0.31,
+          "total_tests": 393,
+          "avg_mileage": 50651.0
+        }
+      },
+      {
+        "model": "CAYENNE",
+        "model_year": 2017,
+        "fuel_type": "HY",
+        "total_tests": 410,
+        "avg_vs_national": 1.77,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 83.9,
+          "national_pass_rate": 82.13,
+          "vs_national": 1.77,
+          "total_tests": 410,
+          "avg_mileage": 56054.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 83.9,
+          "national_pass_rate": 82.13,
+          "vs_national": 1.77,
+          "total_tests": 410,
+          "avg_mileage": 56054.0
+        }
+      },
+      {
+        "model": "PANAMERA",
+        "model_year": 2018,
+        "fuel_type": "HY",
+        "total_tests": 484,
+        "avg_vs_national": 1.82,
+        "durability_trend": 6.28,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 86.87,
+          "national_pass_rate": 82.13,
+          "vs_national": 4.74,
+          "total_tests": 259,
+          "avg_mileage": 44188.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 84.89,
+          "national_pass_rate": 86.43,
+          "vs_national": -1.54,
+          "total_tests": 225,
+          "avg_mileage": 38385.0
+        }
+      },
+      {
+        "model": "TAYCAN TURBO",
+        "model_year": 2020,
+        "fuel_type": "EL",
+        "total_tests": 178,
+        "avg_vs_national": 2.9,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 89.33,
+          "national_pass_rate": 86.43,
+          "vs_national": 2.9,
+          "total_tests": 178,
+          "avg_mileage": 21585.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 89.33,
+          "national_pass_rate": 86.43,
+          "vs_national": 2.9,
+          "total_tests": 178,
+          "avg_mileage": 21585.0
+        }
+      },
+      {
+        "model": "PANAMERA",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 291,
+        "avg_vs_national": 3.15,
+        "durability_trend": 4.76,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.88,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.75,
+          "total_tests": 132,
+          "avg_mileage": 39461.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 87.42,
+          "national_pass_rate": 86.43,
+          "vs_national": 0.99,
+          "total_tests": 159,
+          "avg_mileage": 33425.0
+        }
+      },
+      {
+        "model": "PANAMERA",
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 141,
+        "avg_vs_national": 3.45,
+        "durability_trend": 1.37,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 81.33,
+          "national_pass_rate": 77.24,
+          "vs_national": 4.09,
+          "total_tests": 75,
+          "avg_mileage": 59606.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 84.85,
+          "national_pass_rate": 82.13,
+          "vs_national": 2.72,
+          "total_tests": 66,
+          "avg_mileage": 54124.0
+        }
+      },
+      {
+        "model": "PANAMERA",
+        "model_year": 2019,
+        "fuel_type": "HY",
+        "total_tests": 432,
+        "avg_vs_national": 5.01,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.44,
+          "national_pass_rate": 86.43,
+          "vs_national": 5.01,
+          "total_tests": 432,
+          "avg_mileage": 31826.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.44,
+          "national_pass_rate": 86.43,
+          "vs_national": 5.01,
+          "total_tests": 432,
+          "avg_mileage": 31826.0
+        }
+      },
+      {
+        "model": "PANAMERA",
+        "model_year": 2016,
+        "fuel_type": "DI",
+        "total_tests": 121,
+        "avg_vs_national": 5.01,
+        "durability_trend": -0.43,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.32,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.19,
+          "total_tests": 71,
+          "avg_mileage": 54674.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 82.0,
+          "national_pass_rate": 77.24,
+          "vs_national": 4.76,
+          "total_tests": 50,
+          "avg_mileage": 70737.0
+        }
+      },
+      {
+        "model": "CAYENNE",
+        "model_year": 2017,
+        "fuel_type": "DI",
+        "total_tests": 1140,
+        "avg_vs_national": 5.06,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.19,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.06,
+          "total_tests": 1140,
+          "avg_mileage": 57824.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 87.19,
+          "national_pass_rate": 82.13,
+          "vs_national": 5.06,
+          "total_tests": 1140,
+          "avg_mileage": 57824.0
+        }
+      },
+      {
+        "model": "CAYENNE",
+        "model_year": 2016,
+        "fuel_type": "HY",
+        "total_tests": 400,
+        "avg_vs_national": 5.23,
+        "durability_trend": 3.38,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 84.39,
+          "national_pass_rate": 77.24,
+          "vs_national": 7.15,
+          "total_tests": 173,
+          "avg_mileage": 66862.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 85.9,
+          "national_pass_rate": 82.13,
+          "vs_national": 3.77,
+          "total_tests": 227,
+          "avg_mileage": 62835.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 60,
+          "tests": 45725
+        },
+        "maturing": {
+          "vehicles": 46,
+          "tests": 32397
+        },
+        "proven": {
+          "vehicles": 55,
+          "tests": 61555
+        }
+      },
+      "proven_vehicles_tested": 57,
+      "proven_above_average_pct": 100.0,
+      "proven_avg_vs_national": 23.22,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "BOXSTER",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 404,
+          "pass_rate": 92.08,
+          "vs_national_at_age": 34.78,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 55304.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 780,
+          "pass_rate": 90.9,
+          "vs_national_at_age": 33.6,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 49029.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "BOXSTER",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 833,
+          "pass_rate": 89.56,
+          "vs_national_at_age": 32.26,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 58982.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CAYMAN",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 649,
+          "pass_rate": 89.37,
+          "vs_national_at_age": 32.07,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 64025.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1377,
+          "pass_rate": 89.18,
+          "vs_national_at_age": 31.88,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 57362.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1827,
+          "pass_rate": 88.12,
+          "vs_national_at_age": 30.82,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 56478.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CAYMAN",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 260,
+          "pass_rate": 88.08,
+          "vs_national_at_age": 30.78,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66076.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 1122,
+          "pass_rate": 93.05,
+          "vs_national_at_age": 30.22,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 42889.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2443,
+          "pass_rate": 87.27,
+          "vs_national_at_age": 29.97,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 58118.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "BOXSTER",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1077,
+          "pass_rate": 86.44,
+          "vs_national_at_age": 29.14,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 62531.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 711,
+          "pass_rate": 91.7,
+          "vs_national_at_age": 28.87,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 44457.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CAYMAN",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 190,
+          "pass_rate": 91.58,
+          "vs_national_at_age": 28.75,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 49723.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2812,
+          "pass_rate": 85.46,
+          "vs_national_at_age": 28.16,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66650.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "911",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 2822,
+          "pass_rate": 85.22,
+          "vs_national_at_age": 27.92,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 69789.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "PANAMERA",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 146,
+          "pass_rate": 84.93,
+          "vs_national_at_age": 27.63,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 76880.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "CAYMAN",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 884,
+          "pass_rate": 94.91,
+          "vs_national_at_age": 13.71,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 28295.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "911",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 874,
+          "pass_rate": 94.85,
+          "vs_national_at_age": 13.65,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 25089.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "911",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1929,
+          "pass_rate": 94.71,
+          "vs_national_at_age": 13.51,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 21831.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BOXSTER",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 398,
+          "pass_rate": 94.22,
+          "vs_national_at_age": 13.02,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 22514.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "911",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1206,
+          "pass_rate": 94.2,
+          "vs_national_at_age": 13.0,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 16827.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "macan",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1216,
+          "pass_rate": 94.0,
+          "vs_national_at_age": 12.8,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 39015.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BOXSTER",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1012,
+          "pass_rate": 93.87,
+          "vs_national_at_age": 12.67,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 26453.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "BOXSTER",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 652,
+          "pass_rate": 93.25,
+          "vs_national_at_age": 12.05,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 28017.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "CAYMAN",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 453,
+          "pass_rate": 93.16,
+          "vs_national_at_age": 11.96,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 28339.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "macan",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 2890,
+          "pass_rate": 92.94,
+          "vs_national_at_age": 11.74,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 41715.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "BOXSTER": {
+        "core_model": "BOXSTER",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 93.7,
+                "vs_national": 7.85,
+                "total_tests": 635,
+                "avg_mileage": 21309.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 93.76,
+                "vs_national": 7.91,
+                "total_tests": 930,
+                "avg_mileage": 16844.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 93.25,
+                "vs_national": 12.05,
+                "total_tests": 652,
+                "avg_mileage": 28017.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 93.87,
+                "vs_national": 12.67,
+                "total_tests": 1012,
+                "avg_mileage": 26453.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 94.22,
+                "vs_national": 13.02,
+                "total_tests": 398,
+                "avg_mileage": 22514.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 92.32,
+                "vs_national": 17.19,
+                "total_tests": 638,
+                "avg_mileage": 36681.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 94.32,
+                "vs_national": 19.19,
+                "total_tests": 1074,
+                "avg_mileage": 31947.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 91.72,
+                "vs_national": 16.59,
+                "total_tests": 580,
+                "avg_mileage": 28469.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 89.11,
+                "vs_national": 20.87,
+                "total_tests": 744,
+                "avg_mileage": 45474.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 92.73,
+                "vs_national": 24.49,
+                "total_tests": 1279,
+                "avg_mileage": 42039.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 91.86,
+                "vs_national": 23.62,
+                "total_tests": 565,
+                "avg_mileage": 40116.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 90.08,
+                "vs_national": 27.25,
+                "total_tests": 393,
+                "avg_mileage": 53172.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 90.44,
+                "vs_national": 27.61,
+                "total_tests": 753,
+                "avg_mileage": 48734.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 89.21,
+                "vs_national": 26.38,
+                "total_tests": 315,
+                "avg_mileage": 45059.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 74.15,
+                "vs_national": 16.85,
+                "total_tests": 1946,
+                "avg_mileage": 86649.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 73.74,
+                "vs_national": 16.44,
+                "total_tests": 2163,
+                "avg_mileage": 84837.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 72.12,
+                "vs_national": 14.82,
+                "total_tests": 2231,
+                "avg_mileage": 84134.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 73.55,
+                "vs_national": 16.25,
+                "total_tests": 2507,
+                "avg_mileage": 80297.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 74.15,
+                "vs_national": 16.85,
+                "total_tests": 2116,
+                "avg_mileage": 77333.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 79.89,
+                "vs_national": 22.59,
+                "total_tests": 3317,
+                "avg_mileage": 74558.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 82.11,
+                "vs_national": 24.81,
+                "total_tests": 1906,
+                "avg_mileage": 72597.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 83.55,
+                "vs_national": 26.25,
+                "total_tests": 1635,
+                "avg_mileage": 66334.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 86.44,
+                "vs_national": 29.14,
+                "total_tests": 1077,
+                "avg_mileage": 62531.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 89.56,
+                "vs_national": 32.26,
+                "total_tests": 833,
+                "avg_mileage": 58982.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 92.08,
+                "vs_national": 34.78,
+                "total_tests": 404,
+                "avg_mileage": 55304.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 34.78,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2002,
+          "vs_national": 14.82,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "CAYENNE": {
+        "core_model": "CAYENNE",
+        "years_covered": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 91.73,
+                "vs_national": 5.88,
+                "total_tests": 907,
+                "avg_mileage": 42156.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 94.09,
+                "vs_national": 8.24,
+                "total_tests": 3231,
+                "avg_mileage": 31652.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 93.4,
+                "vs_national": 7.55,
+                "total_tests": 849,
+                "avg_mileage": 26355.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 85.93,
+                "vs_national": 4.73,
+                "total_tests": 1606,
+                "avg_mileage": 58445.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 86.91,
+                "vs_national": 5.71,
+                "total_tests": 1826,
+                "avg_mileage": 53737.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 88.28,
+                "vs_national": 7.08,
+                "total_tests": 930,
+                "avg_mileage": 45311.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 83.97,
+                "vs_national": 8.84,
+                "total_tests": 979,
+                "avg_mileage": 70367.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 86.43,
+                "vs_national": 11.3,
+                "total_tests": 2403,
+                "avg_mileage": 69986.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 86.32,
+                "vs_national": 11.19,
+                "total_tests": 1228,
+                "avg_mileage": 63009.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 80.79,
+                "vs_national": 12.55,
+                "total_tests": 1088,
+                "avg_mileage": 90403.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 82.17,
+                "vs_national": 13.93,
+                "total_tests": 2142,
+                "avg_mileage": 82549.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 83.78,
+                "vs_national": 15.54,
+                "total_tests": 869,
+                "avg_mileage": 78863.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 83.02,
+                "vs_national": 20.19,
+                "total_tests": 536,
+                "avg_mileage": 101718.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 83.12,
+                "vs_national": 20.29,
+                "total_tests": 1096,
+                "avg_mileage": 97254.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 80.51,
+                "vs_national": 17.68,
+                "total_tests": 821,
+                "avg_mileage": 95309.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2003,
+                "pass_rate": 72.71,
+                "vs_national": 15.41,
+                "total_tests": 579,
+                "avg_mileage": 118176.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 71.68,
+                "vs_national": 14.38,
+                "total_tests": 1137,
+                "avg_mileage": 122973.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 73.15,
+                "vs_national": 15.85,
+                "total_tests": 1348,
+                "avg_mileage": 120129.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 74.16,
+                "vs_national": 16.86,
+                "total_tests": 921,
+                "avg_mileage": 114905.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 73.48,
+                "vs_national": 16.18,
+                "total_tests": 690,
+                "avg_mileage": 109064.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 76.96,
+                "vs_national": 19.66,
+                "total_tests": 599,
+                "avg_mileage": 103913.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 73.23,
+                "vs_national": 15.93,
+                "total_tests": 848,
+                "avg_mileage": 107889.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 82.67,
+                "vs_national": 25.37,
+                "total_tests": 277,
+                "avg_mileage": 104825.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 25.37,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": 14.38,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "911": {
+        "core_model": "911",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 93.36,
+                "vs_national": 7.51,
+                "total_tests": 1009,
+                "avg_mileage": 15811.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 94.57,
+                "vs_national": 8.72,
+                "total_tests": 2300,
+                "avg_mileage": 15819.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 94.96,
+                "vs_national": 9.11,
+                "total_tests": 496,
+                "avg_mileage": 13824.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 94.85,
+                "vs_national": 13.65,
+                "total_tests": 874,
+                "avg_mileage": 25089.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 94.71,
+                "vs_national": 13.51,
+                "total_tests": 1929,
+                "avg_mileage": 21831.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 94.2,
+                "vs_national": 13.0,
+                "total_tests": 1206,
+                "avg_mileage": 16827.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 94.03,
+                "vs_national": 18.9,
+                "total_tests": 871,
+                "avg_mileage": 32432.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 94.83,
+                "vs_national": 19.7,
+                "total_tests": 1720,
+                "avg_mileage": 29471.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 95.06,
+                "vs_national": 19.93,
+                "total_tests": 850,
+                "avg_mileage": 26782.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 91.46,
+                "vs_national": 23.22,
+                "total_tests": 773,
+                "avg_mileage": 46848.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 92.67,
+                "vs_national": 24.43,
+                "total_tests": 1268,
+                "avg_mileage": 41090.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 95.12,
+                "vs_national": 26.88,
+                "total_tests": 697,
+                "avg_mileage": 32919.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 91.64,
+                "vs_national": 28.81,
+                "total_tests": 801,
+                "avg_mileage": 47631.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 93.05,
+                "vs_national": 30.22,
+                "total_tests": 1122,
+                "avg_mileage": 42889.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 91.7,
+                "vs_national": 28.87,
+                "total_tests": 711,
+                "avg_mileage": 44457.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 78.98,
+                "vs_national": 21.68,
+                "total_tests": 899,
+                "avg_mileage": 89640.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 80.64,
+                "vs_national": 23.34,
+                "total_tests": 1498,
+                "avg_mileage": 86578.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 81.74,
+                "vs_national": 24.44,
+                "total_tests": 2366,
+                "avg_mileage": 82012.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 80.04,
+                "vs_national": 22.74,
+                "total_tests": 2610,
+                "avg_mileage": 78210.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 82.77,
+                "vs_national": 25.47,
+                "total_tests": 2397,
+                "avg_mileage": 72338.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 85.22,
+                "vs_national": 27.92,
+                "total_tests": 2822,
+                "avg_mileage": 69789.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 85.46,
+                "vs_national": 28.16,
+                "total_tests": 2812,
+                "avg_mileage": 66650.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 87.27,
+                "vs_national": 29.97,
+                "total_tests": 2443,
+                "avg_mileage": 58118.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 88.12,
+                "vs_national": 30.82,
+                "total_tests": 1827,
+                "avg_mileage": 56478.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 89.18,
+                "vs_national": 31.88,
+                "total_tests": 1377,
+                "avg_mileage": 57362.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 90.9,
+                "vs_national": 33.6,
+                "total_tests": 780,
+                "avg_mileage": 49029.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2010,
+          "vs_national": 33.6,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2000,
+          "vs_national": 21.68,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "TAYCAN 4S 93KWH": {
+        "core_model": "TAYCAN 4S 93KWH",
+        "years_covered": [
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2020,
+                "pass_rate": 91.67,
+                "vs_national": 5.82,
+                "total_tests": 324,
+                "avg_mileage": 24867.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "TAYCAN TURBO": {
+        "core_model": "TAYCAN TURBO",
+        "years_covered": [
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2020,
+                "pass_rate": 90.21,
+                "vs_national": 4.36,
+                "total_tests": 286,
+                "avg_mileage": 20947.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "PANAMERA": {
+        "core_model": "PANAMERA",
+        "years_covered": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 85.94,
+                "vs_national": 0.09,
+                "total_tests": 384,
+                "avg_mileage": 35905.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 91.99,
+                "vs_national": 6.14,
+                "total_tests": 786,
+                "avg_mileage": 29781.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 89.72,
+                "vs_national": 8.52,
+                "total_tests": 992,
+                "avg_mileage": 46598.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 87.21,
+                "vs_national": 6.01,
+                "total_tests": 391,
+                "avg_mileage": 41825.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 87.34,
+                "vs_national": 12.21,
+                "total_tests": 379,
+                "avg_mileage": 64922.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 85.93,
+                "vs_national": 10.8,
+                "total_tests": 583,
+                "avg_mileage": 66991.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 85.67,
+                "vs_national": 17.43,
+                "total_tests": 335,
+                "avg_mileage": 80354.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 85.01,
+                "vs_national": 16.77,
+                "total_tests": 547,
+                "avg_mileage": 84747.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 89.16,
+                "vs_national": 20.92,
+                "total_tests": 360,
+                "avg_mileage": 69560.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2011,
+                "pass_rate": 81.75,
+                "vs_national": 18.92,
+                "total_tests": 263,
+                "avg_mileage": 85679.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 84.66,
+                "vs_national": 21.83,
+                "total_tests": 300,
+                "avg_mileage": 84578.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 21.83,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2011,
+          "vs_national": 18.92,
+          "age_band": "11-12 years"
+        },
+        "has_proven_data": true
+      },
+      "CAYMAN": {
+        "core_model": "CAYMAN",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 95.42,
+                "vs_national": 9.57,
+                "total_tests": 699,
+                "avg_mileage": 23175.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 96.03,
+                "vs_national": 10.18,
+                "total_tests": 1058,
+                "avg_mileage": 19246.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 93.16,
+                "vs_national": 11.96,
+                "total_tests": 453,
+                "avg_mileage": 28339.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 94.91,
+                "vs_national": 13.71,
+                "total_tests": 884,
+                "avg_mileage": 28295.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 91.96,
+                "vs_national": 10.76,
+                "total_tests": 510,
+                "avg_mileage": 25185.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 92.32,
+                "vs_national": 17.19,
+                "total_tests": 677,
+                "avg_mileage": 41570.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 94.4,
+                "vs_national": 19.27,
+                "total_tests": 1124,
+                "avg_mileage": 33234.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 94.9,
+                "vs_national": 19.77,
+                "total_tests": 529,
+                "avg_mileage": 25862.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2013,
+                "pass_rate": 90.77,
+                "vs_national": 22.53,
+                "total_tests": 942,
+                "avg_mileage": 45225.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 92.0,
+                "vs_national": 23.76,
+                "total_tests": 525,
+                "avg_mileage": 42762.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 88.93,
+                "vs_national": 26.1,
+                "total_tests": 271,
+                "avg_mileage": 59439.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 89.88,
+                "vs_national": 27.05,
+                "total_tests": 504,
+                "avg_mileage": 53273.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 77.42,
+                "vs_national": 20.12,
+                "total_tests": 1475,
+                "avg_mileage": 76817.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 79.1,
+                "vs_national": 21.8,
+                "total_tests": 1407,
+                "avg_mileage": 74389.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 78.46,
+                "vs_national": 21.16,
+                "total_tests": 882,
+                "avg_mileage": 70451.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 89.37,
+                "vs_national": 32.07,
+                "total_tests": 649,
+                "avg_mileage": 64025.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 88.08,
+                "vs_national": 30.78,
+                "total_tests": 260,
+                "avg_mileage": 66076.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 32.07,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": 20.12,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "macan": {
+        "core_model": "macan",
+        "years_covered": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 94.05,
+                "vs_national": 8.2,
+                "total_tests": 2505,
+                "avg_mileage": 38860.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 94.27,
+                "vs_national": 8.42,
+                "total_tests": 4726,
+                "avg_mileage": 28946.0
+              },
+              {
+                "year": 2020,
+                "pass_rate": 93.34,
+                "vs_national": 7.49,
+                "total_tests": 826,
+                "avg_mileage": 23561.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 90.58,
+                "vs_national": 9.38,
+                "total_tests": 2527,
+                "avg_mileage": 52025.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 92.29,
+                "vs_national": 11.09,
+                "total_tests": 5422,
+                "avg_mileage": 46783.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 93.37,
+                "vs_national": 12.17,
+                "total_tests": 1418,
+                "avg_mileage": 43542.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 86.88,
+                "vs_national": 11.75,
+                "total_tests": 724,
+                "avg_mileage": 63332.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 87.44,
+                "vs_national": 12.31,
+                "total_tests": 3582,
+                "avg_mileage": 59056.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 87.96,
+                "vs_national": 12.83,
+                "total_tests": 1661,
+                "avg_mileage": 54616.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 85.72,
+                "vs_national": 17.48,
+                "total_tests": 434,
+                "avg_mileage": 68241.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      }
+    }
+  }
+}

@@ -1,0 +1,3519 @@
+{
+  "meta": {
+    "make": "ASTON MARTIN",
+    "generated_at": "2026-01-15T17:43:31.777800",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 6,
+    "make": "ASTON MARTIN",
+    "total_tests": 19956,
+    "total_models": 214,
+    "avg_pass_rate": 91.33,
+    "weighted_pass_rate": 91.33,
+    "best_model": "DB11 2016",
+    "best_model_pass_rate": 98.18,
+    "worst_model": "DB7 2000",
+    "worst_model_pass_rate": 82.93,
+    "rank": 6
+  },
+  "competitors": [
+    {
+      "make": "ASTON MARTIN",
+      "avg_pass_rate": 91.33,
+      "total_tests": 19956,
+      "rank": 6,
+      "total_models": 214
+    },
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    }
+  ],
+  "summary": {
+    "total_tests": 19956,
+    "total_models": 214,
+    "avg_pass_rate": 91.33,
+    "rank": 6,
+    "rank_total": 75,
+    "best_model": "DB11 2016",
+    "best_model_pass_rate": 98.18,
+    "worst_model": "DB7 2000",
+    "worst_model_pass_rate": 82.93,
+    "vs_national": 19.82,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "VANQUISH",
+      "total_tests": 1080,
+      "total_passes": 1032,
+      "total_fails": 41,
+      "pass_rate": 95.56,
+      "avg_mileage": 18375.0,
+      "year_from": 2013,
+      "year_to": 2018,
+      "variant_count": 6,
+      "variants": "VANQUISH"
+    },
+    {
+      "core_model": "DB11",
+      "total_tests": 2253,
+      "total_passes": 2141,
+      "total_fails": 102,
+      "pass_rate": 95.03,
+      "avg_mileage": 16136.0,
+      "year_from": 2016,
+      "year_to": 2020,
+      "variant_count": 5,
+      "variants": "DB11"
+    },
+    {
+      "core_model": "DBS",
+      "total_tests": 1271,
+      "total_passes": 1200,
+      "total_fails": 63,
+      "pass_rate": 94.41,
+      "avg_mileage": 22176.0,
+      "year_from": 2008,
+      "year_to": 2020,
+      "variant_count": 7,
+      "variants": "DBS"
+    },
+    {
+      "core_model": "DBX V8 AUTO",
+      "total_tests": 150,
+      "total_passes": 141,
+      "total_fails": 7,
+      "pass_rate": 94.0,
+      "avg_mileage": 20748.0,
+      "year_from": 2020,
+      "year_to": 2020,
+      "variant_count": 1,
+      "variants": "DBX V8 AUTO"
+    },
+    {
+      "core_model": "VANTAGE",
+      "total_tests": 4376,
+      "total_passes": 4049,
+      "total_fails": 244,
+      "pass_rate": 92.53,
+      "avg_mileage": 26776.0,
+      "year_from": 2006,
+      "year_to": 2020,
+      "variant_count": 15,
+      "variants": "VANTAGE"
+    },
+    {
+      "core_model": "V8 VANTAGE",
+      "total_tests": 3033,
+      "total_passes": 2727,
+      "total_fails": 262,
+      "pass_rate": 89.91,
+      "avg_mileage": 38088.0,
+      "year_from": 2006,
+      "year_to": 2012,
+      "variant_count": 7,
+      "variants": "V8 VANTAGE"
+    },
+    {
+      "core_model": "DB9",
+      "total_tests": 4182,
+      "total_passes": 3755,
+      "total_fails": 359,
+      "pass_rate": 89.79,
+      "avg_mileage": 34837.0,
+      "year_from": 2004,
+      "year_to": 2016,
+      "variant_count": 11,
+      "variants": "DB9"
+    },
+    {
+      "core_model": "RAPIDE",
+      "total_tests": 471,
+      "total_passes": 421,
+      "total_fails": 45,
+      "pass_rate": 89.38,
+      "avg_mileage": 40121.0,
+      "year_from": 2010,
+      "year_to": 2015,
+      "variant_count": 4,
+      "variants": "RAPIDE"
+    },
+    {
+      "core_model": "DB7",
+      "total_tests": 1172,
+      "total_passes": 1013,
+      "total_fails": 143,
+      "pass_rate": 86.43,
+      "avg_mileage": 43632.0,
+      "year_from": 2000,
+      "year_to": 2004,
+      "variant_count": 5,
+      "variants": "DB7"
+    }
+  ],
+  "model_year_breakdowns": {
+    "VANQUISH": [
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 160,
+        "pass_rate": 97.5,
+        "avg_mileage": 6844.0,
+        "pass_rate_vs_national": 13.26,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 221,
+        "pass_rate": 94.57,
+        "avg_mileage": 13163.0,
+        "pass_rate_vs_national": 12.89,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 155,
+        "pass_rate": 96.13,
+        "avg_mileage": 18059.0,
+        "pass_rate_vs_national": 17.48,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 203,
+        "pass_rate": 95.07,
+        "avg_mileage": 21778.0,
+        "pass_rate_vs_national": 19.58,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 158,
+        "pass_rate": 94.94,
+        "avg_mileage": 24212.0,
+        "pass_rate_vs_national": 23.23,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 183,
+        "pass_rate": 95.63,
+        "avg_mileage": 26195.0,
+        "pass_rate_vs_national": 27.34,
+        "national_avg_for_year": 68.29
+      }
+    ],
+    "DB11": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 258,
+        "pass_rate": 96.9,
+        "avg_mileage": 10119.0,
+        "pass_rate_vs_national": 9.23,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 509,
+        "pass_rate": 94.5,
+        "avg_mileage": 13251.0,
+        "pass_rate_vs_national": 8.29,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 645,
+        "pass_rate": 95.19,
+        "avg_mileage": 16558.0,
+        "pass_rate_vs_national": 10.95,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 731,
+        "pass_rate": 94.12,
+        "avg_mileage": 18957.0,
+        "pass_rate_vs_national": 12.44,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 110,
+        "pass_rate": 98.18,
+        "avg_mileage": 21794.0,
+        "pass_rate_vs_national": 19.53,
+        "national_avg_for_year": 78.65
+      }
+    ],
+    "DBS": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 205,
+        "pass_rate": 97.07,
+        "avg_mileage": 8107.0,
+        "pass_rate_vs_national": 9.4,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 314,
+        "pass_rate": 97.45,
+        "avg_mileage": 10832.0,
+        "pass_rate_vs_national": 11.24,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 121,
+        "pass_rate": 88.43,
+        "avg_mileage": 24106.0,
+        "pass_rate_vs_national": 22.8,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 144,
+        "pass_rate": 88.89,
+        "avg_mileage": 26169.0,
+        "pass_rate_vs_national": 25.9,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 192,
+        "pass_rate": 95.31,
+        "avg_mileage": 27908.0,
+        "pass_rate_vs_national": 34.81,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 193,
+        "pass_rate": 94.82,
+        "avg_mileage": 29706.0,
+        "pass_rate_vs_national": 35.81,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "pass_rate": 92.16,
+        "avg_mileage": 28405.0,
+        "pass_rate_vs_national": 34.77,
+        "national_avg_for_year": 57.39
+      }
+    ],
+    "DBX V8 AUTO": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 150,
+        "pass_rate": 94.0,
+        "avg_mileage": 20748.0,
+        "pass_rate_vs_national": 6.33,
+        "national_avg_for_year": 87.67
+      }
+    ],
+    "VANTAGE": [
+      {
+        "model_year": 2020,
+        "fuel_type": "PE",
+        "total_tests": 151,
+        "pass_rate": 95.36,
+        "avg_mileage": 11763.0,
+        "pass_rate_vs_national": 7.69,
+        "national_avg_for_year": 87.67
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 717,
+        "pass_rate": 94.14,
+        "avg_mileage": 14236.0,
+        "pass_rate_vs_national": 7.93,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 472,
+        "pass_rate": 93.64,
+        "avg_mileage": 14678.0,
+        "pass_rate_vs_national": 9.4,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 306,
+        "pass_rate": 93.46,
+        "avg_mileage": 14405.0,
+        "pass_rate_vs_national": 11.78,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 395,
+        "pass_rate": 93.92,
+        "avg_mileage": 17459.0,
+        "pass_rate_vs_national": 15.27,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 370,
+        "pass_rate": 94.05,
+        "avg_mileage": 20865.0,
+        "pass_rate_vs_national": 18.56,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 363,
+        "pass_rate": 89.81,
+        "avg_mileage": 23851.0,
+        "pass_rate_vs_national": 18.1,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 330,
+        "pass_rate": 88.79,
+        "avg_mileage": 25992.0,
+        "pass_rate_vs_national": 20.5,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 191,
+        "pass_rate": 91.1,
+        "avg_mileage": 29023.0,
+        "pass_rate_vs_national": 25.47,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 119,
+        "pass_rate": 91.6,
+        "avg_mileage": 30613.0,
+        "pass_rate_vs_national": 28.61,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 146,
+        "pass_rate": 91.78,
+        "avg_mileage": 28996.0,
+        "pass_rate_vs_national": 31.28,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 154,
+        "pass_rate": 96.1,
+        "avg_mileage": 33749.0,
+        "pass_rate_vs_national": 37.09,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 150,
+        "pass_rate": 89.33,
+        "avg_mileage": 44255.0,
+        "pass_rate_vs_national": 31.94,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 214,
+        "pass_rate": 91.59,
+        "avg_mileage": 42983.0,
+        "pass_rate_vs_national": 34.62,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 298,
+        "pass_rate": 90.27,
+        "avg_mileage": 48766.0,
+        "pass_rate_vs_national": 34.09,
+        "national_avg_for_year": 56.18
+      }
+    ],
+    "V8 VANTAGE": [
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 125,
+        "pass_rate": 88.0,
+        "avg_mileage": 31733.0,
+        "pass_rate_vs_national": 22.37,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 171,
+        "pass_rate": 95.32,
+        "avg_mileage": 31983.0,
+        "pass_rate_vs_national": 32.33,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 211,
+        "pass_rate": 91.47,
+        "avg_mileage": 33759.0,
+        "pass_rate_vs_national": 30.97,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 371,
+        "pass_rate": 92.45,
+        "avg_mileage": 36461.0,
+        "pass_rate_vs_national": 33.44,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 482,
+        "pass_rate": 90.46,
+        "avg_mileage": 40299.0,
+        "pass_rate_vs_national": 33.07,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 740,
+        "pass_rate": 88.51,
+        "avg_mileage": 43868.0,
+        "pass_rate_vs_national": 31.54,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 933,
+        "pass_rate": 88.64,
+        "avg_mileage": 48516.0,
+        "pass_rate_vs_national": 32.46,
+        "national_avg_for_year": 56.18
+      }
+    ],
+    "DB9": [
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 171,
+        "pass_rate": 95.32,
+        "avg_mileage": 17689.0,
+        "pass_rate_vs_national": 16.67,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 201,
+        "pass_rate": 93.53,
+        "avg_mileage": 20726.0,
+        "pass_rate_vs_national": 18.04,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 172,
+        "pass_rate": 91.86,
+        "avg_mileage": 25235.0,
+        "pass_rate_vs_national": 20.15,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 165,
+        "pass_rate": 89.7,
+        "avg_mileage": 26828.0,
+        "pass_rate_vs_national": 21.41,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 193,
+        "pass_rate": 88.08,
+        "avg_mileage": 37145.0,
+        "pass_rate_vs_national": 27.58,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 222,
+        "pass_rate": 92.34,
+        "avg_mileage": 35784.0,
+        "pass_rate_vs_national": 33.33,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 466,
+        "pass_rate": 90.77,
+        "avg_mileage": 40148.0,
+        "pass_rate_vs_national": 33.38,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 672,
+        "pass_rate": 88.69,
+        "avg_mileage": 40994.0,
+        "pass_rate_vs_national": 31.72,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 601,
+        "pass_rate": 88.02,
+        "avg_mileage": 42563.0,
+        "pass_rate_vs_national": 31.84,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 1064,
+        "pass_rate": 89.19,
+        "avg_mileage": 45130.0,
+        "pass_rate_vs_national": 32.94,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 255,
+        "pass_rate": 88.63,
+        "avg_mileage": 50960.0,
+        "pass_rate_vs_national": 32.6,
+        "national_avg_for_year": 56.03
+      }
+    ],
+    "RAPIDE": [
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 101,
+        "pass_rate": 88.12,
+        "avg_mileage": 30458.0,
+        "pass_rate_vs_national": 12.63,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 111,
+        "pass_rate": 86.49,
+        "avg_mileage": 37946.0,
+        "pass_rate_vs_national": 18.2,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 122,
+        "pass_rate": 90.16,
+        "avg_mileage": 45815.0,
+        "pass_rate_vs_national": 27.17,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 137,
+        "pass_rate": 91.97,
+        "avg_mileage": 46265.0,
+        "pass_rate_vs_national": 31.47,
+        "national_avg_for_year": 60.5
+      }
+    ],
+    "DB7": [
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "pass_rate": 91.59,
+        "avg_mileage": 31344.0,
+        "pass_rate_vs_national": 35.56,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 218,
+        "pass_rate": 89.91,
+        "avg_mileage": 39396.0,
+        "pass_rate_vs_national": 33.23,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 250,
+        "pass_rate": 88.8,
+        "avg_mileage": 46995.0,
+        "pass_rate_vs_national": 31.26,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 310,
+        "pass_rate": 83.55,
+        "avg_mileage": 49409.0,
+        "pass_rate_vs_national": 24.87,
+        "national_avg_for_year": 58.68
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 287,
+        "pass_rate": 82.93,
+        "avg_mileage": 51017.0,
+        "pass_rate_vs_national": 22.31,
+        "national_avg_for_year": 60.62
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 61,
+      "total_tests": 17988,
+      "pass_rate": 91.61,
+      "fuel_name": "Petrol"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "VANTAGE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 154,
+      "pass_rate": 96.1,
+      "pass_rate_vs_national": 37.09,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "DBS",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 193,
+      "pass_rate": 94.82,
+      "pass_rate_vs_national": 35.81,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "DB7",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "pass_rate": 91.59,
+      "pass_rate_vs_national": 35.56,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "DBS",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 192,
+      "pass_rate": 95.31,
+      "pass_rate_vs_national": 34.81,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "DBS",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "pass_rate": 92.16,
+      "pass_rate_vs_national": 34.77,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 214,
+      "pass_rate": 91.59,
+      "pass_rate_vs_national": 34.62,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 298,
+      "pass_rate": 90.27,
+      "pass_rate_vs_national": 34.09,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 371,
+      "pass_rate": 92.45,
+      "pass_rate_vs_national": 33.44,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "DB9",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 466,
+      "pass_rate": 90.77,
+      "pass_rate_vs_national": 33.38,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "DB9",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 222,
+      "pass_rate": 92.34,
+      "pass_rate_vs_national": 33.33,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "DB7",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 218,
+      "pass_rate": 89.91,
+      "pass_rate_vs_national": 33.23,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 482,
+      "pass_rate": 90.46,
+      "pass_rate_vs_national": 33.07,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "DB9",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1064,
+      "pass_rate": 89.19,
+      "pass_rate_vs_national": 32.94,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "DB9",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 255,
+      "pass_rate": 88.63,
+      "pass_rate_vs_national": 32.6,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 933,
+      "pass_rate": 88.64,
+      "pass_rate_vs_national": 32.46,
+      "national_avg_for_year": 56.18
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "DBX V8 AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 150,
+      "pass_rate": 94.0,
+      "pass_rate_vs_national": 6.33,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 151,
+      "pass_rate": 95.36,
+      "pass_rate_vs_national": 7.69,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 717,
+      "pass_rate": 94.14,
+      "pass_rate_vs_national": 7.93,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "DB11",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 509,
+      "pass_rate": 94.5,
+      "pass_rate_vs_national": 8.29,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "DB11",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 258,
+      "pass_rate": 96.9,
+      "pass_rate_vs_national": 9.23,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "DBS",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 205,
+      "pass_rate": 97.07,
+      "pass_rate_vs_national": 9.4,
+      "national_avg_for_year": 87.67
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 472,
+      "pass_rate": 93.64,
+      "pass_rate_vs_national": 9.4,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "DB11",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 645,
+      "pass_rate": 95.19,
+      "pass_rate_vs_national": 10.95,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "DBS",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 314,
+      "pass_rate": 97.45,
+      "pass_rate_vs_national": 11.24,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 306,
+      "pass_rate": 93.46,
+      "pass_rate_vs_national": 11.78,
+      "national_avg_for_year": 81.68
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 580,
+        "vehicle_count": 60
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 282,
+        "vehicle_count": 56
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 259,
+        "vehicle_count": 53
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 233,
+        "vehicle_count": 45
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 232,
+        "vehicle_count": 55
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 147,
+        "vehicle_count": 28
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 88,
+        "vehicle_count": 36
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 47,
+        "vehicle_count": 25
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 44,
+        "vehicle_count": 22
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 39,
+        "vehicle_count": 21
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 25,
+        "vehicle_count": 13
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 191
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 158
+      },
+      {
+        "defect_description": "has a cut in excess of the requirements deep enough to reach the ply or cords",
+        "category_name": "Tyres",
+        "total_occurrences": 120
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 115
+      },
+      {
+        "defect_description": "too low",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 89
+      },
+      {
+        "defect_description": "too high",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 88
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 81
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Visibility",
+        "total_occurrences": 74
+      },
+      {
+        "defect_description": "does not conform to the specified requirements",
+        "category_name": "Identification of the vehicle",
+        "total_occurrences": 60
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 36
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 1152
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 1062
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 424
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 302
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 285
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 201
+      },
+      {
+        "defect_description": "has slight corrosion to ferrule",
+        "category_name": "Brakes",
+        "total_occurrences": 190
+      },
+      {
+        "defect_description": "has light misting of oil",
+        "category_name": "Suspension",
+        "total_occurrences": 184
+      },
+      {
+        "defect_description": "webbing slightly damaged or frayed",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 144
+      },
+      {
+        "defect_description": "Nail in tyre",
+        "category_name": "Non-component advisories",
+        "total_occurrences": 126
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1070
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 1020
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 453
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 310
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 200
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 165
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 93
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 36
+      },
+      {
+        "defect_description": "fractured",
+        "category_name": "Road Wheels",
+        "total_occurrences": 21
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 15
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 10196,
+      "avg_pass_rate": 94.13
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 6025,
+      "avg_pass_rate": 89.56
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 1384,
+      "avg_pass_rate": 84.47
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 146,
+      "avg_pass_rate": 76.71
+    }
+  ],
+  "all_models": [
+    {
+      "model": "DB11",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 110,
+      "total_passes": 108,
+      "total_fails": 2,
+      "pass_rate": 98.18,
+      "avg_mileage": 21794.0,
+      "avg_age_years": 6.1,
+      "pass_rate_vs_national": 26.67
+    },
+    {
+      "model": "VANQUISH",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 160,
+      "total_passes": 156,
+      "total_fails": 2,
+      "pass_rate": 97.5,
+      "avg_mileage": 6844.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 25.99
+    },
+    {
+      "model": "DBS",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 314,
+      "total_passes": 306,
+      "total_fails": 8,
+      "pass_rate": 97.45,
+      "avg_mileage": 10832.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 25.94
+    },
+    {
+      "model": "DBS",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 205,
+      "total_passes": 199,
+      "total_fails": 6,
+      "pass_rate": 97.07,
+      "avg_mileage": 8107.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 25.56
+    },
+    {
+      "model": "DB11",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 258,
+      "total_passes": 250,
+      "total_fails": 7,
+      "pass_rate": 96.9,
+      "avg_mileage": 10119.0,
+      "avg_age_years": 2.3,
+      "pass_rate_vs_national": 25.39
+    },
+    {
+      "model": "VANQUISH",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 155,
+      "total_passes": 149,
+      "total_fails": 5,
+      "pass_rate": 96.13,
+      "avg_mileage": 18059.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 24.62
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 154,
+      "total_passes": 148,
+      "total_fails": 3,
+      "pass_rate": 96.1,
+      "avg_mileage": 33749.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": 24.59
+    },
+    {
+      "model": "VANQUISH",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 183,
+      "total_passes": 175,
+      "total_fails": 8,
+      "pass_rate": 95.63,
+      "avg_mileage": 26195.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 24.12
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 151,
+      "total_passes": 144,
+      "total_fails": 4,
+      "pass_rate": 95.36,
+      "avg_mileage": 11763.0,
+      "avg_age_years": 2.4,
+      "pass_rate_vs_national": 23.85
+    },
+    {
+      "model": "DB9",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 171,
+      "total_passes": 163,
+      "total_fails": 5,
+      "pass_rate": 95.32,
+      "avg_mileage": 17689.0,
+      "avg_age_years": 6.6,
+      "pass_rate_vs_national": 23.81
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 171,
+      "total_passes": 163,
+      "total_fails": 7,
+      "pass_rate": 95.32,
+      "avg_mileage": 31983.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 23.81
+    },
+    {
+      "model": "DBS",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 192,
+      "total_passes": 183,
+      "total_fails": 9,
+      "pass_rate": 95.31,
+      "avg_mileage": 27908.0,
+      "avg_age_years": 12.6,
+      "pass_rate_vs_national": 23.8
+    },
+    {
+      "model": "DB11",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 645,
+      "total_passes": 614,
+      "total_fails": 28,
+      "pass_rate": 95.19,
+      "avg_mileage": 16558.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 23.68
+    },
+    {
+      "model": "VANQUISH",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 203,
+      "total_passes": 193,
+      "total_fails": 9,
+      "pass_rate": 95.07,
+      "avg_mileage": 21778.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 23.56
+    },
+    {
+      "model": "VANQUISH",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 158,
+      "total_passes": 150,
+      "total_fails": 6,
+      "pass_rate": 94.94,
+      "avg_mileage": 24212.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 23.43
+    },
+    {
+      "model": "DBS",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 193,
+      "total_passes": 183,
+      "total_fails": 8,
+      "pass_rate": 94.82,
+      "avg_mileage": 29706.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 23.31
+    },
+    {
+      "model": "VANQUISH",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 221,
+      "total_passes": 209,
+      "total_fails": 11,
+      "pass_rate": 94.57,
+      "avg_mileage": 13163.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 23.06
+    },
+    {
+      "model": "DB11",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 509,
+      "total_passes": 481,
+      "total_fails": 26,
+      "pass_rate": 94.5,
+      "avg_mileage": 13251.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 22.99
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 717,
+      "total_passes": 675,
+      "total_fails": 29,
+      "pass_rate": 94.14,
+      "avg_mileage": 14236.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 22.63
+    },
+    {
+      "model": "DB11",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 731,
+      "total_passes": 688,
+      "total_fails": 39,
+      "pass_rate": 94.12,
+      "avg_mileage": 18957.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 22.61
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 370,
+      "total_passes": 348,
+      "total_fails": 16,
+      "pass_rate": 94.05,
+      "avg_mileage": 20865.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 22.54
+    },
+    {
+      "model": "DBX V8 AUTO",
+      "model_year": 2020,
+      "fuel_type": "PE",
+      "total_tests": 150,
+      "total_passes": 141,
+      "total_fails": 7,
+      "pass_rate": 94.0,
+      "avg_mileage": 20748.0,
+      "avg_age_years": 2.2,
+      "pass_rate_vs_national": 22.49
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 395,
+      "total_passes": 371,
+      "total_fails": 18,
+      "pass_rate": 93.92,
+      "avg_mileage": 17459.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 22.41
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 472,
+      "total_passes": 442,
+      "total_fails": 22,
+      "pass_rate": 93.64,
+      "avg_mileage": 14678.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 22.13
+    },
+    {
+      "model": "DB9",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 201,
+      "total_passes": 188,
+      "total_fails": 9,
+      "pass_rate": 93.53,
+      "avg_mileage": 20726.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 22.02
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 306,
+      "total_passes": 286,
+      "total_fails": 13,
+      "pass_rate": 93.46,
+      "avg_mileage": 14405.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 21.95
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 371,
+      "total_passes": 343,
+      "total_fails": 22,
+      "pass_rate": 92.45,
+      "avg_mileage": 36461.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 20.94
+    },
+    {
+      "model": "DB9",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 222,
+      "total_passes": 205,
+      "total_fails": 14,
+      "pass_rate": 92.34,
+      "avg_mileage": 35784.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": 20.83
+    },
+    {
+      "model": "DBS",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 102,
+      "total_passes": 94,
+      "total_fails": 6,
+      "pass_rate": 92.16,
+      "avg_mileage": 28405.0,
+      "avg_age_years": 14.4,
+      "pass_rate_vs_national": 20.65
+    },
+    {
+      "model": "RAPIDE",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 137,
+      "total_passes": 126,
+      "total_fails": 10,
+      "pass_rate": 91.97,
+      "avg_mileage": 46265.0,
+      "avg_age_years": 12.4,
+      "pass_rate_vs_national": 20.46
+    },
+    {
+      "model": "DB9",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 172,
+      "total_passes": 158,
+      "total_fails": 12,
+      "pass_rate": 91.86,
+      "avg_mileage": 25235.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 20.35
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 146,
+      "total_passes": 134,
+      "total_fails": 10,
+      "pass_rate": 91.78,
+      "avg_mileage": 28996.0,
+      "avg_age_years": 12.6,
+      "pass_rate_vs_national": 20.27
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 119,
+      "total_passes": 109,
+      "total_fails": 9,
+      "pass_rate": 91.6,
+      "avg_mileage": 30613.0,
+      "avg_age_years": 11.4,
+      "pass_rate_vs_national": 20.09
+    },
+    {
+      "model": "DB7",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "total_passes": 98,
+      "total_fails": 9,
+      "pass_rate": 91.59,
+      "avg_mileage": 31344.0,
+      "avg_age_years": 18.8,
+      "pass_rate_vs_national": 20.08
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 214,
+      "total_passes": 196,
+      "total_fails": 12,
+      "pass_rate": 91.59,
+      "avg_mileage": 42983.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": 20.08
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 211,
+      "total_passes": 193,
+      "total_fails": 15,
+      "pass_rate": 91.47,
+      "avg_mileage": 33759.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": 19.96
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 191,
+      "total_passes": 174,
+      "total_fails": 13,
+      "pass_rate": 91.1,
+      "avg_mileage": 29023.0,
+      "avg_age_years": 10.4,
+      "pass_rate_vs_national": 19.59
+    },
+    {
+      "model": "DB9",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 466,
+      "total_passes": 423,
+      "total_fails": 37,
+      "pass_rate": 90.77,
+      "avg_mileage": 40148.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 19.26
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 482,
+      "total_passes": 436,
+      "total_fails": 37,
+      "pass_rate": 90.46,
+      "avg_mileage": 40299.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 18.95
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 298,
+      "total_passes": 269,
+      "total_fails": 23,
+      "pass_rate": 90.27,
+      "avg_mileage": 48766.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 18.76
+    },
+    {
+      "model": "RAPIDE",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 122,
+      "total_passes": 110,
+      "total_fails": 12,
+      "pass_rate": 90.16,
+      "avg_mileage": 45815.0,
+      "avg_age_years": 11.6,
+      "pass_rate_vs_national": 18.65
+    },
+    {
+      "model": "DB7",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 218,
+      "total_passes": 196,
+      "total_fails": 18,
+      "pass_rate": 89.91,
+      "avg_mileage": 39396.0,
+      "avg_age_years": 19.6,
+      "pass_rate_vs_national": 18.4
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 363,
+      "total_passes": 326,
+      "total_fails": 29,
+      "pass_rate": 89.81,
+      "avg_mileage": 23851.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 18.3
+    },
+    {
+      "model": "DB9",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 165,
+      "total_passes": 148,
+      "total_fails": 13,
+      "pass_rate": 89.7,
+      "avg_mileage": 26828.0,
+      "avg_age_years": 9.6,
+      "pass_rate_vs_national": 18.19
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 150,
+      "total_passes": 134,
+      "total_fails": 11,
+      "pass_rate": 89.33,
+      "avg_mileage": 44255.0,
+      "avg_age_years": 14.6,
+      "pass_rate_vs_national": 17.82
+    },
+    {
+      "model": "DB9",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 1064,
+      "total_passes": 949,
+      "total_fails": 97,
+      "pass_rate": 89.19,
+      "avg_mileage": 45130.0,
+      "avg_age_years": 17.6,
+      "pass_rate_vs_national": 17.68
+    },
+    {
+      "model": "DBS",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 144,
+      "total_passes": 128,
+      "total_fails": 14,
+      "pass_rate": 88.89,
+      "avg_mileage": 26169.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": 17.38
+    },
+    {
+      "model": "DB7",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 250,
+      "total_passes": 222,
+      "total_fails": 25,
+      "pass_rate": 88.8,
+      "avg_mileage": 46995.0,
+      "avg_age_years": 20.6,
+      "pass_rate_vs_national": 17.29
+    },
+    {
+      "model": "VANTAGE",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 330,
+      "total_passes": 293,
+      "total_fails": 32,
+      "pass_rate": 88.79,
+      "avg_mileage": 25992.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 17.28
+    },
+    {
+      "model": "DB9",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 672,
+      "total_passes": 596,
+      "total_fails": 67,
+      "pass_rate": 88.69,
+      "avg_mileage": 40994.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 17.18
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 933,
+      "total_passes": 827,
+      "total_fails": 89,
+      "pass_rate": 88.64,
+      "avg_mileage": 48516.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 17.13
+    },
+    {
+      "model": "DB9",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 255,
+      "total_passes": 226,
+      "total_fails": 22,
+      "pass_rate": 88.63,
+      "avg_mileage": 50960.0,
+      "avg_age_years": 18.3,
+      "pass_rate_vs_national": 17.12
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 740,
+      "total_passes": 655,
+      "total_fails": 77,
+      "pass_rate": 88.51,
+      "avg_mileage": 43868.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": 17.0
+    },
+    {
+      "model": "DBS",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 121,
+      "total_passes": 107,
+      "total_fails": 12,
+      "pass_rate": 88.43,
+      "avg_mileage": 24106.0,
+      "avg_age_years": 10.5,
+      "pass_rate_vs_national": 16.92
+    },
+    {
+      "model": "RAPIDE",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 101,
+      "total_passes": 89,
+      "total_fails": 10,
+      "pass_rate": 88.12,
+      "avg_mileage": 30458.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": 16.61
+    },
+    {
+      "model": "DB9",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 193,
+      "total_passes": 170,
+      "total_fails": 22,
+      "pass_rate": 88.08,
+      "avg_mileage": 37145.0,
+      "avg_age_years": 12.6,
+      "pass_rate_vs_national": 16.57
+    },
+    {
+      "model": "DB9",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 601,
+      "total_passes": 529,
+      "total_fails": 61,
+      "pass_rate": 88.02,
+      "avg_mileage": 42563.0,
+      "avg_age_years": 16.6,
+      "pass_rate_vs_national": 16.51
+    },
+    {
+      "model": "V8 VANTAGE",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 125,
+      "total_passes": 110,
+      "total_fails": 15,
+      "pass_rate": 88.0,
+      "avg_mileage": 31733.0,
+      "avg_age_years": 10.7,
+      "pass_rate_vs_national": 16.49
+    },
+    {
+      "model": "RAPIDE",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 111,
+      "total_passes": 96,
+      "total_fails": 13,
+      "pass_rate": 86.49,
+      "avg_mileage": 37946.0,
+      "avg_age_years": 9.5,
+      "pass_rate_vs_national": 14.98
+    },
+    {
+      "model": "DB7",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 310,
+      "total_passes": 259,
+      "total_fails": 46,
+      "pass_rate": 83.55,
+      "avg_mileage": 49409.0,
+      "avg_age_years": 21.6,
+      "pass_rate_vs_national": 12.04
+    },
+    {
+      "model": "DB7",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 287,
+      "total_passes": 238,
+      "total_fails": 45,
+      "pass_rate": 82.93,
+      "avg_mileage": 51017.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": 11.42
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "VANTAGE",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 154,
+        "avg_vs_national": 36.23,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 96.1,
+          "national_pass_rate": 59.87,
+          "vs_national": 36.23,
+          "total_tests": 154,
+          "avg_mileage": 33749.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 96.1,
+          "national_pass_rate": 59.87,
+          "vs_national": 36.23,
+          "total_tests": 154,
+          "avg_mileage": 33749.0
+        }
+      },
+      {
+        "model": "DBS",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 193,
+        "avg_vs_national": 34.95,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 94.82,
+          "national_pass_rate": 59.87,
+          "vs_national": 34.95,
+          "total_tests": 193,
+          "avg_mileage": 29706.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 94.82,
+          "national_pass_rate": 59.87,
+          "vs_national": 34.95,
+          "total_tests": 193,
+          "avg_mileage": 29706.0
+        }
+      },
+      {
+        "model": "DBS",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 192,
+        "avg_vs_national": 32.63,
+        "durability_trend": 7.11,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 95.5,
+          "national_pass_rate": 59.87,
+          "vs_national": 35.63,
+          "total_tests": 111,
+          "avg_mileage": 27987.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 95.06,
+          "national_pass_rate": 66.54,
+          "vs_national": 28.52,
+          "total_tests": 81,
+          "avg_mileage": 27800.0
+        }
+      },
+      {
+        "model": "V8 VANTAGE",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 371,
+        "avg_vs_national": 32.58,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.45,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.58,
+          "total_tests": 371,
+          "avg_mileage": 36461.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.45,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.58,
+          "total_tests": 371,
+          "avg_mileage": 36461.0
+        }
+      },
+      {
+        "model": "DB9",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 222,
+        "avg_vs_national": 32.47,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.34,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.47,
+          "total_tests": 222,
+          "avg_mileage": 35784.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.34,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.47,
+          "total_tests": 222,
+          "avg_mileage": 35784.0
+        }
+      },
+      {
+        "model": "DBS",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 102,
+        "avg_vs_national": 32.29,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.16,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.29,
+          "total_tests": 102,
+          "avg_mileage": 28405.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 92.16,
+          "national_pass_rate": 59.87,
+          "vs_national": 32.29,
+          "total_tests": 102,
+          "avg_mileage": 28405.0
+        }
+      },
+      {
+        "model": "DB7",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "avg_vs_national": 31.72,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 91.59,
+          "national_pass_rate": 59.87,
+          "vs_national": 31.72,
+          "total_tests": 107,
+          "avg_mileage": 31344.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 91.59,
+          "national_pass_rate": 59.87,
+          "vs_national": 31.72,
+          "total_tests": 107,
+          "avg_mileage": 31344.0
+        }
+      },
+      {
+        "model": "VANTAGE",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 214,
+        "avg_vs_national": 31.72,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 91.59,
+          "national_pass_rate": 59.87,
+          "vs_national": 31.72,
+          "total_tests": 214,
+          "avg_mileage": 42983.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 91.59,
+          "national_pass_rate": 59.87,
+          "vs_national": 31.72,
+          "total_tests": 214,
+          "avg_mileage": 42983.0
+        }
+      },
+      {
+        "model": "DB9",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 466,
+        "avg_vs_national": 30.9,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.77,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.9,
+          "total_tests": 466,
+          "avg_mileage": 40148.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.77,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.9,
+          "total_tests": 466,
+          "avg_mileage": 40148.0
+        }
+      },
+      {
+        "model": "V8 VANTAGE",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 482,
+        "avg_vs_national": 30.59,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.46,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.59,
+          "total_tests": 482,
+          "avg_mileage": 40299.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.46,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.59,
+          "total_tests": 482,
+          "avg_mileage": 40299.0
+        }
+      },
+      {
+        "model": "VANTAGE",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 298,
+        "avg_vs_national": 30.4,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.4,
+          "total_tests": 298,
+          "avg_mileage": 48766.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 90.27,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.4,
+          "total_tests": 298,
+          "avg_mileage": 48766.0
+        }
+      },
+      {
+        "model": "DB7",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 218,
+        "avg_vs_national": 30.04,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.91,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.04,
+          "total_tests": 218,
+          "avg_mileage": 39396.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.91,
+          "national_pass_rate": 59.87,
+          "vs_national": 30.04,
+          "total_tests": 218,
+          "avg_mileage": 39396.0
+        }
+      },
+      {
+        "model": "VANTAGE",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 150,
+        "avg_vs_national": 29.46,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.33,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.46,
+          "total_tests": 150,
+          "avg_mileage": 44255.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.33,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.46,
+          "total_tests": 150,
+          "avg_mileage": 44255.0
+        }
+      },
+      {
+        "model": "DB9",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 1064,
+        "avg_vs_national": 29.32,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.19,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.32,
+          "total_tests": 1064,
+          "avg_mileage": 45130.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 89.19,
+          "national_pass_rate": 59.87,
+          "vs_national": 29.32,
+          "total_tests": 1064,
+          "avg_mileage": 45130.0
+        }
+      },
+      {
+        "model": "VANTAGE",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 146,
+        "avg_vs_national": 28.99,
+        "durability_trend": -2.41,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 96.88,
+          "national_pass_rate": 66.54,
+          "vs_national": 30.34,
+          "total_tests": 64,
+          "avg_mileage": 27110.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 87.8,
+          "national_pass_rate": 59.87,
+          "vs_national": 27.93,
+          "total_tests": 82,
+          "avg_mileage": 30467.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "VANTAGE",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 717,
+        "avg_vs_national": 7.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.14,
+          "national_pass_rate": 86.43,
+          "vs_national": 7.71,
+          "total_tests": 717,
+          "avg_mileage": 14236.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.14,
+          "national_pass_rate": 86.43,
+          "vs_national": 7.71,
+          "total_tests": 717,
+          "avg_mileage": 14236.0
+        }
+      },
+      {
+        "model": "DB11",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 509,
+        "avg_vs_national": 8.07,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.5,
+          "national_pass_rate": 86.43,
+          "vs_national": 8.07,
+          "total_tests": 509,
+          "avg_mileage": 13251.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 94.5,
+          "national_pass_rate": 86.43,
+          "vs_national": 8.07,
+          "total_tests": 509,
+          "avg_mileage": 13251.0
+        }
+      },
+      {
+        "model": "VANTAGE",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 472,
+        "avg_vs_national": 8.8,
+        "durability_trend": 6.18,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.83,
+          "national_pass_rate": 82.13,
+          "vs_national": 12.7,
+          "total_tests": 174,
+          "avg_mileage": 13565.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.95,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.52,
+          "total_tests": 298,
+          "avg_mileage": 15327.0
+        }
+      },
+      {
+        "model": "DB11",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 645,
+        "avg_vs_national": 10.46,
+        "durability_trend": 4.44,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 95.28,
+          "national_pass_rate": 82.13,
+          "vs_national": 13.15,
+          "total_tests": 254,
+          "avg_mileage": 18230.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 95.14,
+          "national_pass_rate": 86.43,
+          "vs_national": 8.71,
+          "total_tests": 391,
+          "avg_mileage": 15472.0
+        }
+      },
+      {
+        "model": "RAPIDE",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 101,
+        "avg_vs_national": 10.88,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 88.12,
+          "national_pass_rate": 77.24,
+          "vs_national": 10.88,
+          "total_tests": 101,
+          "avg_mileage": 30458.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 88.12,
+          "national_pass_rate": 77.24,
+          "vs_national": 10.88,
+          "total_tests": 101,
+          "avg_mileage": 30458.0
+        }
+      },
+      {
+        "model": "DBS",
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 314,
+        "avg_vs_national": 11.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 97.45,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.02,
+          "total_tests": 314,
+          "avg_mileage": 10832.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 97.45,
+          "national_pass_rate": 86.43,
+          "vs_national": 11.02,
+          "total_tests": 314,
+          "avg_mileage": 10832.0
+        }
+      },
+      {
+        "model": "VANTAGE",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 306,
+        "avg_vs_national": 11.33,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 93.46,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.33,
+          "total_tests": 306,
+          "avg_mileage": 14405.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 93.46,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.33,
+          "total_tests": 306,
+          "avg_mileage": 14405.0
+        }
+      },
+      {
+        "model": "DB11",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 731,
+        "avg_vs_national": 11.99,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.12,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.99,
+          "total_tests": 731,
+          "avg_mileage": 18957.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.12,
+          "national_pass_rate": 82.13,
+          "vs_national": 11.99,
+          "total_tests": 731,
+          "avg_mileage": 18957.0
+        }
+      },
+      {
+        "model": "VANQUISH",
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 221,
+        "avg_vs_national": 12.44,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.57,
+          "national_pass_rate": 82.13,
+          "vs_national": 12.44,
+          "total_tests": 221,
+          "avg_mileage": 13163.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 94.57,
+          "national_pass_rate": 82.13,
+          "vs_national": 12.44,
+          "total_tests": 221,
+          "avg_mileage": 13163.0
+        }
+      },
+      {
+        "model": "VANQUISH",
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 160,
+        "avg_vs_national": 12.95,
+        "durability_trend": 8.74,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 100.0,
+          "national_pass_rate": 82.13,
+          "vs_national": 17.87,
+          "total_tests": 70,
+          "avg_mileage": 5869.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 95.56,
+          "national_pass_rate": 86.43,
+          "vs_national": 9.13,
+          "total_tests": 90,
+          "avg_mileage": 7602.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 17,
+          "tests": 4765
+        },
+        "maturing": {
+          "vehicles": 18,
+          "tests": 2950
+        },
+        "proven": {
+          "vehicles": 33,
+          "tests": 9747
+        }
+      },
+      "proven_vehicles_tested": 29,
+      "proven_above_average_pct": 100.0,
+      "proven_avg_vs_national": 32.07,
+      "durability_rating": "Excellent",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "VANTAGE",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 154,
+          "pass_rate": 96.1,
+          "vs_national_at_age": 38.8,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 33749.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DBS",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 111,
+          "pass_rate": 95.5,
+          "vs_national_at_age": 38.2,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 27987.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DBS",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 193,
+          "pass_rate": 94.82,
+          "vs_national_at_age": 37.52,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 29706.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "V8 VANTAGE",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 371,
+          "pass_rate": 92.45,
+          "vs_national_at_age": 35.15,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 36461.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DB9",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 222,
+          "pass_rate": 92.34,
+          "vs_national_at_age": 35.04,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 35784.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DBS",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 102,
+          "pass_rate": 92.16,
+          "vs_national_at_age": 34.86,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 28405.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DB7",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 107,
+          "pass_rate": 91.59,
+          "vs_national_at_age": 34.29,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 31344.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "VANTAGE",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 214,
+          "pass_rate": 91.59,
+          "vs_national_at_age": 34.29,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 42983.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DB9",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 466,
+          "pass_rate": 90.77,
+          "vs_national_at_age": 33.47,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 40148.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "V8 VANTAGE",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 482,
+          "pass_rate": 90.46,
+          "vs_national_at_age": 33.16,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 40299.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "VANTAGE",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 298,
+          "pass_rate": 90.27,
+          "vs_national_at_age": 32.97,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 48766.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "DB7",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 218,
+          "pass_rate": 89.91,
+          "vs_national_at_age": 32.61,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 39396.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "V8 VANTAGE",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 171,
+          "pass_rate": 95.32,
+          "vs_national_at_age": 32.49,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 31983.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "V8 VANTAGE",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 107,
+          "pass_rate": 89.72,
+          "vs_national_at_age": 32.42,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 34965.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "VANTAGE",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 150,
+          "pass_rate": 89.33,
+          "vs_national_at_age": 32.03,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 44255.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": []
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "DB11",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 254,
+          "pass_rate": 95.28,
+          "vs_national_at_age": 14.08,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 18230.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "VANTAGE",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 174,
+          "pass_rate": 94.83,
+          "vs_national_at_age": 13.63,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 13565.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "VANQUISH",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 221,
+          "pass_rate": 94.57,
+          "vs_national_at_age": 13.37,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 13163.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "DB11",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 731,
+          "pass_rate": 94.12,
+          "vs_national_at_age": 12.92,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 18957.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "VANTAGE",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 306,
+          "pass_rate": 93.46,
+          "vs_national_at_age": 12.26,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 14405.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "DBS",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 314,
+          "pass_rate": 97.45,
+          "vs_national_at_age": 11.6,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 10832.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "VANTAGE",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 212,
+          "pass_rate": 91.98,
+          "vs_national_at_age": 10.78,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 15744.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "DB11",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 391,
+          "pass_rate": 95.14,
+          "vs_national_at_age": 9.29,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 15472.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "DB11",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 509,
+          "pass_rate": 94.5,
+          "vs_national_at_age": 8.65,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 13251.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "VANTAGE",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 717,
+          "pass_rate": 94.14,
+          "vs_national_at_age": 8.29,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 14236.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "DBS": {
+        "core_model": "DBS",
+        "years_covered": [
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2019,
+                "pass_rate": 97.45,
+                "vs_national": 11.6,
+                "total_tests": 314,
+                "avg_mileage": 10832.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "DB7": {
+        "core_model": "DB7",
+        "years_covered": [
+          2000,
+          2001,
+          2002,
+          2003
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2000,
+                "pass_rate": 82.93,
+                "vs_national": 25.63,
+                "total_tests": 287,
+                "avg_mileage": 51017.0
+              },
+              {
+                "year": 2001,
+                "pass_rate": 83.55,
+                "vs_national": 26.25,
+                "total_tests": 310,
+                "avg_mileage": 49409.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 88.8,
+                "vs_national": 31.5,
+                "total_tests": 250,
+                "avg_mileage": 46995.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 89.91,
+                "vs_national": 32.61,
+                "total_tests": 218,
+                "avg_mileage": 39396.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2003,
+          "vs_national": 32.61,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2000,
+          "vs_national": 25.63,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "DB9": {
+        "core_model": "DB9",
+        "years_covered": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2015
+        ],
+        "trajectory_by_age": {
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2015,
+                "pass_rate": 93.53,
+                "vs_national": 18.4,
+                "total_tests": 201,
+                "avg_mileage": 20726.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 88.63,
+                "vs_national": 31.33,
+                "total_tests": 255,
+                "avg_mileage": 50960.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 89.19,
+                "vs_national": 31.89,
+                "total_tests": 1064,
+                "avg_mileage": 45130.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 88.02,
+                "vs_national": 30.72,
+                "total_tests": 601,
+                "avg_mileage": 42563.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 88.69,
+                "vs_national": 31.39,
+                "total_tests": 672,
+                "avg_mileage": 40994.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 90.77,
+                "vs_national": 33.47,
+                "total_tests": 466,
+                "avg_mileage": 40148.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 92.34,
+                "vs_national": 35.04,
+                "total_tests": 222,
+                "avg_mileage": 35784.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 35.04,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": 30.72,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "VANQUISH": {
+        "core_model": "VANQUISH",
+        "years_covered": [
+          2015,
+          2017
+        ],
+        "trajectory_by_age": {
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 94.57,
+                "vs_national": 13.37,
+                "total_tests": 221,
+                "avg_mileage": 13163.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2015,
+                "pass_rate": 95.07,
+                "vs_national": 19.94,
+                "total_tests": 203,
+                "avg_mileage": 21778.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "V8": {
+        "core_model": "V8",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 88.64,
+                "vs_national": 31.34,
+                "total_tests": 933,
+                "avg_mileage": 48516.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 88.51,
+                "vs_national": 31.21,
+                "total_tests": 740,
+                "avg_mileage": 43868.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 90.46,
+                "vs_national": 33.16,
+                "total_tests": 482,
+                "avg_mileage": 40299.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 92.45,
+                "vs_national": 35.15,
+                "total_tests": 371,
+                "avg_mileage": 36461.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 35.15,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": 31.21,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "V8 VANTAGE": {
+        "core_model": "V8 VANTAGE",
+        "years_covered": [
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 88.64,
+                "vs_national": 31.34,
+                "total_tests": 933,
+                "avg_mileage": 48516.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 88.51,
+                "vs_national": 31.21,
+                "total_tests": 740,
+                "avg_mileage": 43868.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 90.46,
+                "vs_national": 33.16,
+                "total_tests": 482,
+                "avg_mileage": 40299.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 92.45,
+                "vs_national": 35.15,
+                "total_tests": 371,
+                "avg_mileage": 36461.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 35.15,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2007,
+          "vs_national": 31.21,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "DB11": {
+        "core_model": "DB11",
+        "years_covered": [
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 95.14,
+                "vs_national": 9.29,
+                "total_tests": 391,
+                "avg_mileage": 15472.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 94.5,
+                "vs_national": 8.65,
+                "total_tests": 509,
+                "avg_mileage": 13251.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2017,
+                "pass_rate": 94.12,
+                "vs_national": 12.92,
+                "total_tests": 731,
+                "avg_mileage": 18957.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 95.28,
+                "vs_national": 14.08,
+                "total_tests": 254,
+                "avg_mileage": 18230.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": null,
+        "worst_proven_year": null,
+        "has_proven_data": false
+      },
+      "VANTAGE": {
+        "core_model": "VANTAGE",
+        "years_covered": [
+          2006,
+          2007,
+          2013,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 92.95,
+                "vs_national": 7.1,
+                "total_tests": 298,
+                "avg_mileage": 15327.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 94.14,
+                "vs_national": 8.29,
+                "total_tests": 717,
+                "avg_mileage": 14236.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 91.98,
+                "vs_national": 10.78,
+                "total_tests": 212,
+                "avg_mileage": 15744.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 93.46,
+                "vs_national": 12.26,
+                "total_tests": 306,
+                "avg_mileage": 14405.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2015,
+                "pass_rate": 94.05,
+                "vs_national": 18.92,
+                "total_tests": 370,
+                "avg_mileage": 20865.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2013,
+                "pass_rate": 88.79,
+                "vs_national": 20.55,
+                "total_tests": 330,
+                "avg_mileage": 25992.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2006,
+                "pass_rate": 90.27,
+                "vs_national": 32.97,
+                "total_tests": 298,
+                "avg_mileage": 48766.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 91.59,
+                "vs_national": 34.29,
+                "total_tests": 214,
+                "avg_mileage": 42983.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2007,
+          "vs_national": 34.29,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2006,
+          "vs_national": 32.97,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

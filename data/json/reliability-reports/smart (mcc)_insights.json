@@ -1,0 +1,3649 @@
+{
+  "meta": {
+    "make": "SMART (MCC)",
+    "generated_at": "2026-01-15T17:43:22.696598",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 40,
+    "make": "SMART (MCC)",
+    "total_tests": 77231,
+    "total_models": 344,
+    "avg_pass_rate": 72.45,
+    "weighted_pass_rate": 72.45,
+    "best_model": "FORTWO 2019",
+    "best_model_pass_rate": 88.53,
+    "worst_model": "FORTWO COUPE 2005",
+    "worst_model_pass_rate": 52.76,
+    "rank": 40
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "SMART (MCC)",
+      "avg_pass_rate": 72.45,
+      "total_tests": 77231,
+      "rank": 40,
+      "total_models": 344
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    }
+  ],
+  "summary": {
+    "total_tests": 77231,
+    "total_models": 344,
+    "avg_pass_rate": 72.45,
+    "rank": 40,
+    "rank_total": 75,
+    "best_model": "FORTWO 2019",
+    "best_model_pass_rate": 88.53,
+    "worst_model": "FORTWO COUPE 2005",
+    "worst_model_pass_rate": 52.76,
+    "vs_national": 0.94,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "FORFOUR",
+      "total_tests": 22785,
+      "total_passes": 17283,
+      "total_fails": 4225,
+      "pass_rate": 75.85,
+      "avg_mileage": 54863.0,
+      "year_from": 2004,
+      "year_to": 2019,
+      "variant_count": 11,
+      "variants": "FORFOUR"
+    },
+    {
+      "core_model": "ROADSTER",
+      "total_tests": 753,
+      "total_passes": 550,
+      "total_fails": 164,
+      "pass_rate": 73.04,
+      "avg_mileage": 71679.0,
+      "year_from": 2004,
+      "year_to": 2006,
+      "variant_count": 3,
+      "variants": "ROADSTER"
+    },
+    {
+      "core_model": "FORTWO",
+      "total_tests": 45487,
+      "total_passes": 33121,
+      "total_fails": 9501,
+      "pass_rate": 72.81,
+      "avg_mileage": 55705.0,
+      "year_from": 2003,
+      "year_to": 2019,
+      "variant_count": 34,
+      "variants": "FORTWO,FORTWO CABRIOLET,FORTWO COUPE"
+    },
+    {
+      "core_model": "CABRIOLET",
+      "total_tests": 274,
+      "total_passes": 171,
+      "total_fails": 80,
+      "pass_rate": 62.41,
+      "avg_mileage": 70734.0,
+      "year_from": 2003,
+      "year_to": 2004,
+      "variant_count": 2,
+      "variants": "CABRIOLET"
+    },
+    {
+      "core_model": "CITY CABRIOLET",
+      "total_tests": 676,
+      "total_passes": 413,
+      "total_fails": 218,
+      "pass_rate": 61.09,
+      "avg_mileage": 66425.0,
+      "year_from": 2002,
+      "year_to": 2006,
+      "variant_count": 5,
+      "variants": "CITY CABRIOLET"
+    },
+    {
+      "core_model": "CITY COUPE",
+      "total_tests": 4689,
+      "total_passes": 2715,
+      "total_fails": 1632,
+      "pass_rate": 57.9,
+      "avg_mileage": 66730.0,
+      "year_from": 2001,
+      "year_to": 2009,
+      "variant_count": 9,
+      "variants": "CITY COUPE"
+    }
+  ],
+  "model_year_breakdowns": {
+    "FORFOUR": [
+      {
+        "model_year": 2019,
+        "fuel_type": "EL",
+        "total_tests": 161,
+        "pass_rate": 85.09,
+        "avg_mileage": 14679.0,
+        "pass_rate_vs_national": -1.12,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1794,
+        "pass_rate": 84.95,
+        "avg_mileage": 21293.0,
+        "pass_rate_vs_national": -1.26,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "EL",
+        "total_tests": 165,
+        "pass_rate": 83.64,
+        "avg_mileage": 18886.0,
+        "pass_rate_vs_national": -0.6,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 3698,
+        "pass_rate": 83.45,
+        "avg_mileage": 26697.0,
+        "pass_rate_vs_national": -0.79,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 4736,
+        "pass_rate": 79.41,
+        "avg_mileage": 33854.0,
+        "pass_rate_vs_national": -2.27,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 5279,
+        "pass_rate": 74.43,
+        "avg_mileage": 39589.0,
+        "pass_rate_vs_national": -4.22,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 5547,
+        "pass_rate": 70.38,
+        "avg_mileage": 46109.0,
+        "pass_rate_vs_national": -5.11,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 464,
+        "pass_rate": 59.27,
+        "avg_mileage": 95063.0,
+        "pass_rate_vs_national": 3.09,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 135,
+        "pass_rate": 52.59,
+        "avg_mileage": 115416.0,
+        "pass_rate_vs_national": -3.66,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 597,
+        "pass_rate": 56.78,
+        "avg_mileage": 90861.0,
+        "pass_rate_vs_national": 0.53,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 209,
+        "pass_rate": 56.94,
+        "avg_mileage": 101048.0,
+        "pass_rate_vs_national": 0.91,
+        "national_avg_for_year": 56.03
+      }
+    ],
+    "ROADSTER": [
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 122,
+        "pass_rate": 73.77,
+        "avg_mileage": 62366.0,
+        "pass_rate_vs_national": 17.59,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 307,
+        "pass_rate": 71.66,
+        "avg_mileage": 74352.0,
+        "pass_rate_vs_national": 15.41,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 324,
+        "pass_rate": 74.07,
+        "avg_mileage": 78319.0,
+        "pass_rate_vs_national": 18.04,
+        "national_avg_for_year": 56.03
+      }
+    ],
+    "FORTWO": [
+      {
+        "model_year": 2019,
+        "fuel_type": "EL",
+        "total_tests": 348,
+        "pass_rate": 92.53,
+        "avg_mileage": 12365.0,
+        "pass_rate_vs_national": 6.32,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2019,
+        "fuel_type": "PE",
+        "total_tests": 1562,
+        "pass_rate": 87.64,
+        "avg_mileage": 19893.0,
+        "pass_rate_vs_national": 1.43,
+        "national_avg_for_year": 86.21
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "EL",
+        "total_tests": 264,
+        "pass_rate": 90.91,
+        "avg_mileage": 15443.0,
+        "pass_rate_vs_national": 6.67,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2018,
+        "fuel_type": "PE",
+        "total_tests": 3119,
+        "pass_rate": 85.22,
+        "avg_mileage": 24883.0,
+        "pass_rate_vs_national": 0.98,
+        "national_avg_for_year": 84.24
+      },
+      {
+        "model_year": 2017,
+        "fuel_type": "PE",
+        "total_tests": 4720,
+        "pass_rate": 83.05,
+        "avg_mileage": 29133.0,
+        "pass_rate_vs_national": 1.37,
+        "national_avg_for_year": 81.68
+      },
+      {
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 5707,
+        "pass_rate": 80.81,
+        "avg_mileage": 34040.0,
+        "pass_rate_vs_national": 2.16,
+        "national_avg_for_year": 78.65
+      },
+      {
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 2164,
+        "pass_rate": 78.56,
+        "avg_mileage": 38564.0,
+        "pass_rate_vs_national": 3.07,
+        "national_avg_for_year": 75.49
+      },
+      {
+        "model_year": 2014,
+        "fuel_type": "PE",
+        "total_tests": 3621,
+        "pass_rate": 77.8,
+        "avg_mileage": 43320.0,
+        "pass_rate_vs_national": 6.09,
+        "national_avg_for_year": 71.71
+      },
+      {
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 779,
+        "pass_rate": 75.87,
+        "avg_mileage": 45842.0,
+        "pass_rate_vs_national": 7.58,
+        "national_avg_for_year": 68.29
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "DI",
+        "total_tests": 230,
+        "pass_rate": 69.13,
+        "avg_mileage": 64006.0,
+        "pass_rate_vs_national": 3.5,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 1603,
+        "pass_rate": 72.93,
+        "avg_mileage": 50984.0,
+        "pass_rate_vs_national": 7.3,
+        "national_avg_for_year": 65.63
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "DI",
+        "total_tests": 515,
+        "pass_rate": 66.41,
+        "avg_mileage": 68802.0,
+        "pass_rate_vs_national": 3.42,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 2552,
+        "pass_rate": 67.99,
+        "avg_mileage": 56356.0,
+        "pass_rate_vs_national": 5.0,
+        "national_avg_for_year": 62.99
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "DI",
+        "total_tests": 1202,
+        "pass_rate": 63.48,
+        "avg_mileage": 71502.0,
+        "pass_rate_vs_national": 2.98,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 3492,
+        "pass_rate": 65.61,
+        "avg_mileage": 60224.0,
+        "pass_rate_vs_national": 5.11,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 1147,
+        "pass_rate": 60.59,
+        "avg_mileage": 75333.0,
+        "pass_rate_vs_national": 1.58,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 3847,
+        "pass_rate": 65.35,
+        "avg_mileage": 61116.0,
+        "pass_rate_vs_national": 6.34,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 4094,
+        "pass_rate": 62.07,
+        "avg_mileage": 65492.0,
+        "pass_rate_vs_national": 4.68,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 2007,
+        "pass_rate": 60.89,
+        "avg_mileage": 66643.0,
+        "pass_rate_vs_national": 3.92,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 924,
+        "pass_rate": 60.71,
+        "avg_mileage": 65525.0,
+        "pass_rate_vs_national": 4.53,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 754,
+        "pass_rate": 54.77,
+        "avg_mileage": 68442.0,
+        "pass_rate_vs_national": -1.48,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 687,
+        "pass_rate": 58.52,
+        "avg_mileage": 69525.0,
+        "pass_rate_vs_national": 2.49,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 149,
+        "pass_rate": 57.05,
+        "avg_mileage": 75392.0,
+        "pass_rate_vs_national": 0.37,
+        "national_avg_for_year": 56.68
+      }
+    ],
+    "CABRIOLET": [
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "pass_rate": 61.68,
+        "avg_mileage": 70968.0,
+        "pass_rate_vs_national": 5.65,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 167,
+        "pass_rate": 62.87,
+        "avg_mileage": 70499.0,
+        "pass_rate_vs_national": 6.19,
+        "national_avg_for_year": 56.68
+      }
+    ],
+    "CITY CABRIOLET": [
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 113,
+        "pass_rate": 59.29,
+        "avg_mileage": 65572.0,
+        "pass_rate_vs_national": 3.11,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 140,
+        "pass_rate": 55.71,
+        "avg_mileage": 65396.0,
+        "pass_rate_vs_national": -0.54,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 169,
+        "pass_rate": 64.5,
+        "avg_mileage": 66761.0,
+        "pass_rate_vs_national": 8.47,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 131,
+        "pass_rate": 67.18,
+        "avg_mileage": 66471.0,
+        "pass_rate_vs_national": 10.5,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 123,
+        "pass_rate": 57.72,
+        "avg_mileage": 67926.0,
+        "pass_rate_vs_national": 0.18,
+        "national_avg_for_year": 57.54
+      }
+    ],
+    "CITY COUPE": [
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 113,
+        "pass_rate": 67.26,
+        "avg_mileage": 62629.0,
+        "pass_rate_vs_national": 8.25,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 103,
+        "pass_rate": 57.28,
+        "avg_mileage": 66968.0,
+        "pass_rate_vs_national": -0.11,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 523,
+        "pass_rate": 57.17,
+        "avg_mileage": 65538.0,
+        "pass_rate_vs_national": 0.2,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 636,
+        "pass_rate": 57.86,
+        "avg_mileage": 62468.0,
+        "pass_rate_vs_national": 1.68,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 433,
+        "pass_rate": 57.04,
+        "avg_mileage": 69286.0,
+        "pass_rate_vs_national": 0.79,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 811,
+        "pass_rate": 59.19,
+        "avg_mileage": 68970.0,
+        "pass_rate_vs_national": 3.16,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 1120,
+        "pass_rate": 56.16,
+        "avg_mileage": 69848.0,
+        "pass_rate_vs_national": -0.52,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 749,
+        "pass_rate": 57.28,
+        "avg_mileage": 68839.0,
+        "pass_rate_vs_national": -0.26,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2001,
+        "fuel_type": "PE",
+        "total_tests": 201,
+        "pass_rate": 63.68,
+        "avg_mileage": 66028.0,
+        "pass_rate_vs_national": 5.0,
+        "national_avg_for_year": 58.68
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "EL",
+      "model_count": 4,
+      "total_tests": 938,
+      "pass_rate": 89.23,
+      "fuel_name": "Electric"
+    },
+    {
+      "fuel_type": "PE",
+      "model_count": 53,
+      "total_tests": 70497,
+      "pass_rate": 72.89,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 7,
+      "total_tests": 3229,
+      "pass_rate": 62.87,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "ROADSTER",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 324,
+      "pass_rate": 74.07,
+      "pass_rate_vs_national": 18.04,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "ROADSTER",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 122,
+      "pass_rate": 73.77,
+      "pass_rate_vs_national": 17.59,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "ROADSTER",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 307,
+      "pass_rate": 71.66,
+      "pass_rate_vs_national": 15.41,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "CITY CABRIOLET",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "pass_rate": 67.18,
+      "pass_rate_vs_national": 10.5,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 335,
+      "pass_rate": 75.82,
+      "pass_rate_vs_national": 10.19,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 112,
+      "pass_rate": 65.18,
+      "pass_rate_vs_national": 9.15,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "CITY CABRIOLET",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 169,
+      "pass_rate": 64.5,
+      "pass_rate_vs_national": 8.47,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "pass_rate": 67.26,
+      "pass_rate_vs_national": 8.25,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 554,
+      "pass_rate": 70.58,
+      "pass_rate_vs_national": 7.59,
+      "national_avg_for_year": 62.99
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 779,
+      "pass_rate": 75.87,
+      "pass_rate_vs_national": 7.58,
+      "national_avg_for_year": 68.29
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 758,
+      "pass_rate": 66.49,
+      "pass_rate_vs_national": 7.48,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2018,
+      "fuel_type": "EL",
+      "total_tests": 264,
+      "pass_rate": 90.91,
+      "pass_rate_vs_national": 6.67,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1268,
+      "pass_rate": 72.16,
+      "pass_rate_vs_national": 6.53,
+      "national_avg_for_year": 65.63
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 739,
+      "pass_rate": 62.65,
+      "pass_rate_vs_national": 6.47,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2019,
+      "fuel_type": "EL",
+      "total_tests": 348,
+      "pass_rate": 92.53,
+      "pass_rate_vs_national": 6.32,
+      "national_avg_for_year": 86.21
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "FORFOUR",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 5547,
+      "pass_rate": 70.38,
+      "pass_rate_vs_national": -5.11,
+      "national_avg_for_year": 75.49
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 5279,
+      "pass_rate": 74.43,
+      "pass_rate_vs_national": -4.22,
+      "national_avg_for_year": 78.65
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 135,
+      "pass_rate": 52.59,
+      "pass_rate_vs_national": -3.66,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 559,
+      "pass_rate": 52.59,
+      "pass_rate_vs_national": -3.66,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 185,
+      "pass_rate": 52.97,
+      "pass_rate_vs_national": -3.21,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 4736,
+      "pass_rate": 79.41,
+      "pass_rate_vs_national": -2.27,
+      "national_avg_for_year": 81.68
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1794,
+      "pass_rate": 84.95,
+      "pass_rate_vs_national": -1.26,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2019,
+      "fuel_type": "EL",
+      "total_tests": 161,
+      "pass_rate": 85.09,
+      "pass_rate_vs_national": -1.12,
+      "national_avg_for_year": 86.21
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 3698,
+      "pass_rate": 83.45,
+      "pass_rate_vs_national": -0.79,
+      "national_avg_for_year": 84.24
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2018,
+      "fuel_type": "EL",
+      "total_tests": 165,
+      "pass_rate": 83.64,
+      "pass_rate_vs_national": -0.6,
+      "national_avg_for_year": 84.24
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 8037,
+        "vehicle_count": 64
+      },
+      {
+        "category_name": "Suspension",
+        "total_failures": 5140,
+        "vehicle_count": 63
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 4689,
+        "vehicle_count": 64
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 4509,
+        "vehicle_count": 64
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 4416,
+        "vehicle_count": 64
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 3166,
+        "vehicle_count": 60
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 1779,
+        "vehicle_count": 60
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 435,
+        "vehicle_count": 48
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 361,
+        "vehicle_count": 51
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 250,
+        "vehicle_count": 46
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 76,
+        "vehicle_count": 28
+      },
+      {
+        "category_name": "Seat belt installation check",
+        "total_failures": 2,
+        "vehicle_count": 2
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 3518
+      },
+      {
+        "defect_description": "fractured or broken",
+        "category_name": "Suspension",
+        "total_occurrences": 1961
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 1918
+      },
+      {
+        "defect_description": "provides insufficient washer liquid",
+        "category_name": "Visibility",
+        "total_occurrences": 1560
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 1449
+      },
+      {
+        "defect_description": "not working on dipped beam",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 1168
+      },
+      {
+        "defect_description": "Lambda reading after 2nd fast idle outside specified limits",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 1001
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 946
+      },
+      {
+        "defect_description": "projected beam image is obviously incorrect",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 876
+      },
+      {
+        "defect_description": "excessively binding",
+        "category_name": "Brakes",
+        "total_occurrences": 769
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 10586
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 7777
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 5339
+      },
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 4565
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 3971
+      },
+      {
+        "defect_description": "leak, but not excessive",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 2128
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 1457
+      },
+      {
+        "defect_description": "worn, but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 1385
+      },
+      {
+        "defect_description": "deteriorated but not likely to be misread",
+        "category_name": "Identification of the vehicle",
+        "total_occurrences": 1235
+      },
+      {
+        "defect_description": "binding but not excessively",
+        "category_name": "Brakes",
+        "total_occurrences": 783
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 10692
+      },
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 8183
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 5500
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 5048
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 1456
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 711
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 532
+      },
+      {
+        "defect_description": "seriously damaged",
+        "category_name": "Tyres",
+        "total_occurrences": 132
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 104
+      },
+      {
+        "defect_description": "all not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 99
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 23084,
+      "avg_pass_rate": 85.16
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 30154,
+      "avg_pass_rate": 71.98
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 15183,
+      "avg_pass_rate": 61.67
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 4704,
+      "avg_pass_rate": 56.99
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 865,
+      "avg_pass_rate": 53.06
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 152,
+      "avg_pass_rate": 54.61
+    }
+  ],
+  "all_models": [
+    {
+      "model": "FORTWO",
+      "model_year": 2019,
+      "fuel_type": "EL",
+      "total_tests": 348,
+      "total_passes": 322,
+      "total_fails": 19,
+      "pass_rate": 92.53,
+      "avg_mileage": 12365.0,
+      "avg_age_years": 3.3,
+      "pass_rate_vs_national": 21.02
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2018,
+      "fuel_type": "EL",
+      "total_tests": 264,
+      "total_passes": 240,
+      "total_fails": 17,
+      "pass_rate": 90.91,
+      "avg_mileage": 15443.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 19.4
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1562,
+      "total_passes": 1369,
+      "total_fails": 131,
+      "pass_rate": 87.64,
+      "avg_mileage": 19893.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 16.13
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 3119,
+      "total_passes": 2658,
+      "total_fails": 320,
+      "pass_rate": 85.22,
+      "avg_mileage": 24883.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 13.71
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2019,
+      "fuel_type": "EL",
+      "total_tests": 161,
+      "total_passes": 137,
+      "total_fails": 15,
+      "pass_rate": 85.09,
+      "avg_mileage": 14679.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 13.58
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2019,
+      "fuel_type": "PE",
+      "total_tests": 1794,
+      "total_passes": 1524,
+      "total_fails": 188,
+      "pass_rate": 84.95,
+      "avg_mileage": 21293.0,
+      "avg_age_years": 3.4,
+      "pass_rate_vs_national": 13.44
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2018,
+      "fuel_type": "EL",
+      "total_tests": 165,
+      "total_passes": 138,
+      "total_fails": 21,
+      "pass_rate": 83.64,
+      "avg_mileage": 18886.0,
+      "avg_age_years": 4.3,
+      "pass_rate_vs_national": 12.13
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2018,
+      "fuel_type": "PE",
+      "total_tests": 3698,
+      "total_passes": 3086,
+      "total_fails": 445,
+      "pass_rate": 83.45,
+      "avg_mileage": 26697.0,
+      "avg_age_years": 4.4,
+      "pass_rate_vs_national": 11.94
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 4720,
+      "total_passes": 3920,
+      "total_fails": 594,
+      "pass_rate": 83.05,
+      "avg_mileage": 29133.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 11.54
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 5707,
+      "total_passes": 4612,
+      "total_fails": 817,
+      "pass_rate": 80.81,
+      "avg_mileage": 34040.0,
+      "avg_age_years": 6.4,
+      "pass_rate_vs_national": 9.3
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2017,
+      "fuel_type": "PE",
+      "total_tests": 4736,
+      "total_passes": 3761,
+      "total_fails": 740,
+      "pass_rate": 79.41,
+      "avg_mileage": 33854.0,
+      "avg_age_years": 5.5,
+      "pass_rate_vs_national": 7.9
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 2164,
+      "total_passes": 1700,
+      "total_fails": 342,
+      "pass_rate": 78.56,
+      "avg_mileage": 38564.0,
+      "avg_age_years": 7.4,
+      "pass_rate_vs_national": 7.05
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2014,
+      "fuel_type": "PE",
+      "total_tests": 3621,
+      "total_passes": 2817,
+      "total_fails": 561,
+      "pass_rate": 77.8,
+      "avg_mileage": 43320.0,
+      "avg_age_years": 8.5,
+      "pass_rate_vs_national": 6.29
+    },
+    {
+      "model": "FORTWO",
+      "model_year": 2013,
+      "fuel_type": "PE",
+      "total_tests": 779,
+      "total_passes": 591,
+      "total_fails": 136,
+      "pass_rate": 75.87,
+      "avg_mileage": 45842.0,
+      "avg_age_years": 9.2,
+      "pass_rate_vs_national": 4.36
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 335,
+      "total_passes": 254,
+      "total_fails": 66,
+      "pass_rate": 75.82,
+      "avg_mileage": 50176.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 4.31
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2016,
+      "fuel_type": "PE",
+      "total_tests": 5279,
+      "total_passes": 3929,
+      "total_fails": 1057,
+      "pass_rate": 74.43,
+      "avg_mileage": 39589.0,
+      "avg_age_years": 6.5,
+      "pass_rate_vs_national": 2.92
+    },
+    {
+      "model": "ROADSTER",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 324,
+      "total_passes": 240,
+      "total_fails": 67,
+      "pass_rate": 74.07,
+      "avg_mileage": 78319.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": 2.56
+    },
+    {
+      "model": "ROADSTER",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 122,
+      "total_passes": 90,
+      "total_fails": 27,
+      "pass_rate": 73.77,
+      "avg_mileage": 62366.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": 2.26
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2012,
+      "fuel_type": "PE",
+      "total_tests": 1268,
+      "total_passes": 915,
+      "total_fails": 270,
+      "pass_rate": 72.16,
+      "avg_mileage": 51791.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": 0.65
+    },
+    {
+      "model": "ROADSTER",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 307,
+      "total_passes": 220,
+      "total_fails": 70,
+      "pass_rate": 71.66,
+      "avg_mileage": 74352.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": 0.15
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 554,
+      "total_passes": 391,
+      "total_fails": 134,
+      "pass_rate": 70.58,
+      "avg_mileage": 54543.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -0.93
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2015,
+      "fuel_type": "PE",
+      "total_tests": 5547,
+      "total_passes": 3904,
+      "total_fails": 1275,
+      "pass_rate": 70.38,
+      "avg_mileage": 46109.0,
+      "avg_age_years": 7.5,
+      "pass_rate_vs_national": -1.13
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2012,
+      "fuel_type": "DI",
+      "total_tests": 230,
+      "total_passes": 159,
+      "total_fails": 56,
+      "pass_rate": 69.13,
+      "avg_mileage": 64006.0,
+      "avg_age_years": 10.6,
+      "pass_rate_vs_national": -2.38
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2011,
+      "fuel_type": "PE",
+      "total_tests": 1998,
+      "total_passes": 1344,
+      "total_fails": 513,
+      "pass_rate": 67.27,
+      "avg_mileage": 58168.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -4.24
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "total_passes": 76,
+      "total_fails": 29,
+      "pass_rate": 67.26,
+      "avg_mileage": 62629.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -4.25
+    },
+    {
+      "model": "CITY CABRIOLET",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "total_passes": 88,
+      "total_fails": 37,
+      "pass_rate": 67.18,
+      "avg_mileage": 66471.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -4.34
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 758,
+      "total_passes": 504,
+      "total_fails": 185,
+      "pass_rate": 66.49,
+      "avg_mileage": 61343.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -5.02
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2011,
+      "fuel_type": "DI",
+      "total_tests": 515,
+      "total_passes": 342,
+      "total_fails": 149,
+      "pass_rate": 66.41,
+      "avg_mileage": 68802.0,
+      "avg_age_years": 11.5,
+      "pass_rate_vs_national": -5.1
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 2885,
+      "total_passes": 1904,
+      "total_fails": 771,
+      "pass_rate": 66.0,
+      "avg_mileage": 59965.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -5.51
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 112,
+      "total_passes": 73,
+      "total_fails": 29,
+      "pass_rate": 65.18,
+      "avg_mileage": 70503.0,
+      "avg_age_years": 18.3,
+      "pass_rate_vs_national": -6.33
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 3089,
+      "total_passes": 2010,
+      "total_fails": 838,
+      "pass_rate": 65.07,
+      "avg_mileage": 60889.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -6.44
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 144,
+      "total_passes": 93,
+      "total_fails": 45,
+      "pass_rate": 64.58,
+      "avg_mileage": 73485.0,
+      "avg_age_years": 13.3,
+      "pass_rate_vs_national": -6.93
+    },
+    {
+      "model": "CITY CABRIOLET",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 169,
+      "total_passes": 109,
+      "total_fails": 54,
+      "pass_rate": 64.5,
+      "avg_mileage": 66761.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -7.01
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 607,
+      "total_passes": 387,
+      "total_fails": 174,
+      "pass_rate": 63.76,
+      "avg_mileage": 60482.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -7.75
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2001,
+      "fuel_type": "PE",
+      "total_tests": 201,
+      "total_passes": 128,
+      "total_fails": 60,
+      "pass_rate": 63.68,
+      "avg_mileage": 66028.0,
+      "avg_age_years": 21.3,
+      "pass_rate_vs_national": -7.83
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 1062,
+      "total_passes": 675,
+      "total_fails": 304,
+      "pass_rate": 63.56,
+      "avg_mileage": 72072.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -7.95
+    },
+    {
+      "model": "CABRIOLET",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 167,
+      "total_passes": 105,
+      "total_fails": 48,
+      "pass_rate": 62.87,
+      "avg_mileage": 70499.0,
+      "avg_age_years": 19.6,
+      "pass_rate_vs_national": -8.64
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2010,
+      "fuel_type": "DI",
+      "total_tests": 140,
+      "total_passes": 88,
+      "total_fails": 41,
+      "pass_rate": 62.86,
+      "avg_mileage": 70932.0,
+      "avg_age_years": 12.5,
+      "pass_rate_vs_national": -8.65
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 739,
+      "total_passes": 463,
+      "total_fails": 213,
+      "pass_rate": 62.65,
+      "avg_mileage": 64510.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -8.86
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 3236,
+      "total_passes": 2021,
+      "total_fails": 957,
+      "pass_rate": 62.45,
+      "avg_mileage": 66472.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -9.06
+    },
+    {
+      "model": "CABRIOLET",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "total_passes": 66,
+      "total_fails": 32,
+      "pass_rate": 61.68,
+      "avg_mileage": 70968.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -9.83
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 242,
+      "total_passes": 149,
+      "total_fails": 79,
+      "pass_rate": 61.57,
+      "avg_mileage": 66523.0,
+      "avg_age_years": 15.3,
+      "pass_rate_vs_national": -9.94
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 195,
+      "total_passes": 119,
+      "total_fails": 64,
+      "pass_rate": 61.03,
+      "avg_mileage": 68664.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -10.49
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1765,
+      "total_passes": 1073,
+      "total_fails": 543,
+      "pass_rate": 60.79,
+      "avg_mileage": 66762.0,
+      "avg_age_years": 15.3,
+      "pass_rate_vs_national": -10.72
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 858,
+      "total_passes": 520,
+      "total_fails": 260,
+      "pass_rate": 60.61,
+      "avg_mileage": 64512.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -10.9
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2009,
+      "fuel_type": "DI",
+      "total_tests": 1003,
+      "total_passes": 602,
+      "total_fails": 338,
+      "pass_rate": 60.02,
+      "avg_mileage": 77180.0,
+      "avg_age_years": 13.4,
+      "pass_rate_vs_national": -11.49
+    },
+    {
+      "model": "CITY CABRIOLET",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 113,
+      "total_passes": 67,
+      "total_fails": 39,
+      "pass_rate": 59.29,
+      "avg_mileage": 65572.0,
+      "avg_age_years": 16.6,
+      "pass_rate_vs_national": -12.22
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 464,
+      "total_passes": 275,
+      "total_fails": 151,
+      "pass_rate": 59.27,
+      "avg_mileage": 95063.0,
+      "avg_age_years": 16.6,
+      "pass_rate_vs_national": -12.24
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 811,
+      "total_passes": 480,
+      "total_fails": 271,
+      "pass_rate": 59.19,
+      "avg_mileage": 68970.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -12.32
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 636,
+      "total_passes": 368,
+      "total_fails": 231,
+      "pass_rate": 57.86,
+      "avg_mileage": 62468.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -13.65
+    },
+    {
+      "model": "CITY CABRIOLET",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 123,
+      "total_passes": 71,
+      "total_fails": 41,
+      "pass_rate": 57.72,
+      "avg_mileage": 67926.0,
+      "avg_age_years": 20.3,
+      "pass_rate_vs_national": -13.79
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 749,
+      "total_passes": 429,
+      "total_fails": 255,
+      "pass_rate": 57.28,
+      "avg_mileage": 68839.0,
+      "avg_age_years": 20.4,
+      "pass_rate_vs_national": -14.23
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 103,
+      "total_passes": 59,
+      "total_fails": 32,
+      "pass_rate": 57.28,
+      "avg_mileage": 66968.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -14.23
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 575,
+      "total_passes": 329,
+      "total_fails": 189,
+      "pass_rate": 57.22,
+      "avg_mileage": 68547.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -14.29
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 523,
+      "total_passes": 299,
+      "total_fails": 187,
+      "pass_rate": 57.17,
+      "avg_mileage": 65538.0,
+      "avg_age_years": 15.6,
+      "pass_rate_vs_national": -14.34
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 149,
+      "total_passes": 85,
+      "total_fails": 52,
+      "pass_rate": 57.05,
+      "avg_mileage": 75392.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -14.46
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 433,
+      "total_passes": 247,
+      "total_fails": 153,
+      "pass_rate": 57.04,
+      "avg_mileage": 69286.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -14.47
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 209,
+      "total_passes": 119,
+      "total_fails": 67,
+      "pass_rate": 56.94,
+      "avg_mileage": 101048.0,
+      "avg_age_years": 18.3,
+      "pass_rate_vs_national": -14.57
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 597,
+      "total_passes": 339,
+      "total_fails": 207,
+      "pass_rate": 56.78,
+      "avg_mileage": 90861.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -14.73
+    },
+    {
+      "model": "CITY COUPE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 1120,
+      "total_passes": 629,
+      "total_fails": 414,
+      "pass_rate": 56.16,
+      "avg_mileage": 69848.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -15.35
+    },
+    {
+      "model": "CITY CABRIOLET",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 140,
+      "total_passes": 78,
+      "total_fails": 47,
+      "pass_rate": 55.71,
+      "avg_mileage": 65396.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -15.8
+    },
+    {
+      "model": "FORTWO CABRIOLET",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 185,
+      "total_passes": 98,
+      "total_fails": 74,
+      "pass_rate": 52.97,
+      "avg_mileage": 66539.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -18.54
+    },
+    {
+      "model": "FORFOUR",
+      "model_year": 2005,
+      "fuel_type": "DI",
+      "total_tests": 135,
+      "total_passes": 71,
+      "total_fails": 59,
+      "pass_rate": 52.59,
+      "avg_mileage": 115416.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -18.92
+    },
+    {
+      "model": "FORTWO COUPE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 559,
+      "total_passes": 294,
+      "total_fails": 220,
+      "pass_rate": 52.59,
+      "avg_mileage": 68219.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -18.92
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "ROADSTER",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 324,
+        "avg_vs_national": 14.2,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 74.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 14.2,
+          "total_tests": 324,
+          "avg_mileage": 78319.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 74.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 14.2,
+          "total_tests": 324,
+          "avg_mileage": 78319.0
+        }
+      },
+      {
+        "model": "ROADSTER",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 122,
+        "avg_vs_national": 13.9,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 73.77,
+          "national_pass_rate": 59.87,
+          "vs_national": 13.9,
+          "total_tests": 122,
+          "avg_mileage": 62366.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 73.77,
+          "national_pass_rate": 59.87,
+          "vs_national": 13.9,
+          "total_tests": 122,
+          "avg_mileage": 62366.0
+        }
+      },
+      {
+        "model": "ROADSTER",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 307,
+        "avg_vs_national": 11.79,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 71.66,
+          "national_pass_rate": 59.87,
+          "vs_national": 11.79,
+          "total_tests": 307,
+          "avg_mileage": 74352.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 71.66,
+          "national_pass_rate": 59.87,
+          "vs_national": 11.79,
+          "total_tests": 307,
+          "avg_mileage": 74352.0
+        }
+      },
+      {
+        "model": "CITY COUPE",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 113,
+        "avg_vs_national": 7.39,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.26,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.39,
+          "total_tests": 113,
+          "avg_mileage": 62629.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.26,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.39,
+          "total_tests": 113,
+          "avg_mileage": 62629.0
+        }
+      },
+      {
+        "model": "CITY CABRIOLET",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 131,
+        "avg_vs_national": 7.31,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.31,
+          "total_tests": 131,
+          "avg_mileage": 66471.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.31,
+          "total_tests": 131,
+          "avg_mileage": 66471.0
+        }
+      },
+      {
+        "model": "FORTWO CABRIOLET",
+        "model_year": 2012,
+        "fuel_type": "PE",
+        "total_tests": 335,
+        "avg_vs_national": 7.25,
+        "durability_trend": 4.62,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 75.79,
+          "national_pass_rate": 66.54,
+          "vs_national": 9.25,
+          "total_tests": 190,
+          "avg_mileage": 50777.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 75.86,
+          "national_pass_rate": 71.23,
+          "vs_national": 4.63,
+          "total_tests": 145,
+          "avg_mileage": 49390.0
+        }
+      },
+      {
+        "model": "FORTWO CABRIOLET",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 758,
+        "avg_vs_national": 6.62,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.49,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.62,
+          "total_tests": 758,
+          "avg_mileage": 61343.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.49,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.62,
+          "total_tests": 758,
+          "avg_mileage": 61343.0
+        }
+      },
+      {
+        "model": "FORTWO",
+        "model_year": 2019,
+        "fuel_type": "EL",
+        "total_tests": 348,
+        "avg_vs_national": 6.1,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.53,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.1,
+          "total_tests": 348,
+          "avg_mileage": 12365.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 92.53,
+          "national_pass_rate": 86.43,
+          "vs_national": 6.1,
+          "total_tests": 348,
+          "avg_mileage": 12365.0
+        }
+      },
+      {
+        "model": "FORTWO",
+        "model_year": 2018,
+        "fuel_type": "EL",
+        "total_tests": 264,
+        "avg_vs_national": 5.86,
+        "durability_trend": 3.83,
+        "best_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 90.59,
+          "national_pass_rate": 82.13,
+          "vs_national": 8.46,
+          "total_tests": 85,
+          "avg_mileage": 15908.0
+        },
+        "worst_age_band": {
+          "age_band": "3-4 years",
+          "band_order": 0,
+          "pass_rate": 91.06,
+          "national_pass_rate": 86.43,
+          "vs_national": 4.63,
+          "total_tests": 179,
+          "avg_mileage": 15222.0
+        }
+      },
+      {
+        "model": "FORTWO CABRIOLET",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 112,
+        "avg_vs_national": 5.31,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.31,
+          "total_tests": 112,
+          "avg_mileage": 70503.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.31,
+          "total_tests": 112,
+          "avg_mileage": 70503.0
+        }
+      },
+      {
+        "model": "FORTWO COUPE",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 3089,
+        "avg_vs_national": 5.2,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.2,
+          "total_tests": 3089,
+          "avg_mileage": 60889.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.2,
+          "total_tests": 3089,
+          "avg_mileage": 60889.0
+        }
+      },
+      {
+        "model": "FORTWO CABRIOLET",
+        "model_year": 2009,
+        "fuel_type": "DI",
+        "total_tests": 144,
+        "avg_vs_national": 4.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.71,
+          "total_tests": 144,
+          "avg_mileage": 73485.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.58,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.71,
+          "total_tests": 144,
+          "avg_mileage": 73485.0
+        }
+      },
+      {
+        "model": "FORTWO",
+        "model_year": 2013,
+        "fuel_type": "PE",
+        "total_tests": 779,
+        "avg_vs_national": 4.64,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 75.87,
+          "national_pass_rate": 71.23,
+          "vs_national": 4.64,
+          "total_tests": 779,
+          "avg_mileage": 45842.0
+        },
+        "worst_age_band": {
+          "age_band": "9-10 years",
+          "band_order": 3,
+          "pass_rate": 75.87,
+          "national_pass_rate": 71.23,
+          "vs_national": 4.64,
+          "total_tests": 779,
+          "avg_mileage": 45842.0
+        }
+      },
+      {
+        "model": "CITY CABRIOLET",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 169,
+        "avg_vs_national": 4.63,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.5,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.63,
+          "total_tests": 169,
+          "avg_mileage": 66761.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.5,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.63,
+          "total_tests": 169,
+          "avg_mileage": 66761.0
+        }
+      },
+      {
+        "model": "FORTWO CABRIOLET",
+        "model_year": 2011,
+        "fuel_type": "PE",
+        "total_tests": 554,
+        "avg_vs_national": 4.04,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 70.58,
+          "national_pass_rate": 66.54,
+          "vs_national": 4.04,
+          "total_tests": 554,
+          "avg_mileage": 54543.0
+        },
+        "worst_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 70.58,
+          "national_pass_rate": 66.54,
+          "vs_national": 4.04,
+          "total_tests": 554,
+          "avg_mileage": 54543.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "FORTWO COUPE",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 559,
+        "avg_vs_national": -7.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 559,
+          "avg_mileage": 68219.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 559,
+          "avg_mileage": 68219.0
+        }
+      },
+      {
+        "model": "FORFOUR",
+        "model_year": 2005,
+        "fuel_type": "DI",
+        "total_tests": 135,
+        "avg_vs_national": -7.28,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 135,
+          "avg_mileage": 115416.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.59,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.28,
+          "total_tests": 135,
+          "avg_mileage": 115416.0
+        }
+      },
+      {
+        "model": "FORTWO CABRIOLET",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 185,
+        "avg_vs_national": -6.9,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.97,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.9,
+          "total_tests": 185,
+          "avg_mileage": 66539.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.97,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.9,
+          "total_tests": 185,
+          "avg_mileage": 66539.0
+        }
+      },
+      {
+        "model": "FORFOUR",
+        "model_year": 2015,
+        "fuel_type": "PE",
+        "total_tests": 5547,
+        "avg_vs_national": -6.86,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 70.38,
+          "national_pass_rate": 77.24,
+          "vs_national": -6.86,
+          "total_tests": 5547,
+          "avg_mileage": 46109.0
+        },
+        "worst_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 70.38,
+          "national_pass_rate": 77.24,
+          "vs_national": -6.86,
+          "total_tests": 5547,
+          "avg_mileage": 46109.0
+        }
+      },
+      {
+        "model": "FORFOUR",
+        "model_year": 2016,
+        "fuel_type": "PE",
+        "total_tests": 5279,
+        "avg_vs_national": -5.49,
+        "durability_trend": 0.36,
+        "best_age_band": {
+          "age_band": "7-8 years",
+          "band_order": 2,
+          "pass_rate": 71.95,
+          "national_pass_rate": 77.24,
+          "vs_national": -5.29,
+          "total_tests": 2396,
+          "avg_mileage": 41649.0
+        },
+        "worst_age_band": {
+          "age_band": "5-6 years",
+          "band_order": 1,
+          "pass_rate": 76.48,
+          "national_pass_rate": 82.13,
+          "vs_national": -5.65,
+          "total_tests": 2883,
+          "avg_mileage": 37877.0
+        }
+      },
+      {
+        "model": "CITY CABRIOLET",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 140,
+        "avg_vs_national": -4.16,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.71,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.16,
+          "total_tests": 140,
+          "avg_mileage": 65396.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.71,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.16,
+          "total_tests": 140,
+          "avg_mileage": 65396.0
+        }
+      },
+      {
+        "model": "CITY COUPE",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 1120,
+        "avg_vs_national": -3.71,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.16,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.71,
+          "total_tests": 1120,
+          "avg_mileage": 69848.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.16,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.71,
+          "total_tests": 1120,
+          "avg_mileage": 69848.0
+        }
+      },
+      {
+        "model": "FORFOUR",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 597,
+        "avg_vs_national": -3.09,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.78,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.09,
+          "total_tests": 597,
+          "avg_mileage": 90861.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.78,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.09,
+          "total_tests": 597,
+          "avg_mileage": 90861.0
+        }
+      },
+      {
+        "model": "FORFOUR",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 209,
+        "avg_vs_national": -2.93,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.94,
+          "national_pass_rate": 59.87,
+          "vs_national": -2.93,
+          "total_tests": 209,
+          "avg_mileage": 101048.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 56.94,
+          "national_pass_rate": 59.87,
+          "vs_national": -2.93,
+          "total_tests": 209,
+          "avg_mileage": 101048.0
+        }
+      },
+      {
+        "model": "CITY COUPE",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 433,
+        "avg_vs_national": -2.83,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 57.04,
+          "national_pass_rate": 59.87,
+          "vs_national": -2.83,
+          "total_tests": 433,
+          "avg_mileage": 69286.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 57.04,
+          "national_pass_rate": 59.87,
+          "vs_national": -2.83,
+          "total_tests": 433,
+          "avg_mileage": 69286.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "early": {
+          "vehicles": 12,
+          "tests": 26821
+        },
+        "maturing": {
+          "vehicles": 9,
+          "tests": 17578
+        },
+        "proven": {
+          "vehicles": 48,
+          "tests": 30265
+        }
+      },
+      "proven_vehicles_tested": 50,
+      "proven_above_average_pct": 74.0,
+      "proven_avg_vs_national": 4.21,
+      "durability_rating": "Good",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "ROADSTER",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 324,
+          "pass_rate": 74.07,
+          "vs_national_at_age": 16.77,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 78319.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ROADSTER",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 122,
+          "pass_rate": 73.77,
+          "vs_national_at_age": 16.47,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 62366.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "ROADSTER",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 307,
+          "pass_rate": 71.66,
+          "vs_national_at_age": 14.36,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 74352.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO CABRIOLET",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 190,
+          "pass_rate": 75.79,
+          "vs_national_at_age": 12.96,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 50777.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CITY COUPE",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 113,
+          "pass_rate": 67.26,
+          "vs_national_at_age": 9.96,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 62629.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CITY CABRIOLET",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 131,
+          "pass_rate": 67.18,
+          "vs_national_at_age": 9.88,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66471.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO CABRIOLET",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 758,
+          "pass_rate": 66.49,
+          "vs_national_at_age": 9.19,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 61343.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO COUPE",
+          "model_year": 2012,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 775,
+          "pass_rate": 71.74,
+          "vs_national_at_age": 8.91,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 53173.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO COUPE",
+          "model_year": 2010,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1443,
+          "pass_rate": 65.35,
+          "vs_national_at_age": 8.05,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 61326.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO CABRIOLET",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 112,
+          "pass_rate": 65.18,
+          "vs_national_at_age": 7.88,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 70503.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO COUPE",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 3089,
+          "pass_rate": 65.07,
+          "vs_national_at_age": 7.77,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 60889.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO CABRIOLET",
+          "model_year": 2011,
+          "fuel_type": "PE",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 554,
+          "pass_rate": 70.58,
+          "vs_national_at_age": 7.75,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 54543.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO CABRIOLET",
+          "model_year": 2009,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 144,
+          "pass_rate": 64.58,
+          "vs_national_at_age": 7.28,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 73485.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "CITY CABRIOLET",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 169,
+          "pass_rate": 64.5,
+          "vs_national_at_age": 7.2,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66761.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "FORTWO COUPE",
+          "model_year": 2012,
+          "fuel_type": "DI",
+          "age_band": "11-12 years",
+          "age_band_order": 4,
+          "total_tests": 133,
+          "pass_rate": 69.92,
+          "vs_national_at_age": 7.09,
+          "national_avg_for_age": 62.83,
+          "avg_mileage": 64973.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "FORFOUR",
+          "model_year": 2005,
+          "fuel_type": "DI",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 135,
+          "pass_rate": 52.59,
+          "vs_national_at_age": -4.71,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 115416.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FORTWO COUPE",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 559,
+          "pass_rate": 52.59,
+          "vs_national_at_age": -4.71,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 68219.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FORTWO CABRIOLET",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 185,
+          "pass_rate": 52.97,
+          "vs_national_at_age": -4.33,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66539.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CITY CABRIOLET",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 140,
+          "pass_rate": 55.71,
+          "vs_national_at_age": -1.59,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 65396.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CITY COUPE",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1120,
+          "pass_rate": 56.16,
+          "vs_national_at_age": -1.14,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 69848.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FORFOUR",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 597,
+          "pass_rate": 56.78,
+          "vs_national_at_age": -0.52,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 90861.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FORFOUR",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 209,
+          "pass_rate": 56.94,
+          "vs_national_at_age": -0.36,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 101048.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CITY COUPE",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 433,
+          "pass_rate": 57.04,
+          "vs_national_at_age": -0.26,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 69286.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "FORTWO COUPE",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 149,
+          "pass_rate": 57.05,
+          "vs_national_at_age": -0.25,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 75392.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CITY COUPE",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 523,
+          "pass_rate": 57.17,
+          "vs_national_at_age": -0.13,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 65538.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": [
+        {
+          "model": "FORTWO",
+          "model_year": 2019,
+          "fuel_type": "EL",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 348,
+          "pass_rate": 92.53,
+          "vs_national_at_age": 6.68,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 12365.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "FORTWO",
+          "model_year": 2018,
+          "fuel_type": "EL",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 179,
+          "pass_rate": 91.06,
+          "vs_national_at_age": 5.21,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 15222.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "FORTWO",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1099,
+          "pass_rate": 83.26,
+          "vs_national_at_age": 2.06,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 26478.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "FORTWO",
+          "model_year": 2017,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 4720,
+          "pass_rate": 83.05,
+          "vs_national_at_age": 1.85,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 29133.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "FORTWO",
+          "model_year": 2019,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 1562,
+          "pass_rate": 87.64,
+          "vs_national_at_age": 1.79,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 19893.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "FORFOUR",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 1475,
+          "pass_rate": 81.83,
+          "vs_national_at_age": 0.63,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 29240.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "FORTWO",
+          "model_year": 2016,
+          "fuel_type": "PE",
+          "age_band": "5-6 years",
+          "age_band_order": 1,
+          "total_tests": 3371,
+          "pass_rate": 81.79,
+          "vs_national_at_age": 0.59,
+          "national_avg_for_age": 81.2,
+          "avg_mileage": 32576.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        },
+        {
+          "model": "FORTWO",
+          "model_year": 2018,
+          "fuel_type": "PE",
+          "age_band": "3-4 years",
+          "age_band_order": 0,
+          "total_tests": 2020,
+          "pass_rate": 86.29,
+          "vs_national_at_age": 0.44,
+          "national_avg_for_age": 85.85,
+          "avg_mileage": 24016.0,
+          "maturity_tier": "early",
+          "evidence_quality": "limited",
+          "caveat": "Durability not yet proven - too early to assess long-term reliability"
+        }
+      ]
+    },
+    "model_trajectories": {
+      "CITY": {
+        "core_model": "CITY",
+        "years_covered": [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2001,
+                "pass_rate": 63.68,
+                "vs_national": 6.38,
+                "total_tests": 201,
+                "avg_mileage": 66028.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 57.34,
+                "vs_national": 0.04,
+                "total_tests": 872,
+                "avg_mileage": 68383.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 57.31,
+                "vs_national": 0.01,
+                "total_tests": 1251,
+                "avg_mileage": 68160.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 60.11,
+                "vs_national": 2.81,
+                "total_tests": 980,
+                "avg_mileage": 67866.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 56.72,
+                "vs_national": -0.58,
+                "total_tests": 573,
+                "avg_mileage": 67341.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 58.08,
+                "vs_national": 0.78,
+                "total_tests": 749,
+                "avg_mileage": 64020.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 57.17,
+                "vs_national": -0.13,
+                "total_tests": 523,
+                "avg_mileage": 65538.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2001,
+          "vs_national": 6.38,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -0.58,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "CITY COUPE": {
+        "core_model": "CITY COUPE",
+        "years_covered": [
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2001,
+                "pass_rate": 63.68,
+                "vs_national": 6.38,
+                "total_tests": 201,
+                "avg_mileage": 66028.0
+              },
+              {
+                "year": 2002,
+                "pass_rate": 57.28,
+                "vs_national": -0.02,
+                "total_tests": 749,
+                "avg_mileage": 68839.0
+              },
+              {
+                "year": 2003,
+                "pass_rate": 56.16,
+                "vs_national": -1.14,
+                "total_tests": 1120,
+                "avg_mileage": 69848.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 59.19,
+                "vs_national": 1.89,
+                "total_tests": 811,
+                "avg_mileage": 68970.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 57.04,
+                "vs_national": -0.26,
+                "total_tests": 433,
+                "avg_mileage": 69286.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 57.86,
+                "vs_national": 0.56,
+                "total_tests": 636,
+                "avg_mileage": 62468.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 57.17,
+                "vs_national": -0.13,
+                "total_tests": 523,
+                "avg_mileage": 65538.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2001,
+          "vs_national": 6.38,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2003,
+          "vs_national": -1.14,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "ROADSTER": {
+        "core_model": "ROADSTER",
+        "years_covered": [
+          2004,
+          2005
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 74.07,
+                "vs_national": 16.77,
+                "total_tests": 324,
+                "avg_mileage": 78319.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 71.66,
+                "vs_national": 14.36,
+                "total_tests": 307,
+                "avg_mileage": 74352.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2004,
+          "vs_national": 16.77,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": 14.36,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "FORFOUR": {
+        "core_model": "FORFOUR",
+        "years_covered": [
+          2004,
+          2005,
+          2006,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 84.56,
+                "vs_national": -1.29,
+                "total_tests": 2331,
+                "avg_mileage": 21384.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 84.96,
+                "vs_national": -0.89,
+                "total_tests": 1955,
+                "avg_mileage": 17986.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 76.48,
+                "vs_national": -4.72,
+                "total_tests": 2883,
+                "avg_mileage": 37877.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 79.41,
+                "vs_national": -1.79,
+                "total_tests": 4736,
+                "avg_mileage": 33854.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 81.79,
+                "vs_national": 0.59,
+                "total_tests": 1532,
+                "avg_mileage": 25134.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2015,
+                "pass_rate": 70.38,
+                "vs_national": -4.75,
+                "total_tests": 5547,
+                "avg_mileage": 46109.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 71.95,
+                "vs_national": -3.18,
+                "total_tests": 2396,
+                "avg_mileage": 41649.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 56.94,
+                "vs_national": -0.36,
+                "total_tests": 209,
+                "avg_mileage": 101048.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 56.01,
+                "vs_national": -1.29,
+                "total_tests": 732,
+                "avg_mileage": 103139.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 59.27,
+                "vs_national": 1.97,
+                "total_tests": 464,
+                "avg_mileage": 95063.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2006,
+          "vs_national": 1.97,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -1.29,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "FORTWO": {
+        "core_model": "FORTWO",
+        "years_covered": [
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trajectory_by_age": {
+          "3-4 years": {
+            "band_order": 0,
+            "national_avg": 85.85,
+            "model_years": [
+              {
+                "year": 2018,
+                "pass_rate": 86.68,
+                "vs_national": 0.83,
+                "total_tests": 2199,
+                "avg_mileage": 19619.0
+              },
+              {
+                "year": 2019,
+                "pass_rate": 88.53,
+                "vs_national": 2.68,
+                "total_tests": 1910,
+                "avg_mileage": 16129.0
+              }
+            ]
+          },
+          "5-6 years": {
+            "band_order": 1,
+            "national_avg": 81.2,
+            "model_years": [
+              {
+                "year": 2016,
+                "pass_rate": 81.79,
+                "vs_national": 0.59,
+                "total_tests": 3371,
+                "avg_mileage": 32576.0
+              },
+              {
+                "year": 2017,
+                "pass_rate": 83.05,
+                "vs_national": 1.85,
+                "total_tests": 4720,
+                "avg_mileage": 29133.0
+              },
+              {
+                "year": 2018,
+                "pass_rate": 83.79,
+                "vs_national": 2.59,
+                "total_tests": 1184,
+                "avg_mileage": 21193.0
+              }
+            ]
+          },
+          "7-8 years": {
+            "band_order": 2,
+            "national_avg": 75.13,
+            "model_years": [
+              {
+                "year": 2014,
+                "pass_rate": 79.53,
+                "vs_national": 4.4,
+                "total_tests": 1690,
+                "avg_mileage": 41700.0
+              },
+              {
+                "year": 2015,
+                "pass_rate": 78.56,
+                "vs_national": 3.43,
+                "total_tests": 2164,
+                "avg_mileage": 38564.0
+              },
+              {
+                "year": 2016,
+                "pass_rate": 79.41,
+                "vs_national": 4.28,
+                "total_tests": 2336,
+                "avg_mileage": 36156.0
+              }
+            ]
+          },
+          "9-10 years": {
+            "band_order": 3,
+            "national_avg": 68.24,
+            "model_years": [
+              {
+                "year": 2012,
+                "pass_rate": 72.79,
+                "vs_national": 4.55,
+                "total_tests": 735,
+                "avg_mileage": 53897.0
+              },
+              {
+                "year": 2013,
+                "pass_rate": 75.87,
+                "vs_national": 7.63,
+                "total_tests": 779,
+                "avg_mileage": 45842.0
+              },
+              {
+                "year": 2014,
+                "pass_rate": 76.28,
+                "vs_national": 8.04,
+                "total_tests": 1931,
+                "avg_mileage": 44737.0
+              }
+            ]
+          },
+          "11-12 years": {
+            "band_order": 4,
+            "national_avg": 62.83,
+            "model_years": [
+              {
+                "year": 2010,
+                "pass_rate": 66.08,
+                "vs_national": 3.25,
+                "total_tests": 2356,
+                "avg_mileage": 65179.0
+              },
+              {
+                "year": 2011,
+                "pass_rate": 67.72,
+                "vs_national": 4.89,
+                "total_tests": 3067,
+                "avg_mileage": 60504.0
+              },
+              {
+                "year": 2012,
+                "pass_rate": 72.22,
+                "vs_national": 9.39,
+                "total_tests": 1098,
+                "avg_mileage": 56308.0
+              }
+            ]
+          },
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 58.52,
+                "vs_national": 1.22,
+                "total_tests": 687,
+                "avg_mileage": 69525.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 54.77,
+                "vs_national": -2.53,
+                "total_tests": 754,
+                "avg_mileage": 68442.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 60.71,
+                "vs_national": 3.41,
+                "total_tests": 924,
+                "avg_mileage": 65525.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 60.88,
+                "vs_national": 3.58,
+                "total_tests": 2007,
+                "avg_mileage": 66643.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 62.06,
+                "vs_national": 4.76,
+                "total_tests": 4094,
+                "avg_mileage": 65492.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 64.26,
+                "vs_national": 6.96,
+                "total_tests": 4994,
+                "avg_mileage": 68224.0
+              },
+              {
+                "year": 2010,
+                "pass_rate": 64.03,
+                "vs_national": 6.73,
+                "total_tests": 2338,
+                "avg_mileage": 66516.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2012,
+          "vs_national": 9.39,
+          "age_band": "11-12 years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": -2.53,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}

@@ -1,0 +1,2769 @@
+{
+  "meta": {
+    "make": "DAIHATSU",
+    "generated_at": "2026-01-15T17:43:33.760630",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.51084606960882,
+    "methodology_version": "2.1",
+    "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. Age-band comparisons use weighted national averages. Only vehicles with 11+ years of data are classified as 'proven' durability."
+  },
+  "overview": {
+    "id": 65,
+    "make": "DAIHATSU",
+    "total_tests": 16395,
+    "total_models": 255,
+    "avg_pass_rate": 61.99,
+    "weighted_pass_rate": 61.99,
+    "best_model": "COPEN 2009",
+    "best_model_pass_rate": 76.92,
+    "worst_model": "TERIOS 2003",
+    "worst_model_pass_rate": 49.04,
+    "rank": 65
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.97,
+      "total_tests": 1606300,
+      "rank": 31,
+      "total_models": 4710
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 72.15,
+      "total_tests": 2967545,
+      "rank": 43,
+      "total_models": 3024
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.66,
+      "total_tests": 1612552,
+      "rank": 50,
+      "total_models": 2554
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.46,
+      "total_tests": 4432652,
+      "rank": 51,
+      "total_models": 4002
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3038498,
+      "rank": 59,
+      "total_models": 1856
+    },
+    {
+      "make": "DAIHATSU",
+      "avg_pass_rate": 61.99,
+      "total_tests": 16395,
+      "rank": 65,
+      "total_models": 255
+    }
+  ],
+  "summary": {
+    "total_tests": 16395,
+    "total_models": 255,
+    "avg_pass_rate": 61.99,
+    "rank": 65,
+    "rank_total": 75,
+    "best_model": "COPEN 2009",
+    "best_model_pass_rate": 76.92,
+    "worst_model": "TERIOS 2003",
+    "worst_model_pass_rate": 49.04,
+    "vs_national": -9.52,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [
+    {
+      "core_model": "COPEN",
+      "total_tests": 1271,
+      "total_passes": 879,
+      "total_fails": 340,
+      "pass_rate": 69.16,
+      "avg_mileage": 58825.0,
+      "year_from": 2004,
+      "year_to": 2009,
+      "variant_count": 6,
+      "variants": "COPEN"
+    },
+    {
+      "core_model": "MATERIA",
+      "total_tests": 650,
+      "total_passes": 439,
+      "total_fails": 164,
+      "pass_rate": 67.54,
+      "avg_mileage": 86836.0,
+      "year_from": 2007,
+      "year_to": 2009,
+      "variant_count": 3,
+      "variants": "MATERIA"
+    },
+    {
+      "core_model": "SIRION",
+      "total_tests": 6650,
+      "total_passes": 4224,
+      "total_fails": 1936,
+      "pass_rate": 63.52,
+      "avg_mileage": 69461.0,
+      "year_from": 2002,
+      "year_to": 2010,
+      "variant_count": 9,
+      "variants": "SIRION"
+    },
+    {
+      "core_model": "TERIOS",
+      "total_tests": 4375,
+      "total_passes": 2633,
+      "total_fails": 1473,
+      "pass_rate": 60.18,
+      "avg_mileage": 85979.0,
+      "year_from": 2002,
+      "year_to": 2009,
+      "variant_count": 8,
+      "variants": "TERIOS"
+    },
+    {
+      "core_model": "FOURTRAK",
+      "total_tests": 122,
+      "total_passes": 71,
+      "total_fails": 46,
+      "pass_rate": 58.2,
+      "avg_mileage": 123611.0,
+      "year_from": 2000,
+      "year_to": 2000,
+      "variant_count": 1,
+      "variants": "FOURTRAK"
+    },
+    {
+      "core_model": "CHARADE",
+      "total_tests": 1256,
+      "total_passes": 712,
+      "total_fails": 458,
+      "pass_rate": 56.69,
+      "avg_mileage": 62032.0,
+      "year_from": 2003,
+      "year_to": 2006,
+      "variant_count": 4,
+      "variants": "CHARADE"
+    },
+    {
+      "core_model": "EXTOL",
+      "total_tests": 270,
+      "total_passes": 148,
+      "total_fails": 99,
+      "pass_rate": 54.81,
+      "avg_mileage": 82893.0,
+      "year_from": 2005,
+      "year_to": 2006,
+      "variant_count": 2,
+      "variants": "EXTOL"
+    },
+    {
+      "core_model": "HIJET",
+      "total_tests": 224,
+      "total_passes": 118,
+      "total_fails": 94,
+      "pass_rate": 52.68,
+      "avg_mileage": 65494.0,
+      "year_from": 2000,
+      "year_to": 2002,
+      "variant_count": 2,
+      "variants": "HIJET"
+    }
+  ],
+  "model_year_breakdowns": {
+    "COPEN": [
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 169,
+        "pass_rate": 76.92,
+        "avg_mileage": 55281.0,
+        "pass_rate_vs_national": 17.91,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 277,
+        "pass_rate": 76.53,
+        "avg_mileage": 55887.0,
+        "pass_rate_vs_national": 19.14,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 250,
+        "pass_rate": 71.6,
+        "avg_mileage": 66946.0,
+        "pass_rate_vs_national": 14.63,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 152,
+        "pass_rate": 52.63,
+        "avg_mileage": 56706.0,
+        "pass_rate_vs_national": -3.55,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 131,
+        "pass_rate": 61.07,
+        "avg_mileage": 57202.0,
+        "pass_rate_vs_national": 4.82,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 292,
+        "pass_rate": 67.81,
+        "avg_mileage": 60930.0,
+        "pass_rate_vs_national": 11.78,
+        "national_avg_for_year": 56.03
+      }
+    ],
+    "MATERIA": [
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 170,
+        "pass_rate": 65.29,
+        "avg_mileage": 80432.0,
+        "pass_rate_vs_national": 6.28,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 282,
+        "pass_rate": 65.6,
+        "avg_mileage": 86352.0,
+        "pass_rate_vs_national": 8.21,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 198,
+        "pass_rate": 72.22,
+        "avg_mileage": 93725.0,
+        "pass_rate_vs_national": 15.25,
+        "national_avg_for_year": 56.97
+      }
+    ],
+    "SIRION": [
+      {
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 112,
+        "pass_rate": 71.43,
+        "avg_mileage": 62813.0,
+        "pass_rate_vs_national": 10.93,
+        "national_avg_for_year": 60.5
+      },
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 959,
+        "pass_rate": 69.13,
+        "avg_mileage": 65915.0,
+        "pass_rate_vs_national": 10.12,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 1994,
+        "pass_rate": 64.39,
+        "avg_mileage": 68451.0,
+        "pass_rate_vs_national": 7.0,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1526,
+        "pass_rate": 62.84,
+        "avg_mileage": 71260.0,
+        "pass_rate_vs_national": 5.87,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 825,
+        "pass_rate": 60.36,
+        "avg_mileage": 75550.0,
+        "pass_rate_vs_national": 4.18,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 816,
+        "pass_rate": 60.05,
+        "avg_mileage": 76272.0,
+        "pass_rate_vs_national": 3.8,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 125,
+        "pass_rate": 59.2,
+        "avg_mileage": 68900.0,
+        "pass_rate_vs_national": 3.17,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 156,
+        "pass_rate": 61.54,
+        "avg_mileage": 68779.0,
+        "pass_rate_vs_national": 4.86,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 137,
+        "pass_rate": 58.39,
+        "avg_mileage": 67212.0,
+        "pass_rate_vs_national": 0.85,
+        "national_avg_for_year": 57.54
+      }
+    ],
+    "TERIOS": [
+      {
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 571,
+        "pass_rate": 69.0,
+        "avg_mileage": 81682.0,
+        "pass_rate_vs_national": 9.99,
+        "national_avg_for_year": 59.01
+      },
+      {
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 865,
+        "pass_rate": 63.12,
+        "avg_mileage": 88979.0,
+        "pass_rate_vs_national": 5.73,
+        "national_avg_for_year": 57.39
+      },
+      {
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1201,
+        "pass_rate": 60.87,
+        "avg_mileage": 90588.0,
+        "pass_rate_vs_national": 3.9,
+        "national_avg_for_year": 56.97
+      },
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 775,
+        "pass_rate": 60.9,
+        "avg_mileage": 90927.0,
+        "pass_rate_vs_national": 4.72,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 421,
+        "pass_rate": 52.26,
+        "avg_mileage": 81767.0,
+        "pass_rate_vs_national": -3.99,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 227,
+        "pass_rate": 50.22,
+        "avg_mileage": 82855.0,
+        "pass_rate_vs_national": -5.81,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 208,
+        "pass_rate": 49.04,
+        "avg_mileage": 85404.0,
+        "pass_rate_vs_national": -7.64,
+        "national_avg_for_year": 56.68
+      },
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "pass_rate": 50.47,
+        "avg_mileage": 85627.0,
+        "pass_rate_vs_national": -7.07,
+        "national_avg_for_year": 57.54
+      }
+    ],
+    "FOURTRAK": [
+      {
+        "model_year": 2000,
+        "fuel_type": "DI",
+        "total_tests": 122,
+        "pass_rate": 58.2,
+        "avg_mileage": 123611.0,
+        "pass_rate_vs_national": -2.42,
+        "national_avg_for_year": 60.62
+      }
+    ],
+    "CHARADE": [
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 271,
+        "pass_rate": 59.41,
+        "avg_mileage": 63650.0,
+        "pass_rate_vs_national": 3.23,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 302,
+        "pass_rate": 56.95,
+        "avg_mileage": 60896.0,
+        "pass_rate_vs_national": 0.7,
+        "national_avg_for_year": 56.25
+      },
+      {
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 399,
+        "pass_rate": 55.89,
+        "avg_mileage": 61808.0,
+        "pass_rate_vs_national": -0.14,
+        "national_avg_for_year": 56.03
+      },
+      {
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 284,
+        "pass_rate": 54.93,
+        "avg_mileage": 61773.0,
+        "pass_rate_vs_national": -1.75,
+        "national_avg_for_year": 56.68
+      }
+    ],
+    "EXTOL": [
+      {
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 167,
+        "pass_rate": 53.29,
+        "avg_mileage": 86370.0,
+        "pass_rate_vs_national": -2.89,
+        "national_avg_for_year": 56.18
+      },
+      {
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 103,
+        "pass_rate": 57.28,
+        "avg_mileage": 79415.0,
+        "pass_rate_vs_national": 1.03,
+        "national_avg_for_year": 56.25
+      }
+    ],
+    "HIJET": [
+      {
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 116,
+        "pass_rate": 53.45,
+        "avg_mileage": 64176.0,
+        "pass_rate_vs_national": -4.09,
+        "national_avg_for_year": 57.54
+      },
+      {
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 108,
+        "pass_rate": 51.85,
+        "avg_mileage": 66812.0,
+        "pass_rate_vs_national": -8.77,
+        "national_avg_for_year": 60.62
+      }
+    ]
+  },
+  "fuel_analysis": [
+    {
+      "fuel_type": "PE",
+      "model_count": 34,
+      "total_tests": 14696,
+      "pass_rate": 62.28,
+      "fuel_name": "Petrol"
+    },
+    {
+      "fuel_type": "DI",
+      "model_count": 1,
+      "total_tests": 122,
+      "pass_rate": 58.2,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [
+    {
+      "model": "COPEN",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 277,
+      "pass_rate": 76.53,
+      "pass_rate_vs_national": 19.14,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 169,
+      "pass_rate": 76.92,
+      "pass_rate_vs_national": 17.91,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "MATERIA",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 198,
+      "pass_rate": 72.22,
+      "pass_rate_vs_national": 15.25,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 250,
+      "pass_rate": 71.6,
+      "pass_rate_vs_national": 14.63,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 292,
+      "pass_rate": 67.81,
+      "pass_rate_vs_national": 11.78,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 112,
+      "pass_rate": 71.43,
+      "pass_rate_vs_national": 10.93,
+      "national_avg_for_year": 60.5
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 959,
+      "pass_rate": 69.13,
+      "pass_rate_vs_national": 10.12,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 571,
+      "pass_rate": 69.0,
+      "pass_rate_vs_national": 9.99,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "MATERIA",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 282,
+      "pass_rate": 65.6,
+      "pass_rate_vs_national": 8.21,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1994,
+      "pass_rate": 64.39,
+      "pass_rate_vs_national": 7.0,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "MATERIA",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 170,
+      "pass_rate": 65.29,
+      "pass_rate_vs_national": 6.28,
+      "national_avg_for_year": 59.01
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1526,
+      "pass_rate": 62.84,
+      "pass_rate_vs_national": 5.87,
+      "national_avg_for_year": 56.97
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 865,
+      "pass_rate": 63.12,
+      "pass_rate_vs_national": 5.73,
+      "national_avg_for_year": 57.39
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 156,
+      "pass_rate": 61.54,
+      "pass_rate_vs_national": 4.86,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "pass_rate": 61.07,
+      "pass_rate_vs_national": 4.82,
+      "national_avg_for_year": 56.25
+    }
+  ],
+  "worst_models": [
+    {
+      "model": "HIJET",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 108,
+      "pass_rate": 51.85,
+      "pass_rate_vs_national": -8.77,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 208,
+      "pass_rate": 49.04,
+      "pass_rate_vs_national": -7.64,
+      "national_avg_for_year": 56.68
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "pass_rate": 50.47,
+      "pass_rate_vs_national": -7.07,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 227,
+      "pass_rate": 50.22,
+      "pass_rate_vs_national": -5.81,
+      "national_avg_for_year": 56.03
+    },
+    {
+      "model": "HIJET",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 116,
+      "pass_rate": 53.45,
+      "pass_rate_vs_national": -4.09,
+      "national_avg_for_year": 57.54
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 421,
+      "pass_rate": 52.26,
+      "pass_rate_vs_national": -3.99,
+      "national_avg_for_year": 56.25
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 152,
+      "pass_rate": 52.63,
+      "pass_rate_vs_national": -3.55,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "EXTOL",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 167,
+      "pass_rate": 53.29,
+      "pass_rate_vs_national": -2.89,
+      "national_avg_for_year": 56.18
+    },
+    {
+      "model": "FOURTRAK",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 122,
+      "pass_rate": 58.2,
+      "pass_rate_vs_national": -2.42,
+      "national_avg_for_year": 60.62
+    },
+    {
+      "model": "CHARADE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 284,
+      "pass_rate": 54.93,
+      "pass_rate_vs_national": -1.75,
+      "national_avg_for_year": 56.68
+    }
+  ],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Suspension",
+        "total_failures": 2394,
+        "vehicle_count": 35
+      },
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 1976,
+        "vehicle_count": 35
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 1578,
+        "vehicle_count": 35
+      },
+      {
+        "category_name": "Body, chassis, structure",
+        "total_failures": 1213,
+        "vehicle_count": 35
+      },
+      {
+        "category_name": "Visibility",
+        "total_failures": 984,
+        "vehicle_count": 35
+      },
+      {
+        "category_name": "Noise, emissions and leaks",
+        "total_failures": 840,
+        "vehicle_count": 35
+      },
+      {
+        "category_name": "Tyres",
+        "total_failures": 704,
+        "vehicle_count": 35
+      },
+      {
+        "category_name": "Steering",
+        "total_failures": 389,
+        "vehicle_count": 34
+      },
+      {
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_failures": 290,
+        "vehicle_count": 34
+      },
+      {
+        "category_name": "Identification of the vehicle",
+        "total_failures": 55,
+        "vehicle_count": 20
+      },
+      {
+        "category_name": "Road Wheels",
+        "total_failures": 19,
+        "vehicle_count": 9
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "ball joint excessively worn",
+        "category_name": "Suspension",
+        "total_occurrences": 969
+      },
+      {
+        "defect_description": "not working",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 935
+      },
+      {
+        "defect_description": "prescribed area excessively corroded significantly reducing structural strength",
+        "category_name": "Suspension",
+        "total_occurrences": 671
+      },
+      {
+        "defect_description": "does not clear the windscreen effectively ",
+        "category_name": "Visibility",
+        "total_occurrences": 606
+      },
+      {
+        "defect_description": "excessively corroded",
+        "category_name": "Brakes",
+        "total_occurrences": 413
+      },
+      {
+        "defect_description": "has a major leak of exhaust gases",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 291
+      },
+      {
+        "defect_description": "Lambda reading after 2nd fast idle outside specified limits",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 200
+      },
+      {
+        "defect_description": "projected beam image is obviously incorrect",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 182
+      },
+      {
+        "defect_description": "inoperative or indicates a malfunction",
+        "category_name": "Noise, emissions and leaks",
+        "total_occurrences": 168
+      },
+      {
+        "defect_description": "constant velocity boot split or insecure, no longer prevents the ingress of dirt",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 166
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "corroded, covered in grease or other material",
+        "category_name": "Brakes",
+        "total_occurrences": 2072
+      },
+      {
+        "defect_description": "slightly damaged/cracking or perishing",
+        "category_name": "Tyres",
+        "total_occurrences": 1836
+      },
+      {
+        "defect_description": "worn close to legal limit/worn on edge",
+        "category_name": "Tyres",
+        "total_occurrences": 1604
+      },
+      {
+        "defect_description": "pin or bush worn but not resulting in excessive movement",
+        "category_name": "Suspension",
+        "total_occurrences": 1270
+      },
+      {
+        "defect_description": "ball joint has slight play",
+        "category_name": "Suspension",
+        "total_occurrences": 1057
+      },
+      {
+        "defect_description": "worn, pitted or scored, but not seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 901
+      },
+      {
+        "defect_description": "wearing thin",
+        "category_name": "Brakes",
+        "total_occurrences": 666
+      },
+      {
+        "defect_description": "corroded ",
+        "category_name": "Suspension",
+        "total_occurrences": 639
+      },
+      {
+        "defect_description": "corroded but not seriously weakened",
+        "category_name": "Suspension",
+        "total_occurrences": 568
+      },
+      {
+        "defect_description": "prescribed area is corroded but not considered excessive",
+        "category_name": "Suspension",
+        "total_occurrences": 346
+      }
+    ],
+    "dangerous": [
+      {
+        "defect_description": "has a tear, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 1962
+      },
+      {
+        "defect_description": "tread depth below requirements of 1.6mm",
+        "category_name": "Tyres",
+        "total_occurrences": 1818
+      },
+      {
+        "defect_description": "in such a condition that it is seriously weakened",
+        "category_name": "Brakes",
+        "total_occurrences": 1098
+      },
+      {
+        "defect_description": "less than 1.5 mm thick",
+        "category_name": "Brakes",
+        "total_occurrences": 1078
+      },
+      {
+        "defect_description": "tread pattern not visible over the whole tread area when minimum depth required is 1.0mm ",
+        "category_name": "Tyres",
+        "total_occurrences": 204
+      },
+      {
+        "defect_description": "has ply or cords exposed",
+        "category_name": "Tyres",
+        "total_occurrences": 71
+      },
+      {
+        "defect_description": "webbing significantly weakened",
+        "category_name": "Seat belts and supplementary restraint systems",
+        "total_occurrences": 63
+      },
+      {
+        "defect_description": "ball joint likely to become detached",
+        "category_name": "Suspension",
+        "total_occurrences": 59
+      },
+      {
+        "defect_description": "has a bulge, caused by separation or partial failure of its structure",
+        "category_name": "Tyres",
+        "total_occurrences": 43
+      },
+      {
+        "defect_description": "efficiency less than 50% of the required value",
+        "category_name": "Brakes",
+        "total_occurrences": 37
+      }
+    ]
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "0-30k",
+      "band_order": 0,
+      "total_tests": 905,
+      "avg_pass_rate": 81.0
+    },
+    {
+      "mileage_band": "30k-60k",
+      "band_order": 1,
+      "total_tests": 4357,
+      "avg_pass_rate": 70.16
+    },
+    {
+      "mileage_band": "60k-90k",
+      "band_order": 2,
+      "total_tests": 5066,
+      "avg_pass_rate": 60.7
+    },
+    {
+      "mileage_band": "90k-120k",
+      "band_order": 3,
+      "total_tests": 2997,
+      "avg_pass_rate": 54.39
+    },
+    {
+      "mileage_band": "120k-150k",
+      "band_order": 4,
+      "total_tests": 999,
+      "avg_pass_rate": 47.95
+    },
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 299,
+      "avg_pass_rate": 46.49
+    }
+  ],
+  "all_models": [
+    {
+      "model": "COPEN",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 169,
+      "total_passes": 130,
+      "total_fails": 30,
+      "pass_rate": 76.92,
+      "avg_mileage": 55281.0,
+      "avg_age_years": 13.6,
+      "pass_rate_vs_national": 5.41
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 277,
+      "total_passes": 212,
+      "total_fails": 55,
+      "pass_rate": 76.53,
+      "avg_mileage": 55887.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": 5.02
+    },
+    {
+      "model": "MATERIA",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 198,
+      "total_passes": 143,
+      "total_fails": 46,
+      "pass_rate": 72.22,
+      "avg_mileage": 93725.0,
+      "avg_age_years": 15.3,
+      "pass_rate_vs_national": 0.71
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 250,
+      "total_passes": 179,
+      "total_fails": 63,
+      "pass_rate": 71.6,
+      "avg_mileage": 66946.0,
+      "avg_age_years": 15.4,
+      "pass_rate_vs_national": 0.09
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2010,
+      "fuel_type": "PE",
+      "total_tests": 112,
+      "total_passes": 80,
+      "total_fails": 26,
+      "pass_rate": 71.43,
+      "avg_mileage": 62813.0,
+      "avg_age_years": 12.6,
+      "pass_rate_vs_national": -0.08
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 959,
+      "total_passes": 663,
+      "total_fails": 235,
+      "pass_rate": 69.13,
+      "avg_mileage": 65915.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -2.38
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 571,
+      "total_passes": 394,
+      "total_fails": 141,
+      "pass_rate": 69.0,
+      "avg_mileage": 81682.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -2.51
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 292,
+      "total_passes": 198,
+      "total_fails": 87,
+      "pass_rate": 67.81,
+      "avg_mileage": 60930.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -3.7
+    },
+    {
+      "model": "MATERIA",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 282,
+      "total_passes": 185,
+      "total_fails": 81,
+      "pass_rate": 65.6,
+      "avg_mileage": 86352.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -5.91
+    },
+    {
+      "model": "MATERIA",
+      "model_year": 2009,
+      "fuel_type": "PE",
+      "total_tests": 170,
+      "total_passes": 111,
+      "total_fails": 37,
+      "pass_rate": 65.29,
+      "avg_mileage": 80432.0,
+      "avg_age_years": 13.5,
+      "pass_rate_vs_national": -6.22
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 1994,
+      "total_passes": 1284,
+      "total_fails": 566,
+      "pass_rate": 64.39,
+      "avg_mileage": 68451.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -7.12
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2008,
+      "fuel_type": "PE",
+      "total_tests": 865,
+      "total_passes": 546,
+      "total_fails": 266,
+      "pass_rate": 63.12,
+      "avg_mileage": 88979.0,
+      "avg_age_years": 14.5,
+      "pass_rate_vs_national": -8.39
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1526,
+      "total_passes": 959,
+      "total_fails": 448,
+      "pass_rate": 62.84,
+      "avg_mileage": 71260.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -8.67
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 156,
+      "total_passes": 96,
+      "total_fails": 45,
+      "pass_rate": 61.54,
+      "avg_mileage": 68779.0,
+      "avg_age_years": 19.5,
+      "pass_rate_vs_national": -9.97
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 131,
+      "total_passes": 80,
+      "total_fails": 44,
+      "pass_rate": 61.07,
+      "avg_mileage": 57202.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -10.44
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 775,
+      "total_passes": 472,
+      "total_fails": 265,
+      "pass_rate": 60.9,
+      "avg_mileage": 90927.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -10.61
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2007,
+      "fuel_type": "PE",
+      "total_tests": 1201,
+      "total_passes": 731,
+      "total_fails": 394,
+      "pass_rate": 60.87,
+      "avg_mileage": 90588.0,
+      "avg_age_years": 15.5,
+      "pass_rate_vs_national": -10.64
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 825,
+      "total_passes": 498,
+      "total_fails": 268,
+      "pass_rate": 60.36,
+      "avg_mileage": 75550.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -11.15
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 816,
+      "total_passes": 490,
+      "total_fails": 270,
+      "pass_rate": 60.05,
+      "avg_mileage": 76272.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -11.46
+    },
+    {
+      "model": "CHARADE",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 271,
+      "total_passes": 161,
+      "total_fails": 87,
+      "pass_rate": 59.41,
+      "avg_mileage": 63650.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -12.1
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 125,
+      "total_passes": 74,
+      "total_fails": 32,
+      "pass_rate": 59.2,
+      "avg_mileage": 68900.0,
+      "avg_age_years": 18.4,
+      "pass_rate_vs_national": -12.31
+    },
+    {
+      "model": "SIRION",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 137,
+      "total_passes": 80,
+      "total_fails": 46,
+      "pass_rate": 58.39,
+      "avg_mileage": 67212.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -13.12
+    },
+    {
+      "model": "FOURTRAK",
+      "model_year": 2000,
+      "fuel_type": "DI",
+      "total_tests": 122,
+      "total_passes": 71,
+      "total_fails": 46,
+      "pass_rate": 58.2,
+      "avg_mileage": 123611.0,
+      "avg_age_years": 22.5,
+      "pass_rate_vs_national": -13.31
+    },
+    {
+      "model": "EXTOL",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 103,
+      "total_passes": 59,
+      "total_fails": 37,
+      "pass_rate": 57.28,
+      "avg_mileage": 79415.0,
+      "avg_age_years": 17.3,
+      "pass_rate_vs_national": -14.23
+    },
+    {
+      "model": "CHARADE",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 302,
+      "total_passes": 172,
+      "total_fails": 108,
+      "pass_rate": 56.95,
+      "avg_mileage": 60896.0,
+      "avg_age_years": 17.5,
+      "pass_rate_vs_national": -14.56
+    },
+    {
+      "model": "CHARADE",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 399,
+      "total_passes": 223,
+      "total_fails": 151,
+      "pass_rate": 55.89,
+      "avg_mileage": 61808.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -15.62
+    },
+    {
+      "model": "CHARADE",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 284,
+      "total_passes": 156,
+      "total_fails": 112,
+      "pass_rate": 54.93,
+      "avg_mileage": 61773.0,
+      "avg_age_years": 19.3,
+      "pass_rate_vs_national": -16.58
+    },
+    {
+      "model": "HIJET",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 116,
+      "total_passes": 62,
+      "total_fails": 49,
+      "pass_rate": 53.45,
+      "avg_mileage": 64176.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -18.06
+    },
+    {
+      "model": "EXTOL",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 167,
+      "total_passes": 89,
+      "total_fails": 62,
+      "pass_rate": 53.29,
+      "avg_mileage": 86370.0,
+      "avg_age_years": 16.5,
+      "pass_rate_vs_national": -18.22
+    },
+    {
+      "model": "COPEN",
+      "model_year": 2006,
+      "fuel_type": "PE",
+      "total_tests": 152,
+      "total_passes": 80,
+      "total_fails": 61,
+      "pass_rate": 52.63,
+      "avg_mileage": 56706.0,
+      "avg_age_years": 16.4,
+      "pass_rate_vs_national": -18.88
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2005,
+      "fuel_type": "PE",
+      "total_tests": 421,
+      "total_passes": 220,
+      "total_fails": 173,
+      "pass_rate": 52.26,
+      "avg_mileage": 81767.0,
+      "avg_age_years": 17.4,
+      "pass_rate_vs_national": -19.25
+    },
+    {
+      "model": "HIJET",
+      "model_year": 2000,
+      "fuel_type": "PE",
+      "total_tests": 108,
+      "total_passes": 56,
+      "total_fails": 45,
+      "pass_rate": 51.85,
+      "avg_mileage": 66812.0,
+      "avg_age_years": 22.4,
+      "pass_rate_vs_national": -19.66
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2002,
+      "fuel_type": "PE",
+      "total_tests": 107,
+      "total_passes": 54,
+      "total_fails": 47,
+      "pass_rate": 50.47,
+      "avg_mileage": 85627.0,
+      "avg_age_years": 20.5,
+      "pass_rate_vs_national": -21.04
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2004,
+      "fuel_type": "PE",
+      "total_tests": 227,
+      "total_passes": 114,
+      "total_fails": 92,
+      "pass_rate": 50.22,
+      "avg_mileage": 82855.0,
+      "avg_age_years": 18.5,
+      "pass_rate_vs_national": -21.29
+    },
+    {
+      "model": "TERIOS",
+      "model_year": 2003,
+      "fuel_type": "PE",
+      "total_tests": 208,
+      "total_passes": 102,
+      "total_fails": 95,
+      "pass_rate": 49.04,
+      "avg_mileage": 85404.0,
+      "avg_age_years": 19.4,
+      "pass_rate_vs_national": -22.47
+    }
+  ],
+  "age_adjusted": {
+    "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
+    "best_models": [
+      {
+        "model": "COPEN",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 169,
+        "avg_vs_national": 17.05,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 76.92,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.05,
+          "total_tests": 169,
+          "avg_mileage": 55281.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 76.92,
+          "national_pass_rate": 59.87,
+          "vs_national": 17.05,
+          "total_tests": 169,
+          "avg_mileage": 55281.0
+        }
+      },
+      {
+        "model": "COPEN",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 277,
+        "avg_vs_national": 16.66,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 76.53,
+          "national_pass_rate": 59.87,
+          "vs_national": 16.66,
+          "total_tests": 277,
+          "avg_mileage": 55887.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 76.53,
+          "national_pass_rate": 59.87,
+          "vs_national": 16.66,
+          "total_tests": 277,
+          "avg_mileage": 55887.0
+        }
+      },
+      {
+        "model": "MATERIA",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 198,
+        "avg_vs_national": 12.35,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 72.22,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.35,
+          "total_tests": 198,
+          "avg_mileage": 93725.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 72.22,
+          "national_pass_rate": 59.87,
+          "vs_national": 12.35,
+          "total_tests": 198,
+          "avg_mileage": 93725.0
+        }
+      },
+      {
+        "model": "COPEN",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 250,
+        "avg_vs_national": 11.73,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 71.6,
+          "national_pass_rate": 59.87,
+          "vs_national": 11.73,
+          "total_tests": 250,
+          "avg_mileage": 66946.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 71.6,
+          "national_pass_rate": 59.87,
+          "vs_national": 11.73,
+          "total_tests": 250,
+          "avg_mileage": 66946.0
+        }
+      },
+      {
+        "model": "SIRION",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 959,
+        "avg_vs_national": 9.26,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 69.13,
+          "national_pass_rate": 59.87,
+          "vs_national": 9.26,
+          "total_tests": 959,
+          "avg_mileage": 65915.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 69.13,
+          "national_pass_rate": 59.87,
+          "vs_national": 9.26,
+          "total_tests": 959,
+          "avg_mileage": 65915.0
+        }
+      },
+      {
+        "model": "TERIOS",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 571,
+        "avg_vs_national": 9.13,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 69.0,
+          "national_pass_rate": 59.87,
+          "vs_national": 9.13,
+          "total_tests": 571,
+          "avg_mileage": 81682.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 69.0,
+          "national_pass_rate": 59.87,
+          "vs_national": 9.13,
+          "total_tests": 571,
+          "avg_mileage": 81682.0
+        }
+      },
+      {
+        "model": "SIRION",
+        "model_year": 2010,
+        "fuel_type": "PE",
+        "total_tests": 112,
+        "avg_vs_national": 8.94,
+        "durability_trend": -6.7,
+        "best_age_band": {
+          "age_band": "11-12 years",
+          "band_order": 4,
+          "pass_rate": 79.55,
+          "national_pass_rate": 66.54,
+          "vs_national": 13.01,
+          "total_tests": 44,
+          "avg_mileage": 68168.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 66.18,
+          "national_pass_rate": 59.87,
+          "vs_national": 6.31,
+          "total_tests": 68,
+          "avg_mileage": 59348.0
+        }
+      },
+      {
+        "model": "COPEN",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 292,
+        "avg_vs_national": 7.94,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.81,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.94,
+          "total_tests": 292,
+          "avg_mileage": 60930.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 67.81,
+          "national_pass_rate": 59.87,
+          "vs_national": 7.94,
+          "total_tests": 292,
+          "avg_mileage": 60930.0
+        }
+      },
+      {
+        "model": "MATERIA",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 282,
+        "avg_vs_national": 5.73,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.6,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.73,
+          "total_tests": 282,
+          "avg_mileage": 86352.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.6,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.73,
+          "total_tests": 282,
+          "avg_mileage": 86352.0
+        }
+      },
+      {
+        "model": "MATERIA",
+        "model_year": 2009,
+        "fuel_type": "PE",
+        "total_tests": 170,
+        "avg_vs_national": 5.42,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.29,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.42,
+          "total_tests": 170,
+          "avg_mileage": 80432.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 65.29,
+          "national_pass_rate": 59.87,
+          "vs_national": 5.42,
+          "total_tests": 170,
+          "avg_mileage": 80432.0
+        }
+      },
+      {
+        "model": "SIRION",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 1994,
+        "avg_vs_national": 4.52,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.39,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.52,
+          "total_tests": 1994,
+          "avg_mileage": 68451.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 64.39,
+          "national_pass_rate": 59.87,
+          "vs_national": 4.52,
+          "total_tests": 1994,
+          "avg_mileage": 68451.0
+        }
+      },
+      {
+        "model": "TERIOS",
+        "model_year": 2008,
+        "fuel_type": "PE",
+        "total_tests": 865,
+        "avg_vs_national": 3.25,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.12,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.25,
+          "total_tests": 865,
+          "avg_mileage": 88979.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 63.12,
+          "national_pass_rate": 59.87,
+          "vs_national": 3.25,
+          "total_tests": 865,
+          "avg_mileage": 88979.0
+        }
+      },
+      {
+        "model": "SIRION",
+        "model_year": 2007,
+        "fuel_type": "PE",
+        "total_tests": 1526,
+        "avg_vs_national": 2.97,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 62.84,
+          "national_pass_rate": 59.87,
+          "vs_national": 2.97,
+          "total_tests": 1526,
+          "avg_mileage": 71260.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 62.84,
+          "national_pass_rate": 59.87,
+          "vs_national": 2.97,
+          "total_tests": 1526,
+          "avg_mileage": 71260.0
+        }
+      },
+      {
+        "model": "SIRION",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 156,
+        "avg_vs_national": 1.67,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.54,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.67,
+          "total_tests": 156,
+          "avg_mileage": 68779.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.54,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.67,
+          "total_tests": 156,
+          "avg_mileage": 68779.0
+        }
+      },
+      {
+        "model": "COPEN",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 131,
+        "avg_vs_national": 1.2,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.2,
+          "total_tests": 131,
+          "avg_mileage": 57202.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 61.07,
+          "national_pass_rate": 59.87,
+          "vs_national": 1.2,
+          "total_tests": 131,
+          "avg_mileage": 57202.0
+        }
+      }
+    ],
+    "worst_models": [
+      {
+        "model": "TERIOS",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 208,
+        "avg_vs_national": -10.83,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 49.04,
+          "national_pass_rate": 59.87,
+          "vs_national": -10.83,
+          "total_tests": 208,
+          "avg_mileage": 85404.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 49.04,
+          "national_pass_rate": 59.87,
+          "vs_national": -10.83,
+          "total_tests": 208,
+          "avg_mileage": 85404.0
+        }
+      },
+      {
+        "model": "TERIOS",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 227,
+        "avg_vs_national": -9.65,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.22,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.65,
+          "total_tests": 227,
+          "avg_mileage": 82855.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.22,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.65,
+          "total_tests": 227,
+          "avg_mileage": 82855.0
+        }
+      },
+      {
+        "model": "TERIOS",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 107,
+        "avg_vs_national": -9.4,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.47,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.4,
+          "total_tests": 107,
+          "avg_mileage": 85627.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 50.47,
+          "national_pass_rate": 59.87,
+          "vs_national": -9.4,
+          "total_tests": 107,
+          "avg_mileage": 85627.0
+        }
+      },
+      {
+        "model": "HIJET",
+        "model_year": 2000,
+        "fuel_type": "PE",
+        "total_tests": 108,
+        "avg_vs_national": -8.02,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.85,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.02,
+          "total_tests": 108,
+          "avg_mileage": 66812.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 51.85,
+          "national_pass_rate": 59.87,
+          "vs_national": -8.02,
+          "total_tests": 108,
+          "avg_mileage": 66812.0
+        }
+      },
+      {
+        "model": "TERIOS",
+        "model_year": 2005,
+        "fuel_type": "PE",
+        "total_tests": 421,
+        "avg_vs_national": -7.61,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.26,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.61,
+          "total_tests": 421,
+          "avg_mileage": 81767.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.26,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.61,
+          "total_tests": 421,
+          "avg_mileage": 81767.0
+        }
+      },
+      {
+        "model": "COPEN",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 152,
+        "avg_vs_national": -7.24,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.63,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.24,
+          "total_tests": 152,
+          "avg_mileage": 56706.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 52.63,
+          "national_pass_rate": 59.87,
+          "vs_national": -7.24,
+          "total_tests": 152,
+          "avg_mileage": 56706.0
+        }
+      },
+      {
+        "model": "EXTOL",
+        "model_year": 2006,
+        "fuel_type": "PE",
+        "total_tests": 167,
+        "avg_vs_national": -6.58,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.29,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.58,
+          "total_tests": 167,
+          "avg_mileage": 86370.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.29,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.58,
+          "total_tests": 167,
+          "avg_mileage": 86370.0
+        }
+      },
+      {
+        "model": "HIJET",
+        "model_year": 2002,
+        "fuel_type": "PE",
+        "total_tests": 116,
+        "avg_vs_national": -6.42,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.45,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.42,
+          "total_tests": 116,
+          "avg_mileage": 64176.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 53.45,
+          "national_pass_rate": 59.87,
+          "vs_national": -6.42,
+          "total_tests": 116,
+          "avg_mileage": 64176.0
+        }
+      },
+      {
+        "model": "CHARADE",
+        "model_year": 2003,
+        "fuel_type": "PE",
+        "total_tests": 284,
+        "avg_vs_national": -4.94,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.93,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.94,
+          "total_tests": 284,
+          "avg_mileage": 61773.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 54.93,
+          "national_pass_rate": 59.87,
+          "vs_national": -4.94,
+          "total_tests": 284,
+          "avg_mileage": 61773.0
+        }
+      },
+      {
+        "model": "CHARADE",
+        "model_year": 2004,
+        "fuel_type": "PE",
+        "total_tests": 399,
+        "avg_vs_national": -3.98,
+        "durability_trend": 0,
+        "best_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.98,
+          "total_tests": 399,
+          "avg_mileage": 61808.0
+        },
+        "worst_age_band": {
+          "age_band": "13+ years",
+          "band_order": 5,
+          "pass_rate": 55.89,
+          "national_pass_rate": 59.87,
+          "vs_national": -3.98,
+          "total_tests": 399,
+          "avg_mileage": 61808.0
+        }
+      }
+    ]
+  },
+  "durability": {
+    "methodology": {
+      "description": "Evidence-tiered durability scoring based on proven long-term data",
+      "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
+      "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
+      "scoring": "Performance vs national average for vehicles of the same age"
+    },
+    "reliability_summary": {
+      "tier_distribution": {
+        "proven": {
+          "vehicles": 35,
+          "tests": 14818
+        }
+      },
+      "proven_vehicles_tested": 34,
+      "proven_above_average_pct": 64.7,
+      "proven_avg_vs_national": 3.37,
+      "durability_rating": "Good",
+      "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+    },
+    "durability_champions": {
+      "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "COPEN",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 169,
+          "pass_rate": 76.92,
+          "vs_national_at_age": 19.62,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 55281.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "COPEN",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 277,
+          "pass_rate": 76.53,
+          "vs_national_at_age": 19.23,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 55887.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "MATERIA",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 198,
+          "pass_rate": 72.22,
+          "vs_national_at_age": 14.92,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 93725.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "COPEN",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 250,
+          "pass_rate": 71.6,
+          "vs_national_at_age": 14.3,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66946.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SIRION",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 959,
+          "pass_rate": 69.13,
+          "vs_national_at_age": 11.83,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 65915.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "TERIOS",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 571,
+          "pass_rate": 69.0,
+          "vs_national_at_age": 11.7,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 81682.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "COPEN",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 292,
+          "pass_rate": 67.81,
+          "vs_national_at_age": 10.51,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 60930.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "MATERIA",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 282,
+          "pass_rate": 65.6,
+          "vs_national_at_age": 8.3,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 86352.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "MATERIA",
+          "model_year": 2009,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 170,
+          "pass_rate": 65.29,
+          "vs_national_at_age": 7.99,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 80432.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SIRION",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1994,
+          "pass_rate": 64.39,
+          "vs_national_at_age": 7.09,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 68451.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "TERIOS",
+          "model_year": 2008,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 865,
+          "pass_rate": 63.12,
+          "vs_national_at_age": 5.82,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 88979.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SIRION",
+          "model_year": 2007,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 1526,
+          "pass_rate": 62.84,
+          "vs_national_at_age": 5.54,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 71260.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "SIRION",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 156,
+          "pass_rate": 61.54,
+          "vs_national_at_age": 4.24,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 68779.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "COPEN",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 131,
+          "pass_rate": 61.07,
+          "vs_national_at_age": 3.77,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 57202.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        },
+        {
+          "model": "TERIOS",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 775,
+          "pass_rate": 60.9,
+          "vs_national_at_age": 3.6,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 90927.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high"
+        }
+      ]
+    },
+    "models_to_avoid": {
+      "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
+      "evidence_quality": "high",
+      "vehicles": [
+        {
+          "model": "TERIOS",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 208,
+          "pass_rate": 49.04,
+          "vs_national_at_age": -8.26,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 85404.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TERIOS",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 227,
+          "pass_rate": 50.22,
+          "vs_national_at_age": -7.08,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 82855.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TERIOS",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 107,
+          "pass_rate": 50.47,
+          "vs_national_at_age": -6.83,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 85627.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "HIJET",
+          "model_year": 2000,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 108,
+          "pass_rate": 51.85,
+          "vs_national_at_age": -5.45,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 66812.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "TERIOS",
+          "model_year": 2005,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 421,
+          "pass_rate": 52.26,
+          "vs_national_at_age": -5.04,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 81767.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "COPEN",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 152,
+          "pass_rate": 52.63,
+          "vs_national_at_age": -4.67,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 56706.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "EXTOL",
+          "model_year": 2006,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 167,
+          "pass_rate": 53.29,
+          "vs_national_at_age": -4.01,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 86370.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "HIJET",
+          "model_year": 2002,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 116,
+          "pass_rate": 53.45,
+          "vs_national_at_age": -3.85,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 64176.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CHARADE",
+          "model_year": 2003,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 284,
+          "pass_rate": 54.93,
+          "vs_national_at_age": -2.37,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 61773.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        },
+        {
+          "model": "CHARADE",
+          "model_year": 2004,
+          "fuel_type": "PE",
+          "age_band": "13+ years",
+          "age_band_order": 5,
+          "total_tests": 399,
+          "pass_rate": 55.89,
+          "vs_national_at_age": -1.41,
+          "national_avg_for_age": 57.3,
+          "avg_mileage": 61808.0,
+          "maturity_tier": "proven",
+          "evidence_quality": "high",
+          "concern": "Below average durability at 13+ years"
+        }
+      ]
+    },
+    "early_performers": {
+      "description": "Newer vehicles showing strong early results (3-6 years)",
+      "evidence_quality": "limited",
+      "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
+      "vehicles": []
+    },
+    "model_trajectories": {
+      "CHARADE": {
+        "core_model": "CHARADE",
+        "years_covered": [
+          2003,
+          2004,
+          2005,
+          2006
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2003,
+                "pass_rate": 54.93,
+                "vs_national": -2.37,
+                "total_tests": 284,
+                "avg_mileage": 61773.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 55.89,
+                "vs_national": -1.41,
+                "total_tests": 399,
+                "avg_mileage": 61808.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 56.95,
+                "vs_national": -0.35,
+                "total_tests": 302,
+                "avg_mileage": 60896.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 59.41,
+                "vs_national": 2.11,
+                "total_tests": 271,
+                "avg_mileage": 63650.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2006,
+          "vs_national": 2.11,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2003,
+          "vs_national": -2.37,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "TERIOS": {
+        "core_model": "TERIOS",
+        "years_covered": [
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2003,
+                "pass_rate": 49.04,
+                "vs_national": -8.26,
+                "total_tests": 208,
+                "avg_mileage": 85404.0
+              },
+              {
+                "year": 2004,
+                "pass_rate": 50.22,
+                "vs_national": -7.08,
+                "total_tests": 227,
+                "avg_mileage": 82855.0
+              },
+              {
+                "year": 2005,
+                "pass_rate": 52.26,
+                "vs_national": -5.04,
+                "total_tests": 421,
+                "avg_mileage": 81767.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 60.9,
+                "vs_national": 3.6,
+                "total_tests": 775,
+                "avg_mileage": 90927.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 60.87,
+                "vs_national": 3.57,
+                "total_tests": 1201,
+                "avg_mileage": 90588.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 63.12,
+                "vs_national": 5.82,
+                "total_tests": 865,
+                "avg_mileage": 88979.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 69.0,
+                "vs_national": 11.7,
+                "total_tests": 571,
+                "avg_mileage": 81682.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 11.7,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2003,
+          "vs_national": -8.26,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "COPEN": {
+        "core_model": "COPEN",
+        "years_covered": [
+          2004,
+          2007,
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2004,
+                "pass_rate": 67.81,
+                "vs_national": 10.51,
+                "total_tests": 292,
+                "avg_mileage": 60930.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 71.6,
+                "vs_national": 14.3,
+                "total_tests": 250,
+                "avg_mileage": 66946.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 76.53,
+                "vs_national": 19.23,
+                "total_tests": 277,
+                "avg_mileage": 55887.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2008,
+          "vs_national": 19.23,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2004,
+          "vs_national": 10.51,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "SIRION": {
+        "core_model": "SIRION",
+        "years_covered": [
+          2005,
+          2006,
+          2007,
+          2008,
+          2009
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2005,
+                "pass_rate": 60.05,
+                "vs_national": 2.75,
+                "total_tests": 816,
+                "avg_mileage": 76272.0
+              },
+              {
+                "year": 2006,
+                "pass_rate": 60.36,
+                "vs_national": 3.06,
+                "total_tests": 825,
+                "avg_mileage": 75550.0
+              },
+              {
+                "year": 2007,
+                "pass_rate": 62.84,
+                "vs_national": 5.54,
+                "total_tests": 1526,
+                "avg_mileage": 71260.0
+              },
+              {
+                "year": 2008,
+                "pass_rate": 64.39,
+                "vs_national": 7.09,
+                "total_tests": 1994,
+                "avg_mileage": 68451.0
+              },
+              {
+                "year": 2009,
+                "pass_rate": 69.13,
+                "vs_national": 11.83,
+                "total_tests": 959,
+                "avg_mileage": 65915.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2009,
+          "vs_national": 11.83,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2005,
+          "vs_national": 2.75,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      },
+      "MATERIA": {
+        "core_model": "MATERIA",
+        "years_covered": [
+          2008
+        ],
+        "trajectory_by_age": {
+          "13+ years": {
+            "band_order": 5,
+            "national_avg": 57.3,
+            "model_years": [
+              {
+                "year": 2008,
+                "pass_rate": 65.6,
+                "vs_national": 8.3,
+                "total_tests": 282,
+                "avg_mileage": 86352.0
+              }
+            ]
+          }
+        },
+        "best_proven_year": {
+          "year": 2008,
+          "vs_national": 8.3,
+          "age_band": "13+ years"
+        },
+        "worst_proven_year": {
+          "year": 2008,
+          "vs_national": 8.3,
+          "age_band": "13+ years"
+        },
+        "has_proven_data": true
+      }
+    }
+  }
+}
