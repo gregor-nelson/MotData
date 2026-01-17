@@ -19,6 +19,7 @@ Output:
 import duckdb
 import sqlite3
 import os
+import shutil
 from pathlib import Path
 from datetime import datetime
 
@@ -31,9 +32,9 @@ OUTPUT_DIR = DATA_DIR / "data"
 OUTPUT_DB = OUTPUT_DIR / "mot_insights.db"
 DUCKDB_FILE = OUTPUT_DIR / "mot_processing.duckdb"  # Disk-backed for lower RAM
 
-# Performance tuning - optimized for 8GB VPS
-DUCKDB_THREADS = 2            # Fewer threads = less memory pressure
-DUCKDB_MEMORY_LIMIT = '4GB'   # Leave ~3.5GB for OS, Python, disk spillover
+# Performance tuning - optimized for 16GB system
+DUCKDB_THREADS = 4            # More threads for parallel processing
+DUCKDB_MEMORY_LIMIT = '8GB'   # More memory reduces disk spillover
 
 # Mileage bands (in miles) - no upper cap on final band
 MILEAGE_BANDS = [
@@ -61,12 +62,11 @@ def create_duckdb_connection():
     print(f"DuckDB threads: {DUCKDB_THREADS}")
     print(f"DuckDB memory limit: {DUCKDB_MEMORY_LIMIT}")
 
-    # Create output directory if it doesn't exist
+    # Purge and recreate output directory for a fresh run
+    if OUTPUT_DIR.exists():
+        print(f"Purging output directory: {OUTPUT_DIR}")
+        shutil.rmtree(OUTPUT_DIR)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    # Remove old DuckDB file if exists
-    if DUCKDB_FILE.exists():
-        os.remove(DUCKDB_FILE)
 
     # Create disk-backed connection (not in-memory) for lower RAM usage
     conn = duckdb.connect(str(DUCKDB_FILE))
@@ -97,7 +97,7 @@ def create_duckdb_connection():
             filepath_str = str(filepath).replace('\\', '/')
             conn.execute(f"""
                 CREATE TABLE {table_name} AS
-                SELECT * FROM read_csv_auto('{filepath_str}', delim='|', header=true)
+                SELECT * FROM read_csv_auto('{filepath_str}', delim='|', header=true, parallel=true)
             """)
             count = conn.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
             print(f"({count:,} rows)")
@@ -137,10 +137,13 @@ def create_base_tests_table(conn):
     count = conn.execute("SELECT COUNT(*) FROM base_tests").fetchone()[0]
     print(f"  Created base_tests with {count:,} filtered records")
 
-    # Create index for faster joins
+    # Create indexes for faster joins
     conn.execute("CREATE INDEX idx_base_tests_id ON base_tests(test_id)")
     conn.execute("CREATE INDEX idx_base_tests_vehicle ON base_tests(make, model, model_year, fuel_type)")
-    print("  Created indexes on base_tests")
+    conn.execute("CREATE INDEX idx_test_item_test_id ON test_item(test_id)")
+    conn.execute("CREATE INDEX idx_test_item_rfr ON test_item(rfr_id)")
+    conn.execute("CREATE INDEX idx_item_detail_rfr ON item_detail(rfr_id)")
+    print("  Created indexes on base_tests, test_item, item_detail")
 
     return count
 

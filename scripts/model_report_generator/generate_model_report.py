@@ -755,7 +755,7 @@ def generate_overview_section_content(data: dict) -> str:
     total_passes = summary.get("total_passes", 0) or 0
     total_fails = summary.get("total_fails", 0) or 0
 
-    # Year trend chart
+    # Year trend chart - bar height now represents pass rate
     year_data = data.get("year_comparison", [])
     max_tests = max((y.get("total_tests", 0) for y in year_data), default=1)
 
@@ -763,17 +763,60 @@ def generate_overview_section_content(data: dict) -> str:
     for y in year_data:
         tests = y.get("total_tests", 0)
         rate = y.get("pass_rate", 0)
-        height_pct = (tests / max_tests * 100) if max_tests > 0 else 0
+        # Bar height based on pass rate (scale 40-100% to use more visual range)
+        height_pct = max(10, (rate - 40) / 60 * 100) if rate > 40 else 10
         year_bars += f"""
             <div class="flex flex-col items-center min-w-[32px] sm:min-w-[44px] group">
                 <div class="h-28 w-8 flex items-end">
                     <div class="w-full rounded-t-lg transition-all duration-300 group-hover:opacity-80 group-hover:-translate-y-0.5"
                          style="height: {height_pct}%; background: {get_pass_rate_bar_color(rate)};"
-                         title="{rate:.1f}% pass rate"></div>
+                         title="{rate:.1f}% pass rate ({format_number(tests)} tests)"></div>
                 </div>
                 <div class="text-[11px] mt-2 text-neutral-500 font-medium">{y['year']}</div>
                 <div class="text-[11px] font-semibold" style="color: {get_pass_rate_color(rate)}">{rate:.0f}%</div>
             </div>"""
+
+    # Test volume line chart (SVG)
+    volume_chart = ""
+    if len(year_data) >= 3:
+        chart_width = max(400, len(year_data) * 46)
+        chart_height = 60
+        padding = 20
+        plot_width = chart_width - padding * 2
+        plot_height = chart_height - 10
+
+        points = []
+        area_points = []
+        for i, y in enumerate(year_data):
+            x = padding + (i / (len(year_data) - 1)) * plot_width if len(year_data) > 1 else padding
+            y_val = (y.get("total_tests", 0) / max_tests) * plot_height
+            y_pos = chart_height - 5 - y_val
+            points.append(f"{x},{y_pos}")
+            area_points.append(f"{x},{y_pos}")
+
+        # Close the area polygon
+        area_points.append(f"{padding + plot_width},{chart_height - 5}")
+        area_points.append(f"{padding},{chart_height - 5}")
+
+        volume_chart = f"""
+        <div class="mt-6 pt-4 border-t border-neutral-100">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="text-xs font-medium text-neutral-500">Test Volume by Year</span>
+                <span class="text-[10px] text-neutral-400">(higher = more reliable data)</span>
+            </div>
+            <div class="overflow-x-auto">
+                <svg viewBox="0 0 {chart_width} {chart_height}" class="w-full h-16 min-w-[300px]" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <linearGradient id="volumeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
+                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05"/>
+                        </linearGradient>
+                    </defs>
+                    <polygon points="{' '.join(area_points)}" fill="url(#volumeGradient)"/>
+                    <polyline points="{' '.join(points)}" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>"""
 
     return f"""
         <div class="flex flex-col md:flex-row items-center gap-5 md:gap-8 mb-5">
@@ -848,7 +891,8 @@ def generate_overview_section_content(data: dict) -> str:
         </div>
 
         <div class="flex items-end gap-2 h-48 py-5 overflow-x-auto">{year_bars if year_bars else '<p class="text-neutral-500">No year data available</p>'}
-        </div>"""
+        </div>
+        {volume_chart}"""
 
 
 def generate_rankings_content(rankings: dict) -> str:
@@ -960,7 +1004,7 @@ def generate_fuel_mileage_content(data: dict) -> str:
         badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
         fuel_rows += f"""
             <tr>
-                <td>{f.get('fuel_type', 'N/A')}</td>
+                <td>{f.get('fuel_type_name', f.get('fuel_type', 'N/A'))}</td>
                 <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
                 <td>{format_number(f.get('total_tests'))}</td>
             </tr>"""

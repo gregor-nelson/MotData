@@ -4,7 +4,7 @@ import sqlite3
 from pathlib import Path
 
 # Database path (relative to project root)
-DB_PATH = Path(__file__).parent.parent.parent / "data" / "database" / "mot_insights.db"
+DB_PATH = Path(__file__).parent.parent.parent / "data" / "source" / "data" / "mot_insights.db"
 
 
 def get_db_connection():
@@ -47,11 +47,10 @@ def get_inspection_guide_data(make: str, model: str) -> dict | None:
 
         total_tests = row["total_tests"]
 
-        # Get all failures with percentage and full descriptions
-        # JOIN with rfr_descriptions to get human-readable text
+        # Get all failures with percentage
         cursor = conn.execute("""
             SELECT
-                COALESCE(rd.full_description, td.defect_description) as defect_description,
+                td.defect_description,
                 td.category_name,
                 SUM(td.occurrence_count) as total_occurrences,
                 ROUND(SUM(td.occurrence_count) * 100.0 /
@@ -59,9 +58,8 @@ def get_inspection_guide_data(make: str, model: str) -> dict | None:
                      FROM top_defects
                      WHERE make = ? AND model = ? AND defect_type = 'failure'), 1) as percentage
             FROM top_defects td
-            LEFT JOIN rfr_descriptions rd ON td.rfr_id = rd.rfr_id
             WHERE td.make = ? AND td.model = ? AND td.defect_type = 'failure'
-            GROUP BY COALESCE(rd.full_description, td.defect_description), td.category_name
+            GROUP BY td.defect_description, td.category_name
             ORDER BY total_occurrences DESC
         """, (make, model, make, model))
 
@@ -75,10 +73,10 @@ def get_inspection_guide_data(make: str, model: str) -> dict | None:
             for r in cursor.fetchall()
         ]
 
-        # Get all advisories with percentage and full descriptions
+        # Get all advisories with percentage
         cursor = conn.execute("""
             SELECT
-                COALESCE(rd.full_description, td.defect_description) as defect_description,
+                td.defect_description,
                 td.category_name,
                 SUM(td.occurrence_count) as total_occurrences,
                 ROUND(SUM(td.occurrence_count) * 100.0 /
@@ -86,9 +84,8 @@ def get_inspection_guide_data(make: str, model: str) -> dict | None:
                      FROM top_defects
                      WHERE make = ? AND model = ? AND defect_type = 'advisory'), 1) as percentage
             FROM top_defects td
-            LEFT JOIN rfr_descriptions rd ON td.rfr_id = rd.rfr_id
             WHERE td.make = ? AND td.model = ? AND td.defect_type = 'advisory'
-            GROUP BY COALESCE(rd.full_description, td.defect_description), td.category_name
+            GROUP BY td.defect_description, td.category_name
             ORDER BY total_occurrences DESC
         """, (make, model, make, model))
 
@@ -102,16 +99,41 @@ def get_inspection_guide_data(make: str, model: str) -> dict | None:
             for r in cursor.fetchall()
         ]
 
-        # Get all dangerous defects with full descriptions
+        # Get all minor defects with percentage
         cursor = conn.execute("""
             SELECT
-                COALESCE(rd.full_description, dd.defect_description) as defect_description,
+                td.defect_description,
+                td.category_name,
+                SUM(td.occurrence_count) as total_occurrences,
+                ROUND(SUM(td.occurrence_count) * 100.0 /
+                    (SELECT SUM(occurrence_count)
+                     FROM top_defects
+                     WHERE make = ? AND model = ? AND defect_type = 'minor'), 1) as percentage
+            FROM top_defects td
+            WHERE td.make = ? AND td.model = ? AND td.defect_type = 'minor'
+            GROUP BY td.defect_description, td.category_name
+            ORDER BY total_occurrences DESC
+        """, (make, model, make, model))
+
+        minor_defects = [
+            {
+                "defect_description": r["defect_description"],
+                "category_name": r["category_name"],
+                "occurrence_count": r["total_occurrences"],
+                "percentage": r["percentage"]
+            }
+            for r in cursor.fetchall()
+        ]
+
+        # Get all dangerous defects
+        cursor = conn.execute("""
+            SELECT
+                dd.defect_description,
                 dd.category_name,
                 SUM(dd.occurrence_count) as total_occurrences
             FROM dangerous_defects dd
-            LEFT JOIN rfr_descriptions rd ON dd.rfr_id = rd.rfr_id
             WHERE dd.make = ? AND dd.model = ?
-            GROUP BY COALESCE(rd.full_description, dd.defect_description), dd.category_name
+            GROUP BY dd.defect_description, dd.category_name
             ORDER BY total_occurrences DESC
         """, (make, model))
 
@@ -152,6 +174,7 @@ def get_inspection_guide_data(make: str, model: str) -> dict | None:
             "total_tests": total_tests,
             "top_failures": top_failures,
             "advisories": advisories,
+            "minor_defects": minor_defects,
             "dangerous_defects": dangerous_defects,
             "year_pass_rates": year_pass_rates
         }

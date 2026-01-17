@@ -7,9 +7,9 @@ import sqlite3
 from pathlib import Path
 
 # Database path (hardcoded for local use)
-DB_PATH = Path(__file__).parent.parent.parent / "data" / "database" / "mot_insights.db"
+DB_PATH = Path(__file__).parent.parent.parent / "data" / "source" / "data" / "mot_insights.db"
 
-# Fuel type display names
+# Fuel type display names (DVSA codes)
 FUEL_NAMES = {
     "PE": "Petrol",
     "DI": "Diesel",
@@ -18,6 +18,11 @@ FUEL_NAMES = {
     "ED": "Plug-in Hybrid",
     "GB": "Gas Bi-fuel",
     "GD": "Gas Diesel",
+    "LP": "LPG",
+    "LN": "LNG",
+    "CN": "CNG",
+    "FC": "Fuel Cell",
+    "ST": "Steam",
     "OT": "Other"
 }
 
@@ -386,26 +391,29 @@ def _get_aggregated_retest(conn, make: str, model: str) -> dict | None:
 
 
 def _get_aggregated_age_bands(conn, make: str, model: str) -> list[dict]:
-    """Pass rates by vehicle age."""
-    cursor = conn.execute("""
-        SELECT
-            age_band,
-            band_order,
-            SUM(total_tests) as total_tests,
-            ROUND(SUM(total_tests * pass_rate) / SUM(total_tests), 2) as pass_rate,
-            ROUND(SUM(avg_mileage * total_tests) / SUM(total_tests), 0) as avg_mileage
-        FROM age_bands
-        WHERE make = ? AND model = ?
-        GROUP BY age_band, band_order
-        ORDER BY band_order
-    """, (make, model))
+    """Pass rates by vehicle age. Returns empty list if table doesn't exist."""
+    try:
+        cursor = conn.execute("""
+            SELECT
+                age_band,
+                band_order,
+                SUM(total_tests) as total_tests,
+                ROUND(SUM(total_tests * pass_rate) / SUM(total_tests), 2) as pass_rate,
+                ROUND(SUM(avg_mileage * total_tests) / SUM(total_tests), 0) as avg_mileage
+            FROM age_bands
+            WHERE make = ? AND model = ?
+            GROUP BY age_band, band_order
+            ORDER BY band_order
+        """, (make, model))
 
-    return [{"age_band": row["age_band"],
-             "band_order": row["band_order"],
-             "total_tests": row["total_tests"],
-             "pass_rate": row["pass_rate"] or 0,
-             "avg_mileage": row["avg_mileage"]}
-            for row in cursor.fetchall()]
+        return [{"age_band": row["age_band"],
+                 "band_order": row["band_order"],
+                 "total_tests": row["total_tests"],
+                 "pass_rate": row["pass_rate"] or 0,
+                 "avg_mileage": row["avg_mileage"]}
+                for row in cursor.fetchall()]
+    except sqlite3.OperationalError:
+        return []
 
 
 def _get_aggregated_geographic(conn, make: str, model: str) -> list[dict]:

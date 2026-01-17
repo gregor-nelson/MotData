@@ -290,6 +290,76 @@ def generate_advisories_section(advisories: list[dict]) -> str:
     </section>"""
 
 
+def generate_minor_defects_section(defects: list[dict]) -> str:
+    """Generate the Minor Defects section with universal/specific filtering.
+
+    Returns empty string if no minor defects data.
+    """
+    if not defects:
+        return ""
+
+    # Count how many are universal vs model-specific
+    universal_count = sum(
+        1 for d in defects
+        if is_universal_defect(d['defect_description'], d['category_name'])
+    )
+    has_universal = universal_count > 0
+    has_specific = universal_count < len(defects)
+
+    items_html = ""
+    for i, d in enumerate(defects, 1):
+        is_universal = is_universal_defect(d['defect_description'], d['category_name'])
+        data_attr = 'data-universal="true"' if is_universal else 'data-universal="false"'
+        items_html += f"""
+        <div class="{tw.NUMBERED_ITEM} minor-item" {data_attr}>
+          <span class="{tw.NUMBERED_BADGE} minor-number" style="background-color: rgb(254 243 199); color: rgb(180 83 9);">{i}</span>
+          <div class="flex-1">
+            <div class="flex justify-between items-start">
+              <span class="{tw.DEFECT_NAME}">{d['defect_description']}</span>
+              <span class="{tw.DEFECT_PERCENT}">{d['percentage']}%</span>
+            </div>
+            <span class="{tw.DEFECT_CATEGORY}">Category: {d['category_name']}</span>
+          </div>
+        </div>"""
+
+    # Only show toggle if we have both types
+    toggle_html = ""
+    if has_universal and has_specific:
+        toggle_html = f"""
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-neutral-100">
+          <p class="{tw.TEXT_MUTED}">Minor issues that don't cause failure but worth noting</p>
+          <label class="inline-flex items-center gap-2 cursor-pointer text-sm">
+            <span class="text-neutral-500">Hide wear items</span>
+            <div class="relative">
+              <input type="checkbox" id="toggle-minor" class="sr-only peer" checked>
+              <div class="w-9 h-5 bg-neutral-200 rounded-full peer peer-checked:bg-blue-500 transition-colors"></div>
+              <div class="absolute left-0.5 top-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform peer-checked:translate-x-4"></div>
+            </div>
+          </label>
+        </div>
+        <p id="filter-hint-minor" class="{tw.TEXT_MUTED} mb-3 text-xs italic">Showing model-specific minor defects only. Toggle to see all including tyres, bulbs, and brake pads.</p>"""
+    else:
+        toggle_html = f"""<p class="{tw.TEXT_MUTED} mb-4">Minor issues that don't cause failure but worth noting</p>"""
+
+    return f"""
+    <section class="{tw.CARD}" id="minor-section">
+      <div class="{tw.CARD_HEADER}">
+        <div class="{tw.SECTION_HEADER}">
+          <div class="{tw.SECTION_ICON_BOX}" style="background: linear-gradient(to bottom right, rgb(254 243 199), rgb(253 230 138 / 0.5));">
+            <i class="ph ph-note-pencil" style="color: rgb(180 83 9);"></i>
+          </div>
+          <h2 class="{tw.SECTION_TITLE}">Minor Defects</h2>
+        </div>
+      </div>
+      <div class="{tw.CARD_BODY}">
+        {toggle_html}
+        <div id="minor-list">{items_html}
+        </div>
+        <p id="no-minor-msg" class="hidden text-center py-4 text-neutral-400 text-sm">No model-specific minor defects in top results. Toggle to see all.</p>
+      </div>
+    </section>"""
+
+
 def generate_dangerous_defects_section(defects: list[dict]) -> str:
     """Generate the MOT History Check section for dangerous defects with filtering.
 
@@ -454,8 +524,8 @@ def generate_filter_script() -> str:
             } else {
               item.classList.remove('hidden');
               visibleCount++;
-              // Renumber if this is a numbered list (failures section)
-              const numberBadge = item.querySelector('.defect-number');
+              // Renumber if this is a numbered list (failures, advisories, or minor sections)
+              const numberBadge = item.querySelector('.defect-number, .advisory-number, .minor-number');
               if (numberBadge) {
                 numberBadge.textContent = numberIndex++;
               }
@@ -482,6 +552,7 @@ def generate_filter_script() -> str:
       // Setup filters for all sections
       setupFilter('toggle-failures', 'failures-list', 'no-specific-msg', 'defect-item');
       setupFilter('toggle-advisories', 'advisories-list', 'no-advisories-msg', 'advisory-item');
+      setupFilter('toggle-minor', 'minor-list', 'no-minor-msg', 'minor-item');
       setupFilter('toggle-dangerous', 'dangerous-list', 'no-dangerous-msg', 'dangerous-item');
     });
   </script>"""
@@ -507,11 +578,12 @@ def generate_full_page(data: dict) -> str:
     # Generate sections (empty string if no data)
     top_failures_html = generate_top_failures_section(data["top_failures"])
     advisories_html = generate_advisories_section(data.get("advisories", []))
+    minor_html = generate_minor_defects_section(data.get("minor_defects", []))
     dangerous_html = generate_dangerous_defects_section(data["dangerous_defects"])
     year_rates_html = generate_year_pass_rates_section(data["year_pass_rates"])
 
     # Check if we have ANY content
-    has_content = any([top_failures_html, advisories_html, dangerous_html, year_rates_html])
+    has_content = any([top_failures_html, advisories_html, minor_html, dangerous_html, year_rates_html])
     if not has_content:
         return ""  # Signal to skip this model
 
@@ -526,6 +598,7 @@ def generate_full_page(data: dict) -> str:
 
     {top_failures_html}
     {advisories_html}
+    {minor_html}
     {dangerous_html}
     {year_rates_html}
 
