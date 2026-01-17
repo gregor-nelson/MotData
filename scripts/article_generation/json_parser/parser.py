@@ -68,8 +68,8 @@ MATURITY_TIERS = {
 }
 
 # Minimum tests required for inclusion
-MIN_TESTS_PROVEN = 500
-MIN_TESTS_EARLY = 1000  # Higher bar for early vehicles since less meaningful
+MIN_TESTS_PROVEN = 100
+MIN_TESTS_EARLY = 100
 
 
 # Cache for national age benchmarks
@@ -308,7 +308,7 @@ def get_models_aggregated(conn, make: str) -> list:
         FROM vehicle_insights
         WHERE make = ?
         GROUP BY model
-        HAVING SUM(total_tests) >= 500
+        HAVING SUM(total_tests) >= 100
         ORDER BY pass_rate DESC
     """, (make,))
     return [dict_from_row(row) for row in cur.fetchall()]
@@ -347,7 +347,7 @@ def get_core_models_aggregated(conn, make: str) -> list:
                 GROUP_CONCAT(DISTINCT model) as variants
             FROM vehicle_insights
             WHERE make = ? AND (model = ? OR model LIKE ? || ' %')
-            HAVING SUM(total_tests) >= 500
+            HAVING SUM(total_tests) >= 100
         """, (core, make, core, core))
         row = cur.fetchone()
         if row and row["total_tests"]:
@@ -448,7 +448,7 @@ def get_best_models(conn, make: str, limit: int = 15) -> list:
             model, model_year, fuel_type,
             total_tests, pass_rate
         FROM vehicle_insights
-        WHERE make = ? AND total_tests >= 500
+        WHERE make = ? AND total_tests >= 100
     """, (make,))
 
     results = []
@@ -478,7 +478,7 @@ def get_worst_models(conn, make: str, limit: int = 10) -> list:
             model, model_year, fuel_type,
             total_tests, pass_rate
         FROM vehicle_insights
-        WHERE make = ? AND total_tests >= 500
+        WHERE make = ? AND total_tests >= 100
     """, (make,))
 
     results = []
@@ -604,7 +604,7 @@ def get_age_adjusted_scores(conn, make: str) -> list:
     # Calculate aggregate scores
     results = []
     for (model, model_year, fuel_type), data in model_data.items():
-        if data["total_tests"] < 500:  # Minimum sample size
+        if data["total_tests"] < 100:  # Minimum sample size
             continue
 
         bands = data["bands"]

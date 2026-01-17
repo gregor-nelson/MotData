@@ -74,22 +74,23 @@ def generate_head(make: str, model: str, safe_make: str, safe_model: str,
       }}
     }}
 
-    /* Reading progress bar */
+    /* Reading progress bar - uses blue-600 to blue-500 gradient */
     #reading-progress {{
       position: fixed;
       top: 0;
       left: 0;
       height: 3px;
-      background: linear-gradient(90deg, #2563eb, #3b82f6);
+      background: linear-gradient(90deg, #2563eb, #3b82f6);  /* blue-600 to blue-500 */
       z-index: 100;
       transition: width 0.1s ease;
     }}
 
-    /* Pass rate badges */
-    .pass-rate-excellent {{ color: #059669; background: #d1fae5; }}
-    .pass-rate-good {{ color: #16a34a; background: #dcfce7; }}
-    .pass-rate-average {{ color: #ca8a04; background: #fef9c3; }}
-    .pass-rate-poor {{ color: #dc2626; background: #fee2e2; }}
+    /* Pass rate badges - aligned with articles.css color tokens */
+    /* Uses -600 for text, gradient from -50 to -100/50 per ComparisonDashboard pattern */
+    .pass-rate-excellent {{ color: #059669; background: linear-gradient(to bottom right, #ecfdf5, rgba(209, 250, 229, 0.5)); }}
+    .pass-rate-good {{ color: #059669; background: linear-gradient(to bottom right, #ecfdf5, rgba(209, 250, 229, 0.5)); }}
+    .pass-rate-average {{ color: #d97706; background: linear-gradient(to bottom right, #fffbeb, rgba(254, 243, 199, 0.5)); }}
+    .pass-rate-poor {{ color: #dc2626; background: linear-gradient(to bottom right, #fef2f2, rgba(254, 226, 226, 0.5)); }}
 
     .data-badge {{
       display: inline-flex;
@@ -105,7 +106,7 @@ def generate_head(make: str, model: str, safe_make: str, safe_model: str,
     .pass-rate-circle svg {{ transform: rotate(-90deg); }}
     .pass-rate-circle .progress {{ stroke-linecap: round; transition: stroke-dashoffset 0.5s ease; }}
 
-    /* Featured card shadow effect */
+    /* Featured card shadow effect - matches production depth card pattern */
     .featured-card {{
       position: relative;
     }}
@@ -116,7 +117,7 @@ def generate_head(make: str, model: str, safe_make: str, safe_model: str,
       top: 8px;
       width: calc(100% - 16px);
       height: 100%;
-      background-color: rgba(59, 130, 246, 0.08);
+      background: linear-gradient(to bottom right, #eff6ff, rgba(219, 234, 254, 0.5));  /* blue-50 to blue-100/50 */
       border-radius: 1rem;
       transform: rotate(0.5deg);
       z-index: -1;
@@ -138,6 +139,50 @@ def generate_head(make: str, model: str, safe_make: str, safe_model: str,
     .mw-card-lift:hover {{
       transform: translateY(-2px);
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    }}
+
+    /* Custom scrollbar - thin minimal style for all overflow elements */
+    .article-table-wrapper::-webkit-scrollbar,
+    .overflow-y-auto::-webkit-scrollbar,
+    .overflow-x-auto::-webkit-scrollbar,
+    .overflow-auto::-webkit-scrollbar {{
+      width: 6px;
+      height: 6px;
+    }}
+    .article-table-wrapper::-webkit-scrollbar-track,
+    .overflow-y-auto::-webkit-scrollbar-track,
+    .overflow-x-auto::-webkit-scrollbar-track,
+    .overflow-auto::-webkit-scrollbar-track {{
+      background: transparent;
+      border-radius: 3px;
+    }}
+    .article-table-wrapper::-webkit-scrollbar-thumb,
+    .overflow-y-auto::-webkit-scrollbar-thumb,
+    .overflow-x-auto::-webkit-scrollbar-thumb,
+    .overflow-auto::-webkit-scrollbar-thumb {{
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 3px;
+      transition: background 0.2s ease;
+    }}
+    .article-table-wrapper::-webkit-scrollbar-thumb:hover,
+    .overflow-y-auto::-webkit-scrollbar-thumb:hover,
+    .overflow-x-auto::-webkit-scrollbar-thumb:hover,
+    .overflow-auto::-webkit-scrollbar-thumb:hover {{
+      background: rgba(0, 0, 0, 0.25);
+    }}
+    .article-table-wrapper::-webkit-scrollbar-button,
+    .overflow-y-auto::-webkit-scrollbar-button,
+    .overflow-x-auto::-webkit-scrollbar-button,
+    .overflow-auto::-webkit-scrollbar-button {{
+      display: none;
+    }}
+    /* Firefox scrollbar */
+    .article-table-wrapper,
+    .overflow-y-auto,
+    .overflow-x-auto,
+    .overflow-auto {{
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
     }}
   </style>
 
@@ -192,22 +237,51 @@ def get_rate_color_class(rate: float) -> str:
 
 
 def get_rate_bg_color(rate: float) -> str:
-    """Return hex color for inline styles (SVG, charts, etc.)."""
+    """Return hex color for text/inline styles.
+
+    Aligned with articles.css color tokens:
+    - emerald-600 (#059669) for good (>=80%)
+    - amber-600 (#d97706) for average (>=65%)
+    - red-600 (#dc2626) for poor (<65%)
+    """
     if rate >= 80:
-        return "#10b981"
+        return "#059669"  # emerald-600
     elif rate >= 65:
-        return "#f59e0b"
-    return "#ef4444"
+        return "#d97706"  # amber-600
+    return "#dc2626"      # red-600
+
+
+def get_rate_bar_color(rate: float) -> str:
+    """Return hex color for chart bar fills.
+
+    Uses -400 variants for softer appearance matching production
+    ComparisonDashboard pattern:
+    - emerald-400 (#34d399) for good (>=80%)
+    - amber-400 (#fbbf24) for average (>=65%)
+    - red-400 (#f87171) for poor (<65%)
+    """
+    if rate >= 80:
+        return "#34d399"  # emerald-400
+    elif rate >= 65:
+        return "#fbbf24"  # amber-400
+    return "#f87171"      # red-400
 
 
 def get_severity_color(severity: str) -> str:
-    """Return hex color based on severity level."""
+    """Return hex color based on severity level.
+
+    Aligned with articles.css color tokens:
+    - emerald-600 (#059669) for minor defects
+    - amber-600 (#d97706) for major defects
+    - red-600 (#dc2626) for dangerous defects
+    - neutral-600 (#525252) for unknown
+    """
     colors = {
-        "minor": "#10b981",
-        "major": "#f59e0b",
-        "dangerous": "#ef4444"
+        "minor": "#059669",     # emerald-600
+        "major": "#d97706",     # amber-600
+        "dangerous": "#dc2626"  # red-600
     }
-    return colors.get(severity.lower(), "#64748b")
+    return colors.get(severity.lower(), "#525252")  # neutral-600
 
 
 def generate_card(title: str, body_content: str, icon: str = None, highlight: str = None) -> str:

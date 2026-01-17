@@ -27,9 +27,9 @@ SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 DB_PATH = DATA_DIR / "database" / "mot_insights.db"
-JSON_OUTPUT_DIR = DATA_DIR / "generated"
-HTML_OUTPUT_DIR = PROJECT_ROOT / "articles" / "generated"
-LOG_DIR = SCRIPT_DIR / "logs"
+JSON_OUTPUT_DIR = DATA_DIR / "json" / "reliability-reports"
+HTML_OUTPUT_DIR = PROJECT_ROOT / "articles" / "reliability-reports"
+LOG_DIR = DATA_DIR / "logs"
 
 # =============================================================================
 # Logging Configuration
@@ -37,7 +37,11 @@ LOG_DIR = SCRIPT_DIR / "logs"
 
 def setup_logging() -> Path:
     """Configure logging with console and file handlers. Returns log file path."""
-    LOG_DIR.mkdir(exist_ok=True)
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Clean up old log files
+    for old_log in LOG_DIR.glob("article_gen_*.log"):
+        old_log.unlink()
 
     # Create log filename with timestamp
     log_filename = LOG_DIR / f"article_gen_{datetime.now():%Y%m%d_%H%M%S}.log"

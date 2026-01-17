@@ -1,0 +1,53 @@
+KICKOFF: Article Generation Insights Quality Improvement
+
+Reference Document: scripts/article_generation/docs/PRD_SPECIFICATION.md
+
+CONTEXT
+-------
+The article generation component currently enforces minimum test thresholds (500-1000 tests) to ensure statistical validity. This works well for high-volume makes like Ford and Toyota but results in sparse or empty articles for low-volume manufacturers like Lamborghini, Ferrari, and other premium/niche brands.
+
+DISCUSSION TOPICS
+-----------------
+
+1. LOW-VOLUME MAKE HANDLING
+   Current: Data excluded if below threshold, sections skipped entirely
+
+   Questions to explore:
+   - Should we display low-volume data with confidence indicators?
+   - Could we aggregate across similar models or years to reach thresholds?
+   - Should premium makes have different threshold tiers?
+   - How do we communicate statistical uncertainty to users?
+
+2. PREMIUM CUSTOMER VALUE
+   Current: Same insights generated for all makes regardless of market segment
+
+   Questions to explore:
+   - What additional insights would premium car buyers find valuable?
+   - Should we include cost-of-failure analysis for expensive repairs?
+   - Would comparisons within luxury segment be more relevant than national averages?
+   - Are there premium-specific failure patterns worth highlighting?
+
+3. DATA PRESENTATION OPTIONS
+
+   Ideas to consider:
+   - Tiered confidence labels (high/medium/low based on sample size)
+   - Aggregated "luxury segment" benchmarks instead of national
+   - Model family groupings (all 911 variants combined)
+   - Historical trend focus over absolute pass rates
+   - Peer comparison (Lamborghini vs Ferrari vs McLaren)
+
+4. TECHNICAL CONSTRAINTS
+
+   Current thresholds from PRD:
+   - MIN_TESTS_PROVEN: 500 (durability champions)
+   - MIN_TESTS_EARLY: 1000 (early performers)
+   - MIN_TESTS_CORE_MODEL: 500 (model inclusion)
+
+   What statistical validity do we need to maintain?
+
+GOALS FOR THIS SESSION
+----------------------
+- Define acceptable confidence levels for low-volume data display
+- Identify premium-specific insights worth implementing
+- Agree on presentation approach for uncertain data
+- Prioritise improvements for next iteration

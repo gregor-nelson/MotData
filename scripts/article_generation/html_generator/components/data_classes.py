@@ -34,8 +34,8 @@ PASS_RATE_THRESHOLDS = {
 }
 
 # Minimum test thresholds for statistical significance
-MIN_TESTS_PROVEN_DURABILITY = 500    # Minimum tests for proven durability rankings
-MIN_TESTS_EARLY_PERFORMER = 1000     # Minimum tests for early performer rankings
+MIN_TESTS_PROVEN_DURABILITY = 100    # Minimum tests for proven durability rankings
+MIN_TESTS_EARLY_PERFORMER = 100      # Minimum tests for early performer rankings
 
 
 # =============================================================================

@@ -44,8 +44,8 @@ else:
 
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent.parent
-DATA_DIR = PROJECT_DIR / "data" / "generated"  # JSON insights files
-OUTPUT_DIR = PROJECT_DIR / "articles" / "generated"  # HTML output
+DATA_DIR = PROJECT_DIR / "data" / "json" / "reliability-reports"  # JSON insights files
+OUTPUT_DIR = PROJECT_DIR / "articles" / "reliability-reports"  # HTML output
 
 
 # =============================================================================

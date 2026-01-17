@@ -159,7 +159,7 @@ AGE_RATE = "text-xs font-semibold"
 BAR_ROW = "flex flex-col sm:flex-row sm:items-center mb-3 gap-1 sm:gap-0"
 BAR_LABEL = "text-sm text-neutral-700 sm:w-48 sm:flex-shrink-0 sm:truncate"
 BAR_CONTAINER = "flex-1 flex items-center gap-3"
-BAR = "h-6 bg-blue-600 rounded min-w-1 transition-all duration-200"
+BAR = "h-6 bg-blue-400 rounded min-w-1 transition-all duration-200"
 BAR_VALUE = "text-sm text-neutral-500 min-w-[60px]"
 
 # =============================================================================
@@ -251,3 +251,31 @@ BTN_SECONDARY = "inline-flex items-center gap-2 bg-white text-neutral-600 px-4 p
 # =============================================================================
 FADE_IN = "mw-fade-in"
 CARD_LIFT = "mw-card-lift"
+
+# =============================================================================
+# GRADIENT BACKGROUNDS - Matches production ComparisonDashboard/ChartTabs patterns
+# =============================================================================
+GRADIENT_BLUE = "bg-gradient-to-br from-blue-50 to-blue-100/50"
+GRADIENT_EMERALD = "bg-gradient-to-br from-emerald-50 to-emerald-100/50"
+GRADIENT_AMBER = "bg-gradient-to-br from-amber-50 to-amber-100/50"
+GRADIENT_RED = "bg-gradient-to-br from-red-50 to-red-100/50"
+GRADIENT_NEUTRAL = "bg-gradient-to-br from-neutral-50 to-neutral-100/50"
+
+# =============================================================================
+# STAT BOX - Production-aligned styling with gradient icon containers
+# =============================================================================
+STAT_BOX = "flex items-center gap-3 p-3.5 bg-slate-50 rounded-xl border border-neutral-100/50 transition-all hover:-translate-y-0.5 hover:shadow-md"
+STAT_BOX_ICON = "w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm"
+STAT_BOX_ICON_BLUE = f"{STAT_BOX_ICON} {GRADIENT_BLUE} border border-blue-100/50"
+STAT_BOX_ICON_EMERALD = f"{STAT_BOX_ICON} {GRADIENT_EMERALD} border border-emerald-100/50"
+STAT_BOX_ICON_AMBER = f"{STAT_BOX_ICON} {GRADIENT_AMBER} border border-amber-100/50"
+STAT_BOX_ICON_RED = f"{STAT_BOX_ICON} {GRADIENT_RED} border border-red-100/50"
+STAT_BOX_LABEL = "text-[11px] font-medium text-neutral-400 uppercase tracking-wide"
+STAT_BOX_VALUE = "text-lg font-semibold text-neutral-800"
+
+# =============================================================================
+# DEPTH CARD - Production-style layered card effect
+# =============================================================================
+DEPTH_CARD_BACK = "absolute left-1 top-1 right-1 bottom-1 bg-gradient-to-br from-blue-50/30 to-blue-100/20 rounded-2xl -z-10"
+DEPTH_CARD_SHADOW = "absolute -bottom-3 left-1/2 -translate-x-1/2 w-[90%] h-5 bg-blue-100/40 rounded-full blur-xl -z-20"
+DEPTH_CARD_MAIN = "bg-white rounded-2xl shadow-lg border border-neutral-100/80 p-5 sm:p-6"

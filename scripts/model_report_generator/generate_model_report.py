@@ -40,6 +40,46 @@ API_BASE = "http://localhost:8010/api"
 SCRIPT_DIR = Path(__file__).parent
 OUTPUT_DIR = Path(r"C:\Users\gregor\Downloads\Dev\motorwise.io\frontend\public\articles\content\model-reports")
 
+# UK Postcode Area to Location Mapping
+POSTCODE_AREAS = {
+    "AB": "Aberdeen", "AL": "St Albans", "B": "Birmingham", "BA": "Bath",
+    "BB": "Blackburn", "BD": "Bradford", "BH": "Bournemouth", "BL": "Bolton",
+    "BN": "Brighton", "BR": "Bromley", "BS": "Bristol", "BT": "Belfast",
+    "CA": "Carlisle", "CB": "Cambridge", "CF": "Cardiff", "CH": "Chester",
+    "CM": "Chelmsford", "CO": "Colchester", "CR": "Croydon", "CT": "Canterbury",
+    "CV": "Coventry", "CW": "Crewe", "DA": "Dartford", "DD": "Dundee",
+    "DE": "Derby", "DG": "Dumfries", "DH": "Durham", "DL": "Darlington",
+    "DN": "Doncaster", "DT": "Dorchester", "DY": "Dudley", "E": "East London",
+    "EC": "East Central London", "EH": "Edinburgh", "EN": "Enfield", "EX": "Exeter",
+    "FK": "Falkirk", "FY": "Blackpool", "G": "Glasgow", "GL": "Gloucester",
+    "GU": "Guildford", "HA": "Harrow", "HD": "Huddersfield", "HG": "Harrogate",
+    "HP": "Hemel Hempstead", "HR": "Hereford", "HS": "Outer Hebrides", "HU": "Hull",
+    "HX": "Halifax", "IG": "Ilford", "IP": "Ipswich", "IV": "Inverness",
+    "KA": "Kilmarnock", "KT": "Kingston upon Thames", "KW": "Kirkwall", "KY": "Kirkcaldy",
+    "L": "Liverpool", "LA": "Lancaster", "LD": "Llandrindod Wells", "LE": "Leicester",
+    "LL": "Llandudno", "LN": "Lincoln", "LS": "Leeds", "LU": "Luton",
+    "M": "Manchester", "ME": "Medway", "MK": "Milton Keynes", "ML": "Motherwell",
+    "N": "North London", "NE": "Newcastle upon Tyne", "NG": "Nottingham", "NN": "Northampton",
+    "NP": "Newport", "NR": "Norwich", "NW": "North West London", "OL": "Oldham",
+    "OX": "Oxford", "PA": "Paisley", "PE": "Peterborough", "PH": "Perth",
+    "PL": "Plymouth", "PO": "Portsmouth", "PR": "Preston", "RG": "Reading",
+    "RH": "Redhill", "RM": "Romford", "S": "Sheffield", "SA": "Swansea",
+    "SE": "South East London", "SG": "Stevenage", "SK": "Stockport", "SL": "Slough",
+    "SM": "Sutton", "SN": "Swindon", "SO": "Southampton", "SP": "Salisbury",
+    "SR": "Sunderland", "SS": "Southend-on-Sea", "ST": "Stoke-on-Trent", "SW": "South West London",
+    "SY": "Shrewsbury", "TA": "Taunton", "TD": "Galashiels", "TF": "Telford",
+    "TN": "Tonbridge", "TQ": "Torquay", "TR": "Truro", "TS": "Cleveland",
+    "TW": "Twickenham", "UB": "Southall", "W": "West London", "WA": "Warrington",
+    "WC": "West Central London", "WD": "Watford", "WF": "Wakefield", "WN": "Wigan",
+    "WR": "Worcester", "WS": "Walsall", "WV": "Wolverhampton", "YO": "York",
+    "ZE": "Lerwick"
+}
+
+
+def get_postcode_area_name(code: str) -> str:
+    """Get the area name for a postcode prefix."""
+    return POSTCODE_AREAS.get(code.upper(), code)
+
 
 def fetch_json(url: str, silent: bool = False) -> dict | list | None:
     """Fetch JSON from API endpoint. Returns None on error if silent=True."""
@@ -68,22 +108,51 @@ def get_pass_rate_class(rate: float) -> str:
 
 
 def get_pass_rate_color(rate: float) -> str:
-    """Return color based on pass rate."""
+    """Return hex color for text based on pass rate.
+
+    Aligned with articles.css color tokens:
+    - emerald-600 (#059669) for good (>=80%)
+    - amber-600 (#d97706) for average (>=65%)
+    - red-600 (#dc2626) for poor (<65%)
+    """
     if rate >= 80:
-        return "#10b981"  # green
+        return "#059669"  # emerald-600
     elif rate >= 65:
-        return "#f59e0b"  # amber
-    return "#ef4444"  # red
+        return "#d97706"  # amber-600
+    return "#dc2626"      # red-600
+
+
+def get_pass_rate_bar_color(rate: float) -> str:
+    """Return hex color for chart bar fills based on pass rate.
+
+    Uses -400 variants for softer appearance matching production
+    ComparisonDashboard pattern:
+    - emerald-400 (#34d399) for good (>=80%)
+    - amber-400 (#fbbf24) for average (>=65%)
+    - red-400 (#f87171) for poor (<65%)
+    """
+    if rate >= 80:
+        return "#34d399"  # emerald-400
+    elif rate >= 65:
+        return "#fbbf24"  # amber-400
+    return "#f87171"      # red-400
 
 
 def get_severity_color(severity: str) -> str:
-    """Return color based on severity level."""
+    """Return hex color based on severity level.
+
+    Aligned with articles.css color tokens:
+    - emerald-600 (#059669) for minor defects
+    - amber-600 (#d97706) for major defects
+    - red-600 (#dc2626) for dangerous defects
+    - neutral-600 (#525252) for unknown
+    """
     colors = {
-        "minor": "#10b981",
-        "major": "#f59e0b",
-        "dangerous": "#ef4444"
+        "minor": "#059669",     # emerald-600
+        "major": "#d97706",     # amber-600
+        "dangerous": "#dc2626"  # red-600
     }
-    return colors.get(severity.lower(), "#64748b")
+    return colors.get(severity.lower(), "#525252")  # neutral-600
 
 
 def format_number(n) -> str:
@@ -679,7 +748,7 @@ def generate_overview_section_content(data: dict) -> str:
     """Generate pass rate overview section content."""
     summary = data["summary"]
     pass_rate = summary.get("pass_rate", 0) or 0
-    pass_rate_color = get_pass_rate_color(pass_rate)
+    pass_rate_ring_color = get_pass_rate_bar_color(pass_rate)
     circumference = 2 * 3.14159 * 54
     progress = circumference - (pass_rate / 100) * circumference
 
@@ -696,49 +765,79 @@ def generate_overview_section_content(data: dict) -> str:
         rate = y.get("pass_rate", 0)
         height_pct = (tests / max_tests * 100) if max_tests > 0 else 0
         year_bars += f"""
-            <div class="{tw.YEAR_BAR_COL}">
-                <div class="{tw.YEAR_BAR_WRAPPER}">
-                    <div class="{tw.YEAR_BAR}" style="height: {height_pct}%; background: {get_pass_rate_color(rate)};" title="{rate:.1f}%"></div>
+            <div class="flex flex-col items-center min-w-[32px] sm:min-w-[44px] group">
+                <div class="h-28 w-8 flex items-end">
+                    <div class="w-full rounded-t-lg transition-all duration-300 group-hover:opacity-80 group-hover:-translate-y-0.5"
+                         style="height: {height_pct}%; background: {get_pass_rate_bar_color(rate)};"
+                         title="{rate:.1f}% pass rate"></div>
                 </div>
-                <div class="{tw.YEAR_LABEL}">{y['year']}</div>
-                <div class="{tw.YEAR_RATE}" style="color: {get_pass_rate_color(rate)}">{rate:.0f}%</div>
+                <div class="text-[11px] mt-2 text-neutral-500 font-medium">{y['year']}</div>
+                <div class="text-[11px] font-semibold" style="color: {get_pass_rate_color(rate)}">{rate:.0f}%</div>
             </div>"""
 
     return f"""
-        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-6">
-            <div class="relative w-36 h-36 flex-shrink-0 pass-rate-circle">
-                <svg width="144" height="144">
-                    <circle class="bg" cx="72" cy="72" r="54" fill="none" stroke="#f1f5f9" stroke-width="12"/>
-                    <circle class="progress" cx="72" cy="72" r="54"
+        <div class="flex flex-col md:flex-row items-center gap-5 md:gap-8 mb-5">
+            <!-- Circular progress ring with glow -->
+            <div class="relative w-36 h-36 flex-shrink-0">
+                <!-- Subtle glow behind ring -->
+                <div class="absolute inset-2 rounded-full bg-gradient-to-br from-blue-50 to-blue-100/50 blur-xl opacity-60"></div>
+
+                <svg width="144" height="144" viewBox="0 0 144 144" class="-rotate-90 relative">
+                    <circle cx="72" cy="72" r="54" fill="none" stroke="#f5f5f5" stroke-width="10"/>
+                    <circle cx="72" cy="72" r="54"
                         fill="none"
-                        stroke="{pass_rate_color}"
-                        stroke-width="12"
+                        stroke="{pass_rate_ring_color}"
+                        stroke-width="10"
+                        stroke-linecap="round"
                         stroke-dasharray="{circumference}"
-                        stroke-dashoffset="{progress}"/>
+                        stroke-dashoffset="{progress}"
+                        style="transition: stroke-dashoffset 1s ease-out"/>
                 </svg>
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-                    <div class="text-3xl font-bold" style="color: {pass_rate_color}">{pass_rate:.1f}%</div>
-                    <div class="text-xs text-neutral-500 uppercase tracking-wide">Pass Rate</div>
+                    <div class="text-2xl font-bold text-neutral-900">{pass_rate:.1f}%</div>
+                    <div class="text-[10px] font-medium text-neutral-400 uppercase tracking-wider">Pass Rate</div>
                 </div>
             </div>
+
+            <!-- Stat boxes with gradient icon containers -->
             <div class="flex-1 min-w-0 sm:min-w-[200px]">
                 <h3 class="text-base font-semibold text-neutral-900 mb-3">Test Statistics</h3>
                 <div class="grid grid-cols-2 gap-3 sm:gap-4">
-                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
-                        <span class="text-xs text-neutral-500">Total Tests</span>
-                        <span class="text-lg font-semibold text-neutral-900">{format_number(summary.get('total_tests'))}</span>
+                    <div class="flex items-center gap-3 p-3.5 bg-slate-50 rounded-xl border border-neutral-100/50 transition-all hover:-translate-y-0.5 hover:shadow-md">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100/50 flex items-center justify-center flex-shrink-0 shadow-sm border border-blue-100/50">
+                            <i class="ph ph-clipboard-text text-blue-600 text-sm"></i>
+                        </div>
+                        <div class="flex flex-col min-w-0">
+                            <span class="text-[11px] font-medium text-neutral-400 uppercase tracking-wide">Total Tests</span>
+                            <span class="text-lg font-semibold text-neutral-800">{format_number(summary.get('total_tests'))}</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
-                        <span class="text-xs text-neutral-500">Average Mileage</span>
-                        <span class="text-lg font-semibold text-neutral-900">{format_number(summary.get('avg_mileage'))} mi</span>
+                    <div class="flex items-center gap-3 p-3.5 bg-slate-50 rounded-xl border border-neutral-100/50 transition-all hover:-translate-y-0.5 hover:shadow-md">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-amber-50 to-amber-100/50 flex items-center justify-center flex-shrink-0 shadow-sm border border-amber-100/50">
+                            <i class="ph ph-gauge text-amber-600 text-sm"></i>
+                        </div>
+                        <div class="flex flex-col min-w-0">
+                            <span class="text-[11px] font-medium text-neutral-400 uppercase tracking-wide">Avg Mileage</span>
+                            <span class="text-lg font-semibold text-neutral-800">{format_number(summary.get('avg_mileage'))} mi</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
-                        <span class="text-xs text-neutral-500">Total Passes</span>
-                        <span class="text-lg font-semibold text-neutral-900">{format_number(total_passes)}</span>
+                    <div class="flex items-center gap-3 p-3.5 bg-slate-50 rounded-xl border border-neutral-100/50 transition-all hover:-translate-y-0.5 hover:shadow-md">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-emerald-50 to-emerald-100/50 flex items-center justify-center flex-shrink-0 shadow-sm border border-emerald-100/50">
+                            <i class="ph ph-check-circle text-emerald-600 text-sm"></i>
+                        </div>
+                        <div class="flex flex-col min-w-0">
+                            <span class="text-[11px] font-medium text-neutral-400 uppercase tracking-wide">Total Passes</span>
+                            <span class="text-lg font-semibold text-neutral-800">{format_number(total_passes)}</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col p-3 bg-neutral-50 rounded-xl">
-                        <span class="text-xs text-neutral-500">Total Failures</span>
-                        <span class="text-lg font-semibold text-neutral-900">{format_number(total_fails)}</span>
+                    <div class="flex items-center gap-3 p-3.5 bg-slate-50 rounded-xl border border-neutral-100/50 transition-all hover:-translate-y-0.5 hover:shadow-md">
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-red-50 to-red-100/50 flex items-center justify-center flex-shrink-0 shadow-sm border border-red-100/50">
+                            <i class="ph ph-x-circle text-red-600 text-sm"></i>
+                        </div>
+                        <div class="flex flex-col min-w-0">
+                            <span class="text-[11px] font-medium text-neutral-400 uppercase tracking-wide">Total Failures</span>
+                            <span class="text-lg font-semibold text-neutral-800">{format_number(total_fails)}</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -748,7 +847,7 @@ def generate_overview_section_content(data: dict) -> str:
             <p>Pass rate trend by model year:</p>
         </div>
 
-        <div class="{tw.YEAR_CHART}">{year_bars if year_bars else '<p class="text-neutral-500">No year data available</p>'}
+        <div class="flex items-end gap-2 h-48 py-5 overflow-x-auto">{year_bars if year_bars else '<p class="text-neutral-500">No year data available</p>'}
         </div>"""
 
 
@@ -767,9 +866,9 @@ def generate_rankings_content(rankings: dict) -> str:
 
         badges += f"""
             <div class="text-center p-4 bg-neutral-50 rounded-xl">
-                <div class="text-2xl font-bold text-blue-600">#{rank}</div>
+                <div class="text-2xl font-bold text-blue-500">#{rank}</div>
                 <div class="text-xs text-neutral-500 mt-1">of {total} {format_ranking_type(rank_type)}</div>
-                <div class="inline-block mt-2 px-2.5 py-1 bg-blue-600 text-white rounded-full text-xs font-semibold">Top {percentile}%</div>
+                <div class="inline-block mt-2 px-2.5 py-1 bg-blue-500 text-white rounded-full text-xs font-semibold">Top {percentile}%</div>
             </div>"""
 
     return f"""
@@ -837,7 +936,7 @@ def generate_age_section_content(age_bands: list) -> str:
         bars += f"""
             <div class="{tw.AGE_BAR_COL}">
                 <div class="{tw.AGE_BAR_WRAPPER}">
-                    <div class="{tw.AGE_BAR}" style="height: {height_pct}%; background: {get_pass_rate_color(rate)};"></div>
+                    <div class="{tw.AGE_BAR}" style="height: {height_pct}%; background: {get_pass_rate_bar_color(rate)};"></div>
                 </div>
                 <div class="{tw.AGE_LABEL}">{band}</div>
                 <div class="{tw.AGE_RATE}" style="color: {get_pass_rate_color(rate)}">{rate:.0f}%</div>
@@ -924,7 +1023,7 @@ def generate_seasonal_content(seasonal: list) -> str:
         bars += f"""
             <div class="{tw.MONTHLY_BAR_COL}">
                 <div class="{tw.MONTHLY_BAR_WRAPPER}">
-                    <div class="{tw.MONTHLY_BAR}" style="height: {height_pct}%; background: {get_pass_rate_color(rate)};"></div>
+                    <div class="{tw.MONTHLY_BAR}" style="height: {height_pct}%; background: {get_pass_rate_bar_color(rate)};"></div>
                 </div>
                 <div class="{tw.MONTHLY_LABEL}">{get_month_name(month)}</div>
                 <div class="{tw.MONTHLY_RATE}" style="color: {get_pass_rate_color(rate)}">{rate:.0f}%</div>
@@ -948,10 +1047,12 @@ def generate_geographic_content(geographic: list) -> str:
     best_rows = ""
     for g in best:
         rate = g.get("pass_rate", 0)
+        postcode = g.get('postcode_area', 'N/A')
+        area_name = get_postcode_area_name(postcode)
         badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
         best_rows += f"""
             <tr>
-                <td><strong>{g.get('postcode_area', 'N/A')}</strong></td>
+                <td><strong>{postcode}</strong> <span class="text-neutral-500">({area_name})</span></td>
                 <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
                 <td>{format_number(g.get('total_tests'))}</td>
             </tr>"""
@@ -959,10 +1060,12 @@ def generate_geographic_content(geographic: list) -> str:
     worst_rows = ""
     for g in worst:
         rate = g.get("pass_rate", 0)
+        postcode = g.get('postcode_area', 'N/A')
+        area_name = get_postcode_area_name(postcode)
         badge_class = "pass-rate-excellent" if rate >= 80 else ("pass-rate-good" if rate >= 65 else "pass-rate-average")
         worst_rows += f"""
             <tr>
-                <td><strong>{g.get('postcode_area', 'N/A')}</strong></td>
+                <td><strong>{postcode}</strong> <span class="text-neutral-500">({area_name})</span></td>
                 <td><span class="data-badge {badge_class}">{rate:.1f}%</span></td>
                 <td>{format_number(g.get('total_tests'))}</td>
             </tr>"""
@@ -1021,46 +1124,211 @@ def generate_failures_content(data: dict) -> str:
             </div>
             <div class="mb-6">{failure_bars}</div>"""
 
-    # Top specific failures
+    # Defect Details Section - Single Unified Table
+    top_advisories = data.get("top_advisories", [])[:10]
     top_failures = data.get("top_failures", [])[:10]
-    if top_failures:
-        failures_rows = ""
-        for d in top_failures:
-            failures_rows += f"""
-                <tr>
-                    <td>{truncate(d.get('defect_description', 'Unknown'), 50)}</td>
-                    <td>{format_number(d.get('occurrence_count'))}</td>
-                </tr>"""
+    dangerous = data.get("dangerous_defects", [])[:10]
 
-        content += f"""
-            <div class="mt-6">
-                <h4 class="text-sm font-semibold text-neutral-900 mb-3">Top Specific Failures</h4>
-                <div class="article-table-wrapper">
-                    <table class="article-table">
-                        <thead><tr><th>Defect</th><th>Count</th></tr></thead>
-                        <tbody>{failures_rows}</tbody>
-                    </table>
-                </div>
+    if top_advisories or top_failures or dangerous:
+        content += """
+            <div class="mt-8 mb-6">
+                <h3 class="text-base font-semibold text-neutral-900 mb-4 flex items-center gap-2">
+                    <i class="ph ph-list-checks text-blue-600"></i>
+                    Defect Details
+                </h3>
             </div>"""
 
-    # Dangerous defects warning
-    dangerous = data.get("dangerous_defects", [])
-    if dangerous:
-        dangerous_list = ", ".join([d.get('defect_description', 'Unknown')[:30] for d in dangerous[:3]])
-        content += templates.generate_callout(
-            'danger',
-            f'{len(dangerous)} dangerous defects recorded',
-            f'Including: {dangerous_list}...'
-        )
+        # Build unified defect list sorted by severity (Dangerous > Major > Advisory)
+        unified_defects = []
+
+        # Add dangerous defects (highest priority)
+        for d in dangerous:
+            unified_defects.append({
+                'description': d.get('defect_description', 'Unknown'),
+                'count': d.get('occurrence_count', 0),
+                'severity': 'Dangerous',
+                'severity_order': 0,
+                'badge_class': 'bg-gradient-to-br from-red-50 to-red-100/50 text-red-700 border border-red-200/50',
+                'row_class': 'border-l-2 border-l-red-400 bg-red-50/30'
+            })
+
+        # Add major defects
+        for d in top_failures:
+            unified_defects.append({
+                'description': d.get('defect_description', 'Unknown'),
+                'count': d.get('occurrence_count', 0),
+                'severity': 'Major',
+                'severity_order': 1,
+                'badge_class': 'bg-gradient-to-br from-blue-50 to-blue-100/50 text-blue-700 border border-blue-200/50',
+                'row_class': ''
+            })
+
+        # Add advisories (lowest priority)
+        for d in top_advisories:
+            unified_defects.append({
+                'description': d.get('defect_description', 'Unknown'),
+                'count': d.get('occurrence_count', 0),
+                'severity': 'Advisory',
+                'severity_order': 2,
+                'badge_class': 'bg-gradient-to-br from-amber-50 to-amber-100/50 text-amber-700 border border-amber-200/50',
+                'row_class': ''
+            })
+
+        # Sort by severity order, then by count descending
+        unified_defects.sort(key=lambda x: (x['severity_order'], -x['count']))
+
+        # Generate table rows
+        defect_rows = ""
+        for d in unified_defects:
+            row_class = d['row_class']
+            defect_rows += f"""
+                    <tr class="{row_class}">
+                        <td class="text-xs py-2.5 pl-3">{truncate(d['description'], 60).title()}</td>
+                        <td class="text-xs py-2.5 text-center">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold {d['badge_class']}">
+                                {d['severity']}
+                            </span>
+                        </td>
+                        <td class="text-right text-xs font-medium py-2.5 pr-3">{format_number(d['count'])}</td>
+                    </tr>"""
+
+        content += f"""
+            <div class="article-table-wrapper max-h-96 overflow-y-auto">
+                <table class="article-table text-xs w-full">
+                    <thead class="sticky top-0 bg-neutral-50 z-10">
+                        <tr>
+                            <th class="text-xs text-left py-3 pl-3 font-semibold text-neutral-700">Defect</th>
+                            <th class="text-xs text-center py-3 font-semibold text-neutral-700 w-24">Severity</th>
+                            <th class="text-xs text-right py-3 pr-3 font-semibold text-neutral-700 w-20">Count</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-neutral-100">{defect_rows}</tbody>
+                </table>
+            </div>"""
+
+        # Add warning callout if there are dangerous defects
+        if dangerous:
+            dangerous_list = ", ".join([d.get('defect_description', 'Unknown')[:30] for d in dangerous[:3]])
+            content += templates.generate_callout(
+                'danger',
+                f'{len(data.get("dangerous_defects", []))} dangerous defects recorded',
+                f'Including: {dangerous_list}...'
+            )
 
     return content if content else '<p class="text-neutral-500">No failure data available</p>'
 
 
 def generate_variants_content(all_variants: list) -> str:
-    """Generate all variants table content."""
+    """Generate all variants table content with mileage chart."""
     if not all_variants:
         return '<p class="text-neutral-500">No variant data available</p>'
 
+    # Aggregate mileage by year (weighted average across fuel types)
+    year_mileage = {}
+    for v in all_variants:
+        year = v.get('year')
+        mileage = v.get('avg_mileage')
+        tests = v.get('total_tests', 0)
+        if year and mileage and tests > 0:
+            if year not in year_mileage:
+                year_mileage[year] = {'total_mileage': 0, 'total_tests': 0}
+            year_mileage[year]['total_mileage'] += mileage * tests
+            year_mileage[year]['total_tests'] += tests
+
+    # Calculate weighted average mileage per year
+    mileage_by_year = []
+    for year, data in sorted(year_mileage.items()):
+        if data['total_tests'] > 0:
+            avg_mileage = data['total_mileage'] / data['total_tests']
+            mileage_by_year.append({'year': year, 'avg_mileage': avg_mileage})
+
+    # Generate mileage line chart
+    mileage_chart = ""
+    if len(mileage_by_year) >= 5:
+        max_mileage = max(m['avg_mileage'] for m in mileage_by_year)
+        min_mileage = min(m['avg_mileage'] for m in mileage_by_year)
+        mileage_range = max_mileage - min_mileage
+        if mileage_range == 0:
+            mileage_range = max_mileage * 0.1  # Avoid division by zero
+
+        # Chart dimensions
+        chart_width = 600
+        chart_height = 160
+        padding_left = 50
+        padding_right = 20
+        padding_top = 20
+        padding_bottom = 40
+        plot_width = chart_width - padding_left - padding_right
+        plot_height = chart_height - padding_top - padding_bottom
+
+        num_points = len(mileage_by_year)
+        x_step = plot_width / (num_points - 1) if num_points > 1 else plot_width
+
+        # Build points for the line
+        points = []
+        circles = ""
+        labels = ""
+        for i, m in enumerate(mileage_by_year):
+            x = padding_left + i * x_step
+            # Invert Y since SVG Y increases downward
+            y_pct = (m['avg_mileage'] - min_mileage) / mileage_range
+            y = padding_top + plot_height - (y_pct * plot_height)
+            points.append(f"{x},{y}")
+            mileage_k = m['avg_mileage'] / 1000
+
+            # Data point circles with hover effect
+            circles += f'''
+                <circle cx="{x}" cy="{y}" r="3" fill="#3b82f6" class="transition-all duration-200 cursor-pointer">
+                    <title>{m['year']}: {m['avg_mileage']:,.0f} miles</title>
+                </circle>'''
+
+            # Year labels on x-axis (show every label if few points, otherwise every 2nd/3rd)
+            show_label = num_points <= 10 or i % (1 + num_points // 10) == 0 or i == num_points - 1
+            if show_label:
+                labels += f'<text x="{x}" y="{chart_height - 8}" text-anchor="middle" class="text-[11px] fill-neutral-500">{m["year"]}</text>'
+
+        polyline_points = " ".join(points)
+
+        # Y-axis labels (min, mid, max)
+        mid_mileage = (max_mileage + min_mileage) / 2
+        y_labels = f'''
+            <text x="{padding_left - 8}" y="{padding_top + 4}" text-anchor="end" class="text-[10px] fill-neutral-400">{max_mileage/1000:.0f}k</text>
+            <text x="{padding_left - 8}" y="{padding_top + plot_height/2 + 4}" text-anchor="end" class="text-[10px] fill-neutral-400">{mid_mileage/1000:.0f}k</text>
+            <text x="{padding_left - 8}" y="{padding_top + plot_height + 4}" text-anchor="end" class="text-[10px] fill-neutral-400">{min_mileage/1000:.0f}k</text>
+        '''
+
+        # Grid lines
+        grid_lines = f'''
+            <line x1="{padding_left}" y1="{padding_top}" x2="{padding_left + plot_width}" y2="{padding_top}" stroke="#e5e5e5" stroke-dasharray="4"/>
+            <line x1="{padding_left}" y1="{padding_top + plot_height/2}" x2="{padding_left + plot_width}" y2="{padding_top + plot_height/2}" stroke="#e5e5e5" stroke-dasharray="4"/>
+            <line x1="{padding_left}" y1="{padding_top + plot_height}" x2="{padding_left + plot_width}" y2="{padding_top + plot_height}" stroke="#e5e5e5"/>
+        '''
+
+        mileage_chart = f"""
+        <div class="mb-8">
+            <h4 class="text-sm font-semibold text-neutral-900 mb-3">Average Mileage by Model Year</h4>
+            <div class="overflow-x-auto">
+                <svg viewBox="0 0 {chart_width} {chart_height}" class="w-full h-auto min-w-[400px] sm:min-w-0" preserveAspectRatio="xMidYMid meet">
+                    {grid_lines}
+                    {y_labels}
+                    <!-- Area fill under line -->
+                    <polygon points="{padding_left},{padding_top + plot_height} {polyline_points} {padding_left + (num_points-1) * x_step},{padding_top + plot_height}"
+                             fill="url(#mileageGradient)" opacity="0.3"/>
+                    <!-- Line -->
+                    <polyline points="{polyline_points}" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    {circles}
+                    {labels}
+                    <defs>
+                        <linearGradient id="mileageGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4"/>
+                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>"""
+
+    # Generate variants table rows
     rows = ""
     for v in all_variants:
         rate = v.get("pass_rate", 0)
@@ -1075,10 +1343,11 @@ def generate_variants_content(all_variants: list) -> str:
             </tr>"""
 
     return f"""
+        {mileage_chart}
         <div class="article-prose mb-4">
             <p>Complete breakdown of all {len(all_variants)} variants:</p>
         </div>
-        <div class="article-table-wrapper max-h-96 overflow-y-auto">
+        <div class="article-table-wrapper max-h-96 overflow-y-auto ">
             <table class="article-table">
                 <thead>
                     <tr>
