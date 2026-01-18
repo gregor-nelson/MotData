@@ -18,8 +18,22 @@ from .data_classes import (
 )
 
 
-def generate_header_section(insights: ArticleInsights, today_display: str) -> str:
+def generate_header_section(insights: ArticleInsights, today_display: str, read_time: str) -> str:
     """Generate the article header."""
+    # Calculate actual year range from core_models data
+    # Filter for reasonable years (1970+ to exclude data anomalies like "1012")
+    if insights.core_models:
+        valid_years_from = [m.year_from for m in insights.core_models if 1970 <= m.year_from <= 2030]
+        valid_years_to = [m.year_to for m in insights.core_models if 1970 <= m.year_to <= 2030]
+        if valid_years_from and valid_years_to:
+            min_year = min(valid_years_from)
+            max_year = max(valid_years_to)
+            year_range = f"{min_year}-{max_year}"
+        else:
+            year_range = "2000-2023"  # Fallback for no valid years
+    else:
+        year_range = "2000-2023"  # Fallback
+
     return f'''      <!-- Header -->
       <header class="mb-8">
         <div class="flex flex-wrap items-center gap-3 mb-4">
@@ -27,7 +41,7 @@ def generate_header_section(insights: ArticleInsights, today_display: str) -> st
             <i class="ph ph-chart-bar"></i>
             Reliability Data
           </span>
-          <span class="text-sm text-neutral-500">12 min read</span>
+          <span class="text-sm text-neutral-500">{read_time} min read</span>
           <span class="text-sm text-neutral-500">Updated {today_display}</span>
         </div>
 
@@ -47,7 +61,7 @@ def generate_header_section(insights: ArticleInsights, today_display: str) -> st
         </div>
         <div>
           <p class="text-base font-semibold text-emerald-700">{format_number(insights.total_tests)} MOT tests analysed</p>
-          <p class="text-sm text-emerald-600">Real DVSA data covering every {insights.title_make} model from 2000-2023</p>
+          <p class="text-sm text-emerald-600">Real DVSA data covering every {insights.title_make} model from {year_range}</p>
         </div>
       </div>'''
 
@@ -65,7 +79,11 @@ def generate_key_findings_section(insights: ArticleInsights) -> str:
 
     # Durability champion info - now uses evidence-tiered data
     if durability_champ:
-        durability_name = f"{durability_champ.model} {durability_champ.model_year}"
+        # v3.0: model_year may be 0 when aggregated by core model
+        if durability_champ.model_year and durability_champ.model_year > 0:
+            durability_name = f"{durability_champ.model} {durability_champ.model_year}"
+        else:
+            durability_name = durability_champ.model
         durability_score = durability_champ.vs_national_formatted
         # New format includes age band tested at
         durability_context = f" at {durability_champ.age_band}"
@@ -74,7 +92,11 @@ def generate_key_findings_section(insights: ArticleInsights) -> str:
         # Fall back to early performer if no proven champion
         early_performer = insights.get_top_early_performer()
         if early_performer:
-            durability_name = f"{early_performer.model} {early_performer.model_year}"
+            # v3.0: model_year may be 0 when aggregated by core model
+            if early_performer.model_year and early_performer.model_year > 0:
+                durability_name = f"{early_performer.model} {early_performer.model_year}"
+            else:
+                durability_name = early_performer.model
             durability_score = early_performer.vs_national_formatted
             durability_context = " (early results)"
             durability_label = "Best Early Performer"
@@ -321,6 +343,38 @@ def generate_best_models_section(insights: ArticleInsights) -> str:
       </section>'''
 
 
+def _get_durability_intro_text(insights: ArticleInsights) -> str:
+    """
+    Generate appropriate intro text for durability section based on actual rating.
+
+    Avoids blanket "proven their durability" claims for brands with mixed/poor results.
+    Uses the durability_rating from reliability_summary to determine tone.
+    """
+    rating = None
+    avg_vs_national = None
+
+    if insights.reliability_summary:
+        rating = insights.reliability_summary.durability_rating
+        avg_vs_national = insights.reliability_summary.proven_avg_vs_national
+
+    # Tier the intro based on actual durability performance
+    if rating == "Excellent" or (avg_vs_national and avg_vs_national >= 10):
+        return f'''These {insights.title_make} models have <strong>proven exceptional durability</strong> with 11+ years of real-world MOT data. They consistently outperform the national average for cars of the same age:'''
+
+    elif rating == "Good" or (avg_vs_national and avg_vs_national >= 5):
+        return f'''These {insights.title_make} models show <strong>solid long-term reliability</strong> based on 11+ years of MOT data. Here's how they compare to the national average for cars of the same age:'''
+
+    elif rating == "Average" or (avg_vs_national and avg_vs_national >= 0):
+        return f'''Here's how {insights.title_make} models have performed over 11+ years of real-world MOT testing, compared against the national average for cars of the same age:'''
+
+    elif rating == "Below Average" or (avg_vs_national and avg_vs_national < 0):
+        return f'''Long-term MOT data shows mixed results for {insights.title_make} durability. Here's how specific models compare to the national average for cars of the same age:'''
+
+    else:
+        # Fallback for unknown/missing rating - neutral factual statement
+        return f'''Here's how {insights.title_make} models with 11+ years of MOT history compare to the national average for cars of the same age:'''
+
+
 def generate_durability_section(insights: ArticleInsights) -> str:
     """
     Generate the durability champions section using evidence-tiered scoring.
@@ -328,14 +382,11 @@ def generate_durability_section(insights: ArticleInsights) -> str:
     This section highlights models with PROVEN durability (11+ years of data)
     that still perform above average for their age.
 
-    v2.1: Now shows comparison context with weighted age-band averages from database.
+    v2.2: Dynamic intro text based on actual durability_rating.
     """
     # Check if we have proven durability data
     if not insights.has_proven_durability_data():
-        # Fall back to legacy if no proven data
-        if not insights.age_adjusted_best:
-            return ""
-        return _generate_durability_section_legacy(insights)
+        return ""
 
     rows = []
     for m in insights.proven_durability_champions[:10]:
@@ -343,10 +394,12 @@ def generate_durability_section(insights: ArticleInsights) -> str:
         highlight = ' class="bg-emerald-50"' if m.vs_national_at_age >= 10 else ''
         # v2.1: Show context with age-specific national average
         vs_display = f'<span class="{vs_class} font-semibold" title="{m.comparison_context}">{m.vs_national_formatted}</span>'
+        # v3.0: Show "-" if model_year is 0 (aggregated data)
+        year_display = str(m.model_year) if m.model_year and m.model_year > 0 else "-"
 
         rows.append(f'''              <tr{highlight}>
                 <td><strong>{safe_html(m.model)}</strong></td>
-                <td>{m.model_year}</td>
+                <td>{year_display}</td>
                 <td>{safe_html(m.fuel_name)}</td>
                 <td>{vs_display}</td>
                 <td class="text-neutral-500 text-sm">{safe_html(m.age_band)}</td>
@@ -359,12 +412,14 @@ def generate_durability_section(insights: ArticleInsights) -> str:
     top = insights.get_top_durable_model()
     standout_note = ""
     if top and top.vs_national_at_age >= 15:
+        # v3.0: model_year may be 0 when aggregated by core model
+        top_name = f"{top.model} {top.model_year}" if top.model_year and top.model_year > 0 else top.model
         standout_note = f'''
         <div class="callout tip">
           <i class="ph ph-trophy callout-icon"></i>
           <div class="callout-content">
             <p class="callout-title">Proven durability champion</p>
-            <p class="callout-text">The {top.model} {top.model_year} outperforms the average {top.age_band}-old car by {top.vs_national_at_age:.0f} percentage points, with {format_number(top.total_tests)} MOT tests proving its reliability.</p>
+            <p class="callout-text">The {top_name} outperforms the average {top.age_band}-old car by {top.vs_national_at_age:.0f} percentage points, with {format_number(top.total_tests)} MOT tests proving its reliability.</p>
           </div>
         </div>'''
 
@@ -394,7 +449,7 @@ def generate_durability_section(insights: ArticleInsights) -> str:
         </div>
 
         <div class="article-prose">
-          <p>These {insights.title_make} models have <strong>proven their durability</strong> with 11+ years of real-world MOT data. They're compared against the national average for cars of the same age:</p>
+          <p>{_get_durability_intro_text(insights)}</p>
         </div>
 {rating_badge}
         <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
@@ -428,70 +483,6 @@ def generate_durability_section(insights: ArticleInsights) -> str:
       </section>'''
 
 
-def _generate_durability_section_legacy(insights: ArticleInsights) -> str:
-    """
-    LEGACY: Generate durability section using old age-adjusted methodology.
-
-    Used as fallback when proven durability data is not available.
-    """
-    rows = []
-    for m in insights.age_adjusted_best[:10]:
-        vs_class = "text-emerald-600" if m.avg_vs_national >= 0 else "text-red-600"
-        trend_icon = "ph-trend-up text-emerald-600" if m.durability_trend > 0 else "ph-trend-down text-red-600" if m.durability_trend < 0 else "ph-minus text-neutral-500"
-        highlight = ' class="bg-emerald-50"' if m.avg_vs_national >= 10 else ''
-
-        age_context = ""
-        if m.best_age_band:
-            age_context = f"({m.best_age_band.pass_rate:.0f}% at {m.best_age_band.age_band})"
-
-        rows.append(f'''              <tr{highlight}>
-                <td><strong>{safe_html(m.model)}</strong></td>
-                <td>{m.model_year}</td>
-                <td>{safe_html(m.fuel_name)}</td>
-                <td><span class="{vs_class} font-semibold">{m.vs_national_formatted}</span></td>
-                <td><i class="ph {trend_icon}"></i></td>
-                <td class="text-neutral-500 text-sm">{age_context}</td>
-              </tr>''')
-
-    rows_html = "\n".join(rows)
-
-    return f'''      <!-- Section: Durability Champions -->
-      <section id="durability" class="article-section">
-        <div class="article-section-header">
-          <div class="article-section-icon">
-            <i class="ph ph-shield-check"></i>
-          </div>
-          <h2 class="article-section-title">Durability Champions: Which {insights.title_make} Models Age Best?</h2>
-        </div>
-
-        <div class="article-prose">
-          <p>Raw pass rates favour newer cars. This ranking compares each model against the <strong>national average for cars of the same age</strong>:</p>
-        </div>
-
-        <div class="article-table-wrapper">
-          <table class="article-table">
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Year</th>
-                <th>Fuel</th>
-                <th>vs Same-Age Average</th>
-                <th>Trend</th>
-                <th>Context</th>
-              </tr>
-            </thead>
-            <tbody>
-{rows_html}
-            </tbody>
-          </table>
-        </div>
-
-        <div class="article-prose mt-4">
-          <p><strong>How to read this:</strong> A score of "+15%" means the model passes MOTs 15 percentage points more often than the average car of the same age.</p>
-        </div>
-      </section>'''
-
-
 def generate_early_performers_section(insights: ArticleInsights) -> str:
     """
     Generate the early performers section (3-6 years, unproven durability).
@@ -509,10 +500,12 @@ def generate_early_performers_section(insights: ArticleInsights) -> str:
         vs_class = "text-emerald-600" if m.vs_national_at_age >= 0 else "text-red-600"
         # v2.1: Show context with age-specific national average
         vs_display = f'<span class="{vs_class} font-semibold" title="{m.comparison_context}">{m.vs_national_formatted}</span>'
+        # v3.0: Show "-" if model_year is 0 (aggregated data)
+        year_display = str(m.model_year) if m.model_year and m.model_year > 0 else "-"
 
         rows.append(f'''              <tr>
                 <td><strong>{safe_html(m.model)}</strong></td>
-                <td>{m.model_year}</td>
+                <td>{year_display}</td>
                 <td>{safe_html(m.fuel_name)}</td>
                 <td>{vs_display}</td>
                 <td class="text-neutral-500 text-sm">{safe_html(m.age_band)}</td>
@@ -630,7 +623,8 @@ def generate_model_breakdowns_section(insights: ArticleInsights) -> str:
 
         verdict = f"<strong>{safe_html(model.name)} verdict:</strong> "
         if best_year and best_year.pass_rate >= 90:
-            verdict += f"The {best_year.model_year} {best_year.fuel_name.lower()} model achieves an excellent {best_year.pass_rate:.1f}% pass rate. "
+            points_above = best_year.pass_rate - insights.national_pass_rate
+            verdict += f"The {best_year.model_year} {best_year.fuel_name.lower()} model achieves a {best_year.pass_rate:.1f}% pass rate ({points_above:.0f} points above average). "
         if worst_year:
             verdict += f"Avoid the {worst_year.model_year} {worst_year.fuel_name.lower()} ({worst_year.pass_rate:.1f}%)."
 
@@ -638,13 +632,37 @@ def generate_model_breakdowns_section(insights: ArticleInsights) -> str:
         warning = ""
         if worst_years:
             worst_example = worst_years[0]
+
+            # Generate specific title based on how many bad years exist
+            bad_year_list = [y.model_year for y in worst_years]
+            if len(worst_years) == 1:
+                # Single bad year - be specific
+                warning_title = f"Avoid the {worst_example.model_year} {model.name}"
+            elif len(worst_years) == 2:
+                # Two bad years - list them
+                warning_title = f"Avoid {bad_year_list[0]} and {bad_year_list[1]} {model.name}s"
+            else:
+                # Check if years are consecutive (pattern)
+                sorted_years = sorted(bad_year_list)
+                is_consecutive = all(sorted_years[i+1] - sorted_years[i] <= 2 for i in range(len(sorted_years)-1))
+                if is_consecutive:
+                    warning_title = f"Avoid {sorted_years[0]}-{sorted_years[-1]} {model.name}s"
+                else:
+                    warning_title = f"Avoid early {model.name} models"
+
+            # Generate accurate callout text based on actual pass rate
+            if worst_example.pass_rate < 50:
+                callout_desc = f"has a {worst_example.pass_rate:.1f}% pass rate, failing MOTs more often than passing"
+            else:
+                callout_desc = f"has a {worst_example.pass_rate:.1f}% pass rate, well below the national average"
+
             warning = f'''
 
         <div class="callout warning">
           <i class="ph ph-warning callout-icon"></i>
           <div class="callout-content">
-            <p class="callout-title">Avoid early {model.name} models</p>
-            <p class="callout-text">The {worst_example.model_year} {worst_example.fuel_name.lower()} {model.name} has a {worst_example.pass_rate:.1f}% pass rate, failing MOTs more often than passing.</p>
+            <p class="callout-title">{warning_title}</p>
+            <p class="callout-text">The {worst_example.model_year} {worst_example.fuel_name.lower()} {model.name} {callout_desc}.</p>
           </div>
         </div>'''
 
@@ -797,27 +815,13 @@ def generate_avoid_section(insights: ArticleInsights) -> str:
     if not insights.worst_models:
         return ""
 
-    # Build lookup for age-adjusted worst models
-    age_adjusted_lookup = {}
-    for m in insights.age_adjusted_worst:
-        key = (m.model, m.model_year, m.fuel_type)
-        age_adjusted_lookup[key] = m
-
     rows = []
     for m in insights.worst_models[:10]:
-        # Check if this model also appears in age-adjusted worst list
-        key = (m.model, m.model_year, m.fuel_type)
-        age_adj = age_adjusted_lookup.get(key)
-
-        vs_age_text = ""
-        if age_adj:
-            vs_age_text = f'<span class="text-red-600 text-sm">({age_adj.vs_national_formatted} vs same-age)</span>'
-
         rows.append(f'''              <tr class="bg-red-50">
                 <td><strong>{safe_html(m.model)}</strong></td>
                 <td>{m.model_year}</td>
                 <td>{safe_html(m.fuel_name)}</td>
-                <td><span class="data-badge {m.pass_rate_class}">{m.pass_rate:.1f}%</span> {vs_age_text}</td>
+                <td><span class="data-badge {m.pass_rate_class}">{m.pass_rate:.1f}%</span></td>
                 <td>{format_number(m.total_tests)}</td>
               </tr>''')
 
@@ -847,7 +851,9 @@ def generate_avoid_section(insights: ArticleInsights) -> str:
     worst_ager = insights.get_worst_ager()
     age_context = ""
     if worst_ager and worst_ager.vs_national_at_age <= -8:
-        age_context = f" The {worst_ager.model} {worst_ager.model_year} performs {abs(worst_ager.vs_national_at_age):.0f}% worse than the average car of the same age at {worst_ager.age_band} - this is proven poor durability."
+        # v3.0: model_year may be 0 when aggregated by core model
+        worst_ager_name = f"{worst_ager.model} {worst_ager.model_year}" if worst_ager.model_year and worst_ager.model_year > 0 else worst_ager.model
+        age_context = f" The {worst_ager_name} performs {abs(worst_ager.vs_national_at_age):.0f}% worse than the average car of the same age at {worst_ager.age_band} - this is proven poor durability."
 
     return f'''      <!-- Section: Models to Avoid -->
       <section id="avoid" class="article-section">
@@ -966,11 +972,31 @@ def generate_faqs_section(insights: ArticleInsights) -> str:
     popular_models = insights.get_models_for_breakdown(min_tests=50000, limit=3)
     for model in popular_models:
         best_years = [y for y in model.year_breakdowns if y.pass_rate >= 90]
-        if best_years:
+
+        # Check overall model performance against national average
+        model_above_average = model.pass_rate >= insights.national_pass_rate
+
+        if best_years and model_above_average:
+            # Model is genuinely reliable - can say "Yes"
             best = sorted(best_years, key=lambda x: -x.pass_rate)[0]
-            answer = f"Yes, especially newer models. The {best.model_year} {model.name} achieves {best.pass_rate:.1f}% pass rates, well above the {insights.national_pass_rate:.1f}% national average."
-            if model.pass_rate >= 70:
-                answer += f" Even older {model.name} models from {model.year_from} onwards maintain {model.pass_rate:.1f}%+ pass rates."
+            answer = f"Yes. The {model.name} averages {model.pass_rate:.1f}% overall, above the {insights.national_pass_rate:.1f}% national average. The {best.model_year} model achieves {best.pass_rate:.1f}% pass rates."
+            if model.pass_rate >= 75:
+                answer += f" {model.name} models from {model.year_from}-{model.year_to} have consistently strong results."
+            faqs.append({
+                "question": f"Is the {insights.title_make} {model.name} reliable?",
+                "answer": answer
+            })
+        elif best_years:
+            # Has good years but overall average is below national - be balanced
+            best = sorted(best_years, key=lambda x: -x.pass_rate)[0]
+            answer = f"It depends on the year. While the {best.model_year} {model.name} achieves {best.pass_rate:.1f}% pass rates, the model overall averages {model.pass_rate:.1f}% (vs {insights.national_pass_rate:.1f}% national average). Choose newer model years for better reliability."
+            faqs.append({
+                "question": f"Is the {insights.title_make} {model.name} reliable?",
+                "answer": answer
+            })
+        elif model_above_average:
+            # No standout years but overall above average
+            answer = f"The {model.name} averages {model.pass_rate:.1f}% pass rate, {'slightly ' if model.pass_rate - insights.national_pass_rate < 3 else ''}above the {insights.national_pass_rate:.1f}% national average."
             faqs.append({
                 "question": f"Is the {insights.title_make} {model.name} reliable?",
                 "answer": answer

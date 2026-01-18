@@ -14,7 +14,7 @@ Usage:
 import argparse
 import sys
 from pathlib import Path
-from datetime import date
+from datetime import datetime
 
 # Handle imports for both module and script execution
 if __name__ == "__main__":
@@ -62,11 +62,13 @@ def generate_article(insights: ArticleInsights) -> str:
     Returns:
         Complete HTML string for the article matching the reference template
     """
-    today = date.today().strftime("%Y-%m-%d")
+    now = datetime.now()
+    today = now.strftime("%Y-%m-%d")
     # Windows doesn't support %-d, so we format and strip leading zero manually
-    day = str(date.today().day)
-    month_year = date.today().strftime("%b %Y")
-    today_display = f"{day} {month_year}"
+    day = str(now.day)
+    month_year = now.strftime("%b %Y")
+    time_str = now.strftime("%H:%M")
+    today_display = f"{day} {month_year} at {time_str}"
 
     # Build the complete HTML document
     html = generate_html_head(insights, today)

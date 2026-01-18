@@ -1,0 +1,282 @@
+
+Skip to main content
+motorwise
+Clear data. Wise choices
+
+Premium Report
+Guides & Articles
+Tools
+Number Plate Decoder
+Car Age Checker
+ULEZ Checker
+MOT Checker
+MPG Calculator
+Tyre Size Comparison
+More
+Help Center
+Contact
+Cookies
+Terms and conditions
+Accessibility statement
+Privacy notice
+Home
+Guides
+Most Reliable Ford Models
+Reliability Data
+8 min read
+Updated 18 Jan 2026 at 09:58
+Most Reliable Ford Models: Real MOT Data Analysis
+We analysed 4,473,074 real UK MOT tests to reveal which Ford models pass most often, which years to buy, and which to avoid entirely.
+
+4,473,074 MOT tests analysed
+
+Real DVSA data covering every Ford model from 1970-2023
+
+Key Findings
+Most Reliable Model
+
+Ford GT
+
+95.4% pass rate
+
+Best Single Year
+
+MUSTANG 2003 Petrol
+
+88.2% pass rate
+
+Ford vs National Average
+
+68.5% vs 71.4%
+
+-3.0% below average
+
+Proven Durability Champion
+
+ANGLIA
+
++33.7% at 21+ years
+
+Ford ranks #5782 out of 75 manufacturers, below the national average. We analysed 4,473,074 real MOT tests from the DVSA database to find the most reliable Ford models and which years to avoid.
+
+This isn't survey data or owner opinions. These are actual pass/fail results from UK garages, covering Ford models sold in the UK from 2000 to 2023.
+
+Contents
+1.
+Ford vs Competition
+2.
+Best Models by Pass Rate
+3.
+Proven Durability Champions
+4.
+Promising Early Performers
+5.
+Fuel Type Analysis
+6.
+Models to Avoid
+7.
+Common MOT Failures
+8.
+FAQs
+9.
+Buying Recommendations
+10.
+Methodology
+How Ford Compares to Rivals
+Ford ranks #5782 out of 75 manufacturers with a 68.5% average MOT pass rate. That's below the national average of 71.4%:
+
+Manufacturer	Pass Rate	Rank	Tests Analysed
+Volkswagen	71.9%	#5735	3,034,850
+Ford	68.5%	#5782	4,473,074
+Peugeot	66.0%	#5961	1,445,748
+Vauxhall	65.4%	#5967	3,052,659
+Citroen	63.1%	#5984	1,035,382
+Renault	61.8%	#5995	1,016,493
+The verdict: Volkswagen maintains a lead among competitors, while Ford sits at #5782.
+
+Best Ford Models by MOT Pass Rate
+Looking at overall reliability across all years, here's how Ford's core models rank against the 71.4% national average:
+
+Model	Pass Rate	vs National (71.4%)	Tests	Years
+GT	95.4%	+24.0%	131	1963-2021
+ANGLIA	94.5%	+23.0%	253	1946-2018
+BENIMAR	93.2%	+21.8%	633	2016-2021
+CONSUL	92.5%	+21.1%	80	1955-2018
+ZEPHYR	92.2%	+20.7%	64	1953-2017
+POPULAR	91.8%	+20.4%	110	1934-2012
+AUTO-TRAIL	91.8%	+20.3%	182	2001-2021
+PUMA	90.0%	+18.6%	29,923	1997-2022
+CHAUSSON	89.2%	+17.7%	944	2007-2022
+CROWN	88.3%	+16.9%	137	1983-2023
+* Compared to overall 71.4% national average across all years. For year-adjusted comparisons that account for newer cars passing more often, see individual model breakdowns below.
+
+Top performer
+
+The GT achieves a 95.4% pass rate, 24 percentage points above the national average.
+
+Proven Durability Champions: Which Ford Models Age Best?
+These Ford models have proven exceptional durability with 11+ years of real-world MOT data. They consistently outperform the national average for cars of the same age:
+
+Overall Ford Durability Rating:
+Average
+High-confidence data: Only vehicles with 11+ years of MOT history and 100+ tests are included in this ranking.
+
+Model	Year	Fuel	vs Same-Age Average	Tested At	Pass Rate
+ANGLIA	-	All	+33.7%	21+ years	94.8%
+POPULAR	-	All	+30.6%	21+ years	91.7%
+F150	-	All	+27.2%	18-20 years	83.3%
+CORTINA	-	All	+27.1%	21+ years	88.2%
+MUSTANG	-	All	+26.7%	15-17 years	84.6%
+SIERRA	-	All	+24.0%	21+ years	85.0%
+MUSTANG	-	All	+21.8%	18-20 years	77.9%
+CAPRI	-	All	+21.3%	21+ years	82.3%
+MUSTANG	-	All	+20.9%	21+ years	82.0%
+GRANADA	-	All	+19.8%	21+ years	80.9%
+How to read this: A score of "+15%" means the model passes MOTs 15 percentage points more often than the average car of the same age. These are proven results from vehicles that have genuinely aged well.
+
+Proven durability champion
+
+The ANGLIA outperforms the average 21+ years-old car by 34 percentage points, with 248 MOT tests proving its reliability.
+
+Early Performers: Strong Start, Unproven Durability
+These newer Ford models (3-6 years old) show strong early results, but haven't yet proven long-term durability:
+
+Important caveat: Durability NOT yet proven - too early to assess long-term reliability. Older versions of the same model may tell a different story at 11+ years.
+
+Model	Year	Fuel	vs Same-Age Average	Tested At	Pass Rate
+BENIMAR	-	All	+8.4%	3-7 years	93.2%
+EDGE	-	All	+8.1%	8-10 years	83.5%
+PUMA	-	All	+8.1%	3-7 years	92.8%
+AUTO-TRAIL	-	All	+7.5%	3-7 years	92.2%
+MUSTANG	-	All	+6.7%	8-10 years	82.1%
+UNCLASSIFIED	-	All	+6.2%	8-10 years	81.6%
+ROLLER TEAM	-	All	+5.7%	3-7 years	90.5%
+FREEDOM	-	All	+4.9%	8-10 years	80.3%
+What this means: These models are performing well in their early years, but we recommend checking the Durability Champions section above to see how older versions of the same model family have fared over time.
+
+Ford Hybrids vs Petrol vs Diesel
+Reliability varies by fuel type for Ford. Here's how each performs:
+
+Fuel Type	Average Pass Rate	vs National	Tests
+ST	100.0%	+28.6%	1
+LN	100.0%	+28.6%	2
+FC	100.0%	+28.6%	1
+CN	100.0%	+28.6%	3
+Hybrid Electric	88.6%	+17.1%	6,381
+Plug-in Hybrid	87.3%	+15.9%	166
+Electric	84.8%	+13.3%	505
+GD	83.3%	+11.9%	6
+Gas Bi-fuel	70.2%	-1.2%	47
+Petrol	69.3%	-2.1%	2,547,911
+Diesel	67.3%	-4.1%	1,917,341
+GA	65.2%	-6.2%	23
+LP	62.3%	-9.1%	679
+Other	50.0%	-21.4%	8
+The hybrid advantage: Ford hybrids pass MOTs 19% more often than petrols and 21% more often than diesels.
+
+Ford Models to Avoid
+Not all Fords are reliable. These specific model/year combinations have failure rates well above average:
+
+Model	Year	Fuel	Pass Rate	Tests
+TOURNEO CONNECT	2005	Diesel	37.5%	72
+FOCUS	1998	Petrol	46.4%	110
+TRANSIT COURIER	2015	Petrol	58.3%	96
+TOURNEO CUSTOM 320 ZETEC EBLUE	2020	Diesel	70.8%	250
+TRANSIT CUSTOM 340 TREND EBLUE	2020	Diesel	70.8%	72
+TRANSIT CUSTOM 300LEADER EBLUE	2021	Diesel	74.4%	82
+FIESTA	2016	Diesel	62.5%	11,964
+TRANSIT CUSTOM 300LEADER EBLUE	2020	Diesel	71.7%	4,587
+TRANSIT	2012	Diesel	50.0%	16,374
+TRANSIT CONNECT	2018	Petrol	68.7%	230
+Pattern to avoid
+
+Early 2020-2021 diesel TRANSIT CUSTOM 300LEADER EBLUEs are the models that drag down Ford's average. The CONNECT performs 17% worse than the average car of the same age at 15-17 years - this is proven poor durability. These vehicles fail MOTs more often than they pass.
+
+What Goes Wrong on Fords?
+When Fords fail MOTs, these are the most common causes:
+
+Failure Category	Total Failures
+1. Lamps, reflectors and electrical equipment	639,424
+2. Suspension	455,583
+3. Tyres	312,460
+4. Brakes	289,887
+5. Visibility	224,844
+6. Body, chassis, structure	176,859
+7. Noise, emissions and leaks	156,343
+Pre-MOT checklist for Ford owners:
+
+Check all bulbs (number plate lights are commonly missed)
+Inspect suspension bushes and anti-roll bar links
+Ensure tyres meet 1.6mm tread requirement
+Check brake pad thickness and disc condition
+Clean windscreen and check wiper blade condition
+Frequently Asked Questions
+What is the most reliable Ford model?
+Are Ford cars reliable compared to other brands?
+Which Ford years should I avoid?
+Are Ford hybrids more reliable than petrol?
+Yes. Ford hybrids average 88.6% MOT pass rate compared to 69.3% for petrol and 67.3% for diesel.
+Buying Recommendations
+Based on 4,473,074 MOT tests, here's our data-driven buying advice for Ford:
+
+Best If Buying Nearly New
+(2019-2023)
+Model	Year	Fuel	Pass Rate
+PUMA ST	2020	Petrol	99%
+FIESTA ST EDITION TURBO	2020	Petrol	98%
+BENIMAR	2019	Diesel	96%
+KUGA ST-LINE X	2020	Petrol	96%
+PUMA ST-LINE X VIGNALE AUTO	2020	Petrol	95%
+Long-term durability not yet proven for newer models
+
+Best If Buying Used
+(11+ years proven)
+Model	vs Same-Age Avg	Tested At
+ANGLIA	+34%	21+ years
+POPULAR	+31%	21+ years
+F150	+27%	18-20 years
+CORTINA	+27%	21+ years
+MUSTANG	+27%	15-17 years
+Models to Avoid
+
+These models perform below average for their age (proven at 11+ years):
+
+Model	vs Same-Age Avg	Tested At
+CONNECT	-17%	15-17 years
+TRANSIT	-13%	11-14 years
+TOURNEO	-12%	18-20 years
+GALAXY	-11%	21+ years
+FOCUS	-9%	21+ years
+About This Data
+This analysis uses real MOT test results from the DVSA database, covering 4,473,074 tests on Ford vehicles between 2000 and 2023.
+
+Year-Adjusted Scoring (v2.1): In year-by-year breakdowns, each vehicle is compared against the national average for vehicles of the same model year. This removes the natural bias where newer cars pass more often, allowing fair comparisons across eras.
+
+Evidence-Tiered Durability: We separate "proven durability" (vehicles tested at 11+ years old) from "early performers" (3-6 years old). Only vehicles with proven long-term data are used for durability claims. Age-band comparisons use weighted national averages.
+
+Minimum thresholds: 100 tests for proven durability rankings, 100 tests for early performer rankings. Pass rates are calculated as first-time passes, excluding retests.
+
+The overall national average MOT pass rate is 71.45% based on 32.3 million tests across all manufacturers. Year-specific averages range from ~59% (2009 vehicles) to ~88% (2020 vehicles).
+
+Check Any Vehicle's MOT History
+Get the full MOT history, mileage records, and reliability insights for any UK vehicle. Make an informed decision before you buy.
+
+Run a Free Check
+motorwise
+Clear data. Wise choices
+Navigation
+Premium Report
+MOT History
+Help Center
+Guides & Articles
+Legal
+Privacy Policy
+Terms & Conditions
+Cookie Policy
+Accessibility
+Contact
+Information provided by the Driver & Vehicle Standards Agency and the Driver & Vehicle Licensing Agency
+
+All content is available under the Open Government Licence v3.0, except where otherwise stated
+
+© Motorwise

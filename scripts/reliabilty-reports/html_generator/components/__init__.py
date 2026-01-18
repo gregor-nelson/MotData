@@ -13,8 +13,6 @@ from .data_classes import (
     FailureCategory,
     FuelAnalysis,
     BestWorstModel,
-    AgeBand,
-    AgeAdjustedModel,
     DurabilityVehicle,
     EarlyPerformer,
     ReliabilitySummary,

@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "make": "CARBODIES TAXI/HIRE CAR",
+    "generated_at": "2026-01-18T10:38:19.833756",
+    "database": "mot_insights.db",
+    "national_pass_rate": 71.44845962326073,
+    "methodology_version": "3.0",
+    "data_source_year": 2024,
+    "methodology_note": "Objective age band analysis: pass rates compared to national averages for vehicles of the same age. No subjective ratings - data presented with confidence indicators based on sample size."
+  },
+  "overview": {
+    "id": 5813,
+    "make": "CARBODIES TAXI/HIRE CAR",
+    "total_tests": 3,
+    "total_models": 2,
+    "avg_pass_rate": 66.67,
+    "weighted_pass_rate": 66.67,
+    "best_model": "UNCLASSIFIED 1997",
+    "best_model_pass_rate": 100.0,
+    "worst_model": "UNCLASSIFIED 1994",
+    "worst_model_pass_rate": null,
+    "rank": 5813
+  },
+  "competitors": [
+    {
+      "make": "TOYOTA",
+      "avg_pass_rate": 73.77,
+      "total_tests": 1637457,
+      "rank": 5706,
+      "total_models": 5528
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "avg_pass_rate": 71.89,
+      "total_tests": 3034850,
+      "rank": 5735,
+      "total_models": 5132
+    },
+    {
+      "make": "NISSAN",
+      "avg_pass_rate": 68.59,
+      "total_tests": 1626183,
+      "rank": 5780,
+      "total_models": 3113
+    },
+    {
+      "make": "FORD",
+      "avg_pass_rate": 68.48,
+      "total_tests": 4473074,
+      "rank": 5782,
+      "total_models": 5583
+    },
+    {
+      "make": "CARBODIES TAXI/HIRE CAR",
+      "avg_pass_rate": 66.67,
+      "total_tests": 3,
+      "rank": 5813,
+      "total_models": 2
+    },
+    {
+      "make": "VAUXHALL",
+      "avg_pass_rate": 65.44,
+      "total_tests": 3052659,
+      "rank": 5967,
+      "total_models": 2299
+    }
+  ],
+  "summary": {
+    "total_tests": 3,
+    "total_models": 2,
+    "avg_pass_rate": 66.67,
+    "rank": 5813,
+    "rank_total": 75,
+    "best_model": "UNCLASSIFIED 1997",
+    "best_model_pass_rate": 100.0,
+    "worst_model": "UNCLASSIFIED 1994",
+    "worst_model_pass_rate": null,
+    "vs_national": -4.78,
+    "vs_national_note": "Manufacturer average vs overall national average (for brand-level comparison)"
+  },
+  "core_models": [],
+  "model_year_breakdowns": {},
+  "fuel_analysis": [
+    {
+      "fuel_type": "DI",
+      "model_count": 2,
+      "total_tests": 3,
+      "pass_rate": 66.67,
+      "fuel_name": "Diesel"
+    }
+  ],
+  "best_models": [],
+  "worst_models": [],
+  "failures": {
+    "categories": [
+      {
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_failures": 1,
+        "vehicle_count": 1
+      },
+      {
+        "category_name": "Brakes",
+        "total_failures": 1,
+        "vehicle_count": 1
+      }
+    ],
+    "top_failures": [
+      {
+        "defect_description": "A headlamp or light source missing, inoperative or more than ½ not functioning in the case of LED",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 1
+      },
+      {
+        "defect_description": "A rear registration plate lamp or light source missing or  inoperative  in the case of a single lamp or all lamps",
+        "category_name": "Lamps, reflectors and electrical equipment",
+        "total_occurrences": 1
+      },
+      {
+        "defect_description": "Brake disc or drum significantly and obviously worn",
+        "category_name": "Brakes",
+        "total_occurrences": 1
+      }
+    ],
+    "top_advisories": [
+      {
+        "defect_description": "Body, cab or chassis excessively corroded at a mounting point",
+        "category_name": "Body, chassis, structure",
+        "total_occurrences": 1
+      }
+    ],
+    "dangerous": []
+  },
+  "mileage_impact": [
+    {
+      "mileage_band": "150k+",
+      "band_order": 5,
+      "total_tests": 3,
+      "avg_pass_rate": 66.67
+    }
+  ],
+  "all_models": [
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 1997,
+      "fuel_type": "DI",
+      "total_tests": 2,
+      "total_passes": 2,
+      "total_fails": 0,
+      "pass_rate": 100.0,
+      "avg_mileage": 308040.0,
+      "avg_age_years": 25.0,
+      "pass_rate_vs_national": 28.55
+    },
+    {
+      "model": "UNCLASSIFIED",
+      "model_year": 1994,
+      "fuel_type": "DI",
+      "total_tests": 1,
+      "total_passes": 0,
+      "total_fails": 1,
+      "pass_rate": 0.0,
+      "avg_mileage": 239166.0,
+      "avg_age_years": 28.0,
+      "pass_rate_vs_national": -71.45
+    }
+  ],
+  "age_band_analysis": {
+    "description": "Pass rates by vehicle age compared to national averages. Positive vs_national values indicate above-average performance for that age band.",
+    "confidence_levels": {
+      "high": "1,000+ tests - statistically robust",
+      "medium": "200-999 tests - reasonable confidence",
+      "low": "50-199 tests - interpret with caution",
+      "insufficient": "<50 tests - excluded from analysis"
+    },
+    "age_bands": {
+      "3-7 years": "New vehicles - most pass easily, limited differentiation",
+      "8-10 years": "Maturing - issues start emerging, meaningful comparisons",
+      "11-14 years": "Established - solid long-term data",
+      "15-17 years": "Long-term - smaller samples expected",
+      "18-20 years": "Veteran - notable longevity, sample caveats apply",
+      "21+ years": "Classic - very small samples, often collector vehicles"
+    },
+    "make_performance": {
+      "methodology": "Pass rates compared to national average for vehicles of the same age. Positive vs_national indicates above-average performance for that age band.",
+      "reference_year": 2024,
+      "national_benchmarks": {
+        "21+ years": {
+          "pass_rate": 61.06,
+          "band_order": 5,
+          "total_tests": 1612019,
+          "confidence": "high"
+        },
+        "18-20 years": {
+          "pass_rate": 56.17,
+          "band_order": 4,
+          "total_tests": 2355097,
+          "confidence": "high"
+        },
+        "15-17 years": {
+          "pass_rate": 57.85,
+          "band_order": 3,
+          "total_tests": 4101633,
+          "confidence": "high"
+        },
+        "11-14 years": {
+          "pass_rate": 64.64,
+          "band_order": 2,
+          "total_tests": 7360346,
+          "confidence": "high"
+        },
+        "8-10 years": {
+          "pass_rate": 75.42,
+          "band_order": 1,
+          "total_tests": 7814635,
+          "confidence": "high"
+        },
+        "3-7 years": {
+          "pass_rate": 84.77,
+          "band_order": 0,
+          "total_tests": 9531009,
+          "confidence": "high"
+        }
+      },
+      "make_performance": {}
+    },
+    "model_breakdown": []
+  }
+}

@@ -4,6 +4,8 @@ HTML Layout Components
 HTML head, body structure, TOC, and JSON-LD generation.
 """
 
+import re
+
 from .data_classes import (
     ArticleInsights,
     ARTICLE_SECTIONS,
@@ -334,8 +336,10 @@ def generate_html_body(insights: ArticleInsights, today_display: str) -> str:
     # -------------------------------------------------------------------------
     # Header Content (full width, above two-column layout)
     # -------------------------------------------------------------------------
+    # Use placeholder - will be replaced with actual word count at the end
+    READ_TIME_PLACEHOLDER = "{{READ_TIME}}"
     header_content = []
-    header_content.append(sections.generate_header_section(insights, today_display))
+    header_content.append(sections.generate_header_section(insights, today_display, READ_TIME_PLACEHOLDER))
     header_content.append(sections.generate_key_findings_section(insights))
     header_content.append(sections.generate_intro_section(insights))
     header_html = "\n".join(header_content)
@@ -408,7 +412,8 @@ def generate_html_body(insights: ArticleInsights, today_display: str) -> str:
     # -------------------------------------------------------------------------
     toc_html = generate_toc_html(insights)
 
-    return f'''<body class="bg-white md:bg-neutral-50 min-h-screen">
+    # Build HTML with placeholder
+    html = f'''<body class="bg-white md:bg-neutral-50 min-h-screen">
   <!-- Reading Progress Bar -->
   <div id="reading-progress" style="width: 0%"></div>
 
@@ -451,3 +456,12 @@ def generate_html_body(insights: ArticleInsights, today_display: str) -> str:
   <script src="/articles/js/article-common.js"></script>
 </body>
 </html>'''
+
+    # Calculate actual read time from word count
+    text_only = re.sub(r'<[^>]+>', ' ', html)  # Strip HTML tags
+    text_only = re.sub(r'\s+', ' ', text_only)  # Normalize whitespace
+    word_count = len(text_only.split())
+    read_time = max(1, round(word_count / 200))  # 200 wpm
+
+    # Replace placeholder with actual read time
+    return html.replace(READ_TIME_PLACEHOLDER, str(read_time))

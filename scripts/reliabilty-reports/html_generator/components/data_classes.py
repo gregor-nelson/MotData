@@ -186,60 +186,6 @@ class BestWorstModel:
         return "vs same-year avg"
 
 
-@dataclass
-class AgeBand:
-    """Pass rate data for a specific age band."""
-    age_band: str
-    band_order: int
-    pass_rate: float
-    national_pass_rate: float
-    vs_national: float
-    total_tests: int
-    avg_mileage: float
-
-
-@dataclass
-class AgeAdjustedModel:
-    """
-    Model with age-adjusted reliability scoring (LEGACY).
-
-    This shows how a model performs compared to the national average
-    for cars of the same age, removing the bias towards newer vehicles.
-    """
-    model: str
-    model_year: int
-    fuel_type: str
-    fuel_name: str
-    total_tests: int
-    avg_vs_national: float  # Weighted average vs national across all age bands
-    durability_trend: float  # Positive = getting relatively better with age
-    best_age_band: Optional[AgeBand] = None
-    worst_age_band: Optional[AgeBand] = None
-
-    @property
-    def is_durable(self) -> bool:
-        """Returns True if model maintains or improves relative performance with age."""
-        return self.durability_trend >= 0
-
-    @property
-    def durability_class(self) -> str:
-        """CSS class based on durability trend."""
-        if self.durability_trend > 2:
-            return "durability-excellent"
-        elif self.durability_trend > 0:
-            return "durability-good"
-        elif self.durability_trend > -2:
-            return "durability-average"
-        return "durability-poor"
-
-    @property
-    def vs_national_formatted(self) -> str:
-        """Formatted vs national string."""
-        if self.avg_vs_national >= 0:
-            return f"+{self.avg_vs_national:.1f}%"
-        return f"{self.avg_vs_national:.1f}%"
-
-
 # =============================================================================
 # Evidence-Tiered Durability Data Classes
 # =============================================================================
@@ -435,7 +381,6 @@ class ArticleInsights:
         self._parse_best_worst(data.get('best_models', []), data.get('worst_models', []))
         self._parse_failures(data.get('failures', {}))
         self._parse_mileage(data.get('mileage_impact', []))
-        self._parse_age_adjusted(data.get('age_adjusted', {}))
         self._parse_durability(data.get('durability', {}))
 
     def _parse_competitors(self, competitors: list):
@@ -541,49 +486,41 @@ class ArticleInsights:
         """Parse mileage impact data."""
         self.mileage_impact = mileage_data
 
-    def _parse_age_adjusted(self, age_data: dict):
-        """Parse age-adjusted reliability scoring data."""
-        self.age_adjusted_methodology = age_data.get('methodology', '')
-
-        def parse_age_band(band_data: dict) -> Optional[AgeBand]:
-            if not band_data:
-                return None
-            return AgeBand(
-                age_band=band_data.get('age_band', ''),
-                band_order=band_data.get('band_order', 0),
-                pass_rate=band_data.get('pass_rate', 0.0),
-                national_pass_rate=band_data.get('national_pass_rate', 0.0),
-                vs_national=band_data.get('vs_national', 0.0),
-                total_tests=band_data.get('total_tests', 0),
-                avg_mileage=band_data.get('avg_mileage', 0.0)
-            )
-
-        def parse_models(items: list) -> list[AgeAdjustedModel]:
-            result = []
-            for item in items:
-                code = item.get('fuel_type', 'PE')
-                result.append(AgeAdjustedModel(
-                    model=item.get('model', ''),
-                    model_year=item.get('model_year', 0),
-                    fuel_type=code,
-                    fuel_name=get_fuel_name(code),
-                    total_tests=item.get('total_tests', 0),
-                    avg_vs_national=item.get('avg_vs_national', 0.0),
-                    durability_trend=item.get('durability_trend', 0.0),
-                    best_age_band=parse_age_band(item.get('best_age_band')),
-                    worst_age_band=parse_age_band(item.get('worst_age_band'))
-                ))
-            return result
-
-        self.age_adjusted_best = parse_models(age_data.get('best_models', []))
-        self.age_adjusted_worst = parse_models(age_data.get('worst_models', []))
-
     def _parse_durability(self, durability_data: dict):
         """
-        Parse new evidence-tiered durability data (methodology v2.0).
+        Parse evidence-tiered durability data.
 
-        This replaces the legacy age_adjusted methodology with proper
-        evidence tiering: proven (11+), maturing (7-10), early (3-6 years).
+        v3.0: Now parses from 'age_band_analysis' structure with model_breakdown.
+        Creates DurabilityVehicle and EarlyPerformer objects from age band data.
+
+        Evidence tiering:
+        - Proven (band_order >= 2): 11+ years - solid durability data
+        - Early (band_order <= 1): 3-10 years - unproven durability
+        """
+        # Initialize empty containers
+        self.durability_methodology = {}
+        self.durability_champions_section = {}
+        self.models_to_avoid_section = {}
+        self.early_performers_section = {'caveat': 'Durability NOT yet proven - too early to assess long-term reliability'}
+        self.proven_durability_champions = []
+        self.proven_models_to_avoid = []
+        self.early_performers = []
+        self.model_trajectories = {}
+        self.reliability_summary = None
+
+        # Check if this is old format (durability) or new format (parsed via age_band_analysis)
+        if durability_data.get('durability_champions') or durability_data.get('reliability_summary'):
+            # Old format - use legacy parsing
+            self._parse_durability_legacy(durability_data)
+            return
+
+        # New v3.0 format - durability_data is empty, we parse from age_band_analysis
+        self._parse_age_band_analysis()
+
+    def _parse_durability_legacy(self, durability_data: dict):
+        """
+        Parse legacy durability format (v2.x).
+        Kept for backwards compatibility.
         """
         # Parse methodology info
         methodology = durability_data.get('methodology', {})
@@ -600,14 +537,10 @@ class ArticleInsights:
                 durability_rating=summary_data.get('durability_rating', 'Unknown'),
                 methodology_note=summary_data.get('methodology_note', '')
             )
-        else:
-            self.reliability_summary = None
 
         # Parse durability champions (proven high performers, 11+ years)
-        # v2.1: Now includes national_avg_for_age from weighted database calculations
         champions_data = durability_data.get('durability_champions', {})
         self.durability_champions_section = champions_data
-        self.proven_durability_champions = []
         for v in champions_data.get('vehicles', []):
             code = v.get('fuel_type', 'PE')
             self.proven_durability_champions.append(DurabilityVehicle(
@@ -623,14 +556,12 @@ class ArticleInsights:
                 avg_mileage=v.get('avg_mileage', 0.0),
                 maturity_tier=v.get('maturity_tier', 'proven'),
                 evidence_quality=v.get('evidence_quality', 'high'),
-                national_avg_for_age=v.get('national_avg_for_age')  # v2.1
+                national_avg_for_age=v.get('national_avg_for_age')
             ))
 
         # Parse models to avoid (proven poor performers, 11+ years)
-        # v2.1: Now includes national_avg_for_age from weighted database calculations
         avoid_data = durability_data.get('models_to_avoid', {})
         self.models_to_avoid_section = avoid_data
-        self.proven_models_to_avoid = []
         for v in avoid_data.get('vehicles', []):
             code = v.get('fuel_type', 'PE')
             self.proven_models_to_avoid.append(DurabilityVehicle(
@@ -647,14 +578,12 @@ class ArticleInsights:
                 maturity_tier=v.get('maturity_tier', 'proven'),
                 evidence_quality=v.get('evidence_quality', 'high'),
                 concern=v.get('concern'),
-                national_avg_for_age=v.get('national_avg_for_age')  # v2.1
+                national_avg_for_age=v.get('national_avg_for_age')
             ))
 
         # Parse early performers (3-6 years, unproven durability)
-        # v2.1: Now includes national_avg_for_age from weighted database calculations
         early_data = durability_data.get('early_performers', {})
         self.early_performers_section = early_data
-        self.early_performers = []
         early_caveat = early_data.get('caveat', 'Durability NOT yet proven')
         for v in early_data.get('vehicles', []):
             code = v.get('fuel_type', 'PE')
@@ -672,11 +601,167 @@ class ArticleInsights:
                 maturity_tier=v.get('maturity_tier', 'early'),
                 evidence_quality=v.get('evidence_quality', 'limited'),
                 caveat=v.get('caveat', early_caveat),
-                national_avg_for_age=v.get('national_avg_for_age')  # v2.1
+                national_avg_for_age=v.get('national_avg_for_age')
             ))
 
         # Parse model trajectories (aging curves)
         self.model_trajectories = durability_data.get('model_trajectories', {})
+
+    def _parse_age_band_analysis(self):
+        """
+        Parse v3.0 age_band_analysis structure into durability data.
+
+        Converts model_breakdown with age_bands into:
+        - proven_durability_champions (band_order >= 2, vs_national > 0)
+        - proven_models_to_avoid (band_order >= 2, vs_national < -3)
+        - early_performers (band_order <= 1, vs_national > 0)
+        """
+        age_band_data = self.raw.get('age_band_analysis', {})
+        if not age_band_data:
+            return
+
+        # Store methodology info
+        self.durability_methodology = {
+            'description': age_band_data.get('description', ''),
+            'confidence_levels': age_band_data.get('confidence_levels', {}),
+            'age_bands': age_band_data.get('age_bands', {})
+        }
+
+        # Get model breakdown
+        model_breakdown = age_band_data.get('model_breakdown', [])
+
+        # Collect entries for proven durability (band_order >= 2 = 11+ years)
+        proven_champions = []
+        proven_avoid = []
+        early_performers_list = []
+
+        for model_data in model_breakdown:
+            core_model = model_data.get('core_model', '')
+            model_total_tests = model_data.get('total_tests', 0)
+
+            # Skip models with insufficient overall data
+            if model_total_tests < MIN_TESTS_PROVEN_DURABILITY:
+                continue
+
+            age_bands = model_data.get('age_bands', [])
+
+            for band in age_bands:
+                band_order = band.get('band_order', 0)
+                vs_national = band.get('vs_national', 0.0)
+                total_tests = band.get('total_tests', 0)
+                confidence = band.get('confidence', 'low')
+
+                # Skip insufficient sample sizes
+                if total_tests < MIN_TESTS_PROVEN_DURABILITY:
+                    continue
+
+                # Determine maturity tier and evidence quality
+                if band_order >= 2:  # 11+ years = proven
+                    maturity_tier = 'proven'
+                    evidence_quality = 'high' if confidence == 'high' else 'medium'
+
+                    entry = DurabilityVehicle(
+                        model=core_model,
+                        model_year=0,  # v3.0 aggregates by core model, not year
+                        fuel_type='',  # v3.0 aggregates all fuel types
+                        fuel_name='All',
+                        age_band=band.get('age_band', ''),
+                        age_band_order=band_order,
+                        total_tests=total_tests,
+                        pass_rate=band.get('pass_rate', 0.0),
+                        vs_national_at_age=vs_national,
+                        avg_mileage=0.0,
+                        maturity_tier=maturity_tier,
+                        evidence_quality=evidence_quality,
+                        concern=f"Below average at {band.get('age_band', '')}" if vs_national < 0 else None,
+                        national_avg_for_age=band.get('national_pass_rate')
+                    )
+
+                    if vs_national > 0:
+                        proven_champions.append(entry)
+                    elif vs_national < -3:  # Only flag as "avoid" if significantly below average
+                        proven_avoid.append(entry)
+
+                elif band_order <= 1:  # 3-10 years = early
+                    if vs_national > 0:  # Only show early performers with positive scores
+                        entry = EarlyPerformer(
+                            model=core_model,
+                            model_year=0,
+                            fuel_type='',
+                            fuel_name='All',
+                            age_band=band.get('age_band', ''),
+                            age_band_order=band_order,
+                            total_tests=total_tests,
+                            pass_rate=band.get('pass_rate', 0.0),
+                            vs_national_at_age=vs_national,
+                            avg_mileage=0.0,
+                            maturity_tier='early',
+                            evidence_quality='limited',
+                            caveat='Durability NOT yet proven - too early to assess long-term reliability',
+                            national_avg_for_age=band.get('national_pass_rate')
+                        )
+                        early_performers_list.append(entry)
+
+        # Sort by vs_national score (best first for champions, worst first for avoid)
+        self.proven_durability_champions = sorted(
+            proven_champions,
+            key=lambda x: x.vs_national_at_age,
+            reverse=True
+        )
+        self.proven_models_to_avoid = sorted(
+            proven_avoid,
+            key=lambda x: x.vs_national_at_age
+        )
+        self.early_performers = sorted(
+            early_performers_list,
+            key=lambda x: x.vs_national_at_age,
+            reverse=True
+        )
+
+        # Calculate reliability summary from the data
+        self._calculate_reliability_summary()
+
+    def _calculate_reliability_summary(self):
+        """
+        Calculate reliability summary from parsed age band data.
+        """
+        total_proven = len(self.proven_durability_champions) + len(self.proven_models_to_avoid)
+        if total_proven == 0:
+            self.reliability_summary = None
+            return
+
+        above_avg_count = len(self.proven_durability_champions)
+        pct_above = (above_avg_count / total_proven * 100) if total_proven > 0 else 0
+
+        # Calculate average vs_national for champions
+        if self.proven_durability_champions:
+            avg_vs_national = sum(m.vs_national_at_age for m in self.proven_durability_champions) / len(self.proven_durability_champions)
+        else:
+            avg_vs_national = 0
+
+        # Determine rating
+        if pct_above >= 80 and avg_vs_national >= 5:
+            rating = "Excellent"
+        elif pct_above >= 60 and avg_vs_national >= 2:
+            rating = "Good"
+        elif pct_above >= 40:
+            rating = "Average"
+        elif total_proven > 0:
+            rating = "Below Average"
+        else:
+            rating = "Insufficient Data"
+
+        self.reliability_summary = ReliabilitySummary(
+            tier_distribution={
+                'proven': {'vehicles': total_proven, 'tests': sum(m.total_tests for m in self.proven_durability_champions + self.proven_models_to_avoid)},
+                'early': {'vehicles': len(self.early_performers), 'tests': sum(m.total_tests for m in self.early_performers)}
+            },
+            proven_vehicles_tested=total_proven,
+            proven_above_average_pct=round(pct_above, 1) if total_proven > 0 else None,
+            proven_avg_vs_national=round(avg_vs_national, 2) if self.proven_durability_champions else None,
+            durability_rating=rating,
+            methodology_note="Rating based on models with 11+ years of MOT data compared to national averages for vehicles of the same age."
+        )
 
     # =========================================================================
     # Computed Properties
@@ -726,16 +811,6 @@ class ArticleInsights:
         These are genuinely problematic vehicles, not just old cars.
         """
         return self.proven_models_to_avoid
-
-    @property
-    def durability_champions_legacy(self) -> list[AgeAdjustedModel]:
-        """LEGACY: Models that age best - highest avg_vs_national scores."""
-        return self.age_adjusted_best
-
-    @property
-    def worst_agers_legacy(self) -> list[AgeAdjustedModel]:
-        """LEGACY: Models that age worst - lowest avg_vs_national scores."""
-        return self.age_adjusted_worst
 
     def get_top_durable_model(self) -> Optional[DurabilityVehicle]:
         """Get the single best proven durability champion."""
@@ -830,26 +905,6 @@ class ArticleInsights:
         min_year = 2023 - max_age + 1
         recent = [m for m in self.best_models if m.model_year >= min_year]
         return recent[:limit]
-
-    def get_best_used_proven(self, limit: int = 10) -> list[AgeAdjustedModel]:
-        """
-        Get best used models based on age-adjusted durability scores.
-
-        These are models that have proven themselves over time,
-        performing better than average for their age.
-        """
-        # Filter to models with positive vs-national scores
-        proven = [m for m in self.age_adjusted_best if m.avg_vs_national > 0]
-        return proven[:limit]
-
-    def get_worst_age_adjusted(self, limit: int = 5) -> list[AgeAdjustedModel]:
-        """
-        Get worst models by age-adjusted score.
-
-        These are models that perform poorly even accounting for age -
-        they're genuinely problematic, not just old.
-        """
-        return self.age_adjusted_worst[:limit]
 
     def summary_stats(self) -> dict:
         """Get key summary statistics for quick reference."""

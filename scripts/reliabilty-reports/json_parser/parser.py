@@ -24,8 +24,8 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 
 # Database path (relative to script location)
-# From json_parser/parser.py -> article_generation/ -> scripts/ -> mot_data_2023/
-DB_PATH = Path(__file__).parent.parent.parent.parent / "data" / "database" / "mot_insights.db"
+# From json_parser/parser.py -> reliabilty-reports/ -> scripts/ -> Mot Data/
+DB_PATH = Path(__file__).parent.parent.parent.parent / "data" / "source" / "database" / "mot_insights.db"
 
 
 def get_connection():
@@ -50,14 +50,8 @@ def dict_from_row(row):
 DEFAULT_CONFIG = {
     # Statistical minimum thresholds
     # Below these values, data is statistically unreliable (small samples can swing ±15%)
-    "min_tests": 100,                  # Minimum tests for inclusion in most analyses
-    "min_tests_trajectory": 200,       # Higher threshold for trajectory analysis (trend detection needs more data points)
-
-    # Age band methodology (defines what "proven" vs "early" means)
-    # These are conceptual definitions, not arbitrary filters
-    "proven_min_band": 4,              # Band order >= 4 means 11+ years (proven durability)
-    "maturing_min_band": 2,            # Band order 2-3 means 7-10 years (maturing)
-    "early_max_band": 1,               # Band order <= 1 means 3-6 years (early, unproven)
+    "min_tests": 50,                   # Minimum tests for inclusion in most analyses
+    "min_tests_trajectory": 100,       # Higher threshold for trajectory analysis
 
     # Durability rating thresholds (percentage of models above average)
     "rating_excellent_pct": 80,        # >= 80% above avg AND avg_vs_national >= 5
@@ -70,63 +64,173 @@ DEFAULT_CONFIG = {
     "fallback_national_avg": 71.51,
 }
 
-# Age band ordering (fixed - defines the band_order values in database)
+# Reference year for age calculations (MOT data source year)
+# UK Gov MOT data is from 2024 - this is used to calculate vehicle age from model_year
+REFERENCE_YEAR = 2024
+
+# Age band ordering - defines meaningful durability analysis ranges
+# Note: 3-7 years shows limited differentiation (most cars pass)
+#       8+ years is when meaningful durability differences emerge
 AGE_BAND_ORDER = {
-    "3-4 years": 0,
-    "5-6 years": 1,
-    "7-8 years": 2,
-    "9-10 years": 3,
-    "11-12 years": 4,
-    "13+ years": 5
+    "3-7 years": 0,    # New vehicles - most pass, limited signal
+    "8-10 years": 1,   # Maturing - issues start emerging
+    "11-14 years": 2,  # Established - solid durability data
+    "15-17 years": 3,  # Long-term - fewer vehicles, smaller samples
+    "18-20 years": 4,  # Veteran - notable durability, sample caveats
+    "21+ years": 5     # Classic - very small samples, collector territory
 }
 
-# National average pass rates by age band (pre-calculated from full dataset)
-# Used as fallback if database lookup fails
+# National average pass rates by age band (estimated from typical degradation curves)
+# Used as fallback if calculated values unavailable
+# These will be replaced by dynamically calculated values from vehicle_insights
 NATIONAL_AVG_BY_BAND = {
-    0: 86.43,  # 3-4 years
-    1: 82.13,  # 5-6 years
-    2: 77.24,  # 7-8 years
-    3: 71.23,  # 9-10 years
-    4: 66.54,  # 11-12 years
-    5: 59.87   # 13+ years
+    0: 88.0,   # 3-7 years - most vehicles pass easily
+    1: 75.0,   # 8-10 years - issues start emerging
+    2: 68.0,   # 11-14 years - established wear patterns
+    3: 62.0,   # 15-17 years - long-term survivors
+    4: 58.0,   # 18-20 years - veteran vehicles
+    5: 55.0    # 21+ years - classics, often well-maintained
 }
 
-# Maturity tier definitions (for reference/documentation)
-MATURITY_TIERS = {
-    "proven": {"min_band": 4, "label": "Proven Durability", "description": "11+ years of real-world data"},
-    "maturing": {"min_band": 2, "max_band": 3, "label": "Maturing", "description": "7-10 years of data"},
-    "early": {"max_band": 1, "label": "Early", "description": "3-6 years only - durability unproven"}
+# Sample size confidence thresholds
+# Used to provide objective data quality indicators
+SAMPLE_CONFIDENCE = {
+    "high": {"min_tests": 1000, "note": None},
+    "medium": {"min_tests": 200, "note": None},
+    "low": {"min_tests": 50, "note": "Limited sample size - interpret with caution"},
+    "insufficient": {"min_tests": 0, "note": "Insufficient data for reliable comparison"}
 }
 
+# Minimum tests to include in analysis
+MIN_TESTS_DEFAULT = 50
+
+
+# =============================================================================
+# HELPER FUNCTIONS - Age Band Calculation
+# =============================================================================
+
+def calculate_age_band(model_year: int, reference_year: int = None) -> tuple:
+    """
+    Calculate age band from model year.
+
+    Args:
+        model_year: The vehicle's model year (e.g., 2015)
+        reference_year: Year to calculate age from (default: REFERENCE_YEAR = 2024)
+
+    Returns:
+        Tuple of (age_band_name, band_order)
+
+    Age bands:
+        0: 3-7 years   - New vehicles, most pass, limited differentiation
+        1: 8-10 years  - Maturing, issues start emerging
+        2: 11-14 years - Established, solid durability data
+        3: 15-17 years - Long-term, smaller samples expected
+        4: 18-20 years - Veteran, notable durability
+        5: 21+ years   - Classic, very small samples
+    """
+    if reference_year is None:
+        reference_year = REFERENCE_YEAR
+
+    if model_year is None:
+        return (None, None)
+
+    age = reference_year - model_year
+
+    # Vehicles under 3 years don't need MOT
+    if age < 3:
+        return (None, None)
+    elif age <= 7:
+        return ("3-7 years", 0)
+    elif age <= 10:
+        return ("8-10 years", 1)
+    elif age <= 14:
+        return ("11-14 years", 2)
+    elif age <= 17:
+        return ("15-17 years", 3)
+    elif age <= 20:
+        return ("18-20 years", 4)
+    else:
+        return ("21+ years", 5)
+
+
+def get_sample_confidence(total_tests: int) -> dict:
+    """
+    Get objective confidence indicator based on sample size.
+
+    Args:
+        total_tests: Number of MOT tests in sample
+
+    Returns:
+        Dict with 'level' and 'note' keys
+    """
+    if total_tests >= SAMPLE_CONFIDENCE["high"]["min_tests"]:
+        return {"level": "high", "note": None}
+    elif total_tests >= SAMPLE_CONFIDENCE["medium"]["min_tests"]:
+        return {"level": "medium", "note": None}
+    elif total_tests >= SAMPLE_CONFIDENCE["low"]["min_tests"]:
+        return {"level": "low", "note": SAMPLE_CONFIDENCE["low"]["note"]}
+    else:
+        return {"level": "insufficient", "note": SAMPLE_CONFIDENCE["insufficient"]["note"]}
+
+
+# =============================================================================
+# CACHING
+# =============================================================================
 
 # Cache for national age benchmarks
 _national_age_benchmarks = None
 
 
 def get_national_age_benchmarks(conn) -> dict:
-    """Get national average pass rates by age band (cached)."""
+    """
+    Calculate national average pass rates by age band from vehicle_insights (cached).
+
+    Derives age bands dynamically from model_year using REFERENCE_YEAR (2024).
+    Uses weighted average (by test count) for statistical accuracy.
+
+    Returns:
+        Dict keyed by age_band name with pass_rate, band_order, total_tests, confidence
+    """
     global _national_age_benchmarks
     if _national_age_benchmarks is not None:
         return _national_age_benchmarks
 
+    # Query all vehicles with model_year from vehicle_insights
     cur = conn.execute("""
         SELECT
-            age_band,
-            band_order,
-            AVG(pass_rate) as national_pass_rate,
-            SUM(total_tests) as total_tests
-        FROM age_bands
-        GROUP BY age_band, band_order
-        ORDER BY band_order
+            model_year,
+            SUM(total_tests) as total_tests,
+            SUM(total_passes) as total_passes
+        FROM vehicle_insights
+        WHERE model_year IS NOT NULL
+        GROUP BY model_year
     """)
-    _national_age_benchmarks = {
-        row["age_band"]: {
-            "pass_rate": row["national_pass_rate"],
-            "band_order": row["band_order"],
-            "total_tests": row["total_tests"]
-        }
-        for row in cur.fetchall()
-    }
+
+    # Aggregate by calculated age band
+    band_data = defaultdict(lambda: {"total_tests": 0, "total_passes": 0})
+
+    for row in cur.fetchall():
+        age_band, band_order = calculate_age_band(row["model_year"])
+        if age_band is None:
+            continue  # Skip vehicles too new for MOT
+
+        band_data[band_order]["total_tests"] += row["total_tests"]
+        band_data[band_order]["total_passes"] += row["total_passes"]
+        band_data[band_order]["age_band"] = age_band
+
+    # Calculate weighted pass rates
+    _national_age_benchmarks = {}
+    for band_order, data in band_data.items():
+        if data["total_tests"] > 0:
+            pass_rate = (data["total_passes"] / data["total_tests"]) * 100
+            confidence = get_sample_confidence(data["total_tests"])
+            _national_age_benchmarks[data["age_band"]] = {
+                "pass_rate": round(pass_rate, 2),
+                "band_order": band_order,
+                "total_tests": data["total_tests"],
+                "confidence": confidence["level"]
+            }
+
     return _national_age_benchmarks
 
 
@@ -187,24 +291,31 @@ _weighted_age_band_averages = None
 
 
 def get_weighted_age_band_averages(conn) -> dict:
-    """Get WEIGHTED national average pass rates by age band (cached).
+    """
+    Get weighted national average pass rates by age band (cached).
 
-    Uses weighted average (by test count) rather than simple average,
-    so models with more tests have proportionally more influence on
-    the benchmark. This is more statistically accurate.
+    Derives from get_national_age_benchmarks() which calculates from vehicle_insights.
+    Returns dict keyed by band_order for easy lookup.
+
+    Returns:
+        Dict mapping band_order (int) to weighted pass_rate (float)
     """
     global _weighted_age_band_averages
     if _weighted_age_band_averages is not None:
         return _weighted_age_band_averages
 
-    cur = conn.execute("""
-        SELECT band_order,
-            SUM(pass_rate * total_tests) / SUM(total_tests) as weighted_avg
-        FROM age_bands
-        GROUP BY band_order
-        ORDER BY band_order
-    """)
-    _weighted_age_band_averages = {row["band_order"]: row["weighted_avg"] for row in cur.fetchall()}
+    # Get benchmarks (already weighted by test count)
+    benchmarks = get_national_age_benchmarks(conn)
+
+    if benchmarks:
+        _weighted_age_band_averages = {
+            data["band_order"]: data["pass_rate"]
+            for data in benchmarks.values()
+        }
+    else:
+        # Fallback to estimated values if no data
+        _weighted_age_band_averages = NATIONAL_AVG_BY_BAND.copy()
+
     return _weighted_age_band_averages
 
 
@@ -606,505 +717,205 @@ def get_mileage_impact(conn, make: str) -> list:
     return [dict_from_row(row) for row in cur.fetchall()]
 
 
-def get_age_adjusted_scores(conn, make: str, config: dict = None) -> list:
-    """
-    Calculate age-adjusted reliability scores for each model/year.
+# =============================================================================
+# OBJECTIVE AGE BAND ANALYSIS
+# =============================================================================
+# These functions provide objective, data-driven age band analysis without
+# subjective labels or ratings. Users can draw their own conclusions.
+#
+# Key principles:
+# - Present data objectively with comparisons to national averages
+# - Always show sample sizes and confidence indicators
+# - No subjective labels like "champion", "avoid", "excellent"
+# - Appropriate caveats for smaller sample sizes in older bands
+# =============================================================================
 
-    Compares each model's pass rate at each age band against the national
-    average for that same age band. This removes age bias from comparisons.
 
-    Returns list of models with:
-    - avg_vs_national: average performance vs national across all age bands
-    - age_bands: detailed breakdown by age band
-    - durability_trend: whether model improves or degrades relative to peers over time
+def get_age_band_performance(conn, make: str, min_tests: int = None) -> dict:
     """
-    cfg = config or DEFAULT_CONFIG
-    min_tests = cfg["min_tests"]
+    Get objective pass rate performance by age band for a make.
+
+    Compares make's pass rate at each age band against national average
+    for the same age band. Returns data with confidence indicators.
+
+    Args:
+        conn: Database connection
+        make: Vehicle make (e.g., "FORD")
+        min_tests: Minimum tests to include (default: MIN_TESTS_DEFAULT)
+
+    Returns:
+        Dict with methodology, national_benchmarks, and make_performance by band
+    """
+    if min_tests is None:
+        min_tests = MIN_TESTS_DEFAULT
+
+    # Get national benchmarks
     national = get_national_age_benchmarks(conn)
 
-    # Get all age band data for this make
-    cur = conn.execute("""
-        SELECT
-            model, model_year, fuel_type,
-            age_band, band_order,
-            pass_rate, total_tests, avg_mileage
-        FROM age_bands
-        WHERE make = ?
-        ORDER BY model, model_year, fuel_type, band_order
-    """, (make,))
-
-    # Group by model/year/fuel
-    model_data = defaultdict(lambda: {"bands": [], "total_tests": 0})
-
-    for row in cur.fetchall():
-        key = (row["model"], row["model_year"], row["fuel_type"])
-        national_rate = national.get(row["age_band"], {}).get("pass_rate", 71.5)
-        vs_national = row["pass_rate"] - national_rate
-
-        model_data[key]["bands"].append({
-            "age_band": row["age_band"],
-            "band_order": row["band_order"],
-            "pass_rate": row["pass_rate"],
-            "national_pass_rate": round(national_rate, 2),
-            "vs_national": round(vs_national, 2),
-            "total_tests": row["total_tests"],
-            "avg_mileage": row["avg_mileage"]
-        })
-        model_data[key]["total_tests"] += row["total_tests"]
-
-    # Calculate aggregate scores
-    results = []
-    for (model, model_year, fuel_type), data in model_data.items():
-        if data["total_tests"] < min_tests:  # Minimum sample size
-            continue
-
-        bands = data["bands"]
-
-        # Weighted average vs_national (weighted by test count in each band)
-        total_weight = sum(b["total_tests"] for b in bands)
-        avg_vs_national = sum(
-            b["vs_national"] * b["total_tests"] for b in bands
-        ) / total_weight if total_weight > 0 else 0
-
-        # Calculate durability trend (slope of vs_national over age)
-        # Positive = getting relatively better with age
-        # Negative = degrading faster than average
-        durability_trend = 0
-        if len(bands) >= 2:
-            sorted_bands = sorted(bands, key=lambda x: x["band_order"])
-            first_vs = sorted_bands[0]["vs_national"]
-            last_vs = sorted_bands[-1]["vs_national"]
-            # Change in vs_national per age band
-            durability_trend = (last_vs - first_vs) / (len(sorted_bands) - 1)
-
-        results.append({
-            "model": model,
-            "model_year": model_year,
-            "fuel_type": fuel_type,
-            "total_tests": data["total_tests"],
-            "avg_vs_national": round(avg_vs_national, 2),
-            "durability_trend": round(durability_trend, 2),
-            "age_bands": bands
-        })
-
-    # Sort by avg_vs_national (best performers first)
-    results.sort(key=lambda x: x["avg_vs_national"], reverse=True)
-    return results
-
-
-def get_best_models_age_adjusted(conn, make: str) -> list:
-    """
-    Get best performing models using age-adjusted scoring.
-
-    This answers: "Which models perform best compared to the average car
-    of the same age?" - removing the bias towards newer vehicles.
-
-    Returns ALL qualifying models (no limit) - downstream can slice as needed.
-    """
-    age_scores = get_age_adjusted_scores(conn, make)
-
-    # Return all performers with simplified structure (best first)
-    return [
-        {
-            "model": m["model"],
-            "model_year": m["model_year"],
-            "fuel_type": m["fuel_type"],
-            "total_tests": m["total_tests"],
-            "avg_vs_national": m["avg_vs_national"],
-            "durability_trend": m["durability_trend"],
-            # Include best and worst age band for context
-            "best_age_band": max(m["age_bands"], key=lambda x: x["vs_national"]) if m["age_bands"] else None,
-            "worst_age_band": min(m["age_bands"], key=lambda x: x["vs_national"]) if m["age_bands"] else None
-        }
-        for m in age_scores
-    ]
-
-
-def get_worst_models_age_adjusted(conn, make: str) -> list:
-    """
-    Get worst performing models using age-adjusted scoring.
-
-    These are models that perform below average for their age -
-    genuinely problematic vehicles, not just old ones.
-
-    Returns ALL qualifying models (no limit) - downstream can slice as needed.
-    """
-    age_scores = get_age_adjusted_scores(conn, make)
-
-    # Return all performers reversed (worst first)
-    worst = list(reversed(age_scores))
-
-    return [
-        {
-            "model": m["model"],
-            "model_year": m["model_year"],
-            "fuel_type": m["fuel_type"],
-            "total_tests": m["total_tests"],
-            "avg_vs_national": m["avg_vs_national"],
-            "durability_trend": m["durability_trend"],
-            "best_age_band": max(m["age_bands"], key=lambda x: x["vs_national"]) if m["age_bands"] else None,
-            "worst_age_band": min(m["age_bands"], key=lambda x: x["vs_national"]) if m["age_bands"] else None
-        }
-        for m in worst
-    ]
-
-
-# =============================================================================
-# EVIDENCE-TIERED DURABILITY SCORING (New Methodology)
-# =============================================================================
-# These functions implement a more rigorous approach to durability claims:
-# - Only vehicles with 11+ years of data can be called "durability champions"
-# - Newer vehicles are classified as "early performers" with appropriate caveats
-# - Models to avoid are only flagged if they have proven poor performance at old age
-# =============================================================================
-
-
-def get_durability_champions(conn, make: str, config: dict = None) -> list:
-    """
-    Get vehicles with PROVEN durability - those that have reached 11+ years
-    and still perform above national average for their age.
-
-    This is the highest-quality durability insight: these cars have genuinely
-    demonstrated they age well compared to average vehicles.
-
-    Uses WEIGHTED national averages by age band from the database.
-    Returns ALL qualifying vehicles (no limit) - downstream can slice as needed.
-    """
-    cfg = config or DEFAULT_CONFIG
-    min_tests = cfg["min_tests"]
-    proven_min_band = cfg["proven_min_band"]
-    age_band_avgs = get_weighted_age_band_averages(conn)
-
-    cur = conn.execute("""
-        SELECT
-            model, model_year, fuel_type,
-            age_band, band_order,
-            total_tests,
-            pass_rate,
-            avg_mileage
-        FROM age_bands
-        WHERE make = ?
-          AND band_order >= ?  -- 11+ years only (proven tier)
-          AND total_tests >= ?
-    """, (make, proven_min_band, min_tests))
-
-    results = []
-    for row in cur.fetchall():
-        band_avg = age_band_avgs.get(row["band_order"], 60.0)
-        vs_national_at_age = round(row["pass_rate"] - band_avg, 2)
-
-        if vs_national_at_age > 0:  # Only above-average performers
-            results.append({
-                "model": row["model"],
-                "model_year": row["model_year"],
-                "fuel_type": row["fuel_type"],
-                "age_band": row["age_band"],
-                "age_band_order": row["band_order"],
-                "total_tests": row["total_tests"],
-                "pass_rate": row["pass_rate"],
-                "vs_national_at_age": vs_national_at_age,
-                "national_avg_for_age": round(band_avg, 2),
-                "avg_mileage": row["avg_mileage"],
-                "maturity_tier": "proven",
-                "evidence_quality": "high"
-            })
-
-    # Deduplicate: keep only the oldest age band (highest band_order) for each model/year/fuel
-    # This shows the most proven durability evidence for each vehicle
-    seen = {}
-    for r in results:
-        key = (r["model"], r["model_year"], r["fuel_type"])
-        if key not in seen or r["age_band_order"] > seen[key]["age_band_order"]:
-            seen[key] = r
-    results = list(seen.values())
-
-    # Sort by vs_national_at_age descending (best performers first)
-    results.sort(key=lambda x: x["vs_national_at_age"], reverse=True)
-    return results
-
-
-def get_models_to_avoid_proven(conn, make: str, config: dict = None) -> list:
-    """
-    Get models that have PROVEN poor durability - those that have reached 11+ years
-    and perform BELOW national average for their age.
-
-    These are genuinely problematic vehicles, not just old cars.
-    A car performing below average at 13+ years means it ages worse than typical.
-
-    Uses WEIGHTED national averages by age band from the database.
-    Returns ALL qualifying vehicles (no limit) - downstream can slice as needed.
-    """
-    cfg = config or DEFAULT_CONFIG
-    min_tests = cfg["min_tests"]
-    proven_min_band = cfg["proven_min_band"]
-    age_band_avgs = get_weighted_age_band_averages(conn)
-
-    cur = conn.execute("""
-        SELECT
-            model, model_year, fuel_type,
-            age_band, band_order,
-            total_tests,
-            pass_rate,
-            avg_mileage
-        FROM age_bands
-        WHERE make = ?
-          AND band_order >= ?  -- 11+ years only
-          AND total_tests >= ?
-    """, (make, proven_min_band, min_tests))
-
-    results = []
-    for row in cur.fetchall():
-        band_avg = age_band_avgs.get(row["band_order"], 60.0)
-        vs_national_at_age = round(row["pass_rate"] - band_avg, 2)
-
-        if vs_national_at_age < 0:  # Only below-average performers
-            results.append({
-                "model": row["model"],
-                "model_year": row["model_year"],
-                "fuel_type": row["fuel_type"],
-                "age_band": row["age_band"],
-                "age_band_order": row["band_order"],
-                "total_tests": row["total_tests"],
-                "pass_rate": row["pass_rate"],
-                "vs_national_at_age": vs_national_at_age,
-                "national_avg_for_age": round(band_avg, 2),
-                "avg_mileage": row["avg_mileage"],
-                "maturity_tier": "proven",
-                "evidence_quality": "high",
-                "concern": "Below average durability at " + row["age_band"]
-            })
-
-    # Deduplicate: keep only the oldest age band (highest band_order) for each model/year/fuel
-    seen = {}
-    for r in results:
-        key = (r["model"], r["model_year"], r["fuel_type"])
-        if key not in seen or r["age_band_order"] > seen[key]["age_band_order"]:
-            seen[key] = r
-    results = list(seen.values())
-
-    # Sort by vs_national_at_age ascending (worst performers first)
-    results.sort(key=lambda x: x["vs_national_at_age"])
-    return results
-
-
-def get_early_performers(conn, make: str, config: dict = None) -> list:
-    """
-    Get newer vehicles (3-6 years) that show strong early performance.
-
-    IMPORTANT: These have NOT proven durability. The caveat must be clear
-    that these are early results only - older versions of the same model
-    may tell a different story at 11+ years.
-
-    Uses WEIGHTED national averages by age band from the database.
-    Returns ALL qualifying vehicles (no limit) - downstream can slice as needed.
-    """
-    cfg = config or DEFAULT_CONFIG
-    min_tests = cfg["min_tests"]
-    early_max_band = cfg["early_max_band"]
-    age_band_avgs = get_weighted_age_band_averages(conn)
-
-    cur = conn.execute("""
-        SELECT
-            model, model_year, fuel_type,
-            age_band, band_order,
-            total_tests,
-            pass_rate,
-            avg_mileage
-        FROM age_bands
-        WHERE make = ?
-          AND band_order <= ?  -- 3-6 years only (early tier)
-          AND total_tests >= ?
-    """, (make, early_max_band, min_tests))
-
-    results = []
-    for row in cur.fetchall():
-        band_avg = age_band_avgs.get(row["band_order"], 85.0)
-        vs_national_at_age = round(row["pass_rate"] - band_avg, 2)
-
-        if vs_national_at_age > 0:  # Only above-average performers
-            results.append({
-                "model": row["model"],
-                "model_year": row["model_year"],
-                "fuel_type": row["fuel_type"],
-                "age_band": row["age_band"],
-                "age_band_order": row["band_order"],
-                "total_tests": row["total_tests"],
-                "pass_rate": row["pass_rate"],
-                "vs_national_at_age": vs_national_at_age,
-                "national_avg_for_age": round(band_avg, 2),
-                "avg_mileage": row["avg_mileage"],
-                "maturity_tier": "early",
-                "evidence_quality": "limited",
-                "caveat": "Durability not yet proven - too early to assess long-term reliability"
-            })
-
-    # Sort by vs_national_at_age descending (best performers first)
-    results.sort(key=lambda x: x["vs_national_at_age"], reverse=True)
-    return results
-
-
-def get_model_family_trajectory(conn, make: str, core_model: str, config: dict = None) -> dict:
-    """
-    Get the full aging trajectory for a model family.
-
-    Shows how different model years perform at each age band,
-    helping identify which years are most durable and any
-    quality inflection points (e.g., when manufacturing improved).
-
-    Uses WEIGHTED national averages by age band from the database.
-    """
-    cfg = config or DEFAULT_CONFIG
-    min_tests_trajectory = cfg["min_tests_trajectory"]
-    age_band_avgs = get_weighted_age_band_averages(conn)
-
+    # Query all vehicles for this make
     cur = conn.execute("""
         SELECT
             model_year,
-            age_band,
-            band_order,
             SUM(total_tests) as total_tests,
-            ROUND(SUM(total_tests * pass_rate) / SUM(total_tests), 2) as pass_rate,
-            ROUND(AVG(avg_mileage), 0) as avg_mileage
-        FROM age_bands
-        WHERE make = ? AND (model = ? OR model LIKE ? || ' %')
-        GROUP BY model_year, age_band, band_order
-        HAVING SUM(total_tests) >= ?
-        ORDER BY band_order, model_year
-    """, (make, core_model, core_model, min_tests_trajectory))
-
-    # Organize by age band
-    trajectory = {}
-    all_years = set()
-
-    for row in cur.fetchall():
-        band = row["age_band"]
-        band_avg = age_band_avgs.get(row["band_order"], 71.5)
-
-        if band not in trajectory:
-            trajectory[band] = {
-                "band_order": row["band_order"],
-                "national_avg": round(band_avg, 2),
-                "model_years": []
-            }
-
-        vs_national = round(row["pass_rate"] - band_avg, 2)
-
-        trajectory[band]["model_years"].append({
-            "year": row["model_year"],
-            "pass_rate": row["pass_rate"],
-            "vs_national": vs_national,
-            "total_tests": row["total_tests"],
-            "avg_mileage": row["avg_mileage"]
-        })
-        all_years.add(row["model_year"])
-
-    # Identify best/worst years at proven ages (11+ years)
-    proven_performance = []
-    for band_name, band_data in trajectory.items():
-        if band_data["band_order"] >= 4:  # 11+ years
-            for my in band_data["model_years"]:
-                proven_performance.append({
-                    "year": my["year"],
-                    "vs_national": my["vs_national"],
-                    "age_band": band_name
-                })
-
-    best_proven_year = None
-    worst_proven_year = None
-    if proven_performance:
-        proven_performance.sort(key=lambda x: x["vs_national"], reverse=True)
-        best_proven_year = proven_performance[0]
-        worst_proven_year = proven_performance[-1]
-
-    return {
-        "core_model": core_model,
-        "years_covered": sorted(all_years),
-        "trajectory_by_age": trajectory,
-        "best_proven_year": best_proven_year,
-        "worst_proven_year": worst_proven_year,
-        "has_proven_data": any(b["band_order"] >= 4 for b in trajectory.values())
-    }
-
-
-def get_reliability_summary(conn, make: str, config: dict = None) -> dict:
-    """
-    Generate a high-level reliability summary based on proven data.
-
-    This provides trustworthy statements about the make's durability
-    based only on vehicles with sufficient age data.
-
-    Uses WEIGHTED national averages by age band from the database.
-    """
-    cfg = config or DEFAULT_CONFIG
-    min_tests = cfg["min_tests"]
-    age_band_avgs = get_weighted_age_band_averages(conn)
-
-    # Count vehicles in each maturity tier
-    cur = conn.execute("""
-        SELECT
-            CASE
-                WHEN band_order >= 4 THEN 'proven'
-                WHEN band_order >= 2 THEN 'maturing'
-                ELSE 'early'
-            END as tier,
-            COUNT(DISTINCT model || model_year || fuel_type) as vehicle_count,
-            SUM(total_tests) as total_tests
-        FROM age_bands
-        WHERE make = ?
-        GROUP BY tier
+            SUM(total_passes) as total_passes
+        FROM vehicle_insights
+        WHERE make = ? AND model_year IS NOT NULL
+        GROUP BY model_year
     """, (make,))
 
-    tier_counts = {row["tier"]: {"vehicles": row["vehicle_count"], "tests": row["total_tests"]}
-                   for row in cur.fetchall()}
-
-    # Get proven durability stats - calculate vs_national in Python
-    cur = conn.execute("""
-        SELECT band_order, pass_rate, total_tests
-        FROM age_bands
-        WHERE make = ? AND band_order >= 4 AND total_tests >= ?
-    """, (make, min_tests))
-
-    total_proven = 0
-    above_avg = 0
-    below_avg = 0
-    total_vs_national = 0.0
+    # Aggregate by age band
+    band_data = defaultdict(lambda: {"total_tests": 0, "total_passes": 0})
 
     for row in cur.fetchall():
-        band_avg = age_band_avgs.get(row["band_order"], 60.0)
-        vs_national = row["pass_rate"] - band_avg
-        total_proven += 1
-        total_vs_national += vs_national
-        if vs_national > 0:
-            above_avg += 1
-        else:
-            below_avg += 1
+        age_band, band_order = calculate_age_band(row["model_year"])
+        if age_band is None:
+            continue
 
-    # Calculate durability rating
-    if total_proven > 0:
-        pct_above_avg = (above_avg / total_proven) * 100
-        avg_vs_national = round(total_vs_national / total_proven, 2)
+        band_data[band_order]["total_tests"] += row["total_tests"]
+        band_data[band_order]["total_passes"] += row["total_passes"]
+        band_data[band_order]["age_band"] = age_band
 
-        if pct_above_avg >= 80 and avg_vs_national >= 5:
-            durability_rating = "Excellent"
-        elif pct_above_avg >= 60 and avg_vs_national >= 2:
-            durability_rating = "Good"
-        elif pct_above_avg >= 40:
-            durability_rating = "Average"
-        else:
-            durability_rating = "Below Average"
-    else:
-        durability_rating = "Insufficient Data"
-        pct_above_avg = None
-        avg_vs_national = None
+    # Build results
+    bands = {}
+    for band_order in sorted(band_data.keys()):
+        data = band_data[band_order]
+        age_band = data["age_band"]
+
+        if data["total_tests"] < min_tests:
+            continue
+
+        make_pass_rate = (data["total_passes"] / data["total_tests"]) * 100
+        national_data = national.get(age_band, {})
+        national_pass_rate = national_data.get("pass_rate", NATIONAL_AVG_BY_BAND.get(band_order, 70.0))
+
+        confidence = get_sample_confidence(data["total_tests"])
+
+        bands[age_band] = {
+            "band_order": band_order,
+            "make_pass_rate": round(make_pass_rate, 2),
+            "national_pass_rate": round(national_pass_rate, 2),
+            "vs_national": round(make_pass_rate - national_pass_rate, 2),
+            "total_tests": data["total_tests"],
+            "confidence": confidence["level"],
+            "sample_note": confidence["note"]
+        }
 
     return {
-        "tier_distribution": tier_counts,
-        "proven_vehicles_tested": total_proven,
-        "proven_above_average_pct": round(pct_above_avg, 1) if pct_above_avg else None,
-        "proven_avg_vs_national": avg_vs_national,
-        "durability_rating": durability_rating,
-        "methodology_note": "Rating based only on vehicles with 11+ years of MOT data"
+        "methodology": "Pass rates compared to national average for vehicles of the same age. "
+                       "Positive vs_national indicates above-average performance for that age band.",
+        "reference_year": REFERENCE_YEAR,
+        "national_benchmarks": national,
+        "make_performance": bands
     }
+
+
+def get_model_age_band_breakdown(conn, make: str, min_tests: int = None) -> list:
+    """
+    Get per-model performance breakdown by age band.
+
+    For each model, shows pass rate at each age band compared to national average.
+    Allows users to see which specific models perform well/poorly at different ages.
+
+    Args:
+        conn: Database connection
+        make: Vehicle make (e.g., "FORD")
+        min_tests: Minimum tests per model/band to include (default: MIN_TESTS_DEFAULT)
+
+    Returns:
+        List of models with their age band performance data
+    """
+    if min_tests is None:
+        min_tests = MIN_TESTS_DEFAULT
+
+    # Get national benchmarks
+    national = get_national_age_benchmarks(conn)
+    national_by_order = get_weighted_age_band_averages(conn)
+
+    # Query all vehicles for this make, grouped by core model and model_year
+    # First, get unique models
+    cur = conn.execute("""
+        SELECT DISTINCT model FROM vehicle_insights WHERE make = ?
+    """, (make,))
+    all_models = [row["model"] for row in cur.fetchall()]
+
+    # Identify core model names (shortest version of each family)
+    core_names = set()
+    for model in sorted(all_models, key=len):
+        is_variant = any(model.startswith(core + " ") for core in core_names)
+        if not is_variant:
+            core_names.add(model)
+
+    results = []
+
+    for core_model in sorted(core_names):
+        # Get data for this model family
+        cur = conn.execute("""
+            SELECT
+                model_year,
+                SUM(total_tests) as total_tests,
+                SUM(total_passes) as total_passes
+            FROM vehicle_insights
+            WHERE make = ? AND (model = ? OR model LIKE ? || ' %')
+              AND model_year IS NOT NULL
+            GROUP BY model_year
+        """, (make, core_model, core_model))
+
+        # Aggregate by age band
+        band_data = defaultdict(lambda: {"total_tests": 0, "total_passes": 0})
+        total_model_tests = 0
+
+        for row in cur.fetchall():
+            age_band, band_order = calculate_age_band(row["model_year"])
+            if age_band is None:
+                continue
+
+            band_data[band_order]["total_tests"] += row["total_tests"]
+            band_data[band_order]["total_passes"] += row["total_passes"]
+            band_data[band_order]["age_band"] = age_band
+            total_model_tests += row["total_tests"]
+
+        # Skip models with insufficient total data
+        if total_model_tests < min_tests:
+            continue
+
+        # Build band breakdown for this model
+        age_bands = []
+        for band_order in sorted(band_data.keys()):
+            data = band_data[band_order]
+
+            if data["total_tests"] < min_tests:
+                continue
+
+            pass_rate = (data["total_passes"] / data["total_tests"]) * 100
+            national_rate = national_by_order.get(band_order, NATIONAL_AVG_BY_BAND.get(band_order, 70.0))
+            confidence = get_sample_confidence(data["total_tests"])
+
+            age_bands.append({
+                "age_band": data["age_band"],
+                "band_order": band_order,
+                "pass_rate": round(pass_rate, 2),
+                "national_pass_rate": round(national_rate, 2),
+                "vs_national": round(pass_rate - national_rate, 2),
+                "total_tests": data["total_tests"],
+                "confidence": confidence["level"],
+                "sample_note": confidence["note"]
+            })
+
+        if age_bands:
+            # Calculate overall model confidence
+            model_confidence = get_sample_confidence(total_model_tests)
+
+            results.append({
+                "core_model": core_model,
+                "total_tests": total_model_tests,
+                "confidence": model_confidence["level"],
+                "age_bands_available": len(age_bands),
+                "age_bands": age_bands
+            })
+
+    # Sort by total tests (most data first)
+    results.sort(key=lambda x: x["total_tests"], reverse=True)
+    return results
 
 
 def generate_make_insights(make: str) -> dict:
@@ -1153,53 +964,18 @@ def generate_make_insights(make: str) -> dict:
     # Get mileage impact
     mileage_impact = get_mileage_impact(conn, make)
 
-    # Get age-adjusted scores (legacy methodology - kept for backwards compatibility)
-    best_age_adjusted = get_best_models_age_adjusted(conn, make)
-    worst_age_adjusted = get_worst_models_age_adjusted(conn, make)
-
     # =================================================================
-    # NEW: Evidence-Tiered Durability Analysis
+    # OBJECTIVE AGE BAND ANALYSIS
     # =================================================================
-    # This is the high-quality methodology that separates proven
-    # durability from early/unproven performance
+    # Provides objective data on pass rates by vehicle age, compared
+    # to national averages. No subjective labels - users draw conclusions.
     # =================================================================
 
-    # Get reliability summary based on proven data
-    reliability_summary = get_reliability_summary(conn, make)
+    # Get make-level age band performance vs national
+    age_band_performance = get_age_band_performance(conn, make)
 
-    # Get durability champions (proven 11+ years, above average)
-    durability_champions = get_durability_champions(conn, make)
-
-    # Get models to avoid (proven 11+ years, below average)
-    models_to_avoid_proven = get_models_to_avoid_proven(conn, make)
-
-    # Get early performers (3-6 years, with caveats)
-    early_performers = get_early_performers(conn, make)
-
-    # Get model family trajectories for key models
-    # Prioritize models with the most data and proven durability data
-    model_trajectories = {}
-    key_models = set()
-
-    # Include unique models from durability champions (proven good)
-    for m in durability_champions[:10]:
-        core = m["model"].split()[0] if " " in m["model"] else m["model"]
-        key_models.add(core)
-
-    # Include unique models from models to avoid (proven bad)
-    for m in models_to_avoid_proven[:5]:
-        core = m["model"].split()[0] if " " in m["model"] else m["model"]
-        key_models.add(core)
-
-    # Include top core models by test count (most popular)
-    top_by_tests = sorted(core_models, key=lambda x: x["total_tests"], reverse=True)
-    for cm in top_by_tests[:8]:
-        key_models.add(cm["core_model"])
-
-    for core_model in key_models:
-        trajectory = get_model_family_trajectory(conn, make, core_model)
-        if trajectory["trajectory_by_age"]:  # Only include if we have data
-            model_trajectories[core_model] = trajectory
+    # Get per-model age band breakdown
+    model_age_breakdown = get_model_age_band_breakdown(conn, make)
 
     conn.close()
 
@@ -1210,10 +986,11 @@ def generate_make_insights(make: str) -> dict:
             "generated_at": datetime.now().isoformat(),
             "database": str(DB_PATH.name),
             "national_pass_rate": national.get("overall_pass_rate", 71.51),
-            "methodology_version": "2.1",
-            "methodology_note": "Year-adjusted scoring: model comparisons use same-year national averages. "
-                               "Age-band comparisons use weighted national averages. "
-                               "Only vehicles with 11+ years of data are classified as 'proven' durability."
+            "methodology_version": "3.0",
+            "data_source_year": REFERENCE_YEAR,
+            "methodology_note": "Objective age band analysis: pass rates compared to national averages "
+                               "for vehicles of the same age. No subjective ratings - data presented "
+                               "with confidence indicators based on sample size."
         },
         "overview": overview,
         "competitors": competitors,
@@ -1243,38 +1020,26 @@ def generate_make_insights(make: str) -> dict:
         },
         "mileage_impact": mileage_impact,
         "all_models": all_models,
-        # Legacy age-adjusted scoring (kept for backwards compatibility)
-        "age_adjusted": {
-            "methodology": "Compares each model's pass rate against the national average for cars of the same age. A positive score means the model performs better than average for its age.",
-            "best_models": best_age_adjusted,
-            "worst_models": worst_age_adjusted
-        },
-        # NEW: Evidence-tiered durability analysis (high-quality insights)
-        "durability": {
-            "methodology": {
-                "description": "Evidence-tiered durability scoring based on proven long-term data",
-                "proven_threshold": "11+ years of MOT data required for 'proven' durability claims",
-                "early_caveat": "Vehicles under 7 years old have not yet proven long-term durability",
-                "scoring": "Performance vs national average for vehicles of the same age"
+        # Objective age band analysis - no subjective labels
+        "age_band_analysis": {
+            "description": "Pass rates by vehicle age compared to national averages. "
+                           "Positive vs_national values indicate above-average performance for that age band.",
+            "confidence_levels": {
+                "high": "1,000+ tests - statistically robust",
+                "medium": "200-999 tests - reasonable confidence",
+                "low": "50-199 tests - interpret with caution",
+                "insufficient": "<50 tests - excluded from analysis"
             },
-            "reliability_summary": reliability_summary,
-            "durability_champions": {
-                "description": "Vehicles with PROVEN durability - 11+ years old and still performing above average",
-                "evidence_quality": "high",
-                "vehicles": durability_champions
+            "age_bands": {
+                "3-7 years": "New vehicles - most pass easily, limited differentiation",
+                "8-10 years": "Maturing - issues start emerging, meaningful comparisons",
+                "11-14 years": "Established - solid long-term data",
+                "15-17 years": "Long-term - smaller samples expected",
+                "18-20 years": "Veteran - notable longevity, sample caveats apply",
+                "21+ years": "Classic - very small samples, often collector vehicles"
             },
-            "models_to_avoid": {
-                "description": "Vehicles with PROVEN poor durability - 11+ years old and performing below average",
-                "evidence_quality": "high",
-                "vehicles": models_to_avoid_proven
-            },
-            "early_performers": {
-                "description": "Newer vehicles showing strong early results (3-6 years)",
-                "evidence_quality": "limited",
-                "caveat": "Durability NOT yet proven - these vehicles have not been tested at older ages",
-                "vehicles": early_performers
-            },
-            "model_trajectories": model_trajectories
+            "make_performance": age_band_performance,
+            "model_breakdown": model_age_breakdown
         }
     }
 
