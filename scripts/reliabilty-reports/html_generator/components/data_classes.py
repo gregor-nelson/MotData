@@ -6,36 +6,46 @@ Contains all data structures and the main parser for article generation.
 
 import json
 import re
+import sys
 from html import escape
 from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Optional
 
-
-# =============================================================================
-# Constants & Mappings
-# =============================================================================
-
-FUEL_TYPE_NAMES = {
-    'PE': 'Petrol',
-    'DI': 'Diesel',
-    'HY': 'Hybrid Electric',
-    'EL': 'Electric',
-    'ED': 'Plug-in Hybrid',
-    'GB': 'Gas Bi-fuel',
-    'OT': 'Other',
-}
-
-PASS_RATE_THRESHOLDS = {
-    'excellent': 85.0,  # >= 85%
-    'good': 70.0,       # >= 70%
-    'average': 60.0,    # >= 60%
-    # below 60% = poor
-}
-
-# Minimum test thresholds for statistical significance
-MIN_TESTS_PROVEN_DURABILITY = 100    # Minimum tests for proven durability rankings
-MIN_TESTS_EARLY_PERFORMER = 100      # Minimum tests for early performer rankings
+# Add parent directories to path for config import
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+from config import (
+    FUEL_TYPE_NAMES,
+    PASS_RATE_EXCELLENT,
+    PASS_RATE_GOOD,
+    PASS_RATE_AVERAGE,
+    MIN_TESTS_PROVEN_DURABILITY,
+    MIN_TESTS_EARLY_PERFORMER,
+    MIN_TESTS_BEST_MODELS,
+    AVOID_PASS_RATE as AVOID_PASS_RATE_THRESHOLD,
+    AVOID_VS_NATIONAL as AVOID_VS_NATIONAL_THRESHOLD,
+    RATING_EXCELLENT_PCT,
+    RATING_EXCELLENT_VS_NAT,
+    RATING_GOOD_PCT,
+    RATING_GOOD_VS_NAT,
+    RATING_AVERAGE_PCT,
+    # Derived constants
+    DATA_YEAR_START,
+    DATA_YEAR_END,
+    PASS_RATE_EXCEPTIONAL,
+    VS_NATIONAL_EXCEPTIONAL,
+    VS_NATIONAL_GOOD,
+    VS_NATIONAL_AROUND_AVERAGE,
+    # Editorial constants
+    SAMPLE_SIZE_LOW,
+    SAMPLE_SIZE_MODERATE,
+    MIN_TESTS_MODEL_BREAKDOWN,
+    MIN_TESTS_FAQ_POPULAR,
+    RANK_TOP_PERFORMER,
+    # Methodology display values
+    METHODOLOGY_TOTAL_TESTS,
+    METHODOLOGY_YEAR_RANGE_EXAMPLE,
+)
 
 
 # =============================================================================
@@ -44,11 +54,11 @@ MIN_TESTS_EARLY_PERFORMER = 100      # Minimum tests for early performer ranking
 
 def get_pass_rate_class(rate: float) -> str:
     """Return CSS class based on pass rate."""
-    if rate >= PASS_RATE_THRESHOLDS['excellent']:
+    if rate >= PASS_RATE_EXCELLENT:
         return 'pass-rate-excellent'
-    elif rate >= PASS_RATE_THRESHOLDS['good']:
+    elif rate >= PASS_RATE_GOOD:
         return 'pass-rate-good'
-    elif rate >= PASS_RATE_THRESHOLDS['average']:
+    elif rate >= PASS_RATE_AVERAGE:
         return 'pass-rate-average'
     return 'pass-rate-poor'
 
@@ -634,6 +644,7 @@ class ArticleInsights:
         proven_champions = []
         proven_avoid = []
         early_performers_list = []
+        all_proven_count = 0  # Track ALL proven models, not just champions/avoid
 
         for model_data in model_breakdown:
             core_model = model_data.get('core_model', '')
@@ -659,6 +670,7 @@ class ArticleInsights:
                 if band_order >= 2:  # 11+ years = proven
                     maturity_tier = 'proven'
                     evidence_quality = 'high' if confidence == 'high' else 'medium'
+                    all_proven_count += 1  # Count ALL proven models for accurate percentage
 
                     entry = DurabilityVehicle(
                         model=core_model,
@@ -718,6 +730,9 @@ class ArticleInsights:
             reverse=True
         )
 
+        # Store total proven count for accurate percentage calculation
+        self._total_proven_analyzed = all_proven_count
+
         # Calculate reliability summary from the data
         self._calculate_reliability_summary()
 
@@ -725,7 +740,8 @@ class ArticleInsights:
         """
         Calculate reliability summary from parsed age band data.
         """
-        total_proven = len(self.proven_durability_champions) + len(self.proven_models_to_avoid)
+        # Use accurate total (includes models between -3 and 0 vs_national)
+        total_proven = getattr(self, '_total_proven_analyzed', 0)
         if total_proven == 0:
             self.reliability_summary = None
             return
@@ -739,12 +755,12 @@ class ArticleInsights:
         else:
             avg_vs_national = 0
 
-        # Determine rating
-        if pct_above >= 80 and avg_vs_national >= 5:
+        # Determine rating using config thresholds
+        if pct_above >= RATING_EXCELLENT_PCT and avg_vs_national >= RATING_EXCELLENT_VS_NAT:
             rating = "Excellent"
-        elif pct_above >= 60 and avg_vs_national >= 2:
+        elif pct_above >= RATING_GOOD_PCT and avg_vs_national >= RATING_GOOD_VS_NAT:
             rating = "Good"
-        elif pct_above >= 40:
+        elif pct_above >= RATING_AVERAGE_PCT:
             rating = "Average"
         elif total_proven > 0:
             rating = "Below Average"

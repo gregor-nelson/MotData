@@ -111,6 +111,24 @@ def create_base_tests_table(conn):
     """Create a filtered base table for reuse in all queries."""
     print("\n[2/19] Creating filtered base_tests table...")
 
+    # Step 1: Create a table of valid makes (100+ tests, no UNCLASSIFIED variants)
+    conn.execute("""
+        CREATE TEMP TABLE valid_makes AS
+        SELECT make
+        FROM test_result
+        WHERE test_type = 'NT'
+          AND test_result IN ('P', 'F', 'PRS')
+          AND CAST(test_class_id AS VARCHAR) = '4'
+          AND first_use_date != '1971-01-01'
+          AND make NOT LIKE '%UNCLASSIFIED%'
+        GROUP BY make
+        HAVING COUNT(*) >= 100
+    """)
+
+    valid_count = conn.execute("SELECT COUNT(*) FROM valid_makes").fetchone()[0]
+    print(f"  Found {valid_count:,} valid makes (100+ tests, excluding UNCLASSIFIED)")
+
+    # Step 2: Create base_tests filtering to valid makes only
     conn.execute("""
         CREATE TABLE base_tests AS
         SELECT
@@ -131,7 +149,7 @@ def create_base_tests_table(conn):
           AND tr.test_result IN ('P', 'F', 'PRS')
           AND CAST(tr.test_class_id AS VARCHAR) = '4'
           AND tr.first_use_date != '1971-01-01'
-          AND tr.make != 'UNCLASSIFIED'
+          AND tr.make IN (SELECT make FROM valid_makes)
     """)
 
     count = conn.execute("SELECT COUNT(*) FROM base_tests").fetchone()[0]

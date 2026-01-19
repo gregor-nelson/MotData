@@ -14,7 +14,26 @@ from .data_classes import (
     get_pass_rate_class,
     MIN_TESTS_PROVEN_DURABILITY,
     MIN_TESTS_EARLY_PERFORMER,
+    AVOID_PASS_RATE_THRESHOLD,
+    AVOID_VS_NATIONAL_THRESHOLD,
+    PASS_RATE_EXCELLENT,
     generate_faq_data,
+    # Derived constants
+    DATA_YEAR_START,
+    DATA_YEAR_END,
+    PASS_RATE_EXCEPTIONAL,
+    VS_NATIONAL_EXCEPTIONAL,
+    VS_NATIONAL_GOOD,
+    VS_NATIONAL_AROUND_AVERAGE,
+    # Editorial constants
+    SAMPLE_SIZE_LOW,
+    SAMPLE_SIZE_MODERATE,
+    MIN_TESTS_MODEL_BREAKDOWN,
+    MIN_TESTS_FAQ_POPULAR,
+    RANK_TOP_PERFORMER,
+    # Methodology display values
+    METHODOLOGY_TOTAL_TESTS,
+    METHODOLOGY_YEAR_RANGE_EXAMPLE,
 )
 
 
@@ -30,9 +49,9 @@ def generate_header_section(insights: ArticleInsights, today_display: str, read_
             max_year = max(valid_years_to)
             year_range = f"{min_year}-{max_year}"
         else:
-            year_range = "2000-2023"  # Fallback for no valid years
+            year_range = f"{DATA_YEAR_START}-{DATA_YEAR_END}"  # Fallback for no valid years
     else:
-        year_range = "2000-2023"  # Fallback
+        year_range = f"{DATA_YEAR_START}-{DATA_YEAR_END}"  # Fallback
 
     return f'''      <!-- Header -->
       <header class="mb-8">
@@ -156,22 +175,22 @@ def _get_dynamic_intro(insights: ArticleInsights) -> str:
     tests_formatted = format_number(insights.total_tests)
 
     # Low sample size - acknowledge data limitations first
-    if insights.total_tests < 5000:
+    if insights.total_tests < SAMPLE_SIZE_LOW:
         return f'''<p>
           With <strong>{tests_formatted} MOT tests</strong> in the DVSA database, {insights.title_make} has limited test data compared to mainstream manufacturers. Here's what that data reveals about which models perform best.
         </p>'''
 
     # Moderate sample size - still note the context
-    if insights.total_tests < 20000:
+    if insights.total_tests < SAMPLE_SIZE_MODERATE:
         position_text = f"#{insights.rank} out of {insights.rank_total}" if insights.rank else "in the rankings"
         return f'''<p>
           {insights.title_make} ranks <strong>{position_text} manufacturers</strong> with {tests_formatted} MOT tests in our database. We analysed this data to identify which {insights.title_make} models deliver the best reliability.
         </p>'''
 
     # High volume brands - position based on actual performance
-    is_top_performer = insights.rank <= 15 and insights.vs_national >= 5
-    is_above_average = insights.vs_national >= 2
-    is_around_average = -2 < insights.vs_national < 2
+    is_top_performer = insights.rank <= RANK_TOP_PERFORMER and insights.vs_national >= VS_NATIONAL_GOOD
+    is_above_average = insights.vs_national >= VS_NATIONAL_AROUND_AVERAGE
+    is_around_average = -VS_NATIONAL_AROUND_AVERAGE < insights.vs_national < VS_NATIONAL_AROUND_AVERAGE
 
     if is_top_performer:
         return f'''<p>
@@ -202,7 +221,7 @@ def generate_intro_section(insights: ArticleInsights) -> str:
       <div class="article-prose text-lg mb-10">
         {intro_text}
         <p>
-          This isn't survey data or owner opinions. These are actual pass/fail results from UK garages, covering {insights.title_make} models sold in the UK from 2000 to 2023.
+          This isn't survey data or owner opinions. These are actual pass/fail results from UK garages, covering {insights.title_make} models sold in the UK from {DATA_YEAR_START} to {DATA_YEAR_END}.
         </p>
       </div>'''
 
@@ -275,7 +294,7 @@ def generate_best_models_section(insights: ArticleInsights) -> str:
     rows = []
     for m in insights.top_models[:10]:
         vs = f"+{m.vs_national:.1f}%" if m.vs_national >= 0 else f"{m.vs_national:.1f}%"
-        highlight = ' class="bg-emerald-50"' if m.pass_rate >= 85 else ''
+        highlight = ' class="bg-emerald-50"' if m.pass_rate >= PASS_RATE_EXCELLENT else ''
         rows.append(f'''              <tr{highlight}>
                 <td><strong>{safe_html(m.name)}</strong></td>
                 <td><span class="data-badge {m.pass_rate_class}">{m.pass_rate:.1f}%</span></td>
@@ -289,7 +308,7 @@ def generate_best_models_section(insights: ArticleInsights) -> str:
     # Find the surprise/notable insight - only show if genuinely exceptional
     top = insights.top_models[0] if insights.top_models else None
     note = ""
-    if top and top.pass_rate >= 90:
+    if top and top.pass_rate >= PASS_RATE_EXCEPTIONAL:
         # Only claim "among most reliable" if truly exceptional (90%+)
         note = f'''
         <div class="callout tip">
@@ -299,7 +318,7 @@ def generate_best_models_section(insights: ArticleInsights) -> str:
             <p class="callout-text">The {top.name} achieves a {top.pass_rate:.1f}% pass rate, {top.pass_rate - insights.national_pass_rate:.0f} percentage points above the national average.</p>
           </div>
         </div>'''
-    elif top and top.pass_rate >= 85 and top.vs_national >= 10:
+    elif top and top.pass_rate >= PASS_RATE_EXCELLENT and top.vs_national >= VS_NATIONAL_EXCEPTIONAL:
         # Good but not exceptional - more measured claim
         note = f'''
         <div class="callout tip">
@@ -358,10 +377,10 @@ def _get_durability_intro_text(insights: ArticleInsights) -> str:
         avg_vs_national = insights.reliability_summary.proven_avg_vs_national
 
     # Tier the intro based on actual durability performance
-    if rating == "Excellent" or (avg_vs_national and avg_vs_national >= 10):
+    if rating == "Excellent" or (avg_vs_national and avg_vs_national >= VS_NATIONAL_EXCEPTIONAL):
         return f'''These {insights.title_make} models have <strong>proven exceptional durability</strong> with 11+ years of real-world MOT data. They consistently outperform the national average for cars of the same age:'''
 
-    elif rating == "Good" or (avg_vs_national and avg_vs_national >= 5):
+    elif rating == "Good" or (avg_vs_national and avg_vs_national >= VS_NATIONAL_GOOD):
         return f'''These {insights.title_make} models show <strong>solid long-term reliability</strong> based on 11+ years of MOT data. Here's how they compare to the national average for cars of the same age:'''
 
     elif rating == "Average" or (avg_vs_national and avg_vs_national >= 0):
@@ -391,7 +410,7 @@ def generate_durability_section(insights: ArticleInsights) -> str:
     rows = []
     for m in insights.proven_durability_champions[:10]:
         vs_class = "text-emerald-600" if m.vs_national_at_age >= 0 else "text-red-600"
-        highlight = ' class="bg-emerald-50"' if m.vs_national_at_age >= 10 else ''
+        highlight = ' class="bg-emerald-50"' if m.vs_national_at_age >= VS_NATIONAL_EXCEPTIONAL else ''
         # v2.1: Show context with age-specific national average
         vs_display = f'<span class="{vs_class} font-semibold" title="{m.comparison_context}">{m.vs_national_formatted}</span>'
         # v3.0: Show "-" if model_year is 0 (aggregated data)
@@ -411,7 +430,7 @@ def generate_durability_section(insights: ArticleInsights) -> str:
     # Find the standout model
     top = insights.get_top_durable_model()
     standout_note = ""
-    if top and top.vs_national_at_age >= 15:
+    if top and top.vs_national_at_age >= VS_NATIONAL_EXCEPTIONAL + VS_NATIONAL_GOOD:
         # v3.0: model_year may be 0 when aggregated by core model
         top_name = f"{top.model} {top.model_year}" if top.model_year and top.model_year > 0 else top.model
         standout_note = f'''
@@ -569,7 +588,7 @@ def generate_model_breakdowns_section(insights: ArticleInsights) -> str:
     sections = []
 
     # Get top models with enough data
-    breakdown_models = insights.get_models_for_breakdown(min_tests=10000, limit=5)
+    breakdown_models = insights.get_models_for_breakdown(min_tests=MIN_TESTS_MODEL_BREAKDOWN, limit=5)
 
     for model in breakdown_models:
         if not model.year_breakdowns:
@@ -586,7 +605,7 @@ def generate_model_breakdowns_section(insights: ArticleInsights) -> str:
             vs = y.vs_national_formatted
             # v2.1: Show context with year-specific national average
             vs_context = f'<span title="{y.comparison_context}">{vs}</span>' if y.national_avg_for_year else vs
-            highlight = ' class="bg-emerald-50"' if y.pass_rate >= 90 else ''
+            highlight = ' class="bg-emerald-50"' if y.pass_rate >= PASS_RATE_EXCEPTIONAL else ''
             best_rows.append(f'''              <tr{highlight}>
                 <td><strong>{y.model_year}</strong></td>
                 <td>{y.fuel_name}</td>
@@ -596,7 +615,7 @@ def generate_model_breakdowns_section(insights: ArticleInsights) -> str:
               </tr>''')
 
         # Find worst years for this model
-        worst_years = [y for y in sorted_breakdowns if y.pass_rate < 60]
+        worst_years = [y for y in sorted_breakdowns if y.pass_rate < AVOID_PASS_RATE_THRESHOLD]
         for y in worst_years[:3]:
             vs = y.vs_national_formatted
             vs_context = f'<span title="{y.comparison_context}">{vs}</span>' if y.national_avg_for_year else vs
@@ -622,7 +641,7 @@ def generate_model_breakdowns_section(insights: ArticleInsights) -> str:
         worst_year = worst_years[0] if worst_years else None
 
         verdict = f"<strong>{safe_html(model.name)} verdict:</strong> "
-        if best_year and best_year.pass_rate >= 90:
+        if best_year and best_year.pass_rate >= PASS_RATE_EXCEPTIONAL:
             points_above = best_year.pass_rate - insights.national_pass_rate
             verdict += f"The {best_year.model_year} {best_year.fuel_name.lower()} model achieves a {best_year.pass_rate:.1f}% pass rate ({points_above:.0f} points above average). "
         if worst_year:
@@ -737,7 +756,7 @@ def generate_fuel_analysis_section(insights: ArticleInsights) -> str:
     for f in insights.fuel_analysis:
         vs = f.pass_rate - insights.national_pass_rate
         vs_str = f"+{vs:.1f}%" if vs >= 0 else f"{vs:.1f}%"
-        highlight = ' class="bg-emerald-50"' if f.pass_rate >= 80 else ''
+        highlight = ' class="bg-emerald-50"' if f.pass_rate >= PASS_RATE_EXCELLENT else ''
         rows.append(f'''              <tr{highlight}>
                 <td><strong>{f.fuel_name}</strong></td>
                 <td><span class="data-badge {f.pass_rate_class}">{f.pass_rate:.1f}%</span></td>
@@ -811,12 +830,27 @@ def _get_avoid_severity_text(insights: ArticleInsights) -> str:
 
 
 def generate_avoid_section(insights: ArticleInsights) -> str:
-    """Generate the models to avoid section."""
+    """Generate the models to avoid section.
+
+    Fixes Issue 6: Only shows genuinely poor performers, not just
+    models that are slightly below average.
+    """
     if not insights.worst_models:
         return ""
 
+    # Filter to only genuinely poor performers
+    # Pass rate < 60% OR vs_national < -10%
+    filtered_worst = [
+        m for m in insights.worst_models
+        if m.pass_rate < AVOID_PASS_RATE_THRESHOLD or m.vs_national < AVOID_VS_NATIONAL_THRESHOLD
+    ]
+
+    # If no models meet the threshold, don't show the section
+    if not filtered_worst:
+        return ""
+
     rows = []
-    for m in insights.worst_models[:10]:
+    for m in filtered_worst[:10]:
         rows.append(f'''              <tr class="bg-red-50">
                 <td><strong>{safe_html(m.model)}</strong></td>
                 <td>{m.model_year}</td>
@@ -829,7 +863,7 @@ def generate_avoid_section(insights: ArticleInsights) -> str:
 
     # Identify patterns in worst models
     patterns = {}
-    for m in insights.worst_models[:10]:
+    for m in filtered_worst[:10]:
         key = m.model
         if key not in patterns:
             patterns[key] = []
@@ -969,9 +1003,9 @@ def generate_faqs_section(insights: ArticleInsights) -> str:
     faqs = generate_faq_data(insights)
 
     # Add extra FAQs about specific popular models
-    popular_models = insights.get_models_for_breakdown(min_tests=50000, limit=3)
+    popular_models = insights.get_models_for_breakdown(min_tests=MIN_TESTS_FAQ_POPULAR, limit=3)
     for model in popular_models:
-        best_years = [y for y in model.year_breakdowns if y.pass_rate >= 90]
+        best_years = [y for y in model.year_breakdowns if y.pass_rate >= PASS_RATE_EXCEPTIONAL]
 
         # Check overall model performance against national average
         model_above_average = model.pass_rate >= insights.national_pass_rate
@@ -1036,11 +1070,11 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
 
     # === Best Nearly New (2019-2023) - using raw pass rates ===
     # Note: These are early performers, caveat included in text
-    # Threshold aligned with PASS_RATE_THRESHOLDS['excellent'] (85%)
+    # Threshold aligned with PASS_RATE_EXCELLENT (85%)
     nearly_new_items = []
     seen_models = set()
     for m in insights.get_best_nearly_new(max_age=5, limit=10):
-        if m.model not in seen_models and m.pass_rate >= 85:
+        if m.model not in seen_models and m.pass_rate >= PASS_RATE_EXCELLENT:
             seen_models.add(m.model)
             nearly_new_items.append(f'''            <li class="flex items-start gap-2">
               <i class="ph ph-check-circle text-emerald-600 mt-1"></i>
@@ -1052,13 +1086,16 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
     seen_models = set()
     # Use proven durability champions (11+ years data)
     for m in insights.proven_durability_champions[:10]:
-        if m.model not in seen_models and m.vs_national_at_age > 5:
+        if m.model not in seen_models and m.vs_national_at_age > VS_NATIONAL_GOOD:
             seen_models.add(m.model)
             # Find year range for this model in durability list
             similar = [x for x in insights.proven_durability_champions if x.model == m.model]
             if similar:
-                years = sorted([x.model_year for x in similar])
-                year_range = f"{years[0]}-{years[-1]}" if len(years) > 1 else str(years[0])
+                years = sorted([x.model_year for x in similar if x.model_year and x.model_year > 0])
+                if years:
+                    year_range = f"{years[0]}-{years[-1]}" if len(years) > 1 else str(years[0])
+                else:
+                    year_range = f"({similar[0].age_band})"
                 avg_score = sum(x.vs_national_at_age for x in similar) / len(similar)
                 used_items.append(f'''            <li class="flex items-start gap-2">
               <i class="ph ph-shield-check text-amber-600 mt-1"></i>
@@ -1069,13 +1106,16 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
     worst_items = []
     seen_models = set()
     for m in insights.proven_models_to_avoid[:8]:
-        if m.model not in seen_models and m.vs_national_at_age < -5:
+        if m.model not in seen_models and m.vs_national_at_age < -VS_NATIONAL_GOOD:
             seen_models.add(m.model)
             # Find year range for this model
             similar = [x for x in insights.proven_models_to_avoid if x.model == m.model]
             if similar:
-                years = sorted([x.model_year for x in similar])
-                year_range = f"{years[0]}-{years[-1]}" if len(years) > 1 else str(years[0])
+                years = sorted([x.model_year for x in similar if x.model_year and x.model_year > 0])
+                if years:
+                    year_range = f"{years[0]}-{years[-1]}" if len(years) > 1 else str(years[0])
+                else:
+                    year_range = f"({similar[0].age_band})"
                 avg_score = sum(x.vs_national_at_age for x in similar) / len(similar)
                 # Include concern text if available
                 concern_text = ""
@@ -1102,7 +1142,7 @@ def generate_recommendations_section(insights: ArticleInsights) -> str:
         <div class="grid md:grid-cols-2 gap-4 mb-4">
           <div class="bg-gradient-to-br from-emerald-50 to-emerald-100/30 rounded-xl p-5 border border-emerald-100/80 transition-all hover:-translate-y-0.5 hover:shadow-lg">
             <h4 class="font-semibold text-emerald-900 mb-1">Best If Buying Nearly New</h4>
-            <p class="text-sm text-emerald-700 mb-3">2019-2023 models with highest early pass rates</p>
+            <p class="text-sm text-emerald-700 mb-3">{DATA_YEAR_END - 4}-{DATA_YEAR_END} models with highest early pass rates</p>
             <ul class="space-y-2 text-emerald-800">
 {nearly_new_html}
             </ul>
@@ -1139,11 +1179,11 @@ def generate_methodology_section(insights: ArticleInsights) -> str:
           About This Data
         </h3>
         <div class="text-sm text-neutral-600 space-y-3 leading-relaxed">
-          <p>This analysis uses real MOT test results from the DVSA database, covering {format_number(insights.total_tests)} tests on {insights.title_make} vehicles between 2000 and 2023.</p>
+          <p>This analysis uses real MOT test results from the DVSA database, covering {format_number(insights.total_tests)} tests on {insights.title_make} vehicles between {DATA_YEAR_START} and {DATA_YEAR_END}.</p>
           <p><strong class="text-neutral-800">Year-Adjusted Scoring (v2.1):</strong> In year-by-year breakdowns, each vehicle is compared against the national average for vehicles of the <em>same model year</em>. This removes the natural bias where newer cars pass more often, allowing fair comparisons across eras.</p>
           <p><strong class="text-neutral-800">Evidence-Tiered Durability:</strong> We separate "proven durability" (vehicles tested at 11+ years old) from "early performers" (3-6 years old). Only vehicles with proven long-term data are used for durability claims. Age-band comparisons use weighted national averages.</p>
           <p>Minimum thresholds: {format_number(MIN_TESTS_PROVEN_DURABILITY)} tests for proven durability rankings, {format_number(MIN_TESTS_EARLY_PERFORMER)} tests for early performer rankings. Pass rates are calculated as first-time passes, excluding retests.</p>
-          <p>The overall national average MOT pass rate is {insights.national_pass_rate:.2f}% based on 32.3 million tests across all manufacturers. Year-specific averages range from ~59% (2009 vehicles) to ~88% (2020 vehicles).</p>
+          <p>The overall national average MOT pass rate is {insights.national_pass_rate:.2f}% based on {format_number(METHODOLOGY_TOTAL_TESTS)} tests across all manufacturers. Year-specific averages range {METHODOLOGY_YEAR_RANGE_EXAMPLE}.</p>
         </div>
       </section>'''
 

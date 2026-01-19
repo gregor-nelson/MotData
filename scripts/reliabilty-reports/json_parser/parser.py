@@ -15,9 +15,33 @@ import argparse
 import json
 import logging
 import sqlite3
+import sys
 from collections import defaultdict
 from pathlib import Path
 from datetime import datetime
+
+# Add parent directory to path for config import
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from config import (
+    REFERENCE_YEAR,
+    MIN_TESTS_DEFAULT,
+    MIN_TESTS_BEST_MODELS,
+    MIN_TESTS_FUEL_TYPE,
+    MIN_TESTS_META_DESCRIPTION,
+    MOTORHOME_BRANDS,
+    EXCLUSION_YEAR_CUTOFF,
+    VALID_FUEL_TYPES,
+    AGE_BAND_ORDER,
+    NATIONAL_AVG_BY_BAND,
+    SAMPLE_CONFIDENCE,
+    FUEL_TYPE_NAMES,
+    FALLBACK_NATIONAL_AVG,
+    RATING_EXCELLENT_PCT,
+    RATING_EXCELLENT_VS_NAT,
+    RATING_GOOD_PCT,
+    RATING_GOOD_VS_NAT,
+    RATING_AVERAGE_PCT,
+)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
@@ -43,66 +67,52 @@ def dict_from_row(row):
 # =============================================================================
 # CONFIGURATION
 # =============================================================================
-# All configurable values in one place. Downstream scripts can override these
-# by passing a config dict to generate_make_insights().
+# Runtime configuration dict for functions that accept config overrides.
+# Values reference the central config.py constants.
 # =============================================================================
 
 DEFAULT_CONFIG = {
-    # Statistical minimum thresholds
-    # Below these values, data is statistically unreliable (small samples can swing ±15%)
-    "min_tests": 50,                   # Minimum tests for inclusion in most analyses
-    "min_tests_trajectory": 100,       # Higher threshold for trajectory analysis
-
-    # Durability rating thresholds (percentage of models above average)
-    "rating_excellent_pct": 80,        # >= 80% above avg AND avg_vs_national >= 5
-    "rating_excellent_vs_nat": 5,
-    "rating_good_pct": 60,             # >= 60% above avg AND avg_vs_national >= 2
-    "rating_good_vs_nat": 2,
-    "rating_average_pct": 40,          # >= 40% above avg
-
-    # Fallback value when year data is missing
-    "fallback_national_avg": 71.51,
+    "min_tests": MIN_TESTS_DEFAULT,
+    "min_tests_trajectory": 100,
+    "rating_excellent_pct": RATING_EXCELLENT_PCT,
+    "rating_excellent_vs_nat": RATING_EXCELLENT_VS_NAT,
+    "rating_good_pct": RATING_GOOD_PCT,
+    "rating_good_vs_nat": RATING_GOOD_VS_NAT,
+    "rating_average_pct": RATING_AVERAGE_PCT,
+    "fallback_national_avg": FALLBACK_NATIONAL_AVG,
 }
 
-# Reference year for age calculations (MOT data source year)
-# UK Gov MOT data is from 2024 - this is used to calculate vehicle age from model_year
-REFERENCE_YEAR = 2024
 
-# Age band ordering - defines meaningful durability analysis ranges
-# Note: 3-7 years shows limited differentiation (most cars pass)
-#       8+ years is when meaningful durability differences emerge
-AGE_BAND_ORDER = {
-    "3-7 years": 0,    # New vehicles - most pass, limited signal
-    "8-10 years": 1,   # Maturing - issues start emerging
-    "11-14 years": 2,  # Established - solid durability data
-    "15-17 years": 3,  # Long-term - fewer vehicles, smaller samples
-    "18-20 years": 4,  # Veteran - notable durability, sample caveats
-    "21+ years": 5     # Classic - very small samples, collector territory
-}
+def is_excluded_model(model_name: str, year_from: int = None, model_year: int = None) -> bool:
+    """
+    Check if model should be excluded from best models list.
 
-# National average pass rates by age band (estimated from typical degradation curves)
-# Used as fallback if calculated values unavailable
-# These will be replaced by dynamically calculated values from vehicle_insights
-NATIONAL_AVG_BY_BAND = {
-    0: 88.0,   # 3-7 years - most vehicles pass easily
-    1: 75.0,   # 8-10 years - issues start emerging
-    2: 68.0,   # 11-14 years - established wear patterns
-    3: 62.0,   # 15-17 years - long-term survivors
-    4: 58.0,   # 18-20 years - veteran vehicles
-    5: 55.0    # 21+ years - classics, often well-maintained
-}
+    Excludes:
+    - Motorhomes (identified by first word being a motorhome brand)
+    - Vehicles older than EXCLUSION_YEAR_CUTOFF (40-year rolling exemption)
 
-# Sample size confidence thresholds
-# Used to provide objective data quality indicators
-SAMPLE_CONFIDENCE = {
-    "high": {"min_tests": 1000, "note": None},
-    "medium": {"min_tests": 200, "note": None},
-    "low": {"min_tests": 50, "note": "Limited sample size - interpret with caution"},
-    "insufficient": {"min_tests": 0, "note": "Insufficient data for reliable comparison"}
-}
+    Args:
+        model_name: The model name to check
+        year_from: Optional earliest year for this model (for aggregated data)
+        model_year: Optional specific model year (for per-variant data)
 
-# Minimum tests to include in analysis
-MIN_TESTS_DEFAULT = 50
+    Returns:
+        True if model should be excluded, False otherwise
+    """
+    if not model_name:
+        return True
+
+    # Check if first word is a motorhome brand
+    first_word = model_name.split()[0].upper()
+    if first_word in MOTORHOME_BRANDS:
+        return True
+
+    # Exclude vehicles older than cutoff year (use year_from or model_year)
+    check_year = year_from if year_from is not None else model_year
+    if check_year is not None and check_year < EXCLUSION_YEAR_CUTOFF:
+        return True
+
+    return False
 
 
 # =============================================================================
@@ -353,6 +363,37 @@ def get_national_averages(conn) -> dict:
     return {row["metric_name"]: row["metric_value"] for row in cur.fetchall()}
 
 
+def get_manufacturer_rank_filtered(conn, make: str, min_tests: int = 10000) -> tuple:
+    """
+    Calculate rank among manufacturers with minimum test threshold.
+
+    Fixes Issue 1: Returns accurate rank/total by only counting manufacturers
+    that meet the minimum test threshold.
+
+    Args:
+        conn: Database connection
+        make: Vehicle make to get rank for
+        min_tests: Minimum total tests to be included in ranking
+
+    Returns:
+        Tuple of (rank, total_count) where rank is 1-indexed position
+        and total_count is number of qualifying manufacturers.
+        Returns (None, None) if make doesn't meet threshold.
+    """
+    cur = conn.execute("""
+        WITH ranked AS (
+            SELECT make,
+                   ROW_NUMBER() OVER (ORDER BY avg_pass_rate DESC) as calc_rank,
+                   COUNT(*) OVER () as total_count
+            FROM manufacturer_rankings
+            WHERE total_tests >= ?
+        )
+        SELECT calc_rank, total_count FROM ranked WHERE make = ?
+    """, (min_tests, make))
+    row = cur.fetchone()
+    return (row['calc_rank'], row['total_count']) if row else (None, None)
+
+
 def get_competitor_comparison(conn, make: str) -> list:
     """Get competitor brands for comparison."""
     # Define competitor groups by segment
@@ -458,9 +499,13 @@ def get_models_aggregated(conn, make: str, config: dict = None) -> list:
 
 
 def get_core_models_aggregated(conn, make: str, config: dict = None) -> list:
-    """Get core model names aggregated (strips variants like 'CIVIC SR VTEC')."""
-    cfg = config or DEFAULT_CONFIG
-    min_tests = cfg["min_tests"]
+    """Get core model names aggregated (strips variants like 'CIVIC SR VTEC').
+
+    Fixes Issue 2: Uses higher minimum test threshold (MIN_TESTS_BEST_MODELS)
+    and filters out motorhomes, classic cars, and pre-1980 vehicles.
+    """
+    # Use higher threshold for best models list
+    min_tests = MIN_TESTS_BEST_MODELS
 
     # First get all models to identify core names
     cur = conn.execute("""
@@ -497,7 +542,11 @@ def get_core_models_aggregated(conn, make: str, config: dict = None) -> list:
         """, (core, make, core, core, min_tests))
         row = cur.fetchone()
         if row and row["total_tests"]:
-            results.append(dict_from_row(row))
+            data = dict_from_row(row)
+            # Filter out motorhomes, classic cars, and pre-1980 vehicles
+            if is_excluded_model(data["core_model"], data.get("year_from")):
+                continue
+            results.append(data)
 
     return sorted(results, key=lambda x: x["pass_rate"], reverse=True)
 
@@ -550,7 +599,11 @@ def get_model_family_year_breakdown(conn, make: str, core_model: str, config: di
 
 
 def get_fuel_type_breakdown(conn, make: str) -> list:
-    """Get pass rates by fuel type for this make."""
+    """Get pass rates by fuel type for this make.
+
+    Fixes Issue 3: Filters out invalid fuel codes (ST, LN, FC etc) and
+    fuel types with insufficient test data.
+    """
     cur = conn.execute("""
         SELECT
             fuel_type,
@@ -563,20 +616,20 @@ def get_fuel_type_breakdown(conn, make: str) -> list:
         ORDER BY pass_rate DESC
     """, (make,))
 
-    fuel_names = {
-        "PE": "Petrol",
-        "DI": "Diesel",
-        "HY": "Hybrid Electric",
-        "EL": "Electric",
-        "ED": "Plug-in Hybrid",
-        "GB": "Gas Bi-fuel",
-        "OT": "Other"
-    }
-
     results = []
     for row in cur.fetchall():
         data = dict_from_row(row)
-        data["fuel_name"] = fuel_names.get(data["fuel_type"], data["fuel_type"])
+        fuel_code = data["fuel_type"]
+
+        # Filter out invalid fuel codes
+        if fuel_code not in VALID_FUEL_TYPES:
+            continue
+
+        # Filter out fuel types with insufficient test data
+        if data["total_tests"] < MIN_TESTS_FUEL_TYPE:
+            continue
+
+        data["fuel_name"] = FUEL_TYPE_NAMES.get(fuel_code, fuel_code)
         results.append(data)
 
     return results
@@ -606,6 +659,9 @@ def get_best_models(conn, make: str, config: dict = None) -> list:
     results = []
     for row in cur.fetchall():
         data = dict_from_row(row)
+        # Filter out motorhomes and vehicles older than cutoff year
+        if is_excluded_model(data["model"], model_year=data["model_year"]):
+            continue
         year_avg = get_year_avg_safe(yearly_avgs, data["model_year"], cfg)[0]
         data["pass_rate_vs_national"] = round(data["pass_rate"] - year_avg, 2)
         data["national_avg_for_year"] = round(year_avg, 2)
@@ -640,6 +696,9 @@ def get_worst_models(conn, make: str, config: dict = None) -> list:
     results = []
     for row in cur.fetchall():
         data = dict_from_row(row)
+        # Filter out motorhomes and vehicles older than cutoff year
+        if is_excluded_model(data["model"], model_year=data["model_year"]):
+            continue
         year_avg = get_year_avg_safe(yearly_avgs, data["model_year"], cfg)[0]
         data["pass_rate_vs_national"] = round(data["pass_rate"] - year_avg, 2)
         data["national_avg_for_year"] = round(year_avg, 2)
@@ -848,6 +907,11 @@ def get_model_age_band_breakdown(conn, make: str, min_tests: int = None) -> list
     results = []
 
     for core_model in sorted(core_names):
+        # Check if model is a motorhome (by name)
+        first_word = core_model.split()[0].upper()
+        if first_word in MOTORHOME_BRANDS:
+            continue
+
         # Get data for this model family
         cur = conn.execute("""
             SELECT
@@ -857,8 +921,9 @@ def get_model_age_band_breakdown(conn, make: str, min_tests: int = None) -> list
             FROM vehicle_insights
             WHERE make = ? AND (model = ? OR model LIKE ? || ' %')
               AND model_year IS NOT NULL
+              AND model_year >= ?
             GROUP BY model_year
-        """, (make, core_model, core_model))
+        """, (make, core_model, core_model, EXCLUSION_YEAR_CUTOFF))
 
         # Aggregate by age band
         band_data = defaultdict(lambda: {"total_tests": 0, "total_passes": 0})
@@ -977,6 +1042,10 @@ def generate_make_insights(make: str) -> dict:
     # Get per-model age band breakdown
     model_age_breakdown = get_model_age_band_breakdown(conn, make)
 
+    # Get filtered rank among major manufacturers (min 10,000 tests)
+    # Fixes Issue 1: Returns accurate rank/total by only counting qualifying manufacturers
+    filtered_rank, rank_total = get_manufacturer_rank_filtered(conn, make, min_tests=10000)
+
     conn.close()
 
     # Build output structure
@@ -998,8 +1067,8 @@ def generate_make_insights(make: str) -> dict:
             "total_tests": overview["total_tests"],
             "total_models": overview["total_models"],
             "avg_pass_rate": overview["avg_pass_rate"],
-            "rank": overview["rank"],
-            "rank_total": 75,
+            "rank": filtered_rank if filtered_rank else overview["rank"],
+            "rank_total": rank_total if rank_total else 75,
             "best_model": overview["best_model"],
             "best_model_pass_rate": overview["best_model_pass_rate"],
             "worst_model": overview["worst_model"],

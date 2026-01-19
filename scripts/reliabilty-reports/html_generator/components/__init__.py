@@ -17,12 +17,16 @@ from .data_classes import (
     EarlyPerformer,
     ReliabilitySummary,
     SectionConfig,
-    # Constants
+    # Constants (from config.py via data_classes)
     FUEL_TYPE_NAMES,
-    PASS_RATE_THRESHOLDS,
+    PASS_RATE_EXCELLENT,
+    PASS_RATE_GOOD,
+    PASS_RATE_AVERAGE,
     MIN_TESTS_PROVEN_DURABILITY,
     MIN_TESTS_EARLY_PERFORMER,
     ARTICLE_SECTIONS,
+    DATA_YEAR_START,
+    DATA_YEAR_END,
     # Functions
     get_pass_rate_class,
     get_fuel_name,

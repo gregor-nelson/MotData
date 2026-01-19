@@ -12,6 +12,8 @@ from .data_classes import (
     format_number,
     safe_html,
     generate_faq_data,
+    DATA_YEAR_START,
+    DATA_YEAR_END,
 )
 from . import sections
 
@@ -42,8 +44,12 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
     """Generate the HTML head section with SEO meta tags and JSON-LD."""
     make_slug = insights.make.lower().replace(' ', '-').replace('_', '-')
 
-    # Get top models for description
-    top_models = [m.name for m in insights.top_models[:5]]
+    # Get top models for description - sorted by test count (popularity) not pass rate
+    # Fixes Issue 5: Meta description should feature popular models, not niche high-pass-rate models
+    by_tests = sorted(insights.core_models, key=lambda m: m.total_tests, reverse=True)
+    # Filter out models with insufficient data for meta description
+    popular_models = [m for m in by_tests if m.total_tests >= 5000][:5]
+    top_models = [m.name for m in popular_models] if popular_models else [m.name for m in by_tests[:5]]
     models_list = ", ".join(top_models[:-1]) + f" and {top_models[-1]}" if len(top_models) > 1 else top_models[0] if top_models else ""
 
     description = f"Which {insights.title_make} models are most reliable? We analysed {format_number(insights.total_tests)} real UK MOT tests to reveal pass rates for every {models_list} by year. Data-driven buying guide."
@@ -56,7 +62,7 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Most Reliable {insights.title_make} Models: Real MOT Data Analysis (2000-2023) | Motorwise</title>
+  <title>Most Reliable {insights.title_make} Models: Real MOT Data Analysis ({DATA_YEAR_START}-{DATA_YEAR_END}) | Motorwise</title>
   <meta name="description" content="{description}">
 
   <!-- Canonical -->
@@ -115,7 +121,7 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
   {{
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Most Reliable {insights.title_make} Models: Real MOT Data Analysis (2000-2023)",
+    "headline": "Most Reliable {insights.title_make} Models: Real MOT Data Analysis ({DATA_YEAR_START}-{DATA_YEAR_END})",
     "description": "{description}",
     "url": "https://www.motorwise.io/articles/content/reliability/{make_slug}-most-reliable-models.html",
     "datePublished": "{today}",
@@ -177,7 +183,7 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
     "@context": "https://schema.org",
     "@type": "Dataset",
     "name": "Motorwise {insights.title_make} MOT Reliability Data",
-    "description": "MOT pass rate analysis for {insights.title_make} vehicles based on {format_number(insights.total_tests)} real UK MOT tests (2000-2023)",
+    "description": "MOT pass rate analysis for {insights.title_make} vehicles based on {format_number(insights.total_tests)} real UK MOT tests ({DATA_YEAR_START}-{DATA_YEAR_END})",
     "url": "https://www.motorwise.io/articles/content/reliability/{make_slug}-most-reliable-models.html",
     "creator": {{
       "@type": "Organization",
@@ -200,7 +206,7 @@ def generate_html_head(insights: ArticleInsights, today: str) -> str:
       "Test Count by Model",
       "Fuel Type Comparison"
     ],
-    "temporalCoverage": "2000/2023",
+    "temporalCoverage": "{DATA_YEAR_START}/{DATA_YEAR_END}",
     "spatialCoverage": {{
       "@type": "Country",
       "name": "United Kingdom"
