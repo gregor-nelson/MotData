@@ -33,8 +33,8 @@ OUTPUT_DB = OUTPUT_DIR / "mot_insights.db"
 DUCKDB_FILE = OUTPUT_DIR / "mot_processing.duckdb"  # Disk-backed for lower RAM
 
 # Performance tuning - optimized for 16GB system
-DUCKDB_THREADS = 2            # More threads for parallel processing
-DUCKDB_MEMORY_LIMIT = '1.5GB'   # More memory reduces disk spillover
+DUCKDB_THREADS = 4            # More threads for parallel processing
+DUCKDB_MEMORY_LIMIT = '4.5GB'   # More memory reduces disk spillover
 
 # Mileage bands (in miles) - no upper cap on final band
 MILEAGE_BANDS = [

@@ -394,6 +394,18 @@ def get_manufacturer_rank_filtered(conn, make: str, min_tests: int = 10000) -> t
     return (row['calc_rank'], row['total_count']) if row else (None, None)
 
 
+def get_total_manufacturer_count(conn) -> int:
+    """
+    Get total count of manufacturers in the database.
+
+    Returns the count of all manufacturers in manufacturer_rankings table.
+    This reflects the actual number of valid makes after filtering.
+    """
+    cur = conn.execute("SELECT COUNT(*) as total FROM manufacturer_rankings")
+    row = cur.fetchone()
+    return row['total'] if row else 0
+
+
 def get_competitor_comparison(conn, make: str) -> list:
     """Get competitor brands for comparison."""
     # Define competitor groups by segment
@@ -1044,7 +1056,10 @@ def generate_make_insights(make: str) -> dict:
 
     # Get filtered rank among major manufacturers (min 10,000 tests)
     # Fixes Issue 1: Returns accurate rank/total by only counting qualifying manufacturers
-    filtered_rank, rank_total = get_manufacturer_rank_filtered(conn, make, min_tests=10000)
+    filtered_rank, filtered_total = get_manufacturer_rank_filtered(conn, make, min_tests=10000)
+
+    # Get actual total manufacturer count (all valid makes in database)
+    total_manufacturers = get_total_manufacturer_count(conn)
 
     conn.close()
 
@@ -1067,8 +1082,8 @@ def generate_make_insights(make: str) -> dict:
             "total_tests": overview["total_tests"],
             "total_models": overview["total_models"],
             "avg_pass_rate": overview["avg_pass_rate"],
-            "rank": filtered_rank if filtered_rank else overview["rank"],
-            "rank_total": rank_total if rank_total else 75,
+            "rank": overview["rank"],
+            "rank_total": total_manufacturers,
             "best_model": overview["best_model"],
             "best_model_pass_rate": overview["best_model_pass_rate"],
             "worst_model": overview["worst_model"],

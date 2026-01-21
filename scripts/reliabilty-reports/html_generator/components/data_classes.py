@@ -377,7 +377,7 @@ class ArticleInsights:
         self.total_models = summary.get('total_models', 0)
         self.avg_pass_rate = summary.get('avg_pass_rate', 0.0)
         self.rank = summary.get('rank', 0)
-        self.rank_total = summary.get('rank_total', 75)
+        self.rank_total = summary.get('rank_total', 0)  # 0 indicates missing data
         self.best_model = summary.get('best_model', '')
         self.best_model_pass_rate = summary.get('best_model_pass_rate', 0.0)
         self.worst_model = summary.get('worst_model', '')
