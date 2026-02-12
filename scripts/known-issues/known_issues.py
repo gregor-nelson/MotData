@@ -20,7 +20,7 @@ from collections import defaultdict
 from baseline_groups import get_baseline_group, get_all_groups, get_group_display_name
 
 # Database path
-DB_PATH = Path(__file__).parent.parent.parent / "data" / "source" / "data" / "mot_insights.db"
+DB_PATH = Path(__file__).parent.parent.parent / "data" / "source" / "database" / "mot_insights.db"
 
 
 @dataclass
